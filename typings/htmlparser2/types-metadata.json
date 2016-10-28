@@ -1,0 +1,23 @@
+{
+    "authors": "James Roland Cabresos <https://github.com/staticfunction/>",
+    "definitionFilename": "index.d.ts",
+    "libraryDependencies": [],
+    "moduleDependencies": [],
+    "libraryMajorVersion": "3",
+    "libraryMinorVersion": "7",
+    "libraryName": "htmlparser2 v3.7.x",
+    "typingsPackageName": "htmlparser2",
+    "projectName": "https://github.com/fb55/htmlparser2/",
+    "sourceRepoURL": "https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+    "sourceBranch": "types-2.0",
+    "kind": "ProperModule",
+    "globals": [],
+    "declaredModules": [
+        "htmlparser2"
+    ],
+    "files": [
+        "index.d.ts"
+    ],
+    "hasPackageJson": false,
+    "contentHash": "28eb62ab3d0108d0cc4857db560d6ed029a748198e6017a5f9f0179c79baded1"
+}

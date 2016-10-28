@@ -1,0 +1,39 @@
+{
+  "name": "sec-xbrl",
+  "version": "0.0.1",
+  "description": "Tool for parsing the SEC EDGAR DB",
+  "author": {
+    "name": "M.S."
+  },
+  "private": true,
+  "main": "bin/index.js",
+  "scripts": {
+    "setup": "npm run setup:gulp && npm run build",
+    "setup:gulp": "node ./node_modules/typescript/lib/tsc.js -t es5 --noEmitOnError --noImplicitAny --removeComments gulpfile.ts",
+
+    "build": "gulp build",
+    "clean": "gulp clean"
+  },
+  "types": "./bin/index.d.ts",
+  "dependencies": {
+    "typescript": "2.0.3",
+    "request": "2.76.0",
+    "cheerio": "0.22.0",
+    "xpath": "0.0.23",
+    "xmldom": "0.1.22"
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-typescript": "3.0.2",
+    "gulp-sourcemaps": "2.2.0",
+    "gulp-clean": "0.3.2",
+    "require-dir": "0.3.1",
+    "@types/node": "4.0.30",
+    "@types/request": "0.0.32",
+    "@types/cheerio": "0.17.31",
+    "@types/xmldom": "0.1.28",
+    "@types/gulp": "3.8.32",
+    "@types/gulp-typescript": "0.0.32",
+    "@types/gulp-sourcemaps": "0.0.29"
+  }
+}

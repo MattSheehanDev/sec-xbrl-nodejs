@@ -1,0 +1,69 @@
+{
+  "_args": [
+    [
+      "@types/htmlparser2@3.7.29",
+      "D:\\Projects\\client-working\\sec-xbrl"
+    ]
+  ],
+  "_from": "@types/htmlparser2@3.7.29",
+  "_id": "@types/htmlparser2@3.7.29",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/@types/htmlparser2",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/htmlparser2-3.7.29.tgz_1474306768371_0.5135818338021636"
+  },
+  "_npmUser": {
+    "email": "ts-npm-types@microsoft.com",
+    "name": "types"
+  },
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "@types/htmlparser2",
+    "raw": "@types/htmlparser2@3.7.29",
+    "rawSpec": "3.7.29",
+    "scope": "@types",
+    "spec": "3.7.29",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@types/htmlparser2/-/htmlparser2-3.7.29.tgz",
+  "_shasum": "d2ae2c9874ec8829e03f00baa4635b4229ce8cf1",
+  "_shrinkwrap": null,
+  "_spec": "@types/htmlparser2@3.7.29",
+  "_where": "D:\\Projects\\client-working\\sec-xbrl",
+  "author": {
+    "email": "https://github.com/staticfunction/",
+    "name": "James Roland Cabresos"
+  },
+  "dependencies": {},
+  "description": "TypeScript definitions for htmlparser2 v3.7.x",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "d2ae2c9874ec8829e03f00baa4635b4229ce8cf1",
+    "tarball": "https://registry.npmjs.org/@types/htmlparser2/-/htmlparser2-3.7.29.tgz"
+  },
+  "license": "MIT",
+  "main": "",
+  "maintainers": [
+    {
+      "email": "ryan.cavanaugh@microsoft.com",
+      "name": "types"
+    }
+  ],
+  "name": "@types/htmlparser2",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+  },
+  "scripts": {},
+  "typesPublisherContentHash": "28eb62ab3d0108d0cc4857db560d6ed029a748198e6017a5f9f0179c79baded1",
+  "typings": "index.d.ts",
+  "version": "3.7.29"
+}
