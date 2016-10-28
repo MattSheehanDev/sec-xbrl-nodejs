@@ -1,0 +1,31 @@
+{
+    "typescript.tsdk": "node_modules/typescript/lib",
+    
+    "files.exclude": {
+        "**/.hg": true,
+        "**/.vs": true,
+        "**/.vscode": false,
+        "**/.hgignore": true,
+        "**/.hgsub": true,
+        "**/.hgsubstate": true,
+        "**/*.sln": true,
+        "**/*.csproj": true,
+        "**/*.csproj.user": true,
+
+        "node_modules/**": true,
+        "*.config": true,
+
+        "src/**/*.js": true,
+        "bin/**": true,
+
+        "**/*.js": { "when": "$(basename).ts" },
+        "**/*.map": true
+    },
+
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+
+        "**/bin": true
+    }
+}
