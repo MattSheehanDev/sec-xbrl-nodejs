@@ -29,14 +29,35 @@ let isRelease = process.env.NODE_ENV === 'release';
 // }
 
 
-let price = YahooAPI.GetPrice('AAPL', '2012-01-01', '2012-01-01');
-price.then((result: YahooAPI.Result) => {
-    let r = result;
-});
+// let price = YahooAPI.GetPrice('AAPL', '2012-01-01', '2012-01-01');
+// price.then((result: YahooAPI.Result) => {
+//     let r = result;
+// });
 
+// let historicalPrice = YahooAPI.GetHistoricalPrice('AAPL', '2012-01-01', '2012-01-01');
+// historicalPrice.then((result: YahooAPI.Result) => {
+
+// });
+
+// YahooAPI.GetGPrice();
+// YahooAPI.csv.GetPrice(['AAPL', 'GOOG']);
 
 
 namespace Test {
+
+    export function GetPrice(ticker: string): Promise<YahooAPI.CSVResult[]> {
+        return new Promise<YahooAPI.CSVResult[]>((resolve: Function, reject: Function) => {
+            let priceFile = path.join(workingDir, 'test/yahoofinance.csv');
+
+            let read = filesystem.ReadFile(priceFile);
+            read.then((body: string) => {
+                let results = YahooAPI.csv.Parse(body);
+                resolve(results);
+            }, (err: any) => {
+                reject(err);
+            });
+        });
+    }
 
     export function GetCIKS(): Promise<string> {
         return new Promise<string>((resolve: Function, reject: Function) => {
@@ -59,10 +80,8 @@ namespace Test {
     }
 
     export function Get10KFilings(cik: string): Promise<Scraper.SECFiling[]> {
-        let filingsFile = path.join(workingDir, 'test/filings.html');
-
         return new Promise<Scraper.SECFiling[]>((resolve: Function, reject: Function) => {
-            let read = filesystem.ReadFile(filingsFile);
+            let read = filesystem.ReadFile(path.join(workingDir, 'test/filings.html'));
             read.then((body: string) => {
 
                 let filings = Scraper.Filings(body);
@@ -80,10 +99,8 @@ namespace Test {
     }
 
     export function GetForms(uri: string): Promise<Scraper.SECForm[]> {
-        let formsFile = path.join(workingDir, 'test/forms.html');
-
         return new Promise<Scraper.SECForm[]>((resolve: Function, reject: Function) => {
-            let read = filesystem.ReadFile(formsFile);
+            let read = filesystem.ReadFile(path.join(workingDir, 'test/forms.html'));
             read.then((body: string) => {
 
                 let forms = Scraper.Forms(body);
@@ -102,10 +119,8 @@ namespace Test {
     }
 
     export function GetXBRL(uri: string) {
-        let xbrlFile = path.join(workingDir, 'test/xbrl.xml');
-
         return new Promise<string>((resolve: Function, reject: Function) => {
-            let read = filesystem.ReadFile(xbrlFile);
+            let read = filesystem.ReadFile(path.join(workingDir, 'test/xbrl.xml'));
             read.then((data: string) => {
 
                 resolve(data);
@@ -151,6 +166,7 @@ loadFilings.then((filings: Scraper.SECFiling[]) => {
 
         let loadXBRL = Test.GetXBRL(form.url);
         loadXBRL.then((xml: string) => {
+
             let dom = new DOMParser();
             let doc = dom.parseFromString(xml);
 
@@ -158,44 +174,55 @@ loadFilings.then((filings: Scraper.SECFiling[]) => {
             let tenk2013 = new TenK(doc, 2013);
             let tenk2012 = new TenK(doc, 2012);
 
-            let outstandingCommonShares = tenk.GetOutstandingShares();
-            let outstandingPreferredShares = tenk.GetPreferredOutstandingShares();
-            let totalRevenue = tenk.GetTotalRevenue();
-            let netIncome = tenk.GetNetIncome();
-            let earningsPerShare = tenk.GetEarningsPerShare();
-            let dilutedEarningsPerShare = tenk.GetDilutedEarningsPerShare();
-            let dividend = tenk.GetDeclaredDividend();
-            let currentAssets = tenk.GetCurrentAssets();
-            let currentLiabilities = tenk.GetCurrentLiabilities();
-            let longTermDebt = tenk.GetLongTermDebt();
+            
 
-            let workingCapital = Finance.CalcWorkingCapital(currentAssets, currentLiabilities);
-            let profitMargin = Finance.CalcProfitMargin(netIncome, totalRevenue);
-            let currentAssetsToCurrentLiab = Finance.CalcCurrentAssetsRatio(currentAssets, currentLiabilities);
-            let workingCapitalToLongTermDebt = Finance.CalcWorkingCapitalToDebtRatio(workingCapital, longTermDebt);
+            let loadPrice = Test.GetPrice('CVS');
+            loadPrice.then((value: YahooAPI.CSVResult[]) => {
+                let ticker = value[0];
+
+                let priceToEarnings = ticker.AskPrice / tenk.GetEarningsPerShare();
+
+                let outstandingCommonShares = tenk.GetOutstandingShares();
+                let outstandingPreferredShares = tenk.GetPreferredOutstandingShares();
+                let totalRevenue = tenk.GetTotalRevenue();
+                let netIncome = tenk.GetNetIncome();
+                let earningsPerShare = tenk.GetEarningsPerShare();
+                let dilutedEarningsPerShare = tenk.GetDilutedEarningsPerShare();
+                let dividend = tenk.GetDeclaredDividend();
+                let currentAssets = tenk.GetCurrentAssets();
+                let currentLiabilities = tenk.GetCurrentLiabilities();
+                let longTermDebt = tenk.GetLongTermDebt();
+
+                let workingCapital = Finance.CalcWorkingCapital(currentAssets, currentLiabilities);
+                let profitMargin = Finance.CalcProfitMargin(netIncome, totalRevenue);
+                let currentAssetsToCurrentLiab = Finance.CalcCurrentAssetsRatio(currentAssets, currentLiabilities);
+                let workingCapitalToLongTermDebt = Finance.CalcWorkingCapitalToDebtRatio(workingCapital, longTermDebt);
 
 
-            let averageEarningsPerShare = Finance.CalcAverageEarningsPerShare([tenk, tenk2013, tenk2012]);
-            let averageDilutedEarningsPerShare = Finance.CalcAverageDilutedEarningsPerShare([tenk, tenk2013, tenk2012]);
+                let averageEarningsPerShare = Finance.CalcAverageEarningsPerShare([tenk, tenk2013, tenk2012]);
+                let averageDilutedEarningsPerShare = Finance.CalcAverageDilutedEarningsPerShare([tenk, tenk2013, tenk2012]);
 
 
-            // let year = 2014;
-            process.stdout.write('\r\n');
-            process.stdout.write(`Outstanding Shares (${year}): ${outstandingCommonShares} \r\n`);
-            process.stdout.write(`Outstanding Preferred Shares (${year}): ${outstandingPreferredShares} \r\n`);
-            process.stdout.write(`Total Revenue (${year}): ${totalRevenue} \r\n`);
-            process.stdout.write(`Net Income (${year}): ${netIncome} \r\n`);
-            process.stdout.write(`Earnings/Share (${year}): ${earningsPerShare} \r\n`);
-            process.stdout.write(`Diluted Earnings/Share (${year}): ${dilutedEarningsPerShare} \r\n`);
-            process.stdout.write(`Dividend (${year}): ${dividend} \r\n`);
-            process.stdout.write(`Current Assets (${year}): ${currentAssets} \r\n`);
-            process.stdout.write(`Current Liabilities (${year}): ${currentLiabilities} \r\n`);
-            process.stdout.write(`Long-Term Debt (${year}): ${longTermDebt} \r\n`);
+                // let year = 2014;
+                process.stdout.write('\r\n');
+                process.stdout.write(`Price/Earnings (${year}): ${outstandingCommonShares} \r\n`);
 
-            process.stdout.write('\r\n');
-            process.stdout.write(`Average Earnings/Share (2012-14): ${averageEarningsPerShare} \r\n`);
-            process.stdout.write(`Average Diluted Earnings/Share (2012-14): ${averageDilutedEarningsPerShare} \r\n`);
+                process.stdout.write(`Outstanding Shares (${year}): ${outstandingCommonShares} \r\n`);
+                process.stdout.write(`Outstanding Preferred Shares (${year}): ${outstandingPreferredShares} \r\n`);
+                process.stdout.write(`Total Revenue (${year}): ${totalRevenue} \r\n`);
+                process.stdout.write(`Net Income (${year}): ${netIncome} \r\n`);
+                process.stdout.write(`Earnings/Share (${year}): ${earningsPerShare} \r\n`);
+                process.stdout.write(`Diluted Earnings/Share (${year}): ${dilutedEarningsPerShare} \r\n`);
+                process.stdout.write(`Dividend (${year}): ${dividend} \r\n`);
+                process.stdout.write(`Current Assets (${year}): ${currentAssets} \r\n`);
+                process.stdout.write(`Current Liabilities (${year}): ${currentLiabilities} \r\n`);
+                process.stdout.write(`Long-Term Debt (${year}): ${longTermDebt} \r\n`);
 
+                process.stdout.write('\r\n');
+                process.stdout.write(`Average Earnings/Share (2012-14): ${averageEarningsPerShare} \r\n`);
+                process.stdout.write(`Average Diluted Earnings/Share (2012-14): ${averageDilutedEarningsPerShare} \r\n`);
+
+            });
         });
     });
 });

@@ -17,6 +17,7 @@
 
         "src/**/*.js": true,
         "bin/**": true,
+        "build/**": true,
 
         "**/*.js": { "when": "$(basename).ts" },
         "**/*.map": true
@@ -26,6 +27,7 @@
         "**/node_modules": true,
         "**/bower_components": true,
 
-        "**/bin": true
+        "**/bin": true,
+        "**/build": true
     }
 }

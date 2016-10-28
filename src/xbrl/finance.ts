@@ -41,7 +41,6 @@ module Finance {
         }
         return Round(sum / tens.length, 2);
     }
-
     export function CalcAverageDilutedEarningsPerShare(tens: TenK[]) {
         let sum = 0;
         for (let ten of tens) {

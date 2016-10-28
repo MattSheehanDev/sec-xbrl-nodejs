@@ -4,6 +4,15 @@ import xpath = require('xpath');
 
 
 
+module Period {
+    export function StartDate (year: number) {
+        let id = `FD${year}Q4YTD`;
+        return `//xbrli:xbrl/xbrli:context[@id="${id}"]/xbrli:period/xbrli:startDate`;
+    }
+    export const EndDate = '//xbrli:xbrl/xbrli:context[@id=""]/xbrli:period/xbrli:endDate';
+}
+
+
 module USGAAP {
     export const SharePrice = ['CommonStockMarketPricePerShare'];
 
@@ -17,10 +26,40 @@ module USGAAP {
     export const CurrentAssets = ['AssetsCurrent'];
     export const CurrentLiabilities = ['LiabilitiesCurrent'];
     export const LongTermDebt = ['LongTermDebt'];
+
+
+    export function Select(names: string[], document: Document) {
+        for (let name of names) {
+            let nodes = selectUsingNS(name, document);
+            if (nodes.length > 0) {
+                return nodes;
+            };
+        }
+        for (let name of names) {
+            let nodes = selectUsingPrefix(name, document);
+            if (nodes.length) {
+                return nodes;
+            }
+        }
+    }
+
+    function selectUsingNS(name: string, document: Document): any[] {
+        let select = xpath.useNamespaces({ usgaap: 'http://fasb.org/us-gaap/2013-01-31' });
+        return select(`//*[local-name()='${name}' and namespace-uri()='http://fasb.org/us-gaap/2013-01-31']`, document);
+    }
+    function selectUsingPrefix(name: string, document: Document): any[] {
+        let select = xpath.useNamespaces({ usgaap: 'http://fasb.org/us-gaap/2013-01-31' });
+        return select(`//*[local-name()='${name}' and starts-with(name(), 'us-gaap')]`, document);
+    }
+    function selectUsingLocalName(name: string, document: Document): any[] {
+        let select = xpath.useNamespaces({ usgaap: 'http://fasb.org/us-gaap/2013-01-31' });
+        let nodes = select(`//*[local-name()='${name}']`, document);
+        return nodes.filter((node: any) => { return node.prefix === 'us-gaap'; });
+    }
 }
 
 
-
+// TODO: seperate all us-gaap nodes and then re-append to a new root node for faster parsing?
 class TenK {
 
     private _document: Document;
@@ -32,57 +71,48 @@ class TenK {
     }
 
     public GetTotalRevenue() {
-        let nodes = this.selectGAAPNodes(USGAAP.TotalRevenue);
+        let nodes = USGAAP.Select(USGAAP.TotalRevenue, this._document);
         return this.accumulateValues(nodes);
     }
     public GetNetIncome() {
-        let nodes = this.selectGAAPNodes(USGAAP.NetIncome);
+        let nodes = USGAAP.Select(USGAAP.NetIncome, this._document);
         return this.accumulateValues(nodes);
     }
     public GetEarningsPerShare() {
-        let nodes = this.selectGAAPNodes(USGAAP.EarningsPerShare);
+        let nodes = USGAAP.Select(USGAAP.EarningsPerShare, this._document);
         return this.accumulateValues(nodes);
     }
     public GetDilutedEarningsPerShare() {
-        let nodes = this.selectGAAPNodes(USGAAP.DilutedEarningsPerShare);
+        let nodes = USGAAP.Select(USGAAP.DilutedEarningsPerShare, this._document);
         return this.accumulateValues(nodes);
     }
     public GetDeclaredDividend() {
-        let nodes = this.selectGAAPNodes(USGAAP.DeclaredDividend);
+        let nodes = USGAAP.Select(USGAAP.DeclaredDividend, this._document);
         return this.accumulateValues(nodes);
     }
     public GetOutstandingShares() {
-        let nodes = this.selectGAAPNodes(USGAAP.OutstandingShares);
+        let nodes = USGAAP.Select(USGAAP.OutstandingShares, this._document);
         return this.accumulateValues(nodes);
     }
     public GetPreferredOutstandingShares() {
-        let nodes = this.selectGAAPNodes(USGAAP.PreferredOutstandingShares);
+        let nodes = USGAAP.Select(USGAAP.PreferredOutstandingShares, this._document);
         return this.accumulateValues(nodes);
     }
     public GetCurrentAssets() {
-        let nodes = this.selectGAAPNodes(USGAAP.CurrentAssets);
+        let nodes = USGAAP.Select(USGAAP.CurrentAssets, this._document);
         return this.accumulateValues(nodes);
     }
     public GetCurrentLiabilities() {
-        let nodes = this.selectGAAPNodes(USGAAP.CurrentLiabilities);
+        let nodes = USGAAP.Select(USGAAP.CurrentLiabilities, this._document);
         return this.accumulateValues(nodes);
     }
     public GetLongTermDebt() {
-        let nodes = this.selectGAAPNodes(USGAAP.LongTermDebt);
+        let nodes = USGAAP.Select(USGAAP.LongTermDebt, this._document);
         return this.accumulateValues(nodes);
     }
 
 
-    private selectGAAPNodes(names: string[]) {
-        let nodes: any[];
-        for (let n of names) {
-            nodes = this.select(n);
-            if (nodes.length > 0) {
-                break;
-            }
-        }
-        return nodes.filter((node: any) => { return node.prefix === 'us-gaap'; });
-    }
+
     private accumulateValues(nodes: any[]) {
         let sum = 0;
         for (let i = 0; i < nodes.length; i++) {
@@ -97,17 +127,6 @@ class TenK {
             }
         }
         return sum;
-    }
-
-    private select(element: string) {
-        let nodes: any[] = []
-
-        let select = xpath.select(`//*[local-name() = '${element}']`, this._document);
-        for (let i = 0; i < select.length; i++) {
-            let node = select[i];
-            nodes.push(node);
-        }
-        return nodes
     }
     private getYear(date: string) {
         let match: RegExpMatchArray;
