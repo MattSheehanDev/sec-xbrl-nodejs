@@ -3,30 +3,16 @@ import path = require('path');
 import { DOMParser } from 'xmldom';
 
 import filesystem from './filesystem';
+import { SECFiling, SECDocument } from './models/secmodels';
 import YahooAPI from './api/yahooapi';
-import SecAPI from './api/secapi';
+import TenKLoader from './xbrl/loader';
 import Scraper from './scraper';
-import TenK from './xbrl/tenk';
-import Finance from './xbrl/finance';
+import TenK from './models/tenk';
+import Finance from './finance';
 
 
 let workingDir = process.cwd();
 let isRelease = process.env.NODE_ENV === 'release';
-
-
-// namespace QuandlAPI {
-
-//     const URL = 'https://www.quandl.com/api/v3/datasets/WIKI'
-//     const API_KEY = '';
-
-//     function Get() {
-//         return new Promise<any>((resolve: Function, reject: Function) => {
-//             let ticker = 'FB';
-//             let uri = `${URL}/${ticker}/data.json?api_key=${API_KEY}`;
-//         });
-//     }
-
-// }
 
 
 // let price = YahooAPI.GetPrice('AAPL', '2012-01-01', '2012-01-01');
@@ -67,53 +53,54 @@ namespace Test {
                 resolve(data);
 
             }, (err: NodeJS.ErrnoException) => {
-                SecAPI.GetCIKs().then((data: string) => {
-                    // write to file
-                    let write = filesystem.WriteFile(path.join(workingDir, 'ciks.txt'), data);
-                    write.then(() => {
-                        console.log('Wrote ciks.txt');
-                        resolve(data);
-                    });
-                });
+                // SecAPI.GetCIKs().then((data: string) => {
+                //     // write to file
+                //     let write = filesystem.WriteFile(path.join(workingDir, 'ciks.txt'), data);
+                //     write.then(() => {
+                //         console.log('Wrote ciks.txt');
+                //         resolve(data);
+                //     });
+                // });
             });
         });
     }
 
-    export function Get10KFilings(cik: string): Promise<Scraper.SECFiling[]> {
-        return new Promise<Scraper.SECFiling[]>((resolve: Function, reject: Function) => {
+    export function Get10KFilings(cik: string): Promise<SECFiling[]> {
+        return new Promise<SECFiling[]>((resolve: Function, reject: Function) => {
             let read = filesystem.ReadFile(path.join(workingDir, 'test/filings.html'));
             read.then((body: string) => {
 
                 let filings = Scraper.Filings(body);
                 resolve(filings);
-
-            }, (err: NodeJS.ErrnoException) => {
-
-                let search = SecAPI.GetFilings(cik, '10-k', 0, 1);
-                search.then((body: string) => {
-                    let filings = Scraper.Filings(body);
+            });
+            read.then(null, (err: NodeJS.ErrnoException) => {
+                let load = TenKLoader.Get10KFilingsList(cik);
+                load.then((filings: SECFiling[]) => {
                     resolve(filings);
+                });
+                load.then(null, (err: any) => {
+                    reject(err);
                 });
             });
         });
     }
 
-    export function GetForms(uri: string): Promise<Scraper.SECForm[]> {
-        return new Promise<Scraper.SECForm[]>((resolve: Function, reject: Function) => {
+    export function GetForms(uri: string): Promise<SECDocument[]> {
+        return new Promise<SECDocument[]>((resolve: Function, reject: Function) => {
             let read = filesystem.ReadFile(path.join(workingDir, 'test/forms.html'));
             read.then((body: string) => {
 
                 let forms = Scraper.Forms(body);
                 resolve(forms);
-
-            }, (err: NodeJS.ErrnoException) => {
-
-                let search = SecAPI.GetForms(uri);
-                search.then((body: string) => {
-                    let forms = Scraper.Forms(body);
-                    resolve(forms);
+            });
+            read.then(null, (err: NodeJS.ErrnoException) => {
+                let load = TenKLoader.Get10KDocumentsList(uri);
+                load.then((docs: SECDocument[]) => {
+                    resolve(docs);
                 });
-
+                load.then(null, (err: any) => {
+                    reject(err);
+                });
             });
         });
     }
@@ -124,13 +111,12 @@ namespace Test {
             read.then((data: string) => {
 
                 resolve(data);
-
-            }, (err: NodeJS.ErrnoException) => {
-
-                let search = SecAPI.GetXBRL(uri);
-                search.then((data: string) => {
-                    resolve(data);
-                });
+            });
+            read.then(null, (err: NodeJS.ErrnoException) => {
+                // let search = SecAPI.GetXBRL(uri);
+                // search.then((data: string) => {
+                //     resolve(data);
+                // });
             });
         });
     }
@@ -141,12 +127,12 @@ namespace Test {
 
 // Example
 let loadFilings = Test.Get10KFilings('0000064803');
-loadFilings.then((filings: Scraper.SECFiling[]) => {
+loadFilings.then((filings: SECFiling[]) => {
     // the first form will be the latest 10-K
     let filing = filings[0];
 
     // date should be in YYYY-MM-DD format
-    let date = new Date(filing.date);
+    let date = new Date(filing.filingDate);
     let year = date.getFullYear();
     let month = date.getMonth() + 1;                    // returns 0-11
     let day = date.getDate() + 1;
@@ -154,8 +140,8 @@ loadFilings.then((filings: Scraper.SECFiling[]) => {
     let url = filing.url;
 
     let loadForms = Test.GetForms(url);
-    loadForms.then((forms: Scraper.SECForm[]) => {
-        let form: Scraper.SECForm;
+    loadForms.then((forms: SECDocument[]) => {
+        let form: SECDocument;
         for (let f of forms) {
             if (f.type.match(/.INS$/gi)) {
                 form = f;
@@ -170,11 +156,11 @@ loadFilings.then((filings: Scraper.SECFiling[]) => {
             let dom = new DOMParser();
             let doc = dom.parseFromString(xml);
 
-            let tenk = new TenK(doc, 2014);
-            let tenk2013 = new TenK(doc, 2013);
-            let tenk2012 = new TenK(doc, 2012);
+            let tenk = new TenK(doc);
+            let tenk2013 = new TenK(doc);
+            let tenk2012 = new TenK(doc);
 
-            
+            tenk.GetFinancialYear();
 
             let loadPrice = Test.GetPrice('CVS');
             loadPrice.then((value: YahooAPI.CSVResult[]) => {

@@ -1,4 +1,4 @@
-import TenK from './tenk';
+import TenK from './models/tenk';
 
 
 module Finance {

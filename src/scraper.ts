@@ -1,26 +1,8 @@
 import cheerio = require('cheerio');
+import { SECFiling, SECDocument } from './models/secmodels';
 
 
 module Scraper {
-
-    export interface SECFiling {
-        formType: string;
-        url: string;
-        desc: string;
-        desc2: string;
-        date: string;
-        fileUrl: string;
-        fileNum: string;                // often null
-        filmNum: string;                // often null
-    }
-
-    export interface SECForm {
-        title: string;
-        url: string;
-        name: string
-        type: string;
-        size: string;
-    }
 
 
     export function Filings(body: string) {       
@@ -41,7 +23,7 @@ module Scraper {
                 url: row.children[3].children[0].attribs.href,
                 desc: row.children[5].children[0].data,
                 desc2: row.children[5].children[2].data,
-                date: row.children[7].children[0].data,
+                filingDate: row.children[7].children[0].data,
                 fileUrl: row.children[9].children[0] ? row.children[9].children[0].attribs.href : null,
                 fileNum: row.children[9].children[0] ? row.children[9].children[0].children[0].data : null,
                 filmNum: row.children[9].children[2] ? row.children[9].children[2].data.trim() : null
@@ -53,7 +35,7 @@ module Scraper {
     
     
     export function Forms(body: string) {
-        let forms: SECForm[] = [];
+        let forms: SECDocument[] = [];
 
         let doc = cheerio.load(body);
         let rows = <CheerioElement[]><any>doc('table[summary="Data Files"]').children();
@@ -61,7 +43,7 @@ module Scraper {
         for (let i = 1; i < rows.length; i++) {
             let row: any = rows[i];
 
-            let formMeta: SECForm = {
+            let formMeta: SECDocument = {
                 title: row.children[3].children[0].data,
                 url: row.children[5].children[0].attribs.href,
                 name: row.children[5].children[0].children[0].data,
