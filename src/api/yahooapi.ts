@@ -1,5 +1,5 @@
 import API from './api';
-import CSV from '../csv';
+import CSV from '../utilities/csv';
 
 
 namespace YahooAPI {
@@ -178,7 +178,7 @@ namespace YahooAPI {
         DividendPerShare: number;       // d
         DividendYield: number;          // y
         MarketCap: number;              // j1
-        SharesFloat: number;            // f6   (same as outstanding shares??)
+        SharesFloat: number;            // f6   (shares that are counted twice??)
         SharesOutstanding: number;      // j2
         EPS: number;                    // e    (earnings per share)
         EPSCurrentEst: number;          // e8   (earnings per share current year estimate)

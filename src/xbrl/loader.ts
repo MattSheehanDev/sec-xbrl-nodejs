@@ -1,9 +1,12 @@
+import { DOMParser } from 'xmldom';
+
 import SecAPI from '../api/secapi';
 import {SECFiling, SECDocument} from '../models/secmodels';
-import Scraper from '../scraper';
-import TenK from '../models/tenk';
+import Scraper from '../utilities/scraper';
+import XBRL from './xbrl';
 
-namespace TenKLoader {
+
+namespace XBRLLoader {
 
     export function Get10KFilingsList(cik: string): Promise<SECFiling[]> {
         return new Promise<SECFiling[]>((resolve: Function, reject: Function) => {
@@ -29,12 +32,14 @@ namespace TenKLoader {
         });
     }
 
-    export function Get10KXBRL(uri: string): Promise<TenK> {
-        return new Promise<TenK>((resolve: Function, reject: Function) => {
+
+    let dom = new DOMParser();
+
+    export function Get10KXBRL(uri: string): Promise<XBRL> {
+        return new Promise<XBRL>((resolve: Function, reject: Function) => {
             let search = SecAPI.GetXBRL(uri);
             search.then((data: string) => {
-                // TODO: parse into TenK
-                resolve(data);
+                resolve(new XBRL(dom.parseFromString(data)));
             });
             search.then(null, (err: any) => {
                 reject(err);
@@ -44,4 +49,5 @@ namespace TenKLoader {
 
 }
 
-export default TenKLoader;
+
+export default XBRLLoader;

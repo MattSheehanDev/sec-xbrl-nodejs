@@ -1,5 +1,5 @@
 import cheerio = require('cheerio');
-import { SECFiling, SECDocument } from './models/secmodels';
+import { SECFiling, SECDocument } from '../models/secmodels';
 
 
 module Scraper {

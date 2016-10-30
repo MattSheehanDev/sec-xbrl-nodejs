@@ -1,4 +1,4 @@
-import TenK from './models/tenk';
+import TenK from '../models/tenk';
 
 
 module Finance {
@@ -37,14 +37,14 @@ module Finance {
     export function CalcAverageEarningsPerShare(tens: TenK[]) {
         let sum = 0;
         for (let ten of tens) {
-            sum += ten.GetEarningsPerShare();
+            sum += ten.EarningsPerShare;
         }
         return Round(sum / tens.length, 2);
     }
     export function CalcAverageDilutedEarningsPerShare(tens: TenK[]) {
         let sum = 0;
         for (let ten of tens) {
-            sum += ten.GetDilutedEarningsPerShare();
+            sum += ten.DilutedEarningsPerShare;
         }
         return Round(sum / tens.length, 2);
     }

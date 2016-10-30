@@ -1,5 +1,5 @@
 import path = require('path');
-import fs from '../filesystem';
+import fs from '../utilities/filesystem';
 
 
 namespace GoogleAPI {
