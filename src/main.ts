@@ -10,7 +10,6 @@ import Finance from './utilities/finance';
 
 import Test from './test';
 
-let workingDir = process.cwd();
 let isRelease = process.env.NODE_ENV === 'release';
 
 
@@ -31,87 +30,90 @@ let isRelease = process.env.NODE_ENV === 'release';
 
 
 // Example
-let loadFilings = Test.Get10KFilings('0000064803');
-loadFilings.then((filings: SECFiling[]) => {
+let cvsCIK = '0000064803';
+let cvsTicker = 'CVS';
+let cvsXBRL: XBRL;
+
+
+// let sets: XBRL[];
+// let l: Promise<any> = Test.Load(cvsCIK);
+// l = l.then((xbrlSets: XBRL[]) => {
+//     sets = xbrlSets;
+// });
+
+
+let load: Promise<any> = Test.Get10KFilings(cvsTicker);
+load = load.then((filings: SECFiling[]) => {
     // the first form will be the latest 10-K
     let filing = filings[0];
-
-    // // date should be in YYYY-MM-DD format
-    // // this is only the FILING date, not the report date
-    // let date = new Date(filing.filingDate);
-    // let year = date.getFullYear();
-    // let month = date.getMonth() + 1;                    // returns 0-11
-    // let day = date.getDate() + 1;
-
-    let url = filing.url;
-
-    let loadForms = Test.GetForms(url);
-    loadForms.then((forms: SECDocument[]) => {
-        let form: SECDocument;
-        for (let f of forms) {
-            if (f.type.match(/.INS$/gi)) {
-                form = f;
-                break;
-            }
+    return Test.GetForms(filing.url);
+});
+load = load.then((forms: SECDocument[]) => {
+    let form: SECDocument;
+    for (let f of forms) {
+        if (f.type.match(/.INS$/gi)) {
+            form = f;
+            break;
         }
+    }
+    return Test.GetXBRL(form.url);
+});
+load = load.then((xbrl: XBRL) => {
+    cvsXBRL = xbrl;
+    return Test.GetPrice(cvsTicker);
+});
+load = load.then((value: YahooAPI.Result) => {
+    let tenk = AnnualReport.Create10K(cvsXBRL, cvsXBRL.years[0]);
+    let tenk2013 = AnnualReport.Create10K(cvsXBRL, cvsXBRL.years[1]);
+    let tenk2012 = AnnualReport.Create10K(cvsXBRL, cvsXBRL.years[2]);
 
 
-        let loadXBRL = Test.GetXBRL(form.url);
-        loadXBRL.then((xbrl: XBRL) => {
-            
-            let tenk = AnnualReport.Create10K(xbrl, xbrl.years[0]);
-            let tenk2013 = AnnualReport.Create10K(xbrl, xbrl.years[1]);
-            let tenk2012 = AnnualReport.Create10K(xbrl, xbrl.years[2]);
+    let price = parseFloat((<YahooAPI.Quote>value.query.results.quote).Bid);
+
+    let priceToEarnings = price / tenk.EarningsPerShare;
+    let marketCap = price * tenk.OutstandingShares;
+    let dividendYield = tenk.DeclaredDividend / price;
+
+    let workingCapital = Finance.CalcWorkingCapital(tenk.CurrentAssets, tenk.CurrentLiabiliites);
+    let profitMargin = Finance.CalcProfitMargin(tenk.NetIncome, tenk.TotalRevenue);
+    let currentAssetsToCurrentLiab = Finance.CalcCurrentAssetsRatio(tenk.CurrentAssets, tenk.CurrentLiabiliites);
+    let workingCapitalToLongTermDebt = Finance.CalcWorkingCapitalToDebtRatio(workingCapital, tenk.LongTermDebt);
 
 
-            let loadPrice = Test.GetPrice('CVS');
-            loadPrice.then((value: YahooAPI.CSVResult[]) => {
-                let ticker = value[0];
-
-                let priceToEarnings = ticker.AskPrice / tenk.EarningsPerShare;
-                let marketCap = ticker.AskPrice * tenk.OutstandingShares;
-
-                let workingCapital = Finance.CalcWorkingCapital(tenk.CurrentAssets, tenk.CurrentLiabiliites);
-                let profitMargin = Finance.CalcProfitMargin(tenk.NetIncome, tenk.TotalRevenue);
-                let currentAssetsToCurrentLiab = Finance.CalcCurrentAssetsRatio(tenk.CurrentAssets, tenk.CurrentLiabiliites);
-                let workingCapitalToLongTermDebt = Finance.CalcWorkingCapitalToDebtRatio(workingCapital, tenk.LongTermDebt);
+    let minYear = Math.min(tenk.Year, tenk2012.Year, tenk2013.Year);
+    let maxYear = Math.max(tenk.Year, tenk2012.Year, tenk2013.Year);
+    let averageEarningsPerShare = Finance.CalcAverageEarningsPerShare([tenk, tenk2013, tenk2012]);
+    let averageDilutedEarningsPerShare = Finance.CalcAverageDilutedEarningsPerShare([tenk, tenk2013, tenk2012]);
 
 
-                let minYear = Math.min(tenk.Year, tenk2012.Year, tenk2013.Year);
-                let maxYear = Math.max(tenk.Year, tenk2012.Year, tenk2013.Year);
-                let averageEarningsPerShare = Finance.CalcAverageEarningsPerShare([tenk, tenk2013, tenk2012]);
-                let averageDilutedEarningsPerShare = Finance.CalcAverageDilutedEarningsPerShare([tenk, tenk2013, tenk2012]);
+    process.stdout.write('\r\n');
+    // capitalization
+    process.stdout.write(`Price/Earnings (${tenk.Year}): ${priceToEarnings} \r\n`);
+    process.stdout.write(`Outstanding Common Shares (${tenk.Year}): ${tenk.OutstandingShares} \r\n`);
+    process.stdout.write(`Diluted Outstanding Common Shares (${tenk.Year}): ${tenk.DilutedOutstandingShares} \r\n`);
+    process.stdout.write(`Market Capitalization (${tenk.Year}): ${marketCap} \r\n`);
+
+    // income
+    process.stdout.write(`Total Revenue (${tenk.Year}): ${tenk.TotalRevenue} \r\n`);
+    process.stdout.write(`Net Income (${tenk.Year}): ${tenk.NetIncome} \r\n`);
+    process.stdout.write(`Earnings/Share (${tenk.Year}): ${tenk.EarningsPerShare} \r\n`);
+    process.stdout.write(`Diluted Earnings/Share (${tenk.Year}): ${tenk.DilutedEarningsPerShare} \r\n`);
+    process.stdout.write(`Dividend Rate (${tenk.Year}): ${tenk.DeclaredDividend} \r\n`);
+
+    // balance sheet
+    process.stdout.write(`Current Assets (${tenk.Year}): ${tenk.CurrentAssets} \r\n`);
+    process.stdout.write(`Current Liabilities (${tenk.Year}): ${tenk.CurrentLiabiliites} \r\n`);
+    process.stdout.write(`Long-Term Debt (${tenk.Year}): ${tenk.LongTermDebt} \r\n`);
+    process.stdout.write(`Outstanding Preferred Shares (${tenk.Year}): ${tenk.PrefOutstandingShares} \r\n`);
+    process.stdout.write(`Working Capital (${tenk.Year}): ${workingCapital} \r\n`);
+
+    // ratios
 
 
-                process.stdout.write('\r\n');
-                // capitalization
-                process.stdout.write(`Price/Earnings (${tenk.Year}): ${priceToEarnings} \r\n`);
-                process.stdout.write(`Outstanding Common Shares (${tenk.Year}): ${tenk.OutstandingShares} \r\n`);
-                process.stdout.write(`Diluted Outstanding Common Shares (${tenk.Year}): ${tenk.DilutedOutstandingShares} \r\n`);
-                process.stdout.write(`Market Capitalization (${tenk.Year}): ${marketCap} \r\n`);
+    process.stdout.write('\r\n');
+    process.stdout.write(`Average Earnings/Share (${minYear}-${maxYear}): ${averageEarningsPerShare} \r\n`);
+    process.stdout.write(`Average Diluted Earnings/Share (${minYear}-${maxYear}): ${averageDilutedEarningsPerShare} \r\n`);
 
-                // income
-                process.stdout.write(`Total Revenue (${tenk.Year}): ${tenk.TotalRevenue} \r\n`);
-                process.stdout.write(`Net Income (${tenk.Year}): ${tenk.NetIncome} \r\n`);
-                process.stdout.write(`Earnings/Share (${tenk.Year}): ${tenk.EarningsPerShare} \r\n`);
-                process.stdout.write(`Diluted Earnings/Share (${tenk.Year}): ${tenk.DilutedEarningsPerShare} \r\n`);
-                process.stdout.write(`Dividend Rate (${tenk.Year}): ${tenk.DeclaredDividend} \r\n`);
-
-                // balance sheet
-                process.stdout.write(`Current Assets (${tenk.Year}): ${tenk.CurrentAssets} \r\n`);
-                process.stdout.write(`Current Liabilities (${tenk.Year}): ${tenk.CurrentLiabiliites} \r\n`);
-                process.stdout.write(`Long-Term Debt (${tenk.Year}): ${tenk.LongTermDebt} \r\n`);
-                process.stdout.write(`Working Capital (${tenk.Year}): ${workingCapital} \r\n`);
-
-                process.stdout.write(`Outstanding Preferred Shares (${tenk.Year}): ${tenk.PrefOutstandingShares} \r\n`);
-
-                process.stdout.write('\r\n');
-                process.stdout.write(`Average Earnings/Share (${minYear}-${maxYear}): ${averageEarningsPerShare} \r\n`);
-                process.stdout.write(`Average Diluted Earnings/Share (${minYear}-${maxYear}): ${averageDilutedEarningsPerShare} \r\n`);
-
-            });
-        });
-    });
 });
 
 

@@ -17,6 +17,7 @@ import xpath = require('xpath');
 // income tax
 'EffectiveIncomeTaxRateContinuingOperations';
 
+
 module USGAAP {
     export const SharePrice = ['CommonStockMarketPricePerShare'];
 

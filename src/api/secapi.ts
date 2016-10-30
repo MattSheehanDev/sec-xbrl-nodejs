@@ -23,9 +23,10 @@ namespace SecAPI {
 
     // cik can be a cik number or a ticker symbol
     export function GetFilings(cik: string, formType: FilingForm, start: number, resultsPerPage: FilingCount): Promise<string> {
-        let uri = `http://www.sec.gov/cgi-bin/browse-edgar\
-        ?action=getcompany&CIK=${cik}&type=${formType}&dateb=&owner=exclude&start=${start}\
-        &count=${resultsPerPage}&hidefilings=0`;
+        let uri = `http://www.sec.gov/cgi-bin/browse-edgar`;
+        uri +=`?action=getcompany&CIK=${cik}&type=${formType}`;
+        uri +=`&dateb=&owner=exclude&start=${start}`;
+        uri += `&count=${resultsPerPage}&hidefilings=0`;
 
         return new Promise<string>((resolve: Function, reject: Function) => {
             API.Get(uri).then((body: string) => {

@@ -14,50 +14,97 @@ import XBRL from './xbrl/xbrl';
 
 namespace Test {
 
-    export function GetPrice(ticker: string): Promise<YahooAPI.CSVResult[]> {
-        return new Promise<YahooAPI.CSVResult[]>((resolve: Function, reject: Function) => {
-            let priceFile = path.join(process.cwd(), 'test/yahoofinance.csv');
+    function Wait(promises: Promise<any>[]) {
+        return new Promise<any[]>((resolve: Function, reject: Function) => {
+            let values = [].fill(null, 0, promises.length);
+            let finished = 0;
 
-            let read = filesystem.ReadFile(priceFile);
-            read.then((body: string) => {
-                let results = YahooAPI.csv.Parse(body);
-                resolve(results);
-            }, (err: any) => {
-                reject(err);
-            });
+            for (let p of promises) {
+                let index = promises.indexOf(p);
+
+                p.then((value: any) => {
+                    values[index] = value;
+
+                    finished = finished + 1;
+                    if (finished === promises.length) {
+                        let v = values.filter((value: any) => {
+                            return value !== null;
+                        });
+                        resolve(v);
+                    }
+                }, (err: any) => {
+                    finished = finished + 1;
+                    if (finished === promises.length) {
+                        resolve();
+                    }
+                });
+            }
         });
     }
 
-    export function GetCIKS(): Promise<string> {
-        return new Promise<string>((resolve: Function, reject: Function) => {
-            let read = filesystem.ReadFile(path.join(process.cwd(), 'test/ciks.txt'));
-            read.then((data: string) => {
-                // parse out file
-                resolve(data);
+    export function Load(ticker: string) {
+        // we need to load the most recent annual report,
+        // the annual report from 5 years ago,
+        // and the annual report from 10 years ago
+        let load: Promise<any> = XBRLLoader.GetEdgarFilingsList(ticker, 0);
+        load = load.then((filings: SECFiling[]) => {
+            if (filings.length < 10) {
+                // company has been around for less than 10 years and isn't a value security
+            }
+            
+            let forms: Promise<XBRL>[] = [
+                // Current year + 3 year buffer
+                LoadAnnualXBRL(filings[0].url),
+                LoadAnnualXBRL(filings[1].url),
+                LoadAnnualXBRL(filings[2].url),
+                // // 5 years back + 3 year buffer
+                // LoadAnnualXBRL(filings[4].url),
+                // LoadAnnualXBRL(filings[5].url),
+                // LoadAnnualXBRL(filings[6].url),
+                // // 10 years back + 3 year buffer
+                // LoadAnnualXBRL(filings[9].url),
+                // LoadAnnualXBRL(filings[10].url),
+                // LoadAnnualXBRL(filings[11].url)
+            ];
 
-            }, (err: NodeJS.ErrnoException) => {
-                // SecAPI.GetCIKs().then((data: string) => {
-                //     // write to file
-                //     let write = filesystem.WriteFile(path.join(workingDir, 'ciks.txt'), data);
-                //     write.then(() => {
-                //         console.log('Wrote ciks.txt');
-                //         resolve(data);
-                //     });
-                // });
-            });
+            return Wait(forms);
+            // return Promise.all<XBRL>(forms);
         });
+        // load.then((xbrlSets: XBRL[]) => {
+
+        // });
+        return load;
+
+        // we need to load the current price,
+        // the price from last year, and the price from the year before that.
     }
+
+    function LoadAnnualXBRL(url: string): Promise<XBRL> {
+        let load: Promise<any> = XBRLLoader.GetEdgarDocumentsList(url);
+        load = load.then((docs: SECDocument[]) => {
+            let doc: SECDocument;
+            for (let d of docs) {
+                if (d.type.match(/.INS$/gi)) {
+                    doc = d;
+                    break;
+                }
+            }
+            return XBRLLoader.Get10KXBRL(doc.url);
+        });
+        return load;
+    }
+
 
     export function Get10KFilings(cik: string): Promise<SECFiling[]> {
         return new Promise<SECFiling[]>((resolve: Function, reject: Function) => {
-            let read = filesystem.ReadFile(path.join(process.cwd(), 'test/filings.html'));
+            let read = filesystem.ReadFile(path.join(process.cwd(), 'test/cvs/filings.html'));
             read = read.then((body: string) => {
 
                 let filings = Scraper.Filings(body);
                 resolve(filings);
             });
             read.then(null, (err: NodeJS.ErrnoException) => {
-                let load = XBRLLoader.Get10KFilingsList(cik);
+                let load = XBRLLoader.GetEdgarFilingsList(cik, 0);
                 load.then((filings: SECFiling[]) => {
                     resolve(filings);
                 });
@@ -70,14 +117,14 @@ namespace Test {
 
     export function GetForms(uri: string): Promise<SECDocument[]> {
         return new Promise<SECDocument[]>((resolve: Function, reject: Function) => {
-            let read = filesystem.ReadFile(path.join(process.cwd(), 'test/forms.html'));
+            let read = filesystem.ReadFile(path.join(process.cwd(), 'test/cvs/forms.html'));
             read = read.then((body: string) => {
 
                 let forms = Scraper.Forms(body);
                 resolve(forms);
             });
             read.then(null, (err: NodeJS.ErrnoException) => {
-                let load = XBRLLoader.Get10KDocumentsList(uri);
+                let load = XBRLLoader.GetEdgarDocumentsList(uri);
                 load.then((docs: SECDocument[]) => {
                     resolve(docs);
                 });
@@ -90,7 +137,7 @@ namespace Test {
 
     export function GetXBRL(uri: string): Promise<XBRL> {
         return new Promise<XBRL>((resolve: Function, reject: Function) => {
-            let read = filesystem.ReadFile(path.join(process.cwd(), 'test/xbrl.xml'));
+            let read = filesystem.ReadFile(path.join(process.cwd(), 'test/cvs/xbrl.xml'));
             read = read.then((data: string) => {
                 let dom = new DOMParser();
                 let doc = dom.parseFromString(data);
@@ -108,6 +155,44 @@ namespace Test {
                 // let search = SecAPI.GetXBRL(uri);
                 // search.then((data: string) => {
                 //     resolve(data);
+                // });
+            });
+        });
+    }
+
+
+
+    export function GetPrice(ticker: string): Promise<YahooAPI.Result> {
+        // return YahooAPI.GetPrice(ticker);
+
+        return new Promise<YahooAPI.Result>((resolve: Function, reject: Function) => {
+            let priceFile = path.join(process.cwd(), 'test/cvs/yahoofinance.json');
+
+            let read = filesystem.ReadFile(priceFile);
+            read.then((body: string) => {
+                let results = JSON.parse(body);// YahooAPI.csv.Parse(body);
+                resolve(results);
+            }, (err: any) => {
+                reject(err);
+            });
+        });
+    }
+
+    export function GetCIKS(): Promise<string> {
+        return new Promise<string>((resolve: Function, reject: Function) => {
+            let read = filesystem.ReadFile(path.join(process.cwd(), 'test/cvs/ciks.txt'));
+            read.then((data: string) => {
+                // parse out file
+                resolve(data);
+
+            }, (err: NodeJS.ErrnoException) => {
+                // SecAPI.GetCIKs().then((data: string) => {
+                //     // write to file
+                //     let write = filesystem.WriteFile(path.join(workingDir, 'ciks.txt'), data);
+                //     write.then(() => {
+                //         console.log('Wrote ciks.txt');
+                //         resolve(data);
+                //     });
                 // });
             });
         });

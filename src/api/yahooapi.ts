@@ -11,49 +11,31 @@ namespace YahooAPI {
 
 
     export function GetPrice(ticker: string|string[]): Promise<Result> {
-        return new Promise<Result>((resolve: Function, reject: Function) => {
-            // yahoo.finance.quotes
-            let symbols = `(${concatTickers(ticker)})`;
-            let query = `select * from yahoo.finance.quotes where symbol in ${symbols}`;
+        // yahoo.finance.quotes
+        let symbols = `(${concatTickers(ticker)})`;
+        let query = `select * from yahoo.finance.quotes where symbol in ${symbols}`;
 
-            let component = `q=${encodeURIComponent(query)}&format=${YQL_FORMAT}&env=${YQL_ENV}`;
-            let uri = `${YQL_URL}?${component}`;
-
-            API.Get(uri).then((value: string) => {
-                
-                let result: Result = JSON.parse(value);
-                resolve(result);
-
-            }, (err: any) => {
-
-                reject(err);
-            });
-        });
+        return Get(query);
     }
 
     export function GetHistoricalPrice(ticker: string|string[], startDate: string, endDate: string) {
-        return new Promise<Result>((resolve: Function, reject: Function) => {
-            // yahoo.finance.historicaldata
-            let symbols = `(${concatTickers(ticker)})`;
-            let query = `select * from yahoo.finance.historicaldata where symbol in ${symbols}`;
-            query += ` and startDate = "${startDate}" and endDate = "${endDate}"`;
-            
-            let component = `q=${encodeURIComponent(query)}&format=${YQL_FORMAT}&env=${YQL_ENV}`;
-            let uri = `${YQL_URL}?${component}`;
+        // yahoo.finance.historicaldata
+        let symbols = `(${concatTickers(ticker)})`;
+        let query = `select * from yahoo.finance.historicaldata where symbol in ${symbols}`;
+        query += ` and startDate = "${startDate}" and endDate = "${endDate}"`;
 
-            API.Get(uri).then((value: string) => {
-
-                let result: Result = JSON.parse(value);
-                resolve(result);
-
-            }, (err: any) => {
-
-                reject(err);
-
-            });
-        });
+        return Get(query);
     }
 
+
+    function Get(query: string) {
+        let component = `q=${encodeURIComponent(query)}&format=${YQL_FORMAT}&env=${YQL_ENV}`;
+        let uri = `${YQL_URL}?${component}`;
+
+        return API.Get(uri).then((value: string) => {
+            return JSON.parse(value);
+        });
+    }
 
     function concatTickers(ticker: string|string[]) {
         if (Array.isArray(ticker)) {
@@ -71,34 +53,26 @@ namespace YahooAPI {
 
 
         export function GetPrice(ticker: string|string[]): Promise<CSVResult[]> {
-            return new Promise<CSVResult[]>((resolve: Function, reject: Function) => {
-                let url = 'http://finance.yahoo.com/d/quotes.csv';
-                // let format = 'sb2b3jk';
-                let format = 'sabdyj1f6j2eb4p5p6rr5r6r7s7s6ghkj';
+            let url = 'http://finance.yahoo.com/d/quotes.csv';
+            let format = 'sabdyj1f6j2eb4p5p6rr5r6r7s7s6ghkj';
 
-                let symbols: string;
-                if (Array.isArray(ticker)) {
-                    symbols = ticker.join('+');
-                }
-                else {
-                    symbols = ticker;
-                }
+            let symbols: string;
+            if (Array.isArray(ticker)) {
+                symbols = ticker.join('+');
+            }
+            else {
+                symbols = ticker;
+            }
 
-                let uri = `${url}?s=${symbols}&f=${format}`;
+            let uri = `${url}?s=${symbols}&f=${format}`;
 
-                API.Get(uri).then((body: string) => {
-
-                    let results = Parse(body);
-                    resolve(results);
-
-                }, (err: any) => {
-                    reject(err);
-                });
+            return API.Get(uri).then((body: string) => {
+                return Parse(body);
             });
         }
 
 
-        export function Parse(body: string) {
+        function Parse(body: string) {
             // parse csv
             let header = 'Symbol,AskPrice,BidPrice,DividendPerShare,DividendYield,MarketCap,SharesFloat,SharesOutstanding,\
             EPS,EPSCurrentEst,EPSNextEst,BookValue,PriceToSales,PriceToBook,PERatio,PECurrentEst,PENextEst,PEGRatio,ShortRatio,\
