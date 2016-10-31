@@ -17,6 +17,16 @@ import xpath = require('xpath');
 // income tax
 'EffectiveIncomeTaxRateContinuingOperations';
 
+module DEI {
+
+    export const AmendmentFlag = ['AmendmentFlag'];
+    export const FiscalYearEndDate = ['CurrentFiscalYearEndDate'];
+    export const FiscalYearFocusPeriod = ['DocumentFiscalPeriodFocus'];
+    export const FiscalYearFocus = ['DocumentFiscalYearFocus']
+    export const DocumentType = ['DocumentType'];
+    export const CentralIndexKey = ['EntityCentralIndexKey'];
+
+}
 
 module USGAAP {
     export const SharePrice = ['CommonStockMarketPricePerShare'];
