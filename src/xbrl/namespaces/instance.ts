@@ -1,4 +1,5 @@
-import xpath = require('xpath');
+// import xpath = require('xpath');
+import { SelectNS } from './xmlns';
 
 // export function StartDate (year: number) {
 //     let id = `FD${year}Q4YTD`;
@@ -6,7 +7,7 @@ import xpath = require('xpath');
 // }
 // const EndDate = '//xbrli:xbrl/xbrli:context[@id=""]/xbrli:period/xbrli:endDate';
 
-module ContextInstance {
+module Instance {
 
     const Context = `//xbrli:xbrl/xbrli:context`;
     const StartDate = `//xbrli:xbrl/xbrli:context/xbrli:period/xbrli:startDate`;
@@ -14,13 +15,13 @@ module ContextInstance {
 
 
     export function GetYears(document: Document) {
-        let select = xpath.useNamespaces({ xbrli: 'http://www.xbrl.org/2003/instance' });
-        let nodes = select(Context, document);
+        // let select = xpath.useNamespaces({ xbrli: 'http://www.xbrl.org/2003/instance' });
+        let nodes = SelectNS(Context, document);
 
         let years: number[] = [];
 
         for (let node of nodes) {
-            let id = select('@id', node)[0];
+            let id = SelectNS('@id', node)[0];
             let value = id ? id.nodeValue : '';
             
             let fiscalYear = getIdYear(value);
@@ -78,4 +79,4 @@ module ContextInstance {
 
 }
 
-export default ContextInstance;
+export default Instance;

@@ -52,27 +52,16 @@ namespace Test {
                 // company has been around for less than 10 years and isn't a value security
             }
             
+            // TODO: XBRL filings only go back to 2009 (some go back to 2007)
             let forms: Promise<XBRL>[] = [
                 // Current year + 3 year buffer
                 LoadAnnualXBRL(filings[0].url),
                 LoadAnnualXBRL(filings[1].url),
                 LoadAnnualXBRL(filings[2].url),
-                // // 5 years back + 3 year buffer
-                // LoadAnnualXBRL(filings[4].url),
-                // LoadAnnualXBRL(filings[5].url),
-                // LoadAnnualXBRL(filings[6].url),
-                // // 10 years back + 3 year buffer
-                // LoadAnnualXBRL(filings[9].url),
-                // LoadAnnualXBRL(filings[10].url),
-                // LoadAnnualXBRL(filings[11].url)
             ];
 
             return Wait(forms);
-            // return Promise.all<XBRL>(forms);
         });
-        // load.then((xbrlSets: XBRL[]) => {
-
-        // });
         return load;
 
         // we need to load the current price,
@@ -162,10 +151,10 @@ namespace Test {
 
 
 
-    export function GetPrice(ticker: string): Promise<YahooAPI.Result> {
+    export function GetPrice(ticker: string): Promise<YahooAPI.QuoteResult> {
         // return YahooAPI.GetPrice(ticker);
 
-        return new Promise<YahooAPI.Result>((resolve: Function, reject: Function) => {
+        return new Promise<YahooAPI.QuoteResult>((resolve: Function, reject: Function) => {
             let priceFile = path.join(process.cwd(), 'test/cvs/yahoofinance.json');
 
             let read = filesystem.ReadFile(priceFile);

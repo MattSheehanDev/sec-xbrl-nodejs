@@ -10,7 +10,7 @@ namespace YahooAPI {
     // const YQL_ENV = `env=${encodeURIComponent('store://datatables.org/alltableswithkeys')}`;
 
 
-    export function GetPrice(ticker: string|string[]): Promise<Result> {
+    export function GetPrice(ticker: string|string[]): Promise<QuoteResult> {
         // yahoo.finance.quotes
         let symbols = `(${concatTickers(ticker)})`;
         let query = `select * from yahoo.finance.quotes where symbol in ${symbols}`;
@@ -18,8 +18,10 @@ namespace YahooAPI {
         return Get(query);
     }
 
-    export function GetHistoricalPrice(ticker: string|string[], startDate: string, endDate: string) {
+    export function GetHistoricalPrice(ticker: string|string[], startDate: string, endDate: string): Promise<HistoricalResult> {
         // yahoo.finance.historicaldata
+        // NOTE: if startDate and endDate does not cover a range when the market was open 
+        // then HistoricalResult.results will be null
         let symbols = `(${concatTickers(ticker)})`;
         let query = `select * from yahoo.finance.historicaldata where symbol in ${symbols}`;
         query += ` and startDate = "${startDate}" and endDate = "${endDate}"`;
@@ -173,7 +175,8 @@ namespace YahooAPI {
     }
 
 
-    export interface Result {
+
+    export interface QuoteResult {
         query: {
             count: number;                  // number of quotes
             created: string;                // YYYY-MM-DDTHH:MM:SSZ
@@ -266,6 +269,29 @@ namespace YahooAPI {
         StockExchange: string;
         DividendYield: string;
         PercentChange: string;
+    }
+
+
+    export interface HistoricalResult {
+        query: {
+            count: number;                  // number of quotes
+            created: string;                // YYYY-MM-DDTHH:MM:SSZ
+            lang: string;
+            results: {
+                quote: HistoricalQuote | HistoricalQuote[];
+            }            
+        }
+    }
+
+    export interface HistoricalQuote {
+        Symbol: string;
+        Date: string;               // YYYY-MM-DD
+        Open: string;
+        Close: string;
+        High: string;
+        Low: string;
+        Volume: string;
+        Adj_Close: string;
     }
 
 }

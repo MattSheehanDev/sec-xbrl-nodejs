@@ -1,5 +1,7 @@
 import {TenKValues, TenK} from '../models/tenk';
-import gaap from './gaap';
+
+import gaap from './namespaces/gaap';
+import dei from './namespaces/dei';
 import XBRL from './xbrl';
 
 import xpath = require('xpath');
@@ -8,9 +10,20 @@ import xpath = require('xpath');
 export module AnnualReport {
 
 
-    export function Create10K(xbrl: XBRL, year: number) {
+    export function Create10K(xbrl: XBRL) {
+        let node = dei.Select(dei.FiscalYearFocus, xbrl.deiRoot)[0];
+        let year = parseInt(node.firstChild.data, 10);
+
+        node = dei.Select(dei.DocumentEndDate, xbrl.deiRoot)[0];
+        let endDate = node.firstChild.data;
+        
+        node = dei.Select(dei.DocumentType, xbrl.deiRoot)[0];
+        let docType = node.firstChild.data;
+
         let tenk: TenKValues = {
             year: year,
+            date: endDate,
+            type: docType,
             totalRevenue: totalRevenue(xbrl, year),
             netIncome: netIncome(xbrl, year),
             eps: earningsPerShare(xbrl, year),
@@ -78,7 +91,12 @@ export module AnnualReport {
         let match: RegExpMatchArray;
         let year = -1;
         
+        // ex. cvs 2015,2014
         if (match = date.match(/^(?:FD|FI)(\d{4})Q4(YTD)?$/i)) {
+            year = parseInt(match[1]);
+        }
+        // ex. cvs 2013
+        else if (match = date.match(/^(?:D|I)(\d{4})Q4(YTD)?$/i)) {
             year = parseInt(match[1]);
         }
         else if (match = date.match(/^d(\d{4})$/i)) {

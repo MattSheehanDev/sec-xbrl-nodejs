@@ -1,6 +1,8 @@
 
 export interface TenKValues {
     year: number;
+    type: '10-K'|'10-Q'|string;
+    date: string;
     totalRevenue: number;
     netIncome: number;
     eps: number;
@@ -18,6 +20,9 @@ export interface TenKValues {
 export class TenK {
 
     public readonly Year: number;
+    public readonly Date: Date;
+    public readonly Type: string;
+
     public readonly TotalRevenue: number;
     public readonly NetIncome: number;
     public readonly EarningsPerShare: number;
@@ -34,6 +39,10 @@ export class TenK {
 
     constructor(values: TenKValues) {
         this.Year = values.year;
+        // date should be in YYYY-MM-DD format
+        this.Date = new Date(values.date);
+        this.Type = values.type;
+
         this.TotalRevenue = values.totalRevenue;
         this.NetIncome = values.netIncome;
         this.EarningsPerShare = values.eps;
