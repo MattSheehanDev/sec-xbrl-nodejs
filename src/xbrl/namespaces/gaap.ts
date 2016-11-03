@@ -152,6 +152,8 @@ module USGAAP {
     export const OperatingProfitSummed = [GrossProfit, -OperatingExpenses];
 
     // TODO: sum totals 
+    // TODO: finish income statement names
+    // TODO: finish cash flow names
     // TODO: gaap names to Names module
     // TODO: update dei, instance to work like gaap 
     // TODO: change annualreport to just report
