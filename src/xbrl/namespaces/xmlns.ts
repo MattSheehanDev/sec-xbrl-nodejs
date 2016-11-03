@@ -63,3 +63,45 @@ export function CreateRootNode(document: Document) {
     }
     return root;
 }
+
+export function SumNodes(nodes: any[], year: number) {
+    let sum = 0;
+    for (let i = 0; i < nodes.length; i++) {
+        let node = nodes[i];
+
+        let ref = xpath.select('@contextRef', node)[0];
+        let nodeYear = ref != null ? GetContextYear(ref.value) : 0;
+        // let nodeValue = parseFloat(node.firstChild.data);
+        let nodeValue = GetNodeValue(node);
+
+        if (nodeValue && year === nodeYear) {
+            sum += nodeValue;
+        }
+    }
+    return sum;
+}
+
+export function GetNodeValue(node: any) {
+    let value = parseFloat(node.firstChild.data);
+    return !isNaN(value) ? value : null;
+}
+export function GetContextYear(date: string) {
+    let match: RegExpMatchArray;
+    let year = -1;
+    
+    // ex. cvs 2015,2014
+    if (match = date.match(/^(?:FD|FI)(\d{4})Q4(YTD)?$/i)) {
+        year = parseInt(match[1]);
+    }
+    // ex. cvs 2013
+    else if (match = date.match(/^(?:D|I)(\d{4})Q4(YTD)?$/i)) {
+        year = parseInt(match[1]);
+    }
+    else if (match = date.match(/^d(\d{4})$/i)) {
+        year = parseInt(match[1]);
+    }
+    else if (match = date.match(/^d(\d{4})q(\d{1})(ytd)?$/i)) {
+        year = parseInt(match[1]);
+    }
+    return year;
+}
