@@ -5,21 +5,12 @@ import { SelectNS } from './xmlns';
 // number of outstanding shares at time of reporting
 // (which probably occurs AFTER the time frame that the report covers)
 'EntityCommonStockSharesOutstanding';
-// CIK number
-'EntityCentralIndexKey';
-// FY or Q{\d}
-// i'm guessing for the quarter
-'DocumentFiscalPeriodFocus';
-// year of the reports focus
-'DocumentFiscalYearFocus';
-'DocumentPeriodEndDate'
-// 10-K, 10-Q
-'DocumentType';
 // income tax
 'EffectiveIncomeTaxRateContinuingOperations';
 
 
-module USGAAP {
+export module Taxonomy {
+
     export const SharePrice = 'CommonStockMarketPricePerShare';
 
 
@@ -38,14 +29,6 @@ module USGAAP {
     export const DeferredTaxNet = 'DeferredTaxAssetsNetCurrent';
     export const OtherAssets = 'OtherAssetsCurrent';
 
-    // export const AssetsCurrentSummed = [
-    //     CashAndCashEquivalent,
-    //     ShortTermInvestments,
-    //     AccountsReceivableNet,
-    //     InventoryNet,
-    //     DeferredTaxNet,
-    //     OtherAssets
-    // ];
     // total assets
     export const Assets = 'Assets';
 
@@ -53,13 +36,6 @@ module USGAAP {
     export const Goodwill = 'Goodwill';
     export const IntangibleAssets = 'IntangibleAssetsNetExcludingGoodwill';
     export const OtherAssetsNonCurrent = 'OtherAssetsNoncurrent';
-    // export const AssetsSummed = [
-    //     // +CurrentAssets
-    //     PropertyAndEquipmentNet,
-    //     Goodwill,
-    //     IntangibleAssets,
-    //     OtherAssetsNonCurrent
-    // ];
 
     // Liabilities
     // current liabilities
@@ -71,27 +47,11 @@ module USGAAP {
     export const ShortTermBorrowings = 'ShortTermBorrowings';
     export const LongTermDebtCurrent = 'LongTermDebtCurrent';
 
-    // export const LiabilitiesCurrentSummed = [
-    //     AccountsPayable,
-    //     ClaimsPayable,
-    //     AccruedLiabilities,
-    //     ShortTermBorrowings,
-    //     LongTermDebtCurrent            // portion of the long-term debt owed in the next 12-months
-    // ];
-
     // total liabilities
     export const LongTermDebtNonCurrent = 'LongTermDebtNoncurrent';
     export const DeferredTaxLiabNonCurrent = 'DeferredTaxLiabilitiesNoncurrent';
     export const OtherLiabNonCurrent = 'OtherLiabilitiesNoncurrent';
     export const Commitments = 'CommitmentsAndContingencies';
-
-    // export const LiabilitiesSummed = [
-    //     // +CurrentLiabilities
-    //     LongTermDebtNonCurrent,
-    //     DeferredTaxLiabNonCurrent,
-    //     OtherLiabNonCurrent,
-    //     Commitments
-    // ];
 
     export const LongTermDebt = 'LongTermDebt';   // current and non-current
 
@@ -102,13 +62,6 @@ module USGAAP {
     export const PreferredOutstandingShares = 'PreferredStockSharesOutstanding';
     export const PreferredStockValue = 'PreferredStockValue';
 
-    export const OutstandingCommonShares = 'CommonStockSharesOutstanding';
-    export const OutstandingCommonSharesWeighted = 'WeightedAverageNumberOfSharesOutstandingBasic';
-    export const OutstandingCommonSharesDilutedWeighted = 'WeightedAverageNumberOfDilutedSharesOutstanding'; 
-    // export const OutstandingShares = [
-    //     'WeightedAverageNumberOfSharesOutstandingBasic',
-    //     'CommonStockSharesOutstanding'
-    // ];    
     export const CommonStockValue = 'CommonStockValue';
 
     export const TreasuryStockShares = 'TreasuryStockShares';
@@ -121,21 +74,6 @@ module USGAAP {
     export const StockholdersEquityControlling = 'StockholdersEquity';
     export const StockholdersEquityMinority = 'MinorityInterest';
 
-    // export const TotalStockholdersEquitySummed = [
-    //     StockholdersEquityControlling,
-    //     StockholdersEquityMinority
-    // ];
-    // export const TotalLiabilitiesAndEquitySummed = [
-    //     // all liabilities
-    //     LiabilitiesCurrent,
-    //     LongTermDebtNonCurrent,
-    //     DeferredTaxLiabNonCurrent,
-    //     OtherLiabNonCurrent,
-    //     Commitments,
-    //     // +stockholders equity
-    //     StockholdersEquityControlling,
-    //     StockholdersEquityMinority
-    // ];
 
     //////////////////////////////////////////////////
     // Income Statement
@@ -145,19 +83,10 @@ module USGAAP {
     export const NetRevenue = 'Revenues';
     export const CostOfRevenue = 'CostOfRevenue';
     export const GrossProfit = 'GrossProfit';
-    export const GrossProfitSummed = [NetRevenue, -CostOfRevenue]
 
     export const OperatingExpenses = 'OperatingExpenses';
     export const OperatingProfit = 'OperatingIncomeLoss';
-    export const OperatingProfitSummed = [GrossProfit, -OperatingExpenses];
 
-    // TODO: sum totals 
-    // TODO: finish income statement names
-    // TODO: finish cash flow names
-    // TODO: gaap names to Names module
-    // TODO: update dei, instance to work like gaap 
-    // TODO: change annualreport to just report
-    // TODO: move annualreport function to own modules
     export const InterestExpenseNet = 'InterestIncomeExpenseNet';
     export const DebtExtinguishmentGainsLosses = 'GainsLossesOnExtinguishmentOfDebt';
     export const OperatingIncomeBeforeTax = 'IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments';
@@ -166,16 +95,57 @@ module USGAAP {
     export const OperatingIncomeAfterTax = 'IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest';
 
     export const IncomeFromDiscontinuedOperations = 'IncomeLossFromDiscontinuedOperationsNetOfTax';
+    export const NetIncome = 'ProfitLoss';
+
+    export const NetIncomeFromNonControllingInterest = 'NetIncomeLossAttributableToNoncontrollingInterest';
+    export const NetIncomeAvailable = 'NetIncomeLossAvailableToCommonStockholdersBasic';
+
+    export const OtherForeignIncomeAdj = 'OtherComprehensiveIncomeLossForeignCurrencyTransactionAndTranslationAdjustmentNetOfTax';
+    export const OtherDerivativeIncomeAdj = 'OtherComprehensiveIncomeUnrealizedGainLossOnDerivativesArisingDuringPeriodNetOfTax';
+    export const OtherPensionIncomeAdj = 'OtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansAdjustmentNetOfTax';
+    export const OtherComprehensiveIncomeAdj = 'OtherComprehensiveIncomeLossNetOfTax';
+
+    export const NetIncomeComprehensiveControlling = 'ComprehensiveIncomeNetOfTax';
+
+    export const NetIncomeComprehensiveNonControlling = 'ComprehensiveIncomeNetOfTaxAttributableToNoncontrollingInterest';
+    export const NetIncomeComprehensiveTotal = 'ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest';
 
 
-
-    export const NetIncomeLoss = 'NetIncomeLoss';
-    export const NetIncomeLossToCommonStock = 'NetIncomeLossAvailableToCommonStockholdersBasic';
-
+    // basic earnings per share
+    export const OperatingIncomePerShare = 'IncomeLossFromContinuingOperationsPerBasicShare';
+    export const DiscontinuedOperatingIncomePerShare = 'IncomeLossFromDiscontinuedOperationsNetOfTaxPerBasicShare';
     export const EarningsPerShare = 'EarningsPerShareBasic';
-    export const DilutedEarningsPerShare = 'EarningsPerShareDiluted';
-    export const DeclaredDividend = 'CommonStockDividendsPerShareDeclared';
 
+    export const OutstandingCommonSharesWeighted = 'WeightedAverageNumberOfSharesOutstandingBasic';
+    export const OutstandingCommonShares = 'CommonStockSharesOutstanding';
+
+    // diluted earnings per share
+    export const OperatingIncomePerShareDiluted = 'IncomeLossFromContinuingOperationsPerDilutedShare';
+    export const DiscontinuedOperatingIncomePerShareDiluted = 'IncomeLossFromDiscontinuedOperationsNetOfTaxPerDilutedShare'
+    export const EarningsPerShareDiluted = 'EarningsPerShareDiluted';
+
+    export const OutstandingCommonSharesWeightedDiluted = 'WeightedAverageNumberOfDilutedSharesOutstanding';
+
+    export const DividendDeclared = 'CommonStockDividendsPerShareDeclared';
+
+    // export const NetIncomeLoss = 'NetIncomeLoss';
+
+
+    // TODO: sum totals
+    // TODO: finish cash flow names
+    // TODO: comprehensive balance sheet
+    // TODO: calculate earnings per share manually too?
+    // TODO: update dei, instance to work like gaap
+    // TODO: should seperate nodes by years before SumNodes
+    // TODO: move annualreport function to own modules
+    // TODO: parse schemas
+
+
+}
+
+
+
+export module Query {
 
 
     export function All(document: Document) {
@@ -192,7 +162,7 @@ module USGAAP {
             if (nodes.length > 0)
                 return nodes;
 
-            nodes = selectUsingPrefix(name, document);
+            nodes = selectUsingPrefix(names, document);
             if (nodes.length)
                 return nodes;
         }
@@ -224,4 +194,4 @@ module USGAAP {
 
 }
 
-export default USGAAP;
+export default Query;

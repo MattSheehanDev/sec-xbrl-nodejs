@@ -4,7 +4,7 @@ import YahooAPI from './api/yahooapi';
 
 import XBRL from './xbrl/xbrl';
 
-import AnnualReport from './xbrl/annualreport';
+import Report from './xbrl/reports';
 import TenK from './models/tenk';
 import Finance from './utilities/finance';
 
@@ -40,7 +40,7 @@ load = load.then((xbrlSets: XBRL[]) => {
     let reports: TenK[] = [];
 
     for (let xbrl of xbrlSets) {
-        let tenk = AnnualReport.Create10K(xbrl);
+        let tenk = Report.Create10K(xbrl);
         reports.push(tenk);
     }
 

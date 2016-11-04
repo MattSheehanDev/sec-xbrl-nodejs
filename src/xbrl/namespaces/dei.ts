@@ -10,7 +10,7 @@ module DEI {
     export const FiscalYearFocus = ['DocumentFiscalYearFocus']                  // YYYY
     export const DocumentEndDate = ['DocumentPeriodEndDate'];                   // YYYY-MM-DD
     export const DocumentType = ['DocumentType'];
-    export const CentralIndexKey = ['EntityCentralIndexKey'];
+    export const CentralIndexKey = ['EntityCentralIndexKey'];                   // CIK number
 
 
     export function All(document: Document) {
