@@ -27,7 +27,7 @@ export module Taxonomy {
     export const AccountsReceivableNet = 'AccountsReceivableNetCurrent';
     export const InventoryNet = 'InventoryNet';
     export const DeferredTaxNet = 'DeferredTaxAssetsNetCurrent';
-    export const OtherAssets = 'OtherAssetsCurrent';
+    export const OtherAssetsCurrent = 'OtherAssetsCurrent';
 
     // total assets
     export const Assets = 'Assets';

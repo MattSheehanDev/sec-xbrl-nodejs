@@ -39,14 +39,6 @@ module FileSystem {
             }, (err: NodeJS.ErrnoException) => {
                 resolve(false);
             });
-            // fs.stat(path, (err: NodeJS.ErrnoException, stats: fs.Stats) => {
-            //     if (err) {
-            //         reject(err);
-            //     }
-            //     else {
-            //         stats.
-            //     }
-            // });
         });
     }
 

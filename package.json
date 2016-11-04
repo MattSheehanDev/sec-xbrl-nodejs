@@ -20,7 +20,8 @@
     "request": "2.76.0",
     "cheerio": "0.22.0",
     "xpath": "0.0.23",
-    "xmldom": "0.1.22"
+    "xmldom": "0.1.22",
+    "nunjucks": "2.5.2"
   },
   "devDependencies": {
     "gulp": "3.9.1",
@@ -34,6 +35,7 @@
     "@types/xmldom": "0.1.28",
     "@types/gulp": "3.8.32",
     "@types/gulp-typescript": "0.0.32",
-    "@types/gulp-sourcemaps": "0.0.29"
+    "@types/gulp-sourcemaps": "0.0.29",
+    "@types/nunjucks": "0.0.32"
   }
 }

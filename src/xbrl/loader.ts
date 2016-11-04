@@ -23,10 +23,14 @@ namespace XBRLLoader {
         });
     }
 
-    export function Get10KXBRL(uri: string): Promise<XBRL> {
+    export function GetXBRLFromUrl(uri: string): Promise<XBRL> {
         return SecAPI.GetXBRL(uri).then((data: string) => {
             return new XBRL(dom.parseFromString(data));
         });
+    }
+
+    export function GetXBRLFromString(data: string) {
+        return new XBRL(dom.parseFromString(data));
     }
 
 }

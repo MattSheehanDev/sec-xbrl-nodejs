@@ -52,7 +52,7 @@ namespace Test {
                 // company has been around for less than 10 years and isn't a value security
             }
             
-            // TODO: XBRL filings only go back to 2009 (some go back to 2007)
+            // TODO: XBRL filings only go back to 2009 (some go back to 2007 but 07-09 were 'optional' years)
             let forms: Promise<XBRL>[] = [
                 // Current year + 3 year buffer
                 LoadAnnualXBRL(filings[0].url),
@@ -78,7 +78,7 @@ namespace Test {
                     break;
                 }
             }
-            return XBRLLoader.Get10KXBRL(doc.url);
+            return XBRLLoader.GetXBRLFromUrl(doc.url);
         });
         return load;
     }
@@ -134,17 +134,13 @@ namespace Test {
                 resolve(new XBRL(doc));
             });
             read.then(null, (err: NodeJS.ErrnoException) => {
-                let load = XBRLLoader.Get10KXBRL(uri);
+                let load = XBRLLoader.GetXBRLFromUrl(uri);
                 load.then((value: XBRL) => {
                     resolve(value);
                 });
                 load.then(null, (err: any) => {
                     reject(err);
                 });
-                // let search = SecAPI.GetXBRL(uri);
-                // search.then((data: string) => {
-                //     resolve(data);
-                // });
             });
         });
     }

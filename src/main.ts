@@ -10,6 +10,11 @@ import Finance from './utilities/finance';
 
 import Test from './test';
 
+import nunjucks = require('nunjucks');
+import path = require('path');
+import fs from './utilities/filesystem';
+import XBRLLoader from './xbrl/loader';
+
 let isRelease = process.env.NODE_ENV === 'release';
 
 
@@ -28,24 +33,60 @@ let isRelease = process.env.NODE_ENV === 'release';
 
 
 
+function renderNunjucks(inputFilePath: string, searchRelativePaths: string[], context: any): Promise<string> {
+    let read = fs.ReadFile(inputFilePath);
+    read = read.then((data: string) => {
+        let env = nunjucks.configure(searchRelativePaths, {
+            autoescape: true,
+            trimBlocks: false,
+            lstripBlocks: false
+        });
 
-// Example
-let cvsCIK = '0000064803';
-let cvsTicker = 'CVS';
-let cvsXBRL: XBRL;
+        return new Promise<string>((resolve: Function, reject: Function) => {
+            env.renderString(data, context, (err: any, res: string) => {
+                if (err) {
+                    reject(err);
+                }
+                else {
+                    resolve(res);
+                }
+            });
+        });
+    });
+    return read;
+}
 
 
-let load: Promise<any> = Test.Load(cvsCIK);
-load = load.then((xbrlSets: XBRL[]) => {
-    let reports: TenK[] = [];
+let read = fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
+read = read.then((data: string) => {
+    let xbrl = XBRLLoader.GetXBRLFromString(data);
+    let report = Report.CreateBalanceSheet(xbrl);
 
-    for (let xbrl of xbrlSets) {
-        let tenk = Report.Create10K(xbrl);
-        reports.push(tenk);
-    }
-
-    let r = reports;
+    return renderNunjucks(path.join(process.cwd(), './output/template10k.html'), [], { reports: [report] });
 });
+read.then((html: string) => {
+    return fs.WriteFile(path.join(process.cwd(), './output/cvs-20141231.html'), html);
+});
+
+
+// // Example
+// let cvsCIK = '0000064803';
+// let cvsTicker = 'CVS';
+// let cvsXBRL: XBRL;
+
+
+// let load: Promise<any> = Test.Load(cvsCIK);
+// load = load.then((xbrlSets: XBRL[]) => {
+//     let reports: TenK[] = [];
+
+//     for (let xbrl of xbrlSets) {
+//         let tenk = Report.Create10K(xbrl);
+//         reports.push(tenk);
+//     }
+
+//     let r = reports;
+// });
+
 
 // let yahoo = YahooAPI.GetHistoricalPrice('CVS', '2010-01-02', '2010-01-02');
 // yahoo.then((value: YahooAPI.HistoricalResult) => {
