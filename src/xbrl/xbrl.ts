@@ -3,7 +3,7 @@ import xpath = require('xpath');
 import { XBRL_NS, SelectNS, CreateRootNode } from './namespaces/xmlns';
 import context from './namespaces/instance';
 import gaap from './namespaces/gaap';
-import dei from './namespaces/dei';
+import { All as allDEINodes } from './namespaces/dei';
 
 
 
@@ -27,7 +27,7 @@ class XBRL {
 
         // Create a root dei node and clone dei nodes
         this.deiRoot = CreateRootNode(this.document);
-        let deiNodes: Element[] = dei.All(doc);
+        let deiNodes: Element[] = allDEINodes(doc);
         for (let node of gaapNodes) {
             this.deiRoot.appendChild(node.cloneNode(true));
         }

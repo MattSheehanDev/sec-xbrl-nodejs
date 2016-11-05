@@ -71,8 +71,7 @@ export function SumNodes(nodes: any[], year: number) {
 
         let ref = xpath.select('@contextRef', node)[0];
         let nodeYear = ref != null ? GetContextYear(ref.value) : 0;
-        // let nodeValue = parseFloat(node.firstChild.data);
-        let nodeValue = GetNodeValue(node);
+        let nodeValue = GetNumNodeValue(node);
 
         if (nodeValue && year === nodeYear) {
             sum += nodeValue;
@@ -81,7 +80,7 @@ export function SumNodes(nodes: any[], year: number) {
     return sum;
 }
 
-export function GetNodeValue(node: any) {
+export function GetNumNodeValue(node: any) {
     let value = parseFloat(node.firstChild.data);
     return !isNaN(value) ? value : null;
 }

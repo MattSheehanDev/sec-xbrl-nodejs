@@ -139,6 +139,8 @@ export module Taxonomy {
     // TODO: should seperate nodes by years before SumNodes
     // TODO: move annualreport function to own modules
     // TODO: parse schemas
+    // TODO: make xbrl gaap node objects
+    // TODO: xbrl-us api? https://github.com/xbrlus/data_analysis_toolkit/tree/master/pages/api
 
 
 }

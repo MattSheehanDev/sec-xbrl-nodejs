@@ -62,7 +62,10 @@ read = read.then((data: string) => {
     let xbrl = XBRLLoader.GetXBRLFromString(data);
     let report = Report.CreateBalanceSheet(xbrl);
 
-    return renderNunjucks(path.join(process.cwd(), './output/template10k.html'), [], { reports: [report] });
+    return renderNunjucks(path.join(process.cwd(), './output/template10k.html'), [], {
+        entity: Report.CreateEntityInformation(xbrl),
+        reports: report
+    });
 });
 read.then((html: string) => {
     return fs.WriteFile(path.join(process.cwd(), './output/cvs-20141231.html'), html);
