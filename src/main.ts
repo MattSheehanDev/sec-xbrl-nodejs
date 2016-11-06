@@ -60,11 +60,14 @@ function renderNunjucks(inputFilePath: string, searchRelativePaths: string[], co
 let read = fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
 read = read.then((data: string) => {
     let xbrl = XBRLLoader.GetXBRLFromString(data);
-    let report = Report.CreateBalanceSheet(xbrl);
 
-    return renderNunjucks(path.join(process.cwd(), './output/template10k.html'), [], {
+    let balanceSheets = Report.CreateBalanceSheet(xbrl);
+    let financialPositions = Report.CreateFinancialPosition(xbrl);
+
+    return renderNunjucks(path.join(process.cwd(), './templates/index.html'), ['.', './templates/'], {
         entity: Report.CreateEntityInformation(xbrl),
-        reports: report
+        balanceSheets: balanceSheets,
+        financials: financialPositions
     });
 });
 read.then((html: string) => {

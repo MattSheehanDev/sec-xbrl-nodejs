@@ -57,21 +57,31 @@ export module Taxonomy {
     // Stockholders Equity
     export const TotalStockholdersEquity = 'StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest';
     export const TotalLiabilitiesAndEquity = 'LiabilitiesAndStockholdersEquity';
-
-    export const PreferredOutstandingShares = 'PreferredStockSharesOutstanding';
+    
     export const PreferredStockValue = 'PreferredStockValue';
-
     export const CommonStockValue = 'CommonStockValue';
-
-    export const TreasuryStockShares = 'TreasuryStockShares';
     export const TreasuryStockValue = 'TreasuryStockValue';
 
-    export const CommonStockSharesHeldInEmployeeTrust = 'CommonStockSharesHeldInEmployeeTrust';
+    export const EmployeeTrustValue = 'CommonStockSharesHeldInEmployeeTrust';
     export const CapitalSurplus = 'AdditionalPaidInCapital';
     export const RetainedEarnings = 'RetainedEarningsAccumulatedDeficit';
     export const AccumulatedOtherIncomeLoss = 'AccumulatedOtherComprehensiveIncomeLossNetOfTax';
     export const StockholdersEquityControlling = 'StockholdersEquity';
     export const StockholdersEquityMinority = 'MinorityInterest';
+
+
+    export const PreferredStockPar = 'PreferredStockParOrStatedValuePerShare';
+    export const PreferredStockAuthorized = 'PreferredStockSharesAuthorized';
+    export const PreferredStockIssued = 'PreferredStockSharesIssued';
+    export const PreferredStockOutstanding = 'PreferredStockSharesOutstanding';
+
+    export const CommonStockPar = 'CommonStockParOrStatedValuePerShare';
+    export const CommonStockAuthorized = 'CommonStockSharesAuthorized';
+    export const CommonStockIssued = 'CommonStockSharesIssued';
+    export const CommonStockOutstanding = 'CommonStockSharesOutstanding';
+
+    export const TreasuryStockShares = 'TreasuryStockShares';
+    export const EmployeeTrustShares = 'CommonStockSharesHeldInEmployeeTrustShares'
 
 
     //////////////////////////////////////////////////
@@ -116,8 +126,7 @@ export module Taxonomy {
     export const EarningsPerShare = 'EarningsPerShareBasic';
 
     export const OutstandingCommonSharesWeighted = 'WeightedAverageNumberOfSharesOutstandingBasic';
-    export const OutstandingCommonShares = 'CommonStockSharesOutstanding';
-
+    
     // diluted earnings per share
     export const OperatingIncomePerShareDiluted = 'IncomeLossFromContinuingOperationsPerDilutedShare';
     export const DiscontinuedOperatingIncomePerShareDiluted = 'IncomeLossFromDiscontinuedOperationsNetOfTaxPerDilutedShare'
@@ -139,6 +148,8 @@ export module Taxonomy {
     // TODO: move annualreport function to own modules
     // TODO: parse schemas
     // TODO: make xbrl gaap node objects
+    // TODO: make xbrl instance node objects (balance=debit/credit, type, nillable, abstract, ...)
+    // TODO: format output for templates
     // TODO: xbrl-us api? https://github.com/xbrlus/data_analysis_toolkit/tree/master/pages/api
 
 

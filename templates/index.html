@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>10K Template</title>
+
+    <style>
+        html {
+            font: 12px/22px helvetica;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+        table {
+            border: 2px solid #00B25B;
+        }
+        table thead {
+            background-color: #00B25B;
+            color: #F2FFF8;
+        }
+        table tbody tr:nth-child(even) {
+            background-color: #D0FBDE;
+        }
+        table tbody tr:nth-child(odd) {
+            background-color: white;
+        }
+        table tbody tr .table-section {
+            font-weight: bold;
+        }
+        table tbody tr .table-section-total {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>{{ entity.Name }}</h2>
+
+    {% include "balancesheet.html" %}
+    {% include "financials.html" %}
+
+</body>
+</html>
+
