@@ -1,6 +1,5 @@
-// /// <reference path="../../../typings/xpath/index.d.ts" />
-// import xpath = require('xpath');
 import { SelectNS } from './xmlns';
+import { GaapNode } from '../node';
 
 // number of outstanding shares at time of reporting
 // (which probably occurs AFTER the time frame that the report covers)
@@ -40,7 +39,7 @@ export module Taxonomy {
     // Liabilities
     // current liabilities
     export const LiabilitiesCurrent = 'LiabilitiesCurrent';
-    
+
     export const AccountsPayable = 'AccountsPayableCurrent';
     export const ClaimsPayable = 'ClaimsAndDiscountsPayable';
     export const AccruedLiabilities = 'AccruedLiabilitiesCurrent';
@@ -147,53 +146,55 @@ export module Taxonomy {
 
 
 
-export module Query {
-
-
-    export function All(document: Document) {
-        // let select = xpath.useNamespaces({ usgaap: 'http://fasb.org/us-gaap/2013-01-31' });
-        return SelectNS(`//*[namespace-uri()='http://fasb.org/us-gaap/2013-01-31']`, document);
-    }
-
-    export function Select(names: string|string[], document: Document|Element): any[] {
-        if (Array.isArray(names)) {
-            return selectFromArray(names, document);
-        }
-        else {
-            let nodes = selectUsingNS(names, document);
-            if (nodes.length > 0)
-                return nodes;
-
-            nodes = selectUsingPrefix(names, document);
-            if (nodes.length)
-                return nodes;
-        }
-        return [];
-    }
-    function selectFromArray(names: string[], document: Document|Element) {
-        let nodes: Element[] = [];
-        for (let name of names) {
-            nodes = nodes.concat(selectUsingNS(name, document));
-            // if (nodes.length > 0) return nodes;
-        }
-
-        if (nodes) return nodes;
-
-        for (let name of names) {
-            nodes = nodes.concat(selectUsingPrefix(name, document));
-            // if (nodes.length) return nodes;
-        }
-        return nodes;
-    }
-    function selectUsingNS(name: string, document: Document|Element) {
-        let usingNS = `//*[local-name()='${name}' and namespace-uri()='http://fasb.org/us-gaap/2013-01-31']`;
-        return SelectNS(usingNS, document);
-    }
-    function selectUsingPrefix(name: string, document: Document|Element) {
-        let usingPrefix = `//*[local-name()='${name}' and starts-with(name(), 'us-gaap')]`;
-        return SelectNS(usingPrefix, document);
-    }
-
+export function All(document: Document) {
+    // let select = xpath.useNamespaces({ usgaap: 'http://fasb.org/us-gaap/2013-01-31' });
+    return SelectNS(`//*[namespace-uri()='http://fasb.org/us-gaap/2013-01-31']`, document);
 }
 
-export default Query;
+export function Select(names: string | string[], document: Document | Element): GaapNode[] {
+    if (Array.isArray(names)) {
+        return selectFromArray(names, document);
+    }
+    else {
+        let nodes = selectUsingNS(names, document);
+        if (nodes.length > 0)
+            return createGaapNodes(nodes);
+
+        nodes = selectUsingPrefix(names, document);
+        if (nodes.length)
+            return createGaapNodes(nodes);
+    }
+    return [];
+}
+
+
+
+function selectFromArray(names: string[], document: Document | Element): GaapNode[] {
+    let nodes: Element[] = [];
+    for (let name of names) {
+        nodes = nodes.concat(selectUsingNS(name, document));
+    }
+
+    if (nodes) return createGaapNodes(nodes);
+
+    for (let name of names) {
+        nodes = nodes.concat(selectUsingPrefix(name, document));
+    }
+    return createGaapNodes(nodes);
+}
+function selectUsingNS(name: string, document: Document | Element) {
+    let usingNS = `//*[local-name()='${name}' and namespace-uri()='http://fasb.org/us-gaap/2013-01-31']`;
+    return SelectNS(usingNS, document);
+}
+function selectUsingPrefix(name: string, document: Document | Element) {
+    let usingPrefix = `//*[local-name()='${name}' and starts-with(name(), 'us-gaap')]`;
+    return SelectNS(usingPrefix, document);
+}
+
+function createGaapNodes(nodes: any[]) {
+    let gaapNodes: GaapNode[] = [];
+    for (let n of nodes) {
+        gaapNodes.push(new GaapNode(n));
+    }
+    return gaapNodes;
+}

@@ -1,26 +1,22 @@
-import xpath = require('xpath');
-
 import { XBRL_NS, SelectNS, CreateRootNode } from './namespaces/xmlns';
-import context from './namespaces/instance';
-import gaap from './namespaces/gaap';
+import { All as allGaapNodes } from './namespaces/gaap';
 import { All as allDEINodes } from './namespaces/dei';
 
 
 
 
-class XBRL {
+export class XBRLDocument {
 
     public readonly document: Document;
     public readonly gaapRoot: Element;
     public readonly deiRoot: Element;
-    public readonly years: number[];
 
     constructor(doc: Document) {
         this.document = doc;
 
         // Create a root gaap node and clone gaap nodes
         this.gaapRoot = CreateRootNode(this.document);
-        let gaapNodes: Element[] = gaap.All(doc);
+        let gaapNodes: Element[] = allGaapNodes(doc);
         for (let node of gaapNodes) {
             this.gaapRoot.appendChild(node.cloneNode(true));
         }
@@ -31,11 +27,10 @@ class XBRL {
         for (let node of gaapNodes) {
             this.deiRoot.appendChild(node.cloneNode(true));
         }
-
-
-        this.years = context.GetYears(this.document);
     }
 
 }
 
-export default XBRL;
+export default XBRLDocument;
+
+
