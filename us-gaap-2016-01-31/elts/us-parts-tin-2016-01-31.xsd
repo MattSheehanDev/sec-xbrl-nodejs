@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2016.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<xs:schema attributeFormDefault='unqualified' elementFormDefault='qualified' targetNamespace='http://fasb.org/tin-part/2016-01-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:tin-part='http://fasb.org/tin-part/2016-01-31' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<xs:import namespace='http://www.xbrl.org/2003/linkbase' schemaLocation='http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd' />
+<xs:element id='tin-part_PublishDate' name='PublishDate' substitutionGroup='link:part' type='xs:gYearMonth' >
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      Publish date for Taxonomy Implementation Note in [YYYY-MM] format
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element id='tin-part_Source' name='Source' substitutionGroup='link:part' type='xs:string' >
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      Source for Taxonomy Implementation Note.  Examples include: Taxonomy Implementation Guide [TIG]; Accounting Standards Update [ASU]
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element id='tin-part_SourceName' name='SourceName' substitutionGroup='link:part' type='xs:string' >
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      Source name, example: Subsequent Events
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element id='tin-part_SourceVersion' name='SourceVersion' substitutionGroup='link:part' type='xs:string' >
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      Source version
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element id='tin-part_Positive_XBRL_Value' name='Positive_XBRL_Value' substitutionGroup='link:part' type='xs:string' >
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      XBRL value to be entered as positive, when reported amount is present; examples include facts reported as [Gain] [Increase] [Accumulated Earnings].
+    </xs:documentation>
+  </xs:annotation> 
+</xs:element>
+<xs:element id='tin-part_Negative_XBRL_Value' name='Negative_XBRL_Value' substitutionGroup='link:part' type='xs:string' >
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      XBRL value to be entered as negative, when reported amount is present; examples include facts reported as [Loss] [Decrease] [Accumulated Deficit].
+    </xs:documentation>
+  </xs:annotation>  
+</xs:element>
+<xs:element id='tin-part_Note' name='Note' substitutionGroup='link:part' type='xs:string' >
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      Taxonomy implementation note.
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element id='tin-part_AlternateElement' name='AlternateElement' substitutionGroup='link:part' type='xs:QName' >
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      Potential alternate element name(s).
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element id='tin-part_AlternateElementForPeriodOfAndAfterAdoption' name='AlternateElementForPeriodOfAndAfterAdoption' substitutionGroup='link:part' type='xs:QName' >
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      Potential alternate element names(s) for period of and after adoption.
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element id='tin-part_AlternateElementForPeriodsPriorToAdoption' name='AlternateElementForPeriodsPriorToAdoption' substitutionGroup='link:part' type='xs:QName' >
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      Potential alternate element names(s) for periods prior to adoption.
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element id='tin-part_TransitionOption' name='TransitionOption' substitutionGroup='link:part' type='xs:QName' >
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      Transition options for new ASU.  Appropriate values include: [Retrospective] or [Prospective]      
+    </xs:documentation>
+  </xs:annotation>  
+</xs:element>
+<xs:element id='tin-part_URI' name='URI' substitutionGroup='link:part' type='xs:anyURI' >
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      URI link to Taxonomy Implementation Guide.
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+</xs:schema>

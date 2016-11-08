@@ -9,7 +9,7 @@ import XBRL from './xbrl';
 namespace XBRLLoader {
 
     let dom = new DOMParser();
-   
+
 
     export function GetEdgarFilingsList(cik: string, start: number): Promise<SECFiling[]> {
         return SecAPI.GetFilings(cik, '10-k', start, 20).then((body: string) => {

@@ -10,6 +10,10 @@ import Finance from './utilities/finance';
 
 import Test from './test';
 
+import API from './api/api';
+import { DOMParser } from 'xmldom';
+import { XS } from './xbrl/schema/parse';
+
 import nunjucks = require('nunjucks');
 import path = require('path');
 import fs from './utilities/filesystem';
@@ -57,6 +61,69 @@ function renderNunjucks(inputFilePath: string, searchRelativePaths: string[], co
 }
 
 
+enum NodeTypes {
+    ELEMENT_NODE = 1,
+    ATTRIBUTE_NODE = 2,
+    TEXT_NODE = 3,
+    CDATA_SECTION_NODE = 4,
+    ENTITY_REFERENCE_NODE = 5,
+    ENTITY_NODE = 6,
+    PROCESSING_INSTRUCTION_NODE = 7,
+    COMMENT_NODE = 8,
+    DOCUMENT_NODE = 9,
+    DOCUMENT_TYPE_NODE = 10,
+    DOCUMENT_FRAGMENT_NODE = 11,
+    NOTATION_NODE = 12
+}
+
+
+// TODO: parse schemas
+
+// let schema = fs.ReadFile(path.join(process.cwd(), './us-gaap-2016-01-31/elts/us-gaap-2016-01-31.xsd'));
+// schema = schema.then((data: string) => {
+//     let parser = new DOMParser();
+
+//     let document = parser.parseFromString(data);
+//     console.log(document.childNodes.length);
+
+//     let namespaces = new Map<string, string>();
+
+//     for (let i = 0; i < document.childNodes.length; i++) {
+//         let root = document.childNodes.item(i);
+
+//         if (root.nodeType === NodeTypes.ELEMENT_NODE) {
+//             // everything else is the child of the schema node    
+//             if (root.localName === 'schema') {
+//                 // first get the namespaces
+//                 for (let i = 0; i < root.attributes.length; i++) {
+//                     let attr = root.attributes[i];
+
+//                     if (attr.prefix === 'xmlns') {
+//                         if(!namespaces.has(attr.localName)) {
+//                             namespaces.set(attr.localName, attr.value);
+//                             console.log(`name: ${attr.localName}, value: ${attr.value}`);
+//                         }
+//                     }
+//                 }
+
+//                 // loop through each of the children nodes
+//                 for (let i = 0; i < root.childNodes.length; i++) {
+//                     let node = root.childNodes.item(i);
+
+//                     if (node.localName === 'element') {
+//                         if (node.localName === 'import') {
+
+//                         }
+//                         else if (node.localName === 'element') {
+//                             let el = new XS.ElementNode(<Element>node, namespaces);
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// });
+
 let read = fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
 read = read.then((data: string) => {
     let xbrl = XBRLLoader.GetXBRLFromString(data);
@@ -70,8 +137,11 @@ read = read.then((data: string) => {
         financials: financialPositions
     });
 });
-read.then((html: string) => {
+read = read.then((html: string) => {
     return fs.WriteFile(path.join(process.cwd(), './output/cvs-20141231.html'), html);
+});
+read.then(() => {
+    console.log('Wrote output.');
 });
 
 
