@@ -7,12 +7,13 @@ import XBRL from './xbrl/xbrl';
 import Report from './xbrl/reports';
 import TenK from './models/tenk';
 import Finance from './utilities/finance';
+import DFS from './utilities/dfs';
 
 import Test from './test';
 
 import API from './api/api';
 import { DOMParser } from 'xmldom';
-import { XS } from './xbrl/schema/parse';
+import { Schema } from './xbrl/schema/parse';
 
 import nunjucks = require('nunjucks');
 import path = require('path');
@@ -77,72 +78,88 @@ enum NodeTypes {
 }
 
 
-// TODO: parse schemas
+let ELEMENT_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/elts/us-gaap-2016-01-31.xsd');
+let LABEL_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/elts/us-gaap-lab-2016-01-31.xml');
+let PRESENTATION_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/stm/us-gaap-stm-sfp-cls-pre-2016-01-31.xml');
 
-// let schema = fs.ReadFile(path.join(process.cwd(), './us-gaap-2016-01-31/elts/us-gaap-2016-01-31.xsd'));
-// schema = schema.then((data: string) => {
-//     let parser = new DOMParser();
 
-//     let document = parser.parseFromString(data);
-//     console.log(document.childNodes.length);
+// Parse elements schema
+let elementSchema = fs.ReadFile(ELEMENT_SCHEMA);
+elementSchema = elementSchema.then((data: string) => {
+    let parser = new DOMParser();
 
-//     let namespaces = new Map<string, string>();
+    let document = parser.parseFromString(data);
 
-//     for (let i = 0; i < document.childNodes.length; i++) {
-//         let root = document.childNodes.item(i);
+    let namespaces = new Map<string, string>();
+    let nodes: (Schema.ElementNode|Schema.ImportNode)[] = [];
 
-//         if (root.nodeType === NodeTypes.ELEMENT_NODE) {
-//             // everything else is the child of the schema node    
-//             if (root.localName === 'schema') {
-//                 // first get the namespaces
-//                 for (let i = 0; i < root.attributes.length; i++) {
-//                     let attr = root.attributes[i];
+    DFS(document, (node: Node) => {
+        if (NodeTypes.ELEMENT_NODE === node.nodeType) {
+            if ('schema' === node.localName) {
+                // first get the namespaces
+                for (let i = 0; i < node.attributes.length; i++) {
+                    let attr = node.attributes[i];
 
-//                     if (attr.prefix === 'xmlns') {
-//                         if(!namespaces.has(attr.localName)) {
-//                             namespaces.set(attr.localName, attr.value);
-//                             console.log(`name: ${attr.localName}, value: ${attr.value}`);
-//                         }
-//                     }
-//                 }
+                    if (attr.prefix === 'xmlns') {
+                        if(!namespaces.has(attr.localName)) {
+                            namespaces.set(attr.localName, attr.value);
+                            console.log(`name: ${attr.localName}, value: ${attr.value}`);
+                        }
+                    }
+                }                
+            }
+            else if ('import' === node.localName) {
+                let importNode = new Schema.ImportNode(<Element>node, namespaces);
+                nodes.push(importNode);
+            }
+            else if ('element' === node.localName) {
+                let elementNode = new Schema.ElementNode(<Element>node, namespaces);
+                nodes.push(elementNode);
+            }
+            else if ('annotation' === node.localName) {
 
-//                 // loop through each of the children nodes
-//                 for (let i = 0; i < root.childNodes.length; i++) {
-//                     let node = root.childNodes.item(i);
-
-//                     if (node.localName === 'element') {
-//                         if (node.localName === 'import') {
-
-//                         }
-//                         else if (node.localName === 'element') {
-//                             let el = new XS.ElementNode(<Element>node, namespaces);
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// });
-
-let read = fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
-read = read.then((data: string) => {
-    let xbrl = XBRLLoader.GetXBRLFromString(data);
-
-    let balanceSheets = Report.CreateBalanceSheet(xbrl);
-    let financialPositions = Report.CreateFinancialPosition(xbrl);
-
-    return renderNunjucks(path.join(process.cwd(), './templates/index.html'), ['.', './templates/'], {
-        entity: Report.CreateEntityInformation(xbrl),
-        balanceSheets: balanceSheets,
-        financials: financialPositions
+            }
+        }
     });
 });
-read = read.then((html: string) => {
-    return fs.WriteFile(path.join(process.cwd(), './output/cvs-20141231.html'), html);
+
+// Parse labels schema
+let labelSchema = fs.ReadFile(LABEL_SCHEMA);
+labelSchema = labelSchema.then((data: string) => {
+    let parser = new DOMParser();
+
+    let document = parser.parseFromString(data);
+
+    let labels: Schema.LabelNode[] = [];
+
+    DFS(document, (node: Node) => {
+        if (NodeTypes.ELEMENT_NODE === node.nodeType && 'label' === node.localName) {
+            let label = new Schema.LabelNode(<Element>node);
+            labels.push(label);
+        }
+    });
 });
-read.then(() => {
-    console.log('Wrote output.');
-});
+
+
+// let read = fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
+// read = read.then((data: string) => {
+//     let xbrl = XBRLLoader.GetXBRLFromString(data);
+
+//     let balanceSheets = Report.CreateBalanceSheet(xbrl);
+//     let financialPositions = Report.CreateFinancialPosition(xbrl);
+
+//     return renderNunjucks(path.join(process.cwd(), './templates/index.html'), ['.', './templates/'], {
+//         entity: Report.CreateEntityInformation(xbrl),
+//         balanceSheets: balanceSheets,
+//         financials: financialPositions
+//     });
+// });
+// read = read.then((html: string) => {
+//     return fs.WriteFile(path.join(process.cwd(), './output/cvs-20141231.html'), html);
+// });
+// read.then(() => {
+//     console.log('Wrote output.');
+// });
 
 
 // // Example
