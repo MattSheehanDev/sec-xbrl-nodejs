@@ -3,9 +3,9 @@ import { IncomeStatementXBRL as IS } from './report/incomestatement';
 
 import { BalanceSheetModel, FinancialPositionModel, IncomeStatementModel } from '../models/financialmodels';
 import { EntityModel } from '../models/entitymodel';
-import { TenKValues, TenK } from '../models/tenk';
 
 import { ConsolidatedBalanceSheets } from './report/balancesheet/consolidated';
+import { BalanceSheetNode } from './report/balancesheet/balancesheetnode';
 import { ConsolidatedFinancialPositions } from './report/financialposition/consolidated';
 import XBRL from './xbrl';
 
@@ -43,6 +43,7 @@ export module Report {
         return reports.reverse();
     }
 
+
     export function CreateFinancialPosition(xbrl: XBRL) {
         let consolidated = new ConsolidatedFinancialPositions(xbrl);
         let reports = consolidated.Reports();
@@ -58,31 +59,6 @@ export module Report {
         return reports.reverse();
     }
 
-
-    // export function Create10K(xbrl: XBRL) {
-    //     let year = parseInt(EntityInfo.DocumentYearFocus(xbrl));
-
-    //     let tenk: TenKValues = {
-    //         year: year,
-    //         date: EntityInfo.DocumentEndDate(xbrl),
-    //         type: EntityInfo.DocumentType(xbrl),
-
-    //         currentAssets: BS.CurrentAssets(xbrl, year),
-    //         currentLiab: BS.CurrentLiabilities(xbrl, year),
-    //         longTermDebt: BS.LongTermDebt(xbrl, year),
-    //         outstandingShares: BS.OutstandingShares(xbrl, year),
-    //         dilutedOutstandingShares: BS.OutstandingSharesDiluted(xbrl, year),
-    //         prefOutstandingShares: BS.OutstandingPreferredShares(xbrl, year),
-
-    //         totalRevenue: IS.NetRevenue(xbrl, year),
-    //         netIncome: IS.NetIncomeComprehensiveTotal(xbrl, year),
-
-    //         eps: IS.EarningsPerShare(xbrl, year),
-    //         dilutedEps: IS.EarningsPerShareDiluted(xbrl, year),
-    //         declaredDividend: IS.DividendDeclared(xbrl, year)
-    //     }
-    //     return new TenK(tenk);
-    // }
 
 }
 

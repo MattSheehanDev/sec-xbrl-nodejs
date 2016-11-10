@@ -1,7 +1,10 @@
 import XBRLDocument from '../../xbrl';
+import { DFSBalanceSheetValue } from '../../../utilities/dfs';
 
 import { BalanceSheetModel } from '../../../models/financialmodels';
 import { BalanceSheetItems } from './items';
+import { BalanceSheetNode, BalanceSheetLine, Clone } from './balancesheetnode';
+
 
 
 

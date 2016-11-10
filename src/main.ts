@@ -5,15 +5,20 @@ import YahooAPI from './api/yahooapi';
 import XBRL from './xbrl/xbrl';
 
 import Report from './xbrl/reports';
-import TenK from './models/tenk';
 import Finance from './utilities/finance';
+
 import DFS from './utilities/dfs';
+import NodeTypes from './utilities/nodetypes';
 
 import Test from './test';
 
 import API from './api/api';
 import { DOMParser } from 'xmldom';
+
 import { Schema } from './xbrl/schema/parse';
+import {ImportNode, ElementNode, LabelNode, PresentationArcNode, PresentationLocationNode} from './xbrl/schema/nodes';
+
+import { BalanceSheetNode, BalanceSheetLine, ConsolidateBalanceSheet } from './xbrl/report/balancesheet/balancesheetnode';
 
 import nunjucks = require('nunjucks');
 import path = require('path');
@@ -62,83 +67,132 @@ function renderNunjucks(inputFilePath: string, searchRelativePaths: string[], co
 }
 
 
-enum NodeTypes {
-    ELEMENT_NODE = 1,
-    ATTRIBUTE_NODE = 2,
-    TEXT_NODE = 3,
-    CDATA_SECTION_NODE = 4,
-    ENTITY_REFERENCE_NODE = 5,
-    ENTITY_NODE = 6,
-    PROCESSING_INSTRUCTION_NODE = 7,
-    COMMENT_NODE = 8,
-    DOCUMENT_NODE = 9,
-    DOCUMENT_TYPE_NODE = 10,
-    DOCUMENT_FRAGMENT_NODE = 11,
-    NOTATION_NODE = 12
-}
-
-
 let ELEMENT_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/elts/us-gaap-2016-01-31.xsd');
 let LABEL_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/elts/us-gaap-lab-2016-01-31.xml');
 let PRESENTATION_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/stm/us-gaap-stm-sfp-cls-pre-2016-01-31.xml');
 
 
+let parser = new DOMParser();
+
+let elements: ElementNode[];
+let labels: LabelNode[];
+let presentations: PresentationArcNode[];
+let locations: PresentationLocationNode[];
+
 // Parse elements schema
-let elementSchema = fs.ReadFile(ELEMENT_SCHEMA);
-elementSchema = elementSchema.then((data: string) => {
-    let parser = new DOMParser();
-
+let schema = fs.ReadFile(ELEMENT_SCHEMA).then<string>((data: string) => {
     let document = parser.parseFromString(data);
+    elements = Schema.ParseGaapElements(document);
 
-    let namespaces = new Map<string, string>();
-    let nodes: (Schema.ElementNode|Schema.ImportNode)[] = [];
-
-    DFS(document, (node: Node) => {
-        if (NodeTypes.ELEMENT_NODE === node.nodeType) {
-            if ('schema' === node.localName) {
-                // first get the namespaces
-                for (let i = 0; i < node.attributes.length; i++) {
-                    let attr = node.attributes[i];
-
-                    if (attr.prefix === 'xmlns') {
-                        if(!namespaces.has(attr.localName)) {
-                            namespaces.set(attr.localName, attr.value);
-                            console.log(`name: ${attr.localName}, value: ${attr.value}`);
-                        }
-                    }
-                }                
-            }
-            else if ('import' === node.localName) {
-                let importNode = new Schema.ImportNode(<Element>node, namespaces);
-                nodes.push(importNode);
-            }
-            else if ('element' === node.localName) {
-                let elementNode = new Schema.ElementNode(<Element>node, namespaces);
-                nodes.push(elementNode);
-            }
-            else if ('annotation' === node.localName) {
-
-            }
-        }
-    });
+    return fs.ReadFile(LABEL_SCHEMA)
 });
-
 // Parse labels schema
-let labelSchema = fs.ReadFile(LABEL_SCHEMA);
-labelSchema = labelSchema.then((data: string) => {
-    let parser = new DOMParser();
-
+schema = schema.then<string>((data: string) => {
     let document = parser.parseFromString(data);
+    labels = Schema.ParseGaapLabels(document);
 
-    let labels: Schema.LabelNode[] = [];
-
-    DFS(document, (node: Node) => {
-        if (NodeTypes.ELEMENT_NODE === node.nodeType && 'label' === node.localName) {
-            let label = new Schema.LabelNode(<Element>node);
-            labels.push(label);
-        }
-    });
+    return fs.ReadFile(PRESENTATION_SCHEMA);
 });
+// Parse presentation
+schema = schema.then<string>((data: string) => {
+    let document = parser.parseFromString(data);
+    let pres = Schema.ParseGaapPresentation(document);
+
+    presentations = <PresentationArcNode[]>pres[0];
+    locations = <PresentationLocationNode[]>pres[1];
+
+    return fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
+});
+// After parsing the schema(s), we are now ready to parse any 2016 xbrl balance sheet
+schema = schema.then((data: string) => {
+    let xbrl = XBRLLoader.GetXBRLFromString(data);
+
+
+    // to quickly match elements with their labels and presentation 
+    let elementNames = elements.map((node: ElementNode) => { return node.name; });
+    let labelNames = labels.map((node: LabelNode) => { return node.elementName; });
+
+    // let presParentNames = presentations.map((node: Schema.PresentationArcNode) => { return node.parentName; });
+    let presChildNames = presentations.map((node: PresentationArcNode) => { return node.childName; });
+
+
+    // create statement nodes
+    let balanceSheetMap = new Map<ElementNode, BalanceSheetNode>();
+    let balanceSheet: BalanceSheetNode[] = [];
+    let parentChildren = new Map<ElementNode, BalanceSheetNode[]>();
+
+
+    // loop through presentation nodes (we only want the balance sheet for now, so we can use the presentation location nodes)
+    for (let loc of locations) {
+        // find matching element
+        let elementIndex = elementNames.indexOf(loc.name);
+        let element = elementIndex !== -1 ? elements[elementIndex] : null;
+
+        // find matching label
+        let labelIndex = labelNames.indexOf(loc.name);
+        let label = labelIndex !== -1 ? labels[labelIndex] : null;
+
+        let presIndex = presChildNames.indexOf(loc.name);
+        let pres = presIndex !== -1 ? presentations[presIndex] : null;
+
+
+        // create balance sheet node
+        let balanceSheetNode: BalanceSheetNode;
+        if (balanceSheetMap.has(element)) {
+            balanceSheetNode = balanceSheetMap.get(element);
+        }
+        else {
+            balanceSheetNode = new BalanceSheetNode({
+                element: element,
+                label: label,
+                presentation: pres
+            });
+            balanceSheetMap.set(element, balanceSheetNode);
+            balanceSheet.push(balanceSheetNode);
+        }
+
+
+        if (pres !== null) {
+            // find the parent node        
+            let parentElementIndex = elementNames.indexOf(pres.parentName);
+            let elementParent = elements[parentElementIndex];
+
+            if (parentChildren.has(elementParent)) {
+                parentChildren.get(elementParent).push(balanceSheetNode);
+            }
+            else {
+                parentChildren.set(elementParent, [balanceSheetNode]);
+            }
+        }
+    }
+
+
+    // match up children
+    for (let node of balanceSheet) {
+        if (parentChildren.has(node.element)) {
+            let children = parentChildren.get(node.element);
+            for (let child of children) {
+                child.parent = node;
+                node.children.push(child);
+            }
+        }
+    }
+
+
+    // find the root node
+    // should be `StatementOfFinancialPositionAbstract`
+    let root = balanceSheet[0];
+    while (root.parent !== null) {
+        root = root.parent;
+    }
+    console.log(root.element.name);
+    
+
+    console.log('creating balance sheet');
+    ConsolidateBalanceSheet(xbrl, root);
+});
+
+
 
 
 // let read = fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
@@ -160,6 +214,7 @@ labelSchema = labelSchema.then((data: string) => {
 // read.then(() => {
 //     console.log('Wrote output.');
 // });
+
 
 
 // // Example
