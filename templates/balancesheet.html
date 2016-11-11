@@ -1,6 +1,42 @@
 <table>
 	<thead>
 		<tr>
+			<th colspan="{{ dates.length + 1 }}" rowspan="1">{{ title }}</th>
+		</tr>
+		<tr>
+			<th></th>
+			{% for date in dates %}
+			<th>{{ date }}</th>
+			{% endfor %}
+		</tr>
+	</thead>
+	<tbody>
+		{% for line in lines %}
+		<tr>
+			{% if line.abstract %}
+				<td class='table-section'>{{ line.label }}</td>
+				{% for value in line.values %}
+				<td></td>
+				{% endfor %}
+			{% else %}
+				<td>{{ line.label }}</td>
+				{% for value in line.values %}
+					{% if value %}
+						<td>{{ value }}</td>
+					{% else %}
+						<td></td>
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+		</tr>
+		{% endfor %}		
+	</tbody>
+</table>
+<!--
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="{{ balanceSheets.length + 1 }}" rowspan="1">Consolidated Balance Sheets</th>
 		</tr>
 		<tr>
@@ -239,4 +275,4 @@
 			{% endfor %}
 		</tr>
 	</tbody>
-</table>
+</table>-->

@@ -34,28 +34,110 @@ export class BalanceSheetNode {
 
 
 import XBRLDocument from '../../xbrl';
-import { DFSBalanceSheetValue } from '../../../utilities/dfs';
+import { DFSBalanceSheet } from '../../../utilities/dfs';
 import { GaapNode } from '../../node';
 import { Select } from '../../namespaces/gaap';
+import { EntityInfoXBRL as EntityInfo } from '../entityinformation';
+import { DateTime as datetime } from '../../../utilities/datetime';
+
+export interface IConsBalanceSheetColumn {
+    value: number;
+}
+export class ConsBalanceSheetLine {
+    public static years: number[] = [];
+
+    public readonly node: BalanceSheetNode;
+    private columns: Map<number, IConsBalanceSheetColumn>;
+
+    constructor(node: BalanceSheetNode) {
+        this.node = node;
+        this.columns = new Map<number, IConsBalanceSheetColumn>();
+    }
+    public Get(year: number) {
+        if (ConsBalanceSheetLine.years.indexOf(year) === -1) {
+            ConsBalanceSheetLine.years.push(year);
+        }
+
+        if (this.columns.has(year)) {
+            return this.columns.get(year);
+        }
+        else {
+            let column: IConsBalanceSheetColumn = { value: null };
+            this.columns.set(year, column); 
+            return column;
+        }
+    }
+}
 
 export function ConsolidateBalanceSheet(xbrl: XBRLDocument, root: BalanceSheetNode) {
-    let values = Clone(root);
-    DFSBalanceSheetValue(values, (line: BalanceSheetLine) => {
-        // TODO: don't make a thousand maps...
-        let gaapNodes = Select(line.node.element.name, xbrl.gaapRoot);
+    let lines: ConsBalanceSheetLine[] = [];
+
+    DFSBalanceSheet(root, (node: BalanceSheetNode) => {
+
+        let line = new ConsBalanceSheetLine(node);
+        lines.push(line);
+
+        let gaapNodes = Select(node.element.name, xbrl.gaapRoot);
         for (let gaap of gaapNodes) {
-            if (line.value.has(gaap.year)) {
-                let v = line.value.get(gaap.year);
-                line.value.set(gaap.year, gaap.value + v);
+            let column = line.Get(gaap.year);
+
+            if (!column.value) {
+                column.value = gaap.value;
             }
             else {
-                line.value.set(gaap.year, gaap.value);
+                column.value += gaap.value;
             }
         }
     });
-    return values;
+
+
+    // first line should be the title of the statement type
+    let title = lines.shift().node.label.text;
+
+    let date = new Date(EntityInfo.DocumentEndDate(xbrl));
+    let sortedYears = ConsBalanceSheetLine.years.sort((a: number, b: number) => { return b - a; });
+    let dates = sortedYears.map((value: number) => {
+        date.setFullYear(value);
+        return datetime.format(date, 'MMM. dd, yyyy');
+    });
+    let bsLines: { label: string; abstract: boolean; values: string[] }[] = [];
+
+    for (let line of lines) {
+        let label = line.node.label.text;
+        let abstract = line.node.element.name.toLowerCase().lastIndexOf('abstract') !== -1;
+        let values: string[] = [];
+        let empty = true;
+        for (let year of sortedYears) {
+            let column = line.Get(year);
+            if (column.value) {
+                values.push(column.value.toString());
+                empty = false;
+            }
+            else {
+                values.push('');
+            }
+            // let value = column.value ? column.value.toString() : '';
+            // values.push(value);
+        }
+        if (!empty || abstract) {
+            bsLines.push({ label: label, abstract: abstract, values: values });
+        }
+    }
+
+    return <StatementHTML>{ title: title, dates: dates, lines: bsLines };
 }
 
+export interface StatementHTML {
+    title: string;
+    dates: string[];
+    lines: { label: string; abstract: boolean; values: string[] }[];
+}
+export function CreateStatementData(root: BalanceSheetLine[]) {
+    // first node should be the title of the statement type
+    let title = root.pop();
+    
+    
+}
 
 export function Clone(root: BalanceSheetNode) {
     let node = new BalanceSheetLine(root);
@@ -72,31 +154,24 @@ export function Clone(root: BalanceSheetNode) {
 //     return SumNodesByYear(Select(taxon, xbrl.gaapRoot));
 // }
 
-// export function SumNodesByYear(nodes: GaapNode[]) {
-//     let values: { year: number, value: number }[] = [];
+export function SumNodesByYear(nodes: GaapNode[]) {
+    // <year, value>
+    let map = new Map<number, number>();
+    for (let node of nodes) {
+        if (node.axis) continue;
 
-//     // <year, value>
-//     // let map = new Map<number, number>();
-//     for (let node of nodes) {
-//         if (node.axis) continue;
-
-//         values.push({
-//             year: node.year,
-//             value: node.value
-//         });
-//         // // if this year has already been seen before
-//         // if (map.has(node.year)) {
-//         //     let value = map.get(node.year);
-//         //     map.set(node.year, value + node.value);
-//         // }
-//         // // otherwise we have to create the node year array
-//         // else {
-//         //     map.set(node.year, node.value);
-//         // }
-//     }
-//     // return map;
-//     return values;
-// }
+        // if this year has already been seen before
+        if (map.has(node.year)) {
+            let value = map.get(node.year);
+            map.set(node.year, value + node.value);
+        }
+        // otherwise we have to create the node year array
+        else {
+            map.set(node.year, node.value);
+        }
+    }
+    return map;
+}
 
 
 export class BalanceSheetLine {

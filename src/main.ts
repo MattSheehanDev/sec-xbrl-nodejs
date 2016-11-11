@@ -189,10 +189,21 @@ schema = schema.then((data: string) => {
     
 
     console.log('creating balance sheet');
-    ConsolidateBalanceSheet(xbrl, root);
+    let htmlData = ConsolidateBalanceSheet(xbrl, root);
+
+
+    return renderNunjucks(
+        path.join(process.cwd(), './templates/index.html'),
+        ['.', './templates/'],
+        htmlData
+    );
 });
-
-
+schema = schema.then((html: string) => {
+    return fs.WriteFile(path.join(process.cwd(), './output/cvs-20141231.html'), html);
+});
+schema = schema.then(() => {
+    console.log('Wrote output.');
+});
 
 
 // let read = fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
