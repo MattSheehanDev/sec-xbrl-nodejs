@@ -5,7 +5,6 @@ import { BalanceSheetModel, FinancialPositionModel, IncomeStatementModel } from 
 import { EntityModel } from '../models/entitymodel';
 
 import { ConsolidatedBalanceSheets } from './report/balancesheet/consolidated';
-import { BalanceSheetNode } from './report/balancesheet/balancesheetnode';
 import { ConsolidatedFinancialPositions } from './report/financialposition/consolidated';
 import XBRL from './xbrl';
 

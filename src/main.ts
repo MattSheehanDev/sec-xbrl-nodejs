@@ -18,12 +18,12 @@ import { DOMParser } from 'xmldom';
 import { Schema } from './xbrl/schema/parse';
 import {ImportNode, ElementNode, LabelNode, PresentationArcNode, PresentationLocationNode} from './xbrl/schema/nodes';
 
-import { BalanceSheetNode, BalanceSheetLine, ConsolidateBalanceSheet } from './xbrl/report/balancesheet/balancesheetnode';
+import { BalanceSheetNode, BalanceSheetLine, ConsolidateBalanceSheetTable } from './xbrl/report/balancesheet/balancesheetnode';
 
 import nunjucks = require('nunjucks');
 import path = require('path');
 import fs from './utilities/filesystem';
-import XBRLLoader from './xbrl/loader';
+// import XBRLLoader from './xbrl/loader';
 
 let isRelease = process.env.NODE_ENV === 'release';
 
@@ -105,15 +105,15 @@ schema = schema.then<string>((data: string) => {
 });
 // After parsing the schema(s), we are now ready to parse any 2016 xbrl balance sheet
 schema = schema.then((data: string) => {
-    let xbrl = XBRLLoader.GetXBRLFromString(data);
+    let xbrl = new XBRL(parser.parseFromString(data));
 
 
     // to quickly match elements with their labels and presentation 
     let elementNames = elements.map((node: ElementNode) => { return node.name; });
-    let labelNames = labels.map((node: LabelNode) => { return node.elementName; });
+    let labelNames = labels.map((node: LabelNode) => { return node.MatchingElement; });
 
     // let presParentNames = presentations.map((node: Schema.PresentationArcNode) => { return node.parentName; });
-    let presChildNames = presentations.map((node: PresentationArcNode) => { return node.childName; });
+    let presNames = presentations.map((node: PresentationArcNode) => { return node.Name; });
 
 
     // create statement nodes
@@ -121,6 +121,7 @@ schema = schema.then((data: string) => {
     let balanceSheet: BalanceSheetNode[] = [];
     let parentChildren = new Map<ElementNode, BalanceSheetNode[]>();
 
+    let tableNode: BalanceSheetNode;
 
     // loop through presentation nodes (we only want the balance sheet for now, so we can use the presentation location nodes)
     for (let loc of locations) {
@@ -132,7 +133,7 @@ schema = schema.then((data: string) => {
         let labelIndex = labelNames.indexOf(loc.name);
         let label = labelIndex !== -1 ? labels[labelIndex] : null;
 
-        let presIndex = presChildNames.indexOf(loc.name);
+        let presIndex = presNames.indexOf(loc.name);
         let pres = presIndex !== -1 ? presentations[presIndex] : null;
 
 
@@ -145,16 +146,23 @@ schema = schema.then((data: string) => {
             balanceSheetNode = new BalanceSheetNode({
                 element: element,
                 label: label,
-                presentation: pres
+                presentation: pres,
+                location: loc
             });
             balanceSheetMap.set(element, balanceSheetNode);
             balanceSheet.push(balanceSheetNode);
         }
 
 
+        if (loc.isTable) {
+            tableNode = balanceSheetNode;
+        }
+
         if (pres !== null) {
+            // find if this is a 'total' node
+
             // find the parent node        
-            let parentElementIndex = elementNames.indexOf(pres.parentName);
+            let parentElementIndex = elementNames.indexOf(pres.ParentName);
             let elementParent = elements[parentElementIndex];
 
             if (parentChildren.has(elementParent)) {
@@ -171,9 +179,14 @@ schema = schema.then((data: string) => {
     for (let node of balanceSheet) {
         if (parentChildren.has(node.element)) {
             let children = parentChildren.get(node.element);
+
             for (let child of children) {
                 child.parent = node;
                 node.children.push(child);
+
+                if (child.presentation && child.presentation.isTotal) {
+
+                }
             }
         }
     }
@@ -189,7 +202,9 @@ schema = schema.then((data: string) => {
     
 
     console.log('creating balance sheet');
-    let htmlData = ConsolidateBalanceSheet(xbrl, root);
+
+    let htmlData = ConsolidateBalanceSheetTable(xbrl, tableNode);
+    htmlData.title = root.label.FormattedText;
 
 
     return renderNunjucks(

@@ -54,22 +54,33 @@ export class ElementNode {
 
 export class LabelNode {
 
-    public readonly label: string;          // lab_elementname
-    public readonly role: string;
-    public readonly type: string;
-    public readonly lang: string;
+    private _label: string;          // lab_elementname
+    private _role: string;
+    private _type: string;
+    private _lang: string;    
+    private _text: string;
 
-    public readonly elementName: string;
-    public readonly text: string;
+    public readonly MatchingElement: string;
+    public readonly FormattedText: string;
 
     constructor(element: Element) {
-        this.label = element.getAttributeNS(xlinkNS, 'label');
-        this.role = element.getAttributeNS(xlinkNS, 'role');
-        this.type = element.getAttributeNS(xlinkNS, 'type');
-        this.lang = element.getAttributeNS(null, 'lang');              // ?? what is this namespace
+        this._label = element.getAttributeNS(xlinkNS, 'label');
+        this._role = element.getAttributeNS(xlinkNS, 'role');
+        this._type = element.getAttributeNS(xlinkNS, 'type');
+        this._lang = element.getAttributeNS(null, 'lang');              // ?? what is this namespace
 
-        this.elementName = this.label.substring('lab_'.length);
-        this.text = element.firstChild.nodeValue;
+        this._text = element.firstChild.nodeValue;
+
+
+        this.MatchingElement = this._label.substring('lab_'.length);
+
+        let match = this._text.match(/([^/[]*)\[.*\]$/);
+        if (match) {
+            this.FormattedText = match[1].trim();
+        }
+        else {
+            this.FormattedText = this._text;
+        }
     }
 
 }
@@ -77,15 +88,20 @@ export class LabelNode {
 
 
 
-export class PresentationGroupNode {
-    public loc: PresentationLocationNode;
-    public arc: PresentationArcNode;
+// export class PresentationGroupNode {
+//     public loc: PresentationLocationNode;
+//     public arc: PresentationArcNode;
 
-    constructor(loc: PresentationLocationNode, arc: PresentationArcNode) {
-        this.loc = loc;
-        this.arc = arc;
-    }
-}
+//     constructor(loc: PresentationLocationNode, arc: PresentationArcNode) {
+//         this.loc = loc;
+//         this.arc = arc;
+//     }
+// }
+
+
+const preferredLabel = 'http://www.xbrl.org/2003/role/totalLabel';
+const arcrole = 'http://www.xbrl.org/2003/arcrole/parent-child';
+
 
 export class PresentationLocationNode {
 
@@ -94,32 +110,54 @@ export class PresentationLocationNode {
 
     public readonly name: string;
 
+    public readonly isTable: boolean;
+
     constructor(element: Element) {
         this.href = element.getAttributeNS(xlinkNS, 'href');
         this.label = element.getAttributeNS(xlinkNS, 'label');
 
         this.name = this.label.substr('loc_'.length);
+
+
+        // check if this is the root table node
+        this.isTable = false;
+
+        if (this.name === 'StatementLineItems') {
+            this.isTable = true;
+        }
     }
 }
 
 export class PresentationArcNode {
 
-    public readonly from: string;
-    public readonly to: string;
+    private _preferredLabel: string;              // totalLabel?
+    private _role: string;                        // parent-child
+    private _from: string;
+    private _to: string;
 
-    public readonly role: string;                        // parent-child, totalLabel
+    public readonly ParentName: string;
+    public readonly Name: string;
 
-    public readonly parentName: string;
-    public readonly childName: string;
+    public readonly isTotal: boolean;
+    public readonly isTable: boolean;
 
     constructor(element: Element) {
-        this.from = element.getAttributeNS(xlinkNS, 'from');
-        this.to = element.getAttributeNS(xlinkNS, 'to');
+        this._from = element.getAttributeNS(xlinkNS, 'from');
+        this._to = element.getAttributeNS(xlinkNS, 'to');
 
-        this.role = element.getAttributeNS(xlinkNS, 'arcrole');
+        this._role = element.getAttributeNS(xlinkNS, 'arcrole');
+        this._preferredLabel = element.getAttributeNS(null, 'preferredLabel');
 
-        this.parentName = this.from.substr('loc_'.length);
-        this.childName = this.to.substr('loc_'.length);
+        this.ParentName = this._from.substr('loc_'.length);
+        this.Name = this._to.substr('loc_'.length);
+
+
+        // check if this is a 'total' sum node
+        this.isTotal = false;
+
+        if (this._preferredLabel && this._preferredLabel.match(/totalLabel/ig)) {
+            this.isTotal = true;
+        }
     }
 
 }

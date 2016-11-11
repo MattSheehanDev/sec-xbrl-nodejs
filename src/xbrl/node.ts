@@ -5,7 +5,7 @@ export function SumNodesByYear(nodes: GaapNode[]) {
     // <year, value>
     let map = new Map<number, number>();
     for (let node of nodes) {
-        if (node.axis) continue;
+        if (node.member) continue;
 
         // if this year has already been seen before
         if (map.has(node.year)) {
@@ -33,7 +33,7 @@ export class GaapNode {
     public readonly year: number;
     public readonly quarter: number;
 
-    public readonly axis: boolean;
+    public readonly member: boolean;
 
 
     constructor(node: Element) {
@@ -56,7 +56,7 @@ export class GaapNode {
             let context = parts[0];
             let axis = parts[1];
 
-            this.axis = parts[1] ? true : false;
+            this.member = parts[1] ? true : false;
 
 
             // ex. cvs 2015,2014

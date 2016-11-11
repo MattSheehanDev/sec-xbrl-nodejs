@@ -1,5 +1,4 @@
 import DFS from '../../utilities/dfs';
-import NodeTypes from '../../utilities/nodetypes';
 import {ImportNode, ElementNode, LabelNode, PresentationArcNode, PresentationLocationNode} from './nodes';
 
 
@@ -11,29 +10,27 @@ export namespace Schema {
         let namespaces = new Map<string, string>();
 
         DFS(document, (node: Node) => {
-            if (NodeTypes.ELEMENT_NODE === node.nodeType) {
-                if ('schema' === node.localName) {
-                    // first get the namespaces
-                    for (let i = 0; i < node.attributes.length; i++) {
-                        let attr = node.attributes[i];
+            if ('schema' === node.localName) {
+                // first get the namespaces
+                for (let i = 0; i < node.attributes.length; i++) {
+                    let attr = node.attributes[i];
 
-                        if (attr.prefix === 'xmlns') {
-                            if(!namespaces.has(attr.localName)) {
-                                namespaces.set(attr.localName, attr.value);
-                            }
+                    if (attr.prefix === 'xmlns') {
+                        if(!namespaces.has(attr.localName)) {
+                            namespaces.set(attr.localName, attr.value);
                         }
-                    }                
-                }
-                else if ('import' === node.localName) {
-                    let importNode = new ImportNode(<Element>node, namespaces);
-                }
-                else if ('element' === node.localName) {
-                    let elementNode = new ElementNode(<Element>node, namespaces);
-                    elements.push(elementNode);
-                }
-                else if ('annotation' === node.localName) {
+                    }
+                }                
+            }
+            else if ('import' === node.localName) {
+                let importNode = new ImportNode(<Element>node, namespaces);
+            }
+            else if ('element' === node.localName) {
+                let elementNode = new ElementNode(<Element>node, namespaces);
+                elements.push(elementNode);
+            }
+            else if ('annotation' === node.localName) {
 
-                }
             }
         });
         return elements;
@@ -43,7 +40,7 @@ export namespace Schema {
         let labels: LabelNode[] = [];
 
         DFS(document, (node: Node) => {
-            if (NodeTypes.ELEMENT_NODE === node.nodeType && 'label' === node.localName) {
+            if ('label' === node.localName) {
                 let label = new LabelNode(<Element>node);
                 labels.push(label);
             }
@@ -56,15 +53,13 @@ export namespace Schema {
         let presentations: PresentationArcNode[] = [];
 
         DFS(document, (node: Node) => {
-            if (NodeTypes.ELEMENT_NODE === node.nodeType) {
-                if ('loc' === node.localName) {
-                    let loc = new PresentationLocationNode(<Element>node);
-                    locations.push(loc);
-                }
-                else if ('presentationArc' === node.localName) {
-                    let pres = new PresentationArcNode(<Element>node);
-                    presentations.push(pres);
-                }
+            if ('loc' === node.localName) {
+                let loc = new PresentationLocationNode(<Element>node);
+                locations.push(loc);
+            }
+            else if ('presentationArc' === node.localName) {
+                let pres = new PresentationArcNode(<Element>node);
+                presentations.push(pres);
             }
         });
 

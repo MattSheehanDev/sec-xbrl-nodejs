@@ -1,5 +1,3 @@
-import { DOMParser } from 'xmldom';
-
 import SecAPI from '../api/secapi';
 import {SECFiling, SECDocument} from '../models/secmodels';
 import Scraper from '../utilities/scraper';
@@ -7,8 +5,6 @@ import XBRL from './xbrl';
 
 
 namespace XBRLLoader {
-
-    let dom = new DOMParser();
 
 
     export function GetEdgarFilingsList(cik: string, start: number): Promise<SECFiling[]> {
@@ -23,15 +19,10 @@ namespace XBRLLoader {
         });
     }
 
-    export function GetXBRLFromUrl(uri: string): Promise<XBRL> {
-        return SecAPI.GetXBRL(uri).then((data: string) => {
-            return new XBRL(dom.parseFromString(data));
-        });
+    export function GetXBRLDataFromUrl(uri: string): Promise<string> {
+        return SecAPI.GetXBRL(uri)
     }
 
-    export function GetXBRLFromString(data: string) {
-        return new XBRL(dom.parseFromString(data));
-    }
 
 }
 

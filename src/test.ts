@@ -78,7 +78,11 @@ namespace Test {
                     break;
                 }
             }
-            return XBRLLoader.GetXBRLFromUrl(doc.url);
+            return XBRLLoader.GetXBRLDataFromUrl(doc.url);
+        });
+        load = load.then((data: string) => {
+            let parser = new DOMParser();
+            return new XBRL(parser.parseFromString(data));
         });
         return load;
     }
@@ -134,9 +138,10 @@ namespace Test {
                 resolve(new XBRL(doc));
             });
             read.then(null, (err: NodeJS.ErrnoException) => {
-                let load = XBRLLoader.GetXBRLFromUrl(uri);
-                load.then((value: XBRL) => {
-                    resolve(value);
+                let load = XBRLLoader.GetXBRLDataFromUrl(uri);
+                load.then((data: string) => {
+                    let parser = new DOMParser();
+                    resolve(new XBRL(parser.parseFromString(data)));
                 });
                 load.then(null, (err: any) => {
                     reject(err);

@@ -1,4 +1,10 @@
 <table>
+    <colgroup>
+        <col span="1" style="width: 600px"></col>
+        {% for date in dates %}
+        <col span="1" style="width: 150px"></col>
+        {% endfor %}
+    </colgroup>
 	<thead>
 		<tr>
 			<th colspan="{{ dates.length + 1 }}" rowspan="1">{{ title }}</th>
@@ -20,11 +26,22 @@
 				{% endfor %}
 			{% else %}
 				<td>{{ line.label }}</td>
+
+                {% set isTotal = line.total %}
+
 				{% for value in line.values %}
 					{% if value %}
-						<td>{{ value }}</td>
+                        {% if isTotal %}
+						    <td class='table-section-total'>{{ value }}</td>
+                        {% else %}
+                            <td>{{ value }}</td>
+                        {% endif %}
 					{% else %}
-						<td></td>
+                        {% if isTotal %}
+						    <td class='table-section-total'></td>
+                        {% else %}
+                            <td></td>
+                        {% endif %}
 					{% endif %}
 				{% endfor %}
 			{% endif %}
