@@ -5,8 +5,9 @@ import {ImportNode, ElementNode, LabelNode, PresentationArcNode, PresentationLoc
 export interface BalanceSheetNodeOptions {
     element: ElementNode;
     label: LabelNode;
-    presentation: PresentationArcNode;
-    location: PresentationLocationNode;
+    // presentation: PresentationArcNode;
+
+    // location: PresentationLocationNode;
 }
 
 
@@ -18,16 +19,16 @@ export class BalanceSheetNode {
     public readonly element: ElementNode;
     public readonly label: LabelNode;
 
-    public readonly location: PresentationLocationNode;
-    public readonly presentation: PresentationArcNode;
+    // public readonly location: PresentationLocationNode;
+    // public readonly presentation: PresentationArcNode;
 
     public statementRoot: boolean;
 
     constructor(options: BalanceSheetNodeOptions) {
         this.element = options.element;
         this.label = options.label;
-        this.presentation = options.presentation;
-        this.location = options.location;
+        // this.presentation = options.presentation;
+        // this.location = options.location;
 
         this.parent = null;
         this.children = [];
@@ -45,8 +46,8 @@ import XBRLDocument from '../../xbrl';
 import { DFSBalanceSheet } from '../../../utilities/dfs';
 import { GaapNode } from '../../node';
 import { Select } from '../../namespaces/gaap';
-import { EntityInfoXBRL as EntityInfo } from '../entityinformation';
-import { DateTime as datetime } from '../../../utilities/datetime';
+// import { EntityInfoXBRL as EntityInfo } from '../entityinformation';
+// import { DateTime as datetime } from '../../../utilities/datetime';
 
 export interface IConsBalanceSheetColumn {
     value: number;
@@ -80,16 +81,6 @@ export class ConsBalanceSheetLine {
 export function ConsolidateBalanceSheetTable(xbrl: XBRLDocument, table: BalanceSheetNode) {
     let lines: ConsBalanceSheetLine[] = [];
 
-    // find the root table children
-    let rootTotals: string[] = [];
-    for (let child of table.children) {
-        child.statementRoot = true;
-
-        if (child.presentation) {
-            rootTotals.push(child.presentation.Name);
-        }
-    }
-
     DFSBalanceSheet(table, (node: BalanceSheetNode) => {
         let line = new ConsBalanceSheetLine(node);
         lines.push(line);
@@ -111,75 +102,9 @@ export function ConsolidateBalanceSheetTable(xbrl: XBRLDocument, table: BalanceS
         }
     });
 
-
-    // // first line should be the title of the statement type
-    // let title = lines.shift().node.label.text;
-
-    // find all the dates
-    let date = new Date(EntityInfo.DocumentEndDate(xbrl));
-    let sortedYears = ConsBalanceSheetLine.years.sort((a: number, b: number) => { return b - a; });
-    let dates = sortedYears.map((value: number) => {
-        date.setFullYear(value);
-        return datetime.format(date, 'MMM. dd, yyyy');
-    });
-
-    // create and filter statement lines
-    let bsLines: StatementLinesHTML[] = [];
-    let parentChildren = new Map<BalanceSheetLine, StatementLinesHTML>();
-
-    for (let line of lines) {
-        let label = line.node.label.FormattedText;
-        let abstract = line.node.element.name.toLowerCase().lastIndexOf('abstract') !== -1;
-        let values: string[] = [];
-        let empty = true;
-        for (let year of sortedYears) {
-            let column = line.Get(year);
-            if (column.value) {
-                values.push(column.value.toString());
-                empty = false;
-            }
-            else {
-                values.push('');
-            }
-        }
-
-
-        let isTotal = false;
-        // let index = rootTotals.indexOf(line.node.presentation.Name);
-        // if (index !== -1) {
-        //     isTotal = true;
-        // }
-        if (line.node.presentation && rootTotals.indexOf(line.node.presentation.ParentName) !== -1) {
-            isTotal = line.node.presentation.isTotal;
-        }
-
-
-        // don't show empty sections
-        if (!empty || line.node.statementRoot) {
-        // if (!empty || abstract) {
-            bsLines.push({
-                label: label,
-                abstract: abstract,
-                values: values,
-                total: isTotal
-            });
-        }
-    }
-
-    return <StatementHTML>{ dates: dates, lines: bsLines };
+    return lines;
 }
 
-export interface StatementHTML {
-    title?: string;
-    dates: string[];
-    lines: StatementLinesHTML[];
-}
-export interface StatementLinesHTML {
-    label: string;
-    abstract: boolean;
-    values: string[];
-    total: boolean;
-}
 
 
 

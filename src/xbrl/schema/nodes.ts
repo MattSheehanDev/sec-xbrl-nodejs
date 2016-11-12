@@ -40,7 +40,9 @@ export class ElementNode {
         this.nillable = nillable === 'true';
 
         this.substitutionGroup = element.getAttributeNS(null, 'substitutionGroup');     // xbrl:item,...
-        this.type = element.getAttributeNS(null, 'type');   // nonnum:domainitemType,...
+
+        // xbrli:monetaryItemType, nonnum:domainitemType, ...
+        this.type = element.getAttributeNS(null, 'type');
 
 
         // instant, duration (you cannot add 'instant' values to 'duration' values)
@@ -103,59 +105,78 @@ const preferredLabel = 'http://www.xbrl.org/2003/role/totalLabel';
 const arcrole = 'http://www.xbrl.org/2003/arcrole/parent-child';
 
 
+export class Presentation {
+
+    // private _href: string;
+    // private _label: string;
+
+    // private _preferredlabel: string;
+    // private _role: string;
+    // private _from: string;
+    // private _to: string;
+
+    public readonly Name: string;
+
+    public Parent: Presentation;
+    public Children: Presentation[];
+    // public readonly Children: PresentationArcNode[];
+    // public readonly ParentName: string;
+
+
+    constructor(name: string) {
+        this.Name = name;
+
+        this.Parent = null;
+        this.Children = [];
+        // this.ParentName = arc.ParentName;
+
+        // this._preferredlabel = arc.preferredLabel;
+    }
+}
+
 export class PresentationLocationNode {
 
     public readonly href: string;
     public readonly label: string;
 
-    public readonly name: string;
+    public readonly Name: string;
 
-    public readonly isTable: boolean;
 
     constructor(element: Element) {
         this.href = element.getAttributeNS(xlinkNS, 'href');
         this.label = element.getAttributeNS(xlinkNS, 'label');
 
-        this.name = this.label.substr('loc_'.length);
-
-
-        // check if this is the root table node
-        this.isTable = false;
-
-        if (this.name === 'StatementLineItems') {
-            this.isTable = true;
-        }
+        this.Name = this.label.substr('loc_'.length);
     }
 }
 
 export class PresentationArcNode {
 
-    private _preferredLabel: string;              // totalLabel?
-    private _role: string;                        // parent-child
-    private _from: string;
-    private _to: string;
+    public preferredLabel: string;              // totalLabel?
+    public role: string;                        // parent-child
+    public from: string;
+    public to: string;
 
     public readonly ParentName: string;
     public readonly Name: string;
 
     public readonly isTotal: boolean;
-    public readonly isTable: boolean;
 
     constructor(element: Element) {
-        this._from = element.getAttributeNS(xlinkNS, 'from');
-        this._to = element.getAttributeNS(xlinkNS, 'to');
+        this.from = element.getAttributeNS(xlinkNS, 'from');
+        this.to = element.getAttributeNS(xlinkNS, 'to');
 
-        this._role = element.getAttributeNS(xlinkNS, 'arcrole');
-        this._preferredLabel = element.getAttributeNS(null, 'preferredLabel');
+        this.role = element.getAttributeNS(xlinkNS, 'arcrole');
+        this.preferredLabel = element.getAttributeNS(null, 'preferredLabel');
 
-        this.ParentName = this._from.substr('loc_'.length);
-        this.Name = this._to.substr('loc_'.length);
+        this.ParentName = this.from.substr('loc_'.length);
+        this.Name = this.to.substr('loc_'.length);
 
 
         // check if this is a 'total' sum node
         this.isTotal = false;
 
-        if (this._preferredLabel && this._preferredLabel.match(/totalLabel/ig)) {
+        if (this.preferredLabel && this.preferredLabel.match(/totalLabel/ig)) {
             this.isTotal = true;
         }
     }

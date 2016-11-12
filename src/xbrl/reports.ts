@@ -1,5 +1,4 @@
 import { EntityInfoXBRL as EntityInfo } from './report/entityinformation';
-import { IncomeStatementXBRL as IS } from './report/incomestatement';
 
 import { BalanceSheetModel, FinancialPositionModel, IncomeStatementModel } from '../models/financialmodels';
 import { EntityModel } from '../models/entitymodel';

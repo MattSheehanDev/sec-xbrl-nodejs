@@ -16,9 +16,10 @@ import API from './api/api';
 import { DOMParser } from 'xmldom';
 
 import { Schema } from './xbrl/schema/parse';
-import {ImportNode, ElementNode, LabelNode, PresentationArcNode, PresentationLocationNode} from './xbrl/schema/nodes';
+import {ImportNode, ElementNode, LabelNode, Presentation, PresentationArcNode, PresentationLocationNode} from './xbrl/schema/nodes';
 
 import { BalanceSheetNode, BalanceSheetLine, ConsolidateBalanceSheetTable } from './xbrl/report/balancesheet/balancesheetnode';
+import { Format as BalanceSheetFormat } from './xbrl/report/balancesheet/format';
 
 import nunjucks = require('nunjucks');
 import path = require('path');
@@ -76,8 +77,9 @@ let parser = new DOMParser();
 
 let elements: ElementNode[];
 let labels: LabelNode[];
-let presentations: PresentationArcNode[];
-let locations: PresentationLocationNode[];
+let presentation: Presentation;
+// let presentations: PresentationArcNode[];
+// let locations: PresentationLocationNode[];
 
 // Parse elements schema
 let schema = fs.ReadFile(ELEMENT_SCHEMA).then<string>((data: string) => {
@@ -96,14 +98,14 @@ schema = schema.then<string>((data: string) => {
 // Parse presentation
 schema = schema.then<string>((data: string) => {
     let document = parser.parseFromString(data);
-    let pres = Schema.ParseGaapPresentation(document);
+    // let pres = Schema.ParseGaapPresentation(document);
 
-    presentations = <PresentationArcNode[]>pres[0];
-    locations = <PresentationLocationNode[]>pres[1];
+    presentation = Schema.ParseGaapPresentation(document);
+    // presentations = <PresentationArcNode[]>pres[0];
+    // locations = <PresentationLocationNode[]>pres[1];
 
     return fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
 });
-// After parsing the schema(s), we are now ready to parse any 2016 xbrl balance sheet
 schema = schema.then((data: string) => {
     let xbrl = new XBRL(parser.parseFromString(data));
 
@@ -112,105 +114,37 @@ schema = schema.then((data: string) => {
     let elementNames = elements.map((node: ElementNode) => { return node.name; });
     let labelNames = labels.map((node: LabelNode) => { return node.MatchingElement; });
 
-    // let presParentNames = presentations.map((node: Schema.PresentationArcNode) => { return node.parentName; });
-    let presNames = presentations.map((node: PresentationArcNode) => { return node.Name; });
+    // let presNames = presentations.map((node: PresentationArcNode) => { return node.Name; });
 
 
     // create statement nodes
-    let balanceSheetMap = new Map<ElementNode, BalanceSheetNode>();
-    let balanceSheet: BalanceSheetNode[] = [];
-    let parentChildren = new Map<ElementNode, BalanceSheetNode[]>();
-
-    let tableNode: BalanceSheetNode;
-
-    // loop through presentation nodes (we only want the balance sheet for now, so we can use the presentation location nodes)
-    for (let loc of locations) {
-        // find matching element
-        let elementIndex = elementNames.indexOf(loc.name);
-        let element = elementIndex !== -1 ? elements[elementIndex] : null;
-
-        // find matching label
-        let labelIndex = labelNames.indexOf(loc.name);
-        let label = labelIndex !== -1 ? labels[labelIndex] : null;
-
-        let presIndex = presNames.indexOf(loc.name);
-        let pres = presIndex !== -1 ? presentations[presIndex] : null;
-
-
-        // create balance sheet node
-        let balanceSheetNode: BalanceSheetNode;
-        if (balanceSheetMap.has(element)) {
-            balanceSheetNode = balanceSheetMap.get(element);
-        }
-        else {
-            balanceSheetNode = new BalanceSheetNode({
-                element: element,
-                label: label,
-                presentation: pres,
-                location: loc
-            });
-            balanceSheetMap.set(element, balanceSheetNode);
-            balanceSheet.push(balanceSheetNode);
-        }
-
-
-        if (loc.isTable) {
-            tableNode = balanceSheetNode;
-        }
-
-        if (pres !== null) {
-            // find if this is a 'total' node
-
-            // find the parent node        
-            let parentElementIndex = elementNames.indexOf(pres.ParentName);
-            let elementParent = elements[parentElementIndex];
-
-            if (parentChildren.has(elementParent)) {
-                parentChildren.get(elementParent).push(balanceSheetNode);
-            }
-            else {
-                parentChildren.set(elementParent, [balanceSheetNode]);
-            }
-        }
-    }
-
-
-    // match up children
-    for (let node of balanceSheet) {
-        if (parentChildren.has(node.element)) {
-            let children = parentChildren.get(node.element);
-
-            for (let child of children) {
-                child.parent = node;
-                node.children.push(child);
-
-                if (child.presentation && child.presentation.isTotal) {
-
-                }
-            }
-        }
-    }
+    // let balanceSheetMap = new Map<ElementNode, BalanceSheetNode>();
+    // let balanceSheet: BalanceSheetNode[] = [];
+    // let parentChildren = new Map<ElementNode, BalanceSheetNode[]>();
 
 
     // find the root node
     // should be `StatementOfFinancialPositionAbstract`
-    let root = balanceSheet[0];
-    while (root.parent !== null) {
-        root = root.parent;
-    }
+    let root = CreateNodes(presentation, elementNames, labelNames);
+    // let root = balanceSheet[0];
+    // while (root.parent !== null) {
+    //     root = root.parent;
+    // }
     console.log(root.element.name);
     
 
     console.log('creating balance sheet');
 
-    let htmlData = ConsolidateBalanceSheetTable(xbrl, tableNode);
-    htmlData.title = root.label.FormattedText;
+    let entity = Report.CreateEntityInformation(xbrl);
+
+    let lines = ConsolidateBalanceSheetTable(xbrl, root);
+    let balanceSheetData = BalanceSheetFormat(entity, root, lines);
 
 
     return renderNunjucks(
         path.join(process.cwd(), './templates/index.html'),
         ['.', './templates/'],
-        htmlData
+        balanceSheetData
     );
 });
 schema = schema.then((html: string) => {
@@ -219,6 +153,154 @@ schema = schema.then((html: string) => {
 schema = schema.then(() => {
     console.log('Wrote output.');
 });
+
+
+export function CreateNodes(root: Presentation, elementNames: string[], labelNames: string[]) {
+    // find matching element
+    let index = elementNames.indexOf(root.Name);
+    let element = index !== -1 ? elements[index] : null;
+
+    // find matching label
+    index = labelNames.indexOf(root.Name);
+    let label = index !== -1 ? labels[index] : null;
+
+
+    let stmntNode = new BalanceSheetNode({
+            element: element,
+            label: label
+            // presentation: pres
+            // location: loc
+        });
+
+    for (let child of root.Children) {
+        let childStmntNode = CreateNodes(child, elementNames, labelNames);
+
+        childStmntNode.parent = stmntNode;
+        stmntNode.children.push(childStmntNode);
+    }
+
+    return stmntNode;
+    // // create balance sheet node
+    // let balanceSheetNode: BalanceSheetNode;
+    // if (balanceSheetMap.has(element)) {
+    //     balanceSheetNode = balanceSheetMap.get(element);
+    // }
+    // else {
+    //     balanceSheetMap.set(element, balanceSheetNode);
+    //     balanceSheet.push(balanceSheetNode);
+    // }
+}
+
+// // After parsing the schema(s), we are now ready to parse any 2016 xbrl balance sheet
+// schema = schema.then((data: string) => {
+//     let xbrl = new XBRL(parser.parseFromString(data));
+
+
+//     // to quickly match elements with their labels and presentation 
+//     let elementNames = elements.map((node: ElementNode) => { return node.name; });
+//     let labelNames = labels.map((node: LabelNode) => { return node.MatchingElement; });
+
+//     // let presNames = presentations.map((node: PresentationArcNode) => { return node.Name; });
+
+
+//     // create statement nodes
+//     let balanceSheetMap = new Map<ElementNode, BalanceSheetNode>();
+//     let balanceSheet: BalanceSheetNode[] = [];
+//     let parentChildren = new Map<ElementNode, BalanceSheetNode[]>();
+
+//     // loop through presentation nodes
+//     // (we only want the balance sheet for now, so we can use the presentation location nodes)
+//     for (let loc of locations) {
+//         // find matching element
+//         let elementIndex = elementNames.indexOf(loc.Name);
+//         let element = elementIndex !== -1 ? elements[elementIndex] : null;
+
+//         // find matching label
+//         let labelIndex = labelNames.indexOf(loc.Name);
+//         let label = labelIndex !== -1 ? labels[labelIndex] : null;
+
+//         let presIndex = presNames.indexOf(loc.Name);
+//         let pres = presIndex !== -1 ? presentations[presIndex] : null;
+
+
+//         // create balance sheet node
+//         let balanceSheetNode: BalanceSheetNode;
+//         if (balanceSheetMap.has(element)) {
+//             balanceSheetNode = balanceSheetMap.get(element);
+//         }
+//         else {
+//             balanceSheetNode = new BalanceSheetNode({
+//                 element: element,
+//                 label: label
+//                 // presentation: pres
+//                 // location: loc
+//             });
+//             balanceSheetMap.set(element, balanceSheetNode);
+//             balanceSheet.push(balanceSheetNode);
+//         }
+
+
+//         if (pres !== null) {
+//             // find the parent node
+//             let index = elementNames.indexOf(pres.ParentName);
+//             let parent = elements[index];
+
+//             if (parentChildren.has(parent)) {
+//                 parentChildren.get(parent).push(balanceSheetNode);
+//             }
+//             else {
+//                 parentChildren.set(parent, [balanceSheetNode]);
+//             }
+//         }
+//     }
+
+
+//     // match up children
+//     for (let node of balanceSheet) {
+//         if (parentChildren.has(node.element)) {
+//             let children = parentChildren.get(node.element);
+
+//             for (let child of children) {
+//                 child.parent = node;
+//                 node.children.push(child);
+
+//                 // if (child.presentation && child.presentation.isTotal) {
+
+//                 // }
+//             }
+//         }
+//     }
+
+
+//     // find the root node
+//     // should be `StatementOfFinancialPositionAbstract`
+//     let root = balanceSheet[0];
+//     while (root.parent !== null) {
+//         root = root.parent;
+//     }
+//     console.log(root.element.name);
+    
+
+//     console.log('creating balance sheet');
+
+//     let entity = Report.CreateEntityInformation(xbrl);
+
+//     let lines = ConsolidateBalanceSheetTable(xbrl, root);
+//     let balanceSheetData = BalanceSheetFormat(entity, root, lines);
+
+
+//     return renderNunjucks(
+//         path.join(process.cwd(), './templates/index.html'),
+//         ['.', './templates/'],
+//         balanceSheetData
+//     );
+// });
+// schema = schema.then((html: string) => {
+//     return fs.WriteFile(path.join(process.cwd(), './output/cvs-20141231.html'), html);
+// });
+// schema = schema.then(() => {
+//     console.log('Wrote output.');
+// });
 
 
 // let read = fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
