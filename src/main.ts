@@ -1,14 +1,8 @@
 
-import { SECFiling, SECDocument } from './models/secmodels';
 import YahooAPI from './api/yahooapi';
 
 import XBRL from './xbrl/xbrl';
-
 import Report from './xbrl/reports';
-import Finance from './utilities/finance';
-
-import DFS from './utilities/dfs';
-import NodeTypes from './utilities/nodetypes';
 
 import Test from './test';
 
@@ -16,15 +10,15 @@ import API from './api/api';
 import { DOMParser } from 'xmldom';
 
 import { Schema } from './xbrl/schema/parse';
-import {ImportNode, ElementNode, LabelNode, Presentation, PresentationArcNode, PresentationLocationNode} from './xbrl/schema/nodes';
+import {ElementNode, LabelNode, Presentation} from './xbrl/schema/nodes';
 
-import { BalanceSheetNode, BalanceSheetLine, ConsolidateBalanceSheetTable } from './xbrl/report/balancesheet/balancesheetnode';
-import { Format as BalanceSheetFormat } from './xbrl/report/balancesheet/format';
+import { BalanceSheetNode } from './xbrl/report/balancesheet/balancesheetnode';
+import { ConsolidateBalanceSheetTable } from './xbrl/report/balancesheet/balancesheettable';
+import { FormatBalanceSheet } from './xbrl/report/balancesheet/balancesheetformat';
 
 import nunjucks = require('nunjucks');
 import path = require('path');
 import fs from './utilities/filesystem';
-// import XBRLLoader from './xbrl/loader';
 
 let isRelease = process.env.NODE_ENV === 'release';
 
@@ -44,30 +38,6 @@ let isRelease = process.env.NODE_ENV === 'release';
 
 
 
-function renderNunjucks(inputFilePath: string, searchRelativePaths: string[], context: any): Promise<string> {
-    let read = fs.ReadFile(inputFilePath);
-    read = read.then((data: string) => {
-        let env = nunjucks.configure(searchRelativePaths, {
-            autoescape: true,
-            trimBlocks: false,
-            lstripBlocks: false
-        });
-
-        return new Promise<string>((resolve: Function, reject: Function) => {
-            env.renderString(data, context, (err: any, res: string) => {
-                if (err) {
-                    reject(err);
-                }
-                else {
-                    resolve(res);
-                }
-            });
-        });
-    });
-    return read;
-}
-
-
 let ELEMENT_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/elts/us-gaap-2016-01-31.xsd');
 let LABEL_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/elts/us-gaap-lab-2016-01-31.xml');
 let PRESENTATION_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/stm/us-gaap-stm-sfp-cls-pre-2016-01-31.xml');
@@ -78,15 +48,14 @@ let parser = new DOMParser();
 let elements: ElementNode[];
 let labels: LabelNode[];
 let presentation: Presentation;
-// let presentations: PresentationArcNode[];
-// let locations: PresentationLocationNode[];
+
 
 // Parse elements schema
 let schema = fs.ReadFile(ELEMENT_SCHEMA).then<string>((data: string) => {
     let document = parser.parseFromString(data);
     elements = Schema.ParseGaapElements(document);
 
-    return fs.ReadFile(LABEL_SCHEMA)
+    return fs.ReadFile(LABEL_SCHEMA);
 });
 // Parse labels schema
 schema = schema.then<string>((data: string) => {
@@ -98,47 +67,35 @@ schema = schema.then<string>((data: string) => {
 // Parse presentation
 schema = schema.then<string>((data: string) => {
     let document = parser.parseFromString(data);
-    // let pres = Schema.ParseGaapPresentation(document);
-
     presentation = Schema.ParseGaapPresentation(document);
-    // presentations = <PresentationArcNode[]>pres[0];
-    // locations = <PresentationLocationNode[]>pres[1];
 
     return fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
 });
 schema = schema.then((data: string) => {
-    let xbrl = new XBRL(parser.parseFromString(data));
-
+    // TODO: match elements with labels before continuing?
 
     // to quickly match elements with their labels and presentation 
     let elementNames = elements.map((node: ElementNode) => { return node.name; });
     let labelNames = labels.map((node: LabelNode) => { return node.MatchingElement; });
 
-    // let presNames = presentations.map((node: PresentationArcNode) => { return node.Name; });
-
-
-    // create statement nodes
-    // let balanceSheetMap = new Map<ElementNode, BalanceSheetNode>();
-    // let balanceSheet: BalanceSheetNode[] = [];
-    // let parentChildren = new Map<ElementNode, BalanceSheetNode[]>();
-
-
     // find the root node
     // should be `StatementOfFinancialPositionAbstract`
     let root = CreateNodes(presentation, elementNames, labelNames);
-    // let root = balanceSheet[0];
-    // while (root.parent !== null) {
-    //     root = root.parent;
-    // }
     console.log(root.element.name);
-    
 
-    console.log('creating balance sheet');
+
+    // Parse the xbrl data
+    // and create the statments from the xbrl data
+    console.log('parsing xbrl data');
+    let xbrl = new XBRL(parser.parseFromString(data));
 
     let entity = Report.CreateEntityInformation(xbrl);
 
+    console.log('consolidating balance sheet table');
     let lines = ConsolidateBalanceSheetTable(xbrl, root);
-    let balanceSheetData = BalanceSheetFormat(entity, root, lines);
+
+    console.log('formatting balance sheet');
+    let balanceSheetData = FormatBalanceSheet(entity, root, lines);
 
 
     return renderNunjucks(
@@ -166,11 +123,9 @@ export function CreateNodes(root: Presentation, elementNames: string[], labelNam
 
 
     let stmntNode = new BalanceSheetNode({
-            element: element,
-            label: label
-            // presentation: pres
-            // location: loc
-        });
+        element: element,
+        label: label
+    });
 
     for (let child of root.Children) {
         let childStmntNode = CreateNodes(child, elementNames, labelNames);
@@ -180,16 +135,32 @@ export function CreateNodes(root: Presentation, elementNames: string[], labelNam
     }
 
     return stmntNode;
-    // // create balance sheet node
-    // let balanceSheetNode: BalanceSheetNode;
-    // if (balanceSheetMap.has(element)) {
-    //     balanceSheetNode = balanceSheetMap.get(element);
-    // }
-    // else {
-    //     balanceSheetMap.set(element, balanceSheetNode);
-    //     balanceSheet.push(balanceSheetNode);
-    // }
 }
+
+
+function renderNunjucks(inputFilePath: string, searchRelativePaths: string[], context: any): Promise<string> {
+    let read = fs.ReadFile(inputFilePath);
+    read = read.then((data: string) => {
+        let env = nunjucks.configure(searchRelativePaths, {
+            autoescape: true,
+            trimBlocks: false,
+            lstripBlocks: false
+        });
+
+        return new Promise<string>((resolve: Function, reject: Function) => {
+            env.renderString(data, context, (err: any, res: string) => {
+                if (err) {
+                    reject(err);
+                }
+                else {
+                    resolve(res);
+                }
+            });
+        });
+    });
+    return read;
+}
+
 
 // // After parsing the schema(s), we are now ready to parse any 2016 xbrl balance sheet
 // schema = schema.then((data: string) => {

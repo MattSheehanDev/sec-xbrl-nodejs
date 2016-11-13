@@ -1,5 +1,5 @@
-import { SelectNS } from './xmlns';
-import { GaapNode } from '../node';
+import { SelectNS } from '../namespaces/xmlns';
+import { GaapNode } from './gaapnode';
 
 // number of outstanding shares at time of reporting
 // (which probably occurs AFTER the time frame that the report covers)
@@ -147,8 +147,6 @@ export module Taxonomy {
     // TODO: should seperate nodes by years before SumNodes
     // TODO: move annualreport function to own modules
     // TODO: parse schemas
-    // TODO: make xbrl gaap node objects
-    // TODO: make xbrl instance node objects (balance=debit/credit, type, nillable, abstract, ...)
     // TODO: format output for templates
     // TODO: xbrl-us api? https://github.com/xbrlus/data_analysis_toolkit/tree/master/pages/api
 

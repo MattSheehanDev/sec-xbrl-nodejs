@@ -1,5 +1,5 @@
 import { XBRL_NS, SelectNS, CreateRootNode } from './namespaces/xmlns';
-import { All as allGaapNodes } from './namespaces/gaap';
+import { All as allGaapNodes } from './gaap/gaap';
 import { All as allDEINodes } from './namespaces/dei';
 
 

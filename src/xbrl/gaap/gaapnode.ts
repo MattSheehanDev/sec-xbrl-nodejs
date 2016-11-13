@@ -1,26 +1,6 @@
 import xpath = require('xpath');
 
 
-export function SumNodesByYear(nodes: GaapNode[]) {
-    // <year, value>
-    let map = new Map<number, number>();
-    for (let node of nodes) {
-        if (node.member) continue;
-
-        // if this year has already been seen before
-        if (map.has(node.year)) {
-            let value = map.get(node.year);
-            map.set(node.year, value + node.value);
-        }
-        // otherwise we have to create the node year array
-        else {
-            map.set(node.year, node.value);
-        }
-    }
-    return map;
-}
-
-
 export class GaapNode {
 
     public readonly value: number;

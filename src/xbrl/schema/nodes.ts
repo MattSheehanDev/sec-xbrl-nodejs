@@ -16,6 +16,7 @@ export class ImportNode {
 
 
 
+
 // Elements can be 'Abstract', 'Member', or a value
 export class ElementNode {
 
@@ -41,7 +42,7 @@ export class ElementNode {
 
         this.substitutionGroup = element.getAttributeNS(null, 'substitutionGroup');     // xbrl:item,...
 
-        // xbrli:monetaryItemType, nonnum:domainitemType, ...
+        // xbrli:monetaryItemType, num:perShareItemType, nonnum:domainitemType, ...
         this.type = element.getAttributeNS(null, 'type');
 
 
@@ -60,10 +61,9 @@ export class LabelNode {
     private _role: string;
     private _type: string;
     private _lang: string;    
-    private _text: string;
+    public readonly Text: string;
 
     public readonly MatchingElement: string;
-    public readonly FormattedText: string;
 
     constructor(element: Element) {
         this._label = element.getAttributeNS(xlinkNS, 'label');
@@ -71,34 +71,15 @@ export class LabelNode {
         this._type = element.getAttributeNS(xlinkNS, 'type');
         this._lang = element.getAttributeNS(null, 'lang');              // ?? what is this namespace
 
-        this._text = element.firstChild.nodeValue;
-
+        this.Text = element.firstChild.nodeValue;
 
         this.MatchingElement = this._label.substring('lab_'.length);
-
-        let match = this._text.match(/([^/[]*)\[.*\]$/);
-        if (match) {
-            this.FormattedText = match[1].trim();
-        }
-        else {
-            this.FormattedText = this._text;
-        }
     }
 
 }
 
 
 
-
-// export class PresentationGroupNode {
-//     public loc: PresentationLocationNode;
-//     public arc: PresentationArcNode;
-
-//     constructor(loc: PresentationLocationNode, arc: PresentationArcNode) {
-//         this.loc = loc;
-//         this.arc = arc;
-//     }
-// }
 
 
 const preferredLabel = 'http://www.xbrl.org/2003/role/totalLabel';
@@ -107,48 +88,34 @@ const arcrole = 'http://www.xbrl.org/2003/arcrole/parent-child';
 
 export class Presentation {
 
-    // private _href: string;
-    // private _label: string;
-
-    // private _preferredlabel: string;
-    // private _role: string;
-    // private _from: string;
-    // private _to: string;
-
     public readonly Name: string;
 
     public Parent: Presentation;
     public Children: Presentation[];
-    // public readonly Children: PresentationArcNode[];
-    // public readonly ParentName: string;
-
 
     constructor(name: string) {
         this.Name = name;
 
         this.Parent = null;
         this.Children = [];
-        // this.ParentName = arc.ParentName;
-
-        // this._preferredlabel = arc.preferredLabel;
     }
 }
 
-export class PresentationLocationNode {
+// export class PresentationLocationNode {
 
-    public readonly href: string;
-    public readonly label: string;
+//     public readonly href: string;
+//     public readonly label: string;
 
-    public readonly Name: string;
+//     public readonly Name: string;
 
 
-    constructor(element: Element) {
-        this.href = element.getAttributeNS(xlinkNS, 'href');
-        this.label = element.getAttributeNS(xlinkNS, 'label');
+//     constructor(element: Element) {
+//         this.href = element.getAttributeNS(xlinkNS, 'href');
+//         this.label = element.getAttributeNS(xlinkNS, 'label');
 
-        this.Name = this.label.substr('loc_'.length);
-    }
-}
+//         this.Name = this.label.substr('loc_'.length);
+//     }
+// }
 
 export class PresentationArcNode {
 

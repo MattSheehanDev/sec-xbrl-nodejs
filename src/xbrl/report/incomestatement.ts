@@ -1,4 +1,4 @@
-import { Taxonomy as taxon, Select } from '../namespaces/gaap';
+import { Taxonomy as taxon, Select } from '../gaap/gaap';
 import { SumNodes } from '../namespaces/xmlns';
 import XBRL from '../xbrl';
 
