@@ -1,5 +1,5 @@
-import { BalanceSheetNode } from './balancesheetnode';
-import { BalanceSheetLine } from './balancesheettable';
+import { StatementNode } from './balancesheetnode';
+import { StatementTable } from './balancesheettable';
 import { GaapNode } from '../../gaap/gaapnode';
 import { EntityModel } from '../../../models/entitymodel';
 
@@ -7,6 +7,7 @@ import { DateTime as datetime } from '../../../utilities/datetime';
 import { Round } from '../../../utilities/utility';
 
 
+// TODO: Create as `new Object`?
 export interface StatementHTML {
     title?: string;
     dates: string[];
@@ -20,7 +21,7 @@ export interface StatementLinesHTML {
 }
 
 
-function FindTable(node: BalanceSheetNode): BalanceSheetNode | null {
+function FindTable(node: StatementNode): StatementNode | null {
     for (let child of node.children) {
         if (child.element.name === 'StatementLineItems') {
             return child;
@@ -35,19 +36,16 @@ function FindTable(node: BalanceSheetNode): BalanceSheetNode | null {
 }
 
 
-export function FormatBalanceSheet(entity: EntityModel, root: BalanceSheetNode, lines: BalanceSheetLine[]) {
+export function FormatBalanceSheet(entity: EntityModel, root: StatementNode, table: StatementTable) {
     // find where the statement table begins
-    let table: BalanceSheetNode = FindTable(root);
+    let tableElement: StatementNode = FindTable(root);
 
     // find the root table children
     let rootTotals: string[] = [];
-    for (let child of table.children) {
+    for (let child of tableElement.children) {
         child.statementRoot = true;
 
         rootTotals.push(child.element.name);
-        // if (child.presentation) {
-        //     rootTotals.push(child.presentation.Name);
-        // }
     }
 
     
@@ -56,7 +54,7 @@ export function FormatBalanceSheet(entity: EntityModel, root: BalanceSheetNode, 
 
     // find all the dates
     let date = new Date(entity.DocumentDate);
-    let sortedYears = BalanceSheetLine.years.sort((a: number, b: number) => { return b - a; });
+    let sortedYears = table.years.sort((a: number, b: number) => { return b - a; });
     let dates = sortedYears.map((value: number) => {
         date.setFullYear(value);
         return datetime.format(date, 'MMM. dd, yyyy');
@@ -65,7 +63,7 @@ export function FormatBalanceSheet(entity: EntityModel, root: BalanceSheetNode, 
     // create and filter statement lines
     let bsLines: StatementLinesHTML[] = [];
 
-    for (let line of lines) {
+    for (let line of table.lines) {
         let values: string[] = [];
         let empty = true;
         for (let year of sortedYears) {

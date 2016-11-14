@@ -2,7 +2,7 @@
 import YahooAPI from './api/yahooapi';
 
 import XBRL from './xbrl/xbrl';
-import Report from './xbrl/reports';
+// import Report from './xbrl/reports';
 
 import Test from './test';
 
@@ -12,9 +12,12 @@ import { DOMParser } from 'xmldom';
 import { Schema } from './xbrl/schema/parse';
 import {ElementNode, LabelNode, Presentation} from './xbrl/schema/nodes';
 
-import { BalanceSheetNode } from './xbrl/report/balancesheet/balancesheetnode';
-import { ConsolidateBalanceSheetTable } from './xbrl/report/balancesheet/balancesheettable';
-import { FormatBalanceSheet } from './xbrl/report/balancesheet/balancesheetformat';
+import { EntityInfoXBRL as EntityInfo } from './xbrl/statements/entityinformation';
+import { EntityModel } from './models/entitymodel';
+
+import { StatementNode } from './xbrl/statements/balancesheet/balancesheetnode';
+import { ConsolidateBalanceSheetTable, ConsolidateIncomeStatementTable } from './xbrl/statements/balancesheet/balancesheettable';
+import { FormatBalanceSheet } from './xbrl/statements/balancesheet/balancesheetformat';
 
 import nunjucks = require('nunjucks');
 import path = require('path');
@@ -40,14 +43,16 @@ let isRelease = process.env.NODE_ENV === 'release';
 
 let ELEMENT_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/elts/us-gaap-2016-01-31.xsd');
 let LABEL_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/elts/us-gaap-lab-2016-01-31.xml');
-let PRESENTATION_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/stm/us-gaap-stm-sfp-cls-pre-2016-01-31.xml');
+let SFP_CLASSIFIED_PRESENTATION_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/stm/us-gaap-stm-sfp-cls-pre-2016-01-31.xml');
+let SOI_PRESENTATION_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/stm/us-gaap-stm-soi-pre-2016-01-31.xml');
 
 
 let parser = new DOMParser();
 
 let elements: ElementNode[];
 let labels: LabelNode[];
-let presentation: Presentation;
+let sfp_cls_presentation: Presentation;
+let soi_presentation: Presentation;
 
 
 // Parse elements schema
@@ -62,15 +67,24 @@ schema = schema.then<string>((data: string) => {
     let document = parser.parseFromString(data);
     labels = Schema.ParseGaapLabels(document);
 
-    return fs.ReadFile(PRESENTATION_SCHEMA);
+    return fs.ReadFile(SFP_CLASSIFIED_PRESENTATION_SCHEMA);
 });
-// Parse presentation
+
+// Parse sfp presentation
 schema = schema.then<string>((data: string) => {
     let document = parser.parseFromString(data);
-    presentation = Schema.ParseGaapPresentation(document);
+    sfp_cls_presentation = Schema.ParseGaapPresentation(document);
+
+    return fs.ReadFile(SOI_PRESENTATION_SCHEMA);
+});
+// parse soi presentation
+schema = schema.then<string>((data: string) => {
+    let document = parser.parseFromString(data);
+    soi_presentation = Schema.ParseGaapPresentation(document);
 
     return fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
 });
+
 schema = schema.then((data: string) => {
     // TODO: match elements with labels before continuing?
 
@@ -80,8 +94,8 @@ schema = schema.then((data: string) => {
 
     // find the root node
     // should be `StatementOfFinancialPositionAbstract`
-    let root = CreateNodes(presentation, elementNames, labelNames);
-    console.log(root.element.name);
+    let sfpRoot = CreateNodes(sfp_cls_presentation, elementNames, labelNames);
+    console.log(sfpRoot.element.name);
 
 
     // Parse the xbrl data
@@ -89,19 +103,46 @@ schema = schema.then((data: string) => {
     console.log('parsing xbrl data');
     let xbrl = new XBRL(parser.parseFromString(data));
 
-    let entity = Report.CreateEntityInformation(xbrl);
+    // let entity = Report.CreateEntityInformation(xbrl);
+    let entity = new EntityModel({
+        registrantName: EntityInfo.RegistrantName(xbrl),
+        centralIndexKey: EntityInfo.CentralIndexKey(xbrl),
+        documentType: EntityInfo.DocumentType(xbrl),
+        focusPeriod: EntityInfo.DocumentFocusPeriod(xbrl),
+        yearFocus: EntityInfo.DocumentYearFocus(xbrl),
+        documentDate: EntityInfo.DocumentEndDate(xbrl),
+        amendment: EntityInfo.Amendment(xbrl)
+    });
 
+    // create balance sheet tables
     console.log('consolidating balance sheet table');
-    let lines = ConsolidateBalanceSheetTable(xbrl, root);
+    let balanceSheet = ConsolidateBalanceSheetTable(xbrl, sfpRoot);
 
     console.log('formatting balance sheet');
-    let balanceSheetData = FormatBalanceSheet(entity, root, lines);
+    let balanceSheetMoney = FormatBalanceSheet(entity, sfpRoot, balanceSheet.money);
+    let balanceSheetShares = FormatBalanceSheet(entity, sfpRoot, balanceSheet.shares);
+
+    // create income statement tables
+    console.log('consolidating income statement table');
+    let soiRoot = CreateNodes(soi_presentation, elementNames, labelNames);
+    let incomeStatement = ConsolidateIncomeStatementTable(xbrl, soiRoot);
+    console.log('formatting income statement');
+    let incomeStatementFormat = FormatBalanceSheet(entity, soiRoot, incomeStatement);
 
 
     return renderNunjucks(
         path.join(process.cwd(), './templates/index.html'),
         ['.', './templates/'],
-        balanceSheetData
+        {
+            entity: entity,
+            sfp: {
+                money: balanceSheetMoney,
+                shares: balanceSheetShares
+            },
+            soi: {
+                income: incomeStatementFormat
+            }
+        }
     );
 });
 schema = schema.then((html: string) => {
@@ -122,7 +163,7 @@ export function CreateNodes(root: Presentation, elementNames: string[], labelNam
     let label = index !== -1 ? labels[index] : null;
 
 
-    let stmntNode = new BalanceSheetNode({
+    let stmntNode = new StatementNode({
         element: element,
         label: label
     });

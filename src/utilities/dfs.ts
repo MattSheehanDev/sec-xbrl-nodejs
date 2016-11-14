@@ -1,4 +1,4 @@
-import { BalanceSheetNode } from '../xbrl/report/balancesheet/balancesheetnode';
+import { StatementNode } from '../xbrl/statements/balancesheet/balancesheetnode';
 import NodeTypes from './nodetypes';
 
 
@@ -43,10 +43,10 @@ export function DFSRecursive(node: Node, each: (node: Node) => void) {
 }
 
 
-export function DFSBalanceSheet(root: BalanceSheetNode, each: (node: BalanceSheetNode) => void) {
+export function DFSBalanceSheet(root: StatementNode, each: (node: StatementNode) => void) {
     // let discovered: BalanceSheetNode[] = [];
 
-    let start: BalanceSheetNode[] = [];
+    let start: StatementNode[] = [];
     start.push(root);
 
     while(start.length > 0) {

@@ -25,8 +25,8 @@ export class GaapNode {
         this.unitRef = parseNonNumAttrType(xpath.select('@unitRef', node)[0]);
 
 
-        this.year = -1;
-        this.quarter = -1;
+        this.year = null;
+        this.quarter = null;
 
         if (this.contextRef) {
             let match: RegExpMatchArray;

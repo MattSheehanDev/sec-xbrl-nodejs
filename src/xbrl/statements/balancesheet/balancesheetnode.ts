@@ -1,16 +1,16 @@
 import {ElementNode, LabelNode} from '../../schema/nodes';
 
 
-export interface BalanceSheetNodeOptions {
+export interface StatementNodeOptions {
     element: ElementNode;
     label: LabelNode;
 }
 
 
-export class BalanceSheetNode {
+export class StatementNode {
     
-    public parent: BalanceSheetNode;
-    public children: BalanceSheetNode[];
+    public parent: StatementNode;
+    public children: StatementNode[];
 
     public readonly element: ElementNode;
     public readonly label: LabelNode;
@@ -22,7 +22,7 @@ export class BalanceSheetNode {
     public get ValueType() { return this.element.type; }
 
 
-    constructor(options: BalanceSheetNodeOptions) {
+    constructor(options: StatementNodeOptions) {
         this.element = options.element;
         this.label = options.label;
 

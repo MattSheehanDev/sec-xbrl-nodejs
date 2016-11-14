@@ -1,0 +1,51 @@
+<table>
+    <colgroup>
+        <col span="1" style="width: 600px"></col>
+        {% for date in soi.income.dates %}
+        <col span="1" style="width: 150px"></col>
+        {% endfor %}
+    </colgroup>
+	<thead>
+		<tr>
+			<th colspan="{{ soi.income.dates.length + 1 }}" rowspan="1">{{ soi.income.title }}</th>
+		</tr>
+		<tr>
+			<th></th>
+			{% for date in soi.income.dates %}
+			<th>{{ date }}</th>
+			{% endfor %}
+		</tr>
+	</thead>
+	<tbody>
+		{% for line in soi.income.lines %}
+		<tr>
+			{% if line.abstract %}
+				<td class='table-section'>{{ line.label }}</td>
+				{% for value in line.values %}
+				<td></td>
+				{% endfor %}
+			{% else %}
+				<td>{{ line.label }}</td>
+
+                {% set isTotal = line.total %}
+
+				{% for value in line.values %}
+					{% if value %}
+                        {% if isTotal %}
+						    <td class='table-section-total'>{{ value }}</td>
+                        {% else %}
+                            <td>{{ value }}</td>
+                        {% endif %}
+					{% else %}
+                        {% if isTotal %}
+						    <td class='table-section-total'></td>
+                        {% else %}
+                            <td></td>
+                        {% endif %}
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+		</tr>
+		{% endfor %}		
+	</tbody>
+</table>
