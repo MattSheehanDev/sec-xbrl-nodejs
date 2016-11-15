@@ -1,4 +1,5 @@
-import {ElementNode, LabelNode} from '../../schema/nodes';
+import {ElementNode} from '../../../schema/schemanodes';
+import {LabelNode} from '../../../schema/linkbasenodes';
 
 
 export interface StatementNodeOptions {

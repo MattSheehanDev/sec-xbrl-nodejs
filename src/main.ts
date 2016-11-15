@@ -1,16 +1,12 @@
-
-import YahooAPI from './api/yahooapi';
-
 import XBRL from './xbrl/xbrl';
-// import Report from './xbrl/reports';
-
-import Test from './test';
 
 import API from './api/api';
 import { DOMParser } from 'xmldom';
 
-import { Schema } from './xbrl/schema/parse';
-import {ElementNode, LabelNode, Presentation} from './xbrl/schema/nodes';
+import { SchemaDocument, ParseSchemaDocument } from './schema/schemadocument';
+import { Linkbase } from './schema/schemalinkbase';
+import { ElementNode } from './schema/schemanodes'; 
+import { LabelNode, Presentation } from './schema/linkbasenodes';
 
 import { EntityInfoXBRL as EntityInfo } from './xbrl/statements/entityinformation';
 import { EntityModel } from './models/entitymodel';
@@ -40,57 +36,134 @@ let isRelease = process.env.NODE_ENV === 'release';
 // YahooAPI.csv.GetPrice(['AAPL', 'GOOG']);
 
 
+// API.Get('http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd').then((data: string) => {
+//     let DEI_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/dei-2014-01-31.xsd');
+//     return fs.WriteFile(DEI_SCHEMA, data);
+// }).then(() => {
+//     console.log('wrote dei output');
+// });
 
-let ELEMENT_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/elts/us-gaap-2016-01-31.xsd');
-let LABEL_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/elts/us-gaap-lab-2016-01-31.xml');
-let SFP_CLASSIFIED_PRESENTATION_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/stm/us-gaap-stm-sfp-cls-pre-2016-01-31.xml');
-let SOI_PRESENTATION_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/stm/us-gaap-stm-soi-pre-2016-01-31.xml');
+export module DEI {
+    export const ELEMENT_SCHEMA = path.join(process.cwd(), './dei-2014-01-31/dei-2014-01-31.xsd');
+    export const LABEL_SCHEMA = path.join(process.cwd(), './dei-2014-01-31/dei-lab-2014-01-31.xml');
+    export const PRESENTATION_SCHEMA = path.join(process.cwd(), './dei-2014-01-31/dei-pre-2014-01-31.xml');
+}
+export module GAAP {
+    export const ELEMENT_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/elts/us-gaap-2016-01-31.xsd');
+    export const LABEL_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/elts/us-gaap-lab-2016-01-31.xml');
+    export const SFP_CLASSIFIED_PRESENTATION_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/stm/us-gaap-stm-sfp-cls-pre-2016-01-31.xml');
+    export const SOI_PRESENTATION_SCHEMA = path.join(process.cwd(), './us-gaap-2016-01-31/stm/us-gaap-stm-soi-pre-2016-01-31.xml');
+}
 
 
 let parser = new DOMParser();
 
-let elements: ElementNode[];
-let labels: LabelNode[];
+let DEISchema: SchemaDocument;
+let DEILabels: LabelNode[];
+let DEIPresentation: Presentation;
+
+let GaapSchema: SchemaDocument;
+let GaapLabels: LabelNode[];
 let sfp_cls_presentation: Presentation;
 let soi_presentation: Presentation;
 
 
-// Parse elements schema
-let schema = fs.ReadFile(ELEMENT_SCHEMA).then<string>((data: string) => {
+// Parse DEI schema
+let dei = fs.ReadFile(DEI.ELEMENT_SCHEMA).then<string>((data: string) => {
     let document = parser.parseFromString(data);
-    elements = Schema.ParseGaapElements(document);
+    DEISchema = ParseSchemaDocument(document);
 
-    return fs.ReadFile(LABEL_SCHEMA);
+    return fs.ReadFile(DEI.LABEL_SCHEMA);
+});
+dei = dei.then<string>((data: string) => {
+    let document = parser.parseFromString(data);
+    DEILabels = Linkbase.ParseLabels(document);
+
+    return fs.ReadFile(DEI.PRESENTATION_SCHEMA);
+});
+dei = dei.then<void>((data: string) => {
+    let document = parser.parseFromString(data);
+
+    // TODO: handle multiple presentationLink's
+    // TODO: match roleRef's with presentationLink's
+    DEIPresentation = Linkbase.ParsePresentation(document);
+});
+// dei = dei.then<void>(() => {
+//     // to quickly match elements with their labels and presentation 
+//     let elementNames = GaapSchema.Elements.map((node: ElementNode) => { return node.name; });
+//     let labelNames = GaapLabels.map((node: LabelNode) => { return node.MatchingElement; });
+
+//     // find the root node
+//     // should be `StatementOfFinancialPositionAbstract`
+//     let sfpRoot = CreateNodes(sfp_cls_presentation, elementNames, labelNames);
+//     console.log(sfpRoot.element.name);
+
+
+//     // Parse the xbrl data
+//     // and create the statments from the xbrl data
+//     console.log('parsing xbrl data');
+//     let xbrl = new XBRL(parser.parseFromString(data));
+
+//     // let entity = Report.CreateEntityInformation(xbrl);
+//     let entity = new EntityModel({
+//         registrantName: EntityInfo.RegistrantName(xbrl),
+//         centralIndexKey: EntityInfo.CentralIndexKey(xbrl),
+//         documentType: EntityInfo.DocumentType(xbrl),
+//         focusPeriod: EntityInfo.DocumentFocusPeriod(xbrl),
+//         yearFocus: EntityInfo.DocumentYearFocus(xbrl),
+//         documentDate: EntityInfo.DocumentEndDate(xbrl),
+//         amendment: EntityInfo.Amendment(xbrl)
+//     });
+// });
+
+
+// Parse GAAP schema
+let gaap = fs.ReadFile(GAAP.ELEMENT_SCHEMA).then<string>((data: string) => {
+    let document = parser.parseFromString(data);
+    GaapSchema = ParseSchemaDocument(document);
+
+    return fs.ReadFile(GAAP.LABEL_SCHEMA);
 });
 // Parse labels schema
-schema = schema.then<string>((data: string) => {
+gaap = gaap.then<string>((data: string) => {
     let document = parser.parseFromString(data);
-    labels = Schema.ParseGaapLabels(document);
+    GaapLabels = Linkbase.ParseLabels(document);
 
-    return fs.ReadFile(SFP_CLASSIFIED_PRESENTATION_SCHEMA);
+    return fs.ReadFile(GAAP.SFP_CLASSIFIED_PRESENTATION_SCHEMA);
 });
-
 // Parse sfp presentation
-schema = schema.then<string>((data: string) => {
+gaap = gaap.then<string>((data: string) => {
     let document = parser.parseFromString(data);
-    sfp_cls_presentation = Schema.ParseGaapPresentation(document);
+    sfp_cls_presentation = Linkbase.ParsePresentation(document);
 
-    return fs.ReadFile(SOI_PRESENTATION_SCHEMA);
+    return fs.ReadFile(GAAP.SOI_PRESENTATION_SCHEMA);
 });
 // parse soi presentation
-schema = schema.then<string>((data: string) => {
+gaap = gaap.then<string>((data: string) => {
     let document = parser.parseFromString(data);
-    soi_presentation = Schema.ParseGaapPresentation(document);
+    soi_presentation = Linkbase.ParsePresentation(document);
 
     return fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
 });
 
-schema = schema.then((data: string) => {
+
+let render = Promise.all([gaap, dei]).then<string>(() => {
+    // after parsing the schemas, we can parse an xbrl instance document
+    return fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
+});
+render = render.then<string>((data: string) => {
+    // create DEI nodes
+    let deiElementNames = DEISchema.Elements.map((node: ElementNode) => { return node.name; });
+    let deiLabelNames = DEILabels.map((node: LabelNode) => { return node.MatchingElement; });
+
+    let deiRoot = MatchDEINodes(DEIPresentation, deiElementNames, deiLabelNames);
+    console.log(`DEI Root: ${deiRoot.element.name}`);
+
     // TODO: match elements with labels before continuing?
 
     // to quickly match elements with their labels and presentation 
-    let elementNames = elements.map((node: ElementNode) => { return node.name; });
-    let labelNames = labels.map((node: LabelNode) => { return node.MatchingElement; });
+    let elementNames = GaapSchema.Elements.map((node: ElementNode) => { return node.name; });
+    let labelNames = GaapLabels.map((node: LabelNode) => { return node.MatchingElement; });
 
     // find the root node
     // should be `StatementOfFinancialPositionAbstract`
@@ -145,22 +218,45 @@ schema = schema.then((data: string) => {
         }
     );
 });
-schema = schema.then((html: string) => {
+render = render.then((html: string) => {
     return fs.WriteFile(path.join(process.cwd(), './output/cvs-20141231.html'), html);
 });
-schema = schema.then(() => {
+render = render.then(() => {
     console.log('Wrote output.');
 });
 
 
-export function CreateNodes(root: Presentation, elementNames: string[], labelNames: string[]) {
+export function MatchDEINodes(root: Presentation, elementNames: string[], labelNames: string[]) {
     // find matching element
     let index = elementNames.indexOf(root.Name);
-    let element = index !== -1 ? elements[index] : null;
+    let element = index !== -1 ? DEISchema.Elements[index] : null;
 
     // find matching label
     index = labelNames.indexOf(root.Name);
-    let label = index !== -1 ? labels[index] : null;
+    let label = index !== -1 ? DEILabels[index] : null;
+
+
+    let stmntNode = new StatementNode({
+        element: element,
+        label: label
+    });
+
+    for (let child of root.Children) {
+        let childStmntNode = CreateNodes(child, elementNames, labelNames);
+
+        childStmntNode.parent = stmntNode;
+        stmntNode.children.push(childStmntNode);
+    }
+    return stmntNode;    
+}
+export function CreateNodes(root: Presentation, elementNames: string[], labelNames: string[]) {
+    // find matching element
+    let index = elementNames.indexOf(root.Name);
+    let element = index !== -1 ? GaapSchema.Elements[index] : null;
+
+    // find matching label
+    index = labelNames.indexOf(root.Name);
+    let label = index !== -1 ? GaapLabels[index] : null;
 
 
     let stmntNode = new StatementNode({
@@ -201,6 +297,75 @@ function renderNunjucks(inputFilePath: string, searchRelativePaths: string[], co
     });
     return read;
 }
+
+
+
+// gaap = gaap.then((data: string) => {
+//     // TODO: match elements with labels before continuing?
+
+//     // to quickly match elements with their labels and presentation 
+//     let elementNames = GaapSchema.Elements.map((node: ElementNode) => { return node.name; });
+//     let labelNames = GaapLabels.map((node: LabelNode) => { return node.MatchingElement; });
+
+//     // find the root node
+//     // should be `StatementOfFinancialPositionAbstract`
+//     let sfpRoot = CreateNodes(sfp_cls_presentation, elementNames, labelNames);
+//     console.log(sfpRoot.element.name);
+
+
+//     // Parse the xbrl data
+//     // and create the statments from the xbrl data
+//     console.log('parsing xbrl data');
+//     let xbrl = new XBRL(parser.parseFromString(data));
+
+//     // let entity = Report.CreateEntityInformation(xbrl);
+//     let entity = new EntityModel({
+//         registrantName: EntityInfo.RegistrantName(xbrl),
+//         centralIndexKey: EntityInfo.CentralIndexKey(xbrl),
+//         documentType: EntityInfo.DocumentType(xbrl),
+//         focusPeriod: EntityInfo.DocumentFocusPeriod(xbrl),
+//         yearFocus: EntityInfo.DocumentYearFocus(xbrl),
+//         documentDate: EntityInfo.DocumentEndDate(xbrl),
+//         amendment: EntityInfo.Amendment(xbrl)
+//     });
+
+//     // create balance sheet tables
+//     console.log('consolidating balance sheet table');
+//     let balanceSheet = ConsolidateBalanceSheetTable(xbrl, sfpRoot);
+
+//     console.log('formatting balance sheet');
+//     let balanceSheetMoney = FormatBalanceSheet(entity, sfpRoot, balanceSheet.money);
+//     let balanceSheetShares = FormatBalanceSheet(entity, sfpRoot, balanceSheet.shares);
+
+//     // create income statement tables
+//     console.log('consolidating income statement table');
+//     let soiRoot = CreateNodes(soi_presentation, elementNames, labelNames);
+//     let incomeStatement = ConsolidateIncomeStatementTable(xbrl, soiRoot);
+//     console.log('formatting income statement');
+//     let incomeStatementFormat = FormatBalanceSheet(entity, soiRoot, incomeStatement);
+
+
+//     return renderNunjucks(
+//         path.join(process.cwd(), './templates/index.html'),
+//         ['.', './templates/'],
+//         {
+//             entity: entity,
+//             sfp: {
+//                 money: balanceSheetMoney,
+//                 shares: balanceSheetShares
+//             },
+//             soi: {
+//                 income: incomeStatementFormat
+//             }
+//         }
+//     );
+// });
+// gaap = gaap.then((html: string) => {
+//     return fs.WriteFile(path.join(process.cwd(), './output/cvs-20141231.html'), html);
+// });
+// gaap = gaap.then(() => {
+//     console.log('Wrote output.');
+// });
 
 
 // // After parsing the schema(s), we are now ready to parse any 2016 xbrl balance sheet

@@ -1,42 +1,11 @@
-import DFS from '../../utilities/dfs';
-import {ImportNode, ElementNode, LabelNode, Presentation, PresentationArcNode} from './nodes';
+import DFS from '../utilities/dfs';
+import {LabelNode, Presentation, PresentationArcNode} from './linkbasenodes';
 
 
-export namespace Schema {
+export namespace Linkbase {
 
-    
-    export function ParseGaapElements(document: Document) {
-        let elements: ElementNode[] = [];
-        let namespaces = new Map<string, string>();
 
-        DFS(document, (element: Element) => {
-            if ('schema' === element.localName) {
-                // first get the namespaces
-                for (let i = 0; i < element.attributes.length; i++) {
-                    let attr = element.attributes[i];
-
-                    if (attr.prefix === 'xmlns') {
-                        if(!namespaces.has(attr.localName)) {
-                            namespaces.set(attr.localName, attr.value);
-                        }
-                    }
-                }                
-            }
-            else if ('import' === element.localName) {
-                let importNode = new ImportNode(element, namespaces);
-            }
-            else if ('element' === element.localName) {
-                let elementNode = new ElementNode(element, namespaces);
-                elements.push(elementNode);
-            }
-            else if ('annotation' === element.localName) {
-
-            }
-        });
-        return elements;
-    }
-
-    export function ParseGaapLabels(document: Document) {
+    export function ParseLabels(document: Document) {
         let labels: LabelNode[] = [];
 
         DFS(document, (element: Element) => {
@@ -48,21 +17,8 @@ export namespace Schema {
         return labels;
     }
 
-    // Statement of Financial Position & Parenthetical
-    const BalanceSheetRoot = 'StatementOfFinancialPositionAbstract';
-    // Income Statement & Other Comprehensive Income
-    const IncomeStatementRoot = 'IncomeStatementAbstract';
-    // Statement of Stockholders Equity
-    const StockholdersEquityRoot = 'StatementOfStockholdersEquityAbstract';
-    // Statement of Cash Flows
-    const CashFlowRoot = 'StatementOfCashFlowsAbstract';
-    // Statement of Direct Cash Flows
-    const DirectCashFlowRoot = 'OperatingCashFlowsDirectMethodAbstract';
-    // Statement of Partners Capital
-    const PartnersCapitalRoot = 'StatementOfPartnersCapitalAbstract';
-    
 
-    export function ParseGaapPresentation(document: Document) {
+    export function ParsePresentation(document: Document) {
         let presentations: Presentation[] = [];
         let presMap = new Map<string, Presentation>();
 
