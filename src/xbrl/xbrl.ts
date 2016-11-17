@@ -1,4 +1,4 @@
-import { XBRL_NS, SelectNS, CreateRootNode } from './namespaces/xmlns';
+import { CreateRootNode } from './namespaces/xmlns';
 import { All as allGaapNodes } from './gaap/gaap';
 import { All as allDEINodes } from './namespaces/dei';
 
@@ -13,6 +13,8 @@ export class XBRLDocument {
 
     constructor(doc: Document) {
         this.document = doc;
+
+        // TODO: do this without xpath        
 
         // Create a root gaap node and clone gaap nodes
         this.gaapRoot = CreateRootNode(this.document);

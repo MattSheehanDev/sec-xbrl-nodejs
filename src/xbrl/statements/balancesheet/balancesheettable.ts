@@ -2,7 +2,7 @@ import XBRLDocument from '../../xbrl';
 import { DFSBalanceSheet } from '../../../utilities/dfs';
 import { StatementNode } from './balancesheetnode';
 import { GaapNode } from '../../gaap/gaapnode';
-import { Select } from '../../gaap/gaap';
+import { Select as GaapSelect } from '../../gaap/gaap';
 
 
 const moneyType = 'xbrli:monetaryItemType';
@@ -11,6 +11,52 @@ const sharesType = 'xbrli:sharesItemType';
 const perShareType = 'num:perShareItemType';
 
 
+export function ConsolidateDocumentTable(xbrl: XBRLDocument, root: StatementNode) {
+    let table = new StatementTable();
+
+    DFSBalanceSheet(root, (node: StatementNode) => {
+        let line = table.AddRow(node);
+
+        // TODO: change to DEISelect
+        let gaapNodes = GaapSelect(node.element.name, xbrl.gaapRoot);
+        for (let gaap of gaapNodes) {
+            // some nodes have a year such as FD2016Q4_us-gaap_SomeMember, which we don't want to include in the totals right now
+            if (!gaap.year || gaap.member) continue;
+
+            // can't have two nodes with the same year
+            // TODO: we COULD have two nodes with the same year but different quarters...
+            if (line.Has(gaap.year)) continue; 
+
+            line.Set(gaap.year, gaap);
+        }
+    });
+    return table;
+}
+
+export function ConsolidateStatementTable(xbrl: XBRLDocument, root: StatementNode) {
+    let table = new StatementTable();
+
+    DFSBalanceSheet(root, (node: StatementNode) => {
+        let line = table.AddRow(node);
+
+        let gaapNodes = GaapSelect(node.element.name, xbrl.gaapRoot);
+        for (let gaap of gaapNodes) {
+            // some nodes have a year such as FD2016Q4_us-gaap_SomeMember, which we don't want to include in the totals right now
+            if (!gaap.year || gaap.member) continue;
+
+            // can't have two nodes with the same year
+            // TODO: we COULD have two nodes with the same year but different quarters...
+            if (line.Has(gaap.year)) continue; 
+
+            line.Set(gaap.year, gaap);
+        }
+    });
+    return table;
+}
+
+
+// TODO: seperate statement nodes before invoking ConsolidateStatementTable
+//       and then remove this function
 export function ConsolidateBalanceSheetTable(xbrl: XBRLDocument, table: StatementNode) {
     let balanceSheetTable = new StatementTable();
     let parentheticalTable = new StatementTable();
@@ -19,7 +65,7 @@ export function ConsolidateBalanceSheetTable(xbrl: XBRLDocument, table: Statemen
         if (moneyType === node.element.type || stringType === node.element.type) {
             let line = balanceSheetTable.AddRow(node);
 
-            let gaapNodes = Select(node.element.name, xbrl.gaapRoot);
+            let gaapNodes = GaapSelect(node.element.name, xbrl.gaapRoot);
             for (let gaap of gaapNodes) {
                 // some nodes have a year such as FD2016Q4_us-gaap_SomeMember, which we don't want to include in the totals right now
                 if (!gaap.year || gaap.member) continue;
@@ -34,7 +80,7 @@ export function ConsolidateBalanceSheetTable(xbrl: XBRLDocument, table: Statemen
         else {
             let line = parentheticalTable.AddRow(node);
 
-            let gaapNodes = Select(node.element.name, xbrl.gaapRoot);
+            let gaapNodes = GaapSelect(node.element.name, xbrl.gaapRoot);
             for (let gaap of gaapNodes) {
                 // some nodes have a year such as FD2016Q4_us-gaap_SomeMember, which we don't want to include in the totals right now
                 if (!gaap.year || gaap.member) continue;
@@ -51,27 +97,27 @@ export function ConsolidateBalanceSheetTable(xbrl: XBRLDocument, table: Statemen
     return { money: balanceSheetTable, shares: parentheticalTable };
 }
 
-export function ConsolidateIncomeStatementTable(xbrl: XBRLDocument, table: StatementNode) {
-    let incomeTable = new StatementTable();
+// export function ConsolidateIncomeStatementTable(xbrl: XBRLDocument, table: StatementNode) {
+//     let incomeTable = new StatementTable();
 
-    DFSBalanceSheet(table, (node: StatementNode) => {
-        let line = incomeTable.AddRow(node);
+//     DFSBalanceSheet(table, (node: StatementNode) => {
+//         let line = incomeTable.AddRow(node);
 
-        let gaapNodes = Select(node.element.name, xbrl.gaapRoot);
-        for (let gaap of gaapNodes) {
-            // some nodes have a year such as FD2016Q4_us-gaap_SomeMember, which we don't want to include in the totals right now
-            if (!gaap.year || gaap.member) continue;
+//         let gaapNodes = Select(node.element.name, xbrl.gaapRoot);
+//         for (let gaap of gaapNodes) {
+//             // some nodes have a year such as FD2016Q4_us-gaap_SomeMember, which we don't want to include in the totals right now
+//             if (!gaap.year || gaap.member) continue;
 
-            // can't have two nodes with the same year
-            // TODO: we COULD have two nodes with the same year but different quarters...
-            if (line.Has(gaap.year)) continue; 
+//             // can't have two nodes with the same year
+//             // TODO: we COULD have two nodes with the same year but different quarters...
+//             if (line.Has(gaap.year)) continue; 
 
-            line.Set(gaap.year, gaap);
-        }
-    });
+//             line.Set(gaap.year, gaap);
+//         }
+//     });
 
-    return incomeTable;
-}
+//     return incomeTable;
+// }
 
 
 

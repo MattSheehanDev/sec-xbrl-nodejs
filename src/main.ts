@@ -6,13 +6,13 @@ import { DOMParser } from 'xmldom';
 import { SchemaDocument, ParseSchemaDocument } from './schema/schemadocument';
 import { Linkbase } from './schema/schemalinkbase';
 import { ElementNode } from './schema/schemanodes'; 
-import { LabelNode, Presentation } from './schema/linkbasenodes';
+import { LabelNode, PresentationLink, Presentation } from './schema/linkbasenodes';
 
 import { EntityInfoXBRL as EntityInfo } from './xbrl/statements/entityinformation';
 import { EntityModel } from './models/entitymodel';
 
 import { StatementNode } from './xbrl/statements/balancesheet/balancesheetnode';
-import { ConsolidateBalanceSheetTable, ConsolidateIncomeStatementTable } from './xbrl/statements/balancesheet/balancesheettable';
+import { ConsolidateBalanceSheetTable, ConsolidateStatementTable } from './xbrl/statements/balancesheet/balancesheettable';
 import { FormatBalanceSheet } from './xbrl/statements/balancesheet/balancesheetformat';
 
 import nunjucks = require('nunjucks');
@@ -60,12 +60,12 @@ let parser = new DOMParser();
 
 let DEISchema: SchemaDocument;
 let DEILabels: LabelNode[];
-let DEIPresentation: Presentation;
+let DEIPresentation: PresentationLink[];
 
 let GaapSchema: SchemaDocument;
 let GaapLabels: LabelNode[];
-let sfp_cls_presentation: Presentation;
-let soi_presentation: Presentation;
+let sfp_cls_presentation: PresentationLink[];
+let soi_presentation: PresentationLink[];
 
 
 // Parse DEI schema
@@ -152,30 +152,19 @@ let render = Promise.all([gaap, dei]).then<string>(() => {
     return fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
 });
 render = render.then<string>((data: string) => {
-    // create DEI nodes
-    let deiElementNames = DEISchema.Elements.map((node: ElementNode) => { return node.name; });
-    let deiLabelNames = DEILabels.map((node: LabelNode) => { return node.MatchingElement; });
-
-    let deiRoot = MatchDEINodes(DEIPresentation, deiElementNames, deiLabelNames);
-    console.log(`DEI Root: ${deiRoot.element.name}`);
-
-    // TODO: match elements with labels before continuing?
-
-    // to quickly match elements with their labels and presentation 
-    let elementNames = GaapSchema.Elements.map((node: ElementNode) => { return node.name; });
-    let labelNames = GaapLabels.map((node: LabelNode) => { return node.MatchingElement; });
-
-    // find the root node
-    // should be `StatementOfFinancialPositionAbstract`
-    let sfpRoot = CreateNodes(sfp_cls_presentation, elementNames, labelNames);
-    console.log(sfpRoot.element.name);
-
-
     // Parse the xbrl data
     // and create the statments from the xbrl data
     console.log('parsing xbrl data');
     let xbrl = new XBRL(parser.parseFromString(data));
 
+
+    // create DEI nodes
+    let deiElementNames = DEISchema.Elements.map((node: ElementNode) => { return node.name; });
+    let deiLabelNames = DEILabels.map((node: LabelNode) => { return node.MatchingElement; });
+
+    let deiRoot = MatchDEINodes(DEIPresentation[0].root(), deiElementNames, deiLabelNames);
+    console.log(`DEI Root: ${deiRoot.element.name}`);
+    
     // let entity = Report.CreateEntityInformation(xbrl);
     let entity = new EntityModel({
         registrantName: EntityInfo.RegistrantName(xbrl),
@@ -187,6 +176,18 @@ render = render.then<string>((data: string) => {
         amendment: EntityInfo.Amendment(xbrl)
     });
 
+
+    // TODO: match elements with labels before continuing?
+
+    // to quickly match elements with their labels and presentation 
+    let elementNames = GaapSchema.Elements.map((node: ElementNode) => { return node.name; });
+    let labelNames = GaapLabels.map((node: LabelNode) => { return node.MatchingElement; });
+
+    // find the root node
+    // should be `StatementOfFinancialPositionAbstract`
+    let sfpRoot = MatchGaapNodes(sfp_cls_presentation[0].root(), elementNames, labelNames);
+    console.log(sfpRoot.element.name);
+
     // create balance sheet tables
     console.log('consolidating balance sheet table');
     let balanceSheet = ConsolidateBalanceSheetTable(xbrl, sfpRoot);
@@ -197,8 +198,8 @@ render = render.then<string>((data: string) => {
 
     // create income statement tables
     console.log('consolidating income statement table');
-    let soiRoot = CreateNodes(soi_presentation, elementNames, labelNames);
-    let incomeStatement = ConsolidateIncomeStatementTable(xbrl, soiRoot);
+    let soiRoot = MatchGaapNodes(soi_presentation[0].root(), elementNames, labelNames);
+    let incomeStatement = ConsolidateStatementTable(xbrl, soiRoot);
     console.log('formatting income statement');
     let incomeStatementFormat = FormatBalanceSheet(entity, soiRoot, incomeStatement);
 
@@ -242,14 +243,14 @@ export function MatchDEINodes(root: Presentation, elementNames: string[], labelN
     });
 
     for (let child of root.Children) {
-        let childStmntNode = CreateNodes(child, elementNames, labelNames);
+        let childStmntNode = MatchDEINodes(child, elementNames, labelNames);
 
         childStmntNode.parent = stmntNode;
         stmntNode.children.push(childStmntNode);
     }
     return stmntNode;    
 }
-export function CreateNodes(root: Presentation, elementNames: string[], labelNames: string[]) {
+export function MatchGaapNodes(root: Presentation, elementNames: string[], labelNames: string[]) {
     // find matching element
     let index = elementNames.indexOf(root.Name);
     let element = index !== -1 ? GaapSchema.Elements[index] : null;
@@ -265,13 +266,31 @@ export function CreateNodes(root: Presentation, elementNames: string[], labelNam
     });
 
     for (let child of root.Children) {
-        let childStmntNode = CreateNodes(child, elementNames, labelNames);
+        let childStmntNode = MatchGaapNodes(child, elementNames, labelNames);
 
         childStmntNode.parent = stmntNode;
         stmntNode.children.push(childStmntNode);
     }
 
     return stmntNode;
+}
+export function CreateNodes(elements: ElementNode[], labels: LabelNode[]) {
+    let labelNames = labels.map((node: LabelNode) => { return node.MatchingElement; });
+
+    let nodes: StatementNode[] = [];
+
+    for (let element of elements) {
+        // find matching label
+        let index = labelNames.indexOf(element.name);
+        let label = index !== -1 ? GaapLabels[index] : null;
+
+        let stmntNode = new StatementNode({
+            element: element,
+            label: label
+        });
+    }
+
+    return nodes;
 }
 
 

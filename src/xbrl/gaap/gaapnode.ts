@@ -19,6 +19,7 @@ export class GaapNode {
     constructor(node: Element) {
         this.value = parseNumericItemValue(node);
 
+        // TODO: do this without xpath?
         this.contextRef = parseNonNumAttrType(xpath.select('@contextRef', node)[0]);
         this.decimals = parseNumericAttrType(xpath.select('@decimals', node)[0]);
         this.id = parseNonNumAttrType(xpath.select('@id', node)[0]);

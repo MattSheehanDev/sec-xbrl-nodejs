@@ -20,6 +20,12 @@ export module Taxonomy {
 }
 
 
+// TODO: create dei node
+// TODO: pass in namespace uri (determines what schema to use)
+// TODO: remove dei taxonomies
+export function All(document: Document) {
+    return SelectNS(`//*[namespace-uri()='http://xbrl.sec.gov/dei/2013-01-31']`, document);
+}
 
 export function Select(name: string, document: Document|Element): any[] {
     let usingNS = `//*[local-name()='${name}' and namespace-uri()='http://xbrl.sec.gov/dei/2013-01-31']`;
@@ -36,6 +42,4 @@ export function Select(name: string, document: Document|Element): any[] {
 }
 
 
-export function All(document: Document) {
-    return SelectNS(`//*[namespace-uri()='http://xbrl.sec.gov/dei/2013-01-31']`, document);
-}
+
