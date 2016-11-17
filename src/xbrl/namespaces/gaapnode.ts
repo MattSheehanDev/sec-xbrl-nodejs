@@ -1,7 +1,20 @@
-import xpath = require('xpath');
+
+// Statement of Financial Position & Parenthetical
+const BalanceSheetRoot = 'StatementOfFinancialPositionAbstract';
+// Income Statement & Other Comprehensive Income
+const IncomeStatementRoot = 'IncomeStatementAbstract';
+// Statement of Stockholders Equity
+const StockholdersEquityRoot = 'StatementOfStockholdersEquityAbstract';
+// Statement of Cash Flows
+const CashFlowRoot = 'StatementOfCashFlowsAbstract';
+// Statement of Direct Cash Flows
+const DirectCashFlowRoot = 'OperatingCashFlowsDirectMethodAbstract';
+// Statement of Partners Capital
+const PartnersCapitalRoot = 'StatementOfPartnersCapitalAbstract';
 
 
-export class GaapNode {
+
+export default class GaapNode {
 
     public readonly value: number;
 
@@ -17,13 +30,12 @@ export class GaapNode {
 
 
     constructor(node: Element) {
-        this.value = parseNumericItemValue(node);
+        this.value = parseNumericElementValue(node);
 
-        // TODO: do this without xpath?
-        this.contextRef = parseNonNumAttrType(xpath.select('@contextRef', node)[0]);
-        this.decimals = parseNumericAttrType(xpath.select('@decimals', node)[0]);
-        this.id = parseNonNumAttrType(xpath.select('@id', node)[0]);
-        this.unitRef = parseNonNumAttrType(xpath.select('@unitRef', node)[0]);
+        this.contextRef = node.getAttributeNS(null, 'contextRef');
+        this.decimals = parseNumericValue(node.getAttributeNS(null, 'decimals'));
+        this.id = node.getAttributeNS(null, 'id');
+        this.unitRef = node.getAttributeNS(null, 'unitRef');
 
 
         this.year = null;
@@ -64,33 +76,44 @@ export class GaapNode {
 
 
 
-function parseNonNumItemValue(item: any) {
+function parseNonNumElementValue(item: Element) {
     if (item) {
-        let value = item.firstChild.data;
+        // let value = item.firstChild.data;
+        let value = item.firstChild.nodeValue;
         return value;
     }
     return null;
 }
-function parseNumericItemValue(item: any) {
+function parseNumericElementValue(item: Element) {
     if (item) {
-        let value = parseFloat(item.firstChild.data);
+        // let value = parseFloat(item.firstChild.data);
+        let value = parseFloat(item.firstChild.nodeValue);
         return !isNaN(value) ? value : null;
     }
     return null;
 }
 
 
-function parseNonNumAttrType(attr: any) {
+function parseNonNumAttrType(attr: Attr) {
     if (attr) {
         let value = attr.value;
         return value;
     }
     return null;
 }
-function parseNumericAttrType(attr: any) {
+function parseNumericAttrType(attr: Attr) {
     if (attr) {
         let value = parseFloat(attr.value);
         return !isNaN(value) ? value : null;
+    }
+    return null;
+}
+
+
+function parseNumericValue(value: string) {
+    if (value) {
+        let num = parseFloat(value);
+        return !isNaN(num) ? num : null;
     }
     return null;
 }

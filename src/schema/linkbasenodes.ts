@@ -89,6 +89,9 @@ export class PresentationLink {
         }
         return root;
     }
+    public nodes() {
+        return this._presentations;
+    }
 }
 
 

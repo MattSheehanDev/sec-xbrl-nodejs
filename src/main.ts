@@ -11,8 +11,8 @@ import { LabelNode, PresentationLink, Presentation } from './schema/linkbasenode
 import { EntityInfoXBRL as EntityInfo } from './xbrl/statements/entityinformation';
 import { EntityModel } from './models/entitymodel';
 
-import { StatementNode } from './xbrl/statements/balancesheet/balancesheetnode';
-import { ConsolidateBalanceSheetTable, ConsolidateStatementTable } from './xbrl/statements/balancesheet/balancesheettable';
+import { StatementNode, CreateNodes, PullNodes, SelectNodes, SelectDeiNodes, MatchStatementPresentation } from './xbrl/statements/balancesheet/balancesheetnode';
+import { ConsolidateBalanceSheetTable, ConsolidateStatementTable, ConsolidateDocumentTable } from './xbrl/statements/balancesheet/balancesheettable';
 import { FormatBalanceSheet } from './xbrl/statements/balancesheet/balancesheetformat';
 
 import nunjucks = require('nunjucks');
@@ -158,50 +158,70 @@ render = render.then<string>((data: string) => {
     let xbrl = new XBRL(parser.parseFromString(data));
 
 
-    // create DEI nodes
-    let deiElementNames = DEISchema.Elements.map((node: ElementNode) => { return node.name; });
-    let deiLabelNames = DEILabels.map((node: LabelNode) => { return node.MatchingElement; });
+    // pair up elements with their labels
+    let deiNodes = CreateNodes(DEISchema.Elements, DEILabels);
 
-    let deiRoot = MatchDEINodes(DEIPresentation[0].root(), deiElementNames, deiLabelNames);
+    // TODO: ignore the presentation for now...
+
+
+    let deiRoot = MatchStatementPresentation(DEIPresentation[0].root(), deiNodes);
     console.log(`DEI Root: ${deiRoot.element.name}`);
     
-    // let entity = Report.CreateEntityInformation(xbrl);
+    console.log('consolidating dei table');
+    let deiSheet = ConsolidateDocumentTable(xbrl, deiRoot);
+    
     let entity = new EntityModel({
-        registrantName: EntityInfo.RegistrantName(xbrl),
-        centralIndexKey: EntityInfo.CentralIndexKey(xbrl),
-        documentType: EntityInfo.DocumentType(xbrl),
-        focusPeriod: EntityInfo.DocumentFocusPeriod(xbrl),
-        yearFocus: EntityInfo.DocumentYearFocus(xbrl),
-        documentDate: EntityInfo.DocumentEndDate(xbrl),
-        amendment: EntityInfo.Amendment(xbrl)
+        registrantName: EntityInfo.RegistrantName(xbrl)[0].value,
+        centralIndexKey: EntityInfo.CentralIndexKey(xbrl)[0].value,
+        documentType: EntityInfo.DocumentType(xbrl)[0].value,
+        focusPeriod: EntityInfo.DocumentFocusPeriod(xbrl)[0].value,
+        yearFocus: EntityInfo.DocumentYearFocus(xbrl)[0].value,
+        documentDate: EntityInfo.DocumentEndDate(xbrl)[0].value,
+        amendment: EntityInfo.Amendment(xbrl)[0].value
     });
 
 
-    // TODO: match elements with labels before continuing?
 
-    // to quickly match elements with their labels and presentation 
-    let elementNames = GaapSchema.Elements.map((node: ElementNode) => { return node.name; });
-    let labelNames = GaapLabels.map((node: LabelNode) => { return node.MatchingElement; });
+    // TODO: seperate the values from the tables
+    //       1. create statement nodes
+    //       2. seperate the working statement nodes from the total nodes
+    //       3. pair the statement nodes with their values
+    //       4. then format the nodes
+
+    // pair up elements with their labels
+    let gaapNodes = CreateNodes(GaapSchema.Elements, GaapLabels);
+
+    let gaapMap = new Map<string, StatementNode>();
+    for (let n of gaapNodes) {
+        gaapMap.set(n.element.name, n);
+    }
+
+    let balanceSheetNodes = PullNodes(gaapMap, sfp_cls_presentation[0].nodes());
+    let incomeStatementNodes = PullNodes(gaapMap, soi_presentation[0].nodes());
+
+
+    // let moneyNodes: StatementNode[] = [];
+    // let stringNodes: StatementNode[] = [];
+
 
     // find the root node
     // should be `StatementOfFinancialPositionAbstract`
-    let sfpRoot = MatchGaapNodes(sfp_cls_presentation[0].root(), elementNames, labelNames);
-    console.log(sfpRoot.element.name);
-
-    // create balance sheet tables
+    console.log('starting balance sheet...');
+    let sfpRoot = MatchStatementPresentation(sfp_cls_presentation[0].root(), balanceSheetNodes);
     console.log('consolidating balance sheet table');
     let balanceSheet = ConsolidateBalanceSheetTable(xbrl, sfpRoot);
-
     console.log('formatting balance sheet');
     let balanceSheetMoney = FormatBalanceSheet(entity, sfpRoot, balanceSheet.money);
     let balanceSheetShares = FormatBalanceSheet(entity, sfpRoot, balanceSheet.shares);
 
-    // create income statement tables
-    console.log('consolidating income statement table');
-    let soiRoot = MatchGaapNodes(soi_presentation[0].root(), elementNames, labelNames);
-    let incomeStatement = ConsolidateStatementTable(xbrl, soiRoot);
-    console.log('formatting income statement');
-    let incomeStatementFormat = FormatBalanceSheet(entity, soiRoot, incomeStatement);
+
+    // // create income statement tables
+    // console.log('starting income statement...');
+    // let soiRoot = MatchStatementPresentation(soi_presentation[0].root(), incomeStatementNodes);
+    // console.log('consolidating income statement table');
+    // let incomeStatement = ConsolidateStatementTable(xbrl, soiRoot);
+    // console.log('formatting income statement');
+    // let incomeStatementFormat = FormatBalanceSheet(entity, soiRoot, incomeStatement);
 
 
     return renderNunjucks(
@@ -214,7 +234,8 @@ render = render.then<string>((data: string) => {
                 shares: balanceSheetShares
             },
             soi: {
-                income: incomeStatementFormat
+                // income: incomeStatementFormat
+                income: {}
             }
         }
     );
@@ -227,71 +248,53 @@ render = render.then(() => {
 });
 
 
-export function MatchDEINodes(root: Presentation, elementNames: string[], labelNames: string[]) {
-    // find matching element
-    let index = elementNames.indexOf(root.Name);
-    let element = index !== -1 ? DEISchema.Elements[index] : null;
+// export function MatchDEINodes(root: Presentation, elementNames: string[], labelNames: string[]) {
+//     // find matching element
+//     let index = elementNames.indexOf(root.Name);
+//     let element = index !== -1 ? DEISchema.Elements[index] : null;
 
-    // find matching label
-    index = labelNames.indexOf(root.Name);
-    let label = index !== -1 ? DEILabels[index] : null;
-
-
-    let stmntNode = new StatementNode({
-        element: element,
-        label: label
-    });
-
-    for (let child of root.Children) {
-        let childStmntNode = MatchDEINodes(child, elementNames, labelNames);
-
-        childStmntNode.parent = stmntNode;
-        stmntNode.children.push(childStmntNode);
-    }
-    return stmntNode;    
-}
-export function MatchGaapNodes(root: Presentation, elementNames: string[], labelNames: string[]) {
-    // find matching element
-    let index = elementNames.indexOf(root.Name);
-    let element = index !== -1 ? GaapSchema.Elements[index] : null;
-
-    // find matching label
-    index = labelNames.indexOf(root.Name);
-    let label = index !== -1 ? GaapLabels[index] : null;
+//     // find matching label
+//     index = labelNames.indexOf(root.Name);
+//     let label = index !== -1 ? DEILabels[index] : null;
 
 
-    let stmntNode = new StatementNode({
-        element: element,
-        label: label
-    });
+//     let stmntNode = new StatementNode({
+//         element: element,
+//         label: label
+//     });
 
-    for (let child of root.Children) {
-        let childStmntNode = MatchGaapNodes(child, elementNames, labelNames);
+//     for (let child of root.Children) {
+//         let childStmntNode = MatchDEINodes(child, elementNames, labelNames);
 
-        childStmntNode.parent = stmntNode;
-        stmntNode.children.push(childStmntNode);
-    }
+//         childStmntNode.parent = stmntNode;
+//         stmntNode.children.push(childStmntNode);
+//     }
+//     return stmntNode;    
+// }
+// export function MatchGaapNodes(root: Presentation, elementNames: string[], labelNames: string[]) {
+//     // find matching element
+//     let index = elementNames.indexOf(root.Name);
+//     let element = index !== -1 ? GaapSchema.Elements[index] : null;
 
-    return stmntNode;
-}
-export function CreateNodes(elements: ElementNode[], labels: LabelNode[]) {
-    let labelNames = labels.map((node: LabelNode) => { return node.MatchingElement; });
+//     // find matching label
+//     index = labelNames.indexOf(root.Name);
+//     let label = index !== -1 ? GaapLabels[index] : null;
 
-    let nodes: StatementNode[] = [];
 
-    for (let element of elements) {
-        // find matching label
-        let index = labelNames.indexOf(element.name);
-        let label = index !== -1 ? GaapLabels[index] : null;
+//     let stmntNode = new StatementNode({
+//         element: element,
+//         label: label
+//     });
 
-        let stmntNode = new StatementNode({
-            element: element,
-            label: label
-        });
-    }
+//     for (let child of root.Children) {
+//         let childStmntNode = MatchGaapNodes(child, elementNames, labelNames);
 
-    return nodes;
-}
+//         childStmntNode.parent = stmntNode;
+//         stmntNode.children.push(childStmntNode);
+//     }
+
+//     return stmntNode;
+// }
 
 
 function renderNunjucks(inputFilePath: string, searchRelativePaths: string[], context: any): Promise<string> {

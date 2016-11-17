@@ -1,9 +1,9 @@
 import XBRLDocument from '../../xbrl';
 import { DFSBalanceSheet } from '../../../utilities/dfs';
 import { StatementNode } from './balancesheetnode';
-import { GaapNode } from '../../gaap/gaapnode';
-import { Select as GaapSelect } from '../../gaap/gaap';
 
+import GaapNode from '../../namespaces/gaapnode';
+import DeiNode from '../../namespaces/deinode';
 
 const moneyType = 'xbrli:monetaryItemType';
 const stringType = 'xbrli:stringItemType';
@@ -18,16 +18,18 @@ export function ConsolidateDocumentTable(xbrl: XBRLDocument, root: StatementNode
         let line = table.AddRow(node);
 
         // TODO: change to DEISelect
-        let gaapNodes = GaapSelect(node.element.name, xbrl.gaapRoot);
-        for (let gaap of gaapNodes) {
+        let elements = xbrl.DeiParser.Select(node.element.name);
+        for (let element of elements) {
+            let dei = new DeiNode(element);
+
             // some nodes have a year such as FD2016Q4_us-gaap_SomeMember, which we don't want to include in the totals right now
-            if (!gaap.year || gaap.member) continue;
+            if (!dei.year || dei.member) continue;
 
             // can't have two nodes with the same year
             // TODO: we COULD have two nodes with the same year but different quarters...
-            if (line.Has(gaap.year)) continue; 
+            if (line.Has(dei.year)) continue; 
 
-            line.Set(gaap.year, gaap);
+            line.Set(dei.year, dei);
         }
     });
     return table;
@@ -39,8 +41,12 @@ export function ConsolidateStatementTable(xbrl: XBRLDocument, root: StatementNod
     DFSBalanceSheet(root, (node: StatementNode) => {
         let line = table.AddRow(node);
 
-        let gaapNodes = GaapSelect(node.element.name, xbrl.gaapRoot);
-        for (let gaap of gaapNodes) {
+        console.log(node.element.name);
+
+        let elements = xbrl.GaapParser.Select(node.element.name);
+        for (let element of elements) {
+            let gaap = new GaapNode(element);
+
             // some nodes have a year such as FD2016Q4_us-gaap_SomeMember, which we don't want to include in the totals right now
             if (!gaap.year || gaap.member) continue;
 
@@ -65,8 +71,10 @@ export function ConsolidateBalanceSheetTable(xbrl: XBRLDocument, table: Statemen
         if (moneyType === node.element.type || stringType === node.element.type) {
             let line = balanceSheetTable.AddRow(node);
 
-            let gaapNodes = GaapSelect(node.element.name, xbrl.gaapRoot);
-            for (let gaap of gaapNodes) {
+            let elements = xbrl.GaapParser.Select(node.element.name);
+            for (let element of elements) {
+                let gaap = new GaapNode(element);
+
                 // some nodes have a year such as FD2016Q4_us-gaap_SomeMember, which we don't want to include in the totals right now
                 if (!gaap.year || gaap.member) continue;
 
@@ -80,8 +88,10 @@ export function ConsolidateBalanceSheetTable(xbrl: XBRLDocument, table: Statemen
         else {
             let line = parentheticalTable.AddRow(node);
 
-            let gaapNodes = GaapSelect(node.element.name, xbrl.gaapRoot);
-            for (let gaap of gaapNodes) {
+            let elements = xbrl.GaapParser.Select(node.element.name);
+            for (let element of elements) {
+                let gaap = new GaapNode(element);
+
                 // some nodes have a year such as FD2016Q4_us-gaap_SomeMember, which we don't want to include in the totals right now
                 if (!gaap.year || gaap.member) continue;
 
@@ -144,14 +154,14 @@ export class StatementRow {
     public node: StatementNode;
 
     private years: number[];
-    private columns: Map<number, GaapNode>;
+    private columns: Map<number, any>;
 
 
     constructor(node: StatementNode, years: number[]) {
         this.node = node;
 
         this.years = years;
-        this.columns = new Map<number, GaapNode>();
+        this.columns = new Map<number, any>();
     }
     
     public Has(year: number) {
@@ -160,7 +170,7 @@ export class StatementRow {
     public Get(year: number) {
         return this.columns.get(year);
     }
-    public Set(year: number, node: GaapNode) {
+    public Set(year: number, node: any) {
         if (this.years.indexOf(year) === -1) {
             if (year === -1) {
                 console.log(node.id);

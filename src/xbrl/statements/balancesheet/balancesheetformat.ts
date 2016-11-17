@@ -1,6 +1,6 @@
 import { StatementNode } from './balancesheetnode';
 import { StatementTable } from './balancesheettable';
-import { GaapNode } from '../../gaap/gaapnode';
+import GaapNode from '../../namespaces/gaapnode';
 import { EntityModel } from '../../../models/entitymodel';
 
 import { DateTime as datetime } from '../../../utilities/datetime';
