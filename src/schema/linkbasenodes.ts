@@ -35,21 +35,21 @@ const arcrole = 'http://www.xbrl.org/2003/arcrole/parent-child';
 
 
 export class PresentationLink {
-    private _presentations: Presentation[];
+    public readonly nodes: Presentation[];
     private _nameMap: Map<string, Presentation>;
 
     private _arcs: PresentationArcNode[];
     private _parents = new Map<string, string[]>();
 
     constructor() {
-        this._presentations = [];
+        this.nodes = [];
         this._nameMap = new Map<string, Presentation>();
 
         this._arcs = [];
     }
 
     public addPresentationNode(node: Presentation) {
-        this._presentations.push(node);
+        this.nodes.push(node);
         this._nameMap.set(node.Name, node);
     }
 
@@ -63,10 +63,10 @@ export class PresentationLink {
     }
 
     public sort() {
-        for (let pres of this._presentations) {
+        for (let pres of this.nodes) {
             // check if this node is a parent
             if (!this._parents.has(pres.Name)) continue;
-                
+
             // get all the names of the children nodes for this node
             let children = this._parents.get(pres.Name);
 
@@ -76,22 +76,22 @@ export class PresentationLink {
                 // get the presentation node of this child
                 let child = this._nameMap.get(childName);
                 
-                child.Parent = pres;
-                pres.Children.push(child);
+                child.Parent = pres.Name;
+                pres.Children.push(child.Name);
             }
         }
     }
 
-    public root() {
-        let root = this._presentations[0];
-        while (root.Parent !== null) {
-            root = root.Parent;
-        }
-        return root;
-    }
-    public nodes() {
-        return this._presentations;
-    }
+    // public root() {
+    //     let root = this._presentations[0];
+    //     while (root.Parent !== null) {
+    //         root = root.Parent;
+    //     }
+    //     return root;
+    // }
+    // public nodes() {
+    //     return this._presentations;
+    // }
 }
 
 
@@ -99,8 +99,13 @@ export class Presentation {
 
     public readonly Name: string;
 
-    public Parent: Presentation;
-    public Children: Presentation[];
+    public Parent: string;
+    public Children: string[];
+    // public Parent: Presentation;
+    // public Children: Presentation[];
+
+    // public get ParentName() { return this.Parent.Name; }
+    // public get ChildrenNames() { return this.Children.map((child: Presentation) => { return child.Name; }); }
 
     constructor(name: string) {
         this.Name = name;

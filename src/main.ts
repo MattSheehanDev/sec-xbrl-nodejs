@@ -3,17 +3,15 @@ import XBRL from './xbrl/xbrl';
 import API from './api/api';
 import { DOMParser } from 'xmldom';
 
-import { SchemaDocument, ParseSchemaDocument } from './schema/schemadocument';
-import { Linkbase } from './schema/schemalinkbase';
-import { ElementNode } from './schema/schemanodes'; 
+import SchemaParser from './schema/schemaparser';
+import { SchemaDocument, ElementNode } from './schema/schemanodes'; 
 import { LabelNode, PresentationLink, Presentation } from './schema/linkbasenodes';
 
 import { EntityInfoXBRL as EntityInfo } from './xbrl/statements/entityinformation';
 import { EntityModel } from './models/entitymodel';
-
-import { StatementNode, CreateNodes, PullNodes, SelectNodes, SelectDeiNodes, MatchStatementPresentation } from './xbrl/statements/balancesheet/balancesheetnode';
-import { ConsolidateBalanceSheetTable, ConsolidateStatementTable, ConsolidateDocumentTable } from './xbrl/statements/balancesheet/balancesheettable';
-import { FormatBalanceSheet } from './xbrl/statements/balancesheet/balancesheetformat';
+import { StatementNode, StatementGaapNode, StatementDeiNode } from './xbrl/statements/statementnode';
+import { CreateStatementNodes, PullStatementNodes, SelectNodes, SelectDeiNodes, MatchPresentation } from './xbrl/statements/balancesheet/balancesheetnode';
+import { FormatBalanceSheetMoney, FormatBalanceSheetShares } from './xbrl/statements/balancesheet/balancesheetformat';
 
 import nunjucks = require('nunjucks');
 import path = require('path');
@@ -71,13 +69,13 @@ let soi_presentation: PresentationLink[];
 // Parse DEI schema
 let dei = fs.ReadFile(DEI.ELEMENT_SCHEMA).then<string>((data: string) => {
     let document = parser.parseFromString(data);
-    DEISchema = ParseSchemaDocument(document);
+    DEISchema = SchemaParser.ParseDocument(document);
 
     return fs.ReadFile(DEI.LABEL_SCHEMA);
 });
 dei = dei.then<string>((data: string) => {
     let document = parser.parseFromString(data);
-    DEILabels = Linkbase.ParseLabels(document);
+    DEILabels = SchemaParser.ParseLabels(document);
 
     return fs.ReadFile(DEI.PRESENTATION_SCHEMA);
 });
@@ -86,7 +84,7 @@ dei = dei.then<void>((data: string) => {
 
     // TODO: handle multiple presentationLink's
     // TODO: match roleRef's with presentationLink's
-    DEIPresentation = Linkbase.ParsePresentation(document);
+    DEIPresentation = SchemaParser.ParsePresentation(document);
 });
 // dei = dei.then<void>(() => {
 //     // to quickly match elements with their labels and presentation 
@@ -120,28 +118,28 @@ dei = dei.then<void>((data: string) => {
 // Parse GAAP schema
 let gaap = fs.ReadFile(GAAP.ELEMENT_SCHEMA).then<string>((data: string) => {
     let document = parser.parseFromString(data);
-    GaapSchema = ParseSchemaDocument(document);
+    GaapSchema = SchemaParser.ParseDocument(document);
 
     return fs.ReadFile(GAAP.LABEL_SCHEMA);
 });
 // Parse labels schema
 gaap = gaap.then<string>((data: string) => {
     let document = parser.parseFromString(data);
-    GaapLabels = Linkbase.ParseLabels(document);
+    GaapLabels = SchemaParser.ParseLabels(document);
 
     return fs.ReadFile(GAAP.SFP_CLASSIFIED_PRESENTATION_SCHEMA);
 });
 // Parse sfp presentation
 gaap = gaap.then<string>((data: string) => {
     let document = parser.parseFromString(data);
-    sfp_cls_presentation = Linkbase.ParsePresentation(document);
+    sfp_cls_presentation = SchemaParser.ParsePresentation(document);
 
     return fs.ReadFile(GAAP.SOI_PRESENTATION_SCHEMA);
 });
 // parse soi presentation
 gaap = gaap.then<string>((data: string) => {
     let document = parser.parseFromString(data);
-    soi_presentation = Linkbase.ParsePresentation(document);
+    soi_presentation = SchemaParser.ParsePresentation(document);
 
     return fs.ReadFile(path.join(process.cwd(), './test/cvs2/cvs-20141231.xml'));
 });
@@ -159,17 +157,26 @@ render = render.then<string>((data: string) => {
 
 
     // pair up elements with their labels
-    let deiNodes = CreateNodes(DEISchema.Elements, DEILabels);
+    let dei = CreateStatementNodes(DEISchema.Elements, DEILabels);
 
+
+    // DEI Sheet
+    console.log('starting dei document');
+    let documentNodes = PullStatementNodes(DEIPresentation[0].nodes, dei.map);
+    let documentValues = SelectDeiNodes(documentNodes, xbrl);
+
+    // TODO: remove entity model
+    // TODO: handle multiple statement presentation tables
     // TODO: ignore the presentation for now...
 
+    
+    MatchPresentation(DEIPresentation[0].nodes, documentValues);
+    // console.log(`DEI Root: ${deiRoot.element.name}`);
+    
+    // console.log('consolidating dei table');
+    // let deiSheet = ConsolidateDocumentTable(xbrl, deiRoot);
+    
 
-    let deiRoot = MatchStatementPresentation(DEIPresentation[0].root(), deiNodes);
-    console.log(`DEI Root: ${deiRoot.element.name}`);
-    
-    console.log('consolidating dei table');
-    let deiSheet = ConsolidateDocumentTable(xbrl, deiRoot);
-    
     let entity = new EntityModel({
         registrantName: EntityInfo.RegistrantName(xbrl)[0].value,
         centralIndexKey: EntityInfo.CentralIndexKey(xbrl)[0].value,
@@ -189,31 +196,62 @@ render = render.then<string>((data: string) => {
     //       4. then format the nodes
 
     // pair up elements with their labels
-    let gaapNodes = CreateNodes(GaapSchema.Elements, GaapLabels);
+    let gaap = CreateStatementNodes(GaapSchema.Elements, GaapLabels);
 
-    let gaapMap = new Map<string, StatementNode>();
-    for (let n of gaapNodes) {
-        gaapMap.set(n.element.name, n);
+
+    // Balance Sheet
+    console.log('starting balance sheet...');
+    let balanceSheetNodes = PullStatementNodes(sfp_cls_presentation[0].nodes, gaap.map);
+    let balanceSheetValues = SelectNodes(balanceSheetNodes, xbrl);
+
+    const moneyType = 'xbrli:monetaryItemType';
+    const stringType = 'xbrli:stringItemType';
+    const sharesType = 'xbrli:sharesItemType';
+    const perShareType = 'num:perShareItemType';
+
+    let moneyValues: StatementGaapNode[] = [];
+    let shareValues: StatementGaapNode[] = [];
+
+    for (let value of balanceSheetValues) {
+        if (moneyType === value.element.type || stringType === value.element.type) {
+            moneyValues.push(value);
+        }
+        else {
+            shareValues.push(value);
+        }
     }
 
-    let balanceSheetNodes = PullNodes(gaapMap, sfp_cls_presentation[0].nodes());
-    let incomeStatementNodes = PullNodes(gaapMap, soi_presentation[0].nodes());
-
-
-    // let moneyNodes: StatementNode[] = [];
-    // let stringNodes: StatementNode[] = [];
-
-
-    // find the root node
-    // should be `StatementOfFinancialPositionAbstract`
-    console.log('starting balance sheet...');
-    let sfpRoot = MatchStatementPresentation(sfp_cls_presentation[0].root(), balanceSheetNodes);
-    console.log('consolidating balance sheet table');
-    let balanceSheet = ConsolidateBalanceSheetTable(xbrl, sfpRoot);
+    console.log('matching balance sheet presentation');
+    MatchPresentation(sfp_cls_presentation[0].nodes, moneyValues);
+    // console.log('consolidating balance sheet table');
+    // let balanceSheet = ConsolidateBalanceSheetTable(xbrl, sfpRoot);
     console.log('formatting balance sheet');
-    let balanceSheetMoney = FormatBalanceSheet(entity, sfpRoot, balanceSheet.money);
-    let balanceSheetShares = FormatBalanceSheet(entity, sfpRoot, balanceSheet.shares);
+    let balanceSheetMoney = FormatBalanceSheetMoney(entity, moneyValues);
+    let balanceSheetShares = FormatBalanceSheetShares(entity, shareValues);
 
+
+    // // find the root node
+    // // should be `StatementOfFinancialPositionAbstract`
+    // console.log('starting balance sheet...');
+    // let sfpRoot = MatchStatementPresentation(sfp_cls_presentation[0].root(), balanceSheetNodes);
+    // console.log('consolidating balance sheet table');
+    // let balanceSheet = ConsolidateBalanceSheetTable(xbrl, sfpRoot);
+    // console.log('formatting balance sheet');
+    // let balanceSheetMoney = FormatBalanceSheet(entity, sfpRoot, balanceSheet.money);
+    // let balanceSheetShares = FormatBalanceSheet(entity, sfpRoot, balanceSheet.shares);
+
+
+
+    // Income Statement
+    console.log('starting income statement...');
+    let incomeStatementNodes = PullStatementNodes(soi_presentation[0].nodes, gaap.map);
+    let incomeStatementValues = SelectNodes(incomeStatementNodes, xbrl);
+
+    console.log('matching income statement presentation');
+    MatchPresentation(soi_presentation[0].nodes, incomeStatementValues);
+
+    console.log('formatting income statement');
+    let incomeStatementMoney = FormatBalanceSheetMoney(entity, incomeStatementValues);
 
     // // create income statement tables
     // console.log('starting income statement...');
@@ -235,7 +273,7 @@ render = render.then<string>((data: string) => {
             },
             soi: {
                 // income: incomeStatementFormat
-                income: {}
+                income: incomeStatementMoney
             }
         }
     );

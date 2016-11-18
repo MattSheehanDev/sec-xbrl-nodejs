@@ -1,5 +1,26 @@
 
 
+export class SchemaDocument {
+
+    private _targetNS: string;
+    private _elements: ElementNode[];
+    private _imports: ImportNode[];
+
+    public get TargetNS() { return this._targetNS; }
+    public get Imports() { return this._imports; }
+    public get Elements() { return this._elements; }
+
+    constructor(targetNS: string, elements: ElementNode[], imports: ImportNode[]) {
+        this._targetNS = targetNS;
+        this._elements = elements;
+        this._imports = imports;
+    }
+
+}
+
+
+
+
 export class ImportNode {
 
     public readonly namespace: string;

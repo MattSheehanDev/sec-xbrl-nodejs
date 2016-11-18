@@ -1,4 +1,4 @@
-import { StatementNode } from '../xbrl/statements/balancesheet/balancesheetnode';
+// import { StatementNode } from '../xbrl/statements/balancesheet/balancesheetnode';
 import NodeTypes from './nodetypes';
 
 
@@ -43,27 +43,28 @@ export function DFSRecursive(node: Node, each: (node: Node) => void) {
 }
 
 
-export function DFSBalanceSheet(root: StatementNode, each: (node: StatementNode) => void) {
-    // let discovered: BalanceSheetNode[] = [];
+// export function DFSBalanceSheet(root: StatementNode, each: (node: StatementNode) => void) {
+//     // let discovered: BalanceSheetNode[] = [];
 
-    let start: StatementNode[] = [];
-    start.push(root);
+//     let start: StatementNode[] = [];
+//     start.push(root);
 
-    while(start.length > 0) {
-        let node = start.pop();
+//     while(start.length > 0) {
+//         let node = start.pop();
 
-        // if (discovered.indexOf(node) !== -1) continue;
+//         // if (discovered.indexOf(node) !== -1) continue;
 
-        // discovered.push(node);
+//         // discovered.push(node);
 
-        // do anything important with this node here
-        each(node);
+//         // do anything important with this node here
+//         each(node);
 
-        for (let i = 0; i < node.children.length; i++) {
-            start.push(node.children[i]);
-        }
-    }
-}
+//         for (let i = 0; i < node.children.length; i++) {
+//             start.push(node.children[i]);
+//         }
+//     }
+// }
+
 // export function DFSBalanceSheetValue(root: BalanceSheetLine, each: (node: BalanceSheetLine) => void) {
 //     let discovered: BalanceSheetLine[] = [];
 
