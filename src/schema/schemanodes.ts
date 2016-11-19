@@ -66,7 +66,7 @@ export class ElementNode {
 
         // instant, duration (you cannot add 'instant' values to 'duration' values)
         this.periodType = element.getAttributeNS(ns.get('xbrli'), 'periodType');
-        this.balance = element.getAttributeNS(ns.get('xbrli'), 'balance');
+        this.balance = element.getAttributeNS(ns.get('xbrli'), 'balance') || null;
     }
 
 }

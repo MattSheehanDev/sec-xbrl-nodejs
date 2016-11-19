@@ -26,6 +26,8 @@ export abstract class StatementValueNode<T> {
     public readonly label: LabelNode;
     public readonly values: T[];
 
+    public isTotal = false;
+
     public statementRoot: boolean;
     
     constructor(node: StatementNode, values: T[]) {

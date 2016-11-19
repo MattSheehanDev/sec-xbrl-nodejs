@@ -11,7 +11,7 @@ import { EntityInfoXBRL as EntityInfo } from './xbrl/statements/entityinformatio
 import { EntityModel } from './models/entitymodel';
 import { StatementNode, StatementGaapNode, StatementDeiNode } from './xbrl/statements/statementnode';
 import { CreateStatementNodes, PullStatementNodes, SelectNodes, SelectDeiNodes, MatchPresentation } from './xbrl/statements/balancesheet/balancesheetnode';
-import { FormatBalanceSheetMoney, FormatBalanceSheetShares } from './xbrl/statements/balancesheet/balancesheetformat';
+import { FormatTable, FormatFlatTable } from './xbrl/statements/balancesheet/balancesheetformat';
 
 import nunjucks = require('nunjucks');
 import path = require('path');
@@ -200,6 +200,8 @@ render = render.then<string>((data: string) => {
 
 
     // Balance Sheet
+    // TODO: we need to seperate the matching presentation statement nodes
+    //       so that we don't get 
     console.log('starting balance sheet...');
     let balanceSheetNodes = PullStatementNodes(sfp_cls_presentation[0].nodes, gaap.map);
     let balanceSheetValues = SelectNodes(balanceSheetNodes, xbrl);
@@ -209,6 +211,8 @@ render = render.then<string>((data: string) => {
     const sharesType = 'xbrli:sharesItemType';
     const perShareType = 'num:perShareItemType';
 
+    // TODO: don't add nodes to both money values and share values,
+    //       instead just splice the share values from balanceSheetValues
     let moneyValues: StatementGaapNode[] = [];
     let shareValues: StatementGaapNode[] = [];
 
@@ -221,24 +225,33 @@ render = render.then<string>((data: string) => {
         }
     }
 
+    let bsTableNodes: StatementGaapNode[] = [];
+    for (let value of moneyValues) {
+        let match = value.label.Text.match(/([^/[]*)\[(.*)\]$/);
+        if (match) {
+            let type = match[2].trim().toLowerCase();
+            if (type === 'table') {
+                bsTableNodes.push(value);
+            }
+        }
+    }
+
+    // TODO: handle the multiple presentation links
     console.log('matching balance sheet presentation');
+    // for (let presentation of sfp_cls_presentation) {
+    //     MatchPresentation(sfp_cls_presentation[0].nodes, moneyValues);
+    //     // MatchPresentation(sfp_cls_presentation[0].nodes, balanceSheetValues);
+    // }
     MatchPresentation(sfp_cls_presentation[0].nodes, moneyValues);
-    // console.log('consolidating balance sheet table');
-    // let balanceSheet = ConsolidateBalanceSheetTable(xbrl, sfpRoot);
+    
     console.log('formatting balance sheet');
-    let balanceSheetMoney = FormatBalanceSheetMoney(entity, moneyValues);
-    let balanceSheetShares = FormatBalanceSheetShares(entity, shareValues);
+    let balanceSheetTables: any[] = [];
+    for (let table of bsTableNodes) {
+        balanceSheetTables.push(FormatTable('Statement of Financial Position', entity, table));
+        console.log(table.element.name);
+    }
+    balanceSheetTables.push(FormatFlatTable('Statement of Financial Position (Parenthetical)', entity, shareValues));
 
-
-    // // find the root node
-    // // should be `StatementOfFinancialPositionAbstract`
-    // console.log('starting balance sheet...');
-    // let sfpRoot = MatchStatementPresentation(sfp_cls_presentation[0].root(), balanceSheetNodes);
-    // console.log('consolidating balance sheet table');
-    // let balanceSheet = ConsolidateBalanceSheetTable(xbrl, sfpRoot);
-    // console.log('formatting balance sheet');
-    // let balanceSheetMoney = FormatBalanceSheet(entity, sfpRoot, balanceSheet.money);
-    // let balanceSheetShares = FormatBalanceSheet(entity, sfpRoot, balanceSheet.shares);
 
 
 
@@ -247,19 +260,28 @@ render = render.then<string>((data: string) => {
     let incomeStatementNodes = PullStatementNodes(soi_presentation[0].nodes, gaap.map);
     let incomeStatementValues = SelectNodes(incomeStatementNodes, xbrl);
 
+    let incomeTableNodes: StatementGaapNode[] = [];
+    for (let value of incomeStatementValues) {
+        let match = value.label.Text.match(/([^/[]*)\[(.*)\]$/);
+        if (match) {
+            let type = match[2].trim().toLowerCase();
+            if (type === 'table') {
+                incomeTableNodes.push(value);
+            }
+        }
+    }
+
+    // TODO: this is the wrong income statement presentation for cvs
+    //       (this might also be the case for the balance sheet too...)
     console.log('matching income statement presentation');
     MatchPresentation(soi_presentation[0].nodes, incomeStatementValues);
 
     console.log('formatting income statement');
-    let incomeStatementMoney = FormatBalanceSheetMoney(entity, incomeStatementValues);
-
-    // // create income statement tables
-    // console.log('starting income statement...');
-    // let soiRoot = MatchStatementPresentation(soi_presentation[0].root(), incomeStatementNodes);
-    // console.log('consolidating income statement table');
-    // let incomeStatement = ConsolidateStatementTable(xbrl, soiRoot);
-    // console.log('formatting income statement');
-    // let incomeStatementFormat = FormatBalanceSheet(entity, soiRoot, incomeStatement);
+    let incomeSheetTables: any[] = [];
+    for (let table of incomeTableNodes) {
+        incomeSheetTables.push(FormatTable('Income Statement', entity, table));
+        console.log(table.element.name);
+    }
 
 
     return renderNunjucks(
@@ -268,12 +290,13 @@ render = render.then<string>((data: string) => {
         {
             entity: entity,
             sfp: {
-                money: balanceSheetMoney,
-                shares: balanceSheetShares
+                // money: balanceSheetMoney,
+                // shares: balanceSheetShares,
+                tables: balanceSheetTables
             },
             soi: {
                 // income: incomeStatementFormat
-                income: incomeStatementMoney
+                income: incomeSheetTables[0]
             }
         }
     );

@@ -84,6 +84,7 @@ export function MatchPresentation(presentations: Presentation[], nodes: Statemen
 
     for (let node of nodes) {
         let presentation = presNames.get(node.element.name);
+        node.isTotal = presentation.isTotal;
 
         for (let name of presentation.Children) {
             if (!nodeNames.has(name)) continue;
@@ -94,7 +95,7 @@ export function MatchPresentation(presentations: Presentation[], nodes: Statemen
             node.children.push(childStmntNode);
         }
     }
-
+    
     return nodes;
 }
 

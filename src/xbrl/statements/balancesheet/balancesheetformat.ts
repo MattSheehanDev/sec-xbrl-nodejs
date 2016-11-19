@@ -30,7 +30,7 @@ function FindTable(nodes: StatementGaapNode[]): StatementGaapNode | null {
     return null;
 }
 
-export function DFSStatement(root: StatementGaapNode, each: (node: StatementGaapNode) => void) {
+function DFSStatement(root: StatementGaapNode, each: (node: StatementGaapNode) => void) {
     let start: StatementGaapNode[] = [];
     start.push(root);
 
@@ -47,23 +47,26 @@ export function DFSStatement(root: StatementGaapNode, each: (node: StatementGaap
 }
 
 
-export function FormatBalanceSheetMoney(entity: EntityModel, nodes: StatementGaapNode[]) {
+
+export function FormatTable(title: string, entity: EntityModel, table: StatementGaapNode) {
     let date = new Date(entity.DocumentDate);
 
-    // find where the statement table begins
-    let tableElement: StatementGaapNode = FindTable(nodes);
-
-    // find the root table children
-    let rootTotals: string[] = [];
-    for (let child of tableElement.children) {
-        child.statementRoot = true;
-
-        rootTotals.push(child.element.name);
+    // every table has [Line Items]?
+    let lineItems: StatementGaapNode;
+    for (let child of table.children) {
+        let match = child.label.Text.match(/([^/[]*)\[(.*)\]$/);
+        if (match) {
+            let type = match[2].trim().toLowerCase();
+            if (type === 'line items') {
+                lineItems = child;
+                break;
+            }
+        }
     }
 
     // find all the dates
     let years: number[] = [];
-    for (let node of nodes) {
+    DFSStatement(table, (node: StatementGaapNode) => {
         for (let value of node.values) {
             if (!value.year || value.member) continue;
 
@@ -72,27 +75,19 @@ export function FormatBalanceSheetMoney(entity: EntityModel, nodes: StatementGaa
                 years.push(value.year);
             }
         }
-    }
-
-    let sortedYears = years.sort((a: number, b: number) => { return b - a; });
-    let dates = sortedYears.map((value: number) => {
-        date.setFullYear(value);
-        return datetime.format(date, 'MMM. dd, yyyy');
     });
 
-
-    // find the statement title
-    let titleNode: StatementGaapNode = tableElement;
-    while (titleNode.parent) {
-        titleNode = titleNode.parent;
-    }
-    let title = FormatLabelText(titleNode.label.Text);
-
+    let sortedYears = years.sort((a: number, b: number) => { return b - a; });
 
     // create and filter statement lines
     let bsLines: StatementLinesHTML[] = [];
+    
 
-    DFSStatement(tableElement, (stmntNode: StatementGaapNode) => {
+    DFSStatement(table, (stmntNode: StatementGaapNode) => {
+        if (stmntNode.element.name === 'PreferredStockParOrStatedValuePerShare') {
+            let s = '';
+        }
+
         let values: string[] = [];
         let empty = true;
         for (let year of sortedYears) {
@@ -105,25 +100,7 @@ export function FormatBalanceSheetMoney(entity: EntityModel, nodes: StatementGaa
             }
 
             if (node) {
-                let isNegative = node.value < 0;
-                let value = Math.abs(node.value);
-
-                let formattedValue: string;
-                
-                // round number according to given decimals and commas
-                if (node.decimals)
-                    formattedValue = FormatWithCommas(FormatDecimals(value, node.decimals).toString());
-                else
-                    formattedValue = FormatWithCommas(value.toString());
-                
-                if (isNegative) {
-                    formattedValue = `(${formattedValue})`;
-                }
-                if (node.unitRef && node.unitRef === 'usd') {
-                    formattedValue = `$${formattedValue}`;
-                }
-
-                values.push(formattedValue);
+                values.push(formatValue(node, stmntNode.element.type));
                 empty = false;
             }
             else {
@@ -131,21 +108,24 @@ export function FormatBalanceSheetMoney(entity: EntityModel, nodes: StatementGaa
             }
         }
 
+
         let isTotal = false;
-        let parentName = '';
-        if (stmntNode.parent) {
-            parentName = stmntNode.parent.element.name;
-        }  
-        if (stmntNode.parent && rootTotals.indexOf(stmntNode.parent.element.name) !== -1) {
+        let isItemHeader = false;
+
+        if (lineItems && lineItems.children.indexOf(stmntNode) !== -1) {
+            isItemHeader = true;
+        }
+        let lineNames = lineItems.children.map((node: StatementGaapNode) => { return node.element.name; });
+        if (stmntNode.isTotal && lineNames.indexOf(stmntNode.parent.element.name) !== -1) {
             isTotal = true;
         }
 
 
         // don't show empty sections
-        if (!empty || stmntNode.statementRoot) {
+        if (!empty || isItemHeader) {
             let label = FormatLabelText(stmntNode.label.Text);
             let abstract = IsAbstract(stmntNode.element.name);
-        // if (!empty || abstract) {
+
             bsLines.push({
                 label: label,
                 abstract: abstract,
@@ -155,13 +135,21 @@ export function FormatBalanceSheetMoney(entity: EntityModel, nodes: StatementGaa
         }
     });
 
-    return <StatementHTML>{ title: title, dates: dates, lines: bsLines };
+
+    let dates = sortedYears.map((value: number) => {
+        date.setFullYear(value);
+        return datetime.format(date, 'MMM. dd, yyyy');
+    });
+    return <StatementHTML>{
+        title: title,
+        // title: FormatLabelText(table.label.Text),
+        dates: dates,
+        lines: bsLines
+    };
 }
 
-
-export function FormatBalanceSheetShares(entity: EntityModel, nodes: StatementGaapNode[]) {
+export function FormatFlatTable(title: string, entity: EntityModel, nodes: StatementGaapNode[]) {
     let date = new Date(entity.DocumentDate);
-
 
     // find all the dates
     let years: number[] = [];
@@ -183,13 +171,19 @@ export function FormatBalanceSheetShares(entity: EntityModel, nodes: StatementGa
     });
 
 
-    let title = 'Statement of Financial Position (Parenthetical)';
-
-
     // create and filter statement lines
-    let bsLines: StatementLinesHTML[] = [];
+    const moneyType = 'xbrli:monetaryItemType';
+    const stringType = 'xbrli:stringItemType';
+    const sharesType = 'xbrli:sharesItemType';
+    const perShareType = 'num:perShareItemType';
 
+    let bsLines: StatementLinesHTML[] = [];
+    
     for (let stmntNode of nodes) {
+        if (stmntNode.element.name === 'PreferredStockParOrStatedValuePerShare') {
+            let s = '';
+        }
+
         let values: string[] = [];
         let empty = true;
         for (let year of sortedYears) {
@@ -202,25 +196,7 @@ export function FormatBalanceSheetShares(entity: EntityModel, nodes: StatementGa
             }
 
             if (node) {
-                let isNegative = node.value < 0;
-                let value = Math.abs(node.value);
-
-                let formattedValue: string;
-                
-                // round number according to given decimals and commas
-                if (node.decimals)
-                    formattedValue = FormatWithCommas(FormatDecimals(value, node.decimals).toString());
-                else
-                    formattedValue = FormatWithCommas(value.toString());
-                
-                if (isNegative) {
-                    formattedValue = `(${formattedValue})`;
-                }
-                if (node.unitRef && node.unitRef === 'usd') {
-                    formattedValue = `$${formattedValue}`;
-                }
-
-                values.push(formattedValue);
+                values.push(formatValue(node, stmntNode.element.type));
                 empty = false;
             }
             else {
@@ -228,26 +204,17 @@ export function FormatBalanceSheetShares(entity: EntityModel, nodes: StatementGa
             }
         }
 
-        let isTotal = false;
-        let parentName = '';
-        if (stmntNode.parent) {
-            parentName = stmntNode.parent.element.name;
-        }
-        // if (stmntNode.parent && rootTotals.indexOf(stmntNode.parent.element.name) !== -1) {
-        //     isTotal = true;
-        // }
-
 
         // don't show empty sections
-        if (!empty || stmntNode.statementRoot) {
+        if (!empty) {
             let label = FormatLabelText(stmntNode.label.Text);
             let abstract = IsAbstract(stmntNode.element.name);
-        // if (!empty || abstract) {
+
             bsLines.push({
                 label: label,
                 abstract: abstract,
                 values: values,
-                total: isTotal
+                total: false
             });
         }
     }
@@ -258,10 +225,61 @@ export function FormatBalanceSheetShares(entity: EntityModel, nodes: StatementGa
 
 
 
+const types = {
+    money: 'xbrli:monetaryItemType',
+    string: 'xbrli:stringItemType',
+    shares: 'xbrli:sharesItemType',
+    perShare: 'num:perShareItemType'
+}
+const units = {
+    usd: 'usd',
+    usdPerShare: 'usdPerShare',
+    shares: 'shares'
+}
+
+function formatValue(node: GaapNode, type: string) {
+    let value = node.value;
+
+    let formattedValue: string;
+
+    if (types.money === type || types.perShare || types.shares) {
+        // let isNegative = node.value < 0;
+        // let value = Math.abs(node.value);
+                
+        // round number according to given decimals and commas
+        if (node.decimals) {
+            let absValue = Math.abs(value);
+            let formatDecimals = FormatDecimals(Math.abs(value), node.decimals);
+            formattedValue = FormatWithCommas(formatDecimals.toString());
+        }
+        else {
+            formattedValue = FormatWithCommas(value.toString());
+        }
+        
+        if (value < 0) {
+            formattedValue = `(${formattedValue})`;
+        }
+        if (node.unitRef) {
+            if (units.usd === node.unitRef) {
+                formattedValue = `$${formattedValue}`;
+            }
+            else if (units.usdPerShare === node.unitRef) {
+                formattedValue = `$${formattedValue} / share`;
+            }
+        }
+    }
+    else {
+        formattedValue = node.value.toString();
+    }
+
+    return formattedValue;
+}
+
+
 function FormatLabelText(text: string) {
     // Some of the labels have brackets at the end, ex. Assets [Abstract],
     // which we won't want to display for the output
-    let match = text.match(/([^/[]*)\[.*\]$/);
+    let match = text.match(/([^/[]*)\[(.*)\]$/);
     if (match) {
         return match[1].trim();
     }

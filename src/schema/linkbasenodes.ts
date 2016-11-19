@@ -38,14 +38,11 @@ export class PresentationLink {
     public readonly nodes: Presentation[];
     private _nameMap: Map<string, Presentation>;
 
-    private _arcs: PresentationArcNode[];
-    private _parents = new Map<string, string[]>();
+    private _parents = new Map<string, PresentationArcNode[]>();
 
     constructor() {
         this.nodes = [];
         this._nameMap = new Map<string, Presentation>();
-
-        this._arcs = [];
     }
 
     public addPresentationNode(node: Presentation) {
@@ -55,29 +52,40 @@ export class PresentationLink {
 
     public addArcNode(node: PresentationArcNode) {
         if (this._parents.has(node.ParentName)) {
-            this._parents.get(node.ParentName).push(node.Name);
+            this._parents.get(node.ParentName).push(node);
         }
         else {
-            this._parents.set(node.ParentName, [node.Name]);
+            this._parents.set(node.ParentName, [node]);
         }
     }
 
     public sort() {
+        this._parents.forEach((arcs: PresentationArcNode[]) => {
+            for (let arc of arcs) {
+                if (arc.isTotal) {
+                    let pres = this._nameMap.get(arc.Name);
+                    pres.isTotal = true;
+                }
+            }
+        });
+
         for (let pres of this.nodes) {
             // check if this node is a parent
             if (!this._parents.has(pres.Name)) continue;
 
             // get all the names of the children nodes for this node
-            let children = this._parents.get(pres.Name);
+            let arcs = this._parents.get(pres.Name);
 
-            for (let childName of children) {
-                if (!this._nameMap.has(childName)) continue;
+            for (let arc of arcs) {
+                if (!this._nameMap.has(arc.Name)) continue;
 
                 // get the presentation node of this child
-                let child = this._nameMap.get(childName);
+                let child = this._nameMap.get(arc.Name);
                 
                 child.Parent = pres.Name;
                 pres.Children.push(child.Name);
+
+                // pres.isTotal = arc.isTotal;
             }
         }
     }
@@ -98,6 +106,7 @@ export class PresentationLink {
 export class Presentation {
 
     public readonly Name: string;
+    public isTotal: boolean = false;
 
     public Parent: string;
     public Children: string[];
