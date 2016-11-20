@@ -1,4 +1,4 @@
-import { StatementNode, StatementGaapNode } from '../statementnode';
+import { StatementNode, StatementValueNode, StatementGaapNode, StatementDeiNode } from '../statementnode';
 import GaapNode from '../../namespaces/gaapnode';
 import { EntityModel } from '../../../models/entitymodel';
 
@@ -48,8 +48,7 @@ function DFSStatement(root: StatementGaapNode, each: (node: StatementGaapNode) =
 
 
 
-export function FormatTable(title: string, entity: EntityModel, table: StatementGaapNode) {
-    let date = new Date(entity.DocumentDate);
+export function FormatTable(title: string, date: Date, table: StatementValueNode<any>) {
 
     // every table has [Line Items]?
     let lineItems: StatementGaapNode;
@@ -87,6 +86,9 @@ export function FormatTable(title: string, entity: EntityModel, table: Statement
         if (stmntNode.element.name === 'PreferredStockParOrStatedValuePerShare') {
             let s = '';
         }
+        if (stmntNode.element.name === 'EntityCentralIndexKey') {
+            let s = '';
+        }
 
         let values: string[] = [];
         let empty = true;
@@ -112,8 +114,16 @@ export function FormatTable(title: string, entity: EntityModel, table: Statement
         let isTotal = false;
         let isItemHeader = false;
 
-        if (lineItems && lineItems.children.indexOf(stmntNode) !== -1) {
-            isItemHeader = true;
+        // check if this node is an item header
+        if (lineItems) {
+            // in order for a line item to be a header (ex. Assets, Liabilities and Equity),
+            // then it must be a child of the lineItems node,
+            // must be a string type, and must have children of it's own
+            let isChild = lineItems.children.indexOf(stmntNode) !== -1;
+            let isString = stmntNode.element.type === types.str;
+            let hasChildren = stmntNode.children.length > 0;
+
+            isItemHeader = isChild && isString && hasChildren;
         }
         let lineNames = lineItems.children.map((node: StatementGaapNode) => { return node.element.name; });
         if (stmntNode.isTotal && lineNames.indexOf(stmntNode.parent.element.name) !== -1) {
@@ -148,8 +158,8 @@ export function FormatTable(title: string, entity: EntityModel, table: Statement
     };
 }
 
-export function FormatFlatTable(title: string, entity: EntityModel, nodes: StatementGaapNode[]) {
-    let date = new Date(entity.DocumentDate);
+export function FormatFlatTable(title: string, date: Date, nodes: StatementValueNode<any>[]) {
+    // let date = new Date(entity.DocumentDate);
 
     // find all the dates
     let years: number[] = [];
@@ -170,12 +180,6 @@ export function FormatFlatTable(title: string, entity: EntityModel, nodes: State
         return datetime.format(date, 'MMM. dd, yyyy');
     });
 
-
-    // create and filter statement lines
-    const moneyType = 'xbrli:monetaryItemType';
-    const stringType = 'xbrli:stringItemType';
-    const sharesType = 'xbrli:sharesItemType';
-    const perShareType = 'num:perShareItemType';
 
     let bsLines: StatementLinesHTML[] = [];
     
@@ -227,7 +231,7 @@ export function FormatFlatTable(title: string, entity: EntityModel, nodes: State
 
 const types = {
     money: 'xbrli:monetaryItemType',
-    string: 'xbrli:stringItemType',
+    str: 'xbrli:stringItemType',
     shares: 'xbrli:sharesItemType',
     perShare: 'num:perShareItemType'
 }
@@ -242,7 +246,7 @@ function formatValue(node: GaapNode, type: string) {
 
     let formattedValue: string;
 
-    if (types.money === type || types.perShare || types.shares) {
+    if (types.money === type || types.perShare === type || types.shares === type) {
         // let isNegative = node.value < 0;
         // let value = Math.abs(node.value);
                 

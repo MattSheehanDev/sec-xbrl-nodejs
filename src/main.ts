@@ -162,19 +162,74 @@ render = render.then<string>((data: string) => {
 
     // DEI Sheet
     console.log('starting dei document');
-    let documentNodes = PullStatementNodes(DEIPresentation[0].nodes, dei.map);
-    let documentValues = SelectDeiNodes(documentNodes, xbrl);
+    let deiTables: any[] = [];
+    let count = 0;
 
-    // TODO: remove entity model
-    // TODO: handle multiple statement presentation tables
-    // TODO: ignore the presentation for now...
+    for (let presentation of DEIPresentation) {
+        count += 1;
+        let documentNodes = PullStatementNodes(presentation.nodes, dei.map);
+        let documentValues = SelectDeiNodes(documentNodes, xbrl);
 
+        // TODO: remove entity model
+        // TODO: handle multiple statement presentation tables
+        // TODO: pick the title depending on the root of the presentation or the table label
+        // TODO: combine all the tables into a function...
+        let documentTableNodes: StatementDeiNode[] = [];
+        for (let value of documentValues) {
+            let match = value.label.Text.match(/([^/[]*)\[(.*)\]$/);
+            if (match) {
+                let type = match[2].trim().toLowerCase();
+                if (type === 'table') {
+                    documentTableNodes.push(value);
+                }
+            }
+        }
+
+        console.log(`${count}: matching dei presentation`);
+        MatchPresentation(presentation.nodes, documentValues);
+
+        console.log(`${count}: formatting dei sheet`);
+        
+        // TODO: try to find the DocumentPeriodEndDate first
+        let documentDate = new Date()
+        for (let table of documentTableNodes) {
+            let formattedTable = FormatTable('Document', documentDate, table);
+            if (formattedTable.lines.length > 0) {
+                deiTables.push(formattedTable);
+            }
+        }                
+    }
+
+    // let documentNodes = PullStatementNodes(DEIPresentation[0].nodes, dei.map);
+    // let documentValues = SelectDeiNodes(documentNodes, xbrl);
+
+    // // TODO: remove entity model
+    // // TODO: handle multiple statement presentation tables
+    // // TODO: pick the title depending on the root of the presentation or the table label
+    // // TODO: ignore the presentation for now...
+    // let documentTableNodes: StatementDeiNode[] = [];
+    // for (let value of documentValues) {
+    //     let match = value.label.Text.match(/([^/[]*)\[(.*)\]$/);
+    //     if (match) {
+    //         let type = match[2].trim().toLowerCase();
+    //         if (type === 'table') {
+    //             documentTableNodes.push(value);
+    //         }
+    //     }
+    // }
     
-    MatchPresentation(DEIPresentation[0].nodes, documentValues);
-    // console.log(`DEI Root: ${deiRoot.element.name}`);
+    // console.log('matching document presentation');
+    // MatchPresentation(DEIPresentation[0].nodes, documentValues);
+
+    // console.log('formatting document sheet');
     
-    // console.log('consolidating dei table');
-    // let deiSheet = ConsolidateDocumentTable(xbrl, deiRoot);
+    // for (let table of documentTableNodes) {
+    //     let formattedTable = FormatTable('Document', new Date(), table);
+    //     if (formattedTable.lines.length > 0) {
+    //         deiTables.push(formattedTable);
+    //     }
+    // }
+    
     
 
     let entity = new EntityModel({
@@ -197,7 +252,7 @@ render = render.then<string>((data: string) => {
 
     // pair up elements with their labels
     let gaap = CreateStatementNodes(GaapSchema.Elements, GaapLabels);
-
+    let documentDate = new Date(entity.DocumentDate);
 
     // Balance Sheet
     // TODO: we need to seperate the matching presentation statement nodes
@@ -247,10 +302,10 @@ render = render.then<string>((data: string) => {
     console.log('formatting balance sheet');
     let balanceSheetTables: any[] = [];
     for (let table of bsTableNodes) {
-        balanceSheetTables.push(FormatTable('Statement of Financial Position', entity, table));
+        balanceSheetTables.push(FormatTable('Statement of Financial Position', documentDate, table));
         console.log(table.element.name);
     }
-    balanceSheetTables.push(FormatFlatTable('Statement of Financial Position (Parenthetical)', entity, shareValues));
+    balanceSheetTables.push(FormatFlatTable('Statement of Financial Position (Parenthetical)', documentDate, shareValues));
 
 
 
@@ -279,7 +334,7 @@ render = render.then<string>((data: string) => {
     console.log('formatting income statement');
     let incomeSheetTables: any[] = [];
     for (let table of incomeTableNodes) {
-        incomeSheetTables.push(FormatTable('Income Statement', entity, table));
+        incomeSheetTables.push(FormatTable('Income Statement', documentDate, table));
         console.log(table.element.name);
     }
 
@@ -288,7 +343,9 @@ render = render.then<string>((data: string) => {
         path.join(process.cwd(), './templates/index.html'),
         ['.', './templates/'],
         {
-            entity: entity,
+            doc: {
+                tables: deiTables,
+            },
             sfp: {
                 // money: balanceSheetMoney,
                 // shares: balanceSheetShares,
@@ -296,7 +353,7 @@ render = render.then<string>((data: string) => {
             },
             soi: {
                 // income: incomeStatementFormat
-                income: incomeSheetTables[0]
+                tables: incomeSheetTables
             }
         }
     );

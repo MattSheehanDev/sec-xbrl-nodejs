@@ -61,7 +61,7 @@ export function SelectDeiNodes(nodes: StatementNode[], xbrl: XBRLDocument) {
     for (let node of nodes) {
         let deis: DeiNode[] = [];
 
-        let elements = xbrl.GaapParser.Select(node.element.name);
+        let elements = xbrl.DeiParser.Select(node.element.name);
         for (let element of elements) {
             deis.push(new DeiNode(element));
         }
@@ -95,7 +95,7 @@ export function MatchPresentation(presentations: Presentation[], nodes: Statemen
             node.children.push(childStmntNode);
         }
     }
-    
+
     return nodes;
 }
 

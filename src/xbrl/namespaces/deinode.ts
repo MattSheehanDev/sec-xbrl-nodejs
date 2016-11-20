@@ -19,6 +19,9 @@ export default class DeiNode {
         this.contextRef = element.getAttributeNS(null, 'contextRef');
         this.id = element.getAttributeNS(null, 'id');
 
+        if (element.localName === 'EntityCentralIndexKey') {
+            let s = this.id;
+        }
 
         this.year = null;
         this.quarter = null;
@@ -41,6 +44,10 @@ export default class DeiNode {
             }
             // ex. cvs 2013
             else if (match = context.match(/^(?:D|I)(\d{4})Q(\d{1})(YTD)?$/i)) {
+                this.year = parseInt(match[1]);
+                this.quarter = parseInt(match[2]);
+            }
+            else if (match = context.match(/^(?:D|I)(\d{4})Q(\d{1})(.*)?$/i)) {
                 this.year = parseInt(match[1]);
                 this.quarter = parseInt(match[2]);
             }
