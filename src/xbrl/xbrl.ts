@@ -4,6 +4,8 @@ import NodeTypes from '../utilities/nodetypes';
 import { DFS } from '../utilities/dfs';
 
 
+// TODO: parse namespaces
+// TODO: parse 'contexts' for a more accurate representation of the dates in an instance
 export default class XBRLDocument {
 
     public readonly document: Document;

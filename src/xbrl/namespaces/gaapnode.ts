@@ -1,19 +1,4 @@
 
-// Statement of Financial Position & Parenthetical
-const BalanceSheetRoot = 'StatementOfFinancialPositionAbstract';
-// Income Statement & Other Comprehensive Income
-const IncomeStatementRoot = 'IncomeStatementAbstract';
-// Statement of Stockholders Equity
-const StockholdersEquityRoot = 'StatementOfStockholdersEquityAbstract';
-// Statement of Cash Flows
-const CashFlowRoot = 'StatementOfCashFlowsAbstract';
-// Statement of Direct Cash Flows
-const DirectCashFlowRoot = 'OperatingCashFlowsDirectMethodAbstract';
-// Statement of Partners Capital
-const PartnersCapitalRoot = 'StatementOfPartnersCapitalAbstract';
-
-
-
 export default class GaapNode {
 
     public readonly value: number;
