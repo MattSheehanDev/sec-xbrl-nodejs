@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://xbrl.us/view/dei-std/2009-01-31' xmlns:dei='http://xbrl.us/view/dei-std/2009-01-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://xbrl.us/country-ent-std/2009-01-31' schemaLocation='../non-gaap/country-ent-std-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stpr-ent-std/2009-01-31' schemaLocation='../non-gaap/stpr-ent-std-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/currency-ent-std/2009-01-31' schemaLocation='../non-gaap/currency-ent-std-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/exch-ent-std/2009-01-31' schemaLocation='../non-gaap/exch-ent-std-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/sic-ent-std/2009-01-31' schemaLocation='../non-gaap/sic-ent-std-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/naics-ent-std/2009-01-31' schemaLocation='../non-gaap/naics-ent-std-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/dei-ent-std/2009-01-31' schemaLocation='../non-gaap/dei-ent-std-2009-01-31.xsd' />
+</xs:schema>

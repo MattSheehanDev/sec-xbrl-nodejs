@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2011.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/FinancialServicesInsuranceCalc2' xlink:href='../elts/us-roles-2011-01-31.xsd#fs-ins2' xlink:type='simple' />
+<calculationLink xlink:role='http://fasb.org/us-gaap/role/disclosure/FinancialServicesInsuranceCalc2' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_AssumedPremiumsWritten' xlink:label='loc_AssumedPremiumsWritten' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_AssumedPremiumsWrittenLife' xlink:label='loc_AssumedPremiumsWrittenLife' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_AssumedPremiumsWrittenPropertyAndCasualty' xlink:label='loc_AssumedPremiumsWrittenPropertyAndCasualty' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_AssumedPremiumsWrittenAccidentAndHealth' xlink:label='loc_AssumedPremiumsWrittenAccidentAndHealth' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_AssumedPremiumsWrittenFinancialGuaranteeInsuranceContracts' xlink:label='loc_AssumedPremiumsWrittenFinancialGuaranteeInsuranceContracts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_AssumedPremiumsWrittenOtherInsurance' xlink:label='loc_AssumedPremiumsWrittenOtherInsurance' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_CededPremiumsWritten' xlink:label='loc_CededPremiumsWritten' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_CededPremiumsWrittenLife' xlink:label='loc_CededPremiumsWrittenLife' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_CededPremiumsWrittenPropertyAndCasualty' xlink:label='loc_CededPremiumsWrittenPropertyAndCasualty' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_CededPremiumsWrittenAccidentAndHealth' xlink:label='loc_CededPremiumsWrittenAccidentAndHealth' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_CededPremiumsWrittenFinancialGuaranteeInsuranceContracts' xlink:label='loc_CededPremiumsWrittenFinancialGuaranteeInsuranceContracts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_CededPremiumsWrittenOtherInsurance' xlink:label='loc_CededPremiumsWrittenOtherInsurance' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_DirectPremiumsWritten' xlink:label='loc_DirectPremiumsWritten' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_DirectPremiumsWrittenLife' xlink:label='loc_DirectPremiumsWrittenLife' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_DirectPremiumsWrittenPropertyAndCasualty' xlink:label='loc_DirectPremiumsWrittenPropertyAndCasualty' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_DirectPremiumsWrittenAccidentAndHealth' xlink:label='loc_DirectPremiumsWrittenAccidentAndHealth' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_DirectPremiumsWrittenFinancialGuaranteeInsuranceContracts' xlink:label='loc_DirectPremiumsWrittenFinancialGuaranteeInsuranceContracts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_DirectPremiumsWrittenOtherInsurance' xlink:label='loc_DirectPremiumsWrittenOtherInsurance' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PremiumsWrittenNet' xlink:label='loc_PremiumsWrittenNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PremiumsWrittenNetLife' xlink:label='loc_PremiumsWrittenNetLife' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PremiumsWrittenNetPropertyAndCasualty' xlink:label='loc_PremiumsWrittenNetPropertyAndCasualty' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PremiumsWrittenNetAccidentAndHealth' xlink:label='loc_PremiumsWrittenNetAccidentAndHealth' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PremiumsWrittenNetFinancialGuaranteeInsuranceContracts' xlink:label='loc_PremiumsWrittenNetFinancialGuaranteeInsuranceContracts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PremiumsWrittenNetOtherInsurance' xlink:label='loc_PremiumsWrittenNetOtherInsurance' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PremiumsEarnedNet' xlink:label='loc_PremiumsEarnedNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PremiumsEarnedNetLife' xlink:label='loc_PremiumsEarnedNetLife' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PremiumsEarnedNetPropertyAndCasualty' xlink:label='loc_PremiumsEarnedNetPropertyAndCasualty' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PremiumsEarnedNetAccidentAndHealth' xlink:label='loc_PremiumsEarnedNetAccidentAndHealth' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PremiumsEarnedNetFinancialGuaranteeInsuranceContracts' xlink:label='loc_PremiumsEarnedNetFinancialGuaranteeInsuranceContracts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_OtherPremiumRevenueNet' xlink:label='loc_OtherPremiumRevenueNet' xlink:type='locator' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssumedPremiumsWritten' xlink:to='loc_AssumedPremiumsWrittenLife' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssumedPremiumsWritten' xlink:to='loc_AssumedPremiumsWrittenPropertyAndCasualty' xlink:type='arc' />
+<calculationArc order='30' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssumedPremiumsWritten' xlink:to='loc_AssumedPremiumsWrittenAccidentAndHealth' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssumedPremiumsWritten' xlink:to='loc_AssumedPremiumsWrittenFinancialGuaranteeInsuranceContracts' xlink:type='arc' />
+<calculationArc order='50' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssumedPremiumsWritten' xlink:to='loc_AssumedPremiumsWrittenOtherInsurance' xlink:type='arc' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CededPremiumsWritten' xlink:to='loc_CededPremiumsWrittenLife' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CededPremiumsWritten' xlink:to='loc_CededPremiumsWrittenPropertyAndCasualty' xlink:type='arc' />
+<calculationArc order='30' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CededPremiumsWritten' xlink:to='loc_CededPremiumsWrittenAccidentAndHealth' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CededPremiumsWritten' xlink:to='loc_CededPremiumsWrittenFinancialGuaranteeInsuranceContracts' xlink:type='arc' />
+<calculationArc order='50' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CededPremiumsWritten' xlink:to='loc_CededPremiumsWrittenOtherInsurance' xlink:type='arc' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DirectPremiumsWritten' xlink:to='loc_DirectPremiumsWrittenLife' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DirectPremiumsWritten' xlink:to='loc_DirectPremiumsWrittenPropertyAndCasualty' xlink:type='arc' />
+<calculationArc order='30' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DirectPremiumsWritten' xlink:to='loc_DirectPremiumsWrittenAccidentAndHealth' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DirectPremiumsWritten' xlink:to='loc_DirectPremiumsWrittenFinancialGuaranteeInsuranceContracts' xlink:type='arc' />
+<calculationArc order='50' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DirectPremiumsWritten' xlink:to='loc_DirectPremiumsWrittenOtherInsurance' xlink:type='arc' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsWrittenNet' xlink:to='loc_PremiumsWrittenNetLife' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsWrittenNet' xlink:to='loc_PremiumsWrittenNetPropertyAndCasualty' xlink:type='arc' />
+<calculationArc order='30' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsWrittenNet' xlink:to='loc_PremiumsWrittenNetAccidentAndHealth' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsWrittenNet' xlink:to='loc_PremiumsWrittenNetFinancialGuaranteeInsuranceContracts' xlink:type='arc' />
+<calculationArc order='50' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsWrittenNet' xlink:to='loc_PremiumsWrittenNetOtherInsurance' xlink:type='arc' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsEarnedNet' xlink:to='loc_PremiumsEarnedNetLife' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsEarnedNet' xlink:to='loc_PremiumsEarnedNetPropertyAndCasualty' xlink:type='arc' />
+<calculationArc order='30' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsEarnedNet' xlink:to='loc_PremiumsEarnedNetAccidentAndHealth' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsEarnedNet' xlink:to='loc_PremiumsEarnedNetFinancialGuaranteeInsuranceContracts' xlink:type='arc' />
+<calculationArc order='50' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsEarnedNet' xlink:to='loc_OtherPremiumRevenueNet' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

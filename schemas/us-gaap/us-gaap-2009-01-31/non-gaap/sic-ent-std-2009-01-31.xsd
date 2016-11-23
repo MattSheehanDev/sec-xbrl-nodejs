@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  
+This file is an entry point for SIC (sic).
+  
+The DTS starting with this entry point includes the concepts defined in SIC (sic) with their standard, period start, period end, total and axis default labels. It will not include references. This DTS also includes non industry/statement and non disclosure presentation and definition linkbases.
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://xbrl.us/sic-ent-std/2009-01-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:sic-ent-std='http://xbrl.us/sic-ent-std/2009-01-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:annotation>
+<xs:appinfo>
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sic-pre-2009-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-doc-sic-def-2009-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:type='simple' />
+</xs:appinfo>
+<xs:documentation>
+This file is an entry point for SIC (sic).
+
+The DTS starting with this entry point includes the concepts defined in SIC (sic) with their standard, period start, period end, total and axis default labels. It will not include references. This DTS also includes the following non industry/statement and non disclosure presentation and definition linkbases:
+
+995450 - Document - SIC  (presentation)
+995450 - Document - SIC  (definition)
+</xs:documentation>
+</xs:annotation>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://xbrl.us/us-roles/2009-01-31' schemaLocation='../elts/us-roles-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/sic-std/2009-01-31' schemaLocation='sic-std-2009-01-31.xsd' />
+</xs:schema>

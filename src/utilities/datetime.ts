@@ -101,7 +101,7 @@ export module DateTime {
 
 
 
-    export function format(date: Date, dateFormat: string): string {
+    export function format(date: Date, dateFormat: string, utc?: boolean): string {
         if (dateFormat === null || dateFormat === undefined) dateFormat = "f";
 
         switch (dateFormat) {
@@ -142,7 +142,11 @@ export module DateTime {
         }
 
 
-        let utc = dateFormat.match(utcRegex);
+        if (utc === undefined || utc === null) {
+            let matchUTC = dateFormat.match(utcRegex);
+            utc = matchUTC !== undefined ? true : false;
+        }
+
         let year = utc ? date.getUTCFullYear() : date.getFullYear();
         let month = utc ? date.getUTCMonth() : date.getMonth();
         let day = utc ? date.getUTCDate() : date.getDate();

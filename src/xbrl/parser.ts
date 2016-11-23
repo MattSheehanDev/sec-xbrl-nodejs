@@ -13,17 +13,18 @@ import { SelectNS } from './namespaces/xmlns';
 export default class XPathParser {
 
     private _document: Document|Element;
-    private _namespace: string;
-    private _prefix: string;
+    
+    public readonly targetNS: string;
+    public readonly prefix: string;
 
     constructor(element: Document|Element, ns: string, prefix: string) {
         this._document = element;
-        this._namespace = ns;
-        this._prefix = prefix;
+        this.targetNS = ns;
+        this.prefix = prefix;
     }
 
     public All(): Element[] {
-        return SelectNS(`//*[namespace-uri()='${this._namespace}']`, this._document);
+        return SelectNS(`//*[namespace-uri()='${this.targetNS}']`, this._document);
     }
     public Select(names: string|string[]) {
         if (Array.isArray(names)) {
@@ -56,11 +57,11 @@ export default class XPathParser {
     }
 
     private selectUsingNS(name: string): Element[] {
-        let usingNS = `//*[local-name()='${name}' and namespace-uri()='${this._namespace}']`;
+        let usingNS = `//*[local-name()='${name}' and namespace-uri()='${this.targetNS}']`;
         return SelectNS(usingNS, this._document);
     }
     private selectUsingPrefix(name: string): Element[] {
-        let usingPrefix = `//*[local-name()='${name}' and starts-with(name(), '${this._prefix}')]`;
+        let usingPrefix = `//*[local-name()='${name}' and starts-with(name(), '${this.prefix}')]`;
         return SelectNS(usingPrefix, this._document);
     }
 

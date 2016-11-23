@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://xbrl.us/view/schedoi-std/2009-01-31' xmlns:schedoi='http://xbrl.us/view/schedoi-std/2009-01-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/schedoi-hold/2009-01-31' schemaLocation='../dis/us-gaap-dis-schedoi-hold-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/schedoi-shorthold/2009-01-31' schemaLocation='../dis/us-gaap-dis-schedoi-shorthold-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/schedoi-sumhold/2009-01-31' schemaLocation='../dis/us-gaap-dis-schedoi-sumhold-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/schedoi-oocw/2009-01-31' schemaLocation='../dis/us-gaap-dis-schedoi-oocw-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/schedoi-iiaa/2009-01-31' schemaLocation='../dis/us-gaap-dis-schedoi-iiaa-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/schedoi-shortsh/2009-01-31' schemaLocation='../dis/us-gaap-dis-schedoi-shortsh-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/schedoi-otsh/2009-01-31' schemaLocation='../dis/us-gaap-dis-schedoi-otsh-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/schedoi-fednote/2009-01-31' schemaLocation='../dis/us-gaap-dis-schedoi-fednote-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/invest-ent-std/2009-01-31' schemaLocation='../non-gaap/invest-ent-std-2009-01-31.xsd' />
+</xs:schema>

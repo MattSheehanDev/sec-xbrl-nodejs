@@ -7,14 +7,13 @@ import { DFS } from '../utilities/dfs';
 // TODO: parse namespaces
 // TODO: parse 'contexts' for a more accurate representation of the dates in an instance
 // TODO: download all schemas
-// TODO: download more test cases
 export default class XBRLDocument {
 
     public readonly document: Document;
 
     public readonly DeiParser: XPathParser;
     public readonly GaapParser: XPathParser;
-
+    
 
     constructor(doc: Document) {
         this.document = doc;
@@ -27,6 +26,7 @@ export default class XBRLDocument {
                 break;
             }
         }
+        
         // we are concerned with finding the 'us-gaap' and 'dei' namespaces (to determine what schema to use)
         let deiNS = root.getAttribute('xmlns:dei');
         let gaapNS = root.getAttribute('xmlns:us-gaap');

@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2013.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/BalanceSheetOffsettingOffsettingLiabilitiesTable' xlink:href='../elts/us-roles-2013-01-31.xsd#BalanceSheetOffsettingOffsettingLiabilitiesTable' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/all' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' xlink:type='simple' />
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/BalanceSheetOffsettingOffsettingAssetsTable' xlink:href='../elts/us-roles-2013-01-31.xsd#BalanceSheetOffsettingOffsettingAssetsTable' xlink:type='simple' />
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/BalanceSheetOffsettingOffsettingAssetsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingAssetsLineItems' xlink:label='loc_OffsettingAssetsLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingAssetsTable' xlink:label='loc_OffsettingAssetsTable' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_OffsettingAssetsLineItems' xlink:to='loc_OffsettingAssetsTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/BalanceSheetOffsettingOffsettingAssetsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CounterpartyNameAxis' xlink:label='loc_CounterpartyNameAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RepurchaseAgreementCounterpartyNameDomain' xlink:label='loc_RepurchaseAgreementCounterpartyNameDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeInstrumentRiskAxis' xlink:label='loc_DerivativeInstrumentRiskAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeContractTypeDomain' xlink:label='loc_DerivativeContractTypeDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TransactionTypeAxis' xlink:label='loc_TransactionTypeAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TransactionDomain' xlink:label='loc_TransactionDomain' xlink:type='locator' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_CounterpartyNameAxis' xlink:to='loc_RepurchaseAgreementCounterpartyNameDomain' xlink:type='arc' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_DerivativeInstrumentRiskAxis' xlink:to='loc_DerivativeContractTypeDomain' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_TransactionTypeAxis' xlink:to='loc_TransactionDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/BalanceSheetOffsettingOffsettingAssetsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CounterpartyNameAxis' xlink:label='loc_CounterpartyNameAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RepurchaseAgreementCounterpartyNameDomain' xlink:label='loc_RepurchaseAgreementCounterpartyNameDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeInstrumentRiskAxis' xlink:label='loc_DerivativeInstrumentRiskAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeContractTypeDomain' xlink:label='loc_DerivativeContractTypeDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TransactionTypeAxis' xlink:label='loc_TransactionTypeAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TransactionDomain' xlink:label='loc_TransactionDomain' xlink:type='locator' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_CounterpartyNameAxis' xlink:to='loc_RepurchaseAgreementCounterpartyNameDomain' xlink:type='arc' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_DerivativeInstrumentRiskAxis' xlink:to='loc_DerivativeContractTypeDomain' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_TransactionTypeAxis' xlink:to='loc_TransactionDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/BalanceSheetOffsettingOffsettingAssetsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CommodityContractMember' xlink:label='loc_CommodityContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CommodityOptionMember' xlink:label='loc_CommodityOptionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetsAbstract' xlink:label='loc_DerivativeAssetsAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetFairValueNetAbstract' xlink:label='loc_DerivativeAssetFairValueNetAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetCollateralObligationToReturnCashOffset' xlink:label='loc_DerivativeAssetCollateralObligationToReturnCashOffset' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetNotSubjectToMasterNettingArrangement' xlink:label='loc_DerivativeAssetNotSubjectToMasterNettingArrangement' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssets' xlink:label='loc_DerivativeAssets' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeFairValueOfDerivativeAsset' xlink:label='loc_DerivativeFairValueOfDerivativeAsset' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetFairValueGrossLiability' xlink:label='loc_DerivativeAssetFairValueGrossLiability' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeFairValueOfDerivativeAssetAmountNotOffsetAgainstCollateral' xlink:label='loc_DerivativeFairValueOfDerivativeAssetAmountNotOffsetAgainstCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetFairValueAmountOffsetAgainstCollateralAbstract' xlink:label='loc_DerivativeAssetFairValueAmountOffsetAgainstCollateralAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeCollateralObligationToReturnSecurities' xlink:label='loc_DerivativeCollateralObligationToReturnSecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeCollateralObligationToReturnCash' xlink:label='loc_DerivativeCollateralObligationToReturnCash' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeFairValueOfDerivativeAssetAmountOffsetAgainstCollateral' xlink:label='loc_DerivativeFairValueOfDerivativeAssetAmountOffsetAgainstCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeContractTypeDomain' xlink:label='loc_DerivativeContractTypeDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestRateContractMember' xlink:label='loc_InterestRateContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ForeignExchangeContractMember' xlink:label='loc_ForeignExchangeContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CrossCurrencyInterestRateContractMember' xlink:label='loc_CrossCurrencyInterestRateContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TreasuryLockMember' xlink:label='loc_TreasuryLockMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_EquityContractMember' xlink:label='loc_EquityContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_EnergyRelatedDerivativeMember' xlink:label='loc_EnergyRelatedDerivativeMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CreditRiskContractMember' xlink:label='loc_CreditRiskContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_EmbeddedDerivativeFinancialInstrumentsMember' xlink:label='loc_EmbeddedDerivativeFinancialInstrumentsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CoalContractMember' xlink:label='loc_CoalContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherContractMember' xlink:label='loc_OtherContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_EquitySwapMember' xlink:label='loc_EquitySwapMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_StockOptionMember' xlink:label='loc_StockOptionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CurrencySwapMember' xlink:label='loc_CurrencySwapMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ForeignExchangeForwardMember' xlink:label='loc_ForeignExchangeForwardMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ForeignExchangeFutureMember' xlink:label='loc_ForeignExchangeFutureMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ForeignExchangeOptionMember' xlink:label='loc_ForeignExchangeOptionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_EurodollarFutureMember' xlink:label='loc_EurodollarFutureMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestRateFloorMember' xlink:label='loc_InterestRateFloorMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestRateCapMember' xlink:label='loc_InterestRateCapMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestRateSwapMember' xlink:label='loc_InterestRateSwapMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestRateSwaptionMember' xlink:label='loc_InterestRateSwaptionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingAssetsLineItems' xlink:label='loc_OffsettingAssetsLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingDerivativeAssetsAbstract' xlink:label='loc_OffsettingDerivativeAssetsAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingSecuritiesPurchasedUnderAgreementsToResellAbstract' xlink:label='loc_OffsettingSecuritiesPurchasedUnderAgreementsToResellAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingSecuritiesBorrowedAbstract' xlink:label='loc_OffsettingSecuritiesBorrowedAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingDerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedAbstract' xlink:label='loc_OffsettingDerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedGross' xlink:label='loc_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedGross' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedLiability' xlink:label='loc_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedLiability' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedNotSubjectToMasterNettingArrangement' xlink:label='loc_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedNotSubjectToMasterNettingArrangement' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowed' xlink:label='loc_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowed' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedCollateralObligationToReturnSecurities' xlink:label='loc_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedCollateralObligationToReturnSecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedCollateralObligationToReturnCash' xlink:label='loc_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedCollateralObligationToReturnCash' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedAmountOffsetAgainstCollateral' xlink:label='loc_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedAmountOffsetAgainstCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetSetoffRightsDescription' xlink:label='loc_DerivativeAssetSetoffRightsDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetMeasurementDifferenceDescription' xlink:label='loc_DerivativeAssetMeasurementDifferenceDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetFairValueOfCollateral' xlink:label='loc_DerivativeAssetFairValueOfCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesBorrowedAmountOffsetAgainstCollateralAbstract' xlink:label='loc_SecuritiesBorrowedAmountOffsetAgainstCollateralAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesBorrowedSetoffRightsDescription' xlink:label='loc_SecuritiesBorrowedSetoffRightsDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesBorrowedMeasurementDifferenceDescription' xlink:label='loc_SecuritiesBorrowedMeasurementDifferenceDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesBorrowedFairValueOfCollateral' xlink:label='loc_SecuritiesBorrowedFairValueOfCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesPurchasedUnderAgreementsToResellAmountOffsetAgainstCollateralAbstract' xlink:label='loc_SecuritiesPurchasedUnderAgreementsToResellAmountOffsetAgainstCollateralAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesPurchasedUnderAgreementsToResellSetoffRightsDescription' xlink:label='loc_SecuritiesPurchasedUnderAgreementsToResellSetoffRightsDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesPurchasedUnderAgreementsToResellMeasurementDifferenceDescription' xlink:label='loc_SecuritiesPurchasedUnderAgreementsToResellMeasurementDifferenceDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesPurchasedUnderAgreementsToResellFairValueOfCollateral' xlink:label='loc_SecuritiesPurchasedUnderAgreementsToResellFairValueOfCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesBorrowedAbstract' xlink:label='loc_SecuritiesBorrowedAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesBorrowedGross' xlink:label='loc_SecuritiesBorrowedGross' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesBorrowedLiability' xlink:label='loc_SecuritiesBorrowedLiability' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesBorrowedNotSubjectToMasterNettingArrangement' xlink:label='loc_SecuritiesBorrowedNotSubjectToMasterNettingArrangement' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesBorrowed' xlink:label='loc_SecuritiesBorrowed' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesBorrowedCollateralObligationToReturnSecurities' xlink:label='loc_SecuritiesBorrowedCollateralObligationToReturnSecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesBorrowedCollateralObligationToReturnCash' xlink:label='loc_SecuritiesBorrowedCollateralObligationToReturnCash' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesBorrowedAmountOffsetAgainstCollateral' xlink:label='loc_SecuritiesBorrowedAmountOffsetAgainstCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesPurchasedUnderAgreementsToResellAbstract' xlink:label='loc_SecuritiesPurchasedUnderAgreementsToResellAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesPurchasedUnderAgreementsToResellGross' xlink:label='loc_SecuritiesPurchasedUnderAgreementsToResellGross' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesPurchasedUnderAgreementsToResellLiability' xlink:label='loc_SecuritiesPurchasedUnderAgreementsToResellLiability' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesPurchasedUnderAgreementsToResellNotSubjectToMasterNettingArrangement' xlink:label='loc_SecuritiesPurchasedUnderAgreementsToResellNotSubjectToMasterNettingArrangement' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesPurchasedUnderAgreementsToResell' xlink:label='loc_SecuritiesPurchasedUnderAgreementsToResell' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesPurchasedUnderAgreementsToResellCollateralObligationToReturnSecurities' xlink:label='loc_SecuritiesPurchasedUnderAgreementsToResellCollateralObligationToReturnSecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesPurchasedUnderAgreementsToResellCollateralObligationToReturnCash' xlink:label='loc_SecuritiesPurchasedUnderAgreementsToResellCollateralObligationToReturnCash' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesPurchasedUnderAgreementsToResellAmountOffsetAgainstCollateral' xlink:label='loc_SecuritiesPurchasedUnderAgreementsToResellAmountOffsetAgainstCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TransactionDomain' xlink:label='loc_TransactionDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OverTheCounterMember' xlink:label='loc_OverTheCounterMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ExchangeTradedMember' xlink:label='loc_ExchangeTradedMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ExchangeClearedMember' xlink:label='loc_ExchangeClearedMember' xlink:type='locator' />
+<link:definitionArc order='18.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_CommodityContractMember' xlink:to='loc_CommodityOptionMember' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeAssetsAbstract' xlink:to='loc_DerivativeAssetFairValueNetAbstract' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeAssetsAbstract' xlink:to='loc_DerivativeAssetCollateralObligationToReturnCashOffset' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeAssetsAbstract' xlink:to='loc_DerivativeAssetNotSubjectToMasterNettingArrangement' xlink:type='arc' />
+<link:definitionArc order='10.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeAssetsAbstract' xlink:to='loc_DerivativeAssets' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeAssetFairValueNetAbstract' xlink:to='loc_DerivativeFairValueOfDerivativeAsset' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeAssetFairValueNetAbstract' xlink:to='loc_DerivativeAssetFairValueGrossLiability' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeAssetFairValueNetAbstract' xlink:to='loc_DerivativeFairValueOfDerivativeAssetAmountNotOffsetAgainstCollateral' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeAssetFairValueAmountOffsetAgainstCollateralAbstract' xlink:to='loc_DerivativeAssetsAbstract' xlink:type='arc' />
+<link:definitionArc order='11.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeAssetFairValueAmountOffsetAgainstCollateralAbstract' xlink:to='loc_DerivativeCollateralObligationToReturnSecurities' xlink:type='arc' />
+<link:definitionArc order='12.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeAssetFairValueAmountOffsetAgainstCollateralAbstract' xlink:to='loc_DerivativeCollateralObligationToReturnCash' xlink:type='arc' />
+<link:definitionArc order='13.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeAssetFairValueAmountOffsetAgainstCollateralAbstract' xlink:to='loc_DerivativeFairValueOfDerivativeAssetAmountOffsetAgainstCollateral' xlink:type='arc' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_InterestRateContractMember' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_ForeignExchangeContractMember' xlink:type='arc' />
+<link:definitionArc order='12.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_CrossCurrencyInterestRateContractMember' xlink:type='arc' />
+<link:definitionArc order='13.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_TreasuryLockMember' xlink:type='arc' />
+<link:definitionArc order='14.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_EquityContractMember' xlink:type='arc' />
+<link:definitionArc order='17.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_CommodityContractMember' xlink:type='arc' />
+<link:definitionArc order='19.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_EnergyRelatedDerivativeMember' xlink:type='arc' />
+<link:definitionArc order='20.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_CreditRiskContractMember' xlink:type='arc' />
+<link:definitionArc order='21.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_EmbeddedDerivativeFinancialInstrumentsMember' xlink:type='arc' />
+<link:definitionArc order='22.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_CoalContractMember' xlink:type='arc' />
+<link:definitionArc order='23.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_OtherContractMember' xlink:type='arc' />
+<link:definitionArc order='15.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_EquityContractMember' xlink:to='loc_EquitySwapMember' xlink:type='arc' />
+<link:definitionArc order='16.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_EquityContractMember' xlink:to='loc_StockOptionMember' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ForeignExchangeContractMember' xlink:to='loc_CurrencySwapMember' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ForeignExchangeContractMember' xlink:to='loc_ForeignExchangeForwardMember' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ForeignExchangeContractMember' xlink:to='loc_ForeignExchangeFutureMember' xlink:type='arc' />
+<link:definitionArc order='11.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ForeignExchangeContractMember' xlink:to='loc_ForeignExchangeOptionMember' xlink:type='arc' />
+<link:definitionArc order='10.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ForeignExchangeFutureMember' xlink:to='loc_EurodollarFutureMember' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InterestRateContractMember' xlink:to='loc_InterestRateFloorMember' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InterestRateContractMember' xlink:to='loc_InterestRateCapMember' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InterestRateContractMember' xlink:to='loc_InterestRateSwapMember' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InterestRateContractMember' xlink:to='loc_InterestRateSwaptionMember' xlink:type='arc' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingAssetsLineItems' xlink:to='loc_OffsettingDerivativeAssetsAbstract' xlink:type='arc' />
+<link:definitionArc order='17.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingAssetsLineItems' xlink:to='loc_OffsettingSecuritiesPurchasedUnderAgreementsToResellAbstract' xlink:type='arc' />
+<link:definitionArc order='30.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingAssetsLineItems' xlink:to='loc_OffsettingSecuritiesBorrowedAbstract' xlink:type='arc' />
+<link:definitionArc order='43.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingAssetsLineItems' xlink:to='loc_OffsettingDerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedAbstract' xlink:type='arc' />
+<link:definitionArc order='44.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedAbstract' xlink:to='loc_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedGross' xlink:type='arc' />
+<link:definitionArc order='45.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedAbstract' xlink:to='loc_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedLiability' xlink:type='arc' />
+<link:definitionArc order='46.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedAbstract' xlink:to='loc_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedNotSubjectToMasterNettingArrangement' xlink:type='arc' />
+<link:definitionArc order='47.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedAbstract' xlink:to='loc_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowed' xlink:type='arc' />
+<link:definitionArc order='48.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedAbstract' xlink:to='loc_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedCollateralObligationToReturnSecurities' xlink:type='arc' />
+<link:definitionArc order='49.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedAbstract' xlink:to='loc_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedCollateralObligationToReturnCash' xlink:type='arc' />
+<link:definitionArc order='50.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedAbstract' xlink:to='loc_DerivativeAssetSecuritiesPurchasedUnderAgreementsToResellSecuritiesBorrowedAmountOffsetAgainstCollateral' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeAssetsAbstract' xlink:to='loc_DerivativeAssetFairValueAmountOffsetAgainstCollateralAbstract' xlink:type='arc' />
+<link:definitionArc order='14.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeAssetsAbstract' xlink:to='loc_DerivativeAssetSetoffRightsDescription' xlink:type='arc' />
+<link:definitionArc order='15.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeAssetsAbstract' xlink:to='loc_DerivativeAssetMeasurementDifferenceDescription' xlink:type='arc' />
+<link:definitionArc order='16.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeAssetsAbstract' xlink:to='loc_DerivativeAssetFairValueOfCollateral' xlink:type='arc' />
+<link:definitionArc order='31.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesBorrowedAbstract' xlink:to='loc_SecuritiesBorrowedAmountOffsetAgainstCollateralAbstract' xlink:type='arc' />
+<link:definitionArc order='40.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesBorrowedAbstract' xlink:to='loc_SecuritiesBorrowedSetoffRightsDescription' xlink:type='arc' />
+<link:definitionArc order='41.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesBorrowedAbstract' xlink:to='loc_SecuritiesBorrowedMeasurementDifferenceDescription' xlink:type='arc' />
+<link:definitionArc order='42.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesBorrowedAbstract' xlink:to='loc_SecuritiesBorrowedFairValueOfCollateral' xlink:type='arc' />
+<link:definitionArc order='18.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesPurchasedUnderAgreementsToResellAbstract' xlink:to='loc_SecuritiesPurchasedUnderAgreementsToResellAmountOffsetAgainstCollateralAbstract' xlink:type='arc' />
+<link:definitionArc order='27.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesPurchasedUnderAgreementsToResellAbstract' xlink:to='loc_SecuritiesPurchasedUnderAgreementsToResellSetoffRightsDescription' xlink:type='arc' />
+<link:definitionArc order='28.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesPurchasedUnderAgreementsToResellAbstract' xlink:to='loc_SecuritiesPurchasedUnderAgreementsToResellMeasurementDifferenceDescription' xlink:type='arc' />
+<link:definitionArc order='29.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesPurchasedUnderAgreementsToResellAbstract' xlink:to='loc_SecuritiesPurchasedUnderAgreementsToResellFairValueOfCollateral' xlink:type='arc' />
+<link:definitionArc order='33.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesBorrowedAbstract' xlink:to='loc_SecuritiesBorrowedGross' xlink:type='arc' />
+<link:definitionArc order='34.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesBorrowedAbstract' xlink:to='loc_SecuritiesBorrowedLiability' xlink:type='arc' />
+<link:definitionArc order='35.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesBorrowedAbstract' xlink:to='loc_SecuritiesBorrowedNotSubjectToMasterNettingArrangement' xlink:type='arc' />
+<link:definitionArc order='36.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesBorrowedAbstract' xlink:to='loc_SecuritiesBorrowed' xlink:type='arc' />
+<link:definitionArc order='32.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesBorrowedAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesBorrowedAbstract' xlink:type='arc' />
+<link:definitionArc order='37.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesBorrowedAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesBorrowedCollateralObligationToReturnSecurities' xlink:type='arc' />
+<link:definitionArc order='38.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesBorrowedAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesBorrowedCollateralObligationToReturnCash' xlink:type='arc' />
+<link:definitionArc order='39.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesBorrowedAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesBorrowedAmountOffsetAgainstCollateral' xlink:type='arc' />
+<link:definitionArc order='20.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesPurchasedUnderAgreementsToResellAbstract' xlink:to='loc_SecuritiesPurchasedUnderAgreementsToResellGross' xlink:type='arc' />
+<link:definitionArc order='21.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesPurchasedUnderAgreementsToResellAbstract' xlink:to='loc_SecuritiesPurchasedUnderAgreementsToResellLiability' xlink:type='arc' />
+<link:definitionArc order='22.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesPurchasedUnderAgreementsToResellAbstract' xlink:to='loc_SecuritiesPurchasedUnderAgreementsToResellNotSubjectToMasterNettingArrangement' xlink:type='arc' />
+<link:definitionArc order='23.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesPurchasedUnderAgreementsToResellAbstract' xlink:to='loc_SecuritiesPurchasedUnderAgreementsToResell' xlink:type='arc' />
+<link:definitionArc order='19.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesPurchasedUnderAgreementsToResellAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesPurchasedUnderAgreementsToResellAbstract' xlink:type='arc' />
+<link:definitionArc order='24.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesPurchasedUnderAgreementsToResellAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesPurchasedUnderAgreementsToResellCollateralObligationToReturnSecurities' xlink:type='arc' />
+<link:definitionArc order='25.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesPurchasedUnderAgreementsToResellAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesPurchasedUnderAgreementsToResellCollateralObligationToReturnCash' xlink:type='arc' />
+<link:definitionArc order='26.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesPurchasedUnderAgreementsToResellAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesPurchasedUnderAgreementsToResellAmountOffsetAgainstCollateral' xlink:type='arc' />
+<link:definitionArc order='24.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TransactionDomain' xlink:to='loc_OverTheCounterMember' xlink:type='arc' />
+<link:definitionArc order='25.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TransactionDomain' xlink:to='loc_ExchangeTradedMember' xlink:type='arc' />
+<link:definitionArc order='26.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TransactionDomain' xlink:to='loc_ExchangeClearedMember' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/BalanceSheetOffsettingOffsettingAssetsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingAssetsTable' xlink:label='loc_OffsettingAssetsTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeInstrumentRiskAxis' xlink:label='loc_DerivativeInstrumentRiskAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CounterpartyNameAxis' xlink:label='loc_CounterpartyNameAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TransactionTypeAxis' xlink:label='loc_TransactionTypeAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_OffsettingAssetsTable' xlink:to='loc_DerivativeInstrumentRiskAxis' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_OffsettingAssetsTable' xlink:to='loc_CounterpartyNameAxis' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_OffsettingAssetsTable' xlink:to='loc_TransactionTypeAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/BalanceSheetOffsettingOffsettingLiabilitiesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingLiabilitiesLineItems' xlink:label='loc_OffsettingLiabilitiesLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingLiabilitiesTable' xlink:label='loc_OffsettingLiabilitiesTable' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_OffsettingLiabilitiesLineItems' xlink:to='loc_OffsettingLiabilitiesTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/BalanceSheetOffsettingOffsettingLiabilitiesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CounterpartyNameAxis' xlink:label='loc_CounterpartyNameAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RepurchaseAgreementCounterpartyNameDomain' xlink:label='loc_RepurchaseAgreementCounterpartyNameDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeInstrumentRiskAxis' xlink:label='loc_DerivativeInstrumentRiskAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeContractTypeDomain' xlink:label='loc_DerivativeContractTypeDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TransactionTypeAxis' xlink:label='loc_TransactionTypeAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TransactionDomain' xlink:label='loc_TransactionDomain' xlink:type='locator' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_CounterpartyNameAxis' xlink:to='loc_RepurchaseAgreementCounterpartyNameDomain' xlink:type='arc' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_DerivativeInstrumentRiskAxis' xlink:to='loc_DerivativeContractTypeDomain' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_TransactionTypeAxis' xlink:to='loc_TransactionDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/BalanceSheetOffsettingOffsettingLiabilitiesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CounterpartyNameAxis' xlink:label='loc_CounterpartyNameAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RepurchaseAgreementCounterpartyNameDomain' xlink:label='loc_RepurchaseAgreementCounterpartyNameDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeInstrumentRiskAxis' xlink:label='loc_DerivativeInstrumentRiskAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeContractTypeDomain' xlink:label='loc_DerivativeContractTypeDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TransactionTypeAxis' xlink:label='loc_TransactionTypeAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TransactionDomain' xlink:label='loc_TransactionDomain' xlink:type='locator' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_CounterpartyNameAxis' xlink:to='loc_RepurchaseAgreementCounterpartyNameDomain' xlink:type='arc' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_DerivativeInstrumentRiskAxis' xlink:to='loc_DerivativeContractTypeDomain' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_TransactionTypeAxis' xlink:to='loc_TransactionDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/BalanceSheetOffsettingOffsettingLiabilitiesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CommodityContractMember' xlink:label='loc_CommodityContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CommodityOptionMember' xlink:label='loc_CommodityOptionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeContractTypeDomain' xlink:label='loc_DerivativeContractTypeDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestRateContractMember' xlink:label='loc_InterestRateContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ForeignExchangeContractMember' xlink:label='loc_ForeignExchangeContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CrossCurrencyInterestRateContractMember' xlink:label='loc_CrossCurrencyInterestRateContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TreasuryLockMember' xlink:label='loc_TreasuryLockMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_EquityContractMember' xlink:label='loc_EquityContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_EnergyRelatedDerivativeMember' xlink:label='loc_EnergyRelatedDerivativeMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CreditRiskContractMember' xlink:label='loc_CreditRiskContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_EmbeddedDerivativeFinancialInstrumentsMember' xlink:label='loc_EmbeddedDerivativeFinancialInstrumentsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CoalContractMember' xlink:label='loc_CoalContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherContractMember' xlink:label='loc_OtherContractMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilitiesAbstract' xlink:label='loc_DerivativeLiabilitiesAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilityFairValueNetAbstract' xlink:label='loc_DerivativeLiabilityFairValueNetAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilityCollateralRightToReclaimCashOffset' xlink:label='loc_DerivativeLiabilityCollateralRightToReclaimCashOffset' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilityNotSubjectToMasterNettingArrangement' xlink:label='loc_DerivativeLiabilityNotSubjectToMasterNettingArrangement' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilities' xlink:label='loc_DerivativeLiabilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeFairValueOfDerivativeLiability' xlink:label='loc_DerivativeFairValueOfDerivativeLiability' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilityFairValueGrossAsset' xlink:label='loc_DerivativeLiabilityFairValueGrossAsset' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeFairValueOfDerivativeLiabilityAmountNotOffsetAgainstCollateral' xlink:label='loc_DerivativeFairValueOfDerivativeLiabilityAmountNotOffsetAgainstCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilityFairValueAmountOffsetAgainstCollateralAbstract' xlink:label='loc_DerivativeLiabilityFairValueAmountOffsetAgainstCollateralAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeCollateralRightToReclaimCash' xlink:label='loc_DerivativeCollateralRightToReclaimCash' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeCollateralRightToReclaimSecurities' xlink:label='loc_DerivativeCollateralRightToReclaimSecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeFairValueOfDerivativeLiabilityAmountOffsetAgainstCollateral' xlink:label='loc_DerivativeFairValueOfDerivativeLiabilityAmountOffsetAgainstCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_EquitySwapMember' xlink:label='loc_EquitySwapMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_StockOptionMember' xlink:label='loc_StockOptionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CurrencySwapMember' xlink:label='loc_CurrencySwapMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ForeignExchangeForwardMember' xlink:label='loc_ForeignExchangeForwardMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ForeignExchangeFutureMember' xlink:label='loc_ForeignExchangeFutureMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ForeignExchangeOptionMember' xlink:label='loc_ForeignExchangeOptionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_EurodollarFutureMember' xlink:label='loc_EurodollarFutureMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestRateFloorMember' xlink:label='loc_InterestRateFloorMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestRateCapMember' xlink:label='loc_InterestRateCapMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestRateSwapMember' xlink:label='loc_InterestRateSwapMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestRateSwaptionMember' xlink:label='loc_InterestRateSwaptionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingDerivativeLiabilitiesAbstract' xlink:label='loc_OffsettingDerivativeLiabilitiesAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilitySetoffRightsDescription' xlink:label='loc_DerivativeLiabilitySetoffRightsDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilityMeasurementDifferenceDescription' xlink:label='loc_DerivativeLiabilityMeasurementDifferenceDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilityFairValueOfCollateral' xlink:label='loc_DerivativeLiabilityFairValueOfCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingDerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAbstract' xlink:label='loc_OffsettingDerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedGross' xlink:label='loc_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedGross' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAsset' xlink:label='loc_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAsset' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedNotSubjectToMasterNettingArrangement' xlink:label='loc_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedNotSubjectToMasterNettingArrangement' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoaned' xlink:label='loc_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoaned' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedCollateralRightToReclaimSecurities' xlink:label='loc_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedCollateralRightToReclaimSecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedCollateralRightToReclaimCash' xlink:label='loc_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedCollateralRightToReclaimCash' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAmountOffsetAgainstCollateral' xlink:label='loc_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAmountOffsetAgainstCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingLiabilitiesLineItems' xlink:label='loc_OffsettingLiabilitiesLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingSecuritiesSoldUnderAgreementsToResellAbstract' xlink:label='loc_OffsettingSecuritiesSoldUnderAgreementsToResellAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingSecuritiesLoanedAbstract' xlink:label='loc_OffsettingSecuritiesLoanedAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesLoanedAmountOffsetAgainstCollateralAbstract' xlink:label='loc_SecuritiesLoanedAmountOffsetAgainstCollateralAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesLoanedSetoffRightsDescription' xlink:label='loc_SecuritiesLoanedSetoffRightsDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesLoanedMeasurementDifferenceDescription' xlink:label='loc_SecuritiesLoanedMeasurementDifferenceDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesLoanedFairValueOfCollateral' xlink:label='loc_SecuritiesLoanedFairValueOfCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesSoldUnderAgreementsToRepurchaseAmountOffsetAgainstCollateralAbstract' xlink:label='loc_SecuritiesSoldUnderAgreementsToRepurchaseAmountOffsetAgainstCollateralAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesSoldUnderAgreementsToRepurchaseSetoffRightsDescription' xlink:label='loc_SecuritiesSoldUnderAgreementsToRepurchaseSetoffRightsDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesSoldUnderAgreementsToRepurchaseMeasurementDifferenceDescription' xlink:label='loc_SecuritiesSoldUnderAgreementsToRepurchaseMeasurementDifferenceDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesSoldUnderAgreementsToRepurchaseFairValueOfCollateral' xlink:label='loc_SecuritiesSoldUnderAgreementsToRepurchaseFairValueOfCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesLoanedAbstract' xlink:label='loc_SecuritiesLoanedAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesLoanedGross' xlink:label='loc_SecuritiesLoanedGross' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesLoanedAsset' xlink:label='loc_SecuritiesLoanedAsset' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesLoanedNotSubjectToMasterNettingArrangement' xlink:label='loc_SecuritiesLoanedNotSubjectToMasterNettingArrangement' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesLoaned' xlink:label='loc_SecuritiesLoaned' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesLoanedCollateralRightToReclaimSecurities' xlink:label='loc_SecuritiesLoanedCollateralRightToReclaimSecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesLoanedCollateralRightToReclaimCash' xlink:label='loc_SecuritiesLoanedCollateralRightToReclaimCash' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesLoanedAmountOffsetAgainstCollateral' xlink:label='loc_SecuritiesLoanedAmountOffsetAgainstCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesSoldUnderAgreementsToRepurchaseAbstract' xlink:label='loc_SecuritiesSoldUnderAgreementsToRepurchaseAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesSoldUnderAgreementsToRepurchaseGross' xlink:label='loc_SecuritiesSoldUnderAgreementsToRepurchaseGross' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesSoldUnderAgreementsToRepurchaseAsset' xlink:label='loc_SecuritiesSoldUnderAgreementsToRepurchaseAsset' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesSoldUnderAgreementsToRepurchaseNotSubjectToMasterNettingArrangement' xlink:label='loc_SecuritiesSoldUnderAgreementsToRepurchaseNotSubjectToMasterNettingArrangement' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesSoldUnderAgreementsToRepurchase' xlink:label='loc_SecuritiesSoldUnderAgreementsToRepurchase' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesSoldUnderAgreementsToRepurchaseCollateralRightToReclaimSecurities' xlink:label='loc_SecuritiesSoldUnderAgreementsToRepurchaseCollateralRightToReclaimSecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesSoldUnderAgreementsToRepurchaseCollateralRightToReclaimCash' xlink:label='loc_SecuritiesSoldUnderAgreementsToRepurchaseCollateralRightToReclaimCash' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuritiesSoldUnderAgreementsToRepurchaseAmountOffsetAgainstCollateral' xlink:label='loc_SecuritiesSoldUnderAgreementsToRepurchaseAmountOffsetAgainstCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TransactionDomain' xlink:label='loc_TransactionDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OverTheCounterMember' xlink:label='loc_OverTheCounterMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ExchangeTradedMember' xlink:label='loc_ExchangeTradedMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ExchangeClearedMember' xlink:label='loc_ExchangeClearedMember' xlink:type='locator' />
+<link:definitionArc order='18.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_CommodityContractMember' xlink:to='loc_CommodityOptionMember' xlink:type='arc' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_InterestRateContractMember' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_ForeignExchangeContractMember' xlink:type='arc' />
+<link:definitionArc order='12.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_CrossCurrencyInterestRateContractMember' xlink:type='arc' />
+<link:definitionArc order='13.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_TreasuryLockMember' xlink:type='arc' />
+<link:definitionArc order='14.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_EquityContractMember' xlink:type='arc' />
+<link:definitionArc order='17.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_CommodityContractMember' xlink:type='arc' />
+<link:definitionArc order='19.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_EnergyRelatedDerivativeMember' xlink:type='arc' />
+<link:definitionArc order='20.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_CreditRiskContractMember' xlink:type='arc' />
+<link:definitionArc order='21.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_EmbeddedDerivativeFinancialInstrumentsMember' xlink:type='arc' />
+<link:definitionArc order='22.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_CoalContractMember' xlink:type='arc' />
+<link:definitionArc order='23.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeContractTypeDomain' xlink:to='loc_OtherContractMember' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeLiabilitiesAbstract' xlink:to='loc_DerivativeLiabilityFairValueNetAbstract' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeLiabilitiesAbstract' xlink:to='loc_DerivativeLiabilityCollateralRightToReclaimCashOffset' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeLiabilitiesAbstract' xlink:to='loc_DerivativeLiabilityNotSubjectToMasterNettingArrangement' xlink:type='arc' />
+<link:definitionArc order='10.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeLiabilitiesAbstract' xlink:to='loc_DerivativeLiabilities' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeLiabilityFairValueNetAbstract' xlink:to='loc_DerivativeFairValueOfDerivativeLiability' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeLiabilityFairValueNetAbstract' xlink:to='loc_DerivativeLiabilityFairValueGrossAsset' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeLiabilityFairValueNetAbstract' xlink:to='loc_DerivativeFairValueOfDerivativeLiabilityAmountNotOffsetAgainstCollateral' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeLiabilityFairValueAmountOffsetAgainstCollateralAbstract' xlink:to='loc_DerivativeLiabilitiesAbstract' xlink:type='arc' />
+<link:definitionArc order='11.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeLiabilityFairValueAmountOffsetAgainstCollateralAbstract' xlink:to='loc_DerivativeCollateralRightToReclaimCash' xlink:type='arc' />
+<link:definitionArc order='12.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeLiabilityFairValueAmountOffsetAgainstCollateralAbstract' xlink:to='loc_DerivativeCollateralRightToReclaimSecurities' xlink:type='arc' />
+<link:definitionArc order='13.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DerivativeLiabilityFairValueAmountOffsetAgainstCollateralAbstract' xlink:to='loc_DerivativeFairValueOfDerivativeLiabilityAmountOffsetAgainstCollateral' xlink:type='arc' />
+<link:definitionArc order='15.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_EquityContractMember' xlink:to='loc_EquitySwapMember' xlink:type='arc' />
+<link:definitionArc order='16.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_EquityContractMember' xlink:to='loc_StockOptionMember' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ForeignExchangeContractMember' xlink:to='loc_CurrencySwapMember' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ForeignExchangeContractMember' xlink:to='loc_ForeignExchangeForwardMember' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ForeignExchangeContractMember' xlink:to='loc_ForeignExchangeFutureMember' xlink:type='arc' />
+<link:definitionArc order='11.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ForeignExchangeContractMember' xlink:to='loc_ForeignExchangeOptionMember' xlink:type='arc' />
+<link:definitionArc order='10.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ForeignExchangeFutureMember' xlink:to='loc_EurodollarFutureMember' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InterestRateContractMember' xlink:to='loc_InterestRateFloorMember' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InterestRateContractMember' xlink:to='loc_InterestRateCapMember' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InterestRateContractMember' xlink:to='loc_InterestRateSwapMember' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InterestRateContractMember' xlink:to='loc_InterestRateSwaptionMember' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeLiabilitiesAbstract' xlink:to='loc_DerivativeLiabilityFairValueAmountOffsetAgainstCollateralAbstract' xlink:type='arc' />
+<link:definitionArc order='14.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeLiabilitiesAbstract' xlink:to='loc_DerivativeLiabilitySetoffRightsDescription' xlink:type='arc' />
+<link:definitionArc order='15.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeLiabilitiesAbstract' xlink:to='loc_DerivativeLiabilityMeasurementDifferenceDescription' xlink:type='arc' />
+<link:definitionArc order='16.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeLiabilitiesAbstract' xlink:to='loc_DerivativeLiabilityFairValueOfCollateral' xlink:type='arc' />
+<link:definitionArc order='44.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAbstract' xlink:to='loc_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedGross' xlink:type='arc' />
+<link:definitionArc order='45.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAbstract' xlink:to='loc_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAsset' xlink:type='arc' />
+<link:definitionArc order='46.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAbstract' xlink:to='loc_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedNotSubjectToMasterNettingArrangement' xlink:type='arc' />
+<link:definitionArc order='47.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAbstract' xlink:to='loc_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoaned' xlink:type='arc' />
+<link:definitionArc order='48.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAbstract' xlink:to='loc_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedCollateralRightToReclaimSecurities' xlink:type='arc' />
+<link:definitionArc order='49.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAbstract' xlink:to='loc_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedCollateralRightToReclaimCash' xlink:type='arc' />
+<link:definitionArc order='50.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingDerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAbstract' xlink:to='loc_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAmountOffsetAgainstCollateral' xlink:type='arc' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingLiabilitiesLineItems' xlink:to='loc_OffsettingDerivativeLiabilitiesAbstract' xlink:type='arc' />
+<link:definitionArc order='17.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingLiabilitiesLineItems' xlink:to='loc_OffsettingSecuritiesSoldUnderAgreementsToResellAbstract' xlink:type='arc' />
+<link:definitionArc order='30.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingLiabilitiesLineItems' xlink:to='loc_OffsettingSecuritiesLoanedAbstract' xlink:type='arc' />
+<link:definitionArc order='43.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingLiabilitiesLineItems' xlink:to='loc_OffsettingDerivativeLiabilitySecuritiesSoldUnderAgreementsToResellSecuritiesLoanedAbstract' xlink:type='arc' />
+<link:definitionArc order='31.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesLoanedAbstract' xlink:to='loc_SecuritiesLoanedAmountOffsetAgainstCollateralAbstract' xlink:type='arc' />
+<link:definitionArc order='40.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesLoanedAbstract' xlink:to='loc_SecuritiesLoanedSetoffRightsDescription' xlink:type='arc' />
+<link:definitionArc order='41.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesLoanedAbstract' xlink:to='loc_SecuritiesLoanedMeasurementDifferenceDescription' xlink:type='arc' />
+<link:definitionArc order='42.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesLoanedAbstract' xlink:to='loc_SecuritiesLoanedFairValueOfCollateral' xlink:type='arc' />
+<link:definitionArc order='18.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesSoldUnderAgreementsToResellAbstract' xlink:to='loc_SecuritiesSoldUnderAgreementsToRepurchaseAmountOffsetAgainstCollateralAbstract' xlink:type='arc' />
+<link:definitionArc order='27.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesSoldUnderAgreementsToResellAbstract' xlink:to='loc_SecuritiesSoldUnderAgreementsToRepurchaseSetoffRightsDescription' xlink:type='arc' />
+<link:definitionArc order='28.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesSoldUnderAgreementsToResellAbstract' xlink:to='loc_SecuritiesSoldUnderAgreementsToRepurchaseMeasurementDifferenceDescription' xlink:type='arc' />
+<link:definitionArc order='29.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_OffsettingSecuritiesSoldUnderAgreementsToResellAbstract' xlink:to='loc_SecuritiesSoldUnderAgreementsToRepurchaseFairValueOfCollateral' xlink:type='arc' />
+<link:definitionArc order='33.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesLoanedAbstract' xlink:to='loc_SecuritiesLoanedGross' xlink:type='arc' />
+<link:definitionArc order='34.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesLoanedAbstract' xlink:to='loc_SecuritiesLoanedAsset' xlink:type='arc' />
+<link:definitionArc order='35.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesLoanedAbstract' xlink:to='loc_SecuritiesLoanedNotSubjectToMasterNettingArrangement' xlink:type='arc' />
+<link:definitionArc order='36.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesLoanedAbstract' xlink:to='loc_SecuritiesLoaned' xlink:type='arc' />
+<link:definitionArc order='32.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesLoanedAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesLoanedAbstract' xlink:type='arc' />
+<link:definitionArc order='37.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesLoanedAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesLoanedCollateralRightToReclaimSecurities' xlink:type='arc' />
+<link:definitionArc order='38.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesLoanedAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesLoanedCollateralRightToReclaimCash' xlink:type='arc' />
+<link:definitionArc order='39.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesLoanedAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesLoanedAmountOffsetAgainstCollateral' xlink:type='arc' />
+<link:definitionArc order='20.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesSoldUnderAgreementsToRepurchaseAbstract' xlink:to='loc_SecuritiesSoldUnderAgreementsToRepurchaseGross' xlink:type='arc' />
+<link:definitionArc order='21.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesSoldUnderAgreementsToRepurchaseAbstract' xlink:to='loc_SecuritiesSoldUnderAgreementsToRepurchaseAsset' xlink:type='arc' />
+<link:definitionArc order='22.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesSoldUnderAgreementsToRepurchaseAbstract' xlink:to='loc_SecuritiesSoldUnderAgreementsToRepurchaseNotSubjectToMasterNettingArrangement' xlink:type='arc' />
+<link:definitionArc order='23.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesSoldUnderAgreementsToRepurchaseAbstract' xlink:to='loc_SecuritiesSoldUnderAgreementsToRepurchase' xlink:type='arc' />
+<link:definitionArc order='19.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesSoldUnderAgreementsToRepurchaseAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesSoldUnderAgreementsToRepurchaseAbstract' xlink:type='arc' />
+<link:definitionArc order='24.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesSoldUnderAgreementsToRepurchaseAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesSoldUnderAgreementsToRepurchaseCollateralRightToReclaimSecurities' xlink:type='arc' />
+<link:definitionArc order='25.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesSoldUnderAgreementsToRepurchaseAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesSoldUnderAgreementsToRepurchaseCollateralRightToReclaimCash' xlink:type='arc' />
+<link:definitionArc order='26.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SecuritiesSoldUnderAgreementsToRepurchaseAmountOffsetAgainstCollateralAbstract' xlink:to='loc_SecuritiesSoldUnderAgreementsToRepurchaseAmountOffsetAgainstCollateral' xlink:type='arc' />
+<link:definitionArc order='24.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TransactionDomain' xlink:to='loc_OverTheCounterMember' xlink:type='arc' />
+<link:definitionArc order='25.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TransactionDomain' xlink:to='loc_ExchangeTradedMember' xlink:type='arc' />
+<link:definitionArc order='26.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TransactionDomain' xlink:to='loc_ExchangeClearedMember' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/BalanceSheetOffsettingOffsettingLiabilitiesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OffsettingLiabilitiesTable' xlink:label='loc_OffsettingLiabilitiesTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeInstrumentRiskAxis' xlink:label='loc_DerivativeInstrumentRiskAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CounterpartyNameAxis' xlink:label='loc_CounterpartyNameAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TransactionTypeAxis' xlink:label='loc_TransactionTypeAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_OffsettingLiabilitiesTable' xlink:to='loc_DerivativeInstrumentRiskAxis' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_OffsettingLiabilitiesTable' xlink:to='loc_CounterpartyNameAxis' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_OffsettingLiabilitiesTable' xlink:to='loc_TransactionTypeAxis' xlink:type='arc' />
+</link:definitionLink>
+</link:linkbase>

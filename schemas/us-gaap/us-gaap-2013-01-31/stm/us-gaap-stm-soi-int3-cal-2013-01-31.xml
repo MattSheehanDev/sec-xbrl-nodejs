@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2013.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/statement/StatementOfIncomeInterestBasedRevenueCalc3' xlink:href='../elts/us-roles-2013-01-31.xsd#soi-int3' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/statement/StatementOfIncomeInterestBasedRevenueCalc3' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestAndDividendIncomeSecurities' xlink:label='loc_InterestAndDividendIncomeSecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestIncomeOperating' xlink:label='loc_InterestIncomeOperating' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestIncomeSecuritiesMortgageBacked' xlink:label='loc_InterestIncomeSecuritiesMortgageBacked' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestIncomeSecuritiesStateAndMunicipal' xlink:label='loc_InterestIncomeSecuritiesStateAndMunicipal' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestIncomeSecuritiesUSTreasuryAndOtherUSGovernment' xlink:label='loc_InterestIncomeSecuritiesUSTreasuryAndOtherUSGovernment' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestIncomeSecuritiesUSTreasury' xlink:label='loc_InterestIncomeSecuritiesUSTreasury' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestIncomeSecuritiesOtherUSGovernment' xlink:label='loc_InterestIncomeSecuritiesOtherUSGovernment' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestIncomeSecuritiesCorporateDebtOperating' xlink:label='loc_InterestIncomeSecuritiesCorporateDebtOperating' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DividendIncomeOperating' xlink:label='loc_DividendIncomeOperating' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndDividendIncomeSecurities' xlink:to='loc_InterestIncomeOperating' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestIncomeOperating' xlink:to='loc_InterestIncomeSecuritiesMortgageBacked' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestIncomeOperating' xlink:to='loc_InterestIncomeSecuritiesStateAndMunicipal' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestIncomeOperating' xlink:to='loc_InterestIncomeSecuritiesUSTreasuryAndOtherUSGovernment' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestIncomeSecuritiesUSTreasuryAndOtherUSGovernment' xlink:to='loc_InterestIncomeSecuritiesUSTreasury' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestIncomeSecuritiesUSTreasuryAndOtherUSGovernment' xlink:to='loc_InterestIncomeSecuritiesOtherUSGovernment' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestIncomeOperating' xlink:to='loc_InterestIncomeSecuritiesCorporateDebtOperating' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndDividendIncomeSecurities' xlink:to='loc_DividendIncomeOperating' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

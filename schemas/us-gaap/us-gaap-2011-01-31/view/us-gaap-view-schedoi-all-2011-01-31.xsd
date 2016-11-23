@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2011.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://fasb.org/view/schedoi-all/2011-01-31' xmlns:view-schedoi='http://fasb.org/view/schedoi-std/2011-01-31' xmlns:view-schedoi-all='http://fasb.org/view/schedoi-all/2011-01-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://fasb.org/view/schedoi-std/2011-01-31' schemaLocation='us-gaap-view-schedoi-std-2011-01-31.xsd' />
+<xs:import namespace='http://fasb.org/us-gaap-all/2011-01-31' schemaLocation='../elts/us-gaap-all-2011-01-31.xsd' />
+</xs:schema>

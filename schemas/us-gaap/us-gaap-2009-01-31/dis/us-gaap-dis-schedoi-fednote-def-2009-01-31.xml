@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/InvestmentsFederalTaxNoteFederalIncomeTaxNoteTable' xlink:href='../elts/us-roles-2009-01-31.xsd#InvestmentsFederalTaxNoteFederalIncomeTaxNoteTable' xlink:type='simple' />
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/InvestmentsFederalTaxNoteScheduleOfInvestmentsTable' xlink:href='../elts/us-roles-2009-01-31.xsd#InvestmentsFederalTaxNoteScheduleOfInvestmentsTable' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/all' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' xlink:type='simple' />
+<!--Definition relationships for table ScheduleOfInvestmentsTable in presentation http://xbrl.us/us-gaap/role/disclosure/InvestmentsFederalTaxNote-->
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsFederalTaxNoteScheduleOfInvestmentsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfInvestmentsTable' xlink:label='loc_ScheduleOfInvestmentsTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfInvestmentsLineItems' xlink:label='loc_ScheduleOfInvestmentsLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_ScheduleOfInvestmentsLineItems' xlink:to='loc_ScheduleOfInvestmentsTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsFederalTaxNoteScheduleOfInvestmentsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfInvestmentsTable' xlink:label='loc_ScheduleOfInvestmentsTable' xlink:type='locator' />
+<link:loc xlink:href='../non-gaap/dei-2009-01-31.xsd#dei_LegalEntityAxis' xlink:label='loc_LegalEntityAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ScheduleOfInvestmentsTable' xlink:to='loc_LegalEntityAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsFederalTaxNoteScheduleOfInvestmentsTable' xlink:type='extended'>
+<link:loc xlink:href='../non-gaap/dei-2009-01-31.xsd#dei_LegalEntityAxis' xlink:label='loc_LegalEntityAxis' xlink:type='locator' />
+<link:loc xlink:href='../non-gaap/dei-2009-01-31.xsd#dei_EntityDomain' xlink:label='loc_EntityDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_LegalEntityAxis' xlink:to='loc_EntityDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsFederalTaxNoteScheduleOfInvestmentsTable' xlink:type='extended'>
+<link:loc xlink:href='../non-gaap/dei-2009-01-31.xsd#dei_LegalEntityAxis' xlink:label='loc_LegalEntityAxis' xlink:type='locator' />
+<link:loc xlink:href='../non-gaap/dei-2009-01-31.xsd#dei_EntityDomain' xlink:label='loc_EntityDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_LegalEntityAxis' xlink:to='loc_EntityDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsFederalTaxNoteScheduleOfInvestmentsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfInvestmentsLineItems' xlink:label='loc_ScheduleOfInvestmentsLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_FederalIncomeTaxNoteTextBlock' xlink:label='loc_FederalIncomeTaxNoteTextBlock' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:label='loc_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNetAbstract' xlink:label='loc_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNetAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_TaxBasisOfInvestmentsGrossUnrealizedAppreciation' xlink:label='loc_TaxBasisOfInvestmentsGrossUnrealizedAppreciation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_TaxBasisOfInvestmentsGrossUnrealizedDepreciation' xlink:label='loc_TaxBasisOfInvestmentsGrossUnrealizedDepreciation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNet' xlink:label='loc_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_TaxBasisOfInvestmentsCostForIncomeTaxPurposes' xlink:label='loc_TaxBasisOfInvestmentsCostForIncomeTaxPurposes' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ExplanationDifferencesBetweenBookAndTaxBasis' xlink:label='loc_ExplanationDifferencesBetweenBookAndTaxBasis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_TaxBasisOfInvestmentsAdditionalInformation' xlink:label='loc_TaxBasisOfInvestmentsAdditionalInformation' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ScheduleOfInvestmentsLineItems' xlink:to='loc_FederalIncomeTaxNoteTextBlock' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_FederalIncomeTaxNoteTextBlock' xlink:to='loc_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:to='loc_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNetAbstract' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNetAbstract' xlink:to='loc_TaxBasisOfInvestmentsGrossUnrealizedAppreciation' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNetAbstract' xlink:to='loc_TaxBasisOfInvestmentsGrossUnrealizedDepreciation' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNetAbstract' xlink:to='loc_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNet' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:to='loc_TaxBasisOfInvestmentsCostForIncomeTaxPurposes' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:to='loc_ExplanationDifferencesBetweenBookAndTaxBasis' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:to='loc_TaxBasisOfInvestmentsAdditionalInformation' xlink:type='arc' />
+</link:definitionLink>
+<!--Definition relationships for table FederalIncomeTaxNoteTable in presentation http://xbrl.us/us-gaap/role/disclosure/InvestmentsFederalTaxNote-->
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsFederalTaxNoteFederalIncomeTaxNoteTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_FederalIncomeTaxNoteTable' xlink:label='loc_FederalIncomeTaxNoteTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:label='loc_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:to='loc_FederalIncomeTaxNoteTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsFederalTaxNoteFederalIncomeTaxNoteTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_FederalIncomeTaxNoteTable' xlink:label='loc_FederalIncomeTaxNoteTable' xlink:type='locator' />
+<link:loc xlink:href='../non-gaap/dei-2009-01-31.xsd#dei_LegalEntityAxis' xlink:label='loc_LegalEntityAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentTypeAxis' xlink:label='loc_InvestmentTypeAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_FederalIncomeTaxNoteTable' xlink:to='loc_LegalEntityAxis' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_FederalIncomeTaxNoteTable' xlink:to='loc_InvestmentTypeAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsFederalTaxNoteFederalIncomeTaxNoteTable' xlink:type='extended'>
+<link:loc xlink:href='../non-gaap/dei-2009-01-31.xsd#dei_LegalEntityAxis' xlink:label='loc_LegalEntityAxis' xlink:type='locator' />
+<link:loc xlink:href='../non-gaap/dei-2009-01-31.xsd#dei_EntityDomain' xlink:label='loc_EntityDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentTypeAxis' xlink:label='loc_InvestmentTypeAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentTypeDomain' xlink:label='loc_InvestmentTypeDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_LegalEntityAxis' xlink:to='loc_EntityDomain' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_InvestmentTypeAxis' xlink:to='loc_InvestmentTypeDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsFederalTaxNoteFederalIncomeTaxNoteTable' xlink:type='extended'>
+<link:loc xlink:href='../non-gaap/dei-2009-01-31.xsd#dei_LegalEntityAxis' xlink:label='loc_LegalEntityAxis' xlink:type='locator' />
+<link:loc xlink:href='../non-gaap/dei-2009-01-31.xsd#dei_EntityDomain' xlink:label='loc_EntityDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentTypeAxis' xlink:label='loc_InvestmentTypeAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentTypeDomain' xlink:label='loc_InvestmentTypeDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_LegalEntityAxis' xlink:to='loc_EntityDomain' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_InvestmentTypeAxis' xlink:to='loc_InvestmentTypeDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsFederalTaxNoteFederalIncomeTaxNoteTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:label='loc_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNetAbstract' xlink:label='loc_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNetAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_TaxBasisOfInvestmentsGrossUnrealizedAppreciation' xlink:label='loc_TaxBasisOfInvestmentsGrossUnrealizedAppreciation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_TaxBasisOfInvestmentsGrossUnrealizedDepreciation' xlink:label='loc_TaxBasisOfInvestmentsGrossUnrealizedDepreciation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNet' xlink:label='loc_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_TaxBasisOfInvestmentsCostForIncomeTaxPurposes' xlink:label='loc_TaxBasisOfInvestmentsCostForIncomeTaxPurposes' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ExplanationDifferencesBetweenBookAndTaxBasis' xlink:label='loc_ExplanationDifferencesBetweenBookAndTaxBasis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_TaxBasisOfInvestmentsAdditionalInformation' xlink:label='loc_TaxBasisOfInvestmentsAdditionalInformation' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:to='loc_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNetAbstract' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNetAbstract' xlink:to='loc_TaxBasisOfInvestmentsGrossUnrealizedAppreciation' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNetAbstract' xlink:to='loc_TaxBasisOfInvestmentsGrossUnrealizedDepreciation' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNetAbstract' xlink:to='loc_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNet' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:to='loc_TaxBasisOfInvestmentsCostForIncomeTaxPurposes' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:to='loc_ExplanationDifferencesBetweenBookAndTaxBasis' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentsOwnedFederalIncomeTaxNoteLineItems' xlink:to='loc_TaxBasisOfInvestmentsAdditionalInformation' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsFederalTaxNoteFederalIncomeTaxNoteTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentTypeDomain' xlink:label='loc_InvestmentTypeDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SecuritiesInvestmentMember' xlink:label='loc_SecuritiesInvestmentMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_OtherThanSecuritiesInvestmentMember' xlink:label='loc_OtherThanSecuritiesInvestmentMember' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentTypeDomain' xlink:to='loc_SecuritiesInvestmentMember' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentTypeDomain' xlink:to='loc_OtherThanSecuritiesInvestmentMember' xlink:type='arc' />
+</link:definitionLink>
+</link:linkbase>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2011.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciationRealEstateAndAccumulatedDepreciationByPropertyTable' xlink:href='../elts/us-roles-2011-01-31.xsd#SECScheduleArticle12-28RealEstateAndAccumulatedDepreciationRealEstateAndAccumulatedDepreciationByPropertyTable' xlink:type='simple' />
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciationRealEstateWriteDownOrReserveTable' xlink:href='../elts/us-roles-2011-01-31.xsd#SECScheduleArticle12-28RealEstateAndAccumulatedDepreciationRealEstateWriteDownOrReserveTable' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/all' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' xlink:type='simple' />
+<!--Definition relationships for table RealEstateWriteDownOrReserveTable in presentation http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciation-->
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciationRealEstateWriteDownOrReserveTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateWriteDownOrReserveTable' xlink:label='loc_RealEstateWriteDownOrReserveTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateWriteDownOrReserveLineItems' xlink:label='loc_RealEstateWriteDownOrReserveLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_RealEstateWriteDownOrReserveLineItems' xlink:to='loc_RealEstateWriteDownOrReserveTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciationRealEstateWriteDownOrReserveTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateWriteDownOrReserveTable' xlink:label='loc_RealEstateWriteDownOrReserveTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateWriteDownOrReserveByPropertyAxis' xlink:label='loc_RealEstateWriteDownOrReserveByPropertyAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_RealEstateWriteDownOrReserveTable' xlink:to='loc_RealEstateWriteDownOrReserveByPropertyAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciationRealEstateWriteDownOrReserveTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateWriteDownOrReserveByPropertyAxis' xlink:label='loc_RealEstateWriteDownOrReserveByPropertyAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateWriteDownOrReservePropertyDomain' xlink:label='loc_RealEstateWriteDownOrReservePropertyDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_RealEstateWriteDownOrReserveByPropertyAxis' xlink:to='loc_RealEstateWriteDownOrReservePropertyDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciationRealEstateWriteDownOrReserveTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateWriteDownOrReserveByPropertyAxis' xlink:label='loc_RealEstateWriteDownOrReserveByPropertyAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateWriteDownOrReservePropertyDomain' xlink:label='loc_RealEstateWriteDownOrReservePropertyDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_RealEstateWriteDownOrReserveByPropertyAxis' xlink:to='loc_RealEstateWriteDownOrReservePropertyDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciationRealEstateWriteDownOrReserveTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateWriteDownOrReserveLineItems' xlink:label='loc_RealEstateWriteDownOrReserveLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateWriteDownOrReserveBasis' xlink:label='loc_RealEstateWriteDownOrReserveBasis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateWriteDownOrReserveAmount' xlink:label='loc_RealEstateWriteDownOrReserveAmount' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateWriteDownOrReserveLineItems' xlink:to='loc_RealEstateWriteDownOrReserveBasis' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateWriteDownOrReserveLineItems' xlink:to='loc_RealEstateWriteDownOrReserveAmount' xlink:type='arc' />
+</link:definitionLink>
+<!--Definition relationships for table RealEstateAndAccumulatedDepreciationByPropertyTable in presentation http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciation-->
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciationRealEstateAndAccumulatedDepreciationByPropertyTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationByPropertyTable' xlink:label='loc_RealEstateAndAccumulatedDepreciationByPropertyTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationLineItems' xlink:label='loc_RealEstateAndAccumulatedDepreciationLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_RealEstateAndAccumulatedDepreciationLineItems' xlink:to='loc_RealEstateAndAccumulatedDepreciationByPropertyTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciationRealEstateAndAccumulatedDepreciationByPropertyTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationByPropertyTable' xlink:label='loc_RealEstateAndAccumulatedDepreciationByPropertyTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationDescriptionOfPropertyAxis' xlink:label='loc_RealEstateAndAccumulatedDepreciationDescriptionOfPropertyAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_RealEstateAndAccumulatedDepreciationByPropertyTable' xlink:to='loc_RealEstateAndAccumulatedDepreciationDescriptionOfPropertyAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciationRealEstateAndAccumulatedDepreciationByPropertyTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationDescriptionOfPropertyAxis' xlink:label='loc_RealEstateAndAccumulatedDepreciationDescriptionOfPropertyAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationNameOfPropertyDomain' xlink:label='loc_RealEstateAndAccumulatedDepreciationNameOfPropertyDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_RealEstateAndAccumulatedDepreciationDescriptionOfPropertyAxis' xlink:to='loc_RealEstateAndAccumulatedDepreciationNameOfPropertyDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciationRealEstateAndAccumulatedDepreciationByPropertyTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationDescriptionOfPropertyAxis' xlink:label='loc_RealEstateAndAccumulatedDepreciationDescriptionOfPropertyAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationNameOfPropertyDomain' xlink:label='loc_RealEstateAndAccumulatedDepreciationNameOfPropertyDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_RealEstateAndAccumulatedDepreciationDescriptionOfPropertyAxis' xlink:to='loc_RealEstateAndAccumulatedDepreciationNameOfPropertyDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciationRealEstateAndAccumulatedDepreciationByPropertyTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationLineItems' xlink:label='loc_RealEstateAndAccumulatedDepreciationLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationDescriptionOfProperty' xlink:label='loc_RealEstateAndAccumulatedDepreciationDescriptionOfProperty' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationAmountOfEncumbrances' xlink:label='loc_RealEstateAndAccumulatedDepreciationAmountOfEncumbrances' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationInitialCostAbstract' xlink:label='loc_RealEstateAndAccumulatedDepreciationInitialCostAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationInitialCostOfLand' xlink:label='loc_RealEstateAndAccumulatedDepreciationInitialCostOfLand' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationInitialCostOfBuildingsAndImprovements' xlink:label='loc_RealEstateAndAccumulatedDepreciationInitialCostOfBuildingsAndImprovements' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationCostsCapitalizedSubsequentToAcquisitionImprovements' xlink:label='loc_RealEstateAndAccumulatedDepreciationCostsCapitalizedSubsequentToAcquisitionImprovements' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationCostsCapitalizedSubsequentToAcquisitionCarryingCosts' xlink:label='loc_RealEstateAndAccumulatedDepreciationCostsCapitalizedSubsequentToAcquisitionCarryingCosts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationCarryingAmountOfLandAndBuildingsAndImprovementsAbstract' xlink:label='loc_RealEstateAndAccumulatedDepreciationCarryingAmountOfLandAndBuildingsAndImprovementsAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationCarryingAmountOfLand' xlink:label='loc_RealEstateAndAccumulatedDepreciationCarryingAmountOfLand' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationCarryingAmountOfBuildingsAndImprovements' xlink:label='loc_RealEstateAndAccumulatedDepreciationCarryingAmountOfBuildingsAndImprovements' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationCarryingAmountOfLandAndBuildingsAndImprovements' xlink:label='loc_RealEstateAndAccumulatedDepreciationCarryingAmountOfLandAndBuildingsAndImprovements' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationAccumulatedDepreciation' xlink:label='loc_RealEstateAndAccumulatedDepreciationAccumulatedDepreciation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationDateOfConstruction' xlink:label='loc_RealEstateAndAccumulatedDepreciationDateOfConstruction' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationDateAcquired' xlink:label='loc_RealEstateAndAccumulatedDepreciationDateAcquired' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationLifeUsedForDepreciation' xlink:label='loc_RealEstateAndAccumulatedDepreciationLifeUsedForDepreciation' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateAndAccumulatedDepreciationLineItems' xlink:to='loc_RealEstateAndAccumulatedDepreciationDescriptionOfProperty' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateAndAccumulatedDepreciationLineItems' xlink:to='loc_RealEstateAndAccumulatedDepreciationAmountOfEncumbrances' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateAndAccumulatedDepreciationLineItems' xlink:to='loc_RealEstateAndAccumulatedDepreciationInitialCostAbstract' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateAndAccumulatedDepreciationInitialCostAbstract' xlink:to='loc_RealEstateAndAccumulatedDepreciationInitialCostOfLand' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateAndAccumulatedDepreciationInitialCostAbstract' xlink:to='loc_RealEstateAndAccumulatedDepreciationInitialCostOfBuildingsAndImprovements' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateAndAccumulatedDepreciationLineItems' xlink:to='loc_RealEstateAndAccumulatedDepreciationCostsCapitalizedSubsequentToAcquisitionImprovements' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateAndAccumulatedDepreciationLineItems' xlink:to='loc_RealEstateAndAccumulatedDepreciationCostsCapitalizedSubsequentToAcquisitionCarryingCosts' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateAndAccumulatedDepreciationLineItems' xlink:to='loc_RealEstateAndAccumulatedDepreciationCarryingAmountOfLandAndBuildingsAndImprovementsAbstract' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateAndAccumulatedDepreciationCarryingAmountOfLandAndBuildingsAndImprovementsAbstract' xlink:to='loc_RealEstateAndAccumulatedDepreciationCarryingAmountOfLand' xlink:type='arc' />
+<link:definitionArc order='10.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateAndAccumulatedDepreciationCarryingAmountOfLandAndBuildingsAndImprovementsAbstract' xlink:to='loc_RealEstateAndAccumulatedDepreciationCarryingAmountOfBuildingsAndImprovements' xlink:type='arc' />
+<link:definitionArc order='11.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateAndAccumulatedDepreciationCarryingAmountOfLandAndBuildingsAndImprovementsAbstract' xlink:to='loc_RealEstateAndAccumulatedDepreciationCarryingAmountOfLandAndBuildingsAndImprovements' xlink:type='arc' />
+<link:definitionArc order='12.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateAndAccumulatedDepreciationLineItems' xlink:to='loc_RealEstateAndAccumulatedDepreciationAccumulatedDepreciation' xlink:type='arc' />
+<link:definitionArc order='13.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateAndAccumulatedDepreciationLineItems' xlink:to='loc_RealEstateAndAccumulatedDepreciationDateOfConstruction' xlink:type='arc' />
+<link:definitionArc order='14.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateAndAccumulatedDepreciationLineItems' xlink:to='loc_RealEstateAndAccumulatedDepreciationDateAcquired' xlink:type='arc' />
+<link:definitionArc order='15.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RealEstateAndAccumulatedDepreciationLineItems' xlink:to='loc_RealEstateAndAccumulatedDepreciationLifeUsedForDepreciation' xlink:type='arc' />
+</link:definitionLink>
+</link:linkbase>

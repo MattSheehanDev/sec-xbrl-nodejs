@@ -1,5 +1,5 @@
 
-
+// TODO: add linkbases to schema document
 export class SchemaDocument {
 
     private _targetNS: string;

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/document/SECCertification' xlink:href='../elts/us-roles-2008-03-31.xsd#sec-cert' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/all' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' xlink:type='simple' />
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/SECCertification' xlink:type='extended'>
+<link:loc xlink:href='seccert-2008-03-31.xsd#seccert_PrincipalOfficersTable' xlink:label='loc_PrincipalOfficersTable' xlink:type='locator' />
+<link:loc xlink:href='seccert-2008-03-31.xsd#seccert_PrincipalOfficersLineItems' xlink:label='loc_PrincipalOfficersLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_PrincipalOfficersLineItems' xlink:to='loc_PrincipalOfficersTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/SECCertification' xlink:type='extended'>
+<link:loc xlink:href='seccert-2008-03-31.xsd#seccert_PrincipalOfficersTable' xlink:label='loc_PrincipalOfficersTable' xlink:type='locator' />
+<link:loc xlink:href='seccert-2008-03-31.xsd#seccert_PrincipalOfficersPrincipalOfficerAxis' xlink:label='loc_PrincipalOfficersPrincipalOfficerAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_PrincipalOfficersTable' xlink:to='loc_PrincipalOfficersPrincipalOfficerAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/SECCertification' xlink:type='extended'>
+<link:loc xlink:href='seccert-2008-03-31.xsd#seccert_PrincipalOfficersPrincipalOfficerAxis' xlink:label='loc_PrincipalOfficersPrincipalOfficerAxis' xlink:type='locator' />
+<link:loc xlink:href='seccert-2008-03-31.xsd#seccert_PrincipalOfficerDomain' xlink:label='loc_PrincipalOfficerDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_PrincipalOfficersPrincipalOfficerAxis' xlink:to='loc_PrincipalOfficerDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/SECCertification' xlink:type='extended'>
+<link:loc xlink:href='seccert-2008-03-31.xsd#seccert_PrincipalOfficersPrincipalOfficerAxis' xlink:label='loc_PrincipalOfficersPrincipalOfficerAxis' xlink:type='locator' />
+<link:loc xlink:href='seccert-2008-03-31.xsd#seccert_PrincipalOfficerDomain' xlink:label='loc_PrincipalOfficerDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_PrincipalOfficersPrincipalOfficerAxis' xlink:to='loc_PrincipalOfficerDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/SECCertification' xlink:type='extended'>
+<link:loc xlink:href='seccert-2008-03-31.xsd#seccert_PrincipalOfficersLineItems' xlink:label='loc_PrincipalOfficersLineItems' xlink:type='locator' />
+<link:loc xlink:href='seccert-2008-03-31.xsd#seccert_PrincipalOfficerName' xlink:label='loc_PrincipalOfficerName' xlink:type='locator' />
+<link:loc xlink:href='seccert-2008-03-31.xsd#seccert_PrincipalOfficerSignature' xlink:label='loc_PrincipalOfficerSignature' xlink:type='locator' />
+<link:loc xlink:href='seccert-2008-03-31.xsd#seccert_PrincipalOfficerTitleOrPosition' xlink:label='loc_PrincipalOfficerTitleOrPosition' xlink:type='locator' />
+<link:loc xlink:href='seccert-2008-03-31.xsd#seccert_PrincipalOfficerDateOfCertification' xlink:label='loc_PrincipalOfficerDateOfCertification' xlink:type='locator' />
+<link:loc xlink:href='seccert-2008-03-31.xsd#seccert_PrincipalOfficerConfirmationOfReview' xlink:label='loc_PrincipalOfficerConfirmationOfReview' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PrincipalOfficersLineItems' xlink:to='loc_PrincipalOfficerName' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PrincipalOfficersLineItems' xlink:to='loc_PrincipalOfficerSignature' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PrincipalOfficersLineItems' xlink:to='loc_PrincipalOfficerTitleOrPosition' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PrincipalOfficersLineItems' xlink:to='loc_PrincipalOfficerDateOfCertification' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PrincipalOfficersLineItems' xlink:to='loc_PrincipalOfficerConfirmationOfReview' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/SECCertification' xlink:type='extended' />
+</link:linkbase>

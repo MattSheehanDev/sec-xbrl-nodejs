@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  
+This file is an entry point for Currency (currency).
+  
+The DTS starting with this entry point includes the concepts defined in Currency (currency) with their standard, period start, period end, total, axis default, documentation, deprecated label and depreacted date labels. It will also include references. This DTS also includes non industry/statement and non disclosure presentation and definition linkbases.
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://xbrl.us/currency-ent-all/2009-01-31' xmlns:currency-ent-all='http://xbrl.us/currency-ent-all/2009-01-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:annotation>
+<xs:documentation>
+This file is an entry point for Currency (currency).
+
+The DTS starting with this entry point includes the concepts defined in Currency (currency) with their standard, period start, period end, total, axis default, documentation, deprecated label and depreacted date labels. It will also include references.. This DTS also includes the following non industry/statement and non disclosure presentation and definition linkbases:
+
+995430 - Document - Currency  (presentation)
+995430 - Document - Currency  (definition)
+</xs:documentation>
+</xs:annotation>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://xbrl.us/us-roles/2009-01-31' schemaLocation='../elts/us-roles-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/currency-ent-std/2009-01-31' schemaLocation='currency-ent-std-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/currency-all/2009-01-31' schemaLocation='currency-all-2009-01-31.xsd' />
+</xs:schema>

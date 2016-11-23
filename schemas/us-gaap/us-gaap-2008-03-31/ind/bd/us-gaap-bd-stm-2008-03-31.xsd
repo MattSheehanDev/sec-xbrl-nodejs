@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://xbrl.us/bd/stm/2008-03-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:stm-bd='http://xbrl.us/bd/stm/2008-03-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/bd/com/2008-03-31' schemaLocation='../../stm/us-gaap-stm-bd-com-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/bd/sheci/2008-03-31' schemaLocation='../../stm/us-gaap-stm-bd-sheci-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/bd/scf-dir/2008-03-31' schemaLocation='../../stm/us-gaap-stm-bd-scf-dir-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/bd/spc/2008-03-31' schemaLocation='../../stm/us-gaap-stm-bd-spc-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/bd/soc/2008-03-31' schemaLocation='../../stm/us-gaap-stm-bd-soc-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/bd/soi-sbi/2008-03-31' schemaLocation='../../stm/us-gaap-stm-bd-soi-sbi-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/bd/sfp-sbo/2008-03-31' schemaLocation='../../stm/us-gaap-stm-bd-sfp-sbo-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/bd/scf-sbo/2008-03-31' schemaLocation='../../stm/us-gaap-stm-bd-scf-sbo-2008-03-31.xsd' />
+</xs:schema>

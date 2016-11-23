@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2013.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/EarningsPerShareCalc2' xlink:href='../elts/us-roles-2013-01-31.xsd#eps2' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/disclosure/EarningsPerShareCalc2' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_EarningsPerShareBasic' xlink:label='loc_EarningsPerShareBasic' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_EarningsPerShareBasicDistributed' xlink:label='loc_EarningsPerShareBasicDistributed' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_EarningsPerShareBasicUndistributed' xlink:label='loc_EarningsPerShareBasicUndistributed' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ParticipatingSecuritiesDistributedAndUndistributedEarnings' xlink:label='loc_ParticipatingSecuritiesDistributedAndUndistributedEarnings' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_UndistributedEarningsAllocatedToParticipatingSecurities' xlink:label='loc_UndistributedEarningsAllocatedToParticipatingSecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_PreferredStockDividendsAndOtherAdjustments' xlink:label='loc_PreferredStockDividendsAndOtherAdjustments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_UndistributedEarnings' xlink:label='loc_UndistributedEarnings' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_NetIncomeLoss' xlink:label='loc_NetIncomeLoss' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_IncomeLossFromContinuingOperations' xlink:label='loc_IncomeLossFromContinuingOperations' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntity' xlink:label='loc_IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntity' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ExtraordinaryItemGainOrLossNetOfTaxAttributableToReportingEntity' xlink:label='loc_ExtraordinaryItemGainOrLossNetOfTaxAttributableToReportingEntity' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DistributedEarnings' xlink:label='loc_DistributedEarnings' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_Dividends' xlink:label='loc_Dividends' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DividendsAndInterestPaid' xlink:label='loc_DividendsAndInterestPaid' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EarningsPerShareBasic' xlink:to='loc_EarningsPerShareBasicDistributed' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EarningsPerShareBasic' xlink:to='loc_EarningsPerShareBasicUndistributed' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ParticipatingSecuritiesDistributedAndUndistributedEarnings' xlink:to='loc_UndistributedEarningsAllocatedToParticipatingSecurities' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ParticipatingSecuritiesDistributedAndUndistributedEarnings' xlink:to='loc_PreferredStockDividendsAndOtherAdjustments' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_UndistributedEarnings' xlink:to='loc_NetIncomeLoss' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetIncomeLoss' xlink:to='loc_IncomeLossFromContinuingOperations' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetIncomeLoss' xlink:to='loc_IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntity' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetIncomeLoss' xlink:to='loc_ExtraordinaryItemGainOrLossNetOfTaxAttributableToReportingEntity' xlink:type='arc' />
+<link:calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_UndistributedEarnings' xlink:to='loc_DistributedEarnings' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DistributedEarnings' xlink:to='loc_Dividends' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DistributedEarnings' xlink:to='loc_DividendsAndInterestPaid' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

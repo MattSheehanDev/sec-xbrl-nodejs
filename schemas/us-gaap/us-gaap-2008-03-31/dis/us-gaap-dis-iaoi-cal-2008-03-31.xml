@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/InvestmentsAllOtherInvestments' xlink:href='../elts/us-roles-2008-03-31.xsd#iaoi' xlink:type='simple' />
+<calculationLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsAllOtherInvestments' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_CostMethodInvestmentsRealizedGainLoss' xlink:label='loc_CostMethodInvestmentsRealizedGainLoss' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_CostMethodInvestmentsRealizedGains' xlink:label='loc_CostMethodInvestmentsRealizedGains' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_CostMethodInvestmentsRealizedLosses' xlink:label='loc_CostMethodInvestmentsRealizedLosses' xlink:type='locator' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CostMethodInvestmentsRealizedGainLoss' xlink:to='loc_CostMethodInvestmentsRealizedGains' xlink:type='arc' />
+<calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CostMethodInvestmentsRealizedGainLoss' xlink:to='loc_CostMethodInvestmentsRealizedLosses' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2013.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/statement/StatementOfFinancialPositionUnclassified-DepositBasedOperationsFirstAlternate' xlink:href='../elts/us-roles-2013-01-31.xsd#sfp-dbo1' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/statement/StatementOfFinancialPositionUnclassified-DepositBasedOperationsFirstAlternate' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_Deposits' xlink:label='loc_Deposits' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_NoninterestBearingDepositLiabilities' xlink:label='loc_NoninterestBearingDepositLiabilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_NoninterestBearingDepositLiabilitiesDomestic' xlink:label='loc_NoninterestBearingDepositLiabilitiesDomestic' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_NoninterestBearingDepositLiabilitiesForeign' xlink:label='loc_NoninterestBearingDepositLiabilitiesForeign' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestBearingDepositLiabilities' xlink:label='loc_InterestBearingDepositLiabilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestBearingDepositLiabilitiesDomestic' xlink:label='loc_InterestBearingDepositLiabilitiesDomestic' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InterestBearingDepositLiabilitiesForeign' xlink:label='loc_InterestBearingDepositLiabilitiesForeign' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LoansAndLeasesReceivableNetReportedAmount' xlink:label='loc_LoansAndLeasesReceivableNetReportedAmount' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LoansAndLeasesReceivableNetReportedAmountCommercial' xlink:label='loc_LoansAndLeasesReceivableNetReportedAmountCommercial' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LoansAndLeasesReceivableNetReportedAmountConsumer' xlink:label='loc_LoansAndLeasesReceivableNetReportedAmountConsumer' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LoansAndLeasesReceivableNetReportedAmountForeign' xlink:label='loc_LoansAndLeasesReceivableNetReportedAmountForeign' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LoansAndLeasesReceivableNetReportedAmountOther' xlink:label='loc_LoansAndLeasesReceivableNetReportedAmountOther' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_Deposits' xlink:to='loc_NoninterestBearingDepositLiabilities' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NoninterestBearingDepositLiabilities' xlink:to='loc_NoninterestBearingDepositLiabilitiesDomestic' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NoninterestBearingDepositLiabilities' xlink:to='loc_NoninterestBearingDepositLiabilitiesForeign' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_Deposits' xlink:to='loc_InterestBearingDepositLiabilities' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestBearingDepositLiabilities' xlink:to='loc_InterestBearingDepositLiabilitiesDomestic' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestBearingDepositLiabilities' xlink:to='loc_InterestBearingDepositLiabilitiesForeign' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansAndLeasesReceivableNetReportedAmount' xlink:to='loc_LoansAndLeasesReceivableNetReportedAmountCommercial' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansAndLeasesReceivableNetReportedAmount' xlink:to='loc_LoansAndLeasesReceivableNetReportedAmountConsumer' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansAndLeasesReceivableNetReportedAmount' xlink:to='loc_LoansAndLeasesReceivableNetReportedAmountForeign' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansAndLeasesReceivableNetReportedAmount' xlink:to='loc_LoansAndLeasesReceivableNetReportedAmountOther' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

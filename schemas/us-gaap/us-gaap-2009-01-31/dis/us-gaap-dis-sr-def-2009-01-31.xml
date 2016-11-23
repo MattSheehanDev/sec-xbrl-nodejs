@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryTable' xlink:href='../elts/us-roles-2009-01-31.xsd#SegmentReportingScheduleOfEntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryTable' xlink:type='simple' />
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingEntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesTable' xlink:href='../elts/us-roles-2009-01-31.xsd#SegmentReportingEntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesTable' xlink:type='simple' />
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideRevenueByMajorCustomersByReportingSegmentsTable' xlink:href='../elts/us-roles-2009-01-31.xsd#SegmentReportingScheduleOfEntityWideRevenueByMajorCustomersByReportingSegmentsTable' xlink:type='simple' />
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideInformationRevenueFromExternalCustomersByProductsAndServicesTable' xlink:href='../elts/us-roles-2009-01-31.xsd#SegmentReportingScheduleOfEntityWideInformationRevenueFromExternalCustomersByProductsAndServicesTable' xlink:type='simple' />
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfAssetsFromSegmentToConsolidatedTable' xlink:href='../elts/us-roles-2009-01-31.xsd#SegmentReportingReconciliationOfAssetsFromSegmentToConsolidatedTable' xlink:type='simple' />
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfSegmentReportingInformationBySegmentTable' xlink:href='../elts/us-roles-2009-01-31.xsd#SegmentReportingScheduleOfSegmentReportingInformationBySegmentTable' xlink:type='simple' />
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfOtherSignificantReconcilingItemsFromSegmentsToConsolidatedTable' xlink:href='../elts/us-roles-2009-01-31.xsd#SegmentReportingReconciliationOfOtherSignificantReconcilingItemsFromSegmentsToConsolidatedTable' xlink:type='simple' />
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfOperatingProfitLossFromSegmentsToConsolidatedTable' xlink:href='../elts/us-roles-2009-01-31.xsd#SegmentReportingReconciliationOfOperatingProfitLossFromSegmentsToConsolidatedTable' xlink:type='simple' />
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfRevenueFromSegmentsToConsolidatedTable' xlink:href='../elts/us-roles-2009-01-31.xsd#SegmentReportingReconciliationOfRevenueFromSegmentsToConsolidatedTable' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/all' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' xlink:type='simple' />
+<!--Definition relationships for table ScheduleOfSegmentReportingInformationBySegmentTable in presentation http://xbrl.us/us-gaap/role/disclosure/SegmentReporting-->
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfSegmentReportingInformationBySegmentTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfSegmentReportingInformationBySegmentTable' xlink:label='loc_ScheduleOfSegmentReportingInformationBySegmentTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationLineItems' xlink:label='loc_SegmentReportingInformationLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_SegmentReportingInformationLineItems' xlink:to='loc_ScheduleOfSegmentReportingInformationBySegmentTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfSegmentReportingInformationBySegmentTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfSegmentReportingInformationBySegmentTable' xlink:label='loc_ScheduleOfSegmentReportingInformationBySegmentTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationBySegmentAxis' xlink:label='loc_SegmentReportingInformationBySegmentAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ScheduleOfSegmentReportingInformationBySegmentTable' xlink:to='loc_SegmentReportingInformationBySegmentAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfSegmentReportingInformationBySegmentTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationBySegmentAxis' xlink:label='loc_SegmentReportingInformationBySegmentAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ReportingSegmentDomain' xlink:label='loc_ReportingSegmentDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_SegmentReportingInformationBySegmentAxis' xlink:to='loc_ReportingSegmentDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfSegmentReportingInformationBySegmentTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationBySegmentAxis' xlink:label='loc_SegmentReportingInformationBySegmentAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ReportingSegmentDomain' xlink:label='loc_ReportingSegmentDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_SegmentReportingInformationBySegmentAxis' xlink:to='loc_ReportingSegmentDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfSegmentReportingInformationBySegmentTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationLineItems' xlink:label='loc_SegmentReportingInformationLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationDescriptionOfProductsAndServices' xlink:label='loc_SegmentReportingInformationDescriptionOfProductsAndServices' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationProfitLossAbstract' xlink:label='loc_SegmentReportingInformationProfitLossAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationIncomeLossBeforeIncomeTaxesAbstract' xlink:label='loc_SegmentReportingInformationIncomeLossBeforeIncomeTaxesAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationOperatingIncomeLossAbstract' xlink:label='loc_SegmentReportingInformationOperatingIncomeLossAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationRevenueAbstract' xlink:label='loc_SegmentReportingInformationRevenueAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationRevenueFromExternalCustomers' xlink:label='loc_SegmentReportingInformationRevenueFromExternalCustomers' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationIntersegmentRevenue' xlink:label='loc_SegmentReportingInformationIntersegmentRevenue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationInterestIncomeExpenseNetAbstract' xlink:label='loc_SegmentReportingInformationInterestIncomeExpenseNetAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationInterestIncome' xlink:label='loc_SegmentReportingInformationInterestIncome' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationInterestExpense' xlink:label='loc_SegmentReportingInformationInterestExpense' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationInterestIncomeExpenseNet' xlink:label='loc_SegmentReportingInformationInterestIncomeExpenseNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationInterestIncomeExpenseNetPolicy' xlink:label='loc_SegmentReportingInformationInterestIncomeExpenseNetPolicy' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationRevenue' xlink:label='loc_SegmentReportingInformationRevenue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationDepreciationDepletionAndAmortizationExpenseAbstract' xlink:label='loc_SegmentReportingInformationDepreciationDepletionAndAmortizationExpenseAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationDepreciationExpense' xlink:label='loc_SegmentReportingInformationDepreciationExpense' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationDepletionExpense' xlink:label='loc_SegmentReportingInformationDepletionExpense' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationAmortizationExpense' xlink:label='loc_SegmentReportingInformationAmortizationExpense' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationDepreciationDepletionAndAmortizationExpense' xlink:label='loc_SegmentReportingInformationDepreciationDepletionAndAmortizationExpense' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationOperatingIncomeLoss' xlink:label='loc_SegmentReportingInformationOperatingIncomeLoss' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationUnusualItems' xlink:label='loc_SegmentReportingInformationUnusualItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationEquityInNetIncomeOfEquityMethodInvesteesOfSegment' xlink:label='loc_SegmentReportingInformationEquityInNetIncomeOfEquityMethodInvesteesOfSegment' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationIncomeLossBeforeIncomeTaxes' xlink:label='loc_SegmentReportingInformationIncomeLossBeforeIncomeTaxes' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationIncomeTaxExpenseBenefit' xlink:label='loc_SegmentReportingInformationIncomeTaxExpenseBenefit' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationExtraordinaryItems' xlink:label='loc_SegmentReportingInformationExtraordinaryItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationProfitLoss' xlink:label='loc_SegmentReportingInformationProfitLoss' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationAdditionalElementsForBankPresentationAbstract' xlink:label='loc_SegmentReportingInformationAdditionalElementsForBankPresentationAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationProvisionForCreditLosses' xlink:label='loc_SegmentReportingInformationProvisionForCreditLosses' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationNoninterestIncome' xlink:label='loc_SegmentReportingInformationNoninterestIncome' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationNoninterestExpense' xlink:label='loc_SegmentReportingInformationNoninterestExpense' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationUnallocatedExpenseInNoninterestExpense' xlink:label='loc_SegmentReportingInformationUnallocatedExpenseInNoninterestExpense' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationOtherNoninterestExpense' xlink:label='loc_SegmentReportingInformationOtherNoninterestExpense' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationAverageAssets' xlink:label='loc_SegmentReportingInformationAverageAssets' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationSignificantNoncashItemsOtherThanDepreciationDepletionAndAmortizationExpense' xlink:label='loc_SegmentReportingInformationSignificantNoncashItemsOtherThanDepreciationDepletionAndAmortizationExpense' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationExpendituresForAdditionsToLongLivedAssets' xlink:label='loc_SegmentReportingInformationExpendituresForAdditionsToLongLivedAssets' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationNetAssets' xlink:label='loc_SegmentReportingInformationNetAssets' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationAssets' xlink:label='loc_SegmentReportingInformationAssets' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationAdditionalInformationAbstract' xlink:label='loc_SegmentReportingInformationAdditionalInformationAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationAccountsReceivableNet' xlink:label='loc_SegmentReportingInformationAccountsReceivableNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationInventoryNet' xlink:label='loc_SegmentReportingInformationInventoryNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationInvestmentInEquityMethodInvestees' xlink:label='loc_SegmentReportingInformationInvestmentInEquityMethodInvestees' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationInvestments' xlink:label='loc_SegmentReportingInformationInvestments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationPropertyPlantAndEquipmentNet' xlink:label='loc_SegmentReportingInformationPropertyPlantAndEquipmentNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationGoodwill' xlink:label='loc_SegmentReportingInformationGoodwill' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationOtherAssets' xlink:label='loc_SegmentReportingInformationOtherAssets' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationAccountsPayableAndAccruedLiabilities' xlink:label='loc_SegmentReportingInformationAccountsPayableAndAccruedLiabilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationDebt' xlink:label='loc_SegmentReportingInformationDebt' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingInformationOtherLiabilities' xlink:label='loc_SegmentReportingInformationOtherLiabilities' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationLineItems' xlink:to='loc_SegmentReportingInformationDescriptionOfProductsAndServices' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationLineItems' xlink:to='loc_SegmentReportingInformationProfitLossAbstract' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationProfitLossAbstract' xlink:to='loc_SegmentReportingInformationIncomeLossBeforeIncomeTaxesAbstract' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationIncomeLossBeforeIncomeTaxesAbstract' xlink:to='loc_SegmentReportingInformationOperatingIncomeLossAbstract' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationOperatingIncomeLossAbstract' xlink:to='loc_SegmentReportingInformationRevenueAbstract' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationRevenueAbstract' xlink:to='loc_SegmentReportingInformationRevenueFromExternalCustomers' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationRevenueAbstract' xlink:to='loc_SegmentReportingInformationIntersegmentRevenue' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationRevenueAbstract' xlink:to='loc_SegmentReportingInformationInterestIncomeExpenseNetAbstract' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationInterestIncomeExpenseNetAbstract' xlink:to='loc_SegmentReportingInformationInterestIncome' xlink:type='arc' />
+<link:definitionArc order='10.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationInterestIncomeExpenseNetAbstract' xlink:to='loc_SegmentReportingInformationInterestExpense' xlink:type='arc' />
+<link:definitionArc order='11.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationInterestIncomeExpenseNetAbstract' xlink:to='loc_SegmentReportingInformationInterestIncomeExpenseNet' xlink:type='arc' />
+<link:definitionArc order='12.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationInterestIncomeExpenseNet' xlink:to='loc_SegmentReportingInformationInterestIncomeExpenseNetPolicy' xlink:type='arc' />
+<link:definitionArc order='13.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationRevenueAbstract' xlink:to='loc_SegmentReportingInformationRevenue' xlink:type='arc' />
+<link:definitionArc order='14.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationOperatingIncomeLossAbstract' xlink:to='loc_SegmentReportingInformationDepreciationDepletionAndAmortizationExpenseAbstract' xlink:type='arc' />
+<link:definitionArc order='15.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationDepreciationDepletionAndAmortizationExpenseAbstract' xlink:to='loc_SegmentReportingInformationDepreciationExpense' xlink:type='arc' />
+<link:definitionArc order='16.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationDepreciationDepletionAndAmortizationExpenseAbstract' xlink:to='loc_SegmentReportingInformationDepletionExpense' xlink:type='arc' />
+<link:definitionArc order='17.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationDepreciationDepletionAndAmortizationExpenseAbstract' xlink:to='loc_SegmentReportingInformationAmortizationExpense' xlink:type='arc' />
+<link:definitionArc order='18.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationDepreciationDepletionAndAmortizationExpenseAbstract' xlink:to='loc_SegmentReportingInformationDepreciationDepletionAndAmortizationExpense' xlink:type='arc' />
+<link:definitionArc order='19.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationOperatingIncomeLossAbstract' xlink:to='loc_SegmentReportingInformationOperatingIncomeLoss' xlink:type='arc' />
+<link:definitionArc order='20.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationIncomeLossBeforeIncomeTaxesAbstract' xlink:to='loc_SegmentReportingInformationUnusualItems' xlink:type='arc' />
+<link:definitionArc order='21.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationIncomeLossBeforeIncomeTaxesAbstract' xlink:to='loc_SegmentReportingInformationEquityInNetIncomeOfEquityMethodInvesteesOfSegment' xlink:type='arc' />
+<link:definitionArc order='22.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationIncomeLossBeforeIncomeTaxesAbstract' xlink:to='loc_SegmentReportingInformationIncomeLossBeforeIncomeTaxes' xlink:type='arc' />
+<link:definitionArc order='23.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationProfitLossAbstract' xlink:to='loc_SegmentReportingInformationIncomeTaxExpenseBenefit' xlink:type='arc' />
+<link:definitionArc order='24.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationProfitLossAbstract' xlink:to='loc_SegmentReportingInformationExtraordinaryItems' xlink:type='arc' />
+<link:definitionArc order='25.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationProfitLossAbstract' xlink:to='loc_SegmentReportingInformationProfitLoss' xlink:type='arc' />
+<link:definitionArc order='26.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationLineItems' xlink:to='loc_SegmentReportingInformationAdditionalElementsForBankPresentationAbstract' xlink:type='arc' />
+<link:definitionArc order='27.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalElementsForBankPresentationAbstract' xlink:to='loc_SegmentReportingInformationProvisionForCreditLosses' xlink:type='arc' />
+<link:definitionArc order='28.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalElementsForBankPresentationAbstract' xlink:to='loc_SegmentReportingInformationNoninterestIncome' xlink:type='arc' />
+<link:definitionArc order='29.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalElementsForBankPresentationAbstract' xlink:to='loc_SegmentReportingInformationNoninterestExpense' xlink:type='arc' />
+<link:definitionArc order='30.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalElementsForBankPresentationAbstract' xlink:to='loc_SegmentReportingInformationUnallocatedExpenseInNoninterestExpense' xlink:type='arc' />
+<link:definitionArc order='31.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalElementsForBankPresentationAbstract' xlink:to='loc_SegmentReportingInformationOtherNoninterestExpense' xlink:type='arc' />
+<link:definitionArc order='32.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalElementsForBankPresentationAbstract' xlink:to='loc_SegmentReportingInformationAverageAssets' xlink:type='arc' />
+<link:definitionArc order='33.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationLineItems' xlink:to='loc_SegmentReportingInformationSignificantNoncashItemsOtherThanDepreciationDepletionAndAmortizationExpense' xlink:type='arc' />
+<link:definitionArc order='34.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationLineItems' xlink:to='loc_SegmentReportingInformationExpendituresForAdditionsToLongLivedAssets' xlink:type='arc' />
+<link:definitionArc order='35.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationLineItems' xlink:to='loc_SegmentReportingInformationNetAssets' xlink:type='arc' />
+<link:definitionArc order='36.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationLineItems' xlink:to='loc_SegmentReportingInformationAssets' xlink:type='arc' />
+<link:definitionArc order='37.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationLineItems' xlink:to='loc_SegmentReportingInformationAdditionalInformationAbstract' xlink:type='arc' />
+<link:definitionArc order='38.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalInformationAbstract' xlink:to='loc_SegmentReportingInformationAccountsReceivableNet' xlink:type='arc' />
+<link:definitionArc order='39.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalInformationAbstract' xlink:to='loc_SegmentReportingInformationInventoryNet' xlink:type='arc' />
+<link:definitionArc order='40.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalInformationAbstract' xlink:to='loc_SegmentReportingInformationInvestmentInEquityMethodInvestees' xlink:type='arc' />
+<link:definitionArc order='41.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalInformationAbstract' xlink:to='loc_SegmentReportingInformationInvestments' xlink:type='arc' />
+<link:definitionArc order='42.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalInformationAbstract' xlink:to='loc_SegmentReportingInformationPropertyPlantAndEquipmentNet' xlink:type='arc' />
+<link:definitionArc order='43.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalInformationAbstract' xlink:to='loc_SegmentReportingInformationGoodwill' xlink:type='arc' />
+<link:definitionArc order='44.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalInformationAbstract' xlink:to='loc_SegmentReportingInformationOtherAssets' xlink:type='arc' />
+<link:definitionArc order='45.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalInformationAbstract' xlink:to='loc_SegmentReportingInformationAccountsPayableAndAccruedLiabilities' xlink:type='arc' />
+<link:definitionArc order='46.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalInformationAbstract' xlink:to='loc_SegmentReportingInformationDebt' xlink:type='arc' />
+<link:definitionArc order='47.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingInformationAdditionalInformationAbstract' xlink:to='loc_SegmentReportingInformationOtherLiabilities' xlink:type='arc' />
+</link:definitionLink>
+<!--Definition relationships for table ReconciliationOfOperatingProfitLossFromSegmentsToConsolidatedTable in presentation http://xbrl.us/us-gaap/role/disclosure/SegmentReporting-->
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfOperatingProfitLossFromSegmentsToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ReconciliationOfOperatingProfitLossFromSegmentsToConsolidatedTable' xlink:label='loc_ReconciliationOfOperatingProfitLossFromSegmentsToConsolidatedTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingReconcilingItemForOperatingProfitLossFromSegmentToConsolidatedLineItems' xlink:label='loc_SegmentReportingReconcilingItemForOperatingProfitLossFromSegmentToConsolidatedLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_SegmentReportingReconcilingItemForOperatingProfitLossFromSegmentToConsolidatedLineItems' xlink:to='loc_ReconciliationOfOperatingProfitLossFromSegmentsToConsolidatedTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfOperatingProfitLossFromSegmentsToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ReconciliationOfOperatingProfitLossFromSegmentsToConsolidatedTable' xlink:label='loc_ReconciliationOfOperatingProfitLossFromSegmentsToConsolidatedTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingReconcilingItemsForOperatingProfitLossFromSegmentsToConsolidatedAxis' xlink:label='loc_SegmentReportingReconcilingItemsForOperatingProfitLossFromSegmentsToConsolidatedAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ReconciliationOfOperatingProfitLossFromSegmentsToConsolidatedTable' xlink:to='loc_SegmentReportingReconcilingItemsForOperatingProfitLossFromSegmentsToConsolidatedAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfOperatingProfitLossFromSegmentsToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingReconcilingItemsForOperatingProfitLossFromSegmentsToConsolidatedAxis' xlink:label='loc_SegmentReportingReconcilingItemsForOperatingProfitLossFromSegmentsToConsolidatedAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingReconcilingItemsForOperatingProfitLossFromSegmentsToConsolidatedNameDomain' xlink:label='loc_SegmentReportingReconcilingItemsForOperatingProfitLossFromSegmentsToConsolidatedNameDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_SegmentReportingReconcilingItemsForOperatingProfitLossFromSegmentsToConsolidatedAxis' xlink:to='loc_SegmentReportingReconcilingItemsForOperatingProfitLossFromSegmentsToConsolidatedNameDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfOperatingProfitLossFromSegmentsToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingReconcilingItemsForOperatingProfitLossFromSegmentsToConsolidatedAxis' xlink:label='loc_SegmentReportingReconcilingItemsForOperatingProfitLossFromSegmentsToConsolidatedAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingReconcilingItemsForOperatingProfitLossFromSegmentsToConsolidatedNameDomain' xlink:label='loc_SegmentReportingReconcilingItemsForOperatingProfitLossFromSegmentsToConsolidatedNameDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_SegmentReportingReconcilingItemsForOperatingProfitLossFromSegmentsToConsolidatedAxis' xlink:to='loc_SegmentReportingReconcilingItemsForOperatingProfitLossFromSegmentsToConsolidatedNameDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfOperatingProfitLossFromSegmentsToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingReconcilingItemForOperatingProfitLossFromSegmentToConsolidatedLineItems' xlink:label='loc_SegmentReportingReconcilingItemForOperatingProfitLossFromSegmentToConsolidatedLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingReconcilingItemForOperatingProfitLossFromSegmentToConsolidatedAmount' xlink:label='loc_SegmentReportingReconcilingItemForOperatingProfitLossFromSegmentToConsolidatedAmount' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingReconcilingItemForOperatingProfitLossFromSegmentToConsolidatedLineItems' xlink:to='loc_SegmentReportingReconcilingItemForOperatingProfitLossFromSegmentToConsolidatedAmount' xlink:type='arc' />
+</link:definitionLink>
+<!--Definition relationships for table ReconciliationOfRevenueFromSegmentsToConsolidatedTable in presentation http://xbrl.us/us-gaap/role/disclosure/SegmentReporting-->
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfRevenueFromSegmentsToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ReconciliationOfRevenueFromSegmentsToConsolidatedTable' xlink:label='loc_ReconciliationOfRevenueFromSegmentsToConsolidatedTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingRevenueReconcilingItemLineItems' xlink:label='loc_SegmentReportingRevenueReconcilingItemLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_SegmentReportingRevenueReconcilingItemLineItems' xlink:to='loc_ReconciliationOfRevenueFromSegmentsToConsolidatedTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfRevenueFromSegmentsToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ReconciliationOfRevenueFromSegmentsToConsolidatedTable' xlink:label='loc_ReconciliationOfRevenueFromSegmentsToConsolidatedTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingRevenueReconcilingItemAxis' xlink:label='loc_SegmentReportingRevenueReconcilingItemAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ReconciliationOfRevenueFromSegmentsToConsolidatedTable' xlink:to='loc_SegmentReportingRevenueReconcilingItemAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfRevenueFromSegmentsToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingRevenueReconcilingItemAxis' xlink:label='loc_SegmentReportingRevenueReconcilingItemAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingRevenueReconcilingItemNameDomain' xlink:label='loc_SegmentReportingRevenueReconcilingItemNameDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_SegmentReportingRevenueReconcilingItemAxis' xlink:to='loc_SegmentReportingRevenueReconcilingItemNameDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfRevenueFromSegmentsToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingRevenueReconcilingItemAxis' xlink:label='loc_SegmentReportingRevenueReconcilingItemAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingRevenueReconcilingItemNameDomain' xlink:label='loc_SegmentReportingRevenueReconcilingItemNameDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_SegmentReportingRevenueReconcilingItemAxis' xlink:to='loc_SegmentReportingRevenueReconcilingItemNameDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfRevenueFromSegmentsToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingRevenueReconcilingItemLineItems' xlink:label='loc_SegmentReportingRevenueReconcilingItemLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingRevenueReconcilingItemAmount' xlink:label='loc_SegmentReportingRevenueReconcilingItemAmount' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingRevenueReconcilingItemLineItems' xlink:to='loc_SegmentReportingRevenueReconcilingItemAmount' xlink:type='arc' />
+</link:definitionLink>
+<!--Definition relationships for table ReconciliationOfAssetsFromSegmentToConsolidatedTable in presentation http://xbrl.us/us-gaap/role/disclosure/SegmentReporting-->
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfAssetsFromSegmentToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ReconciliationOfAssetsFromSegmentToConsolidatedTable' xlink:label='loc_ReconciliationOfAssetsFromSegmentToConsolidatedTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingAssetReconcilingItemLineItems' xlink:label='loc_SegmentReportingAssetReconcilingItemLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_SegmentReportingAssetReconcilingItemLineItems' xlink:to='loc_ReconciliationOfAssetsFromSegmentToConsolidatedTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfAssetsFromSegmentToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ReconciliationOfAssetsFromSegmentToConsolidatedTable' xlink:label='loc_ReconciliationOfAssetsFromSegmentToConsolidatedTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingAssetReconcilingItemByNameAxis' xlink:label='loc_SegmentReportingAssetReconcilingItemByNameAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ReconciliationOfAssetsFromSegmentToConsolidatedTable' xlink:to='loc_SegmentReportingAssetReconcilingItemByNameAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfAssetsFromSegmentToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingAssetReconcilingItemByNameAxis' xlink:label='loc_SegmentReportingAssetReconcilingItemByNameAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingAssetReconcilingItemNameDomain' xlink:label='loc_SegmentReportingAssetReconcilingItemNameDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_SegmentReportingAssetReconcilingItemByNameAxis' xlink:to='loc_SegmentReportingAssetReconcilingItemNameDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfAssetsFromSegmentToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingAssetReconcilingItemByNameAxis' xlink:label='loc_SegmentReportingAssetReconcilingItemByNameAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingAssetReconcilingItemNameDomain' xlink:label='loc_SegmentReportingAssetReconcilingItemNameDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_SegmentReportingAssetReconcilingItemByNameAxis' xlink:to='loc_SegmentReportingAssetReconcilingItemNameDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfAssetsFromSegmentToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingAssetReconcilingItemLineItems' xlink:label='loc_SegmentReportingAssetReconcilingItemLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingAssetReconcilingItemAmount' xlink:label='loc_SegmentReportingAssetReconcilingItemAmount' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingAssetReconcilingItemLineItems' xlink:to='loc_SegmentReportingAssetReconcilingItemAmount' xlink:type='arc' />
+</link:definitionLink>
+<!--Definition relationships for table ReconciliationOfOtherSignificantReconcilingItemsFromSegmentsToConsolidatedTable in presentation http://xbrl.us/us-gaap/role/disclosure/SegmentReporting-->
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfOtherSignificantReconcilingItemsFromSegmentsToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ReconciliationOfOtherSignificantReconcilingItemsFromSegmentsToConsolidatedTable' xlink:label='loc_ReconciliationOfOtherSignificantReconcilingItemsFromSegmentsToConsolidatedTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingOtherSignificantReconcilingItemLineItems' xlink:label='loc_SegmentReportingOtherSignificantReconcilingItemLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_SegmentReportingOtherSignificantReconcilingItemLineItems' xlink:to='loc_ReconciliationOfOtherSignificantReconcilingItemsFromSegmentsToConsolidatedTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfOtherSignificantReconcilingItemsFromSegmentsToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ReconciliationOfOtherSignificantReconcilingItemsFromSegmentsToConsolidatedTable' xlink:label='loc_ReconciliationOfOtherSignificantReconcilingItemsFromSegmentsToConsolidatedTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingOtherSignificantReconcilingItemByNameAxis' xlink:label='loc_SegmentReportingOtherSignificantReconcilingItemByNameAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ReconciliationOfOtherSignificantReconcilingItemsFromSegmentsToConsolidatedTable' xlink:to='loc_SegmentReportingOtherSignificantReconcilingItemByNameAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfOtherSignificantReconcilingItemsFromSegmentsToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingOtherSignificantReconcilingItemByNameAxis' xlink:label='loc_SegmentReportingOtherSignificantReconcilingItemByNameAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingOtherSignificantReconcilingItemNameDomain' xlink:label='loc_SegmentReportingOtherSignificantReconcilingItemNameDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_SegmentReportingOtherSignificantReconcilingItemByNameAxis' xlink:to='loc_SegmentReportingOtherSignificantReconcilingItemNameDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfOtherSignificantReconcilingItemsFromSegmentsToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingOtherSignificantReconcilingItemByNameAxis' xlink:label='loc_SegmentReportingOtherSignificantReconcilingItemByNameAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingOtherSignificantReconcilingItemNameDomain' xlink:label='loc_SegmentReportingOtherSignificantReconcilingItemNameDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_SegmentReportingOtherSignificantReconcilingItemByNameAxis' xlink:to='loc_SegmentReportingOtherSignificantReconcilingItemNameDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingReconciliationOfOtherSignificantReconcilingItemsFromSegmentsToConsolidatedTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingOtherSignificantReconcilingItemLineItems' xlink:label='loc_SegmentReportingOtherSignificantReconcilingItemLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingOtherSignificantReconcilingItemConsolidatedAbstract' xlink:label='loc_SegmentReportingOtherSignificantReconcilingItemConsolidatedAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingOtherSignificantReconcilingItemSegment' xlink:label='loc_SegmentReportingOtherSignificantReconcilingItemSegment' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingOtherSignificantReconcilingItemAmount' xlink:label='loc_SegmentReportingOtherSignificantReconcilingItemAmount' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentReportingOtherSignificantReconcilingItemConsolidated' xlink:label='loc_SegmentReportingOtherSignificantReconcilingItemConsolidated' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingOtherSignificantReconcilingItemLineItems' xlink:to='loc_SegmentReportingOtherSignificantReconcilingItemConsolidatedAbstract' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingOtherSignificantReconcilingItemConsolidatedAbstract' xlink:to='loc_SegmentReportingOtherSignificantReconcilingItemSegment' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingOtherSignificantReconcilingItemConsolidatedAbstract' xlink:to='loc_SegmentReportingOtherSignificantReconcilingItemAmount' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentReportingOtherSignificantReconcilingItemConsolidatedAbstract' xlink:to='loc_SegmentReportingOtherSignificantReconcilingItemConsolidated' xlink:type='arc' />
+</link:definitionLink>
+<!--Definition relationships for table ScheduleOfEntityWideInformationRevenueFromExternalCustomersByProductsAndServicesTable in presentation http://xbrl.us/us-gaap/role/disclosure/SegmentReporting-->
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideInformationRevenueFromExternalCustomersByProductsAndServicesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfEntityWideInformationRevenueFromExternalCustomersByProductsAndServicesTable' xlink:label='loc_ScheduleOfEntityWideInformationRevenueFromExternalCustomersByProductsAndServicesTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideInformationRevenueFromExternalCustomerLineItems' xlink:label='loc_EntityWideInformationRevenueFromExternalCustomerLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_EntityWideInformationRevenueFromExternalCustomerLineItems' xlink:to='loc_ScheduleOfEntityWideInformationRevenueFromExternalCustomersByProductsAndServicesTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideInformationRevenueFromExternalCustomersByProductsAndServicesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfEntityWideInformationRevenueFromExternalCustomersByProductsAndServicesTable' xlink:label='loc_ScheduleOfEntityWideInformationRevenueFromExternalCustomersByProductsAndServicesTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ProductOrServiceAxis' xlink:label='loc_ProductOrServiceAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ScheduleOfEntityWideInformationRevenueFromExternalCustomersByProductsAndServicesTable' xlink:to='loc_ProductOrServiceAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideInformationRevenueFromExternalCustomersByProductsAndServicesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ProductOrServiceAxis' xlink:label='loc_ProductOrServiceAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ProductOrServiceNameDomain' xlink:label='loc_ProductOrServiceNameDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_ProductOrServiceAxis' xlink:to='loc_ProductOrServiceNameDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideInformationRevenueFromExternalCustomersByProductsAndServicesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ProductOrServiceAxis' xlink:label='loc_ProductOrServiceAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ProductOrServiceNameDomain' xlink:label='loc_ProductOrServiceNameDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_ProductOrServiceAxis' xlink:to='loc_ProductOrServiceNameDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideInformationRevenueFromExternalCustomersByProductsAndServicesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideInformationRevenueFromExternalCustomerLineItems' xlink:label='loc_EntityWideInformationRevenueFromExternalCustomerLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideInformationRevenueFromExternalCustomerAmount' xlink:label='loc_EntityWideInformationRevenueFromExternalCustomerAmount' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_EntityWideInformationRevenueFromExternalCustomerLineItems' xlink:to='loc_EntityWideInformationRevenueFromExternalCustomerAmount' xlink:type='arc' />
+</link:definitionLink>
+<!--Definition relationships for table EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesTable in presentation http://xbrl.us/us-gaap/role/disclosure/SegmentReporting-->
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingEntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesTable' xlink:label='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesLineItems' xlink:label='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesLineItems' xlink:to='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingEntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesTable' xlink:label='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesAxis' xlink:label='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesTable' xlink:to='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingEntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesAxis' xlink:label='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentGeographicalDomain' xlink:label='loc_SegmentGeographicalDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesAxis' xlink:to='loc_SegmentGeographicalDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingEntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesAxis' xlink:label='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentGeographicalDomain' xlink:label='loc_SegmentGeographicalDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesAxis' xlink:to='loc_SegmentGeographicalDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingEntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesLineItems' xlink:label='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesAmount' xlink:label='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesAmount' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesLineItems' xlink:to='loc_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesAmount' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingEntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersAttributedToIndividualForeignCountriesTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentGeographicalDomain' xlink:label='loc_SegmentGeographicalDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentGeographicalGroupsOfCountriesGroupOneMember' xlink:label='loc_SegmentGeographicalGroupsOfCountriesGroupOneMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentGeographicalGroupsOfCountriesGroupTwoMember' xlink:label='loc_SegmentGeographicalGroupsOfCountriesGroupTwoMember' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentGeographicalDomain' xlink:to='loc_SegmentGeographicalGroupsOfCountriesGroupOneMember' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentGeographicalDomain' xlink:to='loc_SegmentGeographicalGroupsOfCountriesGroupTwoMember' xlink:type='arc' />
+</link:definitionLink>
+<!--Definition relationships for table ScheduleOfEntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryTable in presentation http://xbrl.us/us-gaap/role/disclosure/SegmentReporting-->
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfEntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryTable' xlink:label='loc_ScheduleOfEntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesLineItems' xlink:label='loc_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesLineItems' xlink:to='loc_ScheduleOfEntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfEntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryTable' xlink:label='loc_ScheduleOfEntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryAxis' xlink:label='loc_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ScheduleOfEntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryTable' xlink:to='loc_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryAxis' xlink:label='loc_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentGeographicalDomain' xlink:label='loc_SegmentGeographicalDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryAxis' xlink:to='loc_SegmentGeographicalDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryAxis' xlink:label='loc_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentGeographicalDomain' xlink:label='loc_SegmentGeographicalDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryAxis' xlink:to='loc_SegmentGeographicalDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesLineItems' xlink:label='loc_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesAmount' xlink:label='loc_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesAmount' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesLineItems' xlink:to='loc_EntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesAmount' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideDisclosureOnGeographicAreasLongLivedAssetsInIndividualForeignCountriesByCountryTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentGeographicalDomain' xlink:label='loc_SegmentGeographicalDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentGeographicalGroupsOfCountriesGroupOneMember' xlink:label='loc_SegmentGeographicalGroupsOfCountriesGroupOneMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SegmentGeographicalGroupsOfCountriesGroupTwoMember' xlink:label='loc_SegmentGeographicalGroupsOfCountriesGroupTwoMember' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentGeographicalDomain' xlink:to='loc_SegmentGeographicalGroupsOfCountriesGroupOneMember' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_SegmentGeographicalDomain' xlink:to='loc_SegmentGeographicalGroupsOfCountriesGroupTwoMember' xlink:type='arc' />
+</link:definitionLink>
+<!--Definition relationships for table ScheduleOfEntityWideRevenueByMajorCustomersByReportingSegmentsTable in presentation http://xbrl.us/us-gaap/role/disclosure/SegmentReporting-->
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideRevenueByMajorCustomersByReportingSegmentsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfEntityWideRevenueByMajorCustomersByReportingSegmentsTable' xlink:label='loc_ScheduleOfEntityWideRevenueByMajorCustomersByReportingSegmentsTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideRevenueMajorCustomerLineItems' xlink:label='loc_EntityWideRevenueMajorCustomerLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_EntityWideRevenueMajorCustomerLineItems' xlink:to='loc_ScheduleOfEntityWideRevenueByMajorCustomersByReportingSegmentsTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideRevenueByMajorCustomersByReportingSegmentsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfEntityWideRevenueByMajorCustomersByReportingSegmentsTable' xlink:label='loc_ScheduleOfEntityWideRevenueByMajorCustomersByReportingSegmentsTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideRevenueByReportingSegmentAxis' xlink:label='loc_EntityWideRevenueByReportingSegmentAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_MajorCustomersAxis' xlink:label='loc_MajorCustomersAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ScheduleOfEntityWideRevenueByMajorCustomersByReportingSegmentsTable' xlink:to='loc_EntityWideRevenueByReportingSegmentAxis' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ScheduleOfEntityWideRevenueByMajorCustomersByReportingSegmentsTable' xlink:to='loc_MajorCustomersAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideRevenueByMajorCustomersByReportingSegmentsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideRevenueByReportingSegmentAxis' xlink:label='loc_EntityWideRevenueByReportingSegmentAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ReportingSegmentDomain' xlink:label='loc_ReportingSegmentDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_MajorCustomersAxis' xlink:label='loc_MajorCustomersAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_NameOfMajorCustomerDomain' xlink:label='loc_NameOfMajorCustomerDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_EntityWideRevenueByReportingSegmentAxis' xlink:to='loc_ReportingSegmentDomain' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_MajorCustomersAxis' xlink:to='loc_NameOfMajorCustomerDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideRevenueByMajorCustomersByReportingSegmentsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideRevenueByReportingSegmentAxis' xlink:label='loc_EntityWideRevenueByReportingSegmentAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ReportingSegmentDomain' xlink:label='loc_ReportingSegmentDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_MajorCustomersAxis' xlink:label='loc_MajorCustomersAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_NameOfMajorCustomerDomain' xlink:label='loc_NameOfMajorCustomerDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_EntityWideRevenueByReportingSegmentAxis' xlink:to='loc_ReportingSegmentDomain' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_MajorCustomersAxis' xlink:to='loc_NameOfMajorCustomerDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SegmentReportingScheduleOfEntityWideRevenueByMajorCustomersByReportingSegmentsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideRevenueMajorCustomerLineItems' xlink:label='loc_EntityWideRevenueMajorCustomerLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EntityWideRevenueMajorCustomerAmount' xlink:label='loc_EntityWideRevenueMajorCustomerAmount' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_EntityWideRevenueMajorCustomerLineItems' xlink:to='loc_EntityWideRevenueMajorCustomerAmount' xlink:type='arc' />
+</link:definitionLink>
+</link:linkbase>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2013.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/statement/StatementOfFinancialPositionUnclassified-SecuritiesBasedOperationsCalc2' xlink:href='../elts/us-roles-2013-01-31.xsd#sfp-sbo3' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/statement/StatementOfFinancialPositionUnclassified-SecuritiesBasedOperationsCalc2' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_FinancialInstrumentsOwnedAtFairValue' xlink:label='loc_FinancialInstrumentsOwnedAtFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_FinancialInstrumentsOwnedUSGovernmentAndAgencyObligationsAtFairValue' xlink:label='loc_FinancialInstrumentsOwnedUSGovernmentAndAgencyObligationsAtFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_FinancialInstrumentsOwnedStateAndMunicipalGovernmentObligationsAtFairValue' xlink:label='loc_FinancialInstrumentsOwnedStateAndMunicipalGovernmentObligationsAtFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_FinancialInstrumentsOwnedOtherSovereignGovernmentObligationsAtFairValue' xlink:label='loc_FinancialInstrumentsOwnedOtherSovereignGovernmentObligationsAtFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_FinancialInstrumentsOwnedCorporateDebtAtFairValue' xlink:label='loc_FinancialInstrumentsOwnedCorporateDebtAtFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_FinancialInstrumentsOwnedCorporateEquitiesAtFairValue' xlink:label='loc_FinancialInstrumentsOwnedCorporateEquitiesAtFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_FinancialInstrumentsOwnedPhysicalCommoditiesAtFairValue' xlink:label='loc_FinancialInstrumentsOwnedPhysicalCommoditiesAtFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_FinancialInstrumentsOwnedDerivativesAndOtherContractualAgreementsAtFairValue' xlink:label='loc_FinancialInstrumentsOwnedDerivativesAndOtherContractualAgreementsAtFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_FinancialInstrumentsOwnedMortgagesMortgageBackedAndAssetBackedSecuritiesAtFairValue' xlink:label='loc_FinancialInstrumentsOwnedMortgagesMortgageBackedAndAssetBackedSecuritiesAtFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_FinancialInstrumentsOwnedPrincipalInvestmentsAtFairValue' xlink:label='loc_FinancialInstrumentsOwnedPrincipalInvestmentsAtFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_FinancialInstrumentsOwnedOtherAtFairValue' xlink:label='loc_FinancialInstrumentsOwnedOtherAtFairValue' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_FinancialInstrumentsOwnedAtFairValue' xlink:to='loc_FinancialInstrumentsOwnedUSGovernmentAndAgencyObligationsAtFairValue' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_FinancialInstrumentsOwnedAtFairValue' xlink:to='loc_FinancialInstrumentsOwnedStateAndMunicipalGovernmentObligationsAtFairValue' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_FinancialInstrumentsOwnedAtFairValue' xlink:to='loc_FinancialInstrumentsOwnedOtherSovereignGovernmentObligationsAtFairValue' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_FinancialInstrumentsOwnedAtFairValue' xlink:to='loc_FinancialInstrumentsOwnedCorporateDebtAtFairValue' xlink:type='arc' />
+<link:calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_FinancialInstrumentsOwnedAtFairValue' xlink:to='loc_FinancialInstrumentsOwnedCorporateEquitiesAtFairValue' xlink:type='arc' />
+<link:calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_FinancialInstrumentsOwnedAtFairValue' xlink:to='loc_FinancialInstrumentsOwnedPhysicalCommoditiesAtFairValue' xlink:type='arc' />
+<link:calculationArc order='70' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_FinancialInstrumentsOwnedAtFairValue' xlink:to='loc_FinancialInstrumentsOwnedDerivativesAndOtherContractualAgreementsAtFairValue' xlink:type='arc' />
+<link:calculationArc order='80' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_FinancialInstrumentsOwnedAtFairValue' xlink:to='loc_FinancialInstrumentsOwnedMortgagesMortgageBackedAndAssetBackedSecuritiesAtFairValue' xlink:type='arc' />
+<link:calculationArc order='90' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_FinancialInstrumentsOwnedAtFairValue' xlink:to='loc_FinancialInstrumentsOwnedPrincipalInvestmentsAtFairValue' xlink:type='arc' />
+<link:calculationArc order='100' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_FinancialInstrumentsOwnedAtFairValue' xlink:to='loc_FinancialInstrumentsOwnedOtherAtFairValue' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

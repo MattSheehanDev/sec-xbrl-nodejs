@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/PayablesAndAccruals' xlink:href='../elts/us-roles-2008-03-31.xsd#pay' xlink:type='simple' />
+<calculationLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/PayablesAndAccruals' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsPayableAndAccruedLiabilities' xlink:label='loc_AccountsPayableAndAccruedLiabilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsPayable' xlink:label='loc_AccountsPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsPayableTrade' xlink:label='loc_AccountsPayableTrade' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsPayableInterestBearing' xlink:label='loc_AccountsPayableInterestBearing' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ConstructionPayable' xlink:label='loc_ConstructionPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_OilAndGasSalesPayable' xlink:label='loc_OilAndGasSalesPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_GasPurchasePayable' xlink:label='loc_GasPurchasePayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_GasImbalancePayable' xlink:label='loc_GasImbalancePayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_EnergyMarketingAccountsPayable' xlink:label='loc_EnergyMarketingAccountsPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsPayableUnderwritersPromotersAndEmployeesOtherThanSalariesAndWages' xlink:label='loc_AccountsPayableUnderwritersPromotersAndEmployeesOtherThanSalariesAndWages' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsPayableOther' xlink:label='loc_AccountsPayableOther' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedLiabilities' xlink:label='loc_AccruedLiabilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedInsurance' xlink:label='loc_AccruedInsurance' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedRent' xlink:label='loc_AccruedRent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LeaseIncentivePayable' xlink:label='loc_LeaseIncentivePayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedRoyalties' xlink:label='loc_AccruedRoyalties' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedUtilities' xlink:label='loc_AccruedUtilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedSalesCommission' xlink:label='loc_AccruedSalesCommission' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedProfessionalFees' xlink:label='loc_AccruedProfessionalFees' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedAdvertising' xlink:label='loc_AccruedAdvertising' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedExchangeFeeRebate' xlink:label='loc_AccruedExchangeFeeRebate' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedLiabilitiesForUnredeeemedGiftCards' xlink:label='loc_AccruedLiabilitiesForUnredeeemedGiftCards' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ProductWarrantyAccrualCurrent' xlink:label='loc_ProductWarrantyAccrualCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_OtherAccruedLiabilities' xlink:label='loc_OtherAccruedLiabilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_EmployeeRelatedLiabilities' xlink:label='loc_EmployeeRelatedLiabilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedSalaries' xlink:label='loc_AccruedSalaries' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedVacation' xlink:label='loc_AccruedVacation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedBonuses' xlink:label='loc_AccruedBonuses' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedPayrollTaxes' xlink:label='loc_AccruedPayrollTaxes' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedEmployeeBenefits' xlink:label='loc_AccruedEmployeeBenefits' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_WorkersCompensationLiability' xlink:label='loc_WorkersCompensationLiability' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PensionAndOtherPostretirementDefinedBenefitPlansCurrentLiabilities' xlink:label='loc_PensionAndOtherPostretirementDefinedBenefitPlansCurrentLiabilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_OtherEmployeeRelatedLiabilities' xlink:label='loc_OtherEmployeeRelatedLiabilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_TaxesPayable' xlink:label='loc_TaxesPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_SalesAndExciseTaxPayable' xlink:label='loc_SalesAndExciseTaxPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccrualForTaxesOtherThanIncomeTaxes' xlink:label='loc_AccrualForTaxesOtherThanIncomeTaxes' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedIncomeTaxesPayable' xlink:label='loc_AccruedIncomeTaxesPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndDividendsPayable' xlink:label='loc_InterestAndDividendsPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DividendsPayable' xlink:label='loc_DividendsPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestPayable' xlink:label='loc_InterestPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsPayableAndAccruedLiabilitiesNoncurrent' xlink:label='loc_AccountsPayableAndAccruedLiabilitiesNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedInsuranceNoncurrent' xlink:label='loc_AccruedInsuranceNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedRentNoncurrent' xlink:label='loc_AccruedRentNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ProductWarrantyAccrualNoncurrent' xlink:label='loc_ProductWarrantyAccrualNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsPayableInterestBearingNoncurrent' xlink:label='loc_AccountsPayableInterestBearingNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_OtherAccruedLiabilitiesNoncurrent' xlink:label='loc_OtherAccruedLiabilitiesNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DueToRelatedParties' xlink:label='loc_DueToRelatedParties' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsPayableRelatedParties' xlink:label='loc_AccountsPayableRelatedParties' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NotesPayableRelatedPartiesCurrent' xlink:label='loc_NotesPayableRelatedPartiesCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DueToEmployees' xlink:label='loc_DueToEmployees' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DueToOfficersOrStockholders' xlink:label='loc_DueToOfficersOrStockholders' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DueToAffiliate' xlink:label='loc_DueToAffiliate' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DueToOtherRelatedPartiesCurrent' xlink:label='loc_DueToOtherRelatedPartiesCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DueToRelatedPartiesNoncurrent' xlink:label='loc_DueToRelatedPartiesNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NotesPayableRelatedPartiesNoncurrent' xlink:label='loc_NotesPayableRelatedPartiesNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DueToEmployeesNoncurrent' xlink:label='loc_DueToEmployeesNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DueToOfficersOrStockholdersNoncurrent' xlink:label='loc_DueToOfficersOrStockholdersNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DueToAffiliateNoncurrent' xlink:label='loc_DueToAffiliateNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DueToOtherRelatedPartiesNoncurrent' xlink:label='loc_DueToOtherRelatedPartiesNoncurrent' xlink:type='locator' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayableAndAccruedLiabilities' xlink:to='loc_AccountsPayable' xlink:type='arc' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayable' xlink:to='loc_AccountsPayableTrade' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayable' xlink:to='loc_AccountsPayableInterestBearing' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayable' xlink:to='loc_ConstructionPayable' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayable' xlink:to='loc_OilAndGasSalesPayable' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayable' xlink:to='loc_GasPurchasePayable' xlink:type='arc' />
+<calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayable' xlink:to='loc_GasImbalancePayable' xlink:type='arc' />
+<calculationArc order='70' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayable' xlink:to='loc_EnergyMarketingAccountsPayable' xlink:type='arc' />
+<calculationArc order='80' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayable' xlink:to='loc_AccountsPayableUnderwritersPromotersAndEmployeesOtherThanSalariesAndWages' xlink:type='arc' />
+<calculationArc order='90' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayable' xlink:to='loc_AccountsPayableOther' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayableAndAccruedLiabilities' xlink:to='loc_AccruedLiabilities' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccruedLiabilities' xlink:to='loc_AccruedInsurance' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccruedLiabilities' xlink:to='loc_AccruedRent' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccruedLiabilities' xlink:to='loc_LeaseIncentivePayable' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccruedLiabilities' xlink:to='loc_AccruedRoyalties' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccruedLiabilities' xlink:to='loc_AccruedUtilities' xlink:type='arc' />
+<calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccruedLiabilities' xlink:to='loc_AccruedSalesCommission' xlink:type='arc' />
+<calculationArc order='70' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccruedLiabilities' xlink:to='loc_AccruedProfessionalFees' xlink:type='arc' />
+<calculationArc order='80' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccruedLiabilities' xlink:to='loc_AccruedAdvertising' xlink:type='arc' />
+<calculationArc order='90' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccruedLiabilities' xlink:to='loc_AccruedExchangeFeeRebate' xlink:type='arc' />
+<calculationArc order='100' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccruedLiabilities' xlink:to='loc_AccruedLiabilitiesForUnredeeemedGiftCards' xlink:type='arc' />
+<calculationArc order='110' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccruedLiabilities' xlink:to='loc_ProductWarrantyAccrualCurrent' xlink:type='arc' />
+<calculationArc order='120' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccruedLiabilities' xlink:to='loc_OtherAccruedLiabilities' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayableAndAccruedLiabilities' xlink:to='loc_EmployeeRelatedLiabilities' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EmployeeRelatedLiabilities' xlink:to='loc_AccruedSalaries' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EmployeeRelatedLiabilities' xlink:to='loc_AccruedVacation' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EmployeeRelatedLiabilities' xlink:to='loc_AccruedBonuses' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EmployeeRelatedLiabilities' xlink:to='loc_AccruedPayrollTaxes' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EmployeeRelatedLiabilities' xlink:to='loc_AccruedEmployeeBenefits' xlink:type='arc' />
+<calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EmployeeRelatedLiabilities' xlink:to='loc_WorkersCompensationLiability' xlink:type='arc' />
+<calculationArc order='70' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EmployeeRelatedLiabilities' xlink:to='loc_PensionAndOtherPostretirementDefinedBenefitPlansCurrentLiabilities' xlink:type='arc' />
+<calculationArc order='80' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EmployeeRelatedLiabilities' xlink:to='loc_OtherEmployeeRelatedLiabilities' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayableAndAccruedLiabilities' xlink:to='loc_TaxesPayable' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_TaxesPayable' xlink:to='loc_SalesAndExciseTaxPayable' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_TaxesPayable' xlink:to='loc_AccrualForTaxesOtherThanIncomeTaxes' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_TaxesPayable' xlink:to='loc_AccruedIncomeTaxesPayable' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayableAndAccruedLiabilities' xlink:to='loc_InterestAndDividendsPayable' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndDividendsPayable' xlink:to='loc_DividendsPayable' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndDividendsPayable' xlink:to='loc_InterestPayable' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayableAndAccruedLiabilitiesNoncurrent' xlink:to='loc_AccruedInsuranceNoncurrent' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayableAndAccruedLiabilitiesNoncurrent' xlink:to='loc_AccruedRentNoncurrent' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayableAndAccruedLiabilitiesNoncurrent' xlink:to='loc_ProductWarrantyAccrualNoncurrent' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayableAndAccruedLiabilitiesNoncurrent' xlink:to='loc_AccountsPayableInterestBearingNoncurrent' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccountsPayableAndAccruedLiabilitiesNoncurrent' xlink:to='loc_OtherAccruedLiabilitiesNoncurrent' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DueToRelatedParties' xlink:to='loc_AccountsPayableRelatedParties' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DueToRelatedParties' xlink:to='loc_NotesPayableRelatedPartiesCurrent' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DueToRelatedParties' xlink:to='loc_DueToEmployees' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DueToRelatedParties' xlink:to='loc_DueToOfficersOrStockholders' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DueToRelatedParties' xlink:to='loc_DueToAffiliate' xlink:type='arc' />
+<calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DueToRelatedParties' xlink:to='loc_DueToOtherRelatedPartiesCurrent' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DueToRelatedPartiesNoncurrent' xlink:to='loc_NotesPayableRelatedPartiesNoncurrent' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DueToRelatedPartiesNoncurrent' xlink:to='loc_DueToEmployeesNoncurrent' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DueToRelatedPartiesNoncurrent' xlink:to='loc_DueToOfficersOrStockholdersNoncurrent' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DueToRelatedPartiesNoncurrent' xlink:to='loc_DueToAffiliateNoncurrent' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DueToRelatedPartiesNoncurrent' xlink:to='loc_DueToOtherRelatedPartiesNoncurrent' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

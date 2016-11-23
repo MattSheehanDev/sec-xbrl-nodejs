@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://xbrl.us/basi/stm/2008-03-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:stm-basi='http://xbrl.us/basi/stm/2008-03-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/basi/com/2008-03-31' schemaLocation='../../stm/us-gaap-stm-basi-com-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/basi/sheci/2008-03-31' schemaLocation='../../stm/us-gaap-stm-basi-sheci-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/basi/scf-dir/2008-03-31' schemaLocation='../../stm/us-gaap-stm-basi-scf-dir-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/basi/soc/2008-03-31' schemaLocation='../../stm/us-gaap-stm-basi-soc-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/basi/soi-int/2008-03-31' schemaLocation='../../stm/us-gaap-stm-basi-soi-int-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/basi/sfp-dbo/2008-03-31' schemaLocation='../../stm/us-gaap-stm-basi-sfp-dbo-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/basi/scf-dbo/2008-03-31' schemaLocation='../../stm/us-gaap-stm-basi-scf-dbo-2008-03-31.xsd' />
+</xs:schema>

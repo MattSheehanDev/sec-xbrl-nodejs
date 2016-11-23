@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2013.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-17Reinsurance' xlink:href='../elts/us-roles-2013-01-31.xsd#sec-reins' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-17Reinsurance' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_PremiumsEarnedNet' xlink:label='loc_PremiumsEarnedNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DirectPremiumsEarned' xlink:label='loc_DirectPremiumsEarned' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CededPremiumsEarned' xlink:label='loc_CededPremiumsEarned' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_AssumedPremiumsEarned' xlink:label='loc_AssumedPremiumsEarned' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_PremiumsNetLifeInsuranceInForce' xlink:label='loc_PremiumsNetLifeInsuranceInForce' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DirectPremiumsLifeInsuranceInForce' xlink:label='loc_DirectPremiumsLifeInsuranceInForce' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CededPremiumsLifeInsuranceInForce' xlink:label='loc_CededPremiumsLifeInsuranceInForce' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_AssumedPremiumsLifeInsuranceInForce' xlink:label='loc_AssumedPremiumsLifeInsuranceInForce' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsEarnedNet' xlink:to='loc_DirectPremiumsEarned' xlink:type='arc' />
+<link:calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsEarnedNet' xlink:to='loc_CededPremiumsEarned' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsEarnedNet' xlink:to='loc_AssumedPremiumsEarned' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsNetLifeInsuranceInForce' xlink:to='loc_DirectPremiumsLifeInsuranceInForce' xlink:type='arc' />
+<link:calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsNetLifeInsuranceInForce' xlink:to='loc_CededPremiumsLifeInsuranceInForce' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsNetLifeInsuranceInForce' xlink:to='loc_AssumedPremiumsLifeInsuranceInForce' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

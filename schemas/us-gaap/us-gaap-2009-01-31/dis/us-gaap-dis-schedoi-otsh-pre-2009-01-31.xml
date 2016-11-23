@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/OtherThanSecuritiesInvestmentHoldings' xlink:href='../elts/us-roles-2009-01-31.xsd#schedoi-otsh' xlink:type='simple' />
+<presentationLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/OtherThanSecuritiesInvestmentHoldings' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_OtherThanSecuritiesInvestmentHoldingsScheduleOfInvestmentsTextBlock' xlink:label='loc_OtherThanSecuritiesInvestmentHoldingsScheduleOfInvestmentsTextBlock' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfInvestmentsTable' xlink:label='loc_ScheduleOfInvestmentsTable' xlink:type='locator' />
+<link:loc xlink:href='../non-gaap/dei-2009-01-31.xsd#dei_LegalEntityAxis' xlink:label='loc_LegalEntityAxis' xlink:type='locator' />
+<link:loc xlink:href='../non-gaap/dei-2009-01-31.xsd#dei_EntityDomain' xlink:label='loc_EntityDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfInvestmentsLineItems' xlink:label='loc_ScheduleOfInvestmentsLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentHoldingsOtherThanSecuritiesTextBlock' xlink:label='loc_InvestmentHoldingsOtherThanSecuritiesTextBlock' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentHoldingsOtherThanSecuritiesTable' xlink:label='loc_InvestmentHoldingsOtherThanSecuritiesTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentTypeAxis' xlink:label='loc_InvestmentTypeAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentTypeDomain' xlink:label='loc_InvestmentTypeDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_OtherThanSecuritiesInvestmentMember' xlink:label='loc_OtherThanSecuritiesInvestmentMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_CommoditiesInvestmentMember' xlink:label='loc_CommoditiesInvestmentMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_PrivateEquityFundsMember' xlink:label='loc_PrivateEquityFundsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_HedgeFundsMember' xlink:label='loc_HedgeFundsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_DerivativeMember' xlink:label='loc_DerivativeMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_OptionMember' xlink:label='loc_OptionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_OptionOnSecuritiesMember' xlink:label='loc_OptionOnSecuritiesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_CommodityOptionMember' xlink:label='loc_CommodityOptionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ForeignExchangeOptionMember' xlink:label='loc_ForeignExchangeOptionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ExchangeTradedOptionsMember' xlink:label='loc_ExchangeTradedOptionsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_FutureMember' xlink:label='loc_FutureMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ForeignExchangeForwardMember' xlink:label='loc_ForeignExchangeForwardMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SwapMember' xlink:label='loc_SwapMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_TotalReturnSwapMember' xlink:label='loc_TotalReturnSwapMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_VarianceSwapMember' xlink:label='loc_VarianceSwapMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_CurrencySwapMember' xlink:label='loc_CurrencySwapMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InterestRateSwapMember' xlink:label='loc_InterestRateSwapMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_CreditDefaultSwapMember' xlink:label='loc_CreditDefaultSwapMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SwaptionMember' xlink:label='loc_SwaptionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InterestRateSwaptionMember' xlink:label='loc_InterestRateSwaptionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_CreditDefaultSwaptionMember' xlink:label='loc_CreditDefaultSwaptionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_CapitalSupportAgreementMember' xlink:label='loc_CapitalSupportAgreementMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_EquityFundsMember' xlink:label='loc_EquityFundsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_FixedIncomeFundsMember' xlink:label='loc_FixedIncomeFundsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ExchangeTradedFundsMember' xlink:label='loc_ExchangeTradedFundsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_GuaranteesMember' xlink:label='loc_GuaranteesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_StandbyLettersOfCreditMember' xlink:label='loc_StandbyLettersOfCreditMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentSecondaryCategorizationAxis' xlink:label='loc_InvestmentSecondaryCategorizationAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentsBySecondaryCategorizationDomain' xlink:label='loc_InvestmentsBySecondaryCategorizationDomain' xlink:type='locator' />
+<link:loc xlink:href='../non-gaap/invest-2009-01-31.xsd#invest_InvestmentAxis' xlink:label='loc_InvestmentAxis' xlink:type='locator' />
+<link:loc xlink:href='../non-gaap/invest-2009-01-31.xsd#invest_InvestmentDomain' xlink:label='loc_InvestmentDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_MiscellaneousInvestmentsMember' xlink:label='loc_MiscellaneousInvestmentsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentHoldingsOtherThanSecuritiesLineItems' xlink:label='loc_InvestmentHoldingsOtherThanSecuritiesLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedBalanceAbstract' xlink:label='loc_InvestmentOwnedBalanceAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedBalanceContracts' xlink:label='loc_InvestmentOwnedBalanceContracts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedBalanceOtherMeasure' xlink:label='loc_InvestmentOwnedBalanceOtherMeasure' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedAtFairValue' xlink:label='loc_InvestmentOwnedAtFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedUnderlyingFaceAmountAtMarketValue' xlink:label='loc_InvestmentOwnedUnderlyingFaceAmountAtMarketValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedForeignCurrencyContractReportingCurrencyAmountCurrentValue' xlink:label='loc_InvestmentOwnedForeignCurrencyContractReportingCurrencyAmountCurrentValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedPercentOfNetAssets' xlink:label='loc_InvestmentOwnedPercentOfNetAssets' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedAtCost' xlink:label='loc_InvestmentOwnedAtCost' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedUnrealizedAppreciationDepreciationNetAbstract' xlink:label='loc_InvestmentOwnedUnrealizedAppreciationDepreciationNetAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedUnrealizedAppreciation' xlink:label='loc_InvestmentOwnedUnrealizedAppreciation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedUnrealizedDepreciation' xlink:label='loc_InvestmentOwnedUnrealizedDepreciation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedUnrealizedAppreciationDepreciationNet' xlink:label='loc_InvestmentOwnedUnrealizedAppreciationDepreciationNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedOnLoanFlag' xlink:label='loc_InvestmentOwnedOnLoanFlag' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedSubjectToOptionFlag' xlink:label='loc_InvestmentOwnedSubjectToOptionFlag' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedSubjectToOptionBalanceOtherMeasure' xlink:label='loc_InvestmentOwnedSubjectToOptionBalanceOtherMeasure' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedSubjectToOptionNatureOfContract' xlink:label='loc_InvestmentOwnedSubjectToOptionNatureOfContract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedSubjectToOptionPrice' xlink:label='loc_InvestmentOwnedSubjectToOptionPrice' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedSubjectToOptionExerciseDates' xlink:label='loc_InvestmentOwnedSubjectToOptionExerciseDates' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedOtherThanSecuritiesInvestmentNotReadilyMarketableFlag' xlink:label='loc_InvestmentOwnedOtherThanSecuritiesInvestmentNotReadilyMarketableFlag' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentHoldingsOtherThanSecuritiesAdditionalInformation' xlink:label='loc_InvestmentHoldingsOtherThanSecuritiesAdditionalInformation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentOwnedOtherThanSecuritiesLoanedForShortSalesAtFairValue' xlink:label='loc_InvestmentOwnedOtherThanSecuritiesLoanedForShortSalesAtFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_AssetsNetAbstract' xlink:label='loc_AssetsNetAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_InvestmentSoldNotYetPurchasedAtFairValue' xlink:label='loc_InvestmentSoldNotYetPurchasedAtFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_NonInvestmentAssetsLessNonInvestmentLiabilities' xlink:label='loc_NonInvestmentAssetsLessNonInvestmentLiabilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_NonInvestmentAssetsLessNonInvestmentLiabilitiesPercentOfNetAssets' xlink:label='loc_NonInvestmentAssetsLessNonInvestmentLiabilitiesPercentOfNetAssets' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_AssetsNet' xlink:label='loc_AssetsNet' xlink:type='locator' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_OtherThanSecuritiesInvestmentHoldingsScheduleOfInvestmentsTextBlock' xlink:to='loc_ScheduleOfInvestmentsTable' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_ScheduleOfInvestmentsTable' xlink:to='loc_LegalEntityAxis' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_LegalEntityAxis' xlink:to='loc_EntityDomain' xlink:type='arc' />
+<presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_ScheduleOfInvestmentsTable' xlink:to='loc_ScheduleOfInvestmentsLineItems' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_ScheduleOfInvestmentsLineItems' xlink:to='loc_InvestmentHoldingsOtherThanSecuritiesTextBlock' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesTextBlock' xlink:to='loc_InvestmentHoldingsOtherThanSecuritiesTable' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesTable' xlink:to='loc_InvestmentTypeAxis' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentTypeAxis' xlink:to='loc_InvestmentTypeDomain' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentTypeDomain' xlink:to='loc_OtherThanSecuritiesInvestmentMember' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_OtherThanSecuritiesInvestmentMember' xlink:to='loc_CommoditiesInvestmentMember' xlink:type='arc' />
+<presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_OtherThanSecuritiesInvestmentMember' xlink:to='loc_PrivateEquityFundsMember' xlink:type='arc' />
+<presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_OtherThanSecuritiesInvestmentMember' xlink:to='loc_HedgeFundsMember' xlink:type='arc' />
+<presentationArc order='40' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_OtherThanSecuritiesInvestmentMember' xlink:to='loc_DerivativeMember' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_OptionMember' xlink:type='arc' />
+<presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_OptionOnSecuritiesMember' xlink:type='arc' />
+<presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_CommodityOptionMember' xlink:type='arc' />
+<presentationArc order='40' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_ForeignExchangeOptionMember' xlink:type='arc' />
+<presentationArc order='50' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_ExchangeTradedOptionsMember' xlink:type='arc' />
+<presentationArc order='60' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_FutureMember' xlink:type='arc' />
+<presentationArc order='70' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_ForeignExchangeForwardMember' xlink:type='arc' />
+<presentationArc order='80' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_SwapMember' xlink:type='arc' />
+<presentationArc order='90' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_TotalReturnSwapMember' xlink:type='arc' />
+<presentationArc order='100' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_VarianceSwapMember' xlink:type='arc' />
+<presentationArc order='110' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_CurrencySwapMember' xlink:type='arc' />
+<presentationArc order='120' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_InterestRateSwapMember' xlink:type='arc' />
+<presentationArc order='130' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_CreditDefaultSwapMember' xlink:type='arc' />
+<presentationArc order='140' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_SwaptionMember' xlink:type='arc' />
+<presentationArc order='150' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_InterestRateSwaptionMember' xlink:type='arc' />
+<presentationArc order='160' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_CreditDefaultSwaptionMember' xlink:type='arc' />
+<presentationArc order='170' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DerivativeMember' xlink:to='loc_CapitalSupportAgreementMember' xlink:type='arc' />
+<presentationArc order='50' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_OtherThanSecuritiesInvestmentMember' xlink:to='loc_EquityFundsMember' xlink:type='arc' />
+<presentationArc order='60' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_OtherThanSecuritiesInvestmentMember' xlink:to='loc_FixedIncomeFundsMember' xlink:type='arc' />
+<presentationArc order='70' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_OtherThanSecuritiesInvestmentMember' xlink:to='loc_ExchangeTradedFundsMember' xlink:type='arc' />
+<presentationArc order='80' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_OtherThanSecuritiesInvestmentMember' xlink:to='loc_GuaranteesMember' xlink:type='arc' />
+<presentationArc order='90' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_OtherThanSecuritiesInvestmentMember' xlink:to='loc_StandbyLettersOfCreditMember' xlink:type='arc' />
+<presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesTable' xlink:to='loc_InvestmentSecondaryCategorizationAxis' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentSecondaryCategorizationAxis' xlink:to='loc_InvestmentsBySecondaryCategorizationDomain' xlink:type='arc' />
+<presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesTable' xlink:to='loc_InvestmentAxis' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentAxis' xlink:to='loc_InvestmentDomain' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentDomain' xlink:to='loc_MiscellaneousInvestmentsMember' xlink:type='arc' />
+<presentationArc order='40' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesTable' xlink:to='loc_InvestmentHoldingsOtherThanSecuritiesLineItems' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesLineItems' xlink:to='loc_InvestmentOwnedBalanceAbstract' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentOwnedBalanceAbstract' xlink:to='loc_InvestmentOwnedBalanceContracts' xlink:type='arc' />
+<presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentOwnedBalanceAbstract' xlink:to='loc_InvestmentOwnedBalanceOtherMeasure' xlink:type='arc' />
+<presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesLineItems' xlink:to='loc_InvestmentOwnedAtFairValue' xlink:type='arc' />
+<presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesLineItems' xlink:to='loc_InvestmentOwnedUnderlyingFaceAmountAtMarketValue' xlink:type='arc' />
+<presentationArc order='40' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesLineItems' xlink:to='loc_InvestmentOwnedForeignCurrencyContractReportingCurrencyAmountCurrentValue' xlink:type='arc' />
+<presentationArc order='50' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesLineItems' xlink:to='loc_InvestmentOwnedPercentOfNetAssets' xlink:type='arc' />
+<presentationArc order='60' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesLineItems' xlink:to='loc_InvestmentOwnedAtCost' xlink:type='arc' />
+<presentationArc order='70' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesLineItems' xlink:to='loc_InvestmentOwnedUnrealizedAppreciationDepreciationNetAbstract' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentOwnedUnrealizedAppreciationDepreciationNetAbstract' xlink:to='loc_InvestmentOwnedUnrealizedAppreciation' xlink:type='arc' />
+<presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentOwnedUnrealizedAppreciationDepreciationNetAbstract' xlink:to='loc_InvestmentOwnedUnrealizedDepreciation' xlink:type='arc' />
+<presentationArc order='30' preferredLabel='http://www.xbrl.org/2003/role/totalLabel' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentOwnedUnrealizedAppreciationDepreciationNetAbstract' xlink:to='loc_InvestmentOwnedUnrealizedAppreciationDepreciationNet' xlink:type='arc' />
+<presentationArc order='80' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesLineItems' xlink:to='loc_InvestmentOwnedOnLoanFlag' xlink:type='arc' />
+<presentationArc order='90' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesLineItems' xlink:to='loc_InvestmentOwnedSubjectToOptionFlag' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentOwnedSubjectToOptionFlag' xlink:to='loc_InvestmentOwnedSubjectToOptionBalanceOtherMeasure' xlink:type='arc' />
+<presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentOwnedSubjectToOptionFlag' xlink:to='loc_InvestmentOwnedSubjectToOptionNatureOfContract' xlink:type='arc' />
+<presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentOwnedSubjectToOptionFlag' xlink:to='loc_InvestmentOwnedSubjectToOptionPrice' xlink:type='arc' />
+<presentationArc order='40' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentOwnedSubjectToOptionFlag' xlink:to='loc_InvestmentOwnedSubjectToOptionExerciseDates' xlink:type='arc' />
+<presentationArc order='100' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesLineItems' xlink:to='loc_InvestmentOwnedOtherThanSecuritiesInvestmentNotReadilyMarketableFlag' xlink:type='arc' />
+<presentationArc order='110' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesLineItems' xlink:to='loc_InvestmentHoldingsOtherThanSecuritiesAdditionalInformation' xlink:type='arc' />
+<presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesTextBlock' xlink:to='loc_InvestmentOwnedOtherThanSecuritiesLoanedForShortSalesAtFairValue' xlink:type='arc' />
+<presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesTextBlock' xlink:to='loc_InvestmentHoldingsOtherThanSecuritiesAdditionalInformation' xlink:type='arc' />
+<presentationArc order='40' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_InvestmentHoldingsOtherThanSecuritiesTextBlock' xlink:to='loc_AssetsNetAbstract' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AssetsNetAbstract' xlink:to='loc_InvestmentOwnedAtFairValue' xlink:type='arc' />
+<presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AssetsNetAbstract' xlink:to='loc_InvestmentSoldNotYetPurchasedAtFairValue' xlink:type='arc' />
+<presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AssetsNetAbstract' xlink:to='loc_NonInvestmentAssetsLessNonInvestmentLiabilities' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_NonInvestmentAssetsLessNonInvestmentLiabilities' xlink:to='loc_NonInvestmentAssetsLessNonInvestmentLiabilitiesPercentOfNetAssets' xlink:type='arc' />
+<presentationArc order='40' preferredLabel='http://www.xbrl.org/2003/role/totalLabel' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AssetsNetAbstract' xlink:to='loc_AssetsNet' xlink:type='arc' />
+</presentationLink>
+</link:linkbase>

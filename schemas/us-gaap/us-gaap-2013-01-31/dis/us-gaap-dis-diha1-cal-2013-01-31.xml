@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2013.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/DerivativeInstrumentsAndHedgingActivitiesCalc1' xlink:href='../elts/us-roles-2013-01-31.xsd#diha1' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/disclosure/DerivativeInstrumentsAndHedgingActivitiesCalc1' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeFairValueOfDerivativeNet' xlink:label='loc_DerivativeFairValueOfDerivativeNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeFairValueOfDerivativeAssetAmountNotOffsetAgainstCollateral' xlink:label='loc_DerivativeFairValueOfDerivativeAssetAmountNotOffsetAgainstCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeFairValueOfDerivativeAsset' xlink:label='loc_DerivativeFairValueOfDerivativeAsset' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeAssetFairValueGrossLiability' xlink:label='loc_DerivativeAssetFairValueGrossLiability' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeFairValueOfDerivativeLiabilityAmountNotOffsetAgainstCollateral' xlink:label='loc_DerivativeFairValueOfDerivativeLiabilityAmountNotOffsetAgainstCollateral' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeFairValueOfDerivativeLiability' xlink:label='loc_DerivativeFairValueOfDerivativeLiability' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_DerivativeLiabilityFairValueGrossAsset' xlink:label='loc_DerivativeLiabilityFairValueGrossAsset' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DerivativeFairValueOfDerivativeNet' xlink:to='loc_DerivativeFairValueOfDerivativeAssetAmountNotOffsetAgainstCollateral' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DerivativeFairValueOfDerivativeAssetAmountNotOffsetAgainstCollateral' xlink:to='loc_DerivativeFairValueOfDerivativeAsset' xlink:type='arc' />
+<link:calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DerivativeFairValueOfDerivativeAssetAmountNotOffsetAgainstCollateral' xlink:to='loc_DerivativeAssetFairValueGrossLiability' xlink:type='arc' />
+<link:calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DerivativeFairValueOfDerivativeNet' xlink:to='loc_DerivativeFairValueOfDerivativeLiabilityAmountNotOffsetAgainstCollateral' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DerivativeFairValueOfDerivativeLiabilityAmountNotOffsetAgainstCollateral' xlink:to='loc_DerivativeFairValueOfDerivativeLiability' xlink:type='arc' />
+<link:calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DerivativeFairValueOfDerivativeLiabilityAmountNotOffsetAgainstCollateral' xlink:to='loc_DerivativeLiabilityFairValueGrossAsset' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

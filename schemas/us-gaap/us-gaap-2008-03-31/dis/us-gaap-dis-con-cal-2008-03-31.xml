@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/Contractors' xlink:href='../elts/us-roles-2008-03-31.xsd#con' xlink:type='simple' />
+<calculationLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/Contractors' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReceivablesLongTermContractsOrPrograms' xlink:label='loc_ReceivablesLongTermContractsOrPrograms' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsReceivableBilledForLongTermContractsOrPrograms' xlink:label='loc_AccountsReceivableBilledForLongTermContractsOrPrograms' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_CustomerAdvancesAndProgressPaymentsForLongTermContractsOrPrograms' xlink:label='loc_CustomerAdvancesAndProgressPaymentsForLongTermContractsOrPrograms' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ContractReceivableRetainage' xlink:label='loc_ContractReceivableRetainage' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ContractReceivableRetainageDueOneYearOrLess' xlink:label='loc_ContractReceivableRetainageDueOneYearOrLess' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ContractReceivableRetainageDueAfterOneYear' xlink:label='loc_ContractReceivableRetainageDueAfterOneYear' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ContractReceivableRetainageDueOneToTwoYears' xlink:label='loc_ContractReceivableRetainageDueOneToTwoYears' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ContractReceivableRetainageDueTwoToThreeYears' xlink:label='loc_ContractReceivableRetainageDueTwoToThreeYears' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ContractReceivableRetainageDueThreeToFourYears' xlink:label='loc_ContractReceivableRetainageDueThreeToFourYears' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ContractReceivableRetainageDueFourToFiveYears' xlink:label='loc_ContractReceivableRetainageDueFourToFiveYears' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ContractReceivableRetainageDueFiveYearsOrMore' xlink:label='loc_ContractReceivableRetainageDueFiveYearsOrMore' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_CostsInExcessOfBillingsOnUncompletedContractsOrPrograms' xlink:label='loc_CostsInExcessOfBillingsOnUncompletedContractsOrPrograms' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_CostsInExcessOfBillingsOnUncompletedContractsOrProgramsExpectedToBeCollectedAfterOneYear' xlink:label='loc_CostsInExcessOfBillingsOnUncompletedContractsOrProgramsExpectedToBeCollectedAfterOneYear' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_CostsInExcessOfBillingsOnUncompletedContractsOrProgramsExpectedToBeCollectedWithinOneYear' xlink:label='loc_CostsInExcessOfBillingsOnUncompletedContractsOrProgramsExpectedToBeCollectedWithinOneYear' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ContractsReceivableClaimsAndUncertainAmounts' xlink:label='loc_ContractsReceivableClaimsAndUncertainAmounts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ContractsReceivableClaimsAndUncertainAmountsExpectedToBeCollectedWithinOneYear' xlink:label='loc_ContractsReceivableClaimsAndUncertainAmountsExpectedToBeCollectedWithinOneYear' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ContractsReceivableClaimsAndUncertainAmountsExpectedToBeCollectedAfterOneYear' xlink:label='loc_ContractsReceivableClaimsAndUncertainAmountsExpectedToBeCollectedAfterOneYear' xlink:type='locator' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ReceivablesLongTermContractsOrPrograms' xlink:to='loc_AccountsReceivableBilledForLongTermContractsOrPrograms' xlink:type='arc' />
+<calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ReceivablesLongTermContractsOrPrograms' xlink:to='loc_CustomerAdvancesAndProgressPaymentsForLongTermContractsOrPrograms' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ReceivablesLongTermContractsOrPrograms' xlink:to='loc_ContractReceivableRetainage' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ContractReceivableRetainage' xlink:to='loc_ContractReceivableRetainageDueOneYearOrLess' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ContractReceivableRetainage' xlink:to='loc_ContractReceivableRetainageDueAfterOneYear' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ContractReceivableRetainageDueAfterOneYear' xlink:to='loc_ContractReceivableRetainageDueOneToTwoYears' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ContractReceivableRetainageDueAfterOneYear' xlink:to='loc_ContractReceivableRetainageDueTwoToThreeYears' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ContractReceivableRetainageDueAfterOneYear' xlink:to='loc_ContractReceivableRetainageDueThreeToFourYears' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ContractReceivableRetainageDueAfterOneYear' xlink:to='loc_ContractReceivableRetainageDueFourToFiveYears' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ContractReceivableRetainageDueAfterOneYear' xlink:to='loc_ContractReceivableRetainageDueFiveYearsOrMore' xlink:type='arc' />
+<calculationArc order='40' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ReceivablesLongTermContractsOrPrograms' xlink:to='loc_CostsInExcessOfBillingsOnUncompletedContractsOrPrograms' xlink:type='arc' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CostsInExcessOfBillingsOnUncompletedContractsOrPrograms' xlink:to='loc_CostsInExcessOfBillingsOnUncompletedContractsOrProgramsExpectedToBeCollectedAfterOneYear' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CostsInExcessOfBillingsOnUncompletedContractsOrPrograms' xlink:to='loc_CostsInExcessOfBillingsOnUncompletedContractsOrProgramsExpectedToBeCollectedWithinOneYear' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ContractsReceivableClaimsAndUncertainAmounts' xlink:to='loc_ContractsReceivableClaimsAndUncertainAmountsExpectedToBeCollectedWithinOneYear' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ContractsReceivableClaimsAndUncertainAmounts' xlink:to='loc_ContractsReceivableClaimsAndUncertainAmountsExpectedToBeCollectedAfterOneYear' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

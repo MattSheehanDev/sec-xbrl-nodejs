@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2011.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  
+This file is an entry point for Industry Banks and Savings Institutions.
+  
+The DTS starting with this entry point  includes standard, period start, period end, total, axis default, documentation, deprecated label and depreacted date labels. It will also include references.
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://fasb.org/basi/stm-all/2011-01-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:stm-all-basi='http://fasb.org/basi/stm-all/2011-01-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:annotation>
+<xs:documentation>
+This file is an entry point for Industry Banks and Savings Institutions.
+
+The DTS starting with this entry point includes standard, period start, period end, total, axis default, documentation, deprecated label and depreacted date labels. It will also include references.
+
+The DTS includes the following statements:
+
+108000 - Statement - Statement of Financial Position, Unclassified - Deposit Based Operations  (sfp-dbo)
+124200 - Statement - Statement of Income, Additional Statement of Income Elements  (soi-indira)
+132001 - Statement - Statement of Income, Interest Based Revenue  (soi-int)
+148400 - Statement - Statement of Other Comprehensive Income  (soc)
+148600 - Statement - Statement of Shareholders' Equity and Other Comprehensive Income  (sheci)
+152201 - Statement - Statement of Cash Flows, Additional Cash Flow Elements  (scf-indira)
+152205 - Statement - Statement of Cash Flows, Supplemental Disclosures  (scf-sd)
+160000 - Statement - Statement of Cash Flows, Deposit Based Operations  (scf-dbo)
+172600 - Statement - Statement of Cash Flows, Direct Method Operating Activities  (scf-dir)
+190000 - Statement - Common Domain Members  (com)
+</xs:documentation>
+</xs:annotation>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://fasb.org/basi/stm-std/2011-01-31' schemaLocation='us-gaap-basi-stm-std-2011-01-31.xsd' />
+<xs:import namespace='http://fasb.org/us-gaap-all/2011-01-31' schemaLocation='../../elts/us-gaap-all-2011-01-31.xsd' />
+</xs:schema>

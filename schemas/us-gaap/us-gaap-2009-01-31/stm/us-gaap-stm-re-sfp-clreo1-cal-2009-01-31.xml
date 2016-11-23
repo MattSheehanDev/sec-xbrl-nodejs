@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/statement/StatementOfFinancialPositionClassified-RealEstateOperationsFirstAlternative' xlink:href='../elts/us-roles-2009-01-31.xsd#sfp-clreo1' xlink:type='simple' />
+<calculationLink xlink:role='http://xbrl.us/us-gaap/role/statement/StatementOfFinancialPositionClassified-RealEstateOperationsFirstAlternative' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_StockholdersEquity' xlink:label='loc_StockholdersEquity' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_PreferredStockValue' xlink:label='loc_PreferredStockValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_PreferredStockSharesSubscribedButUnissuedSubscriptionsReceivable' xlink:label='loc_PreferredStockSharesSubscribedButUnissuedSubscriptionsReceivable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_CommonStockValue' xlink:label='loc_CommonStockValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_CommonStockHeldBySubsidiary' xlink:label='loc_CommonStockHeldBySubsidiary' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_CommonStockShareSubscribedButUnissuedSubscriptionsReceivable' xlink:label='loc_CommonStockShareSubscribedButUnissuedSubscriptionsReceivable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_AdditionalPaidInCapital' xlink:label='loc_AdditionalPaidInCapital' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_AdditionalPaidInCapitalCommonStock' xlink:label='loc_AdditionalPaidInCapitalCommonStock' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_AdditionalPaidInCapitalPreferredStock' xlink:label='loc_AdditionalPaidInCapitalPreferredStock' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_TreasuryStockValue' xlink:label='loc_TreasuryStockValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_TreasuryStockDeferredEmployeeStockOwnershipPlan' xlink:label='loc_TreasuryStockDeferredEmployeeStockOwnershipPlan' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_DeferredCompensationEquity' xlink:label='loc_DeferredCompensationEquity' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_AccumulatedOtherComprehensiveIncomeLossNetOfTax' xlink:label='loc_AccumulatedOtherComprehensiveIncomeLossNetOfTax' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentNetOfTax' xlink:label='loc_AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentNetOfTax' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_AccumulatedOtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentNetOfTax' xlink:label='loc_AccumulatedOtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentNetOfTax' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_AccumulatedOtherComprehensiveIncomeLossCumulativeChangesInNetGainLossFromCashFlowHedgesEffectNetOfTax' xlink:label='loc_AccumulatedOtherComprehensiveIncomeLossCumulativeChangesInNetGainLossFromCashFlowHedgesEffectNetOfTax' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_AccumulatedOtherComprehensiveIncomeLossDefinedBenefitPensionAndOtherPostretirementPlansNetOfTax' xlink:label='loc_AccumulatedOtherComprehensiveIncomeLossDefinedBenefitPensionAndOtherPostretirementPlansNetOfTax' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_AccumulatedDistributionsInExcessOfNetIncome' xlink:label='loc_AccumulatedDistributionsInExcessOfNetIncome' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_RetainedEarningsAccumulatedDeficit' xlink:label='loc_RetainedEarningsAccumulatedDeficit' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_UnearnedESOPShares' xlink:label='loc_UnearnedESOPShares' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_OtherAdditionalCapital' xlink:label='loc_OtherAdditionalCapital' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ReceivableFromOfficersAndDirectorsForIssuanceOfCapitalStock' xlink:label='loc_ReceivableFromOfficersAndDirectorsForIssuanceOfCapitalStock' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ReceivableFromShareholdersOrAffiliatesForIssuanceOfCapitalStock' xlink:label='loc_ReceivableFromShareholdersOrAffiliatesForIssuanceOfCapitalStock' xlink:type='locator' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_PreferredStockValue' xlink:type='arc' />
+<calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_PreferredStockSharesSubscribedButUnissuedSubscriptionsReceivable' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_CommonStockValue' xlink:type='arc' />
+<calculationArc order='40' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_CommonStockHeldBySubsidiary' xlink:type='arc' />
+<calculationArc order='50' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_CommonStockShareSubscribedButUnissuedSubscriptionsReceivable' xlink:type='arc' />
+<calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_AdditionalPaidInCapital' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AdditionalPaidInCapital' xlink:to='loc_AdditionalPaidInCapitalCommonStock' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AdditionalPaidInCapital' xlink:to='loc_AdditionalPaidInCapitalPreferredStock' xlink:type='arc' />
+<calculationArc order='70' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_TreasuryStockValue' xlink:type='arc' />
+<calculationArc order='80' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_TreasuryStockDeferredEmployeeStockOwnershipPlan' xlink:type='arc' />
+<calculationArc order='90' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_DeferredCompensationEquity' xlink:type='arc' />
+<calculationArc order='100' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_AccumulatedOtherComprehensiveIncomeLossNetOfTax' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccumulatedOtherComprehensiveIncomeLossNetOfTax' xlink:to='loc_AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentNetOfTax' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccumulatedOtherComprehensiveIncomeLossNetOfTax' xlink:to='loc_AccumulatedOtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentNetOfTax' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccumulatedOtherComprehensiveIncomeLossNetOfTax' xlink:to='loc_AccumulatedOtherComprehensiveIncomeLossCumulativeChangesInNetGainLossFromCashFlowHedgesEffectNetOfTax' xlink:type='arc' />
+<calculationArc order='40' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccumulatedOtherComprehensiveIncomeLossNetOfTax' xlink:to='loc_AccumulatedOtherComprehensiveIncomeLossDefinedBenefitPensionAndOtherPostretirementPlansNetOfTax' xlink:type='arc' />
+<calculationArc order='110' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_AccumulatedDistributionsInExcessOfNetIncome' xlink:type='arc' />
+<calculationArc order='120' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_RetainedEarningsAccumulatedDeficit' xlink:type='arc' />
+<calculationArc order='130' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_UnearnedESOPShares' xlink:type='arc' />
+<calculationArc order='140' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_OtherAdditionalCapital' xlink:type='arc' />
+<calculationArc order='150' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_ReceivableFromOfficersAndDirectorsForIssuanceOfCapitalStock' xlink:type='arc' />
+<calculationArc order='160' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_StockholdersEquity' xlink:to='loc_ReceivableFromShareholdersOrAffiliatesForIssuanceOfCapitalStock' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2013.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/statement/StatementOfIncomeRealEstateExcludingREITsInvestementGainLossWithoutImpairmentElementAlternative4' xlink:href='../elts/us-roles-2013-01-31.xsd#soi-re4' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/statement/StatementOfIncomeRealEstateExcludingREITsInvestementGainLossWithoutImpairmentElementAlternative4' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_GainLossOnInvestments' xlink:label='loc_GainLossOnInvestments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_MarketableSecuritiesGainLoss' xlink:label='loc_MarketableSecuritiesGainLoss' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_MarketableSecuritiesUnrealizedGainLoss' xlink:label='loc_MarketableSecuritiesUnrealizedGainLoss' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TradingSecuritiesUnrealizedHoldingGainLoss' xlink:label='loc_TradingSecuritiesUnrealizedHoldingGainLoss' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_AvailableForSaleSecuritiesTransfersToTradingGainsLossesNet' xlink:label='loc_AvailableForSaleSecuritiesTransfersToTradingGainsLossesNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_HeldToMaturitySecuritiesTransferredToTradingSecuritiesUnrealizedGainLoss' xlink:label='loc_HeldToMaturitySecuritiesTransferredToTradingSecuritiesUnrealizedGainLoss' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_MarketableSecuritiesRealizedGainLoss' xlink:label='loc_MarketableSecuritiesRealizedGainLoss' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_TradingSecuritiesRealizedGainLoss' xlink:label='loc_TradingSecuritiesRealizedGainLoss' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_AvailableForSaleSecuritiesGrossRealizedGainLossNet' xlink:label='loc_AvailableForSaleSecuritiesGrossRealizedGainLossNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_HeldToMaturitySecuritiesSoldSecurityRealizedGainLoss' xlink:label='loc_HeldToMaturitySecuritiesSoldSecurityRealizedGainLoss' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CostMethodInvestmentsRealizedGainLoss' xlink:label='loc_CostMethodInvestmentsRealizedGainLoss' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_GainLossOnInvestments' xlink:to='loc_MarketableSecuritiesGainLoss' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecuritiesGainLoss' xlink:to='loc_MarketableSecuritiesUnrealizedGainLoss' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecuritiesUnrealizedGainLoss' xlink:to='loc_TradingSecuritiesUnrealizedHoldingGainLoss' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecuritiesUnrealizedGainLoss' xlink:to='loc_AvailableForSaleSecuritiesTransfersToTradingGainsLossesNet' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecuritiesUnrealizedGainLoss' xlink:to='loc_HeldToMaturitySecuritiesTransferredToTradingSecuritiesUnrealizedGainLoss' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecuritiesGainLoss' xlink:to='loc_MarketableSecuritiesRealizedGainLoss' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecuritiesRealizedGainLoss' xlink:to='loc_TradingSecuritiesRealizedGainLoss' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecuritiesRealizedGainLoss' xlink:to='loc_AvailableForSaleSecuritiesGrossRealizedGainLossNet' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecuritiesRealizedGainLoss' xlink:to='loc_HeldToMaturitySecuritiesSoldSecurityRealizedGainLoss' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_GainLossOnInvestments' xlink:to='loc_CostMethodInvestmentsRealizedGainLoss' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

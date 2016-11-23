@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2011.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  
+This file is an entry point for Industry Broker Dealer.
+  
+The DTS starting with this entry point  includes standard, period start, period end, total, axis default, documentation, deprecated label and depreacted date labels. It will also include references.
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://fasb.org/bd/stm-dis-all/2011-01-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:stm-dis-all-bd='http://fasb.org/bd/stm-dis-all/2011-01-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:annotation>
+<xs:documentation>
+This file is an entry point for Industry Broker Dealer.
+
+The DTS starting with this entry point includes standard, period start, period end, total, axis default, documentation, deprecated label and depreacted date labels. It will also include references.
+
+The DTS includes the following statements:
+
+112000 - Statement - Statement of Financial Position, Unclassified - Securities Based Operations  (sfp-sbo)
+124200 - Statement - Statement of Income, Additional Statement of Income Elements  (soi-indira)
+140400 - Statement - Statement of Income, Securities Based Income  (soi-sbi)
+148400 - Statement - Statement of Other Comprehensive Income  (soc)
+148600 - Statement - Statement of Shareholders' Equity and Other Comprehensive Income  (sheci)
+152000 - Statement - Statement of Partners' Capital  (spc)
+152201 - Statement - Statement of Cash Flows, Additional Cash Flow Elements  (scf-indira)
+152205 - Statement - Statement of Cash Flows, Supplemental Disclosures  (scf-sd)
+168400 - Statement - Statement of Cash Flows, Securities Based Operations  (scf-sbo)
+172600 - Statement - Statement of Cash Flows, Direct Method Operating Activities  (scf-dir)
+190000 - Statement - Common Domain Members  (com)
+
+The DTS includes the following disclosure entry points:
+
+195000 - Disclosure - Comprehensive Text Block List  (ctbl)
+200000 - Disclosure - Organization, Consolidation and Presentation of Financial Statements  (ocpfs)
+250000 - Disclosure - Accounting Changes and Error Corrections  (acec)
+275000 - Disclosure - Risks and Uncertainties  (ru)
+285000 - Disclosure - Interim Reporting  (ir)
+290000 - Disclosure - Accounting Policies  (ap)
+300000 - Disclosure - Cash and Cash Equivalents  (cce)
+320000 - Disclosure - Receivables, Loans, Notes Receivable, and Others  (rlnro)
+320500 - Disclosure - Receivables, Loans, Notes Receivable, and Others (Loans Alternative)  (rlnro2)
+320700 - Disclosure - Receivables, Loans, Notes Receivable, and Others (Net Reported Amount, by Category Alternative)  (rlnro3)
+330000 - Disclosure - Investments, Debt and Equity Securities  (ides)
+330500 - Disclosure - Investments, Debt and Equity Securities (Alternative Presentation)  (idesa)
+333000 - Disclosure - Investments, Equity Method and Joint Ventures  (emjv)
+336000 - Disclosure - Investments, All Other Investments  (iaoi)
+340000 - Disclosure - Inventory  (inv)
+340005 - Disclosure - Inventory (Classification by Industry Alternative)  (inv2)
+340010 - Disclosure - Inventory (Items Net of Reserve Alternative)  (inv1)
+340015 - Disclosure - Inventory (Combining Work in Progress and Raw Materials)  (inv3)
+350000 - Disclosure - Deferred Costs, Capitalized, Prepaid, and Other Assets  (dccpoa)
+360000 - Disclosure - Property, Plant, and Equipment  (ppe)
+370000 - Disclosure - Intangible Assets, Goodwill and Other  (iago)
+400000 - Disclosure - Payables and Accruals  (pay)
+420000 - Disclosure - Asset Retirement Obligations  (aro)
+425000 - Disclosure - Environmental Remediation Obligations  (ero)
+430000 - Disclosure - Restructuring and Related Activities  (edco)
+440000 - Disclosure - Revenue Recognition and Deferred Revenue  (dr)
+450000 - Disclosure - Commitment and Contingencies  (cc)
+456000 - Disclosure - Guarantees  (guarantees)
+460000 - Disclosure - Debt  (debt)
+460100 - Disclosure - Debt (Long-term Debt, by Type, Current and Noncurrent Alternative)  (debt2)
+460200 - Disclosure - Debt (Long-term Debt by Maturity Alternative)  (debt3)
+460300 - Disclosure - Debt (Long-term Debt, by Category, Current and Noncurrent Calc Alternative)  (debt4)
+460400 - Disclosure - Debt (Long-term Debt Less Current Maturities Calc Alternative)  (debt5)
+470000 - Disclosure - Other Liabilities  (othliab)
+470500 - Disclosure - Other Liabilities (Warranty Accrual by Standard or Extended Alternative)  (othliab2)
+471000 - Disclosure - Other Liabilities (Warranty Accrual by Current or Noncurrent Alternative)  (othliab3)
+471010 - Disclosure - Other Liabilities (Shares Subject to Mandatory Redemption, Settlement Terms, Amount, Total)  (othliab4)
+472000 - Disclosure - Noncontrolling Interest  (ni)
+480000 - Disclosure - Temporary Equity  (te)
+500000 - Disclosure - Equity  (equity)
+705000 - Disclosure - Compensation Related Costs, General  (crcgen)
+710000 - Disclosure - Compensation Related Costs, Share Based Payments  (crcsbp)
+730000 - Disclosure - Compensation Related Costs, Retirement Benefits  (crcrb)
+740000 - Disclosure - Compensation Related Costs, Postemployment Benefits  (crcpb)
+750000 - Disclosure - Other Income and Expenses  (otherexp)
+760000 - Disclosure - Research and Development  (rd)
+770000 - Disclosure - Income Taxes  (inctax)
+770500 - Disclosure - Income Taxes (Current and Noncurrent Alternative)  (inctax2)
+770510 - Disclosure - Income Taxes (by Geographic Segment)  (inctax3)
+775000 - Disclosure - Discontinued Operations and Disposal Groups  (disops)
+775100 - Disclosure - Discontinued Operations and Disposal Groups (Alternative)  (disops2)
+778000 - Disclosure - Extraordinary and Unusual Items  (eui)
+780000 - Disclosure - Earnings Per Share  (eps)
+780100 - Disclosure - Earnings Per Share, Basic (Alternative)  (eps2)
+780200 - Disclosure - Earnings Per Share, Diluted (Alternative)  (eps3)
+790000 - Disclosure - Segment Reporting  (sr)
+800000 - Disclosure - Business Combinations  (bc)
+800500 - Disclosure - Business Combinations (Netting Alternative)  (bc2)
+802000 - Disclosure - Reorganizations  (reorg)
+805000 - Disclosure - Derivative Instruments and Hedging Activities  (diha)
+805050 - Disclosure - Derivative Instruments and Hedging Activities  (diha1)
+805500 - Disclosure - Derivative Instruments and Hedging Activities (Reclassification to Earnings Alternative)  (diha2)
+815000 - Disclosure - Fair Value Measures and Disclosures  (fifvd)
+815050 - Disclosure - Fair Value Measures and Disclosures (First Alternative)  (fifvd1)
+820000 - Disclosure - Foreign Operations and Currency Translation  (foct)
+831000 - Disclosure - Leases  (lea)
+831500 - Disclosure - Leases, Capital (Netting Alternative)  (lea2)
+840000 - Disclosure - Nonmonetary Transactions  (nt)
+845000 - Disclosure - Related Party Disclosures  (rpd)
+865000 - Disclosure - Transfers and Servicing  (ts)
+865500 - Disclosure - Transfers and Servicing - Pledged Securities Not Reported  (ts2)
+870000 - Disclosure - Subsequent Events  (se)
+915000 - Disclosure - Development Stage Enterprises  (dse)
+939000 - Disclosure - Financial Services, Federal Home Loan Banks  (fs-fhlb)
+940000 - Disclosure - Financial Services, Banking and Thrift  (fs-bt)
+940100 - Disclosure - Financial Services, Banking and Thrift (Deposit Liabilities Alternative)  (fs-bt3)
+940200 - Disclosure - Financial Services, Banking and Thrift (Foreign Deposit Liabilities Alternative)  (fs-bt4)
+940300 - Disclosure - Financial Services, Banking and Thrift (Deposit Liabilities by Customer Alternative)  (fs-bt5)
+940500 - Disclosure - Financial Services, Banking and Thrift (FHLB Advances by Interest Rate Type Alternative)  (fs-bt2)
+942000 - Disclosure - Financial Services, Brokers and Dealers  (fs-bd)
+942500 - Disclosure - Financial Services, Brokers and Dealers (Fair Value Alternative)  (fs-bd2)
+943000 - Disclosure - Financial Services, Brokers and Dealers (Excess Net Capital Alternative)  (fs-bd3)
+944000 - Disclosure - Financial Services, Insurance  (fs-ins)
+944500 - Disclosure - Financial Services, Insurance (By Type Alternative)  (fs-ins2)
+948000 - Disclosure - Financial Services, Mortgage Banking  (fs-mort)
+975000 - Disclosure - Real Estate  (re)
+991000 - Disclosure - SEC Schedule, Article 12-04, Condensed Financial Information of Registrant  (sec-cndfir)
+993000 - Disclosure - SEC Schedule, Article 12-09, Valuation and Qualifying Accounts  (sec-vq)
+993200 - Disclosure - SEC Schedule, Article 12-28, Real Estate and Accumulated Depreciation  (sec-re)
+993250 - Disclosure - SEC Schedule, Article 12-28, Real Estate and Accumulated Depreciation (Calc2)  (sec-re2)
+993400 - Disclosure - SEC Schedule, Article 12-29, Mortgage Loans on Real Estate  (sec-mort)
+993500 - Disclosure - Investment Holdings  (schedoi-hold)
+993510 - Disclosure - Other than Securities Investment Holdings  (schedoi-otsh)
+993520 - Disclosure - Summary of Investment Holdings  (schedoi-sumhold)
+993530 - Disclosure - Investments Federal Income Tax Note  (schedoi-fednote)
+993540 - Disclosure - Investments Sold Not yet Purchased  (schedoi-shorthold)
+993560 - Disclosure - Open Option Contracts Written  (schedoi-oocw)
+993570 - Disclosure - Investments in and Advances to Affiliates  (schedoi-iiaa)
+
+The DTS includes linkbases for deprecated us-gap concepts.
+</xs:documentation>
+</xs:annotation>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://fasb.org/bd/stm-dis-std/2011-01-31' schemaLocation='us-gaap-bd-stm-dis-std-2011-01-31.xsd' />
+<xs:import namespace='http://fasb.org/us-gaap-all/2011-01-31' schemaLocation='../../elts/us-gaap-all-2011-01-31.xsd' />
+</xs:schema>

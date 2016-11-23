@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2013.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/DebtCalc2' xlink:href='../elts/us-roles-2013-01-31.xsd#debt2' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/disclosure/DebtCalc2' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LongTermDebt' xlink:label='loc_LongTermDebt' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuredDebt' xlink:label='loc_SecuredDebt' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuredDebtCurrent' xlink:label='loc_SecuredDebtCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SecuredLongTermDebt' xlink:label='loc_SecuredLongTermDebt' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_UnsecuredDebt' xlink:label='loc_UnsecuredDebt' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_UnsecuredDebtCurrent' xlink:label='loc_UnsecuredDebtCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_UnsecuredLongTermDebt' xlink:label='loc_UnsecuredLongTermDebt' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SubordinatedDebt' xlink:label='loc_SubordinatedDebt' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SubordinatedDebtCurrent' xlink:label='loc_SubordinatedDebtCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SubordinatedLongTermDebt' xlink:label='loc_SubordinatedLongTermDebt' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ConvertibleDebt' xlink:label='loc_ConvertibleDebt' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ConvertibleDebtCurrent' xlink:label='loc_ConvertibleDebtCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ConvertibleDebtNoncurrent' xlink:label='loc_ConvertibleDebtNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ConvertibleSubordinatedDebt' xlink:label='loc_ConvertibleSubordinatedDebt' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ConvertibleSubordinatedDebtCurrent' xlink:label='loc_ConvertibleSubordinatedDebtCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ConvertibleSubordinatedDebtNoncurrent' xlink:label='loc_ConvertibleSubordinatedDebtNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_JuniorSubordinatedDebentureOwedToUnconsolidatedSubsidiaryTrust' xlink:label='loc_JuniorSubordinatedDebentureOwedToUnconsolidatedSubsidiaryTrust' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_JuniorSubordinatedDebentureOwedToUnconsolidatedSubsidiaryTrustCurrent' xlink:label='loc_JuniorSubordinatedDebentureOwedToUnconsolidatedSubsidiaryTrustCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_JuniorSubordinatedDebentureOwedToUnconsolidatedSubsidiaryTrustNoncurrent' xlink:label='loc_JuniorSubordinatedDebentureOwedToUnconsolidatedSubsidiaryTrustNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LineOfCredit' xlink:label='loc_LineOfCredit' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LinesOfCreditCurrent' xlink:label='loc_LinesOfCreditCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LongTermLineOfCredit' xlink:label='loc_LongTermLineOfCredit' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LongtermCommercialPaperCurrentAndNoncurrent' xlink:label='loc_LongtermCommercialPaperCurrentAndNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LongTermCommercialPaperCurrent' xlink:label='loc_LongTermCommercialPaperCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CommercialPaperNoncurrent' xlink:label='loc_CommercialPaperNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LongtermTransitionBondCurrentAndNoncurrent' xlink:label='loc_LongtermTransitionBondCurrentAndNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LongtermTransitionBondCurrent' xlink:label='loc_LongtermTransitionBondCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LongTermTransitionBond' xlink:label='loc_LongTermTransitionBond' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LongtermPollutionControlBondCurrentAndNoncurrent' xlink:label='loc_LongtermPollutionControlBondCurrentAndNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LongtermPollutionControlBondCurrent' xlink:label='loc_LongtermPollutionControlBondCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LongTermPollutionControlBond' xlink:label='loc_LongTermPollutionControlBond' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LongtermConstructionLoanCurrentAndNoncurrent' xlink:label='loc_LongtermConstructionLoanCurrentAndNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LongTermConstructionLoanCurrent' xlink:label='loc_LongTermConstructionLoanCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ConstructionLoanNoncurrent' xlink:label='loc_ConstructionLoanNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_NotesAndLoansPayable' xlink:label='loc_NotesAndLoansPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LoansPayable' xlink:label='loc_LoansPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LoansPayableToBank' xlink:label='loc_LoansPayableToBank' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LoansPayableToBankCurrent' xlink:label='loc_LoansPayableToBankCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LongTermLoansFromBank' xlink:label='loc_LongTermLoansFromBank' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherLoansPayable' xlink:label='loc_OtherLoansPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherLoansPayableCurrent' xlink:label='loc_OtherLoansPayableCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherLoansPayableLongTerm' xlink:label='loc_OtherLoansPayableLongTerm' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_NotesPayable' xlink:label='loc_NotesPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_MediumTermNotes' xlink:label='loc_MediumTermNotes' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_MediumtermNotesCurrent' xlink:label='loc_MediumtermNotesCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_MediumtermNotesNoncurrent' xlink:label='loc_MediumtermNotesNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_JuniorSubordinatedNotes' xlink:label='loc_JuniorSubordinatedNotes' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_JuniorSubordinatedNotesCurrent' xlink:label='loc_JuniorSubordinatedNotesCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_JuniorSubordinatedLongTermNotes' xlink:label='loc_JuniorSubordinatedLongTermNotes' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SeniorNotes' xlink:label='loc_SeniorNotes' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SeniorNotesCurrent' xlink:label='loc_SeniorNotesCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SeniorLongTermNotes' xlink:label='loc_SeniorLongTermNotes' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ConvertibleNotesPayable' xlink:label='loc_ConvertibleNotesPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ConvertibleNotesPayableCurrent' xlink:label='loc_ConvertibleNotesPayableCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_ConvertibleLongTermNotesPayable' xlink:label='loc_ConvertibleLongTermNotesPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_NotesPayableToBank' xlink:label='loc_NotesPayableToBank' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_NotesPayableToBankCurrent' xlink:label='loc_NotesPayableToBankCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_NotesPayableToBankNoncurrent' xlink:label='loc_NotesPayableToBankNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherNotesPayable' xlink:label='loc_OtherNotesPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherNotesPayableCurrent' xlink:label='loc_OtherNotesPayableCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherLongTermNotesPayable' xlink:label='loc_OtherLongTermNotesPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SpecialAssessmentBond' xlink:label='loc_SpecialAssessmentBond' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SpecialAssessmentBondCurrent' xlink:label='loc_SpecialAssessmentBondCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SpecialAssessmentBondNoncurrent' xlink:label='loc_SpecialAssessmentBondNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_FederalHomeLoanBankAdvancesLongTerm' xlink:label='loc_FederalHomeLoanBankAdvancesLongTerm' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_FederalHomeLoanBankAdvancesCurrent' xlink:label='loc_FederalHomeLoanBankAdvancesCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_LongtermFederalHomeLoanBankAdvancesNoncurrent' xlink:label='loc_LongtermFederalHomeLoanBankAdvancesNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_BorrowingsUnderGuaranteedInvestmentAgreements' xlink:label='loc_BorrowingsUnderGuaranteedInvestmentAgreements' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherLongTermDebt' xlink:label='loc_OtherLongTermDebt' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherLongTermDebtCurrent' xlink:label='loc_OtherLongTermDebtCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherLongTermDebtNoncurrent' xlink:label='loc_OtherLongTermDebtNoncurrent' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_SecuredDebt' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_SecuredDebt' xlink:to='loc_SecuredDebtCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_SecuredDebt' xlink:to='loc_SecuredLongTermDebt' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_UnsecuredDebt' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_UnsecuredDebt' xlink:to='loc_UnsecuredDebtCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_UnsecuredDebt' xlink:to='loc_UnsecuredLongTermDebt' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_SubordinatedDebt' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_SubordinatedDebt' xlink:to='loc_SubordinatedDebtCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_SubordinatedDebt' xlink:to='loc_SubordinatedLongTermDebt' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_ConvertibleDebt' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ConvertibleDebt' xlink:to='loc_ConvertibleDebtCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ConvertibleDebt' xlink:to='loc_ConvertibleDebtNoncurrent' xlink:type='arc' />
+<link:calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_ConvertibleSubordinatedDebt' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ConvertibleSubordinatedDebt' xlink:to='loc_ConvertibleSubordinatedDebtCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ConvertibleSubordinatedDebt' xlink:to='loc_ConvertibleSubordinatedDebtNoncurrent' xlink:type='arc' />
+<link:calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_JuniorSubordinatedDebentureOwedToUnconsolidatedSubsidiaryTrust' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_JuniorSubordinatedDebentureOwedToUnconsolidatedSubsidiaryTrust' xlink:to='loc_JuniorSubordinatedDebentureOwedToUnconsolidatedSubsidiaryTrustCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_JuniorSubordinatedDebentureOwedToUnconsolidatedSubsidiaryTrust' xlink:to='loc_JuniorSubordinatedDebentureOwedToUnconsolidatedSubsidiaryTrustNoncurrent' xlink:type='arc' />
+<link:calculationArc order='70' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_LineOfCredit' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LineOfCredit' xlink:to='loc_LinesOfCreditCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LineOfCredit' xlink:to='loc_LongTermLineOfCredit' xlink:type='arc' />
+<link:calculationArc order='80' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_LongtermCommercialPaperCurrentAndNoncurrent' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongtermCommercialPaperCurrentAndNoncurrent' xlink:to='loc_LongTermCommercialPaperCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongtermCommercialPaperCurrentAndNoncurrent' xlink:to='loc_CommercialPaperNoncurrent' xlink:type='arc' />
+<link:calculationArc order='90' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_LongtermTransitionBondCurrentAndNoncurrent' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongtermTransitionBondCurrentAndNoncurrent' xlink:to='loc_LongtermTransitionBondCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongtermTransitionBondCurrentAndNoncurrent' xlink:to='loc_LongTermTransitionBond' xlink:type='arc' />
+<link:calculationArc order='100' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_LongtermPollutionControlBondCurrentAndNoncurrent' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongtermPollutionControlBondCurrentAndNoncurrent' xlink:to='loc_LongtermPollutionControlBondCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongtermPollutionControlBondCurrentAndNoncurrent' xlink:to='loc_LongTermPollutionControlBond' xlink:type='arc' />
+<link:calculationArc order='110' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_LongtermConstructionLoanCurrentAndNoncurrent' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongtermConstructionLoanCurrentAndNoncurrent' xlink:to='loc_LongTermConstructionLoanCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongtermConstructionLoanCurrentAndNoncurrent' xlink:to='loc_ConstructionLoanNoncurrent' xlink:type='arc' />
+<link:calculationArc order='120' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_NotesAndLoansPayable' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NotesAndLoansPayable' xlink:to='loc_LoansPayable' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansPayable' xlink:to='loc_LoansPayableToBank' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansPayableToBank' xlink:to='loc_LoansPayableToBankCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansPayableToBank' xlink:to='loc_LongTermLoansFromBank' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansPayable' xlink:to='loc_OtherLoansPayable' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherLoansPayable' xlink:to='loc_OtherLoansPayableCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherLoansPayable' xlink:to='loc_OtherLoansPayableLongTerm' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NotesAndLoansPayable' xlink:to='loc_NotesPayable' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NotesPayable' xlink:to='loc_MediumTermNotes' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MediumTermNotes' xlink:to='loc_MediumtermNotesCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MediumTermNotes' xlink:to='loc_MediumtermNotesNoncurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NotesPayable' xlink:to='loc_JuniorSubordinatedNotes' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_JuniorSubordinatedNotes' xlink:to='loc_JuniorSubordinatedNotesCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_JuniorSubordinatedNotes' xlink:to='loc_JuniorSubordinatedLongTermNotes' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NotesPayable' xlink:to='loc_SeniorNotes' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_SeniorNotes' xlink:to='loc_SeniorNotesCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_SeniorNotes' xlink:to='loc_SeniorLongTermNotes' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NotesPayable' xlink:to='loc_ConvertibleNotesPayable' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ConvertibleNotesPayable' xlink:to='loc_ConvertibleNotesPayableCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ConvertibleNotesPayable' xlink:to='loc_ConvertibleLongTermNotesPayable' xlink:type='arc' />
+<link:calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NotesPayable' xlink:to='loc_NotesPayableToBank' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NotesPayableToBank' xlink:to='loc_NotesPayableToBankCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NotesPayableToBank' xlink:to='loc_NotesPayableToBankNoncurrent' xlink:type='arc' />
+<link:calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NotesPayable' xlink:to='loc_OtherNotesPayable' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherNotesPayable' xlink:to='loc_OtherNotesPayableCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherNotesPayable' xlink:to='loc_OtherLongTermNotesPayable' xlink:type='arc' />
+<link:calculationArc order='130' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_SpecialAssessmentBond' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_SpecialAssessmentBond' xlink:to='loc_SpecialAssessmentBondCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_SpecialAssessmentBond' xlink:to='loc_SpecialAssessmentBondNoncurrent' xlink:type='arc' />
+<link:calculationArc order='140' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_FederalHomeLoanBankAdvancesLongTerm' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_FederalHomeLoanBankAdvancesLongTerm' xlink:to='loc_FederalHomeLoanBankAdvancesCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_FederalHomeLoanBankAdvancesLongTerm' xlink:to='loc_LongtermFederalHomeLoanBankAdvancesNoncurrent' xlink:type='arc' />
+<link:calculationArc order='150' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_BorrowingsUnderGuaranteedInvestmentAgreements' xlink:type='arc' />
+<link:calculationArc order='160' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_OtherLongTermDebt' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherLongTermDebt' xlink:to='loc_OtherLongTermDebtCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherLongTermDebt' xlink:to='loc_OtherLongTermDebtNoncurrent' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  
+This file is an entry point for Industry Real Estate.
+  
+The DTS starting with this entry point includes standard, period start, period end, total and axis default labels. It will not include references.
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://xbrl.us/re/stm-std/2009-01-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:stm-std-re='http://xbrl.us/re/stm-std/2009-01-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:annotation>
+<xs:documentation>
+This file is an entry point for Industry Real Estate.
+
+The DTS starting with this entry point includes standard, period start, period end, total and axis default labels. It will not include references.
+
+The DTS includes the following statements:
+
+110000 - Statement - Statement of Financial Position, Classified - Real Estate Operations  (sfp-clreo)
+110200 - Statement - Statement of Financial Position, Unclassified - Real Estate Operations  (sfp-ucreo)
+144000 - Statement - Statement of Income, Real Estate, Excluding REITs  (soi-re)
+145000 - Statement - Statement of Income, Real Estate Investment Trusts  (soi-reit)
+148400 - Statement - Statement of Other Comprehensive Income  (soc)
+148600 - Statement - Statement of Shareholders' Equity and Other Comprehensive Income  (sheci)
+152000 - Statement - Statement of Partners' Capital  (spc)
+170000 - Statement - Statement of Cash Flows, Real Estate, Including REITs  (scf-re)
+172600 - Statement - Statement of Cash Flows, Direct Method Operating Activities  (scf-dir)
+190000 - Statement - Common Domain Members  (com)
+</xs:documentation>
+</xs:annotation>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/re/com/2009-01-31' schemaLocation='../../stm/us-gaap-stm-re-com-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/re/sfp-ucreo/2009-01-31' schemaLocation='../../stm/us-gaap-stm-re-sfp-ucreo-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/re/sfp-clreo/2009-01-31' schemaLocation='../../stm/us-gaap-stm-re-sfp-clreo-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/re/soi-re/2009-01-31' schemaLocation='../../stm/us-gaap-stm-re-soi-re-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/re/soi-reit/2009-01-31' schemaLocation='../../stm/us-gaap-stm-re-soi-reit-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/re/scf-re/2009-01-31' schemaLocation='../../stm/us-gaap-stm-re-scf-re-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/re/sheci/2009-01-31' schemaLocation='../../stm/us-gaap-stm-re-sheci-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/re/scf-dir/2009-01-31' schemaLocation='../../stm/us-gaap-stm-re-scf-dir-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/re/spc/2009-01-31' schemaLocation='../../stm/us-gaap-stm-re-spc-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/re/soc/2009-01-31' schemaLocation='../../stm/us-gaap-stm-re-soc-2009-01-31.xsd' />
+</xs:schema>

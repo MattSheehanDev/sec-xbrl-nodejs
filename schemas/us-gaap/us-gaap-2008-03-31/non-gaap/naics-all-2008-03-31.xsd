@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+-->
+<xs:schema xmlns:naics-all="http://xbrl.us/naics-all/2008-03-31"
+           xmlns:xbrli="http://www.xbrl.org/2003/instance"
+           xmlns:link="http://www.xbrl.org/2003/linkbase"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           targetNamespace="http://xbrl.us/naics-all/2008-03-31">
+   <xs:annotation>
+      <xs:appinfo>
+         <link:linkbaseRef xlink:type="simple" xlink:href="naics-doc-2008-03-31.xml"
+                           xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"
+                           xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:import namespace="http://www.xbrl.org/2003/instance"
+              schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+   <xs:import namespace="http://xbrl.us/us-roles/2008-03-31"
+              schemaLocation="../elts/us-roles-2008-03-31.xsd"/>
+   <xs:import namespace="http://xbrl.us/naics-ent/2008-03-31"
+              schemaLocation="naics-ent-2008-03-31.xsd"/>
+</xs:schema>

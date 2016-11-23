@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/statement/StatementOfIncomeInterestBasedRevenueCalc2' xlink:href='../elts/us-roles-2008-03-31.xsd#soi-int2' xlink:type='simple' />
+<calculationLink xlink:role='http://xbrl.us/us-gaap/role/statement/StatementOfIncomeInterestBasedRevenueCalc2' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndDividendIncomeOperating' xlink:label='loc_InterestAndDividendIncomeOperating' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansAndLeases' xlink:label='loc_InterestAndFeeIncomeLoansAndLeases' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansAndLeasesHeldForSale' xlink:label='loc_InterestAndFeeIncomeLoansAndLeasesHeldForSale' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeNonmortgageLoansAndLeasesHeldForSale' xlink:label='loc_InterestAndFeeIncomeNonmortgageLoansAndLeasesHeldForSale' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansHeldForSaleMortgages' xlink:label='loc_InterestAndFeeIncomeLoansHeldForSaleMortgages' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeOtherLoansHeldForSale' xlink:label='loc_InterestAndFeeIncomeOtherLoansHeldForSale' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansAndLeasesHeldInPortfolio' xlink:label='loc_InterestAndFeeIncomeLoansAndLeasesHeldInPortfolio' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansCommercial' xlink:label='loc_InterestAndFeeIncomeLoansCommercial' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansCommercialIndustrialAndAgriculturalLoans' xlink:label='loc_InterestAndFeeIncomeLoansCommercialIndustrialAndAgriculturalLoans' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansCommercialAndResidentialRealEstate' xlink:label='loc_InterestAndFeeIncomeLoansCommercialAndResidentialRealEstate' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansCommercialRealEstate' xlink:label='loc_InterestAndFeeIncomeLoansCommercialRealEstate' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansRealEstateConstruction' xlink:label='loc_InterestAndFeeIncomeLoansRealEstateConstruction' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansTradeFinancing' xlink:label='loc_InterestAndFeeIncomeLoansTradeFinancing' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansLeaseFinancing' xlink:label='loc_InterestAndFeeIncomeLoansLeaseFinancing' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansConsumer' xlink:label='loc_InterestAndFeeIncomeLoansConsumer' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansConsumerRealEstate' xlink:label='loc_InterestAndFeeIncomeLoansConsumerRealEstate' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansConsumerHomeEquity' xlink:label='loc_InterestAndFeeIncomeLoansConsumerHomeEquity' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansConsumerInstallmentAutomobilesMarineAndOtherVehicles' xlink:label='loc_InterestAndFeeIncomeLoansConsumerInstallmentAutomobilesMarineAndOtherVehicles' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansConsumerInstallmentCreditCard' xlink:label='loc_InterestAndFeeIncomeLoansConsumerInstallmentCreditCard' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansOtherConsumer' xlink:label='loc_InterestAndFeeIncomeLoansOtherConsumer' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AmortizationOfDeferredLoanOriginationFeesNet' xlink:label='loc_AmortizationOfDeferredLoanOriginationFeesNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansForeign' xlink:label='loc_InterestAndFeeIncomeLoansForeign' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeOtherLoans' xlink:label='loc_InterestAndFeeIncomeOtherLoans' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndDividendIncomeSecurities' xlink:label='loc_InterestAndDividendIncomeSecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestIncomeSecuritiesTaxable' xlink:label='loc_InterestIncomeSecuritiesTaxable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestIncomeSecuritiesTaxExempt' xlink:label='loc_InterestIncomeSecuritiesTaxExempt' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestIncomeSecuritiesTaxAdvantaged' xlink:label='loc_InterestIncomeSecuritiesTaxAdvantaged' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DividendIncomeOperating' xlink:label='loc_DividendIncomeOperating' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestIncomeFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell' xlink:label='loc_InterestIncomeFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestIncomeFederalFundsSold' xlink:label='loc_InterestIncomeFederalFundsSold' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestIncomeSecuritiesPurchasedUnderAgreementsToResell' xlink:label='loc_InterestIncomeSecuritiesPurchasedUnderAgreementsToResell' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestIncomeDepositsWithFinancialInstitutions' xlink:label='loc_InterestIncomeDepositsWithFinancialInstitutions' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestIncomeDomesticDeposits' xlink:label='loc_InterestIncomeDomesticDeposits' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestIncomeMoneyMarketDeposits' xlink:label='loc_InterestIncomeMoneyMarketDeposits' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestIncomeOtherDomesticDeposits' xlink:label='loc_InterestIncomeOtherDomesticDeposits' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestIncomeForeignDeposits' xlink:label='loc_InterestIncomeForeignDeposits' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestIncomeAndFeesBankersAcceptancesCertificatesOfDepositAndCommercialPaper' xlink:label='loc_InterestIncomeAndFeesBankersAcceptancesCertificatesOfDepositAndCommercialPaper' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestIncomePurchasedReceivables' xlink:label='loc_InterestIncomePurchasedReceivables' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_OtherInterestAndDividendIncome' xlink:label='loc_OtherInterestAndDividendIncome' xlink:type='locator' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndDividendIncomeOperating' xlink:to='loc_InterestAndFeeIncomeLoansAndLeases' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansAndLeases' xlink:to='loc_InterestAndFeeIncomeLoansAndLeasesHeldForSale' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansAndLeasesHeldForSale' xlink:to='loc_InterestAndFeeIncomeNonmortgageLoansAndLeasesHeldForSale' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansAndLeasesHeldForSale' xlink:to='loc_InterestAndFeeIncomeLoansHeldForSaleMortgages' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansAndLeasesHeldForSale' xlink:to='loc_InterestAndFeeIncomeOtherLoansHeldForSale' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansAndLeases' xlink:to='loc_InterestAndFeeIncomeLoansAndLeasesHeldInPortfolio' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansAndLeasesHeldInPortfolio' xlink:to='loc_InterestAndFeeIncomeLoansCommercial' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansCommercial' xlink:to='loc_InterestAndFeeIncomeLoansCommercialIndustrialAndAgriculturalLoans' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansCommercial' xlink:to='loc_InterestAndFeeIncomeLoansCommercialAndResidentialRealEstate' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansCommercial' xlink:to='loc_InterestAndFeeIncomeLoansCommercialRealEstate' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansCommercial' xlink:to='loc_InterestAndFeeIncomeLoansRealEstateConstruction' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansCommercial' xlink:to='loc_InterestAndFeeIncomeLoansTradeFinancing' xlink:type='arc' />
+<calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansCommercial' xlink:to='loc_InterestAndFeeIncomeLoansLeaseFinancing' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansAndLeasesHeldInPortfolio' xlink:to='loc_InterestAndFeeIncomeLoansConsumer' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansConsumer' xlink:to='loc_InterestAndFeeIncomeLoansConsumerRealEstate' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansConsumer' xlink:to='loc_InterestAndFeeIncomeLoansConsumerHomeEquity' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansConsumer' xlink:to='loc_InterestAndFeeIncomeLoansConsumerInstallmentAutomobilesMarineAndOtherVehicles' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansConsumer' xlink:to='loc_InterestAndFeeIncomeLoansConsumerInstallmentCreditCard' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansConsumer' xlink:to='loc_InterestAndFeeIncomeLoansOtherConsumer' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansAndLeasesHeldInPortfolio' xlink:to='loc_AmortizationOfDeferredLoanOriginationFeesNet' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansAndLeasesHeldInPortfolio' xlink:to='loc_InterestAndFeeIncomeLoansForeign' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndFeeIncomeLoansAndLeasesHeldInPortfolio' xlink:to='loc_InterestAndFeeIncomeOtherLoans' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndDividendIncomeOperating' xlink:to='loc_InterestAndDividendIncomeSecurities' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndDividendIncomeSecurities' xlink:to='loc_InterestIncomeSecuritiesTaxable' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndDividendIncomeSecurities' xlink:to='loc_InterestIncomeSecuritiesTaxExempt' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndDividendIncomeSecurities' xlink:to='loc_InterestIncomeSecuritiesTaxAdvantaged' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndDividendIncomeSecurities' xlink:to='loc_DividendIncomeOperating' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndDividendIncomeOperating' xlink:to='loc_InterestIncomeFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestIncomeFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell' xlink:to='loc_InterestIncomeFederalFundsSold' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestIncomeFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell' xlink:to='loc_InterestIncomeSecuritiesPurchasedUnderAgreementsToResell' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndDividendIncomeOperating' xlink:to='loc_InterestIncomeDepositsWithFinancialInstitutions' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestIncomeDepositsWithFinancialInstitutions' xlink:to='loc_InterestIncomeDomesticDeposits' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestIncomeDomesticDeposits' xlink:to='loc_InterestIncomeMoneyMarketDeposits' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestIncomeDomesticDeposits' xlink:to='loc_InterestIncomeOtherDomesticDeposits' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestIncomeDepositsWithFinancialInstitutions' xlink:to='loc_InterestIncomeForeignDeposits' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndDividendIncomeOperating' xlink:to='loc_InterestIncomeAndFeesBankersAcceptancesCertificatesOfDepositAndCommercialPaper' xlink:type='arc' />
+<calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndDividendIncomeOperating' xlink:to='loc_InterestIncomePurchasedReceivables' xlink:type='arc' />
+<calculationArc order='70' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndDividendIncomeOperating' xlink:to='loc_OtherInterestAndDividendIncome' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

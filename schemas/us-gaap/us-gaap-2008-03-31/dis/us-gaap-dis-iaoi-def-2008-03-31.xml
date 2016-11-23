@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/InvestmentsAllOtherInvestments' xlink:href='../elts/us-roles-2008-03-31.xsd#iaoi' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/all' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' xlink:type='simple' />
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsAllOtherInvestments' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfLifeSettlementContractsFairValueMethodTable' xlink:label='loc_ScheduleOfLifeSettlementContractsFairValueMethodTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LifeSettlementContractsFairValueMethodDisclosureItemsLineItems' xlink:label='loc_LifeSettlementContractsFairValueMethodDisclosureItemsLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfLifeSettlementContractsInvestmentMethodTable' xlink:label='loc_ScheduleOfLifeSettlementContractsInvestmentMethodTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LifeSettlementContractsInvestmentMethodDisclosureItemsLineItems' xlink:label='loc_LifeSettlementContractsInvestmentMethodDisclosureItemsLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_LifeSettlementContractsFairValueMethodDisclosureItemsLineItems' xlink:to='loc_ScheduleOfLifeSettlementContractsFairValueMethodTable' xlink:type='arc' />
+<link:definitionArc order='2.0' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_LifeSettlementContractsInvestmentMethodDisclosureItemsLineItems' xlink:to='loc_ScheduleOfLifeSettlementContractsInvestmentMethodTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsAllOtherInvestments' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfLifeSettlementContractsFairValueMethodTable' xlink:label='loc_ScheduleOfLifeSettlementContractsFairValueMethodTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfLifeSettlementContractsFairValueMethodFiveYearDisclosureAxis' xlink:label='loc_ScheduleOfLifeSettlementContractsFairValueMethodFiveYearDisclosureAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfLifeSettlementContractsInvestmentMethodTable' xlink:label='loc_ScheduleOfLifeSettlementContractsInvestmentMethodTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfLifeSettlementContractsInvestmentMethodFiveYearDisclosureAxis' xlink:label='loc_ScheduleOfLifeSettlementContractsInvestmentMethodFiveYearDisclosureAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ScheduleOfLifeSettlementContractsFairValueMethodTable' xlink:to='loc_ScheduleOfLifeSettlementContractsFairValueMethodFiveYearDisclosureAxis' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ScheduleOfLifeSettlementContractsInvestmentMethodTable' xlink:to='loc_ScheduleOfLifeSettlementContractsInvestmentMethodFiveYearDisclosureAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsAllOtherInvestments' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfLifeSettlementContractsFairValueMethodFiveYearDisclosureAxis' xlink:label='loc_ScheduleOfLifeSettlementContractsFairValueMethodFiveYearDisclosureAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_FiveYearDisclosureDomain' xlink:label='loc_FiveYearDisclosureDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfLifeSettlementContractsInvestmentMethodFiveYearDisclosureAxis' xlink:label='loc_ScheduleOfLifeSettlementContractsInvestmentMethodFiveYearDisclosureAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_ScheduleOfLifeSettlementContractsFairValueMethodFiveYearDisclosureAxis' xlink:to='loc_FiveYearDisclosureDomain' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_ScheduleOfLifeSettlementContractsInvestmentMethodFiveYearDisclosureAxis' xlink:to='loc_FiveYearDisclosureDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsAllOtherInvestments' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfLifeSettlementContractsFairValueMethodFiveYearDisclosureAxis' xlink:label='loc_ScheduleOfLifeSettlementContractsFairValueMethodFiveYearDisclosureAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_FiveYearDisclosureDomain' xlink:label='loc_FiveYearDisclosureDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfLifeSettlementContractsInvestmentMethodFiveYearDisclosureAxis' xlink:label='loc_ScheduleOfLifeSettlementContractsInvestmentMethodFiveYearDisclosureAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_ScheduleOfLifeSettlementContractsFairValueMethodFiveYearDisclosureAxis' xlink:to='loc_FiveYearDisclosureDomain' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_ScheduleOfLifeSettlementContractsInvestmentMethodFiveYearDisclosureAxis' xlink:to='loc_FiveYearDisclosureDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsAllOtherInvestments' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LifeSettlementContractsFairValueMethodDisclosureItemsLineItems' xlink:label='loc_LifeSettlementContractsFairValueMethodDisclosureItemsLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LifeSettlementContractsFairValueMethodNumberOfContracts' xlink:label='loc_LifeSettlementContractsFairValueMethodNumberOfContracts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LifeSettlementContractsFairValueMethodCarryingAmount' xlink:label='loc_LifeSettlementContractsFairValueMethodCarryingAmount' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LifeSettlementContractsFairValueMethodFaceValue' xlink:label='loc_LifeSettlementContractsFairValueMethodFaceValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LifeSettlementContractsInvestmentMethodDisclosureItemsLineItems' xlink:label='loc_LifeSettlementContractsInvestmentMethodDisclosureItemsLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LifeSettlementContractsInvestmentMethodNumberOfContracts' xlink:label='loc_LifeSettlementContractsInvestmentMethodNumberOfContracts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LifeSettlementContractsInvestmentMethodCarryingAmount' xlink:label='loc_LifeSettlementContractsInvestmentMethodCarryingAmount' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LifeSettlementContractsInvestmentMethodFaceValue' xlink:label='loc_LifeSettlementContractsInvestmentMethodFaceValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LifeSettlementContractsInvestmentMethodFiveYearDisclosurePremiumsToBePaid' xlink:label='loc_LifeSettlementContractsInvestmentMethodFiveYearDisclosurePremiumsToBePaid' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LifeSettlementContractsFairValueMethodDisclosureItemsLineItems' xlink:to='loc_LifeSettlementContractsFairValueMethodNumberOfContracts' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LifeSettlementContractsFairValueMethodDisclosureItemsLineItems' xlink:to='loc_LifeSettlementContractsFairValueMethodCarryingAmount' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LifeSettlementContractsFairValueMethodDisclosureItemsLineItems' xlink:to='loc_LifeSettlementContractsFairValueMethodFaceValue' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LifeSettlementContractsInvestmentMethodDisclosureItemsLineItems' xlink:to='loc_LifeSettlementContractsInvestmentMethodNumberOfContracts' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LifeSettlementContractsInvestmentMethodDisclosureItemsLineItems' xlink:to='loc_LifeSettlementContractsInvestmentMethodCarryingAmount' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LifeSettlementContractsInvestmentMethodDisclosureItemsLineItems' xlink:to='loc_LifeSettlementContractsInvestmentMethodFaceValue' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LifeSettlementContractsInvestmentMethodDisclosureItemsLineItems' xlink:to='loc_LifeSettlementContractsInvestmentMethodFiveYearDisclosurePremiumsToBePaid' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/InvestmentsAllOtherInvestments' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_FiveYearDisclosureDomain' xlink:label='loc_FiveYearDisclosureDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_OneYearFromBalanceSheetDateMember' xlink:label='loc_OneYearFromBalanceSheetDateMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MoreThanOneAndWithinTwoYearsFromBalanceSheetDateMember' xlink:label='loc_MoreThanOneAndWithinTwoYearsFromBalanceSheetDateMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MoreThanTwoAndWithinThreeYearsFromBalanceSheetDateMember' xlink:label='loc_MoreThanTwoAndWithinThreeYearsFromBalanceSheetDateMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MoreThanThreeAndWithinFourYearsFromBalanceSheetDateMember' xlink:label='loc_MoreThanThreeAndWithinFourYearsFromBalanceSheetDateMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MoreThanFourAndWithinFiveYearsFromBalanceSheetDateMember' xlink:label='loc_MoreThanFourAndWithinFiveYearsFromBalanceSheetDateMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MoreThanFiveYearsFromBalanceSheetDateAndThereafterMember' xlink:label='loc_MoreThanFiveYearsFromBalanceSheetDateAndThereafterMember' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_FiveYearDisclosureDomain' xlink:to='loc_OneYearFromBalanceSheetDateMember' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_FiveYearDisclosureDomain' xlink:to='loc_MoreThanOneAndWithinTwoYearsFromBalanceSheetDateMember' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_FiveYearDisclosureDomain' xlink:to='loc_MoreThanTwoAndWithinThreeYearsFromBalanceSheetDateMember' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_FiveYearDisclosureDomain' xlink:to='loc_MoreThanThreeAndWithinFourYearsFromBalanceSheetDateMember' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_FiveYearDisclosureDomain' xlink:to='loc_MoreThanFourAndWithinFiveYearsFromBalanceSheetDateMember' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_FiveYearDisclosureDomain' xlink:to='loc_MoreThanFiveYearsFromBalanceSheetDateAndThereafterMember' xlink:type='arc' />
+</link:definitionLink>
+</link:linkbase>

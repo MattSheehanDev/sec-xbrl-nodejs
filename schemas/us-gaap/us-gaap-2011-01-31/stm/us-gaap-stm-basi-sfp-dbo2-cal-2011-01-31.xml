@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2011.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/statement/StatementOfFinancialPositionUnclassified-DepositBasedOperationsSecondAlternate' xlink:href='../elts/us-roles-2011-01-31.xsd#sfp-dbo2' xlink:type='simple' />
+<calculationLink xlink:role='http://fasb.org/us-gaap/role/statement/StatementOfFinancialPositionUnclassified-DepositBasedOperationsSecondAlternate' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_Deposits' xlink:label='loc_Deposits' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_DepositsForeign' xlink:label='loc_DepositsForeign' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoninterestBearingDepositLiabilitiesForeign' xlink:label='loc_NoninterestBearingDepositLiabilitiesForeign' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_InterestBearingDepositLiabilitiesForeign' xlink:label='loc_InterestBearingDepositLiabilitiesForeign' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_DepositsDomestic' xlink:label='loc_DepositsDomestic' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoninterestBearingDepositLiabilitiesDomestic' xlink:label='loc_NoninterestBearingDepositLiabilitiesDomestic' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_InterestBearingDepositLiabilitiesDomestic' xlink:label='loc_InterestBearingDepositLiabilitiesDomestic' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_MarketableSecurities' xlink:label='loc_MarketableSecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_MarketableSecuritiesFixedMaturities' xlink:label='loc_MarketableSecuritiesFixedMaturities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_TradingSecuritiesDebt' xlink:label='loc_TradingSecuritiesDebt' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_AvailableForSaleSecuritiesDebtSecurities' xlink:label='loc_AvailableForSaleSecuritiesDebtSecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_MarketableSecuritiesEquitySecurities' xlink:label='loc_MarketableSecuritiesEquitySecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_TradingSecuritiesEquity' xlink:label='loc_TradingSecuritiesEquity' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_AvailableForSaleSecuritiesEquitySecurities' xlink:label='loc_AvailableForSaleSecuritiesEquitySecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_TradingSecuritiesOther' xlink:label='loc_TradingSecuritiesOther' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_HeldToMaturitySecurities' xlink:label='loc_HeldToMaturitySecurities' xlink:type='locator' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_Deposits' xlink:to='loc_DepositsForeign' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DepositsForeign' xlink:to='loc_NoninterestBearingDepositLiabilitiesForeign' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DepositsForeign' xlink:to='loc_InterestBearingDepositLiabilitiesForeign' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_Deposits' xlink:to='loc_DepositsDomestic' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DepositsDomestic' xlink:to='loc_NoninterestBearingDepositLiabilitiesDomestic' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DepositsDomestic' xlink:to='loc_InterestBearingDepositLiabilitiesDomestic' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecurities' xlink:to='loc_MarketableSecuritiesFixedMaturities' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecuritiesFixedMaturities' xlink:to='loc_TradingSecuritiesDebt' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecuritiesFixedMaturities' xlink:to='loc_AvailableForSaleSecuritiesDebtSecurities' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecurities' xlink:to='loc_MarketableSecuritiesEquitySecurities' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecuritiesEquitySecurities' xlink:to='loc_TradingSecuritiesEquity' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecuritiesEquitySecurities' xlink:to='loc_AvailableForSaleSecuritiesEquitySecurities' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecurities' xlink:to='loc_TradingSecuritiesOther' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MarketableSecurities' xlink:to='loc_HeldToMaturitySecurities' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

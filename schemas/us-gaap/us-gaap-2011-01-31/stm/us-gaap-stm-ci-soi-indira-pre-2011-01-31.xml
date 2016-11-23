@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2011.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/statement/StatementOfIncomeAlternateAggregations' xlink:href='../elts/us-roles-2011-01-31.xsd#soi-indira' xlink:type='simple' />
+<presentationLink xlink:role='http://fasb.org/us-gaap/role/statement/StatementOfIncomeAlternateAggregations' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_SupplementalIncomeStatementElementsAbstract' xlink:label='loc_SupplementalIncomeStatementElementsAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_CostsAndExpensesRelatedParty' xlink:label='loc_CostsAndExpensesRelatedParty' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_CostOfDomesticRegulatedGasRevenue' xlink:label='loc_CostOfDomesticRegulatedGasRevenue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_CostOfGoodsSoldExcludingDepreciationDepletionAndAmortization' xlink:label='loc_CostOfGoodsSoldExcludingDepreciationDepletionAndAmortization' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_CostOfMerchandiseSalesBuyingAndOccupancyCosts' xlink:label='loc_CostOfMerchandiseSalesBuyingAndOccupancyCosts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_CostOfServicesExcludingDepreciationDepletionAndAmortization' xlink:label='loc_CostOfServicesExcludingDepreciationDepletionAndAmortization' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_CostOfServicesOilAndGas' xlink:label='loc_CostOfServicesOilAndGas' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_FeesAndCommissionsMortgageBankingAndServicing' xlink:label='loc_FeesAndCommissionsMortgageBankingAndServicing' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_LossesGainsOnSalesOfAssetsAndAssetImpairmentCharges' xlink:label='loc_LossesGainsOnSalesOfAssetsAndAssetImpairmentCharges' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoninterestExpenseDistributionAndServicingFees' xlink:label='loc_NoninterestExpenseDistributionAndServicingFees' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_UtilitiesOperatingExpenseMaintenanceOperationsAndOtherCostsAndExpenses' xlink:label='loc_UtilitiesOperatingExpenseMaintenanceOperationsAndOtherCostsAndExpenses' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_GoodwillAndIntangibleAssetImpairmentAbstract' xlink:label='loc_GoodwillAndIntangibleAssetImpairmentAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_GoodwillImpairmentLoss' xlink:label='loc_GoodwillImpairmentLoss' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_ImpairmentOfIntangibleAssetsIndefinitelivedExcludingGoodwill' xlink:label='loc_ImpairmentOfIntangibleAssetsIndefinitelivedExcludingGoodwill' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_GoodwillAndIntangibleAssetImpairment' xlink:label='loc_GoodwillAndIntangibleAssetImpairment' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_OtherOperatingIncomeExpenseNet' xlink:label='loc_OtherOperatingIncomeExpenseNet' xlink:type='locator' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_SupplementalIncomeStatementElementsAbstract' xlink:to='loc_CostsAndExpensesRelatedParty' xlink:type='arc' />
+<presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_SupplementalIncomeStatementElementsAbstract' xlink:to='loc_CostOfDomesticRegulatedGasRevenue' xlink:type='arc' />
+<presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_SupplementalIncomeStatementElementsAbstract' xlink:to='loc_CostOfGoodsSoldExcludingDepreciationDepletionAndAmortization' xlink:type='arc' />
+<presentationArc order='40' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_SupplementalIncomeStatementElementsAbstract' xlink:to='loc_CostOfMerchandiseSalesBuyingAndOccupancyCosts' xlink:type='arc' />
+<presentationArc order='50' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_SupplementalIncomeStatementElementsAbstract' xlink:to='loc_CostOfServicesExcludingDepreciationDepletionAndAmortization' xlink:type='arc' />
+<presentationArc order='60' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_SupplementalIncomeStatementElementsAbstract' xlink:to='loc_CostOfServicesOilAndGas' xlink:type='arc' />
+<presentationArc order='70' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_SupplementalIncomeStatementElementsAbstract' xlink:to='loc_FeesAndCommissionsMortgageBankingAndServicing' xlink:type='arc' />
+<presentationArc order='80' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_SupplementalIncomeStatementElementsAbstract' xlink:to='loc_LossesGainsOnSalesOfAssetsAndAssetImpairmentCharges' xlink:type='arc' />
+<presentationArc order='90' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_SupplementalIncomeStatementElementsAbstract' xlink:to='loc_NoninterestExpenseDistributionAndServicingFees' xlink:type='arc' />
+<presentationArc order='100' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_SupplementalIncomeStatementElementsAbstract' xlink:to='loc_UtilitiesOperatingExpenseMaintenanceOperationsAndOtherCostsAndExpenses' xlink:type='arc' />
+<presentationArc order='110' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_SupplementalIncomeStatementElementsAbstract' xlink:to='loc_GoodwillAndIntangibleAssetImpairmentAbstract' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_GoodwillAndIntangibleAssetImpairmentAbstract' xlink:to='loc_GoodwillImpairmentLoss' xlink:type='arc' />
+<presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_GoodwillAndIntangibleAssetImpairmentAbstract' xlink:to='loc_ImpairmentOfIntangibleAssetsIndefinitelivedExcludingGoodwill' xlink:type='arc' />
+<presentationArc order='30' preferredLabel='http://www.xbrl.org/2003/role/totalLabel' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_GoodwillAndIntangibleAssetImpairmentAbstract' xlink:to='loc_GoodwillAndIntangibleAssetImpairment' xlink:type='arc' />
+<presentationArc order='120' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_SupplementalIncomeStatementElementsAbstract' xlink:to='loc_OtherOperatingIncomeExpenseNet' xlink:type='arc' />
+</presentationLink>
+</link:linkbase>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/MinorityInterest' xlink:href='../elts/us-roles-2008-03-31.xsd#mi' xlink:type='simple' />
+<presentationLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/MinorityInterest' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestDisclosureTextBlock' xlink:label='loc_MinorityInterestDisclosureTextBlock' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestTable' xlink:label='loc_MinorityInterestTable' xlink:type='locator' />
+<link:loc xlink:href='../non-gaap/dei-2008-03-31.xsd#dei_LegalEntityAxis' xlink:label='loc_LegalEntityAxis' xlink:type='locator' />
+<link:loc xlink:href='../non-gaap/dei-2008-03-31.xsd#dei_EntityDomain' xlink:label='loc_EntityDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_SubsidiariesMember' xlink:label='loc_SubsidiariesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestLineItems' xlink:label='loc_MinorityInterestLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestDescription' xlink:label='loc_MinorityInterestDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestOwnershipPercentageByParent' xlink:label='loc_MinorityInterestOwnershipPercentageByParent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestPreferredStockAmount' xlink:label='loc_MinorityInterestPreferredStockAmount' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestOwnershipPercentageByNoncontrollingOwners' xlink:label='loc_MinorityInterestOwnershipPercentageByNoncontrollingOwners' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MovementInMinorityInterestRollForward' xlink:label='loc_MovementInMinorityInterestRollForward' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterest' xlink:label='loc_MinorityInterest_1' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterest' xlink:label='loc_MinorityInterest' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestIncreaseFromStockIssuance' xlink:label='loc_MinorityInterestIncreaseFromStockIssuance' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestInNetIncomeLossOfConsolidatedEntitiesAbstract' xlink:label='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntitiesAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestInNetIncomeLossJointVenturePartners' xlink:label='loc_MinorityInterestInNetIncomeLossJointVenturePartners' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestInNetIncomeLossPreferredUnitHolders' xlink:label='loc_MinorityInterestInNetIncomeLossPreferredUnitHolders' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestInNetIncomeLossLimitedPartnerships' xlink:label='loc_MinorityInterestInNetIncomeLossLimitedPartnerships' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestInNetIncomeLossOperatingPartnerships' xlink:label='loc_MinorityInterestInNetIncomeLossOperatingPartnerships' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestInNetIncomeLossOtherMinorityInterests' xlink:label='loc_MinorityInterestInNetIncomeLossOtherMinorityInterests' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestInNetIncomeLossOfConsolidatedEntities' xlink:label='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestDecreaseFromDistributionsToNoncontrollingInterestHolders' xlink:label='loc_MinorityInterestDecreaseFromDistributionsToNoncontrollingInterestHolders' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestDecreaseFromRedemptions' xlink:label='loc_MinorityInterestDecreaseFromRedemptions' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestPeriodIncreaseDecrease' xlink:label='loc_MinorityInterestPeriodIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestChangeInRedemptionValue' xlink:label='loc_MinorityInterestChangeInRedemptionValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestExplanationOfIncreaseDecrease' xlink:label='loc_MinorityInterestExplanationOfIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestRepresentedByPreferredStockAbstract' xlink:label='loc_MinorityInterestRepresentedByPreferredStockAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestPreferredStockDescription' xlink:label='loc_MinorityInterestPreferredStockDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestAmountRepresentedByPreferredStock' xlink:label='loc_MinorityInterestAmountRepresentedByPreferredStock' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestDividendRequirementsOfPreferredStock' xlink:label='loc_MinorityInterestDividendRequirementsOfPreferredStock' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestLocationOnBalanceSheet' xlink:label='loc_MinorityInterestLocationOnBalanceSheet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestLocationOnIncomeStatement' xlink:label='loc_MinorityInterestLocationOnIncomeStatement' xlink:type='locator' />
+<presentationArc order='10' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestDisclosureTextBlock' xlink:to='loc_MinorityInterestTable' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestTable' xlink:to='loc_LegalEntityAxis' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_LegalEntityAxis' xlink:to='loc_EntityDomain' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_EntityDomain' xlink:to='loc_SubsidiariesMember' xlink:type='arc' />
+<presentationArc order='20' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestTable' xlink:to='loc_MinorityInterestLineItems' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestLineItems' xlink:to='loc_MinorityInterestDescription' xlink:type='arc' />
+<presentationArc order='20' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestLineItems' xlink:to='loc_MinorityInterestOwnershipPercentageByParent' xlink:type='arc' />
+<presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestLineItems' xlink:to='loc_MinorityInterestPreferredStockAmount' xlink:type='arc' />
+<presentationArc order='40' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestLineItems' xlink:to='loc_MinorityInterestOwnershipPercentageByNoncontrollingOwners' xlink:type='arc' />
+<presentationArc order='50' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestLineItems' xlink:to='loc_MovementInMinorityInterestRollForward' xlink:type='arc' />
+<presentationArc order='10' preferredLabel='http://www.xbrl.org/2003/role/periodStartLabel' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MovementInMinorityInterestRollForward' xlink:to='loc_MinorityInterest' xlink:type='arc' />
+<presentationArc order='20' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MovementInMinorityInterestRollForward' xlink:to='loc_MinorityInterestIncreaseFromStockIssuance' xlink:type='arc' />
+<presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MovementInMinorityInterestRollForward' xlink:to='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntitiesAbstract' xlink:type='arc' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntitiesAbstract' xlink:to='loc_MinorityInterestInNetIncomeLossJointVenturePartners' xlink:type='arc' />
+<presentationArc order='20' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntitiesAbstract' xlink:to='loc_MinorityInterestInNetIncomeLossPreferredUnitHolders' xlink:type='arc' />
+<presentationArc order='30' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntitiesAbstract' xlink:to='loc_MinorityInterestInNetIncomeLossLimitedPartnerships' xlink:type='arc' />
+<presentationArc order='40' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntitiesAbstract' xlink:to='loc_MinorityInterestInNetIncomeLossOperatingPartnerships' xlink:type='arc' />
+<presentationArc order='50' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntitiesAbstract' xlink:to='loc_MinorityInterestInNetIncomeLossOtherMinorityInterests' xlink:type='arc' />
+<presentationArc order='60' preferredLabel='http://www.xbrl.org/2003/role/totalLabel' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntitiesAbstract' xlink:to='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntities' xlink:type='arc' />
+<presentationArc order='40' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MovementInMinorityInterestRollForward' xlink:to='loc_MinorityInterestDecreaseFromDistributionsToNoncontrollingInterestHolders' xlink:type='arc' />
+<presentationArc order='50' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MovementInMinorityInterestRollForward' xlink:to='loc_MinorityInterestDecreaseFromRedemptions' xlink:type='arc' />
+<presentationArc order='60' preferredLabel='http://www.xbrl.org/2003/role/totalLabel' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MovementInMinorityInterestRollForward' xlink:to='loc_MinorityInterestPeriodIncreaseDecrease' xlink:type='arc' />
+<presentationArc order='70' preferredLabel='http://www.xbrl.org/2003/role/periodEndLabel' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MovementInMinorityInterestRollForward' xlink:to='loc_MinorityInterest_1' xlink:type='arc' />
+<presentationArc order='60' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestLineItems' xlink:to='loc_MinorityInterestChangeInRedemptionValue' xlink:type='arc' />
+<presentationArc order='70' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestLineItems' xlink:to='loc_MinorityInterestExplanationOfIncreaseDecrease' xlink:type='arc' />
+<presentationArc order='80' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestLineItems' xlink:to='loc_MinorityInterestRepresentedByPreferredStockAbstract' xlink:type='arc' />
+<presentationArc order='10' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestRepresentedByPreferredStockAbstract' xlink:to='loc_MinorityInterestPreferredStockDescription' xlink:type='arc' />
+<presentationArc order='20' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestRepresentedByPreferredStockAbstract' xlink:to='loc_MinorityInterestAmountRepresentedByPreferredStock' xlink:type='arc' />
+<presentationArc order='30' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestRepresentedByPreferredStockAbstract' xlink:to='loc_MinorityInterestDividendRequirementsOfPreferredStock' xlink:type='arc' />
+<presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestDisclosureTextBlock' xlink:to='loc_MinorityInterestLocationOnBalanceSheet' xlink:type='arc' />
+<presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_MinorityInterestDisclosureTextBlock' xlink:to='loc_MinorityInterestLocationOnIncomeStatement' xlink:type='arc' />
+</presentationLink>
+</link:linkbase>

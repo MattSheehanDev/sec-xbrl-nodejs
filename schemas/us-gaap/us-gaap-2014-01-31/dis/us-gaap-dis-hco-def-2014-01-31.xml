@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2014.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsScheduleOfRevenueSourcesHealthCareOrganizationTable' xlink:href='../elts/us-roles-2014-01-31.xsd#HealthCareOrganizationsScheduleOfRevenueSourcesHealthCareOrganizationTable' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/all' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' xlink:type='simple' />
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsScheduleOfMalpracticeInsuranceTable' xlink:href='../elts/us-roles-2014-01-31.xsd#HealthCareOrganizationsScheduleOfMalpracticeInsuranceTable' xlink:type='simple' />
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsHealthCareTrustFundTable' xlink:href='../elts/us-roles-2014-01-31.xsd#HealthCareOrganizationsHealthCareTrustFundTable' xlink:type='simple' />
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsHealthCareTrustFundTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareTrustFundLineItems' xlink:label='loc_HealthCareTrustFundLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareTrustFundTable' xlink:label='loc_HealthCareTrustFundTable' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_HealthCareTrustFundLineItems' xlink:to='loc_HealthCareTrustFundTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsHealthCareTrustFundTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareTrustFundAxis' xlink:label='loc_HealthCareTrustFundAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareTrustFundNameDomain' xlink:label='loc_HealthCareTrustFundNameDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_HealthCareTrustFundAxis' xlink:to='loc_HealthCareTrustFundNameDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsHealthCareTrustFundTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareTrustFundAxis' xlink:label='loc_HealthCareTrustFundAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareTrustFundNameDomain' xlink:label='loc_HealthCareTrustFundNameDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_HealthCareTrustFundAxis' xlink:to='loc_HealthCareTrustFundNameDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsHealthCareTrustFundTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareTrustFundLineItems' xlink:label='loc_HealthCareTrustFundLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareTrustFundDescription' xlink:label='loc_HealthCareTrustFundDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareTrustFundAssetsLimitedAsToUseCurrent' xlink:label='loc_HealthCareTrustFundAssetsLimitedAsToUseCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareTrustFundAssetsLimitedAsToUseNoncurrent' xlink:label='loc_HealthCareTrustFundAssetsLimitedAsToUseNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareTrustFundInterestIncome' xlink:label='loc_HealthCareTrustFundInterestIncome' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareTrustFundInvestmentGainsLossesNet' xlink:label='loc_HealthCareTrustFundInvestmentGainsLossesNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareTrustFundAdministrativeExpense' xlink:label='loc_HealthCareTrustFundAdministrativeExpense' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareTrustFundLineItems' xlink:to='loc_HealthCareTrustFundDescription' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareTrustFundLineItems' xlink:to='loc_HealthCareTrustFundAssetsLimitedAsToUseCurrent' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareTrustFundLineItems' xlink:to='loc_HealthCareTrustFundAssetsLimitedAsToUseNoncurrent' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareTrustFundLineItems' xlink:to='loc_HealthCareTrustFundInterestIncome' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareTrustFundLineItems' xlink:to='loc_HealthCareTrustFundInvestmentGainsLossesNet' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareTrustFundLineItems' xlink:to='loc_HealthCareTrustFundAdministrativeExpense' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsHealthCareTrustFundTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareTrustFundTable' xlink:label='loc_HealthCareTrustFundTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareTrustFundAxis' xlink:label='loc_HealthCareTrustFundAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_HealthCareTrustFundTable' xlink:to='loc_HealthCareTrustFundAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsScheduleOfMalpracticeInsuranceTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceLineItems' xlink:label='loc_MalpracticeInsuranceLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ScheduleOfMalpracticeInsuranceTable' xlink:label='loc_ScheduleOfMalpracticeInsuranceTable' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_MalpracticeInsuranceLineItems' xlink:to='loc_ScheduleOfMalpracticeInsuranceTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsScheduleOfMalpracticeInsuranceTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ScheduleOfMalpracticeInsuranceTypeAndTierIdentifierAxis' xlink:label='loc_ScheduleOfMalpracticeInsuranceTypeAndTierIdentifierAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_TypeAndTierIdentifierDomain' xlink:label='loc_TypeAndTierIdentifierDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_ScheduleOfMalpracticeInsuranceTypeAndTierIdentifierAxis' xlink:to='loc_TypeAndTierIdentifierDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsScheduleOfMalpracticeInsuranceTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ScheduleOfMalpracticeInsuranceTypeAndTierIdentifierAxis' xlink:label='loc_ScheduleOfMalpracticeInsuranceTypeAndTierIdentifierAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_TypeAndTierIdentifierDomain' xlink:label='loc_TypeAndTierIdentifierDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_ScheduleOfMalpracticeInsuranceTypeAndTierIdentifierAxis' xlink:to='loc_TypeAndTierIdentifierDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsScheduleOfMalpracticeInsuranceTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceLineItems' xlink:label='loc_MalpracticeInsuranceLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceOccurrenceOrClaimsMade' xlink:label='loc_MalpracticeInsuranceOccurrenceOrClaimsMade' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceRetrospectivelyRated' xlink:label='loc_MalpracticeInsuranceRetrospectivelyRated' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceTailCoverage' xlink:label='loc_MalpracticeInsuranceTailCoverage' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceCoverageFloor' xlink:label='loc_MalpracticeInsuranceCoverageFloor' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceAnnualCoverageLimit' xlink:label='loc_MalpracticeInsuranceAnnualCoverageLimit' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceMaximumCoveragePerIncident' xlink:label='loc_MalpracticeInsuranceMaximumCoveragePerIncident' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceDeductible1' xlink:label='loc_MalpracticeInsuranceDeductible1' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceSelfInsuredStatus' xlink:label='loc_MalpracticeInsuranceSelfInsuredStatus' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceThirdPartyCoverage' xlink:label='loc_MalpracticeInsuranceThirdPartyCoverage' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceThirdPartyInsuranceCompany' xlink:label='loc_MalpracticeInsuranceThirdPartyInsuranceCompany' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceEntityRating' xlink:label='loc_MalpracticeInsuranceEntityRating' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceOwnershipInCaptiveInsurer' xlink:label='loc_MalpracticeInsuranceOwnershipInCaptiveInsurer' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceNameOfCaptiveInsurer' xlink:label='loc_MalpracticeInsuranceNameOfCaptiveInsurer' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsuranceCountryOfCaptiveInsurer' xlink:label='loc_MalpracticeInsuranceCountryOfCaptiveInsurer' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsurancePercentageOfOwnershipInCaptiveInsurer' xlink:label='loc_MalpracticeInsurancePercentageOfOwnershipInCaptiveInsurer' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MalpracticeInsurancePercentageOfPremiumsPaidToCaptiveInsurer' xlink:label='loc_MalpracticeInsurancePercentageOfPremiumsPaidToCaptiveInsurer' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_TypeAndTierIdentifierDomain' xlink:label='loc_TypeAndTierIdentifierDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ProfessionalMalpracticeLiabilityMember' xlink:label='loc_ProfessionalMalpracticeLiabilityMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DirectorsAndOfficersLiabilityInsuranceMember' xlink:label='loc_DirectorsAndOfficersLiabilityInsuranceMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_GeneralLiabilityMember' xlink:label='loc_GeneralLiabilityMember' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceLineItems' xlink:to='loc_MalpracticeInsuranceOccurrenceOrClaimsMade' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceLineItems' xlink:to='loc_MalpracticeInsuranceRetrospectivelyRated' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceLineItems' xlink:to='loc_MalpracticeInsuranceTailCoverage' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceLineItems' xlink:to='loc_MalpracticeInsuranceCoverageFloor' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceLineItems' xlink:to='loc_MalpracticeInsuranceAnnualCoverageLimit' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceLineItems' xlink:to='loc_MalpracticeInsuranceMaximumCoveragePerIncident' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceLineItems' xlink:to='loc_MalpracticeInsuranceDeductible1' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceLineItems' xlink:to='loc_MalpracticeInsuranceSelfInsuredStatus' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceLineItems' xlink:to='loc_MalpracticeInsuranceThirdPartyCoverage' xlink:type='arc' />
+<link:definitionArc order='10.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceThirdPartyCoverage' xlink:to='loc_MalpracticeInsuranceThirdPartyInsuranceCompany' xlink:type='arc' />
+<link:definitionArc order='11.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceThirdPartyCoverage' xlink:to='loc_MalpracticeInsuranceEntityRating' xlink:type='arc' />
+<link:definitionArc order='12.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceLineItems' xlink:to='loc_MalpracticeInsuranceOwnershipInCaptiveInsurer' xlink:type='arc' />
+<link:definitionArc order='13.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceOwnershipInCaptiveInsurer' xlink:to='loc_MalpracticeInsuranceNameOfCaptiveInsurer' xlink:type='arc' />
+<link:definitionArc order='14.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceOwnershipInCaptiveInsurer' xlink:to='loc_MalpracticeInsuranceCountryOfCaptiveInsurer' xlink:type='arc' />
+<link:definitionArc order='15.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceOwnershipInCaptiveInsurer' xlink:to='loc_MalpracticeInsurancePercentageOfOwnershipInCaptiveInsurer' xlink:type='arc' />
+<link:definitionArc order='16.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MalpracticeInsuranceOwnershipInCaptiveInsurer' xlink:to='loc_MalpracticeInsurancePercentageOfPremiumsPaidToCaptiveInsurer' xlink:type='arc' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TypeAndTierIdentifierDomain' xlink:to='loc_ProfessionalMalpracticeLiabilityMember' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TypeAndTierIdentifierDomain' xlink:to='loc_DirectorsAndOfficersLiabilityInsuranceMember' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TypeAndTierIdentifierDomain' xlink:to='loc_GeneralLiabilityMember' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsScheduleOfMalpracticeInsuranceTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ScheduleOfMalpracticeInsuranceTable' xlink:label='loc_ScheduleOfMalpracticeInsuranceTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ScheduleOfMalpracticeInsuranceTypeAndTierIdentifierAxis' xlink:label='loc_ScheduleOfMalpracticeInsuranceTypeAndTierIdentifierAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ScheduleOfMalpracticeInsuranceTable' xlink:to='loc_ScheduleOfMalpracticeInsuranceTypeAndTierIdentifierAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsScheduleOfRevenueSourcesHealthCareOrganizationTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareOrganizationReceivableAndRevenueDisclosuresLineItems' xlink:label='loc_HealthCareOrganizationReceivableAndRevenueDisclosuresLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ScheduleOfRevenueSourcesHealthCareOrganizationTable' xlink:label='loc_ScheduleOfRevenueSourcesHealthCareOrganizationTable' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_HealthCareOrganizationReceivableAndRevenueDisclosuresLineItems' xlink:to='loc_ScheduleOfRevenueSourcesHealthCareOrganizationTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsScheduleOfRevenueSourcesHealthCareOrganizationTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareOrganizationRevenueSourcesAxis' xlink:label='loc_HealthCareOrganizationRevenueSourcesAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareOrganizationRevenueSourcesDomain' xlink:label='loc_HealthCareOrganizationRevenueSourcesDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_HealthCareOrganizationRevenueSourcesAxis' xlink:to='loc_HealthCareOrganizationRevenueSourcesDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsScheduleOfRevenueSourcesHealthCareOrganizationTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareOrganizationRevenueSourcesAxis' xlink:label='loc_HealthCareOrganizationRevenueSourcesAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareOrganizationRevenueSourcesDomain' xlink:label='loc_HealthCareOrganizationRevenueSourcesDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_HealthCareOrganizationRevenueSourcesAxis' xlink:to='loc_HealthCareOrganizationRevenueSourcesDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsScheduleOfRevenueSourcesHealthCareOrganizationTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareOrganizationReceivableAndRevenueDisclosuresLineItems' xlink:label='loc_HealthCareOrganizationReceivableAndRevenueDisclosuresLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareOrganizationPatientServiceRevenue' xlink:label='loc_HealthCareOrganizationPatientServiceRevenue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_AllowanceForDoubtfulAccountsReceivableWriteOffs' xlink:label='loc_AllowanceForDoubtfulAccountsReceivableWriteOffs' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareOrganizationAllowanceForDoubtfulAccountsPercentageOfAccountsReceivable' xlink:label='loc_HealthCareOrganizationAllowanceForDoubtfulAccountsPercentageOfAccountsReceivable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareOrganizationQualitativeFactors' xlink:label='loc_HealthCareOrganizationQualitativeFactors' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareOrganizationSignificantChangesInEstimates' xlink:label='loc_HealthCareOrganizationSignificantChangesInEstimates' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareOrganizationSignificantChangesInUnderlyingAssumptionsforAllowanceforDoubtfulAccounts' xlink:label='loc_HealthCareOrganizationSignificantChangesInUnderlyingAssumptionsforAllowanceforDoubtfulAccounts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareOrganizationUnusualTransactionsImpactingAllowanceForDoubtfulAccounts' xlink:label='loc_HealthCareOrganizationUnusualTransactionsImpactingAllowanceForDoubtfulAccounts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareOrganizationUnusualTransactionsImpactingAllowanceForDoubtfulAccountsDescription' xlink:label='loc_HealthCareOrganizationUnusualTransactionsImpactingAllowanceForDoubtfulAccountsDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareOrganizationRevenueSourcesDomain' xlink:label='loc_HealthCareOrganizationRevenueSourcesDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ThirdPartyPayorMember' xlink:label='loc_ThirdPartyPayorMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_SelfPayMember' xlink:label='loc_SelfPayMember' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareOrganizationReceivableAndRevenueDisclosuresLineItems' xlink:to='loc_HealthCareOrganizationPatientServiceRevenue' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareOrganizationReceivableAndRevenueDisclosuresLineItems' xlink:to='loc_AllowanceForDoubtfulAccountsReceivableWriteOffs' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareOrganizationReceivableAndRevenueDisclosuresLineItems' xlink:to='loc_HealthCareOrganizationAllowanceForDoubtfulAccountsPercentageOfAccountsReceivable' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareOrganizationReceivableAndRevenueDisclosuresLineItems' xlink:to='loc_HealthCareOrganizationQualitativeFactors' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareOrganizationReceivableAndRevenueDisclosuresLineItems' xlink:to='loc_HealthCareOrganizationSignificantChangesInEstimates' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareOrganizationReceivableAndRevenueDisclosuresLineItems' xlink:to='loc_HealthCareOrganizationSignificantChangesInUnderlyingAssumptionsforAllowanceforDoubtfulAccounts' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareOrganizationReceivableAndRevenueDisclosuresLineItems' xlink:to='loc_HealthCareOrganizationUnusualTransactionsImpactingAllowanceForDoubtfulAccounts' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareOrganizationReceivableAndRevenueDisclosuresLineItems' xlink:to='loc_HealthCareOrganizationUnusualTransactionsImpactingAllowanceForDoubtfulAccountsDescription' xlink:type='arc' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareOrganizationRevenueSourcesDomain' xlink:to='loc_ThirdPartyPayorMember' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_HealthCareOrganizationRevenueSourcesDomain' xlink:to='loc_SelfPayMember' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/HealthCareOrganizationsScheduleOfRevenueSourcesHealthCareOrganizationTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ScheduleOfRevenueSourcesHealthCareOrganizationTable' xlink:label='loc_ScheduleOfRevenueSourcesHealthCareOrganizationTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HealthCareOrganizationRevenueSourcesAxis' xlink:label='loc_HealthCareOrganizationRevenueSourcesAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ScheduleOfRevenueSourcesHealthCareOrganizationTable' xlink:to='loc_HealthCareOrganizationRevenueSourcesAxis' xlink:type='arc' />
+</link:definitionLink>
+</link:linkbase>

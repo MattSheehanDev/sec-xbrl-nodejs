@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  -->
+<linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/document/Currency' xlink:href='../elts/us-roles-2009-01-31.xsd#currency' xlink:type='simple' />
+<link:presentationLink xlink:role='http://xbrl.us/us-gaap/role/document/Currency' xlink:type='extended'>
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_AllCurrenciesDomain' xlink:label='loc_AllCurrenciesDomain' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_AED' xlink:label='loc_AED' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_AFN' xlink:label='loc_AFN' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_ALL' xlink:label='loc_ALL' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_AMD' xlink:label='loc_AMD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_ANG' xlink:label='loc_ANG' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_AOA' xlink:label='loc_AOA' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_ARS' xlink:label='loc_ARS' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_AUD' xlink:label='loc_AUD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_AWG' xlink:label='loc_AWG' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_AZN' xlink:label='loc_AZN' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_BAM' xlink:label='loc_BAM' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_BBD' xlink:label='loc_BBD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_BDT' xlink:label='loc_BDT' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_BGN' xlink:label='loc_BGN' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_BHD' xlink:label='loc_BHD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_BIF' xlink:label='loc_BIF' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_BMD' xlink:label='loc_BMD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_BND' xlink:label='loc_BND' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_BOB' xlink:label='loc_BOB' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_BRL' xlink:label='loc_BRL' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_BSD' xlink:label='loc_BSD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_BTN' xlink:label='loc_BTN' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_BWP' xlink:label='loc_BWP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_BYR' xlink:label='loc_BYR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_BZD' xlink:label='loc_BZD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_CAD' xlink:label='loc_CAD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_CDF' xlink:label='loc_CDF' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_CHF' xlink:label='loc_CHF' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_CLP' xlink:label='loc_CLP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_CNY' xlink:label='loc_CNY' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_COP' xlink:label='loc_COP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_CRC' xlink:label='loc_CRC' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_RSD' xlink:label='loc_RSD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_CUP' xlink:label='loc_CUP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_CVE' xlink:label='loc_CVE' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_CYP' xlink:label='loc_CYP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_CZK' xlink:label='loc_CZK' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_DJF' xlink:label='loc_DJF' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_DKK' xlink:label='loc_DKK' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_DOP' xlink:label='loc_DOP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_DZD' xlink:label='loc_DZD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_EEK' xlink:label='loc_EEK' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_EGP' xlink:label='loc_EGP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_ERN' xlink:label='loc_ERN' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_ETB' xlink:label='loc_ETB' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_EUR' xlink:label='loc_EUR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_FJD' xlink:label='loc_FJD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_FKP' xlink:label='loc_FKP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_GBP' xlink:label='loc_GBP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_GEL' xlink:label='loc_GEL' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_GGP' xlink:label='loc_GGP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_GHC' xlink:label='loc_GHC' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_GIP' xlink:label='loc_GIP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_GMD' xlink:label='loc_GMD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_GNF' xlink:label='loc_GNF' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_GTQ' xlink:label='loc_GTQ' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_GYD' xlink:label='loc_GYD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_HKD' xlink:label='loc_HKD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_HNL' xlink:label='loc_HNL' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_HRK' xlink:label='loc_HRK' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_HTG' xlink:label='loc_HTG' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_HUF' xlink:label='loc_HUF' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_IDR' xlink:label='loc_IDR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_ILS' xlink:label='loc_ILS' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_IMP' xlink:label='loc_IMP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_INR' xlink:label='loc_INR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_IQD' xlink:label='loc_IQD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_IRR' xlink:label='loc_IRR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_ISK' xlink:label='loc_ISK' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_JEP' xlink:label='loc_JEP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_JMD' xlink:label='loc_JMD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_JOD' xlink:label='loc_JOD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_JPY' xlink:label='loc_JPY' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_KES' xlink:label='loc_KES' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_KGS' xlink:label='loc_KGS' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_KHR' xlink:label='loc_KHR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_KMF' xlink:label='loc_KMF' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_KPW' xlink:label='loc_KPW' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_KRW' xlink:label='loc_KRW' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_KWD' xlink:label='loc_KWD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_KYD' xlink:label='loc_KYD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_KZT' xlink:label='loc_KZT' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_LAK' xlink:label='loc_LAK' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_LBP' xlink:label='loc_LBP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_LKR' xlink:label='loc_LKR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_LRD' xlink:label='loc_LRD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_LSL' xlink:label='loc_LSL' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_LTL' xlink:label='loc_LTL' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_LVL' xlink:label='loc_LVL' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_LYD' xlink:label='loc_LYD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_MAD' xlink:label='loc_MAD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_MDL' xlink:label='loc_MDL' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_MGA' xlink:label='loc_MGA' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_MKD' xlink:label='loc_MKD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_MMK' xlink:label='loc_MMK' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_MNT' xlink:label='loc_MNT' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_MOP' xlink:label='loc_MOP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_MRO' xlink:label='loc_MRO' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_MTL' xlink:label='loc_MTL' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_MUR' xlink:label='loc_MUR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_MVR' xlink:label='loc_MVR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_MWK' xlink:label='loc_MWK' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_MXN' xlink:label='loc_MXN' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_MYR' xlink:label='loc_MYR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_MZN' xlink:label='loc_MZN' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_NAD' xlink:label='loc_NAD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_NGN' xlink:label='loc_NGN' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_NIO' xlink:label='loc_NIO' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_NOK' xlink:label='loc_NOK' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_NPR' xlink:label='loc_NPR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_NZD' xlink:label='loc_NZD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_OMR' xlink:label='loc_OMR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_PAB' xlink:label='loc_PAB' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_PEN' xlink:label='loc_PEN' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_PGK' xlink:label='loc_PGK' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_PHP' xlink:label='loc_PHP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_PKR' xlink:label='loc_PKR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_PLN' xlink:label='loc_PLN' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_PYG' xlink:label='loc_PYG' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_QAR' xlink:label='loc_QAR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_RON' xlink:label='loc_RON' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_RUB' xlink:label='loc_RUB' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_RWF' xlink:label='loc_RWF' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_SAR' xlink:label='loc_SAR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_SBD' xlink:label='loc_SBD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_SCR' xlink:label='loc_SCR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_SDG' xlink:label='loc_SDG' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_SEK' xlink:label='loc_SEK' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_SGD' xlink:label='loc_SGD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_SHP' xlink:label='loc_SHP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_SKK' xlink:label='loc_SKK' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_SLL' xlink:label='loc_SLL' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_SOS' xlink:label='loc_SOS' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_SPL' xlink:label='loc_SPL' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_SRD' xlink:label='loc_SRD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_STD' xlink:label='loc_STD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_SVC' xlink:label='loc_SVC' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_SYP' xlink:label='loc_SYP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_SZL' xlink:label='loc_SZL' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_THB' xlink:label='loc_THB' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_TJS' xlink:label='loc_TJS' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_TMM' xlink:label='loc_TMM' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_TND' xlink:label='loc_TND' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_TOP' xlink:label='loc_TOP' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_TRY' xlink:label='loc_TRY' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_TTD' xlink:label='loc_TTD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_TVD' xlink:label='loc_TVD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_TWD' xlink:label='loc_TWD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_TZS' xlink:label='loc_TZS' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_UAH' xlink:label='loc_UAH' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_UGX' xlink:label='loc_UGX' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_USD' xlink:label='loc_USD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_UYU' xlink:label='loc_UYU' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_UZS' xlink:label='loc_UZS' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_VEB' xlink:label='loc_VEB' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_VND' xlink:label='loc_VND' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_VUV' xlink:label='loc_VUV' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_WST' xlink:label='loc_WST' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_XAF' xlink:label='loc_XAF' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_XAG' xlink:label='loc_XAG' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_XAU' xlink:label='loc_XAU' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_XCD' xlink:label='loc_XCD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_XDR' xlink:label='loc_XDR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_XOF' xlink:label='loc_XOF' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_XPD' xlink:label='loc_XPD' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_XPF' xlink:label='loc_XPF' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_XPT' xlink:label='loc_XPT' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_YER' xlink:label='loc_YER' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_ZAR' xlink:label='loc_ZAR' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_ZMK' xlink:label='loc_ZMK' xlink:type='locator' />
+<link:loc xlink:href='currency-2009-01-31.xsd#currency_ZWD' xlink:label='loc_ZWD' xlink:type='locator' />
+<link:presentationArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_AED' xlink:type='arc' />
+<link:presentationArc order='2.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_AFN' xlink:type='arc' />
+<link:presentationArc order='3.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_ALL' xlink:type='arc' />
+<link:presentationArc order='4.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_AMD' xlink:type='arc' />
+<link:presentationArc order='5.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_ANG' xlink:type='arc' />
+<link:presentationArc order='6.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_AOA' xlink:type='arc' />
+<link:presentationArc order='7.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_ARS' xlink:type='arc' />
+<link:presentationArc order='8.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_AUD' xlink:type='arc' />
+<link:presentationArc order='9.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_AWG' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_AZN' xlink:type='arc' />
+<link:presentationArc order='11.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_BAM' xlink:type='arc' />
+<link:presentationArc order='12.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_BBD' xlink:type='arc' />
+<link:presentationArc order='13.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_BDT' xlink:type='arc' />
+<link:presentationArc order='14.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_BGN' xlink:type='arc' />
+<link:presentationArc order='15.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_BHD' xlink:type='arc' />
+<link:presentationArc order='16.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_BIF' xlink:type='arc' />
+<link:presentationArc order='17.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_BMD' xlink:type='arc' />
+<link:presentationArc order='18.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_BND' xlink:type='arc' />
+<link:presentationArc order='19.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_BOB' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_BRL' xlink:type='arc' />
+<link:presentationArc order='21.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_BSD' xlink:type='arc' />
+<link:presentationArc order='22.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_BTN' xlink:type='arc' />
+<link:presentationArc order='23.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_BWP' xlink:type='arc' />
+<link:presentationArc order='24.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_BYR' xlink:type='arc' />
+<link:presentationArc order='25.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_BZD' xlink:type='arc' />
+<link:presentationArc order='26.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_CAD' xlink:type='arc' />
+<link:presentationArc order='27.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_CDF' xlink:type='arc' />
+<link:presentationArc order='28.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_CHF' xlink:type='arc' />
+<link:presentationArc order='29.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_CLP' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_CNY' xlink:type='arc' />
+<link:presentationArc order='31.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_COP' xlink:type='arc' />
+<link:presentationArc order='32.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_CRC' xlink:type='arc' />
+<link:presentationArc order='33.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_RSD' xlink:type='arc' />
+<link:presentationArc order='34.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_CUP' xlink:type='arc' />
+<link:presentationArc order='35.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_CVE' xlink:type='arc' />
+<link:presentationArc order='36.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_CYP' xlink:type='arc' />
+<link:presentationArc order='37.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_CZK' xlink:type='arc' />
+<link:presentationArc order='38.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_DJF' xlink:type='arc' />
+<link:presentationArc order='39.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_DKK' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_DOP' xlink:type='arc' />
+<link:presentationArc order='41.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_DZD' xlink:type='arc' />
+<link:presentationArc order='42.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_EEK' xlink:type='arc' />
+<link:presentationArc order='43.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_EGP' xlink:type='arc' />
+<link:presentationArc order='44.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_ERN' xlink:type='arc' />
+<link:presentationArc order='45.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_ETB' xlink:type='arc' />
+<link:presentationArc order='46.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_EUR' xlink:type='arc' />
+<link:presentationArc order='47.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_FJD' xlink:type='arc' />
+<link:presentationArc order='48.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_FKP' xlink:type='arc' />
+<link:presentationArc order='49.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_GBP' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_GEL' xlink:type='arc' />
+<link:presentationArc order='51.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_GGP' xlink:type='arc' />
+<link:presentationArc order='52.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_GHC' xlink:type='arc' />
+<link:presentationArc order='53.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_GIP' xlink:type='arc' />
+<link:presentationArc order='54.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_GMD' xlink:type='arc' />
+<link:presentationArc order='55.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_GNF' xlink:type='arc' />
+<link:presentationArc order='56.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_GTQ' xlink:type='arc' />
+<link:presentationArc order='57.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_GYD' xlink:type='arc' />
+<link:presentationArc order='58.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_HKD' xlink:type='arc' />
+<link:presentationArc order='59.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_HNL' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_HRK' xlink:type='arc' />
+<link:presentationArc order='61.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_HTG' xlink:type='arc' />
+<link:presentationArc order='62.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_HUF' xlink:type='arc' />
+<link:presentationArc order='63.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_IDR' xlink:type='arc' />
+<link:presentationArc order='64.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_ILS' xlink:type='arc' />
+<link:presentationArc order='65.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_IMP' xlink:type='arc' />
+<link:presentationArc order='66.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_INR' xlink:type='arc' />
+<link:presentationArc order='67.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_IQD' xlink:type='arc' />
+<link:presentationArc order='68.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_IRR' xlink:type='arc' />
+<link:presentationArc order='69.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_ISK' xlink:type='arc' />
+<link:presentationArc order='70.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_JEP' xlink:type='arc' />
+<link:presentationArc order='71.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_JMD' xlink:type='arc' />
+<link:presentationArc order='72.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_JOD' xlink:type='arc' />
+<link:presentationArc order='73.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_JPY' xlink:type='arc' />
+<link:presentationArc order='74.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_KES' xlink:type='arc' />
+<link:presentationArc order='75.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_KGS' xlink:type='arc' />
+<link:presentationArc order='76.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_KHR' xlink:type='arc' />
+<link:presentationArc order='77.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_KMF' xlink:type='arc' />
+<link:presentationArc order='78.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_KPW' xlink:type='arc' />
+<link:presentationArc order='79.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_KRW' xlink:type='arc' />
+<link:presentationArc order='80.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_KWD' xlink:type='arc' />
+<link:presentationArc order='81.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_KYD' xlink:type='arc' />
+<link:presentationArc order='82.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_KZT' xlink:type='arc' />
+<link:presentationArc order='83.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_LAK' xlink:type='arc' />
+<link:presentationArc order='84.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_LBP' xlink:type='arc' />
+<link:presentationArc order='85.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_LKR' xlink:type='arc' />
+<link:presentationArc order='86.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_LRD' xlink:type='arc' />
+<link:presentationArc order='87.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_LSL' xlink:type='arc' />
+<link:presentationArc order='88.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_LTL' xlink:type='arc' />
+<link:presentationArc order='89.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_LVL' xlink:type='arc' />
+<link:presentationArc order='90.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_LYD' xlink:type='arc' />
+<link:presentationArc order='91.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_MAD' xlink:type='arc' />
+<link:presentationArc order='92.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_MDL' xlink:type='arc' />
+<link:presentationArc order='93.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_MGA' xlink:type='arc' />
+<link:presentationArc order='94.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_MKD' xlink:type='arc' />
+<link:presentationArc order='95.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_MMK' xlink:type='arc' />
+<link:presentationArc order='96.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_MNT' xlink:type='arc' />
+<link:presentationArc order='97.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_MOP' xlink:type='arc' />
+<link:presentationArc order='98.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_MRO' xlink:type='arc' />
+<link:presentationArc order='99.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_MTL' xlink:type='arc' />
+<link:presentationArc order='100.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_MUR' xlink:type='arc' />
+<link:presentationArc order='101.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_MVR' xlink:type='arc' />
+<link:presentationArc order='102.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_MWK' xlink:type='arc' />
+<link:presentationArc order='103.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_MXN' xlink:type='arc' />
+<link:presentationArc order='104.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_MYR' xlink:type='arc' />
+<link:presentationArc order='105.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_MZN' xlink:type='arc' />
+<link:presentationArc order='106.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_NAD' xlink:type='arc' />
+<link:presentationArc order='107.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_NGN' xlink:type='arc' />
+<link:presentationArc order='108.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_NIO' xlink:type='arc' />
+<link:presentationArc order='109.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_NOK' xlink:type='arc' />
+<link:presentationArc order='110.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_NPR' xlink:type='arc' />
+<link:presentationArc order='111.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_NZD' xlink:type='arc' />
+<link:presentationArc order='112.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_OMR' xlink:type='arc' />
+<link:presentationArc order='113.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_PAB' xlink:type='arc' />
+<link:presentationArc order='114.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_PEN' xlink:type='arc' />
+<link:presentationArc order='115.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_PGK' xlink:type='arc' />
+<link:presentationArc order='116.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_PHP' xlink:type='arc' />
+<link:presentationArc order='117.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_PKR' xlink:type='arc' />
+<link:presentationArc order='118.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_PLN' xlink:type='arc' />
+<link:presentationArc order='119.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_PYG' xlink:type='arc' />
+<link:presentationArc order='120.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_QAR' xlink:type='arc' />
+<link:presentationArc order='121.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_RON' xlink:type='arc' />
+<link:presentationArc order='122.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_RUB' xlink:type='arc' />
+<link:presentationArc order='123.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_RWF' xlink:type='arc' />
+<link:presentationArc order='124.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_SAR' xlink:type='arc' />
+<link:presentationArc order='125.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_SBD' xlink:type='arc' />
+<link:presentationArc order='126.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_SCR' xlink:type='arc' />
+<link:presentationArc order='127.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_SDG' xlink:type='arc' />
+<link:presentationArc order='128.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_SEK' xlink:type='arc' />
+<link:presentationArc order='129.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_SGD' xlink:type='arc' />
+<link:presentationArc order='130.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_SHP' xlink:type='arc' />
+<link:presentationArc order='131.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_SKK' xlink:type='arc' />
+<link:presentationArc order='132.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_SLL' xlink:type='arc' />
+<link:presentationArc order='133.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_SOS' xlink:type='arc' />
+<link:presentationArc order='134.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_SPL' xlink:type='arc' />
+<link:presentationArc order='135.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_SRD' xlink:type='arc' />
+<link:presentationArc order='136.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_STD' xlink:type='arc' />
+<link:presentationArc order='137.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_SVC' xlink:type='arc' />
+<link:presentationArc order='138.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_SYP' xlink:type='arc' />
+<link:presentationArc order='139.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_SZL' xlink:type='arc' />
+<link:presentationArc order='140.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_THB' xlink:type='arc' />
+<link:presentationArc order='141.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_TJS' xlink:type='arc' />
+<link:presentationArc order='142.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_TMM' xlink:type='arc' />
+<link:presentationArc order='143.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_TND' xlink:type='arc' />
+<link:presentationArc order='144.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_TOP' xlink:type='arc' />
+<link:presentationArc order='145.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_TRY' xlink:type='arc' />
+<link:presentationArc order='146.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_TTD' xlink:type='arc' />
+<link:presentationArc order='147.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_TVD' xlink:type='arc' />
+<link:presentationArc order='148.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_TWD' xlink:type='arc' />
+<link:presentationArc order='149.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_TZS' xlink:type='arc' />
+<link:presentationArc order='150.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_UAH' xlink:type='arc' />
+<link:presentationArc order='151.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_UGX' xlink:type='arc' />
+<link:presentationArc order='152.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_USD' xlink:type='arc' />
+<link:presentationArc order='153.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_UYU' xlink:type='arc' />
+<link:presentationArc order='154.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_UZS' xlink:type='arc' />
+<link:presentationArc order='155.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_VEB' xlink:type='arc' />
+<link:presentationArc order='156.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_VND' xlink:type='arc' />
+<link:presentationArc order='157.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_VUV' xlink:type='arc' />
+<link:presentationArc order='158.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_WST' xlink:type='arc' />
+<link:presentationArc order='159.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_XAF' xlink:type='arc' />
+<link:presentationArc order='160.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_XAG' xlink:type='arc' />
+<link:presentationArc order='161.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_XAU' xlink:type='arc' />
+<link:presentationArc order='162.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_XCD' xlink:type='arc' />
+<link:presentationArc order='163.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_XDR' xlink:type='arc' />
+<link:presentationArc order='164.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_XOF' xlink:type='arc' />
+<link:presentationArc order='165.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_XPD' xlink:type='arc' />
+<link:presentationArc order='166.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_XPF' xlink:type='arc' />
+<link:presentationArc order='167.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_XPT' xlink:type='arc' />
+<link:presentationArc order='168.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_YER' xlink:type='arc' />
+<link:presentationArc order='169.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_ZAR' xlink:type='arc' />
+<link:presentationArc order='170.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_ZMK' xlink:type='arc' />
+<link:presentationArc order='171.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_AllCurrenciesDomain' xlink:to='loc_ZWD' xlink:type='arc' />
+</link:presentationLink>
+</linkbase>

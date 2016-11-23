@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2011.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/statement/StatementOfCashFlowsIndirectInvestmentBasedOperationsFourthAlternate' xlink:href='../elts/us-roles-2011-01-31.xsd#scf-inv4' xlink:type='simple' />
+<calculationLink xlink:role='http://fasb.org/us-gaap/role/statement/StatementOfCashFlowsIndirectInvestmentBasedOperationsFourthAlternate' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PaymentsForProceedsFromLoansReceivable' xlink:label='loc_PaymentsForProceedsFromLoansReceivable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PaymentsToAcquireLoansReceivable' xlink:label='loc_PaymentsToAcquireLoansReceivable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_ProceedsFromSaleOfLoansReceivable' xlink:label='loc_ProceedsFromSaleOfLoansReceivable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PaymentsForProceedsFromPolicyLoans' xlink:label='loc_PaymentsForProceedsFromPolicyLoans' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PaymentsToFundPolicyLoans' xlink:label='loc_PaymentsToFundPolicyLoans' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_ProceedsFromCollectionOfPolicyLoans' xlink:label='loc_ProceedsFromCollectionOfPolicyLoans' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_ProceedsFromCollectionOfLoansReceivable' xlink:label='loc_ProceedsFromCollectionOfLoansReceivable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PaymentsForProceedsFromRealEstateHeldforinvestment' xlink:label='loc_PaymentsForProceedsFromRealEstateHeldforinvestment' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_PaymentsToAcquireRealEstateHeldForInvestment' xlink:label='loc_PaymentsToAcquireRealEstateHeldForInvestment' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_ProceedsFromSaleOfRealEstateHeldforinvestment' xlink:label='loc_ProceedsFromSaleOfRealEstateHeldforinvestment' xlink:type='locator' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PaymentsForProceedsFromLoansReceivable' xlink:to='loc_PaymentsToAcquireLoansReceivable' xlink:type='arc' />
+<calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PaymentsForProceedsFromLoansReceivable' xlink:to='loc_ProceedsFromSaleOfLoansReceivable' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PaymentsForProceedsFromLoansReceivable' xlink:to='loc_PaymentsForProceedsFromPolicyLoans' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PaymentsForProceedsFromPolicyLoans' xlink:to='loc_PaymentsToFundPolicyLoans' xlink:type='arc' />
+<calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PaymentsForProceedsFromPolicyLoans' xlink:to='loc_ProceedsFromCollectionOfPolicyLoans' xlink:type='arc' />
+<calculationArc order='40' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PaymentsForProceedsFromLoansReceivable' xlink:to='loc_ProceedsFromCollectionOfLoansReceivable' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PaymentsForProceedsFromRealEstateHeldforinvestment' xlink:to='loc_PaymentsToAcquireRealEstateHeldForInvestment' xlink:type='arc' />
+<calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PaymentsForProceedsFromRealEstateHeldforinvestment' xlink:to='loc_ProceedsFromSaleOfRealEstateHeldforinvestment' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:labelLink xlink:role='http://www.xbrl.org/2003/role/link' xlink:type='extended' xmlns:xlink='http://www.w3.org/1999/xlink'>
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_AED' xlink:label='loc_AED' xlink:type='locator' />
+<link:label id='lab_AED_label_en-US' xlink:label='lab_AED' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>United Arab Emirates, Dirhams</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AED' xlink:to='lab_AED' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_AFN' xlink:label='loc_AFN' xlink:type='locator' />
+<link:label id='lab_AFN_label_en-US' xlink:label='lab_AFN' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Afghanistan, Afghanis</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AFN' xlink:to='lab_AFN' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_ALL' xlink:label='loc_ALL' xlink:type='locator' />
+<link:label id='lab_ALL_label_en-US' xlink:label='lab_ALL' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Albania, Leke</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_ALL' xlink:to='lab_ALL' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_AMD' xlink:label='loc_AMD' xlink:type='locator' />
+<link:label id='lab_AMD_label_en-US' xlink:label='lab_AMD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Armenia, Drams</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AMD' xlink:to='lab_AMD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_ANG' xlink:label='loc_ANG' xlink:type='locator' />
+<link:label id='lab_ANG_label_en-US' xlink:label='lab_ANG' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Netherlands Antilles, Guilders (also called Florins)</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_ANG' xlink:to='lab_ANG' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_AOA' xlink:label='loc_AOA' xlink:type='locator' />
+<link:label id='lab_AOA_label_en-US' xlink:label='lab_AOA' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Angola, Kwanza</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AOA' xlink:to='lab_AOA' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_ARS' xlink:label='loc_ARS' xlink:type='locator' />
+<link:label id='lab_ARS_label_en-US' xlink:label='lab_ARS' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Argentina, Pesos</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_ARS' xlink:to='lab_ARS' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_AUD' xlink:label='loc_AUD' xlink:type='locator' />
+<link:label id='lab_AUD_label_en-US' xlink:label='lab_AUD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Australia, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AUD' xlink:to='lab_AUD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_AWG' xlink:label='loc_AWG' xlink:type='locator' />
+<link:label id='lab_AWG_label_en-US' xlink:label='lab_AWG' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Aruba, Guilders (also called Florins)</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AWG' xlink:to='lab_AWG' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_AZN' xlink:label='loc_AZN' xlink:type='locator' />
+<link:label id='lab_AZN_label_en-US' xlink:label='lab_AZN' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Azerbaijan, New Manats</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AZN' xlink:to='lab_AZN' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_BAM' xlink:label='loc_BAM' xlink:type='locator' />
+<link:label id='lab_BAM_label_en-US' xlink:label='lab_BAM' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bosnia and Herzegovina, Convertible Marka</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BAM' xlink:to='lab_BAM' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_BBD' xlink:label='loc_BBD' xlink:type='locator' />
+<link:label id='lab_BBD_label_en-US' xlink:label='lab_BBD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Barbados, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BBD' xlink:to='lab_BBD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_BDT' xlink:label='loc_BDT' xlink:type='locator' />
+<link:label id='lab_BDT_label_en-US' xlink:label='lab_BDT' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bangladesh, Taka</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BDT' xlink:to='lab_BDT' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_BGN' xlink:label='loc_BGN' xlink:type='locator' />
+<link:label id='lab_BGN_label_en-US' xlink:label='lab_BGN' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bulgaria, Leva</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BGN' xlink:to='lab_BGN' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_BHD' xlink:label='loc_BHD' xlink:type='locator' />
+<link:label id='lab_BHD_label_en-US' xlink:label='lab_BHD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bahrain, Dinars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BHD' xlink:to='lab_BHD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_BIF' xlink:label='loc_BIF' xlink:type='locator' />
+<link:label id='lab_BIF_label_en-US' xlink:label='lab_BIF' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Burundi, Francs</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BIF' xlink:to='lab_BIF' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_BMD' xlink:label='loc_BMD' xlink:type='locator' />
+<link:label id='lab_BMD_label_en-US' xlink:label='lab_BMD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bermuda, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BMD' xlink:to='lab_BMD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_BND' xlink:label='loc_BND' xlink:type='locator' />
+<link:label id='lab_BND_label_en-US' xlink:label='lab_BND' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Brunei Darussalam, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BND' xlink:to='lab_BND' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_BOB' xlink:label='loc_BOB' xlink:type='locator' />
+<link:label id='lab_BOB_label_en-US' xlink:label='lab_BOB' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bolivia, Bolivianos</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BOB' xlink:to='lab_BOB' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_BRL' xlink:label='loc_BRL' xlink:type='locator' />
+<link:label id='lab_BRL_label_en-US' xlink:label='lab_BRL' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Brazil, Brazil Real</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BRL' xlink:to='lab_BRL' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_BSD' xlink:label='loc_BSD' xlink:type='locator' />
+<link:label id='lab_BSD_label_en-US' xlink:label='lab_BSD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bahamas, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BSD' xlink:to='lab_BSD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_BTN' xlink:label='loc_BTN' xlink:type='locator' />
+<link:label id='lab_BTN_label_en-US' xlink:label='lab_BTN' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bhutan, Ngultrum</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BTN' xlink:to='lab_BTN' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_BWP' xlink:label='loc_BWP' xlink:type='locator' />
+<link:label id='lab_BWP_label_en-US' xlink:label='lab_BWP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Botswana, Pulas</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BWP' xlink:to='lab_BWP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_BYR' xlink:label='loc_BYR' xlink:type='locator' />
+<link:label id='lab_BYR_label_en-US' xlink:label='lab_BYR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Belarus, Rubles</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BYR' xlink:to='lab_BYR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_BZD' xlink:label='loc_BZD' xlink:type='locator' />
+<link:label id='lab_BZD_label_en-US' xlink:label='lab_BZD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Belize, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BZD' xlink:to='lab_BZD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_CAD' xlink:label='loc_CAD' xlink:type='locator' />
+<link:label id='lab_CAD_label_en-US' xlink:label='lab_CAD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Canada, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_CAD' xlink:to='lab_CAD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_CDF' xlink:label='loc_CDF' xlink:type='locator' />
+<link:label id='lab_CDF_label_en-US' xlink:label='lab_CDF' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Congo/Kinshasa, Congolese Francs</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_CDF' xlink:to='lab_CDF' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_CHF' xlink:label='loc_CHF' xlink:type='locator' />
+<link:label id='lab_CHF_label_en-US' xlink:label='lab_CHF' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Switzerland, Francs</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_CHF' xlink:to='lab_CHF' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_CLP' xlink:label='loc_CLP' xlink:type='locator' />
+<link:label id='lab_CLP_label_en-US' xlink:label='lab_CLP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Chile, Pesos</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_CLP' xlink:to='lab_CLP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_CNY' xlink:label='loc_CNY' xlink:type='locator' />
+<link:label id='lab_CNY_label_en-US' xlink:label='lab_CNY' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>China, Yuan Renminbi</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_CNY' xlink:to='lab_CNY' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_COP' xlink:label='loc_COP' xlink:type='locator' />
+<link:label id='lab_COP_label_en-US' xlink:label='lab_COP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Colombia, Pesos</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_COP' xlink:to='lab_COP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_CRC' xlink:label='loc_CRC' xlink:type='locator' />
+<link:label id='lab_CRC_label_en-US' xlink:label='lab_CRC' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Costa Rica, Colones</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_CRC' xlink:to='lab_CRC' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_CUP' xlink:label='loc_CUP' xlink:type='locator' />
+<link:label id='lab_CUP_label_en-US' xlink:label='lab_CUP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Cuba, Pesos</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_CUP' xlink:to='lab_CUP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_CVE' xlink:label='loc_CVE' xlink:type='locator' />
+<link:label id='lab_CVE_label_en-US' xlink:label='lab_CVE' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Cape Verde, Escudos</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_CVE' xlink:to='lab_CVE' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_CYP' xlink:label='loc_CYP' xlink:type='locator' />
+<link:label id='lab_CYP_label_en-US' xlink:label='lab_CYP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Cyprus, Pounds</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_CYP' xlink:to='lab_CYP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_CZK' xlink:label='loc_CZK' xlink:type='locator' />
+<link:label id='lab_CZK_label_en-US' xlink:label='lab_CZK' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Czech Republic, Koruny</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_CZK' xlink:to='lab_CZK' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_DJF' xlink:label='loc_DJF' xlink:type='locator' />
+<link:label id='lab_DJF_label_en-US' xlink:label='lab_DJF' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Djibouti, Francs</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_DJF' xlink:to='lab_DJF' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_DKK' xlink:label='loc_DKK' xlink:type='locator' />
+<link:label id='lab_DKK_label_en-US' xlink:label='lab_DKK' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Denmark, Kroner</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_DKK' xlink:to='lab_DKK' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_DOP' xlink:label='loc_DOP' xlink:type='locator' />
+<link:label id='lab_DOP_label_en-US' xlink:label='lab_DOP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Dominican Republic, Pesos</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_DOP' xlink:to='lab_DOP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_DZD' xlink:label='loc_DZD' xlink:type='locator' />
+<link:label id='lab_DZD_label_en-US' xlink:label='lab_DZD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Algeria, Algeria Dinars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_DZD' xlink:to='lab_DZD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_EEK' xlink:label='loc_EEK' xlink:type='locator' />
+<link:label id='lab_EEK_label_en-US' xlink:label='lab_EEK' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Estonia, Krooni</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_EEK' xlink:to='lab_EEK' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_EGP' xlink:label='loc_EGP' xlink:type='locator' />
+<link:label id='lab_EGP_label_en-US' xlink:label='lab_EGP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Egypt, Pounds</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_EGP' xlink:to='lab_EGP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_ERN' xlink:label='loc_ERN' xlink:type='locator' />
+<link:label id='lab_ERN_label_en-US' xlink:label='lab_ERN' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Eritrea, Nakfa</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_ERN' xlink:to='lab_ERN' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_ETB' xlink:label='loc_ETB' xlink:type='locator' />
+<link:label id='lab_ETB_label_en-US' xlink:label='lab_ETB' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Ethiopia, Birr</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_ETB' xlink:to='lab_ETB' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_EUR' xlink:label='loc_EUR' xlink:type='locator' />
+<link:label id='lab_EUR_label_en-US' xlink:label='lab_EUR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Euro Member Countries, Euro</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_EUR' xlink:to='lab_EUR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_FJD' xlink:label='loc_FJD' xlink:type='locator' />
+<link:label id='lab_FJD_label_en-US' xlink:label='lab_FJD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Fiji, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_FJD' xlink:to='lab_FJD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_FKP' xlink:label='loc_FKP' xlink:type='locator' />
+<link:label id='lab_FKP_label_en-US' xlink:label='lab_FKP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Falkland Islands (Malvinas), Pounds</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_FKP' xlink:to='lab_FKP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_GBP' xlink:label='loc_GBP' xlink:type='locator' />
+<link:label id='lab_GBP_label_en-US' xlink:label='lab_GBP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>United Kingdom, Pounds</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_GBP' xlink:to='lab_GBP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_GEL' xlink:label='loc_GEL' xlink:type='locator' />
+<link:label id='lab_GEL_label_en-US' xlink:label='lab_GEL' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Georgia, Lari</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_GEL' xlink:to='lab_GEL' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_GGP' xlink:label='loc_GGP' xlink:type='locator' />
+<link:label id='lab_GGP_label_en-US' xlink:label='lab_GGP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Guernsey, Pounds</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_GGP' xlink:to='lab_GGP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_GHC' xlink:label='loc_GHC' xlink:type='locator' />
+<link:label id='lab_GHC_label_en-US' xlink:label='lab_GHC' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Ghana, Cedis</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_GHC' xlink:to='lab_GHC' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_GIP' xlink:label='loc_GIP' xlink:type='locator' />
+<link:label id='lab_GIP_label_en-US' xlink:label='lab_GIP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Gibraltar, Pounds</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_GIP' xlink:to='lab_GIP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_GMD' xlink:label='loc_GMD' xlink:type='locator' />
+<link:label id='lab_GMD_label_en-US' xlink:label='lab_GMD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Gambia, Dalasi</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_GMD' xlink:to='lab_GMD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_GNF' xlink:label='loc_GNF' xlink:type='locator' />
+<link:label id='lab_GNF_label_en-US' xlink:label='lab_GNF' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Guinea, Francs</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_GNF' xlink:to='lab_GNF' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_GTQ' xlink:label='loc_GTQ' xlink:type='locator' />
+<link:label id='lab_GTQ_label_en-US' xlink:label='lab_GTQ' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Guatemala, Quetzales</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_GTQ' xlink:to='lab_GTQ' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_GYD' xlink:label='loc_GYD' xlink:type='locator' />
+<link:label id='lab_GYD_label_en-US' xlink:label='lab_GYD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Guyana, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_GYD' xlink:to='lab_GYD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_HKD' xlink:label='loc_HKD' xlink:type='locator' />
+<link:label id='lab_HKD_label_en-US' xlink:label='lab_HKD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Hong Kong, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_HKD' xlink:to='lab_HKD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_HNL' xlink:label='loc_HNL' xlink:type='locator' />
+<link:label id='lab_HNL_label_en-US' xlink:label='lab_HNL' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Honduras, Lempiras</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_HNL' xlink:to='lab_HNL' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_HRK' xlink:label='loc_HRK' xlink:type='locator' />
+<link:label id='lab_HRK_label_en-US' xlink:label='lab_HRK' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Croatia, Kuna</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_HRK' xlink:to='lab_HRK' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_HTG' xlink:label='loc_HTG' xlink:type='locator' />
+<link:label id='lab_HTG_label_en-US' xlink:label='lab_HTG' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Haiti, Gourdes</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_HTG' xlink:to='lab_HTG' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_HUF' xlink:label='loc_HUF' xlink:type='locator' />
+<link:label id='lab_HUF_label_en-US' xlink:label='lab_HUF' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Hungary, Forint</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_HUF' xlink:to='lab_HUF' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_IDR' xlink:label='loc_IDR' xlink:type='locator' />
+<link:label id='lab_IDR_label_en-US' xlink:label='lab_IDR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Indonesia, Rupiahs</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_IDR' xlink:to='lab_IDR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_ILS' xlink:label='loc_ILS' xlink:type='locator' />
+<link:label id='lab_ILS_label_en-US' xlink:label='lab_ILS' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Israel, New Shekels</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_ILS' xlink:to='lab_ILS' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_IMP' xlink:label='loc_IMP' xlink:type='locator' />
+<link:label id='lab_IMP_label_en-US' xlink:label='lab_IMP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Isle of Man, Pounds</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_IMP' xlink:to='lab_IMP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_INR' xlink:label='loc_INR' xlink:type='locator' />
+<link:label id='lab_INR_label_en-US' xlink:label='lab_INR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>India, Rupees</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_INR' xlink:to='lab_INR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_IQD' xlink:label='loc_IQD' xlink:type='locator' />
+<link:label id='lab_IQD_label_en-US' xlink:label='lab_IQD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Iraq, Dinars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_IQD' xlink:to='lab_IQD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_IRR' xlink:label='loc_IRR' xlink:type='locator' />
+<link:label id='lab_IRR_label_en-US' xlink:label='lab_IRR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Iran, Rials</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_IRR' xlink:to='lab_IRR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_ISK' xlink:label='loc_ISK' xlink:type='locator' />
+<link:label id='lab_ISK_label_en-US' xlink:label='lab_ISK' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Iceland, Kronur</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_ISK' xlink:to='lab_ISK' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_JEP' xlink:label='loc_JEP' xlink:type='locator' />
+<link:label id='lab_JEP_label_en-US' xlink:label='lab_JEP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Jersey, Pounds</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_JEP' xlink:to='lab_JEP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_JMD' xlink:label='loc_JMD' xlink:type='locator' />
+<link:label id='lab_JMD_label_en-US' xlink:label='lab_JMD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Jamaica, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_JMD' xlink:to='lab_JMD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_JOD' xlink:label='loc_JOD' xlink:type='locator' />
+<link:label id='lab_JOD_label_en-US' xlink:label='lab_JOD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Jordan, Dinars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_JOD' xlink:to='lab_JOD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_JPY' xlink:label='loc_JPY' xlink:type='locator' />
+<link:label id='lab_JPY_label_en-US' xlink:label='lab_JPY' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Japan, Yen</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_JPY' xlink:to='lab_JPY' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_KES' xlink:label='loc_KES' xlink:type='locator' />
+<link:label id='lab_KES_label_en-US' xlink:label='lab_KES' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Kenya, Shillings</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_KES' xlink:to='lab_KES' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_KGS' xlink:label='loc_KGS' xlink:type='locator' />
+<link:label id='lab_KGS_label_en-US' xlink:label='lab_KGS' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Kyrgyzstan, Soms</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_KGS' xlink:to='lab_KGS' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_KHR' xlink:label='loc_KHR' xlink:type='locator' />
+<link:label id='lab_KHR_label_en-US' xlink:label='lab_KHR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Cambodia, Riels</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_KHR' xlink:to='lab_KHR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_KMF' xlink:label='loc_KMF' xlink:type='locator' />
+<link:label id='lab_KMF_label_en-US' xlink:label='lab_KMF' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Comoros, Francs</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_KMF' xlink:to='lab_KMF' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_KPW' xlink:label='loc_KPW' xlink:type='locator' />
+<link:label id='lab_KPW_label_en-US' xlink:label='lab_KPW' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Korea (North), Won</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_KPW' xlink:to='lab_KPW' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_KRW' xlink:label='loc_KRW' xlink:type='locator' />
+<link:label id='lab_KRW_label_en-US' xlink:label='lab_KRW' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Korea (South), Won</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_KRW' xlink:to='lab_KRW' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_KWD' xlink:label='loc_KWD' xlink:type='locator' />
+<link:label id='lab_KWD_label_en-US' xlink:label='lab_KWD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Kuwait, Dinars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_KWD' xlink:to='lab_KWD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_KYD' xlink:label='loc_KYD' xlink:type='locator' />
+<link:label id='lab_KYD_label_en-US' xlink:label='lab_KYD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Cayman Islands, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_KYD' xlink:to='lab_KYD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_KZT' xlink:label='loc_KZT' xlink:type='locator' />
+<link:label id='lab_KZT_label_en-US' xlink:label='lab_KZT' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Kazakhstan, Tenge</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_KZT' xlink:to='lab_KZT' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_LAK' xlink:label='loc_LAK' xlink:type='locator' />
+<link:label id='lab_LAK_label_en-US' xlink:label='lab_LAK' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Laos, Kips</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_LAK' xlink:to='lab_LAK' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_LBP' xlink:label='loc_LBP' xlink:type='locator' />
+<link:label id='lab_LBP_label_en-US' xlink:label='lab_LBP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Lebanon, Pounds</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_LBP' xlink:to='lab_LBP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_LKR' xlink:label='loc_LKR' xlink:type='locator' />
+<link:label id='lab_LKR_label_en-US' xlink:label='lab_LKR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Sri Lanka, Rupees</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_LKR' xlink:to='lab_LKR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_LRD' xlink:label='loc_LRD' xlink:type='locator' />
+<link:label id='lab_LRD_label_en-US' xlink:label='lab_LRD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Liberia, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_LRD' xlink:to='lab_LRD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_LSL' xlink:label='loc_LSL' xlink:type='locator' />
+<link:label id='lab_LSL_label_en-US' xlink:label='lab_LSL' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Lesotho, Maloti</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_LSL' xlink:to='lab_LSL' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_LTL' xlink:label='loc_LTL' xlink:type='locator' />
+<link:label id='lab_LTL_label_en-US' xlink:label='lab_LTL' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Lithuania, Litai</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_LTL' xlink:to='lab_LTL' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_LVL' xlink:label='loc_LVL' xlink:type='locator' />
+<link:label id='lab_LVL_label_en-US' xlink:label='lab_LVL' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Latvia, Lati</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_LVL' xlink:to='lab_LVL' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_LYD' xlink:label='loc_LYD' xlink:type='locator' />
+<link:label id='lab_LYD_label_en-US' xlink:label='lab_LYD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Libya, Dinars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_LYD' xlink:to='lab_LYD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_MAD' xlink:label='loc_MAD' xlink:type='locator' />
+<link:label id='lab_MAD_label_en-US' xlink:label='lab_MAD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Morocco, Dirhams</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MAD' xlink:to='lab_MAD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_MDL' xlink:label='loc_MDL' xlink:type='locator' />
+<link:label id='lab_MDL_label_en-US' xlink:label='lab_MDL' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Moldova, Lei</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MDL' xlink:to='lab_MDL' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_MGA' xlink:label='loc_MGA' xlink:type='locator' />
+<link:label id='lab_MGA_label_en-US' xlink:label='lab_MGA' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Madagascar, Ariary</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MGA' xlink:to='lab_MGA' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_MKD' xlink:label='loc_MKD' xlink:type='locator' />
+<link:label id='lab_MKD_label_en-US' xlink:label='lab_MKD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Macedonia, Denars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MKD' xlink:to='lab_MKD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_MMK' xlink:label='loc_MMK' xlink:type='locator' />
+<link:label id='lab_MMK_label_en-US' xlink:label='lab_MMK' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Myanmar (Burma), Kyats</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MMK' xlink:to='lab_MMK' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_MNT' xlink:label='loc_MNT' xlink:type='locator' />
+<link:label id='lab_MNT_label_en-US' xlink:label='lab_MNT' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Mongolia, Tugriks</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MNT' xlink:to='lab_MNT' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_MOP' xlink:label='loc_MOP' xlink:type='locator' />
+<link:label id='lab_MOP_label_en-US' xlink:label='lab_MOP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Macau, Patacas</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MOP' xlink:to='lab_MOP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_MRO' xlink:label='loc_MRO' xlink:type='locator' />
+<link:label id='lab_MRO_label_en-US' xlink:label='lab_MRO' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Mauritania, Ouguiyas</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MRO' xlink:to='lab_MRO' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_MTL' xlink:label='loc_MTL' xlink:type='locator' />
+<link:label id='lab_MTL_label_en-US' xlink:label='lab_MTL' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Malta, Liri</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MTL' xlink:to='lab_MTL' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_MUR' xlink:label='loc_MUR' xlink:type='locator' />
+<link:label id='lab_MUR_label_en-US' xlink:label='lab_MUR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Mauritius, Rupees</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MUR' xlink:to='lab_MUR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_MVR' xlink:label='loc_MVR' xlink:type='locator' />
+<link:label id='lab_MVR_label_en-US' xlink:label='lab_MVR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Maldives (Maldive Islands), Rufiyaa</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MVR' xlink:to='lab_MVR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_MWK' xlink:label='loc_MWK' xlink:type='locator' />
+<link:label id='lab_MWK_label_en-US' xlink:label='lab_MWK' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Malawi, Kwachas</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MWK' xlink:to='lab_MWK' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_MXN' xlink:label='loc_MXN' xlink:type='locator' />
+<link:label id='lab_MXN_label_en-US' xlink:label='lab_MXN' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Mexico, Pesos</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MXN' xlink:to='lab_MXN' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_MYR' xlink:label='loc_MYR' xlink:type='locator' />
+<link:label id='lab_MYR_label_en-US' xlink:label='lab_MYR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Malaysia, Ringgits</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MYR' xlink:to='lab_MYR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_MZN' xlink:label='loc_MZN' xlink:type='locator' />
+<link:label id='lab_MZN_label_en-US' xlink:label='lab_MZN' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Mozambique, Meticais</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MZN' xlink:to='lab_MZN' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_NAD' xlink:label='loc_NAD' xlink:type='locator' />
+<link:label id='lab_NAD_label_en-US' xlink:label='lab_NAD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Namibia, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_NAD' xlink:to='lab_NAD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_NGN' xlink:label='loc_NGN' xlink:type='locator' />
+<link:label id='lab_NGN_label_en-US' xlink:label='lab_NGN' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Nigeria, Nairas</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_NGN' xlink:to='lab_NGN' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_NIO' xlink:label='loc_NIO' xlink:type='locator' />
+<link:label id='lab_NIO_label_en-US' xlink:label='lab_NIO' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Nicaragua, Cordobas</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_NIO' xlink:to='lab_NIO' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_NOK' xlink:label='loc_NOK' xlink:type='locator' />
+<link:label id='lab_NOK_label_en-US' xlink:label='lab_NOK' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Norway, Krone</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_NOK' xlink:to='lab_NOK' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_NPR' xlink:label='loc_NPR' xlink:type='locator' />
+<link:label id='lab_NPR_label_en-US' xlink:label='lab_NPR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Nepal, Nepal Rupees</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_NPR' xlink:to='lab_NPR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_NZD' xlink:label='loc_NZD' xlink:type='locator' />
+<link:label id='lab_NZD_label_en-US' xlink:label='lab_NZD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>New Zealand, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_NZD' xlink:to='lab_NZD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_OMR' xlink:label='loc_OMR' xlink:type='locator' />
+<link:label id='lab_OMR_label_en-US' xlink:label='lab_OMR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Oman, Rials</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_OMR' xlink:to='lab_OMR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_PAB' xlink:label='loc_PAB' xlink:type='locator' />
+<link:label id='lab_PAB_label_en-US' xlink:label='lab_PAB' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Panama, Balboa</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_PAB' xlink:to='lab_PAB' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_PEN' xlink:label='loc_PEN' xlink:type='locator' />
+<link:label id='lab_PEN_label_en-US' xlink:label='lab_PEN' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Peru, Nuevos Soles</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_PEN' xlink:to='lab_PEN' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_PGK' xlink:label='loc_PGK' xlink:type='locator' />
+<link:label id='lab_PGK_label_en-US' xlink:label='lab_PGK' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Papua New Guinea, Kina</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_PGK' xlink:to='lab_PGK' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_PHP' xlink:label='loc_PHP' xlink:type='locator' />
+<link:label id='lab_PHP_label_en-US' xlink:label='lab_PHP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Philippines, Pesos</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_PHP' xlink:to='lab_PHP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_PKR' xlink:label='loc_PKR' xlink:type='locator' />
+<link:label id='lab_PKR_label_en-US' xlink:label='lab_PKR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Pakistan, Rupees</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_PKR' xlink:to='lab_PKR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_PLN' xlink:label='loc_PLN' xlink:type='locator' />
+<link:label id='lab_PLN_label_en-US' xlink:label='lab_PLN' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Poland, Zlotych</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_PLN' xlink:to='lab_PLN' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_PYG' xlink:label='loc_PYG' xlink:type='locator' />
+<link:label id='lab_PYG_label_en-US' xlink:label='lab_PYG' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Paraguay, Guarani</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_PYG' xlink:to='lab_PYG' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_QAR' xlink:label='loc_QAR' xlink:type='locator' />
+<link:label id='lab_QAR_label_en-US' xlink:label='lab_QAR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Qatar, Rials</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_QAR' xlink:to='lab_QAR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_RON' xlink:label='loc_RON' xlink:type='locator' />
+<link:label id='lab_RON_label_en-US' xlink:label='lab_RON' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Romania, New Lei</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_RON' xlink:to='lab_RON' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_RSD' xlink:label='loc_RSD' xlink:type='locator' />
+<link:label id='lab_RSD_label_en-US' xlink:label='lab_RSD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Serbia, Dinars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_RSD' xlink:to='lab_RSD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_RUB' xlink:label='loc_RUB' xlink:type='locator' />
+<link:label id='lab_RUB_label_en-US' xlink:label='lab_RUB' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Russia, Rubles</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_RUB' xlink:to='lab_RUB' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_RWF' xlink:label='loc_RWF' xlink:type='locator' />
+<link:label id='lab_RWF_label_en-US' xlink:label='lab_RWF' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Rwanda, Rwanda Francs</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_RWF' xlink:to='lab_RWF' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_SAR' xlink:label='loc_SAR' xlink:type='locator' />
+<link:label id='lab_SAR_label_en-US' xlink:label='lab_SAR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Saudi Arabia, Riyals</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SAR' xlink:to='lab_SAR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_SBD' xlink:label='loc_SBD' xlink:type='locator' />
+<link:label id='lab_SBD_label_en-US' xlink:label='lab_SBD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Solomon Islands, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SBD' xlink:to='lab_SBD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_SCR' xlink:label='loc_SCR' xlink:type='locator' />
+<link:label id='lab_SCR_label_en-US' xlink:label='lab_SCR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Seychelles, Rupees</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SCR' xlink:to='lab_SCR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_SDG' xlink:label='loc_SDG' xlink:type='locator' />
+<link:label id='lab_SDG_label_en-US' xlink:label='lab_SDG' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Sudan, Pounds</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SDG' xlink:to='lab_SDG' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_SEK' xlink:label='loc_SEK' xlink:type='locator' />
+<link:label id='lab_SEK_label_en-US' xlink:label='lab_SEK' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Sweden, Kronor</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SEK' xlink:to='lab_SEK' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_SGD' xlink:label='loc_SGD' xlink:type='locator' />
+<link:label id='lab_SGD_label_en-US' xlink:label='lab_SGD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Singapore, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SGD' xlink:to='lab_SGD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_SHP' xlink:label='loc_SHP' xlink:type='locator' />
+<link:label id='lab_SHP_label_en-US' xlink:label='lab_SHP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Saint Helena, Pounds</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SHP' xlink:to='lab_SHP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_SKK' xlink:label='loc_SKK' xlink:type='locator' />
+<link:label id='lab_SKK_label_en-US' xlink:label='lab_SKK' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Slovakia, Koruny</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SKK' xlink:to='lab_SKK' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_SLL' xlink:label='loc_SLL' xlink:type='locator' />
+<link:label id='lab_SLL_label_en-US' xlink:label='lab_SLL' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Sierra Leone, Leones</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SLL' xlink:to='lab_SLL' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_SOS' xlink:label='loc_SOS' xlink:type='locator' />
+<link:label id='lab_SOS_label_en-US' xlink:label='lab_SOS' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Somalia, Shillings</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SOS' xlink:to='lab_SOS' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_SPL' xlink:label='loc_SPL' xlink:type='locator' />
+<link:label id='lab_SPL_label_en-US' xlink:label='lab_SPL' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Seborga, Luigini</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SPL' xlink:to='lab_SPL' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_SRD' xlink:label='loc_SRD' xlink:type='locator' />
+<link:label id='lab_SRD_label_en-US' xlink:label='lab_SRD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Suriname, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SRD' xlink:to='lab_SRD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_STD' xlink:label='loc_STD' xlink:type='locator' />
+<link:label id='lab_STD_label_en-US' xlink:label='lab_STD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Sao Tome and Principe, Dobras</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_STD' xlink:to='lab_STD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_SVC' xlink:label='loc_SVC' xlink:type='locator' />
+<link:label id='lab_SVC_label_en-US' xlink:label='lab_SVC' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>El Salvador, Colones</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SVC' xlink:to='lab_SVC' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_SYP' xlink:label='loc_SYP' xlink:type='locator' />
+<link:label id='lab_SYP_label_en-US' xlink:label='lab_SYP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Syria, Pounds</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SYP' xlink:to='lab_SYP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_SZL' xlink:label='loc_SZL' xlink:type='locator' />
+<link:label id='lab_SZL_label_en-US' xlink:label='lab_SZL' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Swaziland, Emalangeni</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SZL' xlink:to='lab_SZL' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_THB' xlink:label='loc_THB' xlink:type='locator' />
+<link:label id='lab_THB_label_en-US' xlink:label='lab_THB' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Thailand, Baht</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_THB' xlink:to='lab_THB' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_TJS' xlink:label='loc_TJS' xlink:type='locator' />
+<link:label id='lab_TJS_label_en-US' xlink:label='lab_TJS' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Tajikistan, Somoni</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_TJS' xlink:to='lab_TJS' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_TMM' xlink:label='loc_TMM' xlink:type='locator' />
+<link:label id='lab_TMM_label_en-US' xlink:label='lab_TMM' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Turkmenistan, Manats</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_TMM' xlink:to='lab_TMM' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_TND' xlink:label='loc_TND' xlink:type='locator' />
+<link:label id='lab_TND_label_en-US' xlink:label='lab_TND' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Tunisia, Dinars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_TND' xlink:to='lab_TND' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_TOP' xlink:label='loc_TOP' xlink:type='locator' />
+<link:label id='lab_TOP_label_en-US' xlink:label='lab_TOP' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Tonga, Pa'anga</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_TOP' xlink:to='lab_TOP' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_TRY' xlink:label='loc_TRY' xlink:type='locator' />
+<link:label id='lab_TRY_label_en-US' xlink:label='lab_TRY' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Turkey, New Lira</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_TRY' xlink:to='lab_TRY' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_TTD' xlink:label='loc_TTD' xlink:type='locator' />
+<link:label id='lab_TTD_label_en-US' xlink:label='lab_TTD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Trinidad and Tobago, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_TTD' xlink:to='lab_TTD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_TVD' xlink:label='loc_TVD' xlink:type='locator' />
+<link:label id='lab_TVD_label_en-US' xlink:label='lab_TVD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Tuvalu, Tuvalu Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_TVD' xlink:to='lab_TVD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_TWD' xlink:label='loc_TWD' xlink:type='locator' />
+<link:label id='lab_TWD_label_en-US' xlink:label='lab_TWD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Taiwan, New Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_TWD' xlink:to='lab_TWD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_TZS' xlink:label='loc_TZS' xlink:type='locator' />
+<link:label id='lab_TZS_label_en-US' xlink:label='lab_TZS' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Tanzania, Shillings</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_TZS' xlink:to='lab_TZS' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_UAH' xlink:label='loc_UAH' xlink:type='locator' />
+<link:label id='lab_UAH_label_en-US' xlink:label='lab_UAH' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Ukraine, Hryvnia</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_UAH' xlink:to='lab_UAH' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_UGX' xlink:label='loc_UGX' xlink:type='locator' />
+<link:label id='lab_UGX_label_en-US' xlink:label='lab_UGX' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Uganda, Shillings</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_UGX' xlink:to='lab_UGX' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_USD' xlink:label='loc_USD' xlink:type='locator' />
+<link:label id='lab_USD_label_en-US' xlink:label='lab_USD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>United States of America, Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_USD' xlink:to='lab_USD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_UYU' xlink:label='loc_UYU' xlink:type='locator' />
+<link:label id='lab_UYU_label_en-US' xlink:label='lab_UYU' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Uruguay, Pesos</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_UYU' xlink:to='lab_UYU' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_UZS' xlink:label='loc_UZS' xlink:type='locator' />
+<link:label id='lab_UZS_label_en-US' xlink:label='lab_UZS' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Uzbekistan, Sums</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_UZS' xlink:to='lab_UZS' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_VEB' xlink:label='loc_VEB' xlink:type='locator' />
+<link:label id='lab_VEB_label_en-US' xlink:label='lab_VEB' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Venezuela, Bolivares</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_VEB' xlink:to='lab_VEB' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_VND' xlink:label='loc_VND' xlink:type='locator' />
+<link:label id='lab_VND_label_en-US' xlink:label='lab_VND' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Viet Nam, Dong</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_VND' xlink:to='lab_VND' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_VUV' xlink:label='loc_VUV' xlink:type='locator' />
+<link:label id='lab_VUV_label_en-US' xlink:label='lab_VUV' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Vanuatu, Vatu</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_VUV' xlink:to='lab_VUV' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_WST' xlink:label='loc_WST' xlink:type='locator' />
+<link:label id='lab_WST_label_en-US' xlink:label='lab_WST' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Samoa, Tala</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_WST' xlink:to='lab_WST' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_XAF' xlink:label='loc_XAF' xlink:type='locator' />
+<link:label id='lab_XAF_label_en-US' xlink:label='lab_XAF' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Communaute Financiere Africaine BEAC, Francs</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_XAF' xlink:to='lab_XAF' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_XAG' xlink:label='loc_XAG' xlink:type='locator' />
+<link:label id='lab_XAG_label_en-US' xlink:label='lab_XAG' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Silver, Ounces</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_XAG' xlink:to='lab_XAG' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_XAU' xlink:label='loc_XAU' xlink:type='locator' />
+<link:label id='lab_XAU_label_en-US' xlink:label='lab_XAU' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Gold, Ounces</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_XAU' xlink:to='lab_XAU' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_XCD' xlink:label='loc_XCD' xlink:type='locator' />
+<link:label id='lab_XCD_label_en-US' xlink:label='lab_XCD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>East Caribbean Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_XCD' xlink:to='lab_XCD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_XDR' xlink:label='loc_XDR' xlink:type='locator' />
+<link:label id='lab_XDR_label_en-US' xlink:label='lab_XDR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>International Monetary Fund (IMF) Special Drawing Rights</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_XDR' xlink:to='lab_XDR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_XOF' xlink:label='loc_XOF' xlink:type='locator' />
+<link:label id='lab_XOF_label_en-US' xlink:label='lab_XOF' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Communaute Financiere Africaine BCEAO, Francs</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_XOF' xlink:to='lab_XOF' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_XPD' xlink:label='loc_XPD' xlink:type='locator' />
+<link:label id='lab_XPD_label_en-US' xlink:label='lab_XPD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Palladium Ounces</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_XPD' xlink:to='lab_XPD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_XPF' xlink:label='loc_XPF' xlink:type='locator' />
+<link:label id='lab_XPF_label_en-US' xlink:label='lab_XPF' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Comptoirs Francais du Pacifique Francs</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_XPF' xlink:to='lab_XPF' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_XPT' xlink:label='loc_XPT' xlink:type='locator' />
+<link:label id='lab_XPT_label_en-US' xlink:label='lab_XPT' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Platinum, Ounces</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_XPT' xlink:to='lab_XPT' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_YER' xlink:label='loc_YER' xlink:type='locator' />
+<link:label id='lab_YER_label_en-US' xlink:label='lab_YER' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Yemen, Rials</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_YER' xlink:to='lab_YER' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_ZAR' xlink:label='loc_ZAR' xlink:type='locator' />
+<link:label id='lab_ZAR_label_en-US' xlink:label='lab_ZAR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>South Africa, Rand</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_ZAR' xlink:to='lab_ZAR' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_ZMK' xlink:label='loc_ZMK' xlink:type='locator' />
+<link:label id='lab_ZMK_label_en-US' xlink:label='lab_ZMK' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Zambia, Kwacha</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_ZMK' xlink:to='lab_ZMK' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_ZWD' xlink:label='loc_ZWD' xlink:type='locator' />
+<link:label id='lab_ZWD_label_en-US' xlink:label='lab_ZWD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Zimbabwe, Zimbabwe Dollars</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_ZWD' xlink:to='lab_ZWD' xlink:type='arc' />
+<link:loc xlink:href='currency-2008-03-31.xsd#currency_AllCurrenciesDomain' xlink:label='loc_AllCurrenciesDomain' xlink:type='locator' />
+<link:label id='lab_AllCurrenciesDomain_label_en-US' xlink:label='lab_AllCurrenciesDomain' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>All Currencies [Domain]</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AllCurrenciesDomain' xlink:to='lab_AllCurrenciesDomain' xlink:type='arc' />
+</link:labelLink>
+</link:linkbase>

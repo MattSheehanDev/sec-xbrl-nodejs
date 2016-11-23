@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2011.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  
+This file is an entry point for Industry Real Estate.
+  
+The DTS starting with this entry point includes standard, period start, period end, total and axis default labels. It will not include references.
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://fasb.org/re/stm-std/2011-01-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:stm-std-re='http://fasb.org/re/stm-std/2011-01-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:annotation>
+<xs:documentation>
+This file is an entry point for Industry Real Estate.
+
+The DTS starting with this entry point includes standard, period start, period end, total and axis default labels. It will not include references.
+
+The DTS includes the following statements:
+
+110000 - Statement - Statement of Financial Position, Classified - Real Estate Operations  (sfp-clreo)
+110200 - Statement - Statement of Financial Position, Unclassified - Real Estate Operations  (sfp-ucreo)
+124200 - Statement - Statement of Income, Additional Statement of Income Elements  (soi-indira)
+144000 - Statement - Statement of Income, Real Estate, Excluding REITs  (soi-re)
+145000 - Statement - Statement of Income, Real Estate Investment Trusts  (soi-reit)
+148400 - Statement - Statement of Other Comprehensive Income  (soc)
+148600 - Statement - Statement of Shareholders' Equity and Other Comprehensive Income  (sheci)
+152000 - Statement - Statement of Partners' Capital  (spc)
+152201 - Statement - Statement of Cash Flows, Additional Cash Flow Elements  (scf-indira)
+152205 - Statement - Statement of Cash Flows, Supplemental Disclosures  (scf-sd)
+170000 - Statement - Statement of Cash Flows, Real Estate, Including REITs  (scf-re)
+172600 - Statement - Statement of Cash Flows, Direct Method Operating Activities  (scf-dir)
+190000 - Statement - Common Domain Members  (com)
+</xs:documentation>
+</xs:annotation>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://fasb.org/stm/re/com/2011-01-31' schemaLocation='../../stm/us-gaap-stm-re-com-2011-01-31.xsd' />
+<xs:import namespace='http://fasb.org/stm/re/sfp-ucreo/2011-01-31' schemaLocation='../../stm/us-gaap-stm-re-sfp-ucreo-2011-01-31.xsd' />
+<xs:import namespace='http://fasb.org/stm/re/sfp-clreo/2011-01-31' schemaLocation='../../stm/us-gaap-stm-re-sfp-clreo-2011-01-31.xsd' />
+<xs:import namespace='http://fasb.org/stm/re/soi-re/2011-01-31' schemaLocation='../../stm/us-gaap-stm-re-soi-re-2011-01-31.xsd' />
+<xs:import namespace='http://fasb.org/stm/re/soi-reit/2011-01-31' schemaLocation='../../stm/us-gaap-stm-re-soi-reit-2011-01-31.xsd' />
+<xs:import namespace='http://fasb.org/stm/re/scf-re/2011-01-31' schemaLocation='../../stm/us-gaap-stm-re-scf-re-2011-01-31.xsd' />
+<xs:import namespace='http://fasb.org/stm/re/sheci/2011-01-31' schemaLocation='../../stm/us-gaap-stm-re-sheci-2011-01-31.xsd' />
+<xs:import namespace='http://fasb.org/stm/re/soi-indira/2011-01-31' schemaLocation='../../stm/us-gaap-stm-re-soi-indira-2011-01-31.xsd' />
+<xs:import namespace='http://fasb.org/stm/re/scf-dir/2011-01-31' schemaLocation='../../stm/us-gaap-stm-re-scf-dir-2011-01-31.xsd' />
+<xs:import namespace='http://fasb.org/stm/re/spc/2011-01-31' schemaLocation='../../stm/us-gaap-stm-re-spc-2011-01-31.xsd' />
+<xs:import namespace='http://fasb.org/stm/re/soc/2011-01-31' schemaLocation='../../stm/us-gaap-stm-re-soc-2011-01-31.xsd' />
+<xs:import namespace='http://fasb.org/stm/re/scf-indira/2011-01-31' schemaLocation='../../stm/us-gaap-stm-re-scf-indira-2011-01-31.xsd' />
+<xs:import namespace='http://fasb.org/stm/re/scf-sd/2011-01-31' schemaLocation='../../stm/us-gaap-stm-re-scf-sd-2011-01-31.xsd' />
+</xs:schema>

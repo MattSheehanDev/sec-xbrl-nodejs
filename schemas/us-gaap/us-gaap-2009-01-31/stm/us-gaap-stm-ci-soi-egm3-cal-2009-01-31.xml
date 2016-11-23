@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/statement/StatementOfIncomeAlternativeCalc3' xlink:href='../elts/us-roles-2009-01-31.xsd#soi-egm3' xlink:type='simple' />
+<calculationLink xlink:role='http://xbrl.us/us-gaap/role/statement/StatementOfIncomeAlternativeCalc3' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_NetIncomeLoss' xlink:label='loc_NetIncomeLoss' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_IncomeLossFromContinuingOperations' xlink:label='loc_IncomeLossFromContinuingOperations' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntity' xlink:label='loc_IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntity' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ExtraordinaryItemGainOrLossNetOfTaxAttributableToReportingEntity' xlink:label='loc_ExtraordinaryItemGainOrLossNetOfTaxAttributableToReportingEntity' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_CumulativeEffectOfChangeInAccountingPrinciplePresentedOnIncomeStatementNetOfTaxAttributableToReportingEntity' xlink:label='loc_CumulativeEffectOfChangeInAccountingPrinciplePresentedOnIncomeStatementNetOfTaxAttributableToReportingEntity' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ProfitLoss' xlink:label='loc_ProfitLoss' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest' xlink:label='loc_IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_IncomeLossFromDiscontinuedOperationsNetOfTax' xlink:label='loc_IncomeLossFromDiscontinuedOperationsNetOfTax' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ExtraordinaryItemNetOfTax' xlink:label='loc_ExtraordinaryItemNetOfTax' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_CumulativeEffectOfChangeInAccountingPrinciplePresentedOnIncomeStatementNetOfTax' xlink:label='loc_CumulativeEffectOfChangeInAccountingPrinciplePresentedOnIncomeStatementNetOfTax' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_NetIncomeLossAttributableToNoncontrollingInterest' xlink:label='loc_NetIncomeLossAttributableToNoncontrollingInterest' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_IncomeLossFromContinuingOperationsAttributableToNoncontrollingEntity' xlink:label='loc_IncomeLossFromContinuingOperationsAttributableToNoncontrollingEntity' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToNoncontrollingInterest' xlink:label='loc_IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToNoncontrollingInterest' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_ExtraordinaryItemGainOrLossNetOfTaxAttributableToNoncontrollingInterest' xlink:label='loc_ExtraordinaryItemGainOrLossNetOfTaxAttributableToNoncontrollingInterest' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_CumulativeEffectOfChangeInAccountingPrinciplePresentedOnIncomeStatementNetOfTaxAttributableToNoncontrollingInterest' xlink:label='loc_CumulativeEffectOfChangeInAccountingPrinciplePresentedOnIncomeStatementNetOfTaxAttributableToNoncontrollingInterest' xlink:type='locator' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetIncomeLoss' xlink:to='loc_IncomeLossFromContinuingOperations' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetIncomeLoss' xlink:to='loc_IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntity' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetIncomeLoss' xlink:to='loc_ExtraordinaryItemGainOrLossNetOfTaxAttributableToReportingEntity' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetIncomeLoss' xlink:to='loc_CumulativeEffectOfChangeInAccountingPrinciplePresentedOnIncomeStatementNetOfTaxAttributableToReportingEntity' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProfitLoss' xlink:to='loc_IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProfitLoss' xlink:to='loc_IncomeLossFromDiscontinuedOperationsNetOfTax' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProfitLoss' xlink:to='loc_ExtraordinaryItemNetOfTax' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProfitLoss' xlink:to='loc_CumulativeEffectOfChangeInAccountingPrinciplePresentedOnIncomeStatementNetOfTax' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetIncomeLossAttributableToNoncontrollingInterest' xlink:to='loc_IncomeLossFromContinuingOperationsAttributableToNoncontrollingEntity' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetIncomeLossAttributableToNoncontrollingInterest' xlink:to='loc_IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToNoncontrollingInterest' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetIncomeLossAttributableToNoncontrollingInterest' xlink:to='loc_ExtraordinaryItemGainOrLossNetOfTaxAttributableToNoncontrollingInterest' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetIncomeLossAttributableToNoncontrollingInterest' xlink:to='loc_CumulativeEffectOfChangeInAccountingPrinciplePresentedOnIncomeStatementNetOfTaxAttributableToNoncontrollingInterest' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

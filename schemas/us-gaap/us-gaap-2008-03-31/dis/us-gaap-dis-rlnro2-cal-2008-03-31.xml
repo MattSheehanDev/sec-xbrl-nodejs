@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/ReceivablesLoansNotesReceivableAndOthersLoansAlternate' xlink:href='../elts/us-roles-2008-03-31.xsd#rlnro2' xlink:type='simple' />
+<calculationLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/ReceivablesLoansNotesReceivableAndOthersLoansAlternate' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansReceivableNet' xlink:label='loc_LoansReceivableNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansAndLeasesReceivableNetReportedAmount' xlink:label='loc_LoansAndLeasesReceivableNetReportedAmount' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansReceivableHeldForSaleNet' xlink:label='loc_LoansReceivableHeldForSaleNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansHeldForSaleMortgages' xlink:label='loc_LoansHeldForSaleMortgages' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansHeldForSaleOther' xlink:label='loc_LoansHeldForSaleOther' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansHeldForSaleCommercialAndIndustrial' xlink:label='loc_LoansHeldForSaleCommercialAndIndustrial' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansHeldForSaleCommercialRealEstate' xlink:label='loc_LoansHeldForSaleCommercialRealEstate' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansHeldForSaleConsumerHomeEquity' xlink:label='loc_LoansHeldForSaleConsumerHomeEquity' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansHeldForSaleConsumerInstallmentStudent' xlink:label='loc_LoansHeldForSaleConsumerInstallmentStudent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansHeldForSaleConsumerCreditCard' xlink:label='loc_LoansHeldForSaleConsumerCreditCard' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MortgageLoansOnRealEstateCommercialAndConsumerNet' xlink:label='loc_MortgageLoansOnRealEstateCommercialAndConsumerNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansReceivableCommercialRealEstate' xlink:label='loc_LoansReceivableCommercialRealEstate' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansReceivableCommercialMortgage' xlink:label='loc_LoansReceivableCommercialMortgage' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansReceivableCommercialAcquisition' xlink:label='loc_LoansReceivableCommercialAcquisition' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansReceivableCommercialDevelopment' xlink:label='loc_LoansReceivableCommercialDevelopment' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansReceivableCommercialConstruction' xlink:label='loc_LoansReceivableCommercialConstruction' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansAndLeasesReceivableConsumerRealEstate' xlink:label='loc_LoansAndLeasesReceivableConsumerRealEstate' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansAndLeasesReceivableConsumerMortgage' xlink:label='loc_LoansAndLeasesReceivableConsumerMortgage' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansAndLeasesReceivableConsumerHomeEquity' xlink:label='loc_LoansAndLeasesReceivableConsumerHomeEquity' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoansAndLeasesReceivableConsumerConstruction' xlink:label='loc_LoansAndLeasesReceivableConsumerConstruction' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AllowanceForLoanAndLeaseLossesRealEstate' xlink:label='loc_AllowanceForLoanAndLeaseLossesRealEstate' xlink:type='locator' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansReceivableNet' xlink:to='loc_LoansAndLeasesReceivableNetReportedAmount' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansReceivableNet' xlink:to='loc_LoansReceivableHeldForSaleNet' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansReceivableHeldForSaleNet' xlink:to='loc_LoansHeldForSaleMortgages' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansReceivableHeldForSaleNet' xlink:to='loc_LoansHeldForSaleOther' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansReceivableHeldForSaleNet' xlink:to='loc_LoansHeldForSaleCommercialAndIndustrial' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansReceivableHeldForSaleNet' xlink:to='loc_LoansHeldForSaleCommercialRealEstate' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansReceivableHeldForSaleNet' xlink:to='loc_LoansHeldForSaleConsumerHomeEquity' xlink:type='arc' />
+<calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansReceivableHeldForSaleNet' xlink:to='loc_LoansHeldForSaleConsumerInstallmentStudent' xlink:type='arc' />
+<calculationArc order='70' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansReceivableHeldForSaleNet' xlink:to='loc_LoansHeldForSaleConsumerCreditCard' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MortgageLoansOnRealEstateCommercialAndConsumerNet' xlink:to='loc_LoansReceivableCommercialRealEstate' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansReceivableCommercialRealEstate' xlink:to='loc_LoansReceivableCommercialMortgage' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansReceivableCommercialRealEstate' xlink:to='loc_LoansReceivableCommercialAcquisition' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansReceivableCommercialRealEstate' xlink:to='loc_LoansReceivableCommercialDevelopment' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansReceivableCommercialRealEstate' xlink:to='loc_LoansReceivableCommercialConstruction' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MortgageLoansOnRealEstateCommercialAndConsumerNet' xlink:to='loc_LoansAndLeasesReceivableConsumerRealEstate' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansAndLeasesReceivableConsumerRealEstate' xlink:to='loc_LoansAndLeasesReceivableConsumerMortgage' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansAndLeasesReceivableConsumerRealEstate' xlink:to='loc_LoansAndLeasesReceivableConsumerHomeEquity' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansAndLeasesReceivableConsumerRealEstate' xlink:to='loc_LoansAndLeasesReceivableConsumerConstruction' xlink:type='arc' />
+<calculationArc order='30' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MortgageLoansOnRealEstateCommercialAndConsumerNet' xlink:to='loc_AllowanceForLoanAndLeaseLossesRealEstate' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

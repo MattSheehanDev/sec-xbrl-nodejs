@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/deprecated/deprecated' xlink:href='us-roles-2009-01-31.xsd#dep' xlink:type='simple' />
+<presentationLink xlink:role='http://xbrl.us/us-gaap/role/deprecated/deprecated' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DeprecatedItems' xlink:label='loc_DeprecatedItems' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccountsAndNotesReceivableGrossAllowanceAndNetAbstract' xlink:label='loc_AccountsAndNotesReceivableGrossAllowanceAndNetAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccountsAndNotesReceivableReceivableTypeAxis' xlink:label='loc_AccountsAndNotesReceivableReceivableTypeAxis' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccountsPayable' xlink:label='loc_AccountsPayable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccountsPayableAbstract' xlink:label='loc_AccountsPayableAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccountsPayableAndAccruedLiabilities' xlink:label='loc_AccountsPayableAndAccruedLiabilities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccountsPayableAndAccruedLiabilitiesAbstract' xlink:label='loc_AccountsPayableAndAccruedLiabilitiesAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccountsPayableAndAccruedLiabilitiesCurrentAndUnclassifiedAbstract' xlink:label='loc_AccountsPayableAndAccruedLiabilitiesCurrentAndUnclassifiedAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccountsPayableInterestBearing' xlink:label='loc_AccountsPayableInterestBearing' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccountsPayableOther' xlink:label='loc_AccountsPayableOther' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccountsPayableRelatedParties' xlink:label='loc_AccountsPayableRelatedParties' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccountsPayableTrade' xlink:label='loc_AccountsPayableTrade' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccountsPayableUnderwritersPromotersAndEmployeesOtherThanSalariesAndWages' xlink:label='loc_AccountsPayableUnderwritersPromotersAndEmployeesOtherThanSalariesAndWages' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccountsReceivableTotalMember' xlink:label='loc_AccountsReceivableTotalMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccrualForTaxesOtherThanIncomeTaxes' xlink:label='loc_AccrualForTaxesOtherThanIncomeTaxes' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedAdvertising' xlink:label='loc_AccruedAdvertising' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedBonuses' xlink:label='loc_AccruedBonuses' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedEmployeeBenefits' xlink:label='loc_AccruedEmployeeBenefits' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedExchangeFeeRebate' xlink:label='loc_AccruedExchangeFeeRebate' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedIncomeTaxesPayable' xlink:label='loc_AccruedIncomeTaxesPayable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedInsurance' xlink:label='loc_AccruedInsurance' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedInterestReceivableMember' xlink:label='loc_AccruedInterestReceivableMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedInterestReceivableOnInvestmentsMember' xlink:label='loc_AccruedInterestReceivableOnInvestmentsMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedInterestReceivableOnLoansMember' xlink:label='loc_AccruedInterestReceivableOnLoansMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedLiabilities' xlink:label='loc_AccruedLiabilities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedLiabilitiesAbstract' xlink:label='loc_AccruedLiabilitiesAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedPayrollTaxes' xlink:label='loc_AccruedPayrollTaxes' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedProfessionalFees' xlink:label='loc_AccruedProfessionalFees' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedRent' xlink:label='loc_AccruedRent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedRoyalties' xlink:label='loc_AccruedRoyalties' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedSalaries' xlink:label='loc_AccruedSalaries' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedSalesCommission' xlink:label='loc_AccruedSalesCommission' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedUtilities' xlink:label='loc_AccruedUtilities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccruedVacation' xlink:label='loc_AccruedVacation' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccumulatedOtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentBeforeTax' xlink:label='loc_AccumulatedOtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentBeforeTax' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccumulatedOtherComprehensiveIncomeLossBeforeTax' xlink:label='loc_AccumulatedOtherComprehensiveIncomeLossBeforeTax' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccumulatedOtherComprehensiveIncomeLossBenefitPlansAdjustmentBeforeTax' xlink:label='loc_AccumulatedOtherComprehensiveIncomeLossBenefitPlansAdjustmentBeforeTax' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccumulatedOtherComprehensiveIncomeLossCumulativeChangesInNetGainLossFromCashFlowHedgesEffectBeforeTax' xlink:label='loc_AccumulatedOtherComprehensiveIncomeLossCumulativeChangesInNetGainLossFromCashFlowHedgesEffectBeforeTax' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentBeforeTax' xlink:label='loc_AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentBeforeTax' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AccumulatedUndistributedIncomeLoss' xlink:label='loc_AccumulatedUndistributedIncomeLoss' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AdjustmentsForNoncashItemsIncludedInIncomeLossFromContinuingOperations' xlink:label='loc_AdjustmentsForNoncashItemsIncludedInIncomeLossFromContinuingOperations' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AdjustmentsForNoncashItemsIncludedInIncomeLossFromContinuingOperationsAbstract' xlink:label='loc_AdjustmentsForNoncashItemsIncludedInIncomeLossFromContinuingOperationsAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AdjustmentsToAdditionalPaidInCapitalDebtWithDetachableStockPurchaseWarrantIssued' xlink:label='loc_AdjustmentsToAdditionalPaidInCapitalDebtWithDetachableStockPurchaseWarrantIssued' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperations' xlink:label='loc_AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperations' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperationsAbstract' xlink:label='loc_AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperationsAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AdjustmentsToReconcileToIncomeLossFromContinuingOperations' xlink:label='loc_AdjustmentsToReconcileToIncomeLossFromContinuingOperations' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AdjustmentsToReconcileToIncomeLossFromContinuingOperationsAbstract' xlink:label='loc_AdjustmentsToReconcileToIncomeLossFromContinuingOperationsAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AmortizationOfDeferredAcquisitionCostsDAC' xlink:label='loc_AmortizationOfDeferredAcquisitionCostsDAC' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AntidilutiveSharesOutstanding' xlink:label='loc_AntidilutiveSharesOutstanding' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AssetsOrLiabilitiesFromTransfersOfFinancialAssetsHavingNoReasonableEstimateOfFairValueCarryingAmount' xlink:label='loc_AssetsOrLiabilitiesFromTransfersOfFinancialAssetsHavingNoReasonableEstimateOfFairValueCarryingAmount' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_AvailableForSaleSecuritiesGrossUnrealizedLosses' xlink:label='loc_AvailableForSaleSecuritiesGrossUnrealizedLosses' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_BilledContractReceivablesMember' xlink:label='loc_BilledContractReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_BorrowingsFairValueDisclosureMethodology' xlink:label='loc_BorrowingsFairValueDisclosureMethodology' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_BorrowingsFairValueDisclosureSignificantAssumptions' xlink:label='loc_BorrowingsFairValueDisclosureSignificantAssumptions' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_BrokerageReceivablesMember' xlink:label='loc_BrokerageReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_BusinessAcquisitionReasonForAcquisition' xlink:label='loc_BusinessAcquisitionReasonForAcquisition' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CapitalLeasesLesseeBalanceSheetAssetsByMajorClassGross' xlink:label='loc_CapitalLeasesLesseeBalanceSheetAssetsByMajorClassGross' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CapitalizedExploratoryWellCostsAdditionsPendingDeterminationOfProvedReserves' xlink:label='loc_CapitalizedExploratoryWellCostsAdditionsPendingDeterminationOfProvedReserves' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CapitalizedExploratoryWellCostsChargedToExpense' xlink:label='loc_CapitalizedExploratoryWellCostsChargedToExpense' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CapitalizedExploratoryWellCostsPeriodIncreaseDecrease' xlink:label='loc_CapitalizedExploratoryWellCostsPeriodIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CashAndEquivalentsForBankPresentationAbstract' xlink:label='loc_CashAndEquivalentsForBankPresentationAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CashDividends' xlink:label='loc_CashDividends' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CashProvidedByUsedInDiscontinuedOperationsFinancingActivities' xlink:label='loc_CashProvidedByUsedInDiscontinuedOperationsFinancingActivities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CashProvidedByUsedInDiscontinuedOperationsInvestingActivities' xlink:label='loc_CashProvidedByUsedInDiscontinuedOperationsInvestingActivities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CashProvidedByUsedInDiscontinuedOperationsOperatingActivities' xlink:label='loc_CashProvidedByUsedInDiscontinuedOperationsOperatingActivities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CasinoReceivablesMember' xlink:label='loc_CasinoReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ClassOfCommonStockDomain' xlink:label='loc_ClassOfCommonStockDomain' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ClassOfCommonStockLineItems' xlink:label='loc_ClassOfCommonStockLineItems' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ClassOfCommonStockTable' xlink:label='loc_ClassOfCommonStockTable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ClassOfConvertiblePreferredStockLineItems' xlink:label='loc_ClassOfConvertiblePreferredStockLineItems' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ClassOfConvertiblePreferredStockTable' xlink:label='loc_ClassOfConvertiblePreferredStockTable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ClassOfPreferredStockDomain' xlink:label='loc_ClassOfPreferredStockDomain' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ClassOfPreferredStockLineItems' xlink:label='loc_ClassOfPreferredStockLineItems' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ClassOfPreferredStockTable' xlink:label='loc_ClassOfPreferredStockTable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommercialPaperCurrent' xlink:label='loc_CommercialPaperCurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommitmentsAndContingencies' xlink:label='loc_CommitmentsAndContingencies' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockAtParValueMember' xlink:label='loc_CommonStockAtParValueMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockIssuedAdditionalSeriesEmployeeStockTrust' xlink:label='loc_CommonStockIssuedAdditionalSeriesEmployeeStockTrust' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockIssuedAdditionalSeriesEmployeeTrustDeferred' xlink:label='loc_CommonStockIssuedAdditionalSeriesEmployeeTrustDeferred' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockNoteDisclosureAbstract' xlink:label='loc_CommonStockNoteDisclosureAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockAdditionalSeriesConversionBasis' xlink:label='loc_CommonStockAdditionalSeriesConversionBasis' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockAdditionalSeriesHeldInTrust' xlink:label='loc_CommonStockAdditionalSeriesHeldInTrust' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockAdditionalSeriesNoParValue' xlink:label='loc_CommonStockAdditionalSeriesNoParValue' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockAdditionalSeriesNumberOfSharesParValueAndOtherDisclosuresAbstract' xlink:label='loc_CommonStockAdditionalSeriesNumberOfSharesParValueAndOtherDisclosuresAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockAdditionalSeriesParOrStatedValuePerShare' xlink:label='loc_CommonStockAdditionalSeriesParOrStatedValuePerShare' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockAdditionalSeriesSharesAuthorized' xlink:label='loc_CommonStockAdditionalSeriesSharesAuthorized' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockAdditionalSeriesSharesIssued' xlink:label='loc_CommonStockAdditionalSeriesSharesIssued' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockAdditionalSeriesSharesOutstanding' xlink:label='loc_CommonStockAdditionalSeriesSharesOutstanding' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockAdditionalSeriesValue' xlink:label='loc_CommonStockAdditionalSeriesValue' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockAdditionalSeriesValueOutstanding' xlink:label='loc_CommonStockAdditionalSeriesValueOutstanding' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockDividend' xlink:label='loc_CommonStockDividend' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockNameDomain' xlink:label='loc_CommonStockNameDomain' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockShareSubscriptionsButUnissuedValue' xlink:label='loc_CommonStockShareSubscriptionsButUnissuedValue' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockShareSubscriptionsButUnissuedValueAbstract' xlink:label='loc_CommonStockShareSubscriptionsButUnissuedValueAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CommonStockSharesSubscribedButUnissuedValue' xlink:label='loc_CommonStockSharesSubscribedButUnissuedValue' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConstructionPayable' xlink:label='loc_ConstructionPayable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ContractHolderReceivablesMember' xlink:label='loc_ContractHolderReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ContractReceivableRetainageMember' xlink:label='loc_ContractReceivableRetainageMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ContractsReceivableMember' xlink:label='loc_ContractsReceivableMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ContractualMaturitiesTimeDeposits100000OrMore' xlink:label='loc_ContractualMaturitiesTimeDeposits100000OrMore' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockDomain' xlink:label='loc_ConvertiblePreferredStockDomain' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockAmountOfPreferredDividendsInArrears' xlink:label='loc_ConvertiblePreferredStockAmountOfPreferredDividendsInArrears' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockContractTerms' xlink:label='loc_ConvertiblePreferredStockContractTerms' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockDividendPaymentRateVariable' xlink:label='loc_ConvertiblePreferredStockDividendPaymentRateVariable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockDividendPaymentTerms' xlink:label='loc_ConvertiblePreferredStockDividendPaymentTerms' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockDividendPreferenceOrRestrictions' xlink:label='loc_ConvertiblePreferredStockDividendPreferenceOrRestrictions' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockDividendRatePercentageOrPerDollarAmount' xlink:label='loc_ConvertiblePreferredStockDividendRatePercentageOrPerDollarAmount' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockLiquidationPreference' xlink:label='loc_ConvertiblePreferredStockLiquidationPreference' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockParStatedValuePerShare' xlink:label='loc_ConvertiblePreferredStockParStatedValuePerShare' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockPerShareAmountsOfPreferredDividendsInArrears' xlink:label='loc_ConvertiblePreferredStockPerShareAmountsOfPreferredDividendsInArrears' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockRedemptionDate' xlink:label='loc_ConvertiblePreferredStockRedemptionDate' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockRedemptionPricePerShare' xlink:label='loc_ConvertiblePreferredStockRedemptionPricePerShare' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockRedemptionTerms' xlink:label='loc_ConvertiblePreferredStockRedemptionTerms' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockShareSubscriptions' xlink:label='loc_ConvertiblePreferredStockShareSubscriptions' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockSharesAuthorized' xlink:label='loc_ConvertiblePreferredStockSharesAuthorized' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockSharesIssued' xlink:label='loc_ConvertiblePreferredStockSharesIssued' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockSharesOutstanding' xlink:label='loc_ConvertiblePreferredStockSharesOutstanding' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockSharesSubscribedButUnissued' xlink:label='loc_ConvertiblePreferredStockSharesSubscribedButUnissued' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockSharesSubscribedButUnissuedSubscriptionReceivable' xlink:label='loc_ConvertiblePreferredStockSharesSubscribedButUnissuedSubscriptionReceivable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockSharesSubscribedButUnissuedValue' xlink:label='loc_ConvertiblePreferredStockSharesSubscribedButUnissuedValue' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ConvertiblePreferredStockVotingRights' xlink:label='loc_ConvertiblePreferredStockVotingRights' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CustomerReceivablesMember' xlink:label='loc_CustomerReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_CustomerSecuritiesForWhichEntityHasRightToSellOrRepledgeSecuritiesType' xlink:label='loc_CustomerSecuritiesForWhichEntityHasRightToSellOrRepledgeSecuritiesType' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DefaultsOfShortTermAndLongTermDebtAbstract' xlink:label='loc_DefaultsOfShortTermAndLongTermDebtAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DeferredCompensationCashBasedArrangementsLiabilityNoncurrent' xlink:label='loc_DeferredCompensationCashBasedArrangementsLiabilityNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DeferredCompensationLiabilityNoncurrent' xlink:label='loc_DeferredCompensationLiabilityNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DeferredCompensationLiabilityNoncurrentAbstract' xlink:label='loc_DeferredCompensationLiabilityNoncurrentAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DeferredCompensationShareBasedArrangementsLiabilityNoncurrent' xlink:label='loc_DeferredCompensationShareBasedArrangementsLiabilityNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DeferredFinanceCostAmortizationExpense' xlink:label='loc_DeferredFinanceCostAmortizationExpense' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DefinedBenefitPensionPlanNoncurrentLiabilities' xlink:label='loc_DefinedBenefitPensionPlanNoncurrentLiabilities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DefinedBenefitPlanDebtSecuritiesTargetAllocation' xlink:label='loc_DefinedBenefitPlanDebtSecuritiesTargetAllocation' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DefinedBenefitPlanEquitySecuritiesTargetAllocation' xlink:label='loc_DefinedBenefitPlanEquitySecuritiesTargetAllocation' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DefinedBenefitPlanNoncurrentAssetsForPlanBenefits' xlink:label='loc_DefinedBenefitPlanNoncurrentAssetsForPlanBenefits' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DefinedBenefitPlanOtherPlanAssetsTargetAllocation' xlink:label='loc_DefinedBenefitPlanOtherPlanAssetsTargetAllocation' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DefinedBenefitPlanRealEstateTargetAllocation' xlink:label='loc_DefinedBenefitPlanRealEstateTargetAllocation' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DepreciationExpense' xlink:label='loc_DepreciationExpense' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DividendsPayable' xlink:label='loc_DividendsPayable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DueToAffiliate' xlink:label='loc_DueToAffiliate' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DueToEmployees' xlink:label='loc_DueToEmployees' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DueToOfficersOrStockholders' xlink:label='loc_DueToOfficersOrStockholders' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DueToOtherRelatedPartiesCurrent' xlink:label='loc_DueToOtherRelatedPartiesCurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DueToRelatedParties' xlink:label='loc_DueToRelatedParties' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_DueToRelatedPartiesCurrentAndUnclassifiedAbstract' xlink:label='loc_DueToRelatedPartiesCurrentAndUnclassifiedAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_EarningsLossesOfMinorityInterestAndEquityMethodInvestments' xlink:label='loc_EarningsLossesOfMinorityInterestAndEquityMethodInvestments' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_EarningsPerShareBasicByCommonClassAxis' xlink:label='loc_EarningsPerShareBasicByCommonClassAxis' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_EarningsPerShareDilutedByCommonClassAxis' xlink:label='loc_EarningsPerShareDilutedByCommonClassAxis' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_EmployeeStockOptionsMember' xlink:label='loc_EmployeeStockOptionsMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_EmployeeRelatedLiabilities' xlink:label='loc_EmployeeRelatedLiabilities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_EmployeeRelatedLiabilitiesAbstract' xlink:label='loc_EmployeeRelatedLiabilitiesAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_EntityWideRevenueByMajorCustomerAxis' xlink:label='loc_EntityWideRevenueByMajorCustomerAxis' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_EquityClassOfCommonStockAxis' xlink:label='loc_EquityClassOfCommonStockAxis' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_EquityClassOfConvertiblePreferredStockAxis' xlink:label='loc_EquityClassOfConvertiblePreferredStockAxis' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_EquityClassOfPreferredStockAxis' xlink:label='loc_EquityClassOfPreferredStockAxis' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_FairValueByBalanceSheetGroupingAbstract' xlink:label='loc_FairValueByBalanceSheetGroupingAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_FairValueEstimateNotPracticableAbstract' xlink:label='loc_FairValueEstimateNotPracticableAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_FairValueEstimateNotPracticableMinorityInterests' xlink:label='loc_FairValueEstimateNotPracticableMinorityInterests' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateDerivativeFinancialInstrumentsAssets' xlink:label='loc_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateDerivativeFinancialInstrumentsAssets' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateDerivativeFinancialInstrumentsLiabilities' xlink:label='loc_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateDerivativeFinancialInstrumentsLiabilities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateMinorityInterests' xlink:label='loc_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateMinorityInterests' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateServicingRights' xlink:label='loc_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateServicingRights' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateTradingAccountAssets' xlink:label='loc_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateTradingAccountAssets' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateTradingLiabilities' xlink:label='loc_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateTradingLiabilities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ForeclosureClaimsReceivableMember' xlink:label='loc_ForeclosureClaimsReceivableMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_FreshStartBalanceSheetDateOfBalanceSheet' xlink:label='loc_FreshStartBalanceSheetDateOfBalanceSheet' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_GasImbalancePayable' xlink:label='loc_GasImbalancePayable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_GasPurchasePayable' xlink:label='loc_GasPurchasePayable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_GeneralPartnersCapitalAccountValueAbstract' xlink:label='loc_GeneralPartnersCapitalAccountValueAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_HotelReceivablesMember' xlink:label='loc_HotelReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossAbstract' xlink:label='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentBeforeTaxRollForward' xlink:label='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentBeforeTaxRollForward' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentNetOfTaxRollForward' xlink:label='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentNetOfTaxRollForward' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossBeforeTaxRollForward' xlink:label='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossBeforeTaxRollForward' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossBenefitPlansAdjustmentBeforeTaxRollForward' xlink:label='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossBenefitPlansAdjustmentBeforeTaxRollForward' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossBenefitPlansAdjustmentNetOfTaxRollForward' xlink:label='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossBenefitPlansAdjustmentNetOfTaxRollForward' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossComponentsBeforeTaxAbstract' xlink:label='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossComponentsBeforeTaxAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossComponentsNetOfTaxAbstract' xlink:label='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossComponentsNetOfTaxAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossCumulativeChangeInNetGainLossFromDesignatedOrQualifyingCashFlowHedgesEffectBeforeTaxRollForward' xlink:label='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossCumulativeChangeInNetGainLossFromDesignatedOrQualifyingCashFlowHedgesEffectBeforeTaxRollForward' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossCumulativeChangeInNetGainLossFromDesignatedOrQualifyingCashFlowHedgesEffectNetOfTaxRollForward' xlink:label='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossCumulativeChangeInNetGainLossFromDesignatedOrQualifyingCashFlowHedgesEffectNetOfTaxRollForward' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossNetOfTaxRollForward' xlink:label='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossNetOfTaxRollForward' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeForeignCurrencyTranslationAdjustmentBeforeTaxRollForward' xlink:label='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeForeignCurrencyTranslationAdjustmentBeforeTaxRollForward' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeForeignCurrencyTranslationAdjustmentNetOfTaxRollForward' xlink:label='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeForeignCurrencyTranslationAdjustmentNetOfTaxRollForward' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_IncrementalCommonSharesAttributableToParticipatingNonvestedShares' xlink:label='loc_IncrementalCommonSharesAttributableToParticipatingNonvestedShares' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_InsuranceReceivableForMalpracticeMember' xlink:label='loc_InsuranceReceivableForMalpracticeMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_InsuranceSettlementsReceivableMember' xlink:label='loc_InsuranceSettlementsReceivableMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_InsuredEventGainLossAbstract' xlink:label='loc_InsuredEventGainLossAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_InterestAndDividendReceivablesMember' xlink:label='loc_InterestAndDividendReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_InterestAndDividendsPayable' xlink:label='loc_InterestAndDividendsPayable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_InterestAndDividendsPayableAbstract' xlink:label='loc_InterestAndDividendsPayableAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_InterestExpenseDebtAbstract' xlink:label='loc_InterestExpenseDebtAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_InterestPayable' xlink:label='loc_InterestPayable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_InterestBearingDepositsAtCarryingValue' xlink:label='loc_InterestBearingDepositsAtCarryingValue' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_InventoryPartsAndComponents' xlink:label='loc_InventoryPartsAndComponents' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_InventoryRawMaterialsAndPurchasedParts' xlink:label='loc_InventoryRawMaterialsAndPurchasedParts' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_InventoryRealEstateValuationReserves' xlink:label='loc_InventoryRealEstateValuationReserves' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_InvestmentContractsFairValueDisclosureMethodology' xlink:label='loc_InvestmentContractsFairValueDisclosureMethodology' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_InvestmentContractsFairValueDisclosureSignificantAssumptions' xlink:label='loc_InvestmentContractsFairValueDisclosureSignificantAssumptions' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LeaseIncentiveMember' xlink:label='loc_LeaseIncentiveMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LeaseIncentivePayable' xlink:label='loc_LeaseIncentivePayable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LeasingReceivablesMember' xlink:label='loc_LeasingReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LeveragedLeaseIncomeLoss' xlink:label='loc_LeveragedLeaseIncomeLoss' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseReinsuranceRecoverablesDeduction' xlink:label='loc_LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseReinsuranceRecoverablesDeduction' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LiquidityDisclosureAbstract' xlink:label='loc_LiquidityDisclosureAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LoanReceivablesMember' xlink:label='loc_LoanReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtByComponentsNoncurrentAlternativeAbstract' xlink:label='loc_LongTermDebtByComponentsNoncurrentAlternativeAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtByComponentsUnclassifiedAlternativeAbstract' xlink:label='loc_LongTermDebtByComponentsUnclassifiedAlternativeAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtComponentsBondsPayable' xlink:label='loc_LongTermDebtComponentsBondsPayable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtComponentsBondsPayableCurrent' xlink:label='loc_LongTermDebtComponentsBondsPayableCurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtComponentsBondsPayableNoncurrent' xlink:label='loc_LongTermDebtComponentsBondsPayableNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtComponentsCommercialLoans' xlink:label='loc_LongTermDebtComponentsCommercialLoans' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtComponentsCommercialLoansCurrent' xlink:label='loc_LongTermDebtComponentsCommercialLoansCurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtComponentsCommercialLoansNoncurrent' xlink:label='loc_LongTermDebtComponentsCommercialLoansNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtComponentsConvertibleDebt' xlink:label='loc_LongTermDebtComponentsConvertibleDebt' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtComponentsCreditFacilities' xlink:label='loc_LongTermDebtComponentsCreditFacilities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtComponentsCreditFacilitiesCurrent' xlink:label='loc_LongTermDebtComponentsCreditFacilitiesCurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtComponentsCreditFacilitiesNoncurrent' xlink:label='loc_LongTermDebtComponentsCreditFacilitiesNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtComponentsMortgageLoans' xlink:label='loc_LongTermDebtComponentsMortgageLoans' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtComponentsMortgageLoansCurrent' xlink:label='loc_LongTermDebtComponentsMortgageLoansCurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtComponentsMortgageLoansNoncurrent' xlink:label='loc_LongTermDebtComponentsMortgageLoansNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtComponentsOtherDebt' xlink:label='loc_LongTermDebtComponentsOtherDebt' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtCurrentByComponentsAlternativeAbstract' xlink:label='loc_LongTermDebtCurrentByComponentsAlternativeAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_LongTermDebtComponentsNotesPayable' xlink:label='loc_LongTermDebtComponentsNotesPayable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_MinorityInterestLocationOnIncomeStatement' xlink:label='loc_MinorityInterestLocationOnIncomeStatement' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_MinorityInterestInNetIncomeLossOfConsolidatedEntities' xlink:label='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_MinorityInterestLocationOnBalanceSheet' xlink:label='loc_MinorityInterestLocationOnBalanceSheet' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_MinorityInterestsFairValueDisclosureSignificantAssumptions' xlink:label='loc_MinorityInterestsFairValueDisclosureSignificantAssumptions' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_NotesPayableRelatedPartiesCurrent' xlink:label='loc_NotesPayableRelatedPartiesCurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OilAndGasSalesReceivablesMember' xlink:label='loc_OilAndGasSalesReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OilAndGasJointInterestBillingReceivablesMember' xlink:label='loc_OilAndGasJointInterestBillingReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OilAndGasSalesPayable' xlink:label='loc_OilAndGasSalesPayable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OperatingLeasesRentExpense' xlink:label='loc_OperatingLeasesRentExpense' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OtherAccruedLiabilities' xlink:label='loc_OtherAccruedLiabilities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OtherAdjustmentsForNoncashItemsIncludedInIncomeLossFromContinuingOperations' xlink:label='loc_OtherAdjustmentsForNoncashItemsIncludedInIncomeLossFromContinuingOperations' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OtherComprehensiveIncomeLossAdditionalMinimumPensionLiabilityTaxEffect' xlink:label='loc_OtherComprehensiveIncomeLossAdditionalMinimumPensionLiabilityTaxEffect' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OtherComprehensiveIncomeLossAdjustmentsTaxAbstract' xlink:label='loc_OtherComprehensiveIncomeLossAdjustmentsTaxAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OtherComprehensiveIncomeReclassificationAdjustmentOnCapsFloorsAndCollarsIntoIncomeTax' xlink:label='loc_OtherComprehensiveIncomeReclassificationAdjustmentOnCapsFloorsAndCollarsIntoIncomeTax' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OtherComprehensiveIncomeReclassificationAdjustmentOnSecuritiesIncludedInNetIncomeTax' xlink:label='loc_OtherComprehensiveIncomeReclassificationAdjustmentOnSecuritiesIncludedInNetIncomeTax' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OtherComprehensiveIncomeReclassificationAdjustmentOnSwapsIncludedInNetIncomeTax' xlink:label='loc_OtherComprehensiveIncomeReclassificationAdjustmentOnSwapsIncludedInNetIncomeTax' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OtherComprehensiveIncomeUnrealizedGainLossOnCapsFloorsAndCollarsArisingDuringPeriodTax' xlink:label='loc_OtherComprehensiveIncomeUnrealizedGainLossOnCapsFloorsAndCollarsArisingDuringPeriodTax' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OtherComprehensiveIncomeUnrealizedGainLossOnSwapsArisingDuringPeriodTax' xlink:label='loc_OtherComprehensiveIncomeUnrealizedGainLossOnSwapsArisingDuringPeriodTax' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OtherDeferredCompensationArrangementsLiabilityNoncurrent' xlink:label='loc_OtherDeferredCompensationArrangementsLiabilityNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OtherEmployeeRelatedLiabilities' xlink:label='loc_OtherEmployeeRelatedLiabilities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OtherPostretirementBenefitsPayable' xlink:label='loc_OtherPostretirementBenefitsPayable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OtherPostretirementDefinedBenefitPlanNoncurrentLiabilities' xlink:label='loc_OtherPostretirementDefinedBenefitPlanNoncurrentLiabilities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_OtherUtilityRevenue' xlink:label='loc_OtherUtilityRevenue' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PartnerTypeOfPartnersCapitalAccountLineItems' xlink:label='loc_PartnerTypeOfPartnersCapitalAccountLineItems' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PartnerTypeOfPartnersCapitalAccountTable' xlink:label='loc_PartnerTypeOfPartnersCapitalAccountTable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PartnersCapitalAccountAccumulatedOtherComprehensiveIncomeLossAbstract' xlink:label='loc_PartnersCapitalAccountAccumulatedOtherComprehensiveIncomeLossAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PartnersCapitalAccountDistributionPerUnitOfLimitedPartnerInterestParentheticalDisclosureAbstract' xlink:label='loc_PartnersCapitalAccountDistributionPerUnitOfLimitedPartnerInterestParentheticalDisclosureAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PartnersCapitalAccountPurchasesOfTreasuryUnitsRollForward' xlink:label='loc_PartnersCapitalAccountPurchasesOfTreasuryUnitsRollForward' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PartnersCapitalAccountTreasuryUnitsPeriodIncreaseDecrease' xlink:label='loc_PartnersCapitalAccountTreasuryUnitsPeriodIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PartnersCapitalAccountTreasuryUnitsValue' xlink:label='loc_PartnersCapitalAccountTreasuryUnitsValue' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PartnersCapitalAccountUnitsAbstract' xlink:label='loc_PartnersCapitalAccountUnitsAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PartnersCapitalAccountUnitsRollForward' xlink:label='loc_PartnersCapitalAccountUnitsRollForward' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PartnersCapitalAccountValueAbstract' xlink:label='loc_PartnersCapitalAccountValueAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PartnersCapitalAccountValueRollForward' xlink:label='loc_PartnersCapitalAccountValueRollForward' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PaymentsForMergerRelatedCostsAndRestructuringCosts' xlink:label='loc_PaymentsForMergerRelatedCostsAndRestructuringCosts' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PaymentsForMergerRelatedCostsAndRestructuringCostsAbstract' xlink:label='loc_PaymentsForMergerRelatedCostsAndRestructuringCostsAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PensionAndOtherPostretirementAndPostemploymentBenefitPlansNoncurrentLiabilities' xlink:label='loc_PensionAndOtherPostretirementAndPostemploymentBenefitPlansNoncurrentLiabilities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PensionAndOtherPostretirementDefinedBenefitPlansNoncurrentLiabilities' xlink:label='loc_PensionAndOtherPostretirementDefinedBenefitPlansNoncurrentLiabilities' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PostemploymentBenefitsLiability' xlink:label='loc_PostemploymentBenefitsLiability' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockAtParValueMember' xlink:label='loc_PreferredStockAtParValueMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockAdditionalSeriesCarryingAmount' xlink:label='loc_PreferredStockAdditionalSeriesCarryingAmount' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockAdditionalSeriesConversionBasis' xlink:label='loc_PreferredStockAdditionalSeriesConversionBasis' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockAdditionalSeriesLiquidationPreference' xlink:label='loc_PreferredStockAdditionalSeriesLiquidationPreference' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockAdditionalSeriesNoParValue' xlink:label='loc_PreferredStockAdditionalSeriesNoParValue' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockAdditionalSeriesNumberOfSharesParValueAndOtherDisclosuresAbstract' xlink:label='loc_PreferredStockAdditionalSeriesNumberOfSharesParValueAndOtherDisclosuresAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockAdditionalSeriesParOrStatedValuePerShare' xlink:label='loc_PreferredStockAdditionalSeriesParOrStatedValuePerShare' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockAdditionalSeriesRedemptionAmount' xlink:label='loc_PreferredStockAdditionalSeriesRedemptionAmount' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockAdditionalSeriesSharesAuthorized' xlink:label='loc_PreferredStockAdditionalSeriesSharesAuthorized' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockAdditionalSeriesSharesIssued' xlink:label='loc_PreferredStockAdditionalSeriesSharesIssued' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockAdditionalSeriesSharesOutstanding' xlink:label='loc_PreferredStockAdditionalSeriesSharesOutstanding' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockAdditionalSeriesValue' xlink:label='loc_PreferredStockAdditionalSeriesValue' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockAdditionalSeriesValueOutstanding' xlink:label='loc_PreferredStockAdditionalSeriesValueOutstanding' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockCarryingAmount' xlink:label='loc_PreferredStockCarryingAmount' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockDividend' xlink:label='loc_PreferredStockDividend' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PreferredStockSharesSubscribedButUnissued' xlink:label='loc_PreferredStockSharesSubscribedButUnissued' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_PrepaidExpense' xlink:label='loc_PrepaidExpense' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ProceedsFromSaleOfLand' xlink:label='loc_ProceedsFromSaleOfLand' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ProceedsFromSaleOfRealEstateAbstract' xlink:label='loc_ProceedsFromSaleOfRealEstateAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ProductWarrantyAccrualCurrent' xlink:label='loc_ProductWarrantyAccrualCurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ProductionAndPropertyTaxExpense' xlink:label='loc_ProductionAndPropertyTaxExpense' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ProfessionalAndContractServicesExpense' xlink:label='loc_ProfessionalAndContractServicesExpense' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ProfessionalAndContractServicesExpenseAbstract' xlink:label='loc_ProfessionalAndContractServicesExpenseAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ProfessionalAndContractServicesExpenseMember' xlink:label='loc_ProfessionalAndContractServicesExpenseMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ReclassificationToWellsFacilitiesAndEquipmentBasedOnDeterminationOfProvedReserves' xlink:label='loc_ReclassificationToWellsFacilitiesAndEquipmentBasedOnDeterminationOfProvedReserves' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RedeemableConvertiblePreferredStockValueOfSharesSubscribedButUnissued' xlink:label='loc_RedeemableConvertiblePreferredStockValueOfSharesSubscribedButUnissued' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RedeemablePreferredStockValueSharesSubscribedButUnissued' xlink:label='loc_RedeemablePreferredStockValueSharesSubscribedButUnissued' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RegulatoryAssetsAbstract' xlink:label='loc_RegulatoryAssetsAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RegulatoryCurrentAssetLineItems' xlink:label='loc_RegulatoryCurrentAssetLineItems' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RegulatoryCurrentAssetsTable' xlink:label='loc_RegulatoryCurrentAssetsTable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RegulatoryCurrentLiabilitiesLineItems' xlink:label='loc_RegulatoryCurrentLiabilitiesLineItems' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RegulatoryCurrentLiabilitiesTable' xlink:label='loc_RegulatoryCurrentLiabilitiesTable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RegulatoryLiabilitiesAbstract' xlink:label='loc_RegulatoryLiabilitiesAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RegulatoryNoncurrentAssetLineItems' xlink:label='loc_RegulatoryNoncurrentAssetLineItems' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RegulatoryNoncurrentAssetsTable' xlink:label='loc_RegulatoryNoncurrentAssetsTable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RegulatoryNoncurrentLiabilitiesLineItems' xlink:label='loc_RegulatoryNoncurrentLiabilitiesLineItems' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RegulatoryNoncurrentLiabilitiesTable' xlink:label='loc_RegulatoryNoncurrentLiabilitiesTable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RelatedPartyDebtNoncurrent' xlink:label='loc_RelatedPartyDebtNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RevenueFromLeaseOrRentalOfPropertyOrEquipment' xlink:label='loc_RevenueFromLeaseOrRentalOfPropertyOrEquipment' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RevenueFromLeasedHotels' xlink:label='loc_RevenueFromLeasedHotels' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_RevenueFromSaleAndRentalOfFurniture' xlink:label='loc_RevenueFromSaleAndRentalOfFurniture' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_SalesAndExciseTaxPayable' xlink:label='loc_SalesAndExciseTaxPayable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfAccountsAndNotesReceivableTable' xlink:label='loc_ScheduleOfAccountsAndNotesReceivableTable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfAccountsAndNotesReceivableTextBlock' xlink:label='loc_ScheduleOfAccountsAndNotesReceivableTextBlock' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfCommonStockByClassTextBlock' xlink:label='loc_ScheduleOfCommonStockByClassTextBlock' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfConvertiblePreferredStockByClassTextBlock' xlink:label='loc_ScheduleOfConvertiblePreferredStockByClassTextBlock' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfPreferredStockByClassTextBlock' xlink:label='loc_ScheduleOfPreferredStockByClassTextBlock' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfRegulatoryCurrentAssetsTextBlock' xlink:label='loc_ScheduleOfRegulatoryCurrentAssetsTextBlock' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfRegulatoryCurrentLiabilitiesTextBlock' xlink:label='loc_ScheduleOfRegulatoryCurrentLiabilitiesTextBlock' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfRegulatoryNoncurrentAssetsTextBlock' xlink:label='loc_ScheduleOfRegulatoryNoncurrentAssetsTextBlock' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ScheduleOfRegulatoryNoncurrentLiabilitiesTextBlock' xlink:label='loc_ScheduleOfRegulatoryNoncurrentLiabilitiesTextBlock' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_SeniorDebtObligationsFairValueDisclosureMethodology' xlink:label='loc_SeniorDebtObligationsFairValueDisclosureMethodology' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_SeniorDebtObligationsFairValueDisclosureSignificantAssumptions' xlink:label='loc_SeniorDebtObligationsFairValueDisclosureSignificantAssumptions' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ServicingRightsMember' xlink:label='loc_ServicingRightsMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_SharesUsedInComputationOfBasicEarningsLossPerShare' xlink:label='loc_SharesUsedInComputationOfBasicEarningsLossPerShare' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_SharesUsedInComputationOfBasicEarningsLossPerShareAbstract' xlink:label='loc_SharesUsedInComputationOfBasicEarningsLossPerShareAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_SharesUsedInComputationOfDilutedEarningsLossPerShare' xlink:label='loc_SharesUsedInComputationOfDilutedEarningsLossPerShare' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_SharesUsedInComputationOfEarningsLossPerShareAbstract' xlink:label='loc_SharesUsedInComputationOfEarningsLossPerShareAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ShortTermAndLongTermDebtDefaultedAmount' xlink:label='loc_ShortTermAndLongTermDebtDefaultedAmount' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ShortTermAndLongTermDebtDescriptionOfNoticeOfDefault' xlink:label='loc_ShortTermAndLongTermDebtDescriptionOfNoticeOfDefault' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ShortTermAndLongTermDebtDescriptionOfViolationOrEventOfDefault' xlink:label='loc_ShortTermAndLongTermDebtDescriptionOfViolationOrEventOfDefault' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_ShortTermDebtAmount' xlink:label='loc_ShortTermDebtAmount' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_SignificantPurchaseAndSupplyCommitmentExcludingLongTermCommitmentAbstract' xlink:label='loc_SignificantPurchaseAndSupplyCommitmentExcludingLongTermCommitmentAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_SignificantPurchaseCommitmentDescription' xlink:label='loc_SignificantPurchaseCommitmentDescription' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_SignificantPurchaseCommitmentRemainingMinimumAmountCommitted' xlink:label='loc_SignificantPurchaseCommitmentRemainingMinimumAmountCommitted' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_SignificantSupplyCommitmentDescription' xlink:label='loc_SignificantSupplyCommitmentDescription' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_SignificantSupplyCommitmentRemainingMinimumAmountCommitted' xlink:label='loc_SignificantSupplyCommitmentRemainingMinimumAmountCommitted' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_StockConvertedFromOneClassToAnotherClassShares' xlink:label='loc_StockConvertedFromOneClassToAnotherClassShares' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_StockConvertedFromOneClassToAnotherClassValue' xlink:label='loc_StockConvertedFromOneClassToAnotherClassValue' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_StockIssuedDuringPeriodSharesSharesHeldInTrustOfEmployeeStockOwnershipPlan' xlink:label='loc_StockIssuedDuringPeriodSharesSharesHeldInTrustOfEmployeeStockOwnershipPlan' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_StockIssuedDuringPeriodValueSharesHeldInTrustOfEmployeeStockOwnershipPlan' xlink:label='loc_StockIssuedDuringPeriodValueSharesHeldInTrustOfEmployeeStockOwnershipPlan' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_StorageAndTransportationReceivablesMember' xlink:label='loc_StorageAndTransportationReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_SubordinatedDebtObligationsFairValueDisclosureMethodology' xlink:label='loc_SubordinatedDebtObligationsFairValueDisclosureMethodology' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_SubordinatedDebtObligationsFairValueDisclosureSignificantAssumptions' xlink:label='loc_SubordinatedDebtObligationsFairValueDisclosureSignificantAssumptions' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_TaxRefundReceivableMember' xlink:label='loc_TaxRefundReceivableMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_TaxesOtherThanIncomeExciseProductionAndPropertyTaxes' xlink:label='loc_TaxesOtherThanIncomeExciseProductionAndPropertyTaxes' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_TaxesOtherThanIncomeExciseProductionAndPropertyTaxesAbstract' xlink:label='loc_TaxesOtherThanIncomeExciseProductionAndPropertyTaxesAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_TaxesPayable' xlink:label='loc_TaxesPayable' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_TaxesPayableAbstract' xlink:label='loc_TaxesPayableAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_TemporaryEquityValueOfSharesSubscribedButUnissued' xlink:label='loc_TemporaryEquityValueOfSharesSubscribedButUnissued' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_TradeReceivablesMember' xlink:label='loc_TradeReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_UnbilledContractsReceivableMember' xlink:label='loc_UnbilledContractsReceivableMember' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_WorkersCompensationLiability' xlink:label='loc_WorkersCompensationLiability' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_WriteOffOfInventory' xlink:label='loc_WriteOffOfInventory' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_YearEndAdjustmentsEffectOfFourthQuarterEventsAbstract' xlink:label='loc_YearEndAdjustmentsEffectOfFourthQuarterEventsAbstract' xlink:type='locator' />
+<link:loc xlink:href='us-gaap-2009-01-31.xsd#us-gaap_YearEndAdjustmentsEffectOfFourthQuarterEventsAmount' xlink:label='loc_YearEndAdjustmentsEffectOfFourthQuarterEventsAmount' xlink:type='locator' />
+<presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccountsAndNotesReceivableGrossAllowanceAndNetAbstract' xlink:type='arc' />
+<presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccountsAndNotesReceivableReceivableTypeAxis' xlink:type='arc' />
+<presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccountsPayable' xlink:type='arc' />
+<presentationArc order='40' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccountsPayableAbstract' xlink:type='arc' />
+<presentationArc order='50' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccountsPayableAndAccruedLiabilities' xlink:type='arc' />
+<presentationArc order='60' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccountsPayableAndAccruedLiabilitiesAbstract' xlink:type='arc' />
+<presentationArc order='70' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccountsPayableAndAccruedLiabilitiesCurrentAndUnclassifiedAbstract' xlink:type='arc' />
+<presentationArc order='80' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccountsPayableInterestBearing' xlink:type='arc' />
+<presentationArc order='90' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccountsPayableOther' xlink:type='arc' />
+<presentationArc order='100' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccountsPayableRelatedParties' xlink:type='arc' />
+<presentationArc order='110' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccountsPayableTrade' xlink:type='arc' />
+<presentationArc order='120' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccountsPayableUnderwritersPromotersAndEmployeesOtherThanSalariesAndWages' xlink:type='arc' />
+<presentationArc order='130' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccountsReceivableTotalMember' xlink:type='arc' />
+<presentationArc order='140' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccrualForTaxesOtherThanIncomeTaxes' xlink:type='arc' />
+<presentationArc order='150' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedAdvertising' xlink:type='arc' />
+<presentationArc order='160' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedBonuses' xlink:type='arc' />
+<presentationArc order='170' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedEmployeeBenefits' xlink:type='arc' />
+<presentationArc order='180' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedExchangeFeeRebate' xlink:type='arc' />
+<presentationArc order='190' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedIncomeTaxesPayable' xlink:type='arc' />
+<presentationArc order='200' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedInsurance' xlink:type='arc' />
+<presentationArc order='210' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedInterestReceivableMember' xlink:type='arc' />
+<presentationArc order='220' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedInterestReceivableOnInvestmentsMember' xlink:type='arc' />
+<presentationArc order='230' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedInterestReceivableOnLoansMember' xlink:type='arc' />
+<presentationArc order='240' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedLiabilities' xlink:type='arc' />
+<presentationArc order='250' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedLiabilitiesAbstract' xlink:type='arc' />
+<presentationArc order='260' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedPayrollTaxes' xlink:type='arc' />
+<presentationArc order='270' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedProfessionalFees' xlink:type='arc' />
+<presentationArc order='280' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedRent' xlink:type='arc' />
+<presentationArc order='290' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedRoyalties' xlink:type='arc' />
+<presentationArc order='300' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedSalaries' xlink:type='arc' />
+<presentationArc order='310' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedSalesCommission' xlink:type='arc' />
+<presentationArc order='320' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedUtilities' xlink:type='arc' />
+<presentationArc order='330' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccruedVacation' xlink:type='arc' />
+<presentationArc order='340' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccumulatedOtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentBeforeTax' xlink:type='arc' />
+<presentationArc order='350' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccumulatedOtherComprehensiveIncomeLossBeforeTax' xlink:type='arc' />
+<presentationArc order='360' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccumulatedOtherComprehensiveIncomeLossBenefitPlansAdjustmentBeforeTax' xlink:type='arc' />
+<presentationArc order='370' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccumulatedOtherComprehensiveIncomeLossCumulativeChangesInNetGainLossFromCashFlowHedgesEffectBeforeTax' xlink:type='arc' />
+<presentationArc order='380' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentBeforeTax' xlink:type='arc' />
+<presentationArc order='390' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AccumulatedUndistributedIncomeLoss' xlink:type='arc' />
+<presentationArc order='400' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AdjustmentsForNoncashItemsIncludedInIncomeLossFromContinuingOperations' xlink:type='arc' />
+<presentationArc order='410' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AdjustmentsForNoncashItemsIncludedInIncomeLossFromContinuingOperationsAbstract' xlink:type='arc' />
+<presentationArc order='420' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AdjustmentsToAdditionalPaidInCapitalDebtWithDetachableStockPurchaseWarrantIssued' xlink:type='arc' />
+<presentationArc order='430' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperations' xlink:type='arc' />
+<presentationArc order='440' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperationsAbstract' xlink:type='arc' />
+<presentationArc order='450' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AdjustmentsToReconcileToIncomeLossFromContinuingOperations' xlink:type='arc' />
+<presentationArc order='460' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AdjustmentsToReconcileToIncomeLossFromContinuingOperationsAbstract' xlink:type='arc' />
+<presentationArc order='470' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AmortizationOfDeferredAcquisitionCostsDAC' xlink:type='arc' />
+<presentationArc order='480' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AntidilutiveSharesOutstanding' xlink:type='arc' />
+<presentationArc order='490' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AssetsOrLiabilitiesFromTransfersOfFinancialAssetsHavingNoReasonableEstimateOfFairValueCarryingAmount' xlink:type='arc' />
+<presentationArc order='500' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_AvailableForSaleSecuritiesGrossUnrealizedLosses' xlink:type='arc' />
+<presentationArc order='510' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_BilledContractReceivablesMember' xlink:type='arc' />
+<presentationArc order='520' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_BorrowingsFairValueDisclosureMethodology' xlink:type='arc' />
+<presentationArc order='530' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_BorrowingsFairValueDisclosureSignificantAssumptions' xlink:type='arc' />
+<presentationArc order='540' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_BrokerageReceivablesMember' xlink:type='arc' />
+<presentationArc order='550' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_BusinessAcquisitionReasonForAcquisition' xlink:type='arc' />
+<presentationArc order='560' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CapitalLeasesLesseeBalanceSheetAssetsByMajorClassGross' xlink:type='arc' />
+<presentationArc order='570' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CapitalizedExploratoryWellCostsAdditionsPendingDeterminationOfProvedReserves' xlink:type='arc' />
+<presentationArc order='580' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CapitalizedExploratoryWellCostsChargedToExpense' xlink:type='arc' />
+<presentationArc order='590' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CapitalizedExploratoryWellCostsPeriodIncreaseDecrease' xlink:type='arc' />
+<presentationArc order='600' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CashAndEquivalentsForBankPresentationAbstract' xlink:type='arc' />
+<presentationArc order='610' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CashDividends' xlink:type='arc' />
+<presentationArc order='620' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CashProvidedByUsedInDiscontinuedOperationsFinancingActivities' xlink:type='arc' />
+<presentationArc order='630' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CashProvidedByUsedInDiscontinuedOperationsInvestingActivities' xlink:type='arc' />
+<presentationArc order='640' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CashProvidedByUsedInDiscontinuedOperationsOperatingActivities' xlink:type='arc' />
+<presentationArc order='650' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CasinoReceivablesMember' xlink:type='arc' />
+<presentationArc order='660' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ClassOfCommonStockDomain' xlink:type='arc' />
+<presentationArc order='670' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ClassOfCommonStockLineItems' xlink:type='arc' />
+<presentationArc order='680' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ClassOfCommonStockTable' xlink:type='arc' />
+<presentationArc order='690' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ClassOfConvertiblePreferredStockLineItems' xlink:type='arc' />
+<presentationArc order='700' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ClassOfConvertiblePreferredStockTable' xlink:type='arc' />
+<presentationArc order='710' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ClassOfPreferredStockDomain' xlink:type='arc' />
+<presentationArc order='720' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ClassOfPreferredStockLineItems' xlink:type='arc' />
+<presentationArc order='730' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ClassOfPreferredStockTable' xlink:type='arc' />
+<presentationArc order='740' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommercialPaperCurrent' xlink:type='arc' />
+<presentationArc order='750' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommitmentsAndContingencies' xlink:type='arc' />
+<presentationArc order='760' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockAtParValueMember' xlink:type='arc' />
+<presentationArc order='770' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockIssuedAdditionalSeriesEmployeeStockTrust' xlink:type='arc' />
+<presentationArc order='780' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockIssuedAdditionalSeriesEmployeeTrustDeferred' xlink:type='arc' />
+<presentationArc order='790' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockNoteDisclosureAbstract' xlink:type='arc' />
+<presentationArc order='800' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockAdditionalSeriesConversionBasis' xlink:type='arc' />
+<presentationArc order='810' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockAdditionalSeriesHeldInTrust' xlink:type='arc' />
+<presentationArc order='820' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockAdditionalSeriesNoParValue' xlink:type='arc' />
+<presentationArc order='830' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockAdditionalSeriesNumberOfSharesParValueAndOtherDisclosuresAbstract' xlink:type='arc' />
+<presentationArc order='840' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockAdditionalSeriesParOrStatedValuePerShare' xlink:type='arc' />
+<presentationArc order='850' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockAdditionalSeriesSharesAuthorized' xlink:type='arc' />
+<presentationArc order='860' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockAdditionalSeriesSharesIssued' xlink:type='arc' />
+<presentationArc order='870' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockAdditionalSeriesSharesOutstanding' xlink:type='arc' />
+<presentationArc order='880' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockAdditionalSeriesValue' xlink:type='arc' />
+<presentationArc order='890' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockAdditionalSeriesValueOutstanding' xlink:type='arc' />
+<presentationArc order='900' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockDividend' xlink:type='arc' />
+<presentationArc order='910' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockNameDomain' xlink:type='arc' />
+<presentationArc order='920' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockShareSubscriptionsButUnissuedValue' xlink:type='arc' />
+<presentationArc order='930' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockShareSubscriptionsButUnissuedValueAbstract' xlink:type='arc' />
+<presentationArc order='940' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CommonStockSharesSubscribedButUnissuedValue' xlink:type='arc' />
+<presentationArc order='950' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConstructionPayable' xlink:type='arc' />
+<presentationArc order='960' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ContractHolderReceivablesMember' xlink:type='arc' />
+<presentationArc order='970' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ContractReceivableRetainageMember' xlink:type='arc' />
+<presentationArc order='980' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ContractsReceivableMember' xlink:type='arc' />
+<presentationArc order='990' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ContractualMaturitiesTimeDeposits100000OrMore' xlink:type='arc' />
+<presentationArc order='1000' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockDomain' xlink:type='arc' />
+<presentationArc order='1010' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockAmountOfPreferredDividendsInArrears' xlink:type='arc' />
+<presentationArc order='1020' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockContractTerms' xlink:type='arc' />
+<presentationArc order='1030' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockDividendPaymentRateVariable' xlink:type='arc' />
+<presentationArc order='1040' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockDividendPaymentTerms' xlink:type='arc' />
+<presentationArc order='1050' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockDividendPreferenceOrRestrictions' xlink:type='arc' />
+<presentationArc order='1060' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockDividendRatePercentageOrPerDollarAmount' xlink:type='arc' />
+<presentationArc order='1070' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockLiquidationPreference' xlink:type='arc' />
+<presentationArc order='1080' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockParStatedValuePerShare' xlink:type='arc' />
+<presentationArc order='1090' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockPerShareAmountsOfPreferredDividendsInArrears' xlink:type='arc' />
+<presentationArc order='1100' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockRedemptionDate' xlink:type='arc' />
+<presentationArc order='1110' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockRedemptionPricePerShare' xlink:type='arc' />
+<presentationArc order='1120' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockRedemptionTerms' xlink:type='arc' />
+<presentationArc order='1130' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockShareSubscriptions' xlink:type='arc' />
+<presentationArc order='1140' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockSharesAuthorized' xlink:type='arc' />
+<presentationArc order='1150' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockSharesIssued' xlink:type='arc' />
+<presentationArc order='1160' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockSharesOutstanding' xlink:type='arc' />
+<presentationArc order='1170' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockSharesSubscribedButUnissued' xlink:type='arc' />
+<presentationArc order='1180' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockSharesSubscribedButUnissuedSubscriptionReceivable' xlink:type='arc' />
+<presentationArc order='1190' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockSharesSubscribedButUnissuedValue' xlink:type='arc' />
+<presentationArc order='1200' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ConvertiblePreferredStockVotingRights' xlink:type='arc' />
+<presentationArc order='1210' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CustomerReceivablesMember' xlink:type='arc' />
+<presentationArc order='1220' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_CustomerSecuritiesForWhichEntityHasRightToSellOrRepledgeSecuritiesType' xlink:type='arc' />
+<presentationArc order='1230' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DefaultsOfShortTermAndLongTermDebtAbstract' xlink:type='arc' />
+<presentationArc order='1240' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DeferredCompensationCashBasedArrangementsLiabilityNoncurrent' xlink:type='arc' />
+<presentationArc order='1250' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DeferredCompensationLiabilityNoncurrent' xlink:type='arc' />
+<presentationArc order='1260' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DeferredCompensationLiabilityNoncurrentAbstract' xlink:type='arc' />
+<presentationArc order='1270' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DeferredCompensationShareBasedArrangementsLiabilityNoncurrent' xlink:type='arc' />
+<presentationArc order='1280' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DeferredFinanceCostAmortizationExpense' xlink:type='arc' />
+<presentationArc order='1290' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DefinedBenefitPensionPlanNoncurrentLiabilities' xlink:type='arc' />
+<presentationArc order='1300' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DefinedBenefitPlanDebtSecuritiesTargetAllocation' xlink:type='arc' />
+<presentationArc order='1310' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DefinedBenefitPlanEquitySecuritiesTargetAllocation' xlink:type='arc' />
+<presentationArc order='1320' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DefinedBenefitPlanNoncurrentAssetsForPlanBenefits' xlink:type='arc' />
+<presentationArc order='1330' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DefinedBenefitPlanOtherPlanAssetsTargetAllocation' xlink:type='arc' />
+<presentationArc order='1340' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DefinedBenefitPlanRealEstateTargetAllocation' xlink:type='arc' />
+<presentationArc order='1350' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DepreciationExpense' xlink:type='arc' />
+<presentationArc order='1360' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DividendsPayable' xlink:type='arc' />
+<presentationArc order='1370' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DueToAffiliate' xlink:type='arc' />
+<presentationArc order='1380' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DueToEmployees' xlink:type='arc' />
+<presentationArc order='1390' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DueToOfficersOrStockholders' xlink:type='arc' />
+<presentationArc order='1400' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DueToOtherRelatedPartiesCurrent' xlink:type='arc' />
+<presentationArc order='1410' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DueToRelatedParties' xlink:type='arc' />
+<presentationArc order='1420' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_DueToRelatedPartiesCurrentAndUnclassifiedAbstract' xlink:type='arc' />
+<presentationArc order='1430' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_EarningsLossesOfMinorityInterestAndEquityMethodInvestments' xlink:type='arc' />
+<presentationArc order='1440' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_EarningsPerShareBasicByCommonClassAxis' xlink:type='arc' />
+<presentationArc order='1450' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_EarningsPerShareDilutedByCommonClassAxis' xlink:type='arc' />
+<presentationArc order='1460' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_EmployeeStockOptionsMember' xlink:type='arc' />
+<presentationArc order='1470' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_EmployeeRelatedLiabilities' xlink:type='arc' />
+<presentationArc order='1480' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_EmployeeRelatedLiabilitiesAbstract' xlink:type='arc' />
+<presentationArc order='1490' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_EntityWideRevenueByMajorCustomerAxis' xlink:type='arc' />
+<presentationArc order='1500' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_EquityClassOfCommonStockAxis' xlink:type='arc' />
+<presentationArc order='1510' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_EquityClassOfConvertiblePreferredStockAxis' xlink:type='arc' />
+<presentationArc order='1520' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_EquityClassOfPreferredStockAxis' xlink:type='arc' />
+<presentationArc order='1530' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_FairValueByBalanceSheetGroupingAbstract' xlink:type='arc' />
+<presentationArc order='1540' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_FairValueEstimateNotPracticableAbstract' xlink:type='arc' />
+<presentationArc order='1550' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_FairValueEstimateNotPracticableMinorityInterests' xlink:type='arc' />
+<presentationArc order='1560' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateDerivativeFinancialInstrumentsAssets' xlink:type='arc' />
+<presentationArc order='1570' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateDerivativeFinancialInstrumentsLiabilities' xlink:type='arc' />
+<presentationArc order='1580' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateMinorityInterests' xlink:type='arc' />
+<presentationArc order='1590' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateServicingRights' xlink:type='arc' />
+<presentationArc order='1600' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateTradingAccountAssets' xlink:type='arc' />
+<presentationArc order='1610' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_FairValueOptionDisclosuresRelatedToElectionItemsExistingAtEffectiveDateTradingLiabilities' xlink:type='arc' />
+<presentationArc order='1620' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ForeclosureClaimsReceivableMember' xlink:type='arc' />
+<presentationArc order='1630' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_FreshStartBalanceSheetDateOfBalanceSheet' xlink:type='arc' />
+<presentationArc order='1640' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_GasImbalancePayable' xlink:type='arc' />
+<presentationArc order='1650' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_GasPurchasePayable' xlink:type='arc' />
+<presentationArc order='1660' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_GeneralPartnersCapitalAccountValueAbstract' xlink:type='arc' />
+<presentationArc order='1670' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_HotelReceivablesMember' xlink:type='arc' />
+<presentationArc order='1680' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossAbstract' xlink:type='arc' />
+<presentationArc order='1690' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentBeforeTaxRollForward' xlink:type='arc' />
+<presentationArc order='1700' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentNetOfTaxRollForward' xlink:type='arc' />
+<presentationArc order='1710' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossBeforeTaxRollForward' xlink:type='arc' />
+<presentationArc order='1720' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossBenefitPlansAdjustmentBeforeTaxRollForward' xlink:type='arc' />
+<presentationArc order='1730' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossBenefitPlansAdjustmentNetOfTaxRollForward' xlink:type='arc' />
+<presentationArc order='1740' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossComponentsBeforeTaxAbstract' xlink:type='arc' />
+<presentationArc order='1750' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossComponentsNetOfTaxAbstract' xlink:type='arc' />
+<presentationArc order='1760' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossCumulativeChangeInNetGainLossFromDesignatedOrQualifyingCashFlowHedgesEffectBeforeTaxRollForward' xlink:type='arc' />
+<presentationArc order='1770' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossCumulativeChangeInNetGainLossFromDesignatedOrQualifyingCashFlowHedgesEffectNetOfTaxRollForward' xlink:type='arc' />
+<presentationArc order='1780' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeLossNetOfTaxRollForward' xlink:type='arc' />
+<presentationArc order='1790' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeForeignCurrencyTranslationAdjustmentBeforeTaxRollForward' xlink:type='arc' />
+<presentationArc order='1800' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_IncreaseDecreaseInAccumulatedOtherComprehensiveIncomeForeignCurrencyTranslationAdjustmentNetOfTaxRollForward' xlink:type='arc' />
+<presentationArc order='1810' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_IncrementalCommonSharesAttributableToParticipatingNonvestedShares' xlink:type='arc' />
+<presentationArc order='1820' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_InsuranceReceivableForMalpracticeMember' xlink:type='arc' />
+<presentationArc order='1830' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_InsuranceSettlementsReceivableMember' xlink:type='arc' />
+<presentationArc order='1840' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_InsuredEventGainLossAbstract' xlink:type='arc' />
+<presentationArc order='1850' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_InterestAndDividendReceivablesMember' xlink:type='arc' />
+<presentationArc order='1860' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_InterestAndDividendsPayable' xlink:type='arc' />
+<presentationArc order='1870' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_InterestAndDividendsPayableAbstract' xlink:type='arc' />
+<presentationArc order='1880' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_InterestExpenseDebtAbstract' xlink:type='arc' />
+<presentationArc order='1890' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_InterestPayable' xlink:type='arc' />
+<presentationArc order='1900' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_InterestBearingDepositsAtCarryingValue' xlink:type='arc' />
+<presentationArc order='1910' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_InventoryPartsAndComponents' xlink:type='arc' />
+<presentationArc order='1920' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_InventoryRawMaterialsAndPurchasedParts' xlink:type='arc' />
+<presentationArc order='1930' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_InventoryRealEstateValuationReserves' xlink:type='arc' />
+<presentationArc order='1940' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_InvestmentContractsFairValueDisclosureMethodology' xlink:type='arc' />
+<presentationArc order='1950' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_InvestmentContractsFairValueDisclosureSignificantAssumptions' xlink:type='arc' />
+<presentationArc order='1960' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LeaseIncentiveMember' xlink:type='arc' />
+<presentationArc order='1970' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LeaseIncentivePayable' xlink:type='arc' />
+<presentationArc order='1980' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LeasingReceivablesMember' xlink:type='arc' />
+<presentationArc order='1990' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LeveragedLeaseIncomeLoss' xlink:type='arc' />
+<presentationArc order='2000' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseReinsuranceRecoverablesDeduction' xlink:type='arc' />
+<presentationArc order='2010' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LiquidityDisclosureAbstract' xlink:type='arc' />
+<presentationArc order='2020' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LoanReceivablesMember' xlink:type='arc' />
+<presentationArc order='2030' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtByComponentsNoncurrentAlternativeAbstract' xlink:type='arc' />
+<presentationArc order='2040' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtByComponentsUnclassifiedAlternativeAbstract' xlink:type='arc' />
+<presentationArc order='2050' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtComponentsBondsPayable' xlink:type='arc' />
+<presentationArc order='2060' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtComponentsBondsPayableCurrent' xlink:type='arc' />
+<presentationArc order='2070' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtComponentsBondsPayableNoncurrent' xlink:type='arc' />
+<presentationArc order='2080' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtComponentsCommercialLoans' xlink:type='arc' />
+<presentationArc order='2090' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtComponentsCommercialLoansCurrent' xlink:type='arc' />
+<presentationArc order='2100' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtComponentsCommercialLoansNoncurrent' xlink:type='arc' />
+<presentationArc order='2110' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtComponentsConvertibleDebt' xlink:type='arc' />
+<presentationArc order='2120' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtComponentsCreditFacilities' xlink:type='arc' />
+<presentationArc order='2130' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtComponentsCreditFacilitiesCurrent' xlink:type='arc' />
+<presentationArc order='2140' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtComponentsCreditFacilitiesNoncurrent' xlink:type='arc' />
+<presentationArc order='2150' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtComponentsMortgageLoans' xlink:type='arc' />
+<presentationArc order='2160' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtComponentsMortgageLoansCurrent' xlink:type='arc' />
+<presentationArc order='2170' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtComponentsMortgageLoansNoncurrent' xlink:type='arc' />
+<presentationArc order='2180' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtComponentsOtherDebt' xlink:type='arc' />
+<presentationArc order='2190' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtCurrentByComponentsAlternativeAbstract' xlink:type='arc' />
+<presentationArc order='2200' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_LongTermDebtComponentsNotesPayable' xlink:type='arc' />
+<presentationArc order='2210' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_MinorityInterestLocationOnIncomeStatement' xlink:type='arc' />
+<presentationArc order='2220' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntities' xlink:type='arc' />
+<presentationArc order='2230' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_MinorityInterestLocationOnBalanceSheet' xlink:type='arc' />
+<presentationArc order='2240' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_MinorityInterestsFairValueDisclosureSignificantAssumptions' xlink:type='arc' />
+<presentationArc order='2250' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_NotesPayableRelatedPartiesCurrent' xlink:type='arc' />
+<presentationArc order='2260' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OilAndGasSalesReceivablesMember' xlink:type='arc' />
+<presentationArc order='2270' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OilAndGasJointInterestBillingReceivablesMember' xlink:type='arc' />
+<presentationArc order='2280' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OilAndGasSalesPayable' xlink:type='arc' />
+<presentationArc order='2290' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OperatingLeasesRentExpense' xlink:type='arc' />
+<presentationArc order='2300' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OtherAccruedLiabilities' xlink:type='arc' />
+<presentationArc order='2310' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OtherAdjustmentsForNoncashItemsIncludedInIncomeLossFromContinuingOperations' xlink:type='arc' />
+<presentationArc order='2320' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OtherComprehensiveIncomeLossAdditionalMinimumPensionLiabilityTaxEffect' xlink:type='arc' />
+<presentationArc order='2330' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OtherComprehensiveIncomeLossAdjustmentsTaxAbstract' xlink:type='arc' />
+<presentationArc order='2340' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OtherComprehensiveIncomeReclassificationAdjustmentOnCapsFloorsAndCollarsIntoIncomeTax' xlink:type='arc' />
+<presentationArc order='2350' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OtherComprehensiveIncomeReclassificationAdjustmentOnSecuritiesIncludedInNetIncomeTax' xlink:type='arc' />
+<presentationArc order='2360' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OtherComprehensiveIncomeReclassificationAdjustmentOnSwapsIncludedInNetIncomeTax' xlink:type='arc' />
+<presentationArc order='2370' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OtherComprehensiveIncomeUnrealizedGainLossOnCapsFloorsAndCollarsArisingDuringPeriodTax' xlink:type='arc' />
+<presentationArc order='2380' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OtherComprehensiveIncomeUnrealizedGainLossOnSwapsArisingDuringPeriodTax' xlink:type='arc' />
+<presentationArc order='2390' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OtherDeferredCompensationArrangementsLiabilityNoncurrent' xlink:type='arc' />
+<presentationArc order='2400' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OtherEmployeeRelatedLiabilities' xlink:type='arc' />
+<presentationArc order='2410' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OtherPostretirementBenefitsPayable' xlink:type='arc' />
+<presentationArc order='2420' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OtherPostretirementDefinedBenefitPlanNoncurrentLiabilities' xlink:type='arc' />
+<presentationArc order='2430' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_OtherUtilityRevenue' xlink:type='arc' />
+<presentationArc order='2440' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PartnerTypeOfPartnersCapitalAccountLineItems' xlink:type='arc' />
+<presentationArc order='2450' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PartnerTypeOfPartnersCapitalAccountTable' xlink:type='arc' />
+<presentationArc order='2460' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PartnersCapitalAccountAccumulatedOtherComprehensiveIncomeLossAbstract' xlink:type='arc' />
+<presentationArc order='2470' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PartnersCapitalAccountDistributionPerUnitOfLimitedPartnerInterestParentheticalDisclosureAbstract' xlink:type='arc' />
+<presentationArc order='2480' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PartnersCapitalAccountPurchasesOfTreasuryUnitsRollForward' xlink:type='arc' />
+<presentationArc order='2490' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PartnersCapitalAccountTreasuryUnitsPeriodIncreaseDecrease' xlink:type='arc' />
+<presentationArc order='2500' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PartnersCapitalAccountTreasuryUnitsValue' xlink:type='arc' />
+<presentationArc order='2510' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PartnersCapitalAccountUnitsAbstract' xlink:type='arc' />
+<presentationArc order='2520' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PartnersCapitalAccountUnitsRollForward' xlink:type='arc' />
+<presentationArc order='2530' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PartnersCapitalAccountValueAbstract' xlink:type='arc' />
+<presentationArc order='2540' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PartnersCapitalAccountValueRollForward' xlink:type='arc' />
+<presentationArc order='2550' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PaymentsForMergerRelatedCostsAndRestructuringCosts' xlink:type='arc' />
+<presentationArc order='2560' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PaymentsForMergerRelatedCostsAndRestructuringCostsAbstract' xlink:type='arc' />
+<presentationArc order='2570' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PensionAndOtherPostretirementAndPostemploymentBenefitPlansNoncurrentLiabilities' xlink:type='arc' />
+<presentationArc order='2580' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PensionAndOtherPostretirementDefinedBenefitPlansNoncurrentLiabilities' xlink:type='arc' />
+<presentationArc order='2590' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PostemploymentBenefitsLiability' xlink:type='arc' />
+<presentationArc order='2600' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockAtParValueMember' xlink:type='arc' />
+<presentationArc order='2610' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockAdditionalSeriesCarryingAmount' xlink:type='arc' />
+<presentationArc order='2620' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockAdditionalSeriesConversionBasis' xlink:type='arc' />
+<presentationArc order='2630' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockAdditionalSeriesLiquidationPreference' xlink:type='arc' />
+<presentationArc order='2640' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockAdditionalSeriesNoParValue' xlink:type='arc' />
+<presentationArc order='2650' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockAdditionalSeriesNumberOfSharesParValueAndOtherDisclosuresAbstract' xlink:type='arc' />
+<presentationArc order='2660' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockAdditionalSeriesParOrStatedValuePerShare' xlink:type='arc' />
+<presentationArc order='2670' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockAdditionalSeriesRedemptionAmount' xlink:type='arc' />
+<presentationArc order='2680' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockAdditionalSeriesSharesAuthorized' xlink:type='arc' />
+<presentationArc order='2690' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockAdditionalSeriesSharesIssued' xlink:type='arc' />
+<presentationArc order='2700' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockAdditionalSeriesSharesOutstanding' xlink:type='arc' />
+<presentationArc order='2710' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockAdditionalSeriesValue' xlink:type='arc' />
+<presentationArc order='2720' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockAdditionalSeriesValueOutstanding' xlink:type='arc' />
+<presentationArc order='2730' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockCarryingAmount' xlink:type='arc' />
+<presentationArc order='2740' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockDividend' xlink:type='arc' />
+<presentationArc order='2750' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PreferredStockSharesSubscribedButUnissued' xlink:type='arc' />
+<presentationArc order='2760' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_PrepaidExpense' xlink:type='arc' />
+<presentationArc order='2770' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ProceedsFromSaleOfLand' xlink:type='arc' />
+<presentationArc order='2780' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ProceedsFromSaleOfRealEstateAbstract' xlink:type='arc' />
+<presentationArc order='2790' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ProductWarrantyAccrualCurrent' xlink:type='arc' />
+<presentationArc order='2800' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ProductionAndPropertyTaxExpense' xlink:type='arc' />
+<presentationArc order='2810' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ProfessionalAndContractServicesExpense' xlink:type='arc' />
+<presentationArc order='2820' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ProfessionalAndContractServicesExpenseAbstract' xlink:type='arc' />
+<presentationArc order='2830' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ProfessionalAndContractServicesExpenseMember' xlink:type='arc' />
+<presentationArc order='2840' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ReclassificationToWellsFacilitiesAndEquipmentBasedOnDeterminationOfProvedReserves' xlink:type='arc' />
+<presentationArc order='2850' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RedeemableConvertiblePreferredStockValueOfSharesSubscribedButUnissued' xlink:type='arc' />
+<presentationArc order='2860' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RedeemablePreferredStockValueSharesSubscribedButUnissued' xlink:type='arc' />
+<presentationArc order='2870' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RegulatoryAssetsAbstract' xlink:type='arc' />
+<presentationArc order='2880' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RegulatoryCurrentAssetLineItems' xlink:type='arc' />
+<presentationArc order='2890' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RegulatoryCurrentAssetsTable' xlink:type='arc' />
+<presentationArc order='2900' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RegulatoryCurrentLiabilitiesLineItems' xlink:type='arc' />
+<presentationArc order='2910' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RegulatoryCurrentLiabilitiesTable' xlink:type='arc' />
+<presentationArc order='2920' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RegulatoryLiabilitiesAbstract' xlink:type='arc' />
+<presentationArc order='2930' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RegulatoryNoncurrentAssetLineItems' xlink:type='arc' />
+<presentationArc order='2940' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RegulatoryNoncurrentAssetsTable' xlink:type='arc' />
+<presentationArc order='2950' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RegulatoryNoncurrentLiabilitiesLineItems' xlink:type='arc' />
+<presentationArc order='2960' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RegulatoryNoncurrentLiabilitiesTable' xlink:type='arc' />
+<presentationArc order='2970' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RelatedPartyDebtNoncurrent' xlink:type='arc' />
+<presentationArc order='2980' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RevenueFromLeaseOrRentalOfPropertyOrEquipment' xlink:type='arc' />
+<presentationArc order='2990' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RevenueFromLeasedHotels' xlink:type='arc' />
+<presentationArc order='3000' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_RevenueFromSaleAndRentalOfFurniture' xlink:type='arc' />
+<presentationArc order='3010' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_SalesAndExciseTaxPayable' xlink:type='arc' />
+<presentationArc order='3020' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ScheduleOfAccountsAndNotesReceivableTable' xlink:type='arc' />
+<presentationArc order='3030' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ScheduleOfAccountsAndNotesReceivableTextBlock' xlink:type='arc' />
+<presentationArc order='3040' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ScheduleOfCommonStockByClassTextBlock' xlink:type='arc' />
+<presentationArc order='3050' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ScheduleOfConvertiblePreferredStockByClassTextBlock' xlink:type='arc' />
+<presentationArc order='3060' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ScheduleOfPreferredStockByClassTextBlock' xlink:type='arc' />
+<presentationArc order='3070' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ScheduleOfRegulatoryCurrentAssetsTextBlock' xlink:type='arc' />
+<presentationArc order='3080' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ScheduleOfRegulatoryCurrentLiabilitiesTextBlock' xlink:type='arc' />
+<presentationArc order='3090' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ScheduleOfRegulatoryNoncurrentAssetsTextBlock' xlink:type='arc' />
+<presentationArc order='3100' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ScheduleOfRegulatoryNoncurrentLiabilitiesTextBlock' xlink:type='arc' />
+<presentationArc order='3110' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_SeniorDebtObligationsFairValueDisclosureMethodology' xlink:type='arc' />
+<presentationArc order='3120' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_SeniorDebtObligationsFairValueDisclosureSignificantAssumptions' xlink:type='arc' />
+<presentationArc order='3130' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ServicingRightsMember' xlink:type='arc' />
+<presentationArc order='3140' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_SharesUsedInComputationOfBasicEarningsLossPerShare' xlink:type='arc' />
+<presentationArc order='3150' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_SharesUsedInComputationOfBasicEarningsLossPerShareAbstract' xlink:type='arc' />
+<presentationArc order='3160' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_SharesUsedInComputationOfDilutedEarningsLossPerShare' xlink:type='arc' />
+<presentationArc order='3170' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_SharesUsedInComputationOfEarningsLossPerShareAbstract' xlink:type='arc' />
+<presentationArc order='3180' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ShortTermAndLongTermDebtDefaultedAmount' xlink:type='arc' />
+<presentationArc order='3190' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ShortTermAndLongTermDebtDescriptionOfNoticeOfDefault' xlink:type='arc' />
+<presentationArc order='3200' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ShortTermAndLongTermDebtDescriptionOfViolationOrEventOfDefault' xlink:type='arc' />
+<presentationArc order='3210' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_ShortTermDebtAmount' xlink:type='arc' />
+<presentationArc order='3220' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_SignificantPurchaseAndSupplyCommitmentExcludingLongTermCommitmentAbstract' xlink:type='arc' />
+<presentationArc order='3230' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_SignificantPurchaseCommitmentDescription' xlink:type='arc' />
+<presentationArc order='3240' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_SignificantPurchaseCommitmentRemainingMinimumAmountCommitted' xlink:type='arc' />
+<presentationArc order='3250' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_SignificantSupplyCommitmentDescription' xlink:type='arc' />
+<presentationArc order='3260' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_SignificantSupplyCommitmentRemainingMinimumAmountCommitted' xlink:type='arc' />
+<presentationArc order='3270' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_StockConvertedFromOneClassToAnotherClassShares' xlink:type='arc' />
+<presentationArc order='3280' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_StockConvertedFromOneClassToAnotherClassValue' xlink:type='arc' />
+<presentationArc order='3290' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_StockIssuedDuringPeriodSharesSharesHeldInTrustOfEmployeeStockOwnershipPlan' xlink:type='arc' />
+<presentationArc order='3300' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_StockIssuedDuringPeriodValueSharesHeldInTrustOfEmployeeStockOwnershipPlan' xlink:type='arc' />
+<presentationArc order='3310' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_StorageAndTransportationReceivablesMember' xlink:type='arc' />
+<presentationArc order='3320' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_SubordinatedDebtObligationsFairValueDisclosureMethodology' xlink:type='arc' />
+<presentationArc order='3330' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_SubordinatedDebtObligationsFairValueDisclosureSignificantAssumptions' xlink:type='arc' />
+<presentationArc order='3340' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_TaxRefundReceivableMember' xlink:type='arc' />
+<presentationArc order='3350' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_TaxesOtherThanIncomeExciseProductionAndPropertyTaxes' xlink:type='arc' />
+<presentationArc order='3360' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_TaxesOtherThanIncomeExciseProductionAndPropertyTaxesAbstract' xlink:type='arc' />
+<presentationArc order='3370' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_TaxesPayable' xlink:type='arc' />
+<presentationArc order='3380' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_TaxesPayableAbstract' xlink:type='arc' />
+<presentationArc order='3390' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_TemporaryEquityValueOfSharesSubscribedButUnissued' xlink:type='arc' />
+<presentationArc order='3400' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_TradeReceivablesMember' xlink:type='arc' />
+<presentationArc order='3410' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_UnbilledContractsReceivableMember' xlink:type='arc' />
+<presentationArc order='3420' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_WorkersCompensationLiability' xlink:type='arc' />
+<presentationArc order='3430' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_WriteOffOfInventory' xlink:type='arc' />
+<presentationArc order='3440' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_YearEndAdjustmentsEffectOfFourthQuarterEventsAbstract' xlink:type='arc' />
+<presentationArc order='3450' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DeprecatedItems' xlink:to='loc_YearEndAdjustmentsEffectOfFourthQuarterEventsAmount' xlink:type='arc' />
+</presentationLink>
+</link:linkbase>

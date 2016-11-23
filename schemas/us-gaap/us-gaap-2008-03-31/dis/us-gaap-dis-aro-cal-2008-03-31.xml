@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/AssetRetirementObligations' xlink:href='../elts/us-roles-2008-03-31.xsd#aro' xlink:type='simple' />
+<calculationLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/AssetRetirementObligations' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AssetRetirementObligation' xlink:label='loc_AssetRetirementObligation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AssetRetirementObligationCurrent' xlink:label='loc_AssetRetirementObligationCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AssetRetirementObligationsNoncurrent' xlink:label='loc_AssetRetirementObligationsNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MineReclamationAndClosingLiabilityNoncurrent' xlink:label='loc_MineReclamationAndClosingLiabilityNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_OilAndGasReclamationLiabilityNoncurrent' xlink:label='loc_OilAndGasReclamationLiabilityNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DecommissioningLiabilityNoncurrent' xlink:label='loc_DecommissioningLiabilityNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedCappingClosurePostClosureAndEnvironmentalCostsNoncurrent' xlink:label='loc_AccruedCappingClosurePostClosureAndEnvironmentalCostsNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_SpentNuclearFuelObligationNoncurrent' xlink:label='loc_SpentNuclearFuelObligationNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AssetRetirementObligationPeriodIncreaseDecrease' xlink:label='loc_AssetRetirementObligationPeriodIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AssetRetirementObligationLiabilitiesIncurred' xlink:label='loc_AssetRetirementObligationLiabilitiesIncurred' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AssetRetirementObligationLiabilitiesSettled' xlink:label='loc_AssetRetirementObligationLiabilitiesSettled' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AssetRetirementObligationAccretionExpense' xlink:label='loc_AssetRetirementObligationAccretionExpense' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AssetRetirementObligationRevisionOfEstimate' xlink:label='loc_AssetRetirementObligationRevisionOfEstimate' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AssetRetirementObligationForeignCurrencyTranslation' xlink:label='loc_AssetRetirementObligationForeignCurrencyTranslation' xlink:type='locator' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssetRetirementObligation' xlink:to='loc_AssetRetirementObligationCurrent' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssetRetirementObligation' xlink:to='loc_AssetRetirementObligationsNoncurrent' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssetRetirementObligationsNoncurrent' xlink:to='loc_MineReclamationAndClosingLiabilityNoncurrent' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssetRetirementObligationsNoncurrent' xlink:to='loc_OilAndGasReclamationLiabilityNoncurrent' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssetRetirementObligationsNoncurrent' xlink:to='loc_DecommissioningLiabilityNoncurrent' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssetRetirementObligationsNoncurrent' xlink:to='loc_AccruedCappingClosurePostClosureAndEnvironmentalCostsNoncurrent' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssetRetirementObligationsNoncurrent' xlink:to='loc_SpentNuclearFuelObligationNoncurrent' xlink:type='arc' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssetRetirementObligationPeriodIncreaseDecrease' xlink:to='loc_AssetRetirementObligationLiabilitiesIncurred' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssetRetirementObligationPeriodIncreaseDecrease' xlink:to='loc_AssetRetirementObligationLiabilitiesSettled' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssetRetirementObligationPeriodIncreaseDecrease' xlink:to='loc_AssetRetirementObligationAccretionExpense' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssetRetirementObligationPeriodIncreaseDecrease' xlink:to='loc_AssetRetirementObligationRevisionOfEstimate' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AssetRetirementObligationPeriodIncreaseDecrease' xlink:to='loc_AssetRetirementObligationForeignCurrencyTranslation' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

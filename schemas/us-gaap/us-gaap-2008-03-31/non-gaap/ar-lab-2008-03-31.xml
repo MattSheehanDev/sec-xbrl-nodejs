@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:labelLink xlink:role='http://www.xbrl.org/2003/role/link' xlink:type='extended' xmlns:xlink='http://www.w3.org/1999/xlink'>
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorAddress' xlink:label='loc_AuditorAddress' xlink:type='locator' />
+<link:label id='lab_AuditorAddress_label_en-US' xlink:label='lab_AuditorAddress' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Address</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorAddress' xlink:to='lab_AuditorAddress' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorsReportAccountantAxis' xlink:label='loc_AuditorsReportAccountantAxis' xlink:type='locator' />
+<link:label id='lab_AuditorsReportAccountantAxis_label_en-US' xlink:label='lab_AuditorsReportAccountantAxis' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditors Report, Accountant [Axis]</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorsReportAccountantAxis' xlink:to='lab_AuditorsReportAccountantAxis' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorDomain' xlink:label='loc_AuditorDomain' xlink:type='locator' />
+<link:label id='lab_AuditorDomain_label_en-US' xlink:label='lab_AuditorDomain' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor [Domain]</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorDomain' xlink:to='lab_AuditorDomain' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorsReportLineItems' xlink:label='loc_AuditorsReportLineItems' xlink:type='locator' />
+<link:label id='lab_AuditorsReportLineItems_label_en-US' xlink:label='lab_AuditorsReportLineItems' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditors Report [Line Items]</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorsReportLineItems' xlink:to='lab_AuditorsReportLineItems' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorSignature' xlink:label='loc_AuditorSignature' xlink:type='locator' />
+<link:label id='lab_AuditorSignature_label_en-US' xlink:label='lab_AuditorSignature' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Signature</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorSignature' xlink:to='lab_AuditorSignature' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorName' xlink:label='loc_AuditorName' xlink:type='locator' />
+<link:label id='lab_AuditorName_label_en-US' xlink:label='lab_AuditorName' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Name</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorName' xlink:to='lab_AuditorName' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorsReportTable' xlink:label='loc_AuditorsReportTable' xlink:type='locator' />
+<link:label id='lab_AuditorsReportTable_label_en-US' xlink:label='lab_AuditorsReportTable' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditors Report [Table]</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorsReportTable' xlink:to='lab_AuditorsReportTable' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorsReportTextBlock' xlink:label='loc_AuditorsReportTextBlock' xlink:type='locator' />
+<link:label id='lab_AuditorsReportTextBlock_label_en-US' xlink:label='lab_AuditorsReportTextBlock' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditors Report [Text Block]</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorsReportTextBlock' xlink:to='lab_AuditorsReportTextBlock' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorReport' xlink:label='loc_AuditorReport' xlink:type='locator' />
+<link:label id='lab_AuditorReport_label_en-US' xlink:label='lab_AuditorReport' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Report</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorReport' xlink:to='lab_AuditorReport' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_Addressee' xlink:label='loc_Addressee' xlink:type='locator' />
+<link:label id='lab_Addressee_label_en-US' xlink:label='lab_Addressee' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Addressee</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_Addressee' xlink:to='lab_Addressee' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_BalanceSheetDate' xlink:label='loc_BalanceSheetDate' xlink:type='locator' />
+<link:label id='lab_BalanceSheetDate_label_en-US' xlink:label='lab_BalanceSheetDate' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Balance Sheet Date</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BalanceSheetDate' xlink:to='lab_BalanceSheetDate' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_CashFlowsStatementPeriod' xlink:label='loc_CashFlowsStatementPeriod' xlink:type='locator' />
+<link:label id='lab_CashFlowsStatementPeriod_label_en-US' xlink:label='lab_CashFlowsStatementPeriod' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Cash Flows Statement Period</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_CashFlowsStatementPeriod' xlink:to='lab_CashFlowsStatementPeriod' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorAddressCity' xlink:label='loc_AuditorAddressCity' xlink:type='locator' />
+<link:label id='lab_AuditorAddressCity_label_en-US' xlink:label='lab_AuditorAddressCity' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Address, City</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorAddressCity' xlink:to='lab_AuditorAddressCity' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorAddressCountry' xlink:label='loc_AuditorAddressCountry' xlink:type='locator' />
+<link:label id='lab_AuditorAddressCountry_label_en-US' xlink:label='lab_AuditorAddressCountry' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Address, Country</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorAddressCountry' xlink:to='lab_AuditorAddressCountry' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_DateOfDualDate' xlink:label='loc_DateOfDualDate' xlink:type='locator' />
+<link:label id='lab_DateOfDualDate_label_en-US' xlink:label='lab_DateOfDualDate' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Date of Dual Date</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_DateOfDualDate' xlink:to='lab_DateOfDualDate' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_DualDateNote' xlink:label='loc_DualDateNote' xlink:type='locator' />
+<link:label id='lab_DualDateNote_label_en-US' xlink:label='lab_DualDateNote' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Dual Date Note</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_DualDateNote' xlink:to='lab_DualDateNote' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_DualDate' xlink:label='loc_DualDate' xlink:type='locator' />
+<link:label id='lab_DualDate_label_en-US' xlink:label='lab_DualDate' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Dual Date</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_DualDate' xlink:to='lab_DualDate' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorReportAuditOrReviewExplanatoryParagraph' xlink:label='loc_AuditorReportAuditOrReviewExplanatoryParagraph' xlink:type='locator' />
+<link:label id='lab_AuditorReportAuditOrReviewExplanatoryParagraph_label_en-US' xlink:label='lab_AuditorReportAuditOrReviewExplanatoryParagraph' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Report, Audit or Review, Explanatory Paragraph</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorReportAuditOrReviewExplanatoryParagraph' xlink:to='lab_AuditorReportAuditOrReviewExplanatoryParagraph' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_IncomeStatementPeriod' xlink:label='loc_IncomeStatementPeriod' xlink:type='locator' />
+<link:label id='lab_IncomeStatementPeriod_label_en-US' xlink:label='lab_IncomeStatementPeriod' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Income Statement Period</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_IncomeStatementPeriod' xlink:to='lab_IncomeStatementPeriod' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorReportAuditOrReviewIntroductoryParagraph' xlink:label='loc_AuditorReportAuditOrReviewIntroductoryParagraph' xlink:type='locator' />
+<link:label id='lab_AuditorReportAuditOrReviewIntroductoryParagraph_label_en-US' xlink:label='lab_AuditorReportAuditOrReviewIntroductoryParagraph' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Report, Audit or Review, Introductory Paragraph</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorReportAuditOrReviewIntroductoryParagraph' xlink:to='lab_AuditorReportAuditOrReviewIntroductoryParagraph' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorReportAuditOrReviewOpinionParagraph' xlink:label='loc_AuditorReportAuditOrReviewOpinionParagraph' xlink:type='locator' />
+<link:label id='lab_AuditorReportAuditOrReviewOpinionParagraph_label_en-US' xlink:label='lab_AuditorReportAuditOrReviewOpinionParagraph' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Report, Audit or Review, Opinion Paragraph</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorReportAuditOrReviewOpinionParagraph' xlink:to='lab_AuditorReportAuditOrReviewOpinionParagraph' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorReportAuditOrReview' xlink:label='loc_AuditorReportAuditOrReview' xlink:type='locator' />
+<link:label id='lab_AuditorReportAuditOrReview_label_en-US' xlink:label='lab_AuditorReportAuditOrReview' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Report, Audit or Review</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorReportAuditOrReview' xlink:to='lab_AuditorReportAuditOrReview' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_ReportDate' xlink:label='loc_ReportDate' xlink:type='locator' />
+<link:label id='lab_ReportDate_label_en-US' xlink:label='lab_ReportDate' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Report Date</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_ReportDate' xlink:to='lab_ReportDate' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorsReportInformationAbstract' xlink:label='loc_AuditorsReportInformationAbstract' xlink:type='locator' />
+<link:label id='lab_AuditorsReportInformationAbstract_label_en-US' xlink:label='lab_AuditorsReportInformationAbstract' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditors Report Information [Abstract]</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorsReportInformationAbstract' xlink:to='lab_AuditorsReportInformationAbstract' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_ReportType' xlink:label='loc_ReportType' xlink:type='locator' />
+<link:label id='lab_ReportType_label_en-US' xlink:label='lab_ReportType' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Report Type</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_ReportType' xlink:to='lab_ReportType' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_BasisOfReporting' xlink:label='loc_BasisOfReporting' xlink:type='locator' />
+<link:label id='lab_BasisOfReporting_label_en-US' xlink:label='lab_BasisOfReporting' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Basis of Reporting</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_BasisOfReporting' xlink:to='lab_BasisOfReporting' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorReportAuditOrReviewScopeParagraph' xlink:label='loc_AuditorReportAuditOrReviewScopeParagraph' xlink:type='locator' />
+<link:label id='lab_AuditorReportAuditOrReviewScopeParagraph_label_en-US' xlink:label='lab_AuditorReportAuditOrReviewScopeParagraph' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Report, Audit or Review, Scope Paragraph</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorReportAuditOrReviewScopeParagraph' xlink:to='lab_AuditorReportAuditOrReviewScopeParagraph' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorAddressStateOrProvince' xlink:label='loc_AuditorAddressStateOrProvince' xlink:type='locator' />
+<link:label id='lab_AuditorAddressStateOrProvince_label_en-US' xlink:label='lab_AuditorAddressStateOrProvince' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Address, State or Province</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorAddressStateOrProvince' xlink:to='lab_AuditorAddressStateOrProvince' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_StatementOfComprehensiveIncomePeriod' xlink:label='loc_StatementOfComprehensiveIncomePeriod' xlink:type='locator' />
+<link:label id='lab_StatementOfComprehensiveIncomePeriod_label_en-US' xlink:label='lab_StatementOfComprehensiveIncomePeriod' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Statement of Comprehensive Income Period</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_StatementOfComprehensiveIncomePeriod' xlink:to='lab_StatementOfComprehensiveIncomePeriod' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_StatementOfStockholdersEquityPeriod' xlink:label='loc_StatementOfStockholdersEquityPeriod' xlink:type='locator' />
+<link:label id='lab_StatementOfStockholdersEquityPeriod_label_en-US' xlink:label='lab_StatementOfStockholdersEquityPeriod' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Statement of Stockholders' Equity Period</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_StatementOfStockholdersEquityPeriod' xlink:to='lab_StatementOfStockholdersEquityPeriod' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_StatementsCovered' xlink:label='loc_StatementsCovered' xlink:type='locator' />
+<link:label id='lab_StatementsCovered_label_en-US' xlink:label='lab_StatementsCovered' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Statements Covered</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_StatementsCovered' xlink:to='lab_StatementsCovered' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorAddressStreet1' xlink:label='loc_AuditorAddressStreet1' xlink:type='locator' />
+<link:label id='lab_AuditorAddressStreet1_label_en-US' xlink:label='lab_AuditorAddressStreet1' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Address, Street 1</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorAddressStreet1' xlink:to='lab_AuditorAddressStreet1' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorAddressStreet2' xlink:label='loc_AuditorAddressStreet2' xlink:type='locator' />
+<link:label id='lab_AuditorAddressStreet2_label_en-US' xlink:label='lab_AuditorAddressStreet2' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Address, Street 2</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorAddressStreet2' xlink:to='lab_AuditorAddressStreet2' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_TitleOfReport' xlink:label='loc_TitleOfReport' xlink:type='locator' />
+<link:label id='lab_TitleOfReport_label_en-US' xlink:label='lab_TitleOfReport' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Title of Report</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_TitleOfReport' xlink:to='lab_TitleOfReport' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorAddressZipOrPostalCode' xlink:label='loc_AuditorAddressZipOrPostalCode' xlink:type='locator' />
+<link:label id='lab_AuditorAddressZipOrPostalCode_label_en-US' xlink:label='lab_AuditorAddressZipOrPostalCode' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Address, Zip or Postal Code</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorAddressZipOrPostalCode' xlink:to='lab_AuditorAddressZipOrPostalCode' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorReportCombinedAudit' xlink:label='loc_AuditorReportCombinedAudit' xlink:type='locator' />
+<link:label id='lab_AuditorReportCombinedAudit_label_en-US' xlink:label='lab_AuditorReportCombinedAudit' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Report, Combined Audit</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorReportCombinedAudit' xlink:to='lab_AuditorReportCombinedAudit' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorReportCombinedAuditIntroductoryParagraph' xlink:label='loc_AuditorReportCombinedAuditIntroductoryParagraph' xlink:type='locator' />
+<link:label id='lab_AuditorReportCombinedAuditIntroductoryParagraph_label_en-US' xlink:label='lab_AuditorReportCombinedAuditIntroductoryParagraph' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Report, Combined Audit, Introductory Paragraph</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorReportCombinedAuditIntroductoryParagraph' xlink:to='lab_AuditorReportCombinedAuditIntroductoryParagraph' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorReportCombinedAuditScopeParagraph' xlink:label='loc_AuditorReportCombinedAuditScopeParagraph' xlink:type='locator' />
+<link:label id='lab_AuditorReportCombinedAuditScopeParagraph_label_en-US' xlink:label='lab_AuditorReportCombinedAuditScopeParagraph' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Report, Combined Audit, Scope Paragraph</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorReportCombinedAuditScopeParagraph' xlink:to='lab_AuditorReportCombinedAuditScopeParagraph' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorReportCombinedAuditDefinitionParagraph' xlink:label='loc_AuditorReportCombinedAuditDefinitionParagraph' xlink:type='locator' />
+<link:label id='lab_AuditorReportCombinedAuditDefinitionParagraph_label_en-US' xlink:label='lab_AuditorReportCombinedAuditDefinitionParagraph' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Report, Combined Audit, Definition Paragraph</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorReportCombinedAuditDefinitionParagraph' xlink:to='lab_AuditorReportCombinedAuditDefinitionParagraph' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorReportCombinedAuditInherentLimitationsParagraph' xlink:label='loc_AuditorReportCombinedAuditInherentLimitationsParagraph' xlink:type='locator' />
+<link:label id='lab_AuditorReportCombinedAuditInherentLimitationsParagraph_label_en-US' xlink:label='lab_AuditorReportCombinedAuditInherentLimitationsParagraph' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Report, Combined Audit, Inherent Limitations Paragraph</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorReportCombinedAuditInherentLimitationsParagraph' xlink:to='lab_AuditorReportCombinedAuditInherentLimitationsParagraph' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorReportCombinedAuditOpinionParagraph' xlink:label='loc_AuditorReportCombinedAuditOpinionParagraph' xlink:type='locator' />
+<link:label id='lab_AuditorReportCombinedAuditOpinionParagraph_label_en-US' xlink:label='lab_AuditorReportCombinedAuditOpinionParagraph' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Report, Combined Audit, Opinion Paragraph</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorReportCombinedAuditOpinionParagraph' xlink:to='lab_AuditorReportCombinedAuditOpinionParagraph' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorReportSeparateReportOnInternalControlsParagraph' xlink:label='loc_AuditorReportSeparateReportOnInternalControlsParagraph' xlink:type='locator' />
+<link:label id='lab_AuditorReportSeparateReportOnInternalControlsParagraph_label_en-US' xlink:label='lab_AuditorReportSeparateReportOnInternalControlsParagraph' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Report, Separate Report on Internal Controls Paragraph</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorReportSeparateReportOnInternalControlsParagraph' xlink:to='lab_AuditorReportSeparateReportOnInternalControlsParagraph' xlink:type='arc' />
+<link:loc xlink:href='ar-2008-03-31.xsd#ar_AuditorReportInternalControlsOverFinancialReporting' xlink:label='loc_AuditorReportInternalControlsOverFinancialReporting' xlink:type='locator' />
+<link:label id='lab_AuditorReportInternalControlsOverFinancialReporting_label_en-US' xlink:label='lab_AuditorReportInternalControlsOverFinancialReporting' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Auditor Report, Internal Controls over Financial Reporting</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AuditorReportInternalControlsOverFinancialReporting' xlink:to='lab_AuditorReportInternalControlsOverFinancialReporting' xlink:type='arc' />
+</link:labelLink>
+</link:linkbase>

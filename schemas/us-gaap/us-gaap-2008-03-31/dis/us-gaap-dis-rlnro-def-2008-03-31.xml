@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/ReceivablesLoansNotesReceivableAndOthers' xlink:href='../elts/us-roles-2008-03-31.xsd#rlnro' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/all' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' xlink:type='simple' />
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/ReceivablesLoansNotesReceivableAndOthers' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfAccountsAndNotesReceivableTable' xlink:label='loc_ScheduleOfAccountsAndNotesReceivableTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsNotesAndLoansReceivableLineItems' xlink:label='loc_AccountsNotesAndLoansReceivableLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfReceivablesWithImputedInterestTable' xlink:label='loc_ScheduleOfReceivablesWithImputedInterestTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReceivablesWithImputedInterestLineItems' xlink:label='loc_ReceivablesWithImputedInterestLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_AccountsNotesAndLoansReceivableLineItems' xlink:to='loc_ScheduleOfAccountsAndNotesReceivableTable' xlink:type='arc' />
+<link:definitionArc order='2.0' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_ReceivablesWithImputedInterestLineItems' xlink:to='loc_ScheduleOfReceivablesWithImputedInterestTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/ReceivablesLoansNotesReceivableAndOthers' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfAccountsAndNotesReceivableTable' xlink:label='loc_ScheduleOfAccountsAndNotesReceivableTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsAndNotesReceivableReceivableTypeAxis' xlink:label='loc_AccountsAndNotesReceivableReceivableTypeAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfReceivablesWithImputedInterestTable' xlink:label='loc_ScheduleOfReceivablesWithImputedInterestTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfReceivablesWithImputedInterestNameOfReceivableWithImputedInterestAxis' xlink:label='loc_ScheduleOfReceivablesWithImputedInterestNameOfReceivableWithImputedInterestAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ScheduleOfAccountsAndNotesReceivableTable' xlink:to='loc_AccountsAndNotesReceivableReceivableTypeAxis' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ScheduleOfReceivablesWithImputedInterestTable' xlink:to='loc_ScheduleOfReceivablesWithImputedInterestNameOfReceivableWithImputedInterestAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/ReceivablesLoansNotesReceivableAndOthers' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsAndNotesReceivableReceivableTypeAxis' xlink:label='loc_AccountsAndNotesReceivableReceivableTypeAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReceivableTypeDomain' xlink:label='loc_ReceivableTypeDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfReceivablesWithImputedInterestNameOfReceivableWithImputedInterestAxis' xlink:label='loc_ScheduleOfReceivablesWithImputedInterestNameOfReceivableWithImputedInterestAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NameOfReceivableWithImputedInterestDomain' xlink:label='loc_NameOfReceivableWithImputedInterestDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_AccountsAndNotesReceivableReceivableTypeAxis' xlink:to='loc_ReceivableTypeDomain' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_ScheduleOfReceivablesWithImputedInterestNameOfReceivableWithImputedInterestAxis' xlink:to='loc_NameOfReceivableWithImputedInterestDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/ReceivablesLoansNotesReceivableAndOthers' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsAndNotesReceivableReceivableTypeAxis' xlink:label='loc_AccountsAndNotesReceivableReceivableTypeAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReceivableTypeDomain' xlink:label='loc_ReceivableTypeDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ScheduleOfReceivablesWithImputedInterestNameOfReceivableWithImputedInterestAxis' xlink:label='loc_ScheduleOfReceivablesWithImputedInterestNameOfReceivableWithImputedInterestAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NameOfReceivableWithImputedInterestDomain' xlink:label='loc_NameOfReceivableWithImputedInterestDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_AccountsAndNotesReceivableReceivableTypeAxis' xlink:to='loc_ReceivableTypeDomain' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_ScheduleOfReceivablesWithImputedInterestNameOfReceivableWithImputedInterestAxis' xlink:to='loc_NameOfReceivableWithImputedInterestDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/ReceivablesLoansNotesReceivableAndOthers' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsNotesAndLoansReceivableLineItems' xlink:label='loc_AccountsNotesAndLoansReceivableLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsNotesAndLoansReceivableClassifiedAbstract' xlink:label='loc_AccountsNotesAndLoansReceivableClassifiedAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsAndNotesReceivableUnclassifiedAbstract' xlink:label='loc_AccountsAndNotesReceivableUnclassifiedAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsNotesAndLoansReceivableNetCurrentAbstract' xlink:label='loc_AccountsNotesAndLoansReceivableNetCurrentAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermAccountsNotesAndLoansReceivableNetNoncurrentAbstract' xlink:label='loc_LongTermAccountsNotesAndLoansReceivableNetNoncurrentAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsReceivableNetCurrentAbstract' xlink:label='loc_AccountsReceivableNetCurrentAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NotesAndLoansReceivableNetCurrentAbstract' xlink:label='loc_NotesAndLoansReceivableNetCurrentAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsNotesAndLoansReceivableNetCurrent' xlink:label='loc_AccountsNotesAndLoansReceivableNetCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsReceivableGrossCurrent' xlink:label='loc_AccountsReceivableGrossCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AllowanceForDoubtfulAccountsReceivableCurrent' xlink:label='loc_AllowanceForDoubtfulAccountsReceivableCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsReceivableNetCurrent' xlink:label='loc_AccountsReceivableNetCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NotesAndLoansReceivableGrossCurrent' xlink:label='loc_NotesAndLoansReceivableGrossCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AllowanceForNotesAndLoansReceivableCurrent' xlink:label='loc_AllowanceForNotesAndLoansReceivableCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NotesAndLoansReceivableNetCurrent' xlink:label='loc_NotesAndLoansReceivableNetCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsReceivableNetNoncurrentAbstract' xlink:label='loc_AccountsReceivableNetNoncurrentAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NotesAndLoansReceivableNetNoncurrentAbstract' xlink:label='loc_NotesAndLoansReceivableNetNoncurrentAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermAccountsNotesAndLoansReceivableNetNoncurrent' xlink:label='loc_LongTermAccountsNotesAndLoansReceivableNetNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsReceivableGrossNoncurrent' xlink:label='loc_AccountsReceivableGrossNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AllowanceForDoubtfulAccountsReceivableNoncurrent' xlink:label='loc_AllowanceForDoubtfulAccountsReceivableNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsReceivableNetNoncurrent' xlink:label='loc_AccountsReceivableNetNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NotesAndLoansReceivableGrossNoncurrent' xlink:label='loc_NotesAndLoansReceivableGrossNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AllowanceForNotesAndLoansReceivableNoncurrent' xlink:label='loc_AllowanceForNotesAndLoansReceivableNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NotesAndLoansReceivableNetNoncurrent' xlink:label='loc_NotesAndLoansReceivableNetNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsReceivableNetAbstract' xlink:label='loc_AccountsReceivableNetAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NotesReceivableNetAbstract' xlink:label='loc_NotesReceivableNetAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsReceivableGross' xlink:label='loc_AccountsReceivableGross' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AllowanceForDoubtfulAccountsReceivable' xlink:label='loc_AllowanceForDoubtfulAccountsReceivable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccountsReceivableNet' xlink:label='loc_AccountsReceivableNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NotesReceivableGross' xlink:label='loc_NotesReceivableGross' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AllowanceForNotesReceivable' xlink:label='loc_AllowanceForNotesReceivable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NotesReceivableNet' xlink:label='loc_NotesReceivableNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReceivablesWithImputedInterestLineItems' xlink:label='loc_ReceivablesWithImputedInterestLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReceivableWithImputedInterestDescription' xlink:label='loc_ReceivableWithImputedInterestDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReceivableWithImputedInterestNetAmountAbstract' xlink:label='loc_ReceivableWithImputedInterestNetAmountAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReceivableWithImputedInterestDueDate' xlink:label='loc_ReceivableWithImputedInterestDueDate' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReceivableWithImputedInterestEffectiveYieldInterestRate' xlink:label='loc_ReceivableWithImputedInterestEffectiveYieldInterestRate' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReceivableWithImputedInterestPremium' xlink:label='loc_ReceivableWithImputedInterestPremium' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReceivableWithImputedInterestDiscount' xlink:label='loc_ReceivableWithImputedInterestDiscount' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReceivableWithImputedInterestFaceAmount' xlink:label='loc_ReceivableWithImputedInterestFaceAmount' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReceivableWithImputedInterestNetAmount' xlink:label='loc_ReceivableWithImputedInterestNetAmount' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsNotesAndLoansReceivableLineItems' xlink:to='loc_AccountsNotesAndLoansReceivableClassifiedAbstract' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsNotesAndLoansReceivableLineItems' xlink:to='loc_AccountsAndNotesReceivableUnclassifiedAbstract' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsNotesAndLoansReceivableClassifiedAbstract' xlink:to='loc_AccountsNotesAndLoansReceivableNetCurrentAbstract' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsNotesAndLoansReceivableClassifiedAbstract' xlink:to='loc_LongTermAccountsNotesAndLoansReceivableNetNoncurrentAbstract' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsNotesAndLoansReceivableNetCurrentAbstract' xlink:to='loc_AccountsReceivableNetCurrentAbstract' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsNotesAndLoansReceivableNetCurrentAbstract' xlink:to='loc_NotesAndLoansReceivableNetCurrentAbstract' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsNotesAndLoansReceivableNetCurrentAbstract' xlink:to='loc_AccountsNotesAndLoansReceivableNetCurrent' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsReceivableNetCurrentAbstract' xlink:to='loc_AccountsReceivableGrossCurrent' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsReceivableNetCurrentAbstract' xlink:to='loc_AllowanceForDoubtfulAccountsReceivableCurrent' xlink:type='arc' />
+<link:definitionArc order='10.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsReceivableNetCurrentAbstract' xlink:to='loc_AccountsReceivableNetCurrent' xlink:type='arc' />
+<link:definitionArc order='11.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_NotesAndLoansReceivableNetCurrentAbstract' xlink:to='loc_NotesAndLoansReceivableGrossCurrent' xlink:type='arc' />
+<link:definitionArc order='12.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_NotesAndLoansReceivableNetCurrentAbstract' xlink:to='loc_AllowanceForNotesAndLoansReceivableCurrent' xlink:type='arc' />
+<link:definitionArc order='13.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_NotesAndLoansReceivableNetCurrentAbstract' xlink:to='loc_NotesAndLoansReceivableNetCurrent' xlink:type='arc' />
+<link:definitionArc order='14.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LongTermAccountsNotesAndLoansReceivableNetNoncurrentAbstract' xlink:to='loc_AccountsReceivableNetNoncurrentAbstract' xlink:type='arc' />
+<link:definitionArc order='15.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LongTermAccountsNotesAndLoansReceivableNetNoncurrentAbstract' xlink:to='loc_NotesAndLoansReceivableNetNoncurrentAbstract' xlink:type='arc' />
+<link:definitionArc order='16.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LongTermAccountsNotesAndLoansReceivableNetNoncurrentAbstract' xlink:to='loc_LongTermAccountsNotesAndLoansReceivableNetNoncurrent' xlink:type='arc' />
+<link:definitionArc order='17.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsReceivableNetNoncurrentAbstract' xlink:to='loc_AccountsReceivableGrossNoncurrent' xlink:type='arc' />
+<link:definitionArc order='18.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsReceivableNetNoncurrentAbstract' xlink:to='loc_AllowanceForDoubtfulAccountsReceivableNoncurrent' xlink:type='arc' />
+<link:definitionArc order='19.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsReceivableNetNoncurrentAbstract' xlink:to='loc_AccountsReceivableNetNoncurrent' xlink:type='arc' />
+<link:definitionArc order='20.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_NotesAndLoansReceivableNetNoncurrentAbstract' xlink:to='loc_NotesAndLoansReceivableGrossNoncurrent' xlink:type='arc' />
+<link:definitionArc order='21.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_NotesAndLoansReceivableNetNoncurrentAbstract' xlink:to='loc_AllowanceForNotesAndLoansReceivableNoncurrent' xlink:type='arc' />
+<link:definitionArc order='22.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_NotesAndLoansReceivableNetNoncurrentAbstract' xlink:to='loc_NotesAndLoansReceivableNetNoncurrent' xlink:type='arc' />
+<link:definitionArc order='23.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsAndNotesReceivableUnclassifiedAbstract' xlink:to='loc_AccountsReceivableNetAbstract' xlink:type='arc' />
+<link:definitionArc order='24.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsAndNotesReceivableUnclassifiedAbstract' xlink:to='loc_NotesReceivableNetAbstract' xlink:type='arc' />
+<link:definitionArc order='25.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsReceivableNetAbstract' xlink:to='loc_AccountsReceivableGross' xlink:type='arc' />
+<link:definitionArc order='26.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsReceivableNetAbstract' xlink:to='loc_AllowanceForDoubtfulAccountsReceivable' xlink:type='arc' />
+<link:definitionArc order='27.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccountsReceivableNetAbstract' xlink:to='loc_AccountsReceivableNet' xlink:type='arc' />
+<link:definitionArc order='28.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_NotesReceivableNetAbstract' xlink:to='loc_NotesReceivableGross' xlink:type='arc' />
+<link:definitionArc order='29.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_NotesReceivableNetAbstract' xlink:to='loc_AllowanceForNotesReceivable' xlink:type='arc' />
+<link:definitionArc order='30.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_NotesReceivableNetAbstract' xlink:to='loc_NotesReceivableNet' xlink:type='arc' />
+<link:definitionArc order='31.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivablesWithImputedInterestLineItems' xlink:to='loc_ReceivableWithImputedInterestDescription' xlink:type='arc' />
+<link:definitionArc order='32.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivablesWithImputedInterestLineItems' xlink:to='loc_ReceivableWithImputedInterestNetAmountAbstract' xlink:type='arc' />
+<link:definitionArc order='33.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivablesWithImputedInterestLineItems' xlink:to='loc_ReceivableWithImputedInterestDueDate' xlink:type='arc' />
+<link:definitionArc order='34.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivablesWithImputedInterestLineItems' xlink:to='loc_ReceivableWithImputedInterestEffectiveYieldInterestRate' xlink:type='arc' />
+<link:definitionArc order='35.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableWithImputedInterestNetAmountAbstract' xlink:to='loc_ReceivableWithImputedInterestPremium' xlink:type='arc' />
+<link:definitionArc order='36.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableWithImputedInterestNetAmountAbstract' xlink:to='loc_ReceivableWithImputedInterestDiscount' xlink:type='arc' />
+<link:definitionArc order='37.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableWithImputedInterestNetAmountAbstract' xlink:to='loc_ReceivableWithImputedInterestFaceAmount' xlink:type='arc' />
+<link:definitionArc order='38.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableWithImputedInterestNetAmountAbstract' xlink:to='loc_ReceivableWithImputedInterestNetAmount' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/ReceivablesLoansNotesReceivableAndOthers' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReceivableTypeDomain' xlink:label='loc_ReceivableTypeDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_CasinoReceivablesMember' xlink:label='loc_CasinoReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_HotelReceivablesMember' xlink:label='loc_HotelReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LeasingReceivablesMember' xlink:label='loc_LeasingReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LeaseIncentiveMember' xlink:label='loc_LeaseIncentiveMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InsuranceSettlementsReceivableMember' xlink:label='loc_InsuranceSettlementsReceivableMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PatientAccountsReceivableMember' xlink:label='loc_PatientAccountsReceivableMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ContractsReceivableMember' xlink:label='loc_ContractsReceivableMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_BilledContractReceivablesMember' xlink:label='loc_BilledContractReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ContractReceivableRetainageMember' xlink:label='loc_ContractReceivableRetainageMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_UnbilledContractsReceivableMember' xlink:label='loc_UnbilledContractsReceivableMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_UnbilledRevenuesMember' xlink:label='loc_UnbilledRevenuesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedIncomeReceivableMember' xlink:label='loc_AccruedIncomeReceivableMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_FinanceReceivablesMember' xlink:label='loc_FinanceReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InsuranceReceivableForMalpracticeMember' xlink:label='loc_InsuranceReceivableForMalpracticeMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_TaxRefundReceivableMember' xlink:label='loc_TaxRefundReceivableMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MortgageReceivablesMember' xlink:label='loc_MortgageReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LoanReceivablesMember' xlink:label='loc_LoanReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_CreditCardIntermediaryReceivablesMember' xlink:label='loc_CreditCardIntermediaryReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_CreditCardReceivablesMember' xlink:label='loc_CreditCardReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_StorageAndTransportationReceivablesMember' xlink:label='loc_StorageAndTransportationReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_OilAndGasSalesReceivablesMember' xlink:label='loc_OilAndGasSalesReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_OilAndGasJointInterestBillingReceivablesMember' xlink:label='loc_OilAndGasJointInterestBillingReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedInterestReceivableMember' xlink:label='loc_AccruedInterestReceivableMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ContractHolderReceivablesMember' xlink:label='loc_ContractHolderReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_CustomerReceivablesMember' xlink:label='loc_CustomerReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_BrokerageReceivablesMember' xlink:label='loc_BrokerageReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndDividendReceivablesMember' xlink:label='loc_InterestAndDividendReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_TradeReceivablesMember' xlink:label='loc_TradeReceivablesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ForeclosureClaimsReceivableMember' xlink:label='loc_ForeclosureClaimsReceivableMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedInterestReceivableOnLoansMember' xlink:label='loc_AccruedInterestReceivableOnLoansMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccruedInterestReceivableOnInvestmentsMember' xlink:label='loc_AccruedInterestReceivableOnInvestmentsMember' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_CasinoReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_HotelReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_LeasingReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_LeaseIncentiveMember' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_InsuranceSettlementsReceivableMember' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_PatientAccountsReceivableMember' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_ContractsReceivableMember' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_BilledContractReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_ContractReceivableRetainageMember' xlink:type='arc' />
+<link:definitionArc order='10.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_UnbilledContractsReceivableMember' xlink:type='arc' />
+<link:definitionArc order='11.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_UnbilledRevenuesMember' xlink:type='arc' />
+<link:definitionArc order='12.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_AccruedIncomeReceivableMember' xlink:type='arc' />
+<link:definitionArc order='13.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_FinanceReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='14.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_InsuranceReceivableForMalpracticeMember' xlink:type='arc' />
+<link:definitionArc order='15.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_TaxRefundReceivableMember' xlink:type='arc' />
+<link:definitionArc order='16.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_MortgageReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='17.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_LoanReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='18.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_CreditCardIntermediaryReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='19.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_CreditCardReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='20.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_StorageAndTransportationReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='21.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_OilAndGasSalesReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='22.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_OilAndGasJointInterestBillingReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='23.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_AccruedInterestReceivableMember' xlink:type='arc' />
+<link:definitionArc order='24.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_ContractHolderReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='25.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_CustomerReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='26.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_BrokerageReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='27.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_InterestAndDividendReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='28.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_TradeReceivablesMember' xlink:type='arc' />
+<link:definitionArc order='29.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReceivableTypeDomain' xlink:to='loc_ForeclosureClaimsReceivableMember' xlink:type='arc' />
+<link:definitionArc order='30.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccruedInterestReceivableMember' xlink:to='loc_AccruedInterestReceivableOnLoansMember' xlink:type='arc' />
+<link:definitionArc order='31.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_AccruedInterestReceivableMember' xlink:to='loc_AccruedInterestReceivableOnInvestmentsMember' xlink:type='arc' />
+</link:definitionLink>
+</link:linkbase>

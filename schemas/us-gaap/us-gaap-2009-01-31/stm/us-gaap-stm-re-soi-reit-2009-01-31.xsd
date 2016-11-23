@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  
+This file is the entry point for statement Statement of Income, Real Estate Investment Trusts (soi-reit) for industry Industry Real Estate.
+  
+The DTS starting with this entry point includes the presentation, calculation and definition linkbases for the statement.
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://xbrl.us/stm/re/soi-reit/2009-01-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:re-soi-reit='http://xbrl.us/stm/re/soi-reit/2009-01-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:annotation>
+<xs:appinfo>
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-stm-re-soi-reit-pre-2009-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-stm-re-soi-reit-cal-2009-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-stm-re-soi-reit2-cal-2009-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-stm-re-soi-reit3-cal-2009-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-stm-soi-reit-def-2009-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:type='simple' />
+</xs:appinfo>
+<xs:documentation>
+This file is the entry point for statement Statement of Income, Real Estate Investment Trusts (soi-reit) for industry Industry Real Estate
+
+The DTS starting with this entry point includes the following presentation, calculation and definition linkbases:
+145000 - Statement - Statement of Income, Real Estate Investment Trusts  (presentation)
+145000 - Statement - Statement of Income, Real Estate Investment Trusts  (calculation)	
+145010 - Statement - Statement of Income, Real Estate Investment Trusts  (calculation)	
+145050 - Statement - Statement of Income, Real Estate Investment Trusts (Summation of Net Income (Loss) By Component) (Alternative)  (calculation)	
+145000 - Statement - Statement of Income, Real Estate Investment Trusts  (definition)
+</xs:documentation>
+</xs:annotation>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://xbrl.us/us-gaap-std/2009-01-31' schemaLocation='../elts/us-gaap-std-2009-01-31.xsd' />
+</xs:schema>

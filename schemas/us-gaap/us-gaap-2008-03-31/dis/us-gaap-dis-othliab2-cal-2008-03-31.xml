@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/OtherLiabilitiesCalc2' xlink:href='../elts/us-roles-2008-03-31.xsd#othliab2' xlink:type='simple' />
+<calculationLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/OtherLiabilitiesCalc2' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ProductWarrantyAccrualWarrantiesIssued' xlink:label='loc_ProductWarrantyAccrualWarrantiesIssued' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_StandardProductWarrantyAccrualWarrantiesIssued' xlink:label='loc_StandardProductWarrantyAccrualWarrantiesIssued' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ExtendedProductWarrantyAccrualWarrantiesIssued' xlink:label='loc_ExtendedProductWarrantyAccrualWarrantiesIssued' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ProductWarrantyAccrual' xlink:label='loc_ProductWarrantyAccrual' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_StandardProductWarrantyAccrual' xlink:label='loc_StandardProductWarrantyAccrual' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ExtendedProductWarrantyAccrual' xlink:label='loc_ExtendedProductWarrantyAccrual' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ProductWarrantyAccrualCurrencyTranslationIncreaseDecrease' xlink:label='loc_ProductWarrantyAccrualCurrencyTranslationIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_StandardProductWarrantyAccrualCurrencyTranslationIncreaseDecrease' xlink:label='loc_StandardProductWarrantyAccrualCurrencyTranslationIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ExtendedProductWarrantyAccrualCurrencyTranslationIncreaseDecrease' xlink:label='loc_ExtendedProductWarrantyAccrualCurrencyTranslationIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ProductWarrantyAccrualAdditionsFromBusinessAcquisition' xlink:label='loc_ProductWarrantyAccrualAdditionsFromBusinessAcquisition' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_StandardProductWarrantyAccrualAdditionsFromBusinessAcquisition' xlink:label='loc_StandardProductWarrantyAccrualAdditionsFromBusinessAcquisition' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ExtendedProductWarrantyAccrualAdditionsFromBusinessAcquisition' xlink:label='loc_ExtendedProductWarrantyAccrualAdditionsFromBusinessAcquisition' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ProductWarrantyAccrualPayments' xlink:label='loc_ProductWarrantyAccrualPayments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_StandardProductWarrantyAccrualPayments' xlink:label='loc_StandardProductWarrantyAccrualPayments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ExtendedProductWarrantyAccrualPayments' xlink:label='loc_ExtendedProductWarrantyAccrualPayments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ProductWarrantyAccrualPreexistingIncreaseDecrease' xlink:label='loc_ProductWarrantyAccrualPreexistingIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_StandardProductWarrantyAccrualPreexistingIncreaseDecrease' xlink:label='loc_StandardProductWarrantyAccrualPreexistingIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ExtendedProductWarrantyAccrualPreexistingIncreaseDecrease' xlink:label='loc_ExtendedProductWarrantyAccrualPreexistingIncreaseDecrease' xlink:type='locator' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProductWarrantyAccrualWarrantiesIssued' xlink:to='loc_StandardProductWarrantyAccrualWarrantiesIssued' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProductWarrantyAccrualWarrantiesIssued' xlink:to='loc_ExtendedProductWarrantyAccrualWarrantiesIssued' xlink:type='arc' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProductWarrantyAccrual' xlink:to='loc_StandardProductWarrantyAccrual' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProductWarrantyAccrual' xlink:to='loc_ExtendedProductWarrantyAccrual' xlink:type='arc' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProductWarrantyAccrualCurrencyTranslationIncreaseDecrease' xlink:to='loc_StandardProductWarrantyAccrualCurrencyTranslationIncreaseDecrease' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProductWarrantyAccrualCurrencyTranslationIncreaseDecrease' xlink:to='loc_ExtendedProductWarrantyAccrualCurrencyTranslationIncreaseDecrease' xlink:type='arc' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProductWarrantyAccrualAdditionsFromBusinessAcquisition' xlink:to='loc_StandardProductWarrantyAccrualAdditionsFromBusinessAcquisition' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProductWarrantyAccrualAdditionsFromBusinessAcquisition' xlink:to='loc_ExtendedProductWarrantyAccrualAdditionsFromBusinessAcquisition' xlink:type='arc' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProductWarrantyAccrualPayments' xlink:to='loc_StandardProductWarrantyAccrualPayments' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProductWarrantyAccrualPayments' xlink:to='loc_ExtendedProductWarrantyAccrualPayments' xlink:type='arc' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProductWarrantyAccrualPreexistingIncreaseDecrease' xlink:to='loc_StandardProductWarrantyAccrualPreexistingIncreaseDecrease' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ProductWarrantyAccrualPreexistingIncreaseDecrease' xlink:to='loc_ExtendedProductWarrantyAccrualPreexistingIncreaseDecrease' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

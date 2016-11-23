@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/MinorityInterest' xlink:href='../elts/us-roles-2008-03-31.xsd#mi' xlink:type='simple' />
+<calculationLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/MinorityInterest' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestPeriodIncreaseDecrease' xlink:label='loc_MinorityInterestPeriodIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestIncreaseFromStockIssuance' xlink:label='loc_MinorityInterestIncreaseFromStockIssuance' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestInNetIncomeLossOfConsolidatedEntities' xlink:label='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestInNetIncomeLossJointVenturePartners' xlink:label='loc_MinorityInterestInNetIncomeLossJointVenturePartners' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestInNetIncomeLossPreferredUnitHolders' xlink:label='loc_MinorityInterestInNetIncomeLossPreferredUnitHolders' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestInNetIncomeLossLimitedPartnerships' xlink:label='loc_MinorityInterestInNetIncomeLossLimitedPartnerships' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestInNetIncomeLossOperatingPartnerships' xlink:label='loc_MinorityInterestInNetIncomeLossOperatingPartnerships' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestInNetIncomeLossOtherMinorityInterests' xlink:label='loc_MinorityInterestInNetIncomeLossOtherMinorityInterests' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestDecreaseFromDistributionsToNoncontrollingInterestHolders' xlink:label='loc_MinorityInterestDecreaseFromDistributionsToNoncontrollingInterestHolders' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_MinorityInterestDecreaseFromRedemptions' xlink:label='loc_MinorityInterestDecreaseFromRedemptions' xlink:type='locator' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MinorityInterestPeriodIncreaseDecrease' xlink:to='loc_MinorityInterestIncreaseFromStockIssuance' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MinorityInterestPeriodIncreaseDecrease' xlink:to='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntities' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntities' xlink:to='loc_MinorityInterestInNetIncomeLossJointVenturePartners' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntities' xlink:to='loc_MinorityInterestInNetIncomeLossPreferredUnitHolders' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntities' xlink:to='loc_MinorityInterestInNetIncomeLossLimitedPartnerships' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntities' xlink:to='loc_MinorityInterestInNetIncomeLossOperatingPartnerships' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MinorityInterestInNetIncomeLossOfConsolidatedEntities' xlink:to='loc_MinorityInterestInNetIncomeLossOtherMinorityInterests' xlink:type='arc' />
+<calculationArc order='30' use='optional' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MinorityInterestPeriodIncreaseDecrease' xlink:to='loc_MinorityInterestDecreaseFromDistributionsToNoncontrollingInterestHolders' xlink:type='arc' />
+<calculationArc order='40' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_MinorityInterestPeriodIncreaseDecrease' xlink:to='loc_MinorityInterestDecreaseFromRedemptions' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2013.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciation' xlink:href='../elts/us-roles-2013-01-31.xsd#sec-re' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/disclosure/SECScheduleArticle12-28RealEstateAndAccumulatedDepreciation' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RealEstateAccumulatedDepreciationPeriodIncreaseDecrease' xlink:label='loc_RealEstateAccumulatedDepreciationPeriodIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RealEstateAccumulatedDepreciationOtherAdditions' xlink:label='loc_RealEstateAccumulatedDepreciationOtherAdditions' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RealEstateAccumulatedDepreciationRealEstateSold' xlink:label='loc_RealEstateAccumulatedDepreciationRealEstateSold' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RealEstateAccumulatedDepreciationOtherDeductions' xlink:label='loc_RealEstateAccumulatedDepreciationOtherDeductions' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SECScheduleIIIRealEstateAccumulatedDepreciationDepreciationExpense' xlink:label='loc_SECScheduleIIIRealEstateAccumulatedDepreciationDepreciationExpense' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SECScheduleIIIRealEstateInvestmentPropertyNet' xlink:label='loc_SECScheduleIIIRealEstateInvestmentPropertyNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RealEstateGrossAtCarryingValue' xlink:label='loc_RealEstateGrossAtCarryingValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationCarryingAmountOfLand' xlink:label='loc_RealEstateAndAccumulatedDepreciationCarryingAmountOfLand' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RealEstateAndAccumulatedDepreciationCarryingAmountOfBuildingsAndImprovements' xlink:label='loc_RealEstateAndAccumulatedDepreciationCarryingAmountOfBuildingsAndImprovements' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RealEstateAccumulatedDepreciation' xlink:label='loc_RealEstateAccumulatedDepreciation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RealEstatePeriodIncreaseDecrease' xlink:label='loc_RealEstatePeriodIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RealEstateAcquisitionsThroughForeclosures' xlink:label='loc_RealEstateAcquisitionsThroughForeclosures' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RealEstateOtherAcquisitions' xlink:label='loc_RealEstateOtherAcquisitions' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RealEstateImprovements' xlink:label='loc_RealEstateImprovements' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RealEstateOtherAdditions' xlink:label='loc_RealEstateOtherAdditions' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RealEstateCostOfRealEstateSold' xlink:label='loc_RealEstateCostOfRealEstateSold' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_SECScheduleIIIRealEstateWritedownOrReserveAmount' xlink:label='loc_SECScheduleIIIRealEstateWritedownOrReserveAmount' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_RealEstateOtherDeductions' xlink:label='loc_RealEstateOtherDeductions' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RealEstateAccumulatedDepreciationPeriodIncreaseDecrease' xlink:to='loc_RealEstateAccumulatedDepreciationOtherAdditions' xlink:type='arc' />
+<link:calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RealEstateAccumulatedDepreciationPeriodIncreaseDecrease' xlink:to='loc_RealEstateAccumulatedDepreciationRealEstateSold' xlink:type='arc' />
+<link:calculationArc order='30' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RealEstateAccumulatedDepreciationPeriodIncreaseDecrease' xlink:to='loc_RealEstateAccumulatedDepreciationOtherDeductions' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RealEstateAccumulatedDepreciationPeriodIncreaseDecrease' xlink:to='loc_SECScheduleIIIRealEstateAccumulatedDepreciationDepreciationExpense' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_SECScheduleIIIRealEstateInvestmentPropertyNet' xlink:to='loc_RealEstateGrossAtCarryingValue' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RealEstateGrossAtCarryingValue' xlink:to='loc_RealEstateAndAccumulatedDepreciationCarryingAmountOfLand' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RealEstateGrossAtCarryingValue' xlink:to='loc_RealEstateAndAccumulatedDepreciationCarryingAmountOfBuildingsAndImprovements' xlink:type='arc' />
+<link:calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_SECScheduleIIIRealEstateInvestmentPropertyNet' xlink:to='loc_RealEstateAccumulatedDepreciation' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RealEstatePeriodIncreaseDecrease' xlink:to='loc_RealEstateAcquisitionsThroughForeclosures' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RealEstatePeriodIncreaseDecrease' xlink:to='loc_RealEstateOtherAcquisitions' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RealEstatePeriodIncreaseDecrease' xlink:to='loc_RealEstateImprovements' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RealEstatePeriodIncreaseDecrease' xlink:to='loc_RealEstateOtherAdditions' xlink:type='arc' />
+<link:calculationArc order='50' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RealEstatePeriodIncreaseDecrease' xlink:to='loc_RealEstateCostOfRealEstateSold' xlink:type='arc' />
+<link:calculationArc order='60' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RealEstatePeriodIncreaseDecrease' xlink:to='loc_SECScheduleIIIRealEstateWritedownOrReserveAmount' xlink:type='arc' />
+<link:calculationArc order='70' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RealEstatePeriodIncreaseDecrease' xlink:to='loc_RealEstateOtherDeductions' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

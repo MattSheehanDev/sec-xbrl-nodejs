@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://xbrl.us/re/stm-dis/2008-03-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:stm-dis-re='http://xbrl.us/re/stm-dis/2008-03-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://xbrl.us/re/stm/2008-03-31' schemaLocation='us-gaap-re-stm-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/sec-cndfir/2008-03-31' schemaLocation='../../dis/us-gaap-dis-sec-cndfir-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/ru/2008-03-31' schemaLocation='../../dis/us-gaap-dis-ru-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/cce/2008-03-31' schemaLocation='../../dis/us-gaap-dis-cce-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/inv/2008-03-31' schemaLocation='../../dis/us-gaap-dis-inv-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/iago/2008-03-31' schemaLocation='../../dis/us-gaap-dis-iago-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/pay/2008-03-31' schemaLocation='../../dis/us-gaap-dis-pay-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/aro/2008-03-31' schemaLocation='../../dis/us-gaap-dis-aro-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/ocpfs/2008-03-31' schemaLocation='../../dis/us-gaap-dis-ocpfs-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/acec/2008-03-31' schemaLocation='../../dis/us-gaap-dis-acec-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/ir/2008-03-31' schemaLocation='../../dis/us-gaap-dis-ir-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/ap/2008-03-31' schemaLocation='../../dis/us-gaap-dis-ap-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/rlnro/2008-03-31' schemaLocation='../../dis/us-gaap-dis-rlnro-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/ides/2008-03-31' schemaLocation='../../dis/us-gaap-dis-ides-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/emjv/2008-03-31' schemaLocation='../../dis/us-gaap-dis-emjv-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/iaoi/2008-03-31' schemaLocation='../../dis/us-gaap-dis-iaoi-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/dccpoa/2008-03-31' schemaLocation='../../dis/us-gaap-dis-dccpoa-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/ppe/2008-03-31' schemaLocation='../../dis/us-gaap-dis-ppe-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/ero/2008-03-31' schemaLocation='../../dis/us-gaap-dis-ero-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/edco/2008-03-31' schemaLocation='../../dis/us-gaap-dis-edco-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/dr/2008-03-31' schemaLocation='../../dis/us-gaap-dis-dr-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/cc/2008-03-31' schemaLocation='../../dis/us-gaap-dis-cc-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/guarantees/2008-03-31' schemaLocation='../../dis/us-gaap-dis-guarantees-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/debt/2008-03-31' schemaLocation='../../dis/us-gaap-dis-debt-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/othliab/2008-03-31' schemaLocation='../../dis/us-gaap-dis-othliab-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/mi/2008-03-31' schemaLocation='../../dis/us-gaap-dis-mi-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/te/2008-03-31' schemaLocation='../../dis/us-gaap-dis-te-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/equity/2008-03-31' schemaLocation='../../dis/us-gaap-dis-equity-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/crcgen/2008-03-31' schemaLocation='../../dis/us-gaap-dis-crcgen-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/crcsbp/2008-03-31' schemaLocation='../../dis/us-gaap-dis-crcsbp-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/crcrb/2008-03-31' schemaLocation='../../dis/us-gaap-dis-crcrb-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/crcpb/2008-03-31' schemaLocation='../../dis/us-gaap-dis-crcpb-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/otherexp/2008-03-31' schemaLocation='../../dis/us-gaap-dis-otherexp-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/rd/2008-03-31' schemaLocation='../../dis/us-gaap-dis-rd-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/inctax/2008-03-31' schemaLocation='../../dis/us-gaap-dis-inctax-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/disops/2008-03-31' schemaLocation='../../dis/us-gaap-dis-disops-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/eui/2008-03-31' schemaLocation='../../dis/us-gaap-dis-eui-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/eps/2008-03-31' schemaLocation='../../dis/us-gaap-dis-eps-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/sr/2008-03-31' schemaLocation='../../dis/us-gaap-dis-sr-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/scfsup/2008-03-31' schemaLocation='../../dis/us-gaap-dis-scfsup-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/bc/2008-03-31' schemaLocation='../../dis/us-gaap-dis-bc-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/reorg/2008-03-31' schemaLocation='../../dis/us-gaap-dis-reorg-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/diha/2008-03-31' schemaLocation='../../dis/us-gaap-dis-diha-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/fifvd/2008-03-31' schemaLocation='../../dis/us-gaap-dis-fifvd-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/foct/2008-03-31' schemaLocation='../../dis/us-gaap-dis-foct-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/leaop/2008-03-31' schemaLocation='../../dis/us-gaap-dis-leaop-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/leacap/2008-03-31' schemaLocation='../../dis/us-gaap-dis-leacap-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/leasl/2008-03-31' schemaLocation='../../dis/us-gaap-dis-leasl-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/nt/2008-03-31' schemaLocation='../../dis/us-gaap-dis-nt-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/rpd/2008-03-31' schemaLocation='../../dis/us-gaap-dis-rpd-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/ts/2008-03-31' schemaLocation='../../dis/us-gaap-dis-ts-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/se/2008-03-31' schemaLocation='../../dis/us-gaap-dis-se-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/dse/2008-03-31' schemaLocation='../../dis/us-gaap-dis-dse-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/re/2008-03-31' schemaLocation='../../dis/us-gaap-dis-re-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/sec-vq/2008-03-31' schemaLocation='../../dis/us-gaap-dis-sec-vq-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/sec-re/2008-03-31' schemaLocation='../../dis/us-gaap-dis-sec-re-2008-03-31.xsd' />
+<xs:import namespace='http://xbrl.us/dis/sec-mort/2008-03-31' schemaLocation='../../dis/us-gaap-dis-sec-mort-2008-03-31.xsd' />
+</xs:schema>

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2014.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/FinancialServicesBrokersAndDealers' xlink:href='../elts/us-roles-2014-01-31.xsd#fs-bd' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/disclosure/FinancialServicesBrokersAndDealers' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_AggregateIndebtedness' xlink:label='loc_AggregateIndebtedness' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ItemsIncludedInConsolidatedStatementOfFinancialCondition' xlink:label='loc_ItemsIncludedInConsolidatedStatementOfFinancialCondition' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_BankLoans' xlink:label='loc_BankLoans' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DraftsPayable' xlink:label='loc_DraftsPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_PayablesToCustomers' xlink:label='loc_PayablesToCustomers' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_OtherAccountsPayableAndAccruedLiabilities' xlink:label='loc_OtherAccountsPayableAndAccruedLiabilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_PayablesToBrokerDealersAndClearingOrganizations' xlink:label='loc_PayablesToBrokerDealersAndClearingOrganizations' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ItemsNotIncludedInConsolidatedStatementOfFinancialCondition' xlink:label='loc_ItemsNotIncludedInConsolidatedStatementOfFinancialCondition' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_SecuritiesBorrowedForWhichNoValueIsPaidOrCredited' xlink:label='loc_SecuritiesBorrowedForWhichNoValueIsPaidOrCredited' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_OtherUnrecordedAmounts' xlink:label='loc_OtherUnrecordedAmounts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_InsuranceServicesRevenue' xlink:label='loc_InsuranceServicesRevenue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_PremiumsEarnedNet' xlink:label='loc_PremiumsEarnedNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_IncreaseDecreaseInUnearnedPremiumsNet' xlink:label='loc_IncreaseDecreaseInUnearnedPremiumsNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_PremiumsWrittenNet' xlink:label='loc_PremiumsWrittenNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_CededPremiumsWritten' xlink:label='loc_CededPremiumsWritten' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_PremiumsWrittenGross' xlink:label='loc_PremiumsWrittenGross' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DirectPremiumsWritten' xlink:label='loc_DirectPremiumsWritten' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_AssumedPremiumsWritten' xlink:label='loc_AssumedPremiumsWritten' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_InsuranceInvestmentIncome' xlink:label='loc_InsuranceInvestmentIncome' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_GainLossOnSaleOfInsuranceBlock' xlink:label='loc_GainLossOnSaleOfInsuranceBlock' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_InsuranceAgencyManagementFee' xlink:label='loc_InsuranceAgencyManagementFee' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_InsuranceCommissionsAndFees' xlink:label='loc_InsuranceCommissionsAndFees' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_NetCapital' xlink:label='loc_NetCapital' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_NetCapitalBeforeHaircutsOnSecuritiesPositions' xlink:label='loc_NetCapitalBeforeHaircutsOnSecuritiesPositions' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_CapitalAndAllowableSubordinatedBorrowings' xlink:label='loc_CapitalAndAllowableSubordinatedBorrowings' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_StockholdersEquityQualifiedForNetCapital' xlink:label='loc_StockholdersEquityQualifiedForNetCapital' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_SubordinatedBorrowingsAllowableInComputationOfNetCapital' xlink:label='loc_SubordinatedBorrowingsAllowableInComputationOfNetCapital' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_OtherDeductionsOrAllowableCredits' xlink:label='loc_OtherDeductionsOrAllowableCredits' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeductionsCharges' xlink:label='loc_DeductionsCharges' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_NonallowableAssets' xlink:label='loc_NonallowableAssets' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_SecuritiesOwnedNotReadilyMarketable' xlink:label='loc_SecuritiesOwnedNotReadilyMarketable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MarketValueOfStockDividendsOutstandingOverThirtyDays' xlink:label='loc_MarketValueOfStockDividendsOutstandingOverThirtyDays' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MembershipsInExchangesOwned' xlink:label='loc_MembershipsInExchangesOwned' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_PropertyPlantAndEquipmentNet' xlink:label='loc_PropertyPlantAndEquipmentNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_OtherAssetsNotAllowed' xlink:label='loc_OtherAssetsNotAllowed' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_AdditionalChargesForSecuritiesAccounts' xlink:label='loc_AdditionalChargesForSecuritiesAccounts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_AdditionalChargesForCommodityAccounts' xlink:label='loc_AdditionalChargesForCommodityAccounts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_AgedFailsToDeliver' xlink:label='loc_AgedFailsToDeliver' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_AgedShortSecurityDifferences' xlink:label='loc_AgedShortSecurityDifferences' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_SecuredDemandNoteDeficiency' xlink:label='loc_SecuredDemandNoteDeficiency' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_CommodityFuturesContractsAndSpotCommoditiesProprietaryCapitalCharges' xlink:label='loc_CommodityFuturesContractsAndSpotCommoditiesProprietaryCapitalCharges' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_OtherDeductionsAndCharges' xlink:label='loc_OtherDeductionsAndCharges' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HaircutsOnSecurities' xlink:label='loc_HaircutsOnSecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HaircutsOnContractualSecuritiesCommitments' xlink:label='loc_HaircutsOnContractualSecuritiesCommitments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HaircutsOnSecuritiesCollateralizingSecuredDemandNotes' xlink:label='loc_HaircutsOnSecuritiesCollateralizingSecuredDemandNotes' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HaircutsOnBankersAcceptancesCertificatesOfDepositAndCommercialPaper' xlink:label='loc_HaircutsOnBankersAcceptancesCertificatesOfDepositAndCommercialPaper' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HaircutsOnUSAndCanadianGovernmentObligations' xlink:label='loc_HaircutsOnUSAndCanadianGovernmentObligations' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HaircutsOnStateAndMunicipalGovernmentObligations' xlink:label='loc_HaircutsOnStateAndMunicipalGovernmentObligations' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HaircutsOnCorporateObligations' xlink:label='loc_HaircutsOnCorporateObligations' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HaircutsOnStocksAndWarrants' xlink:label='loc_HaircutsOnStocksAndWarrants' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HaircutsOnOptions' xlink:label='loc_HaircutsOnOptions' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HaircutsOnUndueConcentrations' xlink:label='loc_HaircutsOnUndueConcentrations' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HaircutsOnTradingAndInvestmentSecurities' xlink:label='loc_HaircutsOnTradingAndInvestmentSecurities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_HaircutsOther' xlink:label='loc_HaircutsOther' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_NetCapitalUnderCommodityExchangeActComputation' xlink:label='loc_NetCapitalUnderCommodityExchangeActComputation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RequiredNetCapitalUnderCommodityExchangeAct1' xlink:label='loc_RequiredNetCapitalUnderCommodityExchangeAct1' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_NetCapitalExcessShortageUnderCommodityExchangeAct' xlink:label='loc_NetCapitalExcessShortageUnderCommodityExchangeAct' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_SubordinatedLiabilitiesPeriodIncreaseDecrease' xlink:label='loc_SubordinatedLiabilitiesPeriodIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_SubordinatedLiabilitiesAdditions' xlink:label='loc_SubordinatedLiabilitiesAdditions' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_SubordinatedLiabilitiesExtinguished' xlink:label='loc_SubordinatedLiabilitiesExtinguished' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AggregateIndebtedness' xlink:to='loc_ItemsIncludedInConsolidatedStatementOfFinancialCondition' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ItemsIncludedInConsolidatedStatementOfFinancialCondition' xlink:to='loc_BankLoans' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ItemsIncludedInConsolidatedStatementOfFinancialCondition' xlink:to='loc_DraftsPayable' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ItemsIncludedInConsolidatedStatementOfFinancialCondition' xlink:to='loc_PayablesToCustomers' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ItemsIncludedInConsolidatedStatementOfFinancialCondition' xlink:to='loc_OtherAccountsPayableAndAccruedLiabilities' xlink:type='arc' />
+<link:calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ItemsIncludedInConsolidatedStatementOfFinancialCondition' xlink:to='loc_PayablesToBrokerDealersAndClearingOrganizations' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AggregateIndebtedness' xlink:to='loc_ItemsNotIncludedInConsolidatedStatementOfFinancialCondition' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ItemsNotIncludedInConsolidatedStatementOfFinancialCondition' xlink:to='loc_SecuritiesBorrowedForWhichNoValueIsPaidOrCredited' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_ItemsNotIncludedInConsolidatedStatementOfFinancialCondition' xlink:to='loc_OtherUnrecordedAmounts' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InsuranceServicesRevenue' xlink:to='loc_PremiumsEarnedNet' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsEarnedNet' xlink:to='loc_IncreaseDecreaseInUnearnedPremiumsNet' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsEarnedNet' xlink:to='loc_PremiumsWrittenNet' xlink:type='arc' />
+<link:calculationArc order='10' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsWrittenNet' xlink:to='loc_CededPremiumsWritten' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsWrittenNet' xlink:to='loc_PremiumsWrittenGross' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsWrittenGross' xlink:to='loc_DirectPremiumsWritten' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PremiumsWrittenGross' xlink:to='loc_AssumedPremiumsWritten' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InsuranceServicesRevenue' xlink:to='loc_InsuranceInvestmentIncome' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InsuranceServicesRevenue' xlink:to='loc_GainLossOnSaleOfInsuranceBlock' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InsuranceServicesRevenue' xlink:to='loc_InsuranceAgencyManagementFee' xlink:type='arc' />
+<link:calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InsuranceServicesRevenue' xlink:to='loc_InsuranceCommissionsAndFees' xlink:type='arc' />
+<link:calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetCapital' xlink:to='loc_NetCapitalBeforeHaircutsOnSecuritiesPositions' xlink:type='arc' />
+<link:calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetCapitalBeforeHaircutsOnSecuritiesPositions' xlink:to='loc_CapitalAndAllowableSubordinatedBorrowings' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CapitalAndAllowableSubordinatedBorrowings' xlink:to='loc_StockholdersEquityQualifiedForNetCapital' xlink:type='arc' />
+<link:calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CapitalAndAllowableSubordinatedBorrowings' xlink:to='loc_SubordinatedBorrowingsAllowableInComputationOfNetCapital' xlink:type='arc' />
+<link:calculationArc order='30' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CapitalAndAllowableSubordinatedBorrowings' xlink:to='loc_OtherDeductionsOrAllowableCredits' xlink:type='arc' />
+<link:calculationArc order='20' use='optional' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetCapitalBeforeHaircutsOnSecuritiesPositions' xlink:to='loc_DeductionsCharges' xlink:type='arc' />
+<link:calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeductionsCharges' xlink:to='loc_NonallowableAssets' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NonallowableAssets' xlink:to='loc_SecuritiesOwnedNotReadilyMarketable' xlink:type='arc' />
+<link:calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NonallowableAssets' xlink:to='loc_MarketValueOfStockDividendsOutstandingOverThirtyDays' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NonallowableAssets' xlink:to='loc_MembershipsInExchangesOwned' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NonallowableAssets' xlink:to='loc_PropertyPlantAndEquipmentNet' xlink:type='arc' />
+<link:calculationArc order='50' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NonallowableAssets' xlink:to='loc_OtherAssetsNotAllowed' xlink:type='arc' />
+<link:calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeductionsCharges' xlink:to='loc_AdditionalChargesForSecuritiesAccounts' xlink:type='arc' />
+<link:calculationArc order='30' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeductionsCharges' xlink:to='loc_AdditionalChargesForCommodityAccounts' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeductionsCharges' xlink:to='loc_AgedFailsToDeliver' xlink:type='arc' />
+<link:calculationArc order='50' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeductionsCharges' xlink:to='loc_AgedShortSecurityDifferences' xlink:type='arc' />
+<link:calculationArc order='60' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeductionsCharges' xlink:to='loc_SecuredDemandNoteDeficiency' xlink:type='arc' />
+<link:calculationArc order='70' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeductionsCharges' xlink:to='loc_CommodityFuturesContractsAndSpotCommoditiesProprietaryCapitalCharges' xlink:type='arc' />
+<link:calculationArc order='80' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeductionsCharges' xlink:to='loc_OtherDeductionsAndCharges' xlink:type='arc' />
+<link:calculationArc order='20' use='optional' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetCapital' xlink:to='loc_HaircutsOnSecurities' xlink:type='arc' />
+<link:calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_HaircutsOnSecurities' xlink:to='loc_HaircutsOnContractualSecuritiesCommitments' xlink:type='arc' />
+<link:calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_HaircutsOnSecurities' xlink:to='loc_HaircutsOnSecuritiesCollateralizingSecuredDemandNotes' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_HaircutsOnSecurities' xlink:to='loc_HaircutsOnBankersAcceptancesCertificatesOfDepositAndCommercialPaper' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_HaircutsOnSecurities' xlink:to='loc_HaircutsOnUSAndCanadianGovernmentObligations' xlink:type='arc' />
+<link:calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_HaircutsOnSecurities' xlink:to='loc_HaircutsOnStateAndMunicipalGovernmentObligations' xlink:type='arc' />
+<link:calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_HaircutsOnSecurities' xlink:to='loc_HaircutsOnCorporateObligations' xlink:type='arc' />
+<link:calculationArc order='70' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_HaircutsOnSecurities' xlink:to='loc_HaircutsOnStocksAndWarrants' xlink:type='arc' />
+<link:calculationArc order='80' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_HaircutsOnSecurities' xlink:to='loc_HaircutsOnOptions' xlink:type='arc' />
+<link:calculationArc order='90' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_HaircutsOnSecurities' xlink:to='loc_HaircutsOnUndueConcentrations' xlink:type='arc' />
+<link:calculationArc order='100' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_HaircutsOnSecurities' xlink:to='loc_HaircutsOnTradingAndInvestmentSecurities' xlink:type='arc' />
+<link:calculationArc order='110' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_HaircutsOnSecurities' xlink:to='loc_HaircutsOther' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetCapitalUnderCommodityExchangeActComputation' xlink:to='loc_RequiredNetCapitalUnderCommodityExchangeAct1' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetCapitalUnderCommodityExchangeActComputation' xlink:to='loc_NetCapitalExcessShortageUnderCommodityExchangeAct' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_SubordinatedLiabilitiesPeriodIncreaseDecrease' xlink:to='loc_SubordinatedLiabilitiesAdditions' xlink:type='arc' />
+<link:calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_SubordinatedLiabilitiesPeriodIncreaseDecrease' xlink:to='loc_SubordinatedLiabilitiesExtinguished' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

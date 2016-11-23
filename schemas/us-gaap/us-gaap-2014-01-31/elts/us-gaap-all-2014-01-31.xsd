@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2014.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://fasb.org/us-gaap-all/2014-01-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:us-gaap-all='http://fasb.org/us-gaap-all/2014-01-31' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<xs:annotation>
+<xs:appinfo>
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-doc-2014-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-ref-2014-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/referenceLinkbaseRef' xlink:type='simple' />
+</xs:appinfo>
+<xs:documentation> This file is an entry point for us-gaap (us-gaap). The DTS starting with this entry point includes
+				the concepts defined in us-gaap (us-gaap) with their standard, period start, period end,
+				total, axis default, documentation, deprecated label and deprecated date labels. It
+				will also include references. It will not include presentation, calculation or
+				definition linkbases. </xs:documentation>
+</xs:annotation>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://xbrl.sec.gov/dei-all/2014-01-31' schemaLocation='http://xbrl.sec.gov/dei/2014/dei-all-2014-01-31.xsd' />
+<xs:import namespace='http://xbrl.sec.gov/invest-all/2013-01-31' schemaLocation='http://xbrl.sec.gov/invest/2013/invest-all-2013-01-31.xsd' />
+<xs:import namespace='http://xbrl.sec.gov/country-ent-all/2013-01-31' schemaLocation='http://xbrl.sec.gov/country/2013/country-ent-all-2013-01-31.xsd' />
+<xs:import namespace='http://xbrl.sec.gov/exch-ent-all/2014-01-31' schemaLocation='http://xbrl.sec.gov/exch/2014/exch-ent-all-2014-01-31.xsd' />
+<xs:import namespace='http://xbrl.sec.gov/currency-all/2014-01-31' schemaLocation='http://xbrl.sec.gov/currency/2014/currency-all-2014-01-31.xsd' />
+<xs:import namespace='http://fasb.org/us-roles/2014-01-31' schemaLocation='us-roles-2014-01-31.xsd' />
+<xs:import namespace='http://fasb.org/us-gaap-std/2014-01-31' schemaLocation='us-gaap-std-2014-01-31.xsd' />
+<xs:import namespace='http://fasb.org/codification-part/2014-01-31' schemaLocation='us-parts-codification-2014-01-31.xsd' />
+<xs:import namespace='http://fasb.org/legacy-part/2014-01-31' schemaLocation='us-parts-legacy-2014-01-31.xsd' />
+</xs:schema>

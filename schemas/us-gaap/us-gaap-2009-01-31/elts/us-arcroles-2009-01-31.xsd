@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://xbrl.us/us-arcroles/2009-01-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:us-arcroles='http://xbrl.us/us-arcroles/2009-01-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:annotation>
+<xs:appinfo>
+<link:arcroleType arcroleURI='http://xbrl.us/us-gaap/arcrole/dep-partConcept-deprecatedAggregateConcept' cyclesAllowed='undirected' id='dep-partConcept-deprecatedAggregateConcept'>
+<link:definition>Deprecated: part concept - deprecated aggregate concept</link:definition>
+<link:usedOn>link:definitionArc</link:usedOn>
+</link:arcroleType>
+<link:arcroleType arcroleURI='http://xbrl.us/us-gaap/arcrole/dep-dimensionallyQualifiedConcept-deprecatedConcept' cyclesAllowed='undirected' id='dep-dimensionallyQualifiedConcept-deprecatedConcept'>
+<link:definition>Deprecated: dimensionally qualified concept - deprecated concept</link:definition>
+<link:usedOn>link:definitionArc</link:usedOn>
+</link:arcroleType>
+<link:arcroleType arcroleURI='http://xbrl.us/us-gaap/arcrole/dep-mutuallyExclusiveConcept-deprecatedConcept' cyclesAllowed='undirected' id='dep-mutuallyExclusiveConcept-deprecatedConcept'>
+<link:definition>Deprecated: mutually exclusive concept - deprecated concept</link:definition>
+<link:usedOn>link:definitionArc</link:usedOn>
+</link:arcroleType>
+<link:arcroleType arcroleURI='http://xbrl.us/us-gaap/arcrole/dep-concept-deprecatedConcept' cyclesAllowed='undirected' id='dep-concept-deprecatedConcept'>
+<link:definition>Deprecated: concept - deprecated concept</link:definition>
+<link:usedOn>link:definitionArc</link:usedOn>
+</link:arcroleType>
+<link:arcroleType arcroleURI='http://xbrl.us/us-gaap/arcrole/dep-aggregateConcept-deprecatedPartConcept' cyclesAllowed='undirected' id='dep-aggregateConcept-deprecatedPartConcept'>
+<link:definition>Deprecated: aggreate concept - deprecated part concept</link:definition>
+<link:usedOn>link:definitionArc</link:usedOn>
+</link:arcroleType>
+</xs:appinfo>
+</xs:annotation>
+</xs:schema>

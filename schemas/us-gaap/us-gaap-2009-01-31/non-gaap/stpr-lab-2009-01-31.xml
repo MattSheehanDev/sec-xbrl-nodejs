@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:labelLink xlink:role='http://www.xbrl.org/2003/role/link' xlink:type='extended' xmlns:xlink='http://www.w3.org/1999/xlink'>
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_A0' xlink:label='loc_A0' xlink:type='locator' />
+<link:label id='lab_A0_label_en-US' xlink:label='lab_A0' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>ALBERTA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_A0' xlink:to='lab_A0' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_A1' xlink:label='loc_A1' xlink:type='locator' />
+<link:label id='lab_A1_label_en-US' xlink:label='lab_A1' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>BRITISH COLUMBIA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_A1' xlink:to='lab_A1' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_A2' xlink:label='loc_A2' xlink:type='locator' />
+<link:label id='lab_A2_label_en-US' xlink:label='lab_A2' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>MANITOBA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_A2' xlink:to='lab_A2' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_A3' xlink:label='loc_A3' xlink:type='locator' />
+<link:label id='lab_A3_label_en-US' xlink:label='lab_A3' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>NEW BRUNSWICK</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_A3' xlink:to='lab_A3' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_A4' xlink:label='loc_A4' xlink:type='locator' />
+<link:label id='lab_A4_label_en-US' xlink:label='lab_A4' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>NEWFOUNDLAND</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_A4' xlink:to='lab_A4' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_A5' xlink:label='loc_A5' xlink:type='locator' />
+<link:label id='lab_A5_label_en-US' xlink:label='lab_A5' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>NOVA SCOTIA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_A5' xlink:to='lab_A5' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_A6' xlink:label='loc_A6' xlink:type='locator' />
+<link:label id='lab_A6_label_en-US' xlink:label='lab_A6' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>ONTARIO</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_A6' xlink:to='lab_A6' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_A7' xlink:label='loc_A7' xlink:type='locator' />
+<link:label id='lab_A7_label_en-US' xlink:label='lab_A7' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>PRINCE EDWARD ISLAND</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_A7' xlink:to='lab_A7' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_A8' xlink:label='loc_A8' xlink:type='locator' />
+<link:label id='lab_A8_label_en-US' xlink:label='lab_A8' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>QUEBEC</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_A8' xlink:to='lab_A8' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_A9' xlink:label='loc_A9' xlink:type='locator' />
+<link:label id='lab_A9_label_en-US' xlink:label='lab_A9' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>SASKATCHEWAN</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_A9' xlink:to='lab_A9' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_AK' xlink:label='loc_AK' xlink:type='locator' />
+<link:label id='lab_AK_label_en-US' xlink:label='lab_AK' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>ALASKA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AK' xlink:to='lab_AK' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_AL' xlink:label='loc_AL' xlink:type='locator' />
+<link:label id='lab_AL_label_en-US' xlink:label='lab_AL' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>ALABAMA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AL' xlink:to='lab_AL' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_AR' xlink:label='loc_AR' xlink:type='locator' />
+<link:label id='lab_AR_label_en-US' xlink:label='lab_AR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>ARKANSAS</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AR' xlink:to='lab_AR' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_AZ' xlink:label='loc_AZ' xlink:type='locator' />
+<link:label id='lab_AZ_label_en-US' xlink:label='lab_AZ' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>ARIZONA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AZ' xlink:to='lab_AZ' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_B0' xlink:label='loc_B0' xlink:type='locator' />
+<link:label id='lab_B0_label_en-US' xlink:label='lab_B0' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>YUKON</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_B0' xlink:to='lab_B0' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_CA' xlink:label='loc_CA' xlink:type='locator' />
+<link:label id='lab_CA_label_en-US' xlink:label='lab_CA' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>CALIFORNIA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_CA' xlink:to='lab_CA' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_CO' xlink:label='loc_CO' xlink:type='locator' />
+<link:label id='lab_CO_label_en-US' xlink:label='lab_CO' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>COLORADO</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_CO' xlink:to='lab_CO' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_CT' xlink:label='loc_CT' xlink:type='locator' />
+<link:label id='lab_CT_label_en-US' xlink:label='lab_CT' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>CONNECTICUT</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_CT' xlink:to='lab_CT' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_DC' xlink:label='loc_DC' xlink:type='locator' />
+<link:label id='lab_DC_label_en-US' xlink:label='lab_DC' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>DISTRICT OF COLUMBIA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_DC' xlink:to='lab_DC' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_DE' xlink:label='loc_DE' xlink:type='locator' />
+<link:label id='lab_DE_label_en-US' xlink:label='lab_DE' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>DELAWARE</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_DE' xlink:to='lab_DE' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_E6' xlink:label='loc_E6' xlink:type='locator' />
+<link:label id='lab_E6_label_en-US' xlink:label='lab_E6' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>MONTREAL</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_E6' xlink:to='lab_E6' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_FL' xlink:label='loc_FL' xlink:type='locator' />
+<link:label id='lab_FL_label_en-US' xlink:label='lab_FL' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>FLORIDA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_FL' xlink:to='lab_FL' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_GA' xlink:label='loc_GA' xlink:type='locator' />
+<link:label id='lab_GA_label_en-US' xlink:label='lab_GA' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>GEORGIA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_GA' xlink:to='lab_GA' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_HI' xlink:label='loc_HI' xlink:type='locator' />
+<link:label id='lab_HI_label_en-US' xlink:label='lab_HI' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>HAWAII</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_HI' xlink:to='lab_HI' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_IA' xlink:label='loc_IA' xlink:type='locator' />
+<link:label id='lab_IA_label_en-US' xlink:label='lab_IA' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>IOWA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_IA' xlink:to='lab_IA' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_ID' xlink:label='loc_ID' xlink:type='locator' />
+<link:label id='lab_ID_label_en-US' xlink:label='lab_ID' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>IDAHO</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_ID' xlink:to='lab_ID' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_IL' xlink:label='loc_IL' xlink:type='locator' />
+<link:label id='lab_IL_label_en-US' xlink:label='lab_IL' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>ILLINOIS</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_IL' xlink:to='lab_IL' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_IN' xlink:label='loc_IN' xlink:type='locator' />
+<link:label id='lab_IN_label_en-US' xlink:label='lab_IN' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>INDIANA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_IN' xlink:to='lab_IN' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_KS' xlink:label='loc_KS' xlink:type='locator' />
+<link:label id='lab_KS_label_en-US' xlink:label='lab_KS' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>KANSAS</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_KS' xlink:to='lab_KS' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_KY' xlink:label='loc_KY' xlink:type='locator' />
+<link:label id='lab_KY_label_en-US' xlink:label='lab_KY' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>KENTUCKY</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_KY' xlink:to='lab_KY' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_LA' xlink:label='loc_LA' xlink:type='locator' />
+<link:label id='lab_LA_label_en-US' xlink:label='lab_LA' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>LOUISIANA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_LA' xlink:to='lab_LA' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_MA' xlink:label='loc_MA' xlink:type='locator' />
+<link:label id='lab_MA_label_en-US' xlink:label='lab_MA' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>MASSACHUSETTS</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MA' xlink:to='lab_MA' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_MD' xlink:label='loc_MD' xlink:type='locator' />
+<link:label id='lab_MD_label_en-US' xlink:label='lab_MD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>MARYLAND</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MD' xlink:to='lab_MD' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_ME' xlink:label='loc_ME' xlink:type='locator' />
+<link:label id='lab_ME_label_en-US' xlink:label='lab_ME' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>MAINE</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_ME' xlink:to='lab_ME' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_MI' xlink:label='loc_MI' xlink:type='locator' />
+<link:label id='lab_MI_label_en-US' xlink:label='lab_MI' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>MICHIGAN</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MI' xlink:to='lab_MI' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_MN' xlink:label='loc_MN' xlink:type='locator' />
+<link:label id='lab_MN_label_en-US' xlink:label='lab_MN' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>MINNESOTA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MN' xlink:to='lab_MN' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_MO' xlink:label='loc_MO' xlink:type='locator' />
+<link:label id='lab_MO_label_en-US' xlink:label='lab_MO' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>MISSOURI</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MO' xlink:to='lab_MO' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_MS' xlink:label='loc_MS' xlink:type='locator' />
+<link:label id='lab_MS_label_en-US' xlink:label='lab_MS' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>MISSISSIPPI</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MS' xlink:to='lab_MS' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_MT' xlink:label='loc_MT' xlink:type='locator' />
+<link:label id='lab_MT_label_en-US' xlink:label='lab_MT' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>MONTANA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_MT' xlink:to='lab_MT' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_NC' xlink:label='loc_NC' xlink:type='locator' />
+<link:label id='lab_NC_label_en-US' xlink:label='lab_NC' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>NORTH CAROLINA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_NC' xlink:to='lab_NC' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_ND' xlink:label='loc_ND' xlink:type='locator' />
+<link:label id='lab_ND_label_en-US' xlink:label='lab_ND' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>NORTH DAKOTA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_ND' xlink:to='lab_ND' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_NE' xlink:label='loc_NE' xlink:type='locator' />
+<link:label id='lab_NE_label_en-US' xlink:label='lab_NE' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>NEBRASKA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_NE' xlink:to='lab_NE' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_NH' xlink:label='loc_NH' xlink:type='locator' />
+<link:label id='lab_NH_label_en-US' xlink:label='lab_NH' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>NEW HAMPSHIRE</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_NH' xlink:to='lab_NH' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_NJ' xlink:label='loc_NJ' xlink:type='locator' />
+<link:label id='lab_NJ_label_en-US' xlink:label='lab_NJ' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>NEW JERSEY</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_NJ' xlink:to='lab_NJ' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_NM' xlink:label='loc_NM' xlink:type='locator' />
+<link:label id='lab_NM_label_en-US' xlink:label='lab_NM' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>NEW MEXICO</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_NM' xlink:to='lab_NM' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_NV' xlink:label='loc_NV' xlink:type='locator' />
+<link:label id='lab_NV_label_en-US' xlink:label='lab_NV' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>NEVADA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_NV' xlink:to='lab_NV' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_NY' xlink:label='loc_NY' xlink:type='locator' />
+<link:label id='lab_NY_label_en-US' xlink:label='lab_NY' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>NEW YORK</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_NY' xlink:to='lab_NY' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_OH' xlink:label='loc_OH' xlink:type='locator' />
+<link:label id='lab_OH_label_en-US' xlink:label='lab_OH' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>OHIO</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_OH' xlink:to='lab_OH' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_OK' xlink:label='loc_OK' xlink:type='locator' />
+<link:label id='lab_OK_label_en-US' xlink:label='lab_OK' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>OKLAHOMA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_OK' xlink:to='lab_OK' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_OR' xlink:label='loc_OR' xlink:type='locator' />
+<link:label id='lab_OR_label_en-US' xlink:label='lab_OR' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>OREGON</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_OR' xlink:to='lab_OR' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_PA' xlink:label='loc_PA' xlink:type='locator' />
+<link:label id='lab_PA_label_en-US' xlink:label='lab_PA' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>PENNSYLVANIA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_PA' xlink:to='lab_PA' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_RI' xlink:label='loc_RI' xlink:type='locator' />
+<link:label id='lab_RI_label_en-US' xlink:label='lab_RI' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>RHODE ISLAND</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_RI' xlink:to='lab_RI' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_SC' xlink:label='loc_SC' xlink:type='locator' />
+<link:label id='lab_SC_label_en-US' xlink:label='lab_SC' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>SOUTH CAROLINA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SC' xlink:to='lab_SC' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_SD' xlink:label='loc_SD' xlink:type='locator' />
+<link:label id='lab_SD_label_en-US' xlink:label='lab_SD' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>SOUTH DAKOTA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_SD' xlink:to='lab_SD' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_TN' xlink:label='loc_TN' xlink:type='locator' />
+<link:label id='lab_TN_label_en-US' xlink:label='lab_TN' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>TENNESSEE</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_TN' xlink:to='lab_TN' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_TX' xlink:label='loc_TX' xlink:type='locator' />
+<link:label id='lab_TX_label_en-US' xlink:label='lab_TX' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>TEXAS</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_TX' xlink:to='lab_TX' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_UT' xlink:label='loc_UT' xlink:type='locator' />
+<link:label id='lab_UT_label_en-US' xlink:label='lab_UT' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>UTAH</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_UT' xlink:to='lab_UT' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_VA' xlink:label='loc_VA' xlink:type='locator' />
+<link:label id='lab_VA_label_en-US' xlink:label='lab_VA' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>VIRGINIA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_VA' xlink:to='lab_VA' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_VT' xlink:label='loc_VT' xlink:type='locator' />
+<link:label id='lab_VT_label_en-US' xlink:label='lab_VT' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>VERMONT</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_VT' xlink:to='lab_VT' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_WA' xlink:label='loc_WA' xlink:type='locator' />
+<link:label id='lab_WA_label_en-US' xlink:label='lab_WA' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>WASHINGTON</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_WA' xlink:to='lab_WA' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_WI' xlink:label='loc_WI' xlink:type='locator' />
+<link:label id='lab_WI_label_en-US' xlink:label='lab_WI' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>WISCONSIN</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_WI' xlink:to='lab_WI' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_WV' xlink:label='loc_WV' xlink:type='locator' />
+<link:label id='lab_WV_label_en-US' xlink:label='lab_WV' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>WEST VIRGINIA</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_WV' xlink:to='lab_WV' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_WY' xlink:label='loc_WY' xlink:type='locator' />
+<link:label id='lab_WY_label_en-US' xlink:label='lab_WY' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>WYOMING</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_WY' xlink:to='lab_WY' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_X1' xlink:label='loc_X1' xlink:type='locator' />
+<link:label id='lab_X1_label_en-US' xlink:label='lab_X1' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>STATE UNKNOWN</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_X1' xlink:to='lab_X1' xlink:type='arc' />
+<link:loc xlink:href='stpr-2009-01-31.xsd#stpr_AllStatesAndProvincesDomain' xlink:label='loc_AllStatesAndProvincesDomain' xlink:type='locator' />
+<link:label id='lab_AllStatesAndProvincesDomain_label_en-US' xlink:label='lab_AllStatesAndProvincesDomain' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>All States and Provinces [Domain]</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='loc_AllStatesAndProvincesDomain' xlink:to='lab_AllStatesAndProvincesDomain' xlink:type='arc' />
+</link:labelLink>
+</link:linkbase>

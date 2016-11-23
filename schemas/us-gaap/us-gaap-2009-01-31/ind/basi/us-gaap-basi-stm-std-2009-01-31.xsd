@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  
+This file is an entry point for Industry Banks and Savings Institutions.
+  
+The DTS starting with this entry point includes standard, period start, period end, total and axis default labels. It will not include references.
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://xbrl.us/basi/stm-std/2009-01-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:stm-std-basi='http://xbrl.us/basi/stm-std/2009-01-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:annotation>
+<xs:documentation>
+This file is an entry point for Industry Banks and Savings Institutions.
+
+The DTS starting with this entry point includes standard, period start, period end, total and axis default labels. It will not include references.
+
+The DTS includes the following statements:
+
+108000 - Statement - Statement of Financial Position, Unclassified - Deposit Based Operations  (sfp-dbo)
+132001 - Statement - Statement of Income, Interest Based Revenue  (soi-int)
+148400 - Statement - Statement of Other Comprehensive Income  (soc)
+148600 - Statement - Statement of Shareholders' Equity and Other Comprehensive Income  (sheci)
+160000 - Statement - Statement of Cash Flows, Deposit Based Operations  (scf-dbo)
+172600 - Statement - Statement of Cash Flows, Direct Method Operating Activities  (scf-dir)
+190000 - Statement - Common Domain Members  (com)
+</xs:documentation>
+</xs:annotation>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/basi/com/2009-01-31' schemaLocation='../../stm/us-gaap-stm-basi-com-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/basi/sheci/2009-01-31' schemaLocation='../../stm/us-gaap-stm-basi-sheci-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/basi/scf-dir/2009-01-31' schemaLocation='../../stm/us-gaap-stm-basi-scf-dir-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/basi/soc/2009-01-31' schemaLocation='../../stm/us-gaap-stm-basi-soc-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/basi/soi-int/2009-01-31' schemaLocation='../../stm/us-gaap-stm-basi-soi-int-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/basi/sfp-dbo/2009-01-31' schemaLocation='../../stm/us-gaap-stm-basi-sfp-dbo-2009-01-31.xsd' />
+<xs:import namespace='http://xbrl.us/stm/basi/scf-dbo/2009-01-31' schemaLocation='../../stm/us-gaap-stm-basi-scf-dbo-2009-01-31.xsd' />
+</xs:schema>

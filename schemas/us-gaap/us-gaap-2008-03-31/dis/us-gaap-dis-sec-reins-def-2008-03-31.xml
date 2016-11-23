@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/SECScheduleArticle12-17Reinsurance' xlink:href='../elts/us-roles-2008-03-31.xsd#sec-reins' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/all' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' xlink:type='simple' />
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SECScheduleArticle12-17Reinsurance' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentTable' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentLineItems' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentLineItems' xlink:to='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SECScheduleArticle12-17Reinsurance' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentTable' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentAxis' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentTable' xlink:to='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SECScheduleArticle12-17Reinsurance' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentAxis' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentDomain' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentAxis' xlink:to='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SECScheduleArticle12-17Reinsurance' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentAxis' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentDomain' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentAxis' xlink:to='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SECScheduleArticle12-17Reinsurance' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentLineItems' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentNetAmountAbstract' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentNetAmountAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentPercentageOfAmountAssumedToNet' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentPercentageOfAmountAssumedToNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentGrossAmount' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentGrossAmount' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentAmountCededToOtherCompanies' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentAmountCededToOtherCompanies' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentAmountAssumedFromOtherCompanies' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentAmountAssumedFromOtherCompanies' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentNetAmount' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentNetAmount' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentLineItems' xlink:to='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentNetAmountAbstract' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentLineItems' xlink:to='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentPercentageOfAmountAssumedToNet' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentNetAmountAbstract' xlink:to='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentGrossAmount' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentNetAmountAbstract' xlink:to='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentAmountCededToOtherCompanies' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentNetAmountAbstract' xlink:to='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentAmountAssumedFromOtherCompanies' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentNetAmountAbstract' xlink:to='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentNetAmount' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/SECScheduleArticle12-17Reinsurance' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentDomain' xlink:label='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LifeInsuranceInForceMember' xlink:label='loc_LifeInsuranceInForceMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LifeInsuranceSegmentMember' xlink:label='loc_LifeInsuranceSegmentMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_InvestmentsSegmentMember' xlink:label='loc_InvestmentsSegmentMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AccidentAndHealthInsuranceSegmentMember' xlink:label='loc_AccidentAndHealthInsuranceSegmentMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PropertyLiabilityAndCasualtyInsuranceSegmentMember' xlink:label='loc_PropertyLiabilityAndCasualtyInsuranceSegmentMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_SuretySegmentMember' xlink:label='loc_SuretySegmentMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_TitleInsuranceSegmentMember' xlink:label='loc_TitleInsuranceSegmentMember' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentDomain' xlink:to='loc_LifeInsuranceInForceMember' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentDomain' xlink:to='loc_LifeInsuranceSegmentMember' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentDomain' xlink:to='loc_InvestmentsSegmentMember' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentDomain' xlink:to='loc_AccidentAndHealthInsuranceSegmentMember' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentDomain' xlink:to='loc_PropertyLiabilityAndCasualtyInsuranceSegmentMember' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentDomain' xlink:to='loc_SuretySegmentMember' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ReinsurancePremiumsForInsuranceCompaniesByProductSegmentDomain' xlink:to='loc_TitleInsuranceSegmentMember' xlink:type='arc' />
+</link:definitionLink>
+</link:linkbase>

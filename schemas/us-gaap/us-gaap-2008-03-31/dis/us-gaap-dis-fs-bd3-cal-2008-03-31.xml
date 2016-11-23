@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/FinancialServicesBrokersAndDealersCalc3' xlink:href='../elts/us-roles-2008-03-31.xsd#fs-bd3' xlink:type='simple' />
+<calculationLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/FinancialServicesBrokersAndDealersCalc3' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AlternativeExcessNetCapital' xlink:label='loc_AlternativeExcessNetCapital' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NetCapital' xlink:label='loc_NetCapital' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AlternativeNetCapitalRequirement' xlink:label='loc_AlternativeNetCapitalRequirement' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_TwoPercentOfDebitItems' xlink:label='loc_TwoPercentOfDebitItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_CapitalRequirementOfConsolidatedBrokerDealerSubsidiaryElectingAlternativeMethod' xlink:label='loc_CapitalRequirementOfConsolidatedBrokerDealerSubsidiaryElectingAlternativeMethod' xlink:type='locator' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AlternativeExcessNetCapital' xlink:to='loc_NetCapital' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AlternativeExcessNetCapital' xlink:to='loc_AlternativeNetCapitalRequirement' xlink:type='arc' />
+<calculationArc order='10' use='optional' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AlternativeNetCapitalRequirement' xlink:to='loc_TwoPercentOfDebitItems' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AlternativeNetCapitalRequirement' xlink:to='loc_CapitalRequirementOfConsolidatedBrokerDealerSubsidiaryElectingAlternativeMethod' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

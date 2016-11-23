@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/ExitOrDisposalCostObligations' xlink:href='../elts/us-roles-2009-01-31.xsd#edco' xlink:type='simple' />
+<calculationLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/ExitOrDisposalCostObligations' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_RestructuringReserve' xlink:label='loc_RestructuringReserve' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_RestructuringReserveCurrent' xlink:label='loc_RestructuringReserveCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_RestructuringReserveNoncurrent' xlink:label='loc_RestructuringReserveNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_RestructuringReservePeriodIncreaseDecrease' xlink:label='loc_RestructuringReservePeriodIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_RestructuringCharges' xlink:label='loc_RestructuringCharges' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_BusinessExitCosts' xlink:label='loc_BusinessExitCosts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_RecapitalizationCosts' xlink:label='loc_RecapitalizationCosts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_SeveranceCosts' xlink:label='loc_SeveranceCosts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_OtherRestructuringCosts' xlink:label='loc_OtherRestructuringCosts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_RestructuringReserveSettledWithoutCash' xlink:label='loc_RestructuringReserveSettledWithoutCash' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_RestructuringReserveSettledWithCash' xlink:label='loc_RestructuringReserveSettledWithCash' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_RestructuringReserveTranslationAdjustment' xlink:label='loc_RestructuringReserveTranslationAdjustment' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_RestructuringReserveAccrualAdjustment' xlink:label='loc_RestructuringReserveAccrualAdjustment' xlink:type='locator' />
+<calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RestructuringReserve' xlink:to='loc_RestructuringReserveCurrent' xlink:type='arc' />
+<calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RestructuringReserve' xlink:to='loc_RestructuringReserveNoncurrent' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RestructuringReservePeriodIncreaseDecrease' xlink:to='loc_RestructuringCharges' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RestructuringCharges' xlink:to='loc_BusinessExitCosts' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RestructuringCharges' xlink:to='loc_RecapitalizationCosts' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RestructuringCharges' xlink:to='loc_SeveranceCosts' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RestructuringCharges' xlink:to='loc_OtherRestructuringCosts' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RestructuringReservePeriodIncreaseDecrease' xlink:to='loc_RestructuringReserveSettledWithoutCash' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RestructuringReservePeriodIncreaseDecrease' xlink:to='loc_RestructuringReserveSettledWithCash' xlink:type='arc' />
+<calculationArc order='40' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RestructuringReservePeriodIncreaseDecrease' xlink:to='loc_RestructuringReserveTranslationAdjustment' xlink:type='arc' />
+<calculationArc order='50' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RestructuringReservePeriodIncreaseDecrease' xlink:to='loc_RestructuringReserveAccrualAdjustment' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

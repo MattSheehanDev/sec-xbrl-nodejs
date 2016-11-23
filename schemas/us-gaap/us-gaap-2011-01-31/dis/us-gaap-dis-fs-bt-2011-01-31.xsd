@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2011.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  
+This file is the entry point for disclosure Financial Services, Banking and Thrift (fs-bt).
+  
+The DTS starting with this entry point includes the presentation, calculation and definition linkbases for the disclosure.
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://fasb.org/dis/fs-bt/2011-01-31' xmlns:fs-bt='http://fasb.org/dis/fs-bt/2011-01-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:annotation>
+<xs:appinfo>
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-dis-fs-bt3-cal-2011-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-dis-fs-bt4-cal-2011-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-dis-fs-bt5-cal-2011-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-dis-fs-bt-pre-2011-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-dis-fs-bt-cal-2011-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-dis-fs-bt2-cal-2011-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-dis-fs-bt-def-2011-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:type='simple' />
+</xs:appinfo>
+<xs:documentation>
+This file is the entry point file for disclosure Financial Services, Banking and Thrift (fs-bt).
+
+The DTS starting with this entry point includes the following presentation, calculation and definition linkbases:
+940100 - Disclosure - Financial Services, Banking and Thrift (Deposit Liabilities Alternative)  (calculation)
+940200 - Disclosure - Financial Services, Banking and Thrift (Foreign Deposit Liabilities Alternative)  (calculation)
+940300 - Disclosure - Financial Services, Banking and Thrift (Deposit Liabilities by Customer Alternative)  (calculation)
+940000 - Disclosure - Financial Services, Banking and Thrift  (presentation)	
+940000 - Disclosure - Financial Services, Banking and Thrift  (calculation)
+940500 - Disclosure - Financial Services, Banking and Thrift (FHLB Advances by Interest Rate Type Alternative)  (calculation)
+940000 - Disclosure - Financial Services, Banking and Thrift  (definition)	
+</xs:documentation>
+</xs:annotation>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://fasb.org/us-gaap-std/2011-01-31' schemaLocation='../elts/us-gaap-std-2011-01-31.xsd' />
+</xs:schema>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2011.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/statement/StatementOfCashFlowsSupplementalDisclosures' xlink:href='../elts/us-roles-2011-01-31.xsd#scf-sd' xlink:type='simple' />
+<calculationLink xlink:role='http://fasb.org/us-gaap/role/statement/StatementOfCashFlowsSupplementalDisclosures' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_InterestPaid' xlink:label='loc_InterestPaid' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_InterestPaidNet' xlink:label='loc_InterestPaidNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_InterestPaidCapitalized' xlink:label='loc_InterestPaidCapitalized' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_IncomeTaxesPaidNet' xlink:label='loc_IncomeTaxesPaidNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_IncomeTaxesPaid' xlink:label='loc_IncomeTaxesPaid' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_ProceedsFromIncomeTaxRefunds' xlink:label='loc_ProceedsFromIncomeTaxRefunds' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoncashOrPartNoncashAcquisitionNetNonmonetaryAssetsAcquiredLiabilitiesAssumed1' xlink:label='loc_NoncashOrPartNoncashAcquisitionNetNonmonetaryAssetsAcquiredLiabilitiesAssumed1' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoncashOrPartNoncashAcquisitionValueOfAssetsAcquired1' xlink:label='loc_NoncashOrPartNoncashAcquisitionValueOfAssetsAcquired1' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoncashOrPartNoncashAcquisitionAccountsReceivableAcquired1' xlink:label='loc_NoncashOrPartNoncashAcquisitionAccountsReceivableAcquired1' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoncashOrPartNoncashAcquisitionFixedAssetsAcquired1' xlink:label='loc_NoncashOrPartNoncashAcquisitionFixedAssetsAcquired1' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoncashOrPartNoncashAcquisitionIntangibleAssetsAcquired1' xlink:label='loc_NoncashOrPartNoncashAcquisitionIntangibleAssetsAcquired1' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoncashOrPartNoncashAcquisitionInventoryAcquired1' xlink:label='loc_NoncashOrPartNoncashAcquisitionInventoryAcquired1' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoncashOrPartNoncashAcquisitionInvestmentsAcquired1' xlink:label='loc_NoncashOrPartNoncashAcquisitionInvestmentsAcquired1' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoncashOrPartNoncashAcquisitionOtherAssetsAcquired1' xlink:label='loc_NoncashOrPartNoncashAcquisitionOtherAssetsAcquired1' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoncashOrPartNoncashAcquisitionValueOfLiabilitiesAssumed1' xlink:label='loc_NoncashOrPartNoncashAcquisitionValueOfLiabilitiesAssumed1' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoncashOrPartNoncashAcquisitionDebtAssumed1' xlink:label='loc_NoncashOrPartNoncashAcquisitionDebtAssumed1' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoncashOrPartNoncashAcquisitionEmployeeBenefitLiabilitiesAssumed1' xlink:label='loc_NoncashOrPartNoncashAcquisitionEmployeeBenefitLiabilitiesAssumed1' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoncashOrPartNoncashAcquisitionOtherLiabilitiesAssumed1' xlink:label='loc_NoncashOrPartNoncashAcquisitionOtherLiabilitiesAssumed1' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2011-01-31.xsd#us-gaap_NoncashOrPartNoncashAcquisitionPayablesAssumed1' xlink:label='loc_NoncashOrPartNoncashAcquisitionPayablesAssumed1' xlink:type='locator' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestPaid' xlink:to='loc_InterestPaidNet' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestPaid' xlink:to='loc_InterestPaidCapitalized' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_IncomeTaxesPaidNet' xlink:to='loc_IncomeTaxesPaid' xlink:type='arc' />
+<calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_IncomeTaxesPaidNet' xlink:to='loc_ProceedsFromIncomeTaxRefunds' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NoncashOrPartNoncashAcquisitionNetNonmonetaryAssetsAcquiredLiabilitiesAssumed1' xlink:to='loc_NoncashOrPartNoncashAcquisitionValueOfAssetsAcquired1' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NoncashOrPartNoncashAcquisitionValueOfAssetsAcquired1' xlink:to='loc_NoncashOrPartNoncashAcquisitionAccountsReceivableAcquired1' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NoncashOrPartNoncashAcquisitionValueOfAssetsAcquired1' xlink:to='loc_NoncashOrPartNoncashAcquisitionFixedAssetsAcquired1' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NoncashOrPartNoncashAcquisitionValueOfAssetsAcquired1' xlink:to='loc_NoncashOrPartNoncashAcquisitionIntangibleAssetsAcquired1' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NoncashOrPartNoncashAcquisitionValueOfAssetsAcquired1' xlink:to='loc_NoncashOrPartNoncashAcquisitionInventoryAcquired1' xlink:type='arc' />
+<calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NoncashOrPartNoncashAcquisitionValueOfAssetsAcquired1' xlink:to='loc_NoncashOrPartNoncashAcquisitionInvestmentsAcquired1' xlink:type='arc' />
+<calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NoncashOrPartNoncashAcquisitionValueOfAssetsAcquired1' xlink:to='loc_NoncashOrPartNoncashAcquisitionOtherAssetsAcquired1' xlink:type='arc' />
+<calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NoncashOrPartNoncashAcquisitionNetNonmonetaryAssetsAcquiredLiabilitiesAssumed1' xlink:to='loc_NoncashOrPartNoncashAcquisitionValueOfLiabilitiesAssumed1' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NoncashOrPartNoncashAcquisitionValueOfLiabilitiesAssumed1' xlink:to='loc_NoncashOrPartNoncashAcquisitionDebtAssumed1' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NoncashOrPartNoncashAcquisitionValueOfLiabilitiesAssumed1' xlink:to='loc_NoncashOrPartNoncashAcquisitionEmployeeBenefitLiabilitiesAssumed1' xlink:type='arc' />
+<calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NoncashOrPartNoncashAcquisitionValueOfLiabilitiesAssumed1' xlink:to='loc_NoncashOrPartNoncashAcquisitionOtherLiabilitiesAssumed1' xlink:type='arc' />
+<calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NoncashOrPartNoncashAcquisitionValueOfLiabilitiesAssumed1' xlink:to='loc_NoncashOrPartNoncashAcquisitionPayablesAssumed1' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

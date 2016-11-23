@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/DerivativeInstrumentsAndHedgingActivitiesCalc1' xlink:href='../elts/us-roles-2009-01-31.xsd#diha1' xlink:type='simple' />
+<calculationLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/DerivativeInstrumentsAndHedgingActivitiesCalc1' xlink:type='extended' xmlns='http://www.xbrl.org/2003/linkbase'>
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_DerivativeFairValueOfDerivativeAsset' xlink:label='loc_DerivativeFairValueOfDerivativeAsset' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_DerivativeAssetDesignatedAsHedgingInstrumentFairValue' xlink:label='loc_DerivativeAssetDesignatedAsHedgingInstrumentFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_DerivativeAssetNotDesignatedAsHedgingInstrumentFairValue' xlink:label='loc_DerivativeAssetNotDesignatedAsHedgingInstrumentFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_DerivativeFairValueOfDerivativeLiability' xlink:label='loc_DerivativeFairValueOfDerivativeLiability' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_DerivativeLiabilityDesignatedAsHedgingInstrumentFairValue' xlink:label='loc_DerivativeLiabilityDesignatedAsHedgingInstrumentFairValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2009-01-31.xsd#us-gaap_DerivativeLiabilityNotDesignatedAsHedgingInstrumentFairValue' xlink:label='loc_DerivativeLiabilityNotDesignatedAsHedgingInstrumentFairValue' xlink:type='locator' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DerivativeFairValueOfDerivativeAsset' xlink:to='loc_DerivativeAssetDesignatedAsHedgingInstrumentFairValue' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DerivativeFairValueOfDerivativeAsset' xlink:to='loc_DerivativeAssetNotDesignatedAsHedgingInstrumentFairValue' xlink:type='arc' />
+<calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DerivativeFairValueOfDerivativeLiability' xlink:to='loc_DerivativeLiabilityDesignatedAsHedgingInstrumentFairValue' xlink:type='arc' />
+<calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DerivativeFairValueOfDerivativeLiability' xlink:to='loc_DerivativeLiabilityNotDesignatedAsHedgingInstrumentFairValue' xlink:type='arc' />
+</calculationLink>
+</link:linkbase>

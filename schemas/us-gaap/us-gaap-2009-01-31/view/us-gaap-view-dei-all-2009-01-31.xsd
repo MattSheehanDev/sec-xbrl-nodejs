@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://xbrl.us/view/dei-all/2009-01-31' xmlns:dei='http://xbrl.us/view/dei-std/2009-01-31' xmlns:dei-all='http://xbrl.us/view/dei-all/2009-01-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:annotation>
+<xs:appinfo>
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../non-gaap/country-doc-2009-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:type='simple' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../non-gaap/stpr-doc-2009-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:type='simple' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../non-gaap/exch-ref-2009-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/referenceLinkbaseRef' xlink:type='simple' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../non-gaap/exch-doc-2009-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:type='simple' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../non-gaap/sic-doc-2009-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:type='simple' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../non-gaap/naics-doc-2009-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:type='simple' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../non-gaap/dei-ref-2009-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/referenceLinkbaseRef' xlink:type='simple' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../non-gaap/dei-doc-2009-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:type='simple' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' />
+</xs:appinfo>
+</xs:annotation>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://xbrl.us/view/dei-std/2009-01-31' schemaLocation='us-gaap-view-dei-std-2009-01-31.xsd' />
+</xs:schema>

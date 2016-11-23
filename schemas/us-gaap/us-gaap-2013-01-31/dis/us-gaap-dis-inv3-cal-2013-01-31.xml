@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2013.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/InventoryCombiningWorkInProgressAndRawMaterialsAlternative' xlink:href='../elts/us-roles-2013-01-31.xsd#inv3' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/disclosure/InventoryCombiningWorkInProgressAndRawMaterialsAlternative' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InventoryNet' xlink:label='loc_InventoryNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InventoryGross' xlink:label='loc_InventoryGross' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InventoryFinishedGoods' xlink:label='loc_InventoryFinishedGoods' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InventoryWorkInProcessAndRawMaterials' xlink:label='loc_InventoryWorkInProcessAndRawMaterials' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InventoryWorkInProcess' xlink:label='loc_InventoryWorkInProcess' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InventoryRawMaterials' xlink:label='loc_InventoryRawMaterials' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InventoryOreStockpilesOnLeachPads' xlink:label='loc_InventoryOreStockpilesOnLeachPads' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherInventorySupplies' xlink:label='loc_OtherInventorySupplies' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherInventory' xlink:label='loc_OtherInventory' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherInventoryMaterialsSuppliesAndMerchandiseUnderConsignment' xlink:label='loc_OtherInventoryMaterialsSuppliesAndMerchandiseUnderConsignment' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherInventoryWarehouse' xlink:label='loc_OtherInventoryWarehouse' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherInventoryScrap' xlink:label='loc_OtherInventoryScrap' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherInventoriesSpareParts' xlink:label='loc_OtherInventoriesSpareParts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherInventoryDemo' xlink:label='loc_OtherInventoryDemo' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherInventoryPurchasedGoods' xlink:label='loc_OtherInventoryPurchasedGoods' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherInventoryInventoryAtOffSitePremises' xlink:label='loc_OtherInventoryInventoryAtOffSitePremises' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherInventoryInTransit' xlink:label='loc_OtherInventoryInTransit' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_OtherInventoryCapitalizedCosts' xlink:label='loc_OtherInventoryCapitalizedCosts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InventoryForLongTermContractsOrPrograms' xlink:label='loc_InventoryForLongTermContractsOrPrograms' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InventoryAdjustments' xlink:label='loc_InventoryAdjustments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InventoryValuationReserves' xlink:label='loc_InventoryValuationReserves' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_InventoryLIFOReserve' xlink:label='loc_InventoryLIFOReserve' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryNet' xlink:to='loc_InventoryGross' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryGross' xlink:to='loc_InventoryFinishedGoods' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryGross' xlink:to='loc_InventoryWorkInProcessAndRawMaterials' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryWorkInProcessAndRawMaterials' xlink:to='loc_InventoryWorkInProcess' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryWorkInProcessAndRawMaterials' xlink:to='loc_InventoryRawMaterials' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryWorkInProcessAndRawMaterials' xlink:to='loc_InventoryOreStockpilesOnLeachPads' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryWorkInProcessAndRawMaterials' xlink:to='loc_OtherInventorySupplies' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryGross' xlink:to='loc_OtherInventory' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherInventory' xlink:to='loc_OtherInventoryMaterialsSuppliesAndMerchandiseUnderConsignment' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherInventory' xlink:to='loc_OtherInventoryWarehouse' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherInventory' xlink:to='loc_OtherInventoryScrap' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherInventory' xlink:to='loc_OtherInventoriesSpareParts' xlink:type='arc' />
+<link:calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherInventory' xlink:to='loc_OtherInventoryDemo' xlink:type='arc' />
+<link:calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherInventory' xlink:to='loc_OtherInventoryPurchasedGoods' xlink:type='arc' />
+<link:calculationArc order='70' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherInventory' xlink:to='loc_OtherInventoryInventoryAtOffSitePremises' xlink:type='arc' />
+<link:calculationArc order='80' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherInventory' xlink:to='loc_OtherInventoryInTransit' xlink:type='arc' />
+<link:calculationArc order='90' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherInventory' xlink:to='loc_OtherInventoryCapitalizedCosts' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryGross' xlink:to='loc_InventoryForLongTermContractsOrPrograms' xlink:type='arc' />
+<link:calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryNet' xlink:to='loc_InventoryAdjustments' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryAdjustments' xlink:to='loc_InventoryValuationReserves' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryAdjustments' xlink:to='loc_InventoryLIFOReserve' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2014.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<xs:schema elementFormDefault='qualified' targetNamespace='http://fasb.org/dis/lea/2014-01-31' xmlns:lea='http://fasb.org/dis/lea/2014-01-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<xs:annotation>
+<xs:appinfo>
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-dis-lea-pre-2014-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-dis-lea-cal-2014-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='us-gaap-dis-lea-def-2014-01-31.xml' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:type='simple' />
+</xs:appinfo>
+<xs:documentation>
+                This file is the entry point file for disclosure Leases (lea).
+                
+                The DTS starting with this entry point includes the following presentation, calculation and definition linkbases:
+                831000 - Disclosure - Leases  (presentation)	
+                    831000 - Disclosure - Leases  (calculation)
+                    831000 - Disclosure - Leases  (definition)	
+                </xs:documentation>
+</xs:annotation>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://fasb.org/us-gaap-std/2014-01-31' schemaLocation='../elts/us-gaap-std-2014-01-31.xsd' />
+</xs:schema>

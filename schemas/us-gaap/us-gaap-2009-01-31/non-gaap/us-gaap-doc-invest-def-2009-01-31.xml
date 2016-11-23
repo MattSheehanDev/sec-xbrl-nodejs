@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--Copyright (C) 2007-2009 XBRL US, Inc. All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.us/legal2009
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/document/InvestmentInvestmentIdentifierTable' xlink:href='../elts/us-roles-2009-01-31.xsd#InvestmentInvestmentIdentifierTable' xlink:type='simple' />
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/document/Investment' xlink:href='../elts/us-roles-2009-01-31.xsd#invest' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/all' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' xlink:type='simple' />
+<!--Definition relationships for table InvestmentIdentifierTable in presentation http://xbrl.us/us-gaap/role/document/Investment-->
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/InvestmentInvestmentIdentifierTable' xlink:type='extended'>
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentIdentifierTable' xlink:label='loc_InvestmentIdentifierTable' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentIdentifierLineItems' xlink:label='loc_InvestmentIdentifierLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_InvestmentIdentifierLineItems' xlink:to='loc_InvestmentIdentifierTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/InvestmentInvestmentIdentifierTable' xlink:type='extended'>
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentIdentifierTable' xlink:label='loc_InvestmentIdentifierTable' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentAxis' xlink:label='loc_InvestmentAxis' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentIdentifierSchemeAxis' xlink:label='loc_InvestmentIdentifierSchemeAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_InvestmentIdentifierTable' xlink:to='loc_InvestmentAxis' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_InvestmentIdentifierTable' xlink:to='loc_InvestmentIdentifierSchemeAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/InvestmentInvestmentIdentifierTable' xlink:type='extended'>
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentAxis' xlink:label='loc_InvestmentAxis' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentDomain' xlink:label='loc_InvestmentDomain' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentIdentifierSchemeAxis' xlink:label='loc_InvestmentIdentifierSchemeAxis' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentIdentifierSchemeDomain' xlink:label='loc_InvestmentIdentifierSchemeDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_InvestmentAxis' xlink:to='loc_InvestmentDomain' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_InvestmentIdentifierSchemeAxis' xlink:to='loc_InvestmentIdentifierSchemeDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/InvestmentInvestmentIdentifierTable' xlink:type='extended'>
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentAxis' xlink:label='loc_InvestmentAxis' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentDomain' xlink:label='loc_InvestmentDomain' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentIdentifierSchemeAxis' xlink:label='loc_InvestmentIdentifierSchemeAxis' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentIdentifierSchemeDomain' xlink:label='loc_InvestmentIdentifierSchemeDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_InvestmentAxis' xlink:to='loc_InvestmentDomain' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_InvestmentIdentifierSchemeAxis' xlink:to='loc_InvestmentIdentifierSchemeDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/InvestmentInvestmentIdentifierTable' xlink:type='extended'>
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentIdentifierLineItems' xlink:label='loc_InvestmentIdentifierLineItems' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentIdentifier' xlink:label='loc_InvestmentIdentifier' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentIdentifierLineItems' xlink:to='loc_InvestmentIdentifier' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/InvestmentInvestmentIdentifierTable' xlink:type='extended'>
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentIdentifierSchemeDomain' xlink:label='loc_InvestmentIdentifierSchemeDomain' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_CUSIPMember' xlink:label='loc_CUSIPMember' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_SEDOLMember' xlink:label='loc_SEDOLMember' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_DUNSMember' xlink:label='loc_DUNSMember' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InternalIdentifierSchemeMember' xlink:label='loc_InternalIdentifierSchemeMember' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentIdentifierSchemeDomain' xlink:to='loc_CUSIPMember' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentIdentifierSchemeDomain' xlink:to='loc_SEDOLMember' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentIdentifierSchemeDomain' xlink:to='loc_DUNSMember' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentIdentifierSchemeDomain' xlink:to='loc_InternalIdentifierSchemeMember' xlink:type='arc' />
+</link:definitionLink>
+<!--Definition relationships for table InvestmentTable in presentation http://xbrl.us/us-gaap/role/document/Investment-->
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/Investment' xlink:type='extended'>
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentTable' xlink:label='loc_InvestmentTable' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentLineItems' xlink:label='loc_InvestmentLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/Investment' xlink:type='extended'>
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentTable' xlink:label='loc_InvestmentTable' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentAxis' xlink:label='loc_InvestmentAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_InvestmentTable' xlink:to='loc_InvestmentAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/Investment' xlink:type='extended'>
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentAxis' xlink:label='loc_InvestmentAxis' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentDomain' xlink:label='loc_InvestmentDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_InvestmentAxis' xlink:to='loc_InvestmentDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/Investment' xlink:type='extended'>
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentAxis' xlink:label='loc_InvestmentAxis' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentDomain' xlink:label='loc_InvestmentDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_InvestmentAxis' xlink:to='loc_InvestmentDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/document/Investment' xlink:type='extended'>
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentLineItems' xlink:label='loc_InvestmentLineItems' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentIssuer' xlink:label='loc_InvestmentIssuer' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentTitle' xlink:label='loc_InvestmentTitle' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentCFICode' xlink:label='loc_InvestmentCFICode' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_DerivativeCounterparty' xlink:label='loc_DerivativeCounterparty' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentInterestRateType' xlink:label='loc_InvestmentInterestRateType' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentInterestRate' xlink:label='loc_InvestmentInterestRate' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_DerivativeTypeOfInterestRatePaidOnSwap' xlink:label='loc_DerivativeTypeOfInterestRatePaidOnSwap' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentInterestRateRangeAbstract' xlink:label='loc_InvestmentInterestRateRangeAbstract' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentInterestRateRangeStart' xlink:label='loc_InvestmentInterestRateRangeStart' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentInterestRateRangeEnd' xlink:label='loc_InvestmentInterestRateRangeEnd' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentMaturityDate' xlink:label='loc_InvestmentMaturityDate' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentMaturityDateRangeAbstract' xlink:label='loc_InvestmentMaturityDateRangeAbstract' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentMaturityDateRangeStart' xlink:label='loc_InvestmentMaturityDateRangeStart' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentMaturityDateRangeEnd' xlink:label='loc_InvestmentMaturityDateRangeEnd' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentRepurchaseAgreementAbstract' xlink:label='loc_InvestmentRepurchaseAgreementAbstract' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentRepurchaseAgreementNameOfParty' xlink:label='loc_InvestmentRepurchaseAgreementNameOfParty' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentRepurchaseAgreementDateOfAgreement' xlink:label='loc_InvestmentRepurchaseAgreementDateOfAgreement' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentRepurchaseAgreementAmountToBeReceived' xlink:label='loc_InvestmentRepurchaseAgreementAmountToBeReceived' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentRepurchaseAgreementRepurchaseDate' xlink:label='loc_InvestmentRepurchaseAgreementRepurchaseDate' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentRepurchaseAgreementDescriptionOfInvestmentsSubjectToAgreement' xlink:label='loc_InvestmentRepurchaseAgreementDescriptionOfInvestmentsSubjectToAgreement' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentDerivativeNotionalAmountAbstract' xlink:label='loc_InvestmentDerivativeNotionalAmountAbstract' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_DerivativeNotionalAmount' xlink:label='loc_DerivativeNotionalAmount' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_DerivativeNonmonetaryNotionalAmount' xlink:label='loc_DerivativeNonmonetaryNotionalAmount' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentOptionsAbstract' xlink:label='loc_InvestmentOptionsAbstract' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentOptionsExpirationDate' xlink:label='loc_InvestmentOptionsExpirationDate' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentOptionsExercisePrice' xlink:label='loc_InvestmentOptionsExercisePrice' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentForeignCurrencyContractAbstract' xlink:label='loc_InvestmentForeignCurrencyContractAbstract' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentForeignCurrencyContractCurrency' xlink:label='loc_InvestmentForeignCurrencyContractCurrency' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentForeignCurrencyContractTransactionTypeFlag' xlink:label='loc_InvestmentForeignCurrencyContractTransactionTypeFlag' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentForeignCurrencyContractForeignCurrencyAmount' xlink:label='loc_InvestmentForeignCurrencyContractForeignCurrencyAmount' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentForeignCurrencyContractReportingCurrencyAmountAtDateOfOrigin' xlink:label='loc_InvestmentForeignCurrencyContractReportingCurrencyAmountAtDateOfOrigin' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentUnderlyingInvestmentIdentifier' xlink:label='loc_InvestmentUnderlyingInvestmentIdentifier' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentSupplementalFlagsAbstract' xlink:label='loc_InvestmentSupplementalFlagsAbstract' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentNonIncomeProducingFlag' xlink:label='loc_InvestmentNonIncomeProducingFlag' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentRestrictedCashFlag' xlink:label='loc_InvestmentRestrictedCashFlag' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentInterestOnlyFlag' xlink:label='loc_InvestmentInterestOnlyFlag' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentPrincipalOnlyFlag' xlink:label='loc_InvestmentPrincipalOnlyFlag' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentStepupBondInterestRateIsForFutureDateFlag' xlink:label='loc_InvestmentStepupBondInterestRateIsForFutureDateFlag' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentInterestRateIsCurrentRateForVariableRateInvestmentFlag' xlink:label='loc_InvestmentInterestRateIsCurrentRateForVariableRateInvestmentFlag' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentInterestRateIsDiscountRateAtPurchaseFlag' xlink:label='loc_InvestmentInterestRateIsDiscountRateAtPurchaseFlag' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentInterestRateReflectsCurrentYieldFlag' xlink:label='loc_InvestmentInterestRateReflectsCurrentYieldFlag' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentDefaultedSecurityFlag' xlink:label='loc_InvestmentDefaultedSecurityFlag' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentADRFlag' xlink:label='loc_InvestmentADRFlag' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentWhenIssuedFlag' xlink:label='loc_InvestmentWhenIssuedFlag' xlink:type='locator' />
+<link:loc xlink:href='invest-2009-01-31.xsd#invest_InvestmentAdditionalInformation' xlink:label='loc_InvestmentAdditionalInformation' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentIssuer' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentTitle' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentCFICode' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_DerivativeCounterparty' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentInterestRateType' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentInterestRate' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_DerivativeTypeOfInterestRatePaidOnSwap' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentInterestRateRangeAbstract' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentInterestRateRangeAbstract' xlink:to='loc_InvestmentInterestRateRangeStart' xlink:type='arc' />
+<link:definitionArc order='10.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentInterestRateRangeAbstract' xlink:to='loc_InvestmentInterestRateRangeEnd' xlink:type='arc' />
+<link:definitionArc order='11.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentMaturityDate' xlink:type='arc' />
+<link:definitionArc order='12.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentMaturityDateRangeAbstract' xlink:type='arc' />
+<link:definitionArc order='13.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentMaturityDateRangeAbstract' xlink:to='loc_InvestmentMaturityDateRangeStart' xlink:type='arc' />
+<link:definitionArc order='14.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentMaturityDateRangeAbstract' xlink:to='loc_InvestmentMaturityDateRangeEnd' xlink:type='arc' />
+<link:definitionArc order='15.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentRepurchaseAgreementAbstract' xlink:type='arc' />
+<link:definitionArc order='16.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentRepurchaseAgreementAbstract' xlink:to='loc_InvestmentRepurchaseAgreementNameOfParty' xlink:type='arc' />
+<link:definitionArc order='17.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentRepurchaseAgreementAbstract' xlink:to='loc_InvestmentRepurchaseAgreementDateOfAgreement' xlink:type='arc' />
+<link:definitionArc order='18.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentRepurchaseAgreementAbstract' xlink:to='loc_InvestmentRepurchaseAgreementAmountToBeReceived' xlink:type='arc' />
+<link:definitionArc order='19.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentRepurchaseAgreementAbstract' xlink:to='loc_InvestmentRepurchaseAgreementRepurchaseDate' xlink:type='arc' />
+<link:definitionArc order='20.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentRepurchaseAgreementAbstract' xlink:to='loc_InvestmentRepurchaseAgreementDescriptionOfInvestmentsSubjectToAgreement' xlink:type='arc' />
+<link:definitionArc order='21.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentDerivativeNotionalAmountAbstract' xlink:type='arc' />
+<link:definitionArc order='22.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentDerivativeNotionalAmountAbstract' xlink:to='loc_DerivativeNotionalAmount' xlink:type='arc' />
+<link:definitionArc order='23.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentDerivativeNotionalAmountAbstract' xlink:to='loc_DerivativeNonmonetaryNotionalAmount' xlink:type='arc' />
+<link:definitionArc order='24.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentOptionsAbstract' xlink:type='arc' />
+<link:definitionArc order='25.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentOptionsAbstract' xlink:to='loc_InvestmentOptionsExpirationDate' xlink:type='arc' />
+<link:definitionArc order='26.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentOptionsAbstract' xlink:to='loc_InvestmentOptionsExercisePrice' xlink:type='arc' />
+<link:definitionArc order='27.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentForeignCurrencyContractAbstract' xlink:type='arc' />
+<link:definitionArc order='28.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentForeignCurrencyContractAbstract' xlink:to='loc_InvestmentForeignCurrencyContractCurrency' xlink:type='arc' />
+<link:definitionArc order='29.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentForeignCurrencyContractAbstract' xlink:to='loc_InvestmentForeignCurrencyContractTransactionTypeFlag' xlink:type='arc' />
+<link:definitionArc order='30.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentForeignCurrencyContractAbstract' xlink:to='loc_InvestmentForeignCurrencyContractForeignCurrencyAmount' xlink:type='arc' />
+<link:definitionArc order='31.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentForeignCurrencyContractAbstract' xlink:to='loc_InvestmentForeignCurrencyContractReportingCurrencyAmountAtDateOfOrigin' xlink:type='arc' />
+<link:definitionArc order='32.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentUnderlyingInvestmentIdentifier' xlink:type='arc' />
+<link:definitionArc order='33.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentSupplementalFlagsAbstract' xlink:type='arc' />
+<link:definitionArc order='34.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentSupplementalFlagsAbstract' xlink:to='loc_InvestmentNonIncomeProducingFlag' xlink:type='arc' />
+<link:definitionArc order='35.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentSupplementalFlagsAbstract' xlink:to='loc_InvestmentRestrictedCashFlag' xlink:type='arc' />
+<link:definitionArc order='36.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentSupplementalFlagsAbstract' xlink:to='loc_InvestmentInterestOnlyFlag' xlink:type='arc' />
+<link:definitionArc order='37.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentSupplementalFlagsAbstract' xlink:to='loc_InvestmentPrincipalOnlyFlag' xlink:type='arc' />
+<link:definitionArc order='38.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentSupplementalFlagsAbstract' xlink:to='loc_InvestmentStepupBondInterestRateIsForFutureDateFlag' xlink:type='arc' />
+<link:definitionArc order='39.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentSupplementalFlagsAbstract' xlink:to='loc_InvestmentInterestRateIsCurrentRateForVariableRateInvestmentFlag' xlink:type='arc' />
+<link:definitionArc order='40.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentSupplementalFlagsAbstract' xlink:to='loc_InvestmentInterestRateIsDiscountRateAtPurchaseFlag' xlink:type='arc' />
+<link:definitionArc order='41.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentSupplementalFlagsAbstract' xlink:to='loc_InvestmentInterestRateReflectsCurrentYieldFlag' xlink:type='arc' />
+<link:definitionArc order='42.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentSupplementalFlagsAbstract' xlink:to='loc_InvestmentDefaultedSecurityFlag' xlink:type='arc' />
+<link:definitionArc order='43.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentSupplementalFlagsAbstract' xlink:to='loc_InvestmentADRFlag' xlink:type='arc' />
+<link:definitionArc order='44.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentSupplementalFlagsAbstract' xlink:to='loc_InvestmentWhenIssuedFlag' xlink:type='arc' />
+<link:definitionArc order='45.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_InvestmentLineItems' xlink:to='loc_InvestmentAdditionalInformation' xlink:type='arc' />
+</link:definitionLink>
+</link:linkbase>

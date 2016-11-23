@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+Authorized Uses are Set Forth at http://xbrl.us/legal
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/disclosure/RegulatedOperations' xlink:href='../elts/us-roles-2008-03-31.xsd#regop' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/all' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' xlink:type='simple' />
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/RegulatedOperations' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractsForPurchaseOfElectricPowerTable' xlink:label='loc_LongTermContractsForPurchaseOfElectricPowerTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractForPurchaseOfElectricPowerLineItems' xlink:label='loc_LongTermContractForPurchaseOfElectricPowerLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilityPropertyPlantAndEquipmentTable' xlink:label='loc_PublicUtilityPropertyPlantAndEquipmentTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilityPropertyPlantAndEquipmentLineItems' xlink:label='loc_PublicUtilityPropertyPlantAndEquipmentLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantInterestsTable' xlink:label='loc_JointlyOwnedUtilityPlantInterestsTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantInterestsLineItems' xlink:label='loc_JointlyOwnedUtilityPlantInterestsLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryCurrentAssetsTable' xlink:label='loc_RegulatoryCurrentAssetsTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryCurrentAssetLineItems' xlink:label='loc_RegulatoryCurrentAssetLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryNoncurrentAssetsTable' xlink:label='loc_RegulatoryNoncurrentAssetsTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryNoncurrentAssetLineItems' xlink:label='loc_RegulatoryNoncurrentAssetLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryCurrentLiabilitiesTable' xlink:label='loc_RegulatoryCurrentLiabilitiesTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryCurrentLiabilitiesLineItems' xlink:label='loc_RegulatoryCurrentLiabilitiesLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryNoncurrentLiabilitiesTable' xlink:label='loc_RegulatoryNoncurrentLiabilitiesTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryNoncurrentLiabilitiesLineItems' xlink:label='loc_RegulatoryNoncurrentLiabilitiesLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryTable' xlink:label='loc_PublicUtilitiesInventoryTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryLineItems' xlink:label='loc_PublicUtilitiesInventoryLineItems' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_LongTermContractForPurchaseOfElectricPowerLineItems' xlink:to='loc_LongTermContractsForPurchaseOfElectricPowerTable' xlink:type='arc' />
+<link:definitionArc order='2.0' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_PublicUtilityPropertyPlantAndEquipmentLineItems' xlink:to='loc_PublicUtilityPropertyPlantAndEquipmentTable' xlink:type='arc' />
+<link:definitionArc order='3.0' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_JointlyOwnedUtilityPlantInterestsLineItems' xlink:to='loc_JointlyOwnedUtilityPlantInterestsTable' xlink:type='arc' />
+<link:definitionArc order='4.0' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_RegulatoryCurrentAssetLineItems' xlink:to='loc_RegulatoryCurrentAssetsTable' xlink:type='arc' />
+<link:definitionArc order='5.0' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_RegulatoryNoncurrentAssetLineItems' xlink:to='loc_RegulatoryNoncurrentAssetsTable' xlink:type='arc' />
+<link:definitionArc order='6.0' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_RegulatoryCurrentLiabilitiesLineItems' xlink:to='loc_RegulatoryCurrentLiabilitiesTable' xlink:type='arc' />
+<link:definitionArc order='7.0' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_RegulatoryNoncurrentLiabilitiesLineItems' xlink:to='loc_RegulatoryNoncurrentLiabilitiesTable' xlink:type='arc' />
+<link:definitionArc order='8.0' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_PublicUtilitiesInventoryLineItems' xlink:to='loc_PublicUtilitiesInventoryTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/RegulatedOperations' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractsForPurchaseOfElectricPowerTable' xlink:label='loc_LongTermContractsForPurchaseOfElectricPowerTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractForPurchaseOfElectricPowerAxis' xlink:label='loc_LongTermContractForPurchaseOfElectricPowerAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilityPropertyPlantAndEquipmentTable' xlink:label='loc_PublicUtilityPropertyPlantAndEquipmentTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilityAxis' xlink:label='loc_PublicUtilityAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilityRegulatedOrUnregulatedStatusAxis' xlink:label='loc_PublicUtilityRegulatedOrUnregulatedStatusAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantInterestsTable' xlink:label='loc_JointlyOwnedUtilityPlantInterestsTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantAxis' xlink:label='loc_JointlyOwnedUtilityPlantAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryCurrentAssetsTable' xlink:label='loc_RegulatoryCurrentAssetsTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryAssetAxis' xlink:label='loc_RegulatoryAssetAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryNoncurrentAssetsTable' xlink:label='loc_RegulatoryNoncurrentAssetsTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryCurrentLiabilitiesTable' xlink:label='loc_RegulatoryCurrentLiabilitiesTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryLiabilityAxis' xlink:label='loc_RegulatoryLiabilityAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryNoncurrentLiabilitiesTable' xlink:label='loc_RegulatoryNoncurrentLiabilitiesTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryTable' xlink:label='loc_PublicUtilitiesInventoryTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryAxis' xlink:label='loc_PublicUtilitiesInventoryAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_LongTermContractsForPurchaseOfElectricPowerTable' xlink:to='loc_LongTermContractForPurchaseOfElectricPowerAxis' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_PublicUtilityPropertyPlantAndEquipmentTable' xlink:to='loc_PublicUtilityAxis' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_PublicUtilityPropertyPlantAndEquipmentTable' xlink:to='loc_PublicUtilityRegulatedOrUnregulatedStatusAxis' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_JointlyOwnedUtilityPlantInterestsTable' xlink:to='loc_JointlyOwnedUtilityPlantAxis' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_RegulatoryCurrentAssetsTable' xlink:to='loc_RegulatoryAssetAxis' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_RegulatoryNoncurrentAssetsTable' xlink:to='loc_RegulatoryAssetAxis' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_RegulatoryCurrentLiabilitiesTable' xlink:to='loc_RegulatoryLiabilityAxis' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_RegulatoryNoncurrentLiabilitiesTable' xlink:to='loc_RegulatoryLiabilityAxis' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_PublicUtilitiesInventoryTable' xlink:to='loc_PublicUtilitiesInventoryAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/RegulatedOperations' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractForPurchaseOfElectricPowerAxis' xlink:label='loc_LongTermContractForPurchaseOfElectricPowerAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractForPurchaseOfElectricPowerDomain' xlink:label='loc_LongTermContractForPurchaseOfElectricPowerDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilityAxis' xlink:label='loc_PublicUtilityAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_UtilityPlantDomain' xlink:label='loc_UtilityPlantDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilityRegulatedOrUnregulatedStatusAxis' xlink:label='loc_PublicUtilityRegulatedOrUnregulatedStatusAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatedAndUnregulatedOperationDomain' xlink:label='loc_RegulatedAndUnregulatedOperationDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantAxis' xlink:label='loc_JointlyOwnedUtilityPlantAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantDomain' xlink:label='loc_JointlyOwnedUtilityPlantDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryAssetAxis' xlink:label='loc_RegulatoryAssetAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryAssetDomain' xlink:label='loc_RegulatoryAssetDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryLiabilityAxis' xlink:label='loc_RegulatoryLiabilityAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryLiabilityDomain' xlink:label='loc_RegulatoryLiabilityDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryAxis' xlink:label='loc_PublicUtilitiesInventoryAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryTypeDomain' xlink:label='loc_PublicUtilitiesInventoryTypeDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_LongTermContractForPurchaseOfElectricPowerAxis' xlink:to='loc_LongTermContractForPurchaseOfElectricPowerDomain' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_PublicUtilityAxis' xlink:to='loc_UtilityPlantDomain' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_PublicUtilityRegulatedOrUnregulatedStatusAxis' xlink:to='loc_RegulatedAndUnregulatedOperationDomain' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_JointlyOwnedUtilityPlantAxis' xlink:to='loc_JointlyOwnedUtilityPlantDomain' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_RegulatoryAssetAxis' xlink:to='loc_RegulatoryAssetDomain' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_RegulatoryLiabilityAxis' xlink:to='loc_RegulatoryLiabilityDomain' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_PublicUtilitiesInventoryAxis' xlink:to='loc_PublicUtilitiesInventoryTypeDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/RegulatedOperations' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractForPurchaseOfElectricPowerAxis' xlink:label='loc_LongTermContractForPurchaseOfElectricPowerAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractForPurchaseOfElectricPowerDomain' xlink:label='loc_LongTermContractForPurchaseOfElectricPowerDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilityAxis' xlink:label='loc_PublicUtilityAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_UtilityPlantDomain' xlink:label='loc_UtilityPlantDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilityRegulatedOrUnregulatedStatusAxis' xlink:label='loc_PublicUtilityRegulatedOrUnregulatedStatusAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatedAndUnregulatedOperationDomain' xlink:label='loc_RegulatedAndUnregulatedOperationDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantAxis' xlink:label='loc_JointlyOwnedUtilityPlantAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantDomain' xlink:label='loc_JointlyOwnedUtilityPlantDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryAssetAxis' xlink:label='loc_RegulatoryAssetAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryAssetDomain' xlink:label='loc_RegulatoryAssetDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryLiabilityAxis' xlink:label='loc_RegulatoryLiabilityAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryLiabilityDomain' xlink:label='loc_RegulatoryLiabilityDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryAxis' xlink:label='loc_PublicUtilitiesInventoryAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryTypeDomain' xlink:label='loc_PublicUtilitiesInventoryTypeDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_LongTermContractForPurchaseOfElectricPowerAxis' xlink:to='loc_LongTermContractForPurchaseOfElectricPowerDomain' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_PublicUtilityAxis' xlink:to='loc_UtilityPlantDomain' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_PublicUtilityRegulatedOrUnregulatedStatusAxis' xlink:to='loc_RegulatedAndUnregulatedOperationDomain' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_JointlyOwnedUtilityPlantAxis' xlink:to='loc_JointlyOwnedUtilityPlantDomain' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_RegulatoryAssetAxis' xlink:to='loc_RegulatoryAssetDomain' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_RegulatoryLiabilityAxis' xlink:to='loc_RegulatoryLiabilityDomain' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_PublicUtilitiesInventoryAxis' xlink:to='loc_PublicUtilitiesInventoryTypeDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/RegulatedOperations' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractForPurchaseOfElectricPowerLineItems' xlink:label='loc_LongTermContractForPurchaseOfElectricPowerLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractForPurchaseOfElectricPowerDescription' xlink:label='loc_LongTermContractForPurchaseOfElectricPowerDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractForPurchaseOfElectricPowerDateOfContractExpiration' xlink:label='loc_LongTermContractForPurchaseOfElectricPowerDateOfContractExpiration' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractForPurchaseOfElectricPowerShareOfPlantOutputBeingPurchased' xlink:label='loc_LongTermContractForPurchaseOfElectricPowerShareOfPlantOutputBeingPurchased' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractForPurchaseOfElectricPowerEstimatedAnnualCost' xlink:label='loc_LongTermContractForPurchaseOfElectricPowerEstimatedAnnualCost' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractForPurchaseOfElectricPowerAnnualMinimumDebtServicePaymentRequired' xlink:label='loc_LongTermContractForPurchaseOfElectricPowerAnnualMinimumDebtServicePaymentRequired' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractForPurchaseOfElectricPowerAmountOfLongTermDebtOrLeaseObligationOutstanding' xlink:label='loc_LongTermContractForPurchaseOfElectricPowerAmountOfLongTermDebtOrLeaseObligationOutstanding' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermContractForPurchaseOfElectricPowerInterestIncludedInContractCharges' xlink:label='loc_LongTermContractForPurchaseOfElectricPowerInterestIncludedInContractCharges' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilityPropertyPlantAndEquipmentLineItems' xlink:label='loc_PublicUtilityPropertyPlantAndEquipmentLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentNetAbstract' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentNetAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentGenerationEstimatedUsefulLife' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentGenerationEstimatedUsefulLife' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentTransmissionEstimatedUsefulLife' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentTransmissionEstimatedUsefulLife' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentDistributionEstimatedUsefulLife' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentDistributionEstimatedUsefulLife' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentTransmissionAndDistributionEstimatedUsefulLife' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentTransmissionAndDistributionEstimatedUsefulLife' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentFuelEstimatedUsefulLife' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentFuelEstimatedUsefulLife' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentCommonEstimatedUsefulLife' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentCommonEstimatedUsefulLife' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentEquipmentEstimatedUsefulLife' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentEquipmentEstimatedUsefulLife' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentVehiclesEstimatedUsefulLife' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentVehiclesEstimatedUsefulLife' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentOtherPropertyPlantAndEquipmentEstimatedUsefulLife' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentOtherPropertyPlantAndEquipmentEstimatedUsefulLife' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentPlantInServiceAbstract' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentPlantInServiceAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentAccumulatedDepreciation' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentAccumulatedDepreciation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentNet' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentLand' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentLand' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentGenerationOrProcessing' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentGenerationOrProcessing' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentTransmissionAndDistributionAbstract' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentTransmissionAndDistributionAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentFuel' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentFuel' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentConstructionWorkInProgress' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentConstructionWorkInProgress' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentCommon' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentCommon' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentEquipment' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentEquipment' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentVehicles' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentVehicles' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentOtherPropertyPlantAndEquipment' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentOtherPropertyPlantAndEquipment' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentPlantInService' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentPlantInService' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentTransmission' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentTransmission' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentDistribution' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentDistribution' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesPropertyPlantAndEquipmentTransmissionAndDistribution' xlink:label='loc_PublicUtilitiesPropertyPlantAndEquipmentTransmissionAndDistribution' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantInterestsLineItems' xlink:label='loc_JointlyOwnedUtilityPlantInterestsLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantName' xlink:label='loc_JointlyOwnedUtilityPlantName' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantProportionateOwnershipShare' xlink:label='loc_JointlyOwnedUtilityPlantProportionateOwnershipShare' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantNetOwnershipAmountAbstract' xlink:label='loc_JointlyOwnedUtilityPlantNetOwnershipAmountAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantGrossOwnershipAmountOfPlantInService' xlink:label='loc_JointlyOwnedUtilityPlantGrossOwnershipAmountOfPlantInService' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantOwnershipAmountOfPlantAccumulatedDepreciation' xlink:label='loc_JointlyOwnedUtilityPlantOwnershipAmountOfPlantAccumulatedDepreciation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantOwnershipAmountOfOtherAssets' xlink:label='loc_JointlyOwnedUtilityPlantOwnershipAmountOfOtherAssets' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantOwnershipAmountOfConstructionWorkInProgress' xlink:label='loc_JointlyOwnedUtilityPlantOwnershipAmountOfConstructionWorkInProgress' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantNetOwnershipAmount' xlink:label='loc_JointlyOwnedUtilityPlantNetOwnershipAmount' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryCurrentAssetLineItems' xlink:label='loc_RegulatoryCurrentAssetLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryAssetsCurrent' xlink:label='loc_RegulatoryAssetsCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryCurrentAssetEndDateForRecovery' xlink:label='loc_RegulatoryCurrentAssetEndDateForRecovery' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryNoncurrentAssetLineItems' xlink:label='loc_RegulatoryNoncurrentAssetLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryAssetsNoncurrent' xlink:label='loc_RegulatoryAssetsNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryNoncurrentAssetEndDateForRecovery' xlink:label='loc_RegulatoryNoncurrentAssetEndDateForRecovery' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryNoncurrentAssetAmortizationPeriod' xlink:label='loc_RegulatoryNoncurrentAssetAmortizationPeriod' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryCurrentLiabilitiesLineItems' xlink:label='loc_RegulatoryCurrentLiabilitiesLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryLiabilityCurrent' xlink:label='loc_RegulatoryLiabilityCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryCurrentLiabilityEndDateForRecovery' xlink:label='loc_RegulatoryCurrentLiabilityEndDateForRecovery' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryNoncurrentLiabilitiesLineItems' xlink:label='loc_RegulatoryNoncurrentLiabilitiesLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryLiabilityNoncurrent' xlink:label='loc_RegulatoryLiabilityNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryNoncurrentLiabilityEndDateForRecovery' xlink:label='loc_RegulatoryNoncurrentLiabilityEndDateForRecovery' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryNoncurrentLiabilityAmortizationPeriod' xlink:label='loc_RegulatoryNoncurrentLiabilityAmortizationPeriod' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryLineItems' xlink:label='loc_PublicUtilitiesInventoryLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventory' xlink:label='loc_PublicUtilitiesInventory' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LongTermContractForPurchaseOfElectricPowerLineItems' xlink:to='loc_LongTermContractForPurchaseOfElectricPowerDescription' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LongTermContractForPurchaseOfElectricPowerLineItems' xlink:to='loc_LongTermContractForPurchaseOfElectricPowerDateOfContractExpiration' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LongTermContractForPurchaseOfElectricPowerLineItems' xlink:to='loc_LongTermContractForPurchaseOfElectricPowerShareOfPlantOutputBeingPurchased' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LongTermContractForPurchaseOfElectricPowerLineItems' xlink:to='loc_LongTermContractForPurchaseOfElectricPowerEstimatedAnnualCost' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LongTermContractForPurchaseOfElectricPowerLineItems' xlink:to='loc_LongTermContractForPurchaseOfElectricPowerAnnualMinimumDebtServicePaymentRequired' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LongTermContractForPurchaseOfElectricPowerLineItems' xlink:to='loc_LongTermContractForPurchaseOfElectricPowerAmountOfLongTermDebtOrLeaseObligationOutstanding' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_LongTermContractForPurchaseOfElectricPowerLineItems' xlink:to='loc_LongTermContractForPurchaseOfElectricPowerInterestIncludedInContractCharges' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilityPropertyPlantAndEquipmentLineItems' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentNetAbstract' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilityPropertyPlantAndEquipmentLineItems' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentGenerationEstimatedUsefulLife' xlink:type='arc' />
+<link:definitionArc order='10.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilityPropertyPlantAndEquipmentLineItems' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentTransmissionEstimatedUsefulLife' xlink:type='arc' />
+<link:definitionArc order='11.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilityPropertyPlantAndEquipmentLineItems' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentDistributionEstimatedUsefulLife' xlink:type='arc' />
+<link:definitionArc order='12.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilityPropertyPlantAndEquipmentLineItems' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentTransmissionAndDistributionEstimatedUsefulLife' xlink:type='arc' />
+<link:definitionArc order='13.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilityPropertyPlantAndEquipmentLineItems' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentFuelEstimatedUsefulLife' xlink:type='arc' />
+<link:definitionArc order='14.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilityPropertyPlantAndEquipmentLineItems' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentCommonEstimatedUsefulLife' xlink:type='arc' />
+<link:definitionArc order='15.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilityPropertyPlantAndEquipmentLineItems' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentEquipmentEstimatedUsefulLife' xlink:type='arc' />
+<link:definitionArc order='16.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilityPropertyPlantAndEquipmentLineItems' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentVehiclesEstimatedUsefulLife' xlink:type='arc' />
+<link:definitionArc order='17.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilityPropertyPlantAndEquipmentLineItems' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentOtherPropertyPlantAndEquipmentEstimatedUsefulLife' xlink:type='arc' />
+<link:definitionArc order='18.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentNetAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentPlantInServiceAbstract' xlink:type='arc' />
+<link:definitionArc order='19.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentNetAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentAccumulatedDepreciation' xlink:type='arc' />
+<link:definitionArc order='20.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentNetAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentNet' xlink:type='arc' />
+<link:definitionArc order='21.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentPlantInServiceAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentLand' xlink:type='arc' />
+<link:definitionArc order='22.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentPlantInServiceAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentGenerationOrProcessing' xlink:type='arc' />
+<link:definitionArc order='23.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentPlantInServiceAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentTransmissionAndDistributionAbstract' xlink:type='arc' />
+<link:definitionArc order='24.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentPlantInServiceAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentFuel' xlink:type='arc' />
+<link:definitionArc order='25.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentPlantInServiceAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentConstructionWorkInProgress' xlink:type='arc' />
+<link:definitionArc order='26.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentPlantInServiceAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentCommon' xlink:type='arc' />
+<link:definitionArc order='27.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentPlantInServiceAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentEquipment' xlink:type='arc' />
+<link:definitionArc order='28.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentPlantInServiceAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentVehicles' xlink:type='arc' />
+<link:definitionArc order='29.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentPlantInServiceAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentOtherPropertyPlantAndEquipment' xlink:type='arc' />
+<link:definitionArc order='30.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentPlantInServiceAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentPlantInService' xlink:type='arc' />
+<link:definitionArc order='31.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentTransmissionAndDistributionAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentTransmission' xlink:type='arc' />
+<link:definitionArc order='32.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentTransmissionAndDistributionAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentDistribution' xlink:type='arc' />
+<link:definitionArc order='33.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesPropertyPlantAndEquipmentTransmissionAndDistributionAbstract' xlink:to='loc_PublicUtilitiesPropertyPlantAndEquipmentTransmissionAndDistribution' xlink:type='arc' />
+<link:definitionArc order='34.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_JointlyOwnedUtilityPlantInterestsLineItems' xlink:to='loc_JointlyOwnedUtilityPlantName' xlink:type='arc' />
+<link:definitionArc order='35.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_JointlyOwnedUtilityPlantInterestsLineItems' xlink:to='loc_JointlyOwnedUtilityPlantProportionateOwnershipShare' xlink:type='arc' />
+<link:definitionArc order='36.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_JointlyOwnedUtilityPlantInterestsLineItems' xlink:to='loc_JointlyOwnedUtilityPlantNetOwnershipAmountAbstract' xlink:type='arc' />
+<link:definitionArc order='37.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_JointlyOwnedUtilityPlantNetOwnershipAmountAbstract' xlink:to='loc_JointlyOwnedUtilityPlantGrossOwnershipAmountOfPlantInService' xlink:type='arc' />
+<link:definitionArc order='38.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_JointlyOwnedUtilityPlantNetOwnershipAmountAbstract' xlink:to='loc_JointlyOwnedUtilityPlantOwnershipAmountOfPlantAccumulatedDepreciation' xlink:type='arc' />
+<link:definitionArc order='39.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_JointlyOwnedUtilityPlantNetOwnershipAmountAbstract' xlink:to='loc_JointlyOwnedUtilityPlantOwnershipAmountOfOtherAssets' xlink:type='arc' />
+<link:definitionArc order='40.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_JointlyOwnedUtilityPlantNetOwnershipAmountAbstract' xlink:to='loc_JointlyOwnedUtilityPlantOwnershipAmountOfConstructionWorkInProgress' xlink:type='arc' />
+<link:definitionArc order='41.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_JointlyOwnedUtilityPlantNetOwnershipAmountAbstract' xlink:to='loc_JointlyOwnedUtilityPlantNetOwnershipAmount' xlink:type='arc' />
+<link:definitionArc order='42.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryCurrentAssetLineItems' xlink:to='loc_RegulatoryAssetsCurrent' xlink:type='arc' />
+<link:definitionArc order='43.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryCurrentAssetLineItems' xlink:to='loc_RegulatoryCurrentAssetEndDateForRecovery' xlink:type='arc' />
+<link:definitionArc order='44.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryNoncurrentAssetLineItems' xlink:to='loc_RegulatoryAssetsNoncurrent' xlink:type='arc' />
+<link:definitionArc order='45.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryNoncurrentAssetLineItems' xlink:to='loc_RegulatoryNoncurrentAssetEndDateForRecovery' xlink:type='arc' />
+<link:definitionArc order='46.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryNoncurrentAssetLineItems' xlink:to='loc_RegulatoryNoncurrentAssetAmortizationPeriod' xlink:type='arc' />
+<link:definitionArc order='47.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryCurrentLiabilitiesLineItems' xlink:to='loc_RegulatoryLiabilityCurrent' xlink:type='arc' />
+<link:definitionArc order='48.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryCurrentLiabilitiesLineItems' xlink:to='loc_RegulatoryCurrentLiabilityEndDateForRecovery' xlink:type='arc' />
+<link:definitionArc order='49.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryNoncurrentLiabilitiesLineItems' xlink:to='loc_RegulatoryLiabilityNoncurrent' xlink:type='arc' />
+<link:definitionArc order='50.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryNoncurrentLiabilitiesLineItems' xlink:to='loc_RegulatoryNoncurrentLiabilityEndDateForRecovery' xlink:type='arc' />
+<link:definitionArc order='51.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryNoncurrentLiabilitiesLineItems' xlink:to='loc_RegulatoryNoncurrentLiabilityAmortizationPeriod' xlink:type='arc' />
+<link:definitionArc order='52.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesInventoryLineItems' xlink:to='loc_PublicUtilitiesInventory' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://xbrl.us/us-gaap/role/disclosure/RegulatedOperations' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_UtilityPlantDomain' xlink:label='loc_UtilityPlantDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ElectricityGenerationPlantNonNuclearMember' xlink:label='loc_ElectricityGenerationPlantNonNuclearMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NuclearPlantMember' xlink:label='loc_NuclearPlantMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NaturalGasProcessingPlantMember' xlink:label='loc_NaturalGasProcessingPlantMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_WaterPlantMember' xlink:label='loc_WaterPlantMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_IndependentTransmissionAndDistributionSystemMember' xlink:label='loc_IndependentTransmissionAndDistributionSystemMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_OtherPlantInServiceMember' xlink:label='loc_OtherPlantInServiceMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_SteamPlantMember' xlink:label='loc_SteamPlantMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_FossilFuelPlantMember' xlink:label='loc_FossilFuelPlantMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ElectricTransmissionMember' xlink:label='loc_ElectricTransmissionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_GasTransmissionMember' xlink:label='loc_GasTransmissionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_WaterTransmissionMember' xlink:label='loc_WaterTransmissionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_ElectricDistributionMember' xlink:label='loc_ElectricDistributionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_GasDistributionMember' xlink:label='loc_GasDistributionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_WaterDistributionMember' xlink:label='loc_WaterDistributionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatedAndUnregulatedOperationDomain' xlink:label='loc_RegulatedAndUnregulatedOperationDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatedOperationMember' xlink:label='loc_RegulatedOperationMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_UnregulatedOperationMember' xlink:label='loc_UnregulatedOperationMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedUtilityPlantDomain' xlink:label='loc_JointlyOwnedUtilityPlantDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedElectricityGenerationPlantMember' xlink:label='loc_JointlyOwnedElectricityGenerationPlantMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedElectricityTransmissionAndDistributionSystemMember' xlink:label='loc_JointlyOwnedElectricityTransmissionAndDistributionSystemMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedNuclearPowerPlantMember' xlink:label='loc_JointlyOwnedNuclearPowerPlantMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedNaturalGasProcessingPlantMember' xlink:label='loc_JointlyOwnedNaturalGasProcessingPlantMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_JointlyOwnedWaterPlantMember' xlink:label='loc_JointlyOwnedWaterPlantMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryAssetDomain' xlink:label='loc_RegulatoryAssetDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_StrandedCostsMember' xlink:label='loc_StrandedCostsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DeferredProjectCostsMember' xlink:label='loc_DeferredProjectCostsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RecoverableVacationPayMember' xlink:label='loc_RecoverableVacationPayMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_StormCostsMember' xlink:label='loc_StormCostsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AssetImpairmentForRegulatoryActionMember' xlink:label='loc_AssetImpairmentForRegulatoryActionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DeferredFuelCostsMember' xlink:label='loc_DeferredFuelCostsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_EnvironmentalRestorationCostsMember' xlink:label='loc_EnvironmentalRestorationCostsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AssetRetirementObligationCostsMember' xlink:label='loc_AssetRetirementObligationCostsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_LossOnReacquiredDebtMember' xlink:label='loc_LossOnReacquiredDebtMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DeferredLossOnEarlyExtinguishmentOfDebtMember' xlink:label='loc_DeferredLossOnEarlyExtinguishmentOfDebtMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DeferredIncomeTaxChargesMember' xlink:label='loc_DeferredIncomeTaxChargesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PensionCostsMember' xlink:label='loc_PensionCostsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_AssetRecoverableGasCostsMember' xlink:label='loc_AssetRecoverableGasCostsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_CompetitiveTransitionChargeMember' xlink:label='loc_CompetitiveTransitionChargeMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_NaturalGasTransitionCostMember' xlink:label='loc_NaturalGasTransitionCostMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryClauseRevenuesUnderRecoveredMember' xlink:label='loc_RegulatoryClauseRevenuesUnderRecoveredMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RegulatoryLiabilityDomain' xlink:label='loc_RegulatoryLiabilityDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_CustomerReceiptsMember' xlink:label='loc_CustomerReceiptsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DeferredLeaseRevenueMember' xlink:label='loc_DeferredLeaseRevenueMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_DeferredGainOnEarlyExtinguishmentOfDebtAmountMember' xlink:label='loc_DeferredGainOnEarlyExtinguishmentOfDebtAmountMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PensionCostMember' xlink:label='loc_PensionCostMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PostretirementBenefitCostsMember' xlink:label='loc_PostretirementBenefitCostsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_RevenueSubjectToRefundMember' xlink:label='loc_RevenueSubjectToRefundMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryTypeDomain' xlink:label='loc_PublicUtilitiesInventoryTypeDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryFuelMember' xlink:label='loc_PublicUtilitiesInventoryFuelMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventorySuppliesMember' xlink:label='loc_PublicUtilitiesInventorySuppliesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryCoalMember' xlink:label='loc_PublicUtilitiesInventoryCoalMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryRawMaterialsMember' xlink:label='loc_PublicUtilitiesInventoryRawMaterialsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryNaturalGasMember' xlink:label='loc_PublicUtilitiesInventoryNaturalGasMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryWaterMember' xlink:label='loc_PublicUtilitiesInventoryWaterMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryPropaneMember' xlink:label='loc_PublicUtilitiesInventoryPropaneMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryReplacementPartsMember' xlink:label='loc_PublicUtilitiesInventoryReplacementPartsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryTubularGoodsMember' xlink:label='loc_PublicUtilitiesInventoryTubularGoodsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2008-03-31.xsd#us-gaap_PublicUtilitiesInventoryPetroleumProductsMember' xlink:label='loc_PublicUtilitiesInventoryPetroleumProductsMember' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_UtilityPlantDomain' xlink:to='loc_ElectricityGenerationPlantNonNuclearMember' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_UtilityPlantDomain' xlink:to='loc_NuclearPlantMember' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_UtilityPlantDomain' xlink:to='loc_NaturalGasProcessingPlantMember' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_UtilityPlantDomain' xlink:to='loc_WaterPlantMember' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_UtilityPlantDomain' xlink:to='loc_IndependentTransmissionAndDistributionSystemMember' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_UtilityPlantDomain' xlink:to='loc_OtherPlantInServiceMember' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ElectricityGenerationPlantNonNuclearMember' xlink:to='loc_SteamPlantMember' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ElectricityGenerationPlantNonNuclearMember' xlink:to='loc_FossilFuelPlantMember' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_IndependentTransmissionAndDistributionSystemMember' xlink:to='loc_ElectricTransmissionMember' xlink:type='arc' />
+<link:definitionArc order='10.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_IndependentTransmissionAndDistributionSystemMember' xlink:to='loc_GasTransmissionMember' xlink:type='arc' />
+<link:definitionArc order='11.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_IndependentTransmissionAndDistributionSystemMember' xlink:to='loc_WaterTransmissionMember' xlink:type='arc' />
+<link:definitionArc order='12.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_IndependentTransmissionAndDistributionSystemMember' xlink:to='loc_ElectricDistributionMember' xlink:type='arc' />
+<link:definitionArc order='13.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_IndependentTransmissionAndDistributionSystemMember' xlink:to='loc_GasDistributionMember' xlink:type='arc' />
+<link:definitionArc order='14.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_IndependentTransmissionAndDistributionSystemMember' xlink:to='loc_WaterDistributionMember' xlink:type='arc' />
+<link:definitionArc order='15.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatedAndUnregulatedOperationDomain' xlink:to='loc_RegulatedOperationMember' xlink:type='arc' />
+<link:definitionArc order='16.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatedAndUnregulatedOperationDomain' xlink:to='loc_UnregulatedOperationMember' xlink:type='arc' />
+<link:definitionArc order='17.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_JointlyOwnedUtilityPlantDomain' xlink:to='loc_JointlyOwnedElectricityGenerationPlantMember' xlink:type='arc' />
+<link:definitionArc order='18.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_JointlyOwnedUtilityPlantDomain' xlink:to='loc_JointlyOwnedElectricityTransmissionAndDistributionSystemMember' xlink:type='arc' />
+<link:definitionArc order='19.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_JointlyOwnedUtilityPlantDomain' xlink:to='loc_JointlyOwnedNuclearPowerPlantMember' xlink:type='arc' />
+<link:definitionArc order='20.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_JointlyOwnedUtilityPlantDomain' xlink:to='loc_JointlyOwnedNaturalGasProcessingPlantMember' xlink:type='arc' />
+<link:definitionArc order='21.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_JointlyOwnedUtilityPlantDomain' xlink:to='loc_JointlyOwnedWaterPlantMember' xlink:type='arc' />
+<link:definitionArc order='22.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_StrandedCostsMember' xlink:type='arc' />
+<link:definitionArc order='23.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_DeferredProjectCostsMember' xlink:type='arc' />
+<link:definitionArc order='24.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_RecoverableVacationPayMember' xlink:type='arc' />
+<link:definitionArc order='25.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_StormCostsMember' xlink:type='arc' />
+<link:definitionArc order='26.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_AssetImpairmentForRegulatoryActionMember' xlink:type='arc' />
+<link:definitionArc order='27.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_DeferredFuelCostsMember' xlink:type='arc' />
+<link:definitionArc order='28.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_EnvironmentalRestorationCostsMember' xlink:type='arc' />
+<link:definitionArc order='29.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_AssetRetirementObligationCostsMember' xlink:type='arc' />
+<link:definitionArc order='30.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_LossOnReacquiredDebtMember' xlink:type='arc' />
+<link:definitionArc order='31.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_DeferredLossOnEarlyExtinguishmentOfDebtMember' xlink:type='arc' />
+<link:definitionArc order='32.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_DeferredIncomeTaxChargesMember' xlink:type='arc' />
+<link:definitionArc order='33.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_PensionCostsMember' xlink:type='arc' />
+<link:definitionArc order='34.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_AssetRecoverableGasCostsMember' xlink:type='arc' />
+<link:definitionArc order='35.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_CompetitiveTransitionChargeMember' xlink:type='arc' />
+<link:definitionArc order='36.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_NaturalGasTransitionCostMember' xlink:type='arc' />
+<link:definitionArc order='37.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryAssetDomain' xlink:to='loc_RegulatoryClauseRevenuesUnderRecoveredMember' xlink:type='arc' />
+<link:definitionArc order='54.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryLiabilityDomain' xlink:to='loc_CustomerReceiptsMember' xlink:type='arc' />
+<link:definitionArc order='55.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryLiabilityDomain' xlink:to='loc_DeferredLeaseRevenueMember' xlink:type='arc' />
+<link:definitionArc order='56.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryLiabilityDomain' xlink:to='loc_EnvironmentalRestorationCostsMember' xlink:type='arc' />
+<link:definitionArc order='57.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryLiabilityDomain' xlink:to='loc_AssetRetirementObligationCostsMember' xlink:type='arc' />
+<link:definitionArc order='58.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryLiabilityDomain' xlink:to='loc_DeferredIncomeTaxChargesMember' xlink:type='arc' />
+<link:definitionArc order='59.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryLiabilityDomain' xlink:to='loc_DeferredGainOnEarlyExtinguishmentOfDebtAmountMember' xlink:type='arc' />
+<link:definitionArc order='60.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryLiabilityDomain' xlink:to='loc_PensionCostMember' xlink:type='arc' />
+<link:definitionArc order='61.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryLiabilityDomain' xlink:to='loc_PostretirementBenefitCostsMember' xlink:type='arc' />
+<link:definitionArc order='62.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RegulatoryLiabilityDomain' xlink:to='loc_RevenueSubjectToRefundMember' xlink:type='arc' />
+<link:definitionArc order='72.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesInventoryTypeDomain' xlink:to='loc_PublicUtilitiesInventoryFuelMember' xlink:type='arc' />
+<link:definitionArc order='73.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesInventoryTypeDomain' xlink:to='loc_PublicUtilitiesInventorySuppliesMember' xlink:type='arc' />
+<link:definitionArc order='74.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesInventoryTypeDomain' xlink:to='loc_PublicUtilitiesInventoryCoalMember' xlink:type='arc' />
+<link:definitionArc order='75.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesInventoryTypeDomain' xlink:to='loc_PublicUtilitiesInventoryRawMaterialsMember' xlink:type='arc' />
+<link:definitionArc order='76.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesInventoryTypeDomain' xlink:to='loc_PublicUtilitiesInventoryNaturalGasMember' xlink:type='arc' />
+<link:definitionArc order='77.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesInventoryTypeDomain' xlink:to='loc_PublicUtilitiesInventoryWaterMember' xlink:type='arc' />
+<link:definitionArc order='78.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesInventoryTypeDomain' xlink:to='loc_PublicUtilitiesInventoryPropaneMember' xlink:type='arc' />
+<link:definitionArc order='79.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesInventoryTypeDomain' xlink:to='loc_PublicUtilitiesInventoryReplacementPartsMember' xlink:type='arc' />
+<link:definitionArc order='80.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesInventoryTypeDomain' xlink:to='loc_PublicUtilitiesInventoryTubularGoodsMember' xlink:type='arc' />
+<link:definitionArc order='81.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_PublicUtilitiesInventoryTypeDomain' xlink:to='loc_PublicUtilitiesInventoryPetroleumProductsMember' xlink:type='arc' />
+</link:definitionLink>
+</link:linkbase>

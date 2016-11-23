@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2014.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/DeferredRevenueRevenueRecognitionMultipleDeliverableArrangementsTable' xlink:href='../elts/us-roles-2014-01-31.xsd#DeferredRevenueRevenueRecognitionMultipleDeliverableArrangementsTable' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/all' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' xlink:type='simple' />
+<link:arcroleRef arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' xlink:type='simple' />
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/DeferredRevenueDeferredRevenueArrangementByTypeTable' xlink:href='../elts/us-roles-2014-01-31.xsd#DeferredRevenueDeferredRevenueArrangementByTypeTable' xlink:type='simple' />
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/DeferredRevenueDeferredRevenueArrangementByTypeTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueArrangementLineItems' xlink:label='loc_DeferredRevenueArrangementLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueArrangementByTypeTable' xlink:label='loc_DeferredRevenueArrangementByTypeTable' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_DeferredRevenueArrangementLineItems' xlink:to='loc_DeferredRevenueArrangementByTypeTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/DeferredRevenueDeferredRevenueArrangementByTypeTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueArrangementTypeAxis' xlink:label='loc_DeferredRevenueArrangementTypeAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueArrangementTypeDomain' xlink:label='loc_DeferredRevenueArrangementTypeDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_DeferredRevenueArrangementTypeAxis' xlink:to='loc_DeferredRevenueArrangementTypeDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/DeferredRevenueDeferredRevenueArrangementByTypeTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueArrangementTypeAxis' xlink:label='loc_DeferredRevenueArrangementTypeAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueArrangementTypeDomain' xlink:label='loc_DeferredRevenueArrangementTypeDomain' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_DeferredRevenueArrangementTypeAxis' xlink:to='loc_DeferredRevenueArrangementTypeDomain' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/DeferredRevenueDeferredRevenueArrangementByTypeTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueArrangementLineItems' xlink:label='loc_DeferredRevenueArrangementLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueAbstract' xlink:label='loc_DeferredRevenueAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MovementInDeferredRevenueRollForward' xlink:label='loc_MovementInDeferredRevenueRollForward' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_MovementInCustomerRefundableFeesRollForward' xlink:label='loc_MovementInCustomerRefundableFeesRollForward' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RecognitionOfDeferredRevenue' xlink:label='loc_RecognitionOfDeferredRevenue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueCurrent' xlink:label='loc_DeferredRevenueCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueNoncurrent' xlink:label='loc_DeferredRevenueNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenue' xlink:label='loc_DeferredRevenue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueArrangementTypeDomain' xlink:label='loc_DeferredRevenueArrangementTypeDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_LayawaySaleMember' xlink:label='loc_LayawaySaleMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_InitialHookupDeferredRevenueMember' xlink:label='loc_InitialHookupDeferredRevenueMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_LeasingArrangementMember' xlink:label='loc_LeasingArrangementMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RoyaltyArrangementMember' xlink:label='loc_RoyaltyArrangementMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_SubscriptionArrangementMember' xlink:label='loc_SubscriptionArrangementMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_TransportationAdvanceTicketArrangementMember' xlink:label='loc_TransportationAdvanceTicketArrangementMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_AnnualMembershipFeesMember' xlink:label='loc_AnnualMembershipFeesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_UpFrontPaymentArrangementMember' xlink:label='loc_UpFrontPaymentArrangementMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_NonsoftwareServiceSupportAndMaintenanceArrangementMember' xlink:label='loc_NonsoftwareServiceSupportAndMaintenanceArrangementMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_NonsoftwareLicenseArrangementMember' xlink:label='loc_NonsoftwareLicenseArrangementMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_SoftwareLicenseArrangementMember' xlink:label='loc_SoftwareLicenseArrangementMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_SoftwareServiceSupportAndMaintenanceArrangementMember' xlink:label='loc_SoftwareServiceSupportAndMaintenanceArrangementMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_UnearnedPremiumsShortDurationMember' xlink:label='loc_UnearnedPremiumsShortDurationMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_UnearnedPremiumsLongDurationMember' xlink:label='loc_UnearnedPremiumsLongDurationMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_LoanLendingCommitmentArrangementFeesMember' xlink:label='loc_LoanLendingCommitmentArrangementFeesMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_CustomerRefundableFees' xlink:label='loc_CustomerRefundableFees' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_CustomerRefundableFeesCashReceived' xlink:label='loc_CustomerRefundableFeesCashReceived' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_CustomerRefundableFeesRevenueRecognized' xlink:label='loc_CustomerRefundableFeesRevenueRecognized' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_CustomerRefundableFeesRefundPayments' xlink:label='loc_CustomerRefundableFeesRefundPayments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_CustomerRefundableFeesPeriodIncreaseDecrease' xlink:label='loc_CustomerRefundableFeesPeriodIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueAdditions' xlink:label='loc_DeferredRevenueAdditions' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueRevenueRecognized' xlink:label='loc_DeferredRevenueRevenueRecognized' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueRefundPayments' xlink:label='loc_DeferredRevenueRefundPayments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenuePeriodIncreaseDecrease' xlink:label='loc_DeferredRevenuePeriodIncreaseDecrease' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementLineItems' xlink:to='loc_DeferredRevenueAbstract' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementLineItems' xlink:to='loc_MovementInDeferredRevenueRollForward' xlink:type='arc' />
+<link:definitionArc order='12.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementLineItems' xlink:to='loc_MovementInCustomerRefundableFeesRollForward' xlink:type='arc' />
+<link:definitionArc order='19.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementLineItems' xlink:to='loc_RecognitionOfDeferredRevenue' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueAbstract' xlink:to='loc_DeferredRevenueCurrent' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueAbstract' xlink:to='loc_DeferredRevenueNoncurrent' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueAbstract' xlink:to='loc_DeferredRevenue' xlink:type='arc' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementTypeDomain' xlink:to='loc_LayawaySaleMember' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementTypeDomain' xlink:to='loc_InitialHookupDeferredRevenueMember' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementTypeDomain' xlink:to='loc_LeasingArrangementMember' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementTypeDomain' xlink:to='loc_RoyaltyArrangementMember' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementTypeDomain' xlink:to='loc_SubscriptionArrangementMember' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementTypeDomain' xlink:to='loc_TransportationAdvanceTicketArrangementMember' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementTypeDomain' xlink:to='loc_AnnualMembershipFeesMember' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementTypeDomain' xlink:to='loc_UpFrontPaymentArrangementMember' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementTypeDomain' xlink:to='loc_NonsoftwareServiceSupportAndMaintenanceArrangementMember' xlink:type='arc' />
+<link:definitionArc order='10.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementTypeDomain' xlink:to='loc_NonsoftwareLicenseArrangementMember' xlink:type='arc' />
+<link:definitionArc order='11.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementTypeDomain' xlink:to='loc_SoftwareLicenseArrangementMember' xlink:type='arc' />
+<link:definitionArc order='12.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementTypeDomain' xlink:to='loc_SoftwareServiceSupportAndMaintenanceArrangementMember' xlink:type='arc' />
+<link:definitionArc order='13.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementTypeDomain' xlink:to='loc_UnearnedPremiumsShortDurationMember' xlink:type='arc' />
+<link:definitionArc order='14.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementTypeDomain' xlink:to='loc_UnearnedPremiumsLongDurationMember' xlink:type='arc' />
+<link:definitionArc order='15.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_DeferredRevenueArrangementTypeDomain' xlink:to='loc_LoanLendingCommitmentArrangementFeesMember' xlink:type='arc' />
+<link:definitionArc order='13.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MovementInCustomerRefundableFeesRollForward' xlink:to='loc_CustomerRefundableFees' xlink:type='arc' />
+<link:definitionArc order='14.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MovementInCustomerRefundableFeesRollForward' xlink:to='loc_CustomerRefundableFeesCashReceived' xlink:type='arc' />
+<link:definitionArc order='15.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MovementInCustomerRefundableFeesRollForward' xlink:to='loc_CustomerRefundableFeesRevenueRecognized' xlink:type='arc' />
+<link:definitionArc order='16.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MovementInCustomerRefundableFeesRollForward' xlink:to='loc_CustomerRefundableFeesRefundPayments' xlink:type='arc' />
+<link:definitionArc order='17.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MovementInCustomerRefundableFeesRollForward' xlink:to='loc_CustomerRefundableFeesPeriodIncreaseDecrease' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MovementInDeferredRevenueRollForward' xlink:to='loc_DeferredRevenue' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MovementInDeferredRevenueRollForward' xlink:to='loc_DeferredRevenueAdditions' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MovementInDeferredRevenueRollForward' xlink:to='loc_DeferredRevenueRevenueRecognized' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MovementInDeferredRevenueRollForward' xlink:to='loc_DeferredRevenueRefundPayments' xlink:type='arc' />
+<link:definitionArc order='10.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_MovementInDeferredRevenueRollForward' xlink:to='loc_DeferredRevenuePeriodIncreaseDecrease' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/DeferredRevenueDeferredRevenueArrangementByTypeTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueArrangementByTypeTable' xlink:label='loc_DeferredRevenueArrangementByTypeTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_DeferredRevenueArrangementTypeAxis' xlink:label='loc_DeferredRevenueArrangementTypeAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_DeferredRevenueArrangementByTypeTable' xlink:to='loc_DeferredRevenueArrangementTypeAxis' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/DeferredRevenueRevenueRecognitionMultipleDeliverableArrangementsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:label='loc_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionMultipleDeliverableArrangementsTable' xlink:label='loc_RevenueRecognitionMultipleDeliverableArrangementsTable' xlink:type='locator' />
+<link:definitionArc order='1.0' xbrldt:closed='true' xbrldt:contextElement='segment' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:to='loc_RevenueRecognitionMultipleDeliverableArrangementsTable' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/DeferredRevenueRevenueRecognitionMultipleDeliverableArrangementsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ProductOrServiceAxis' xlink:label='loc_ProductOrServiceAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ProductsAndServicesDomain' xlink:label='loc_ProductsAndServicesDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_TypeOfArrangementAxis' xlink:label='loc_TypeOfArrangementAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ArrangementsAndNonarrangementTransactionsMember' xlink:label='loc_ArrangementsAndNonarrangementTransactionsMember' xlink:type='locator' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_ProductOrServiceAxis' xlink:to='loc_ProductsAndServicesDomain' xlink:type='arc' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-default' xlink:from='loc_TypeOfArrangementAxis' xlink:to='loc_ArrangementsAndNonarrangementTransactionsMember' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/DeferredRevenueRevenueRecognitionMultipleDeliverableArrangementsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ProductOrServiceAxis' xlink:label='loc_ProductOrServiceAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ProductsAndServicesDomain' xlink:label='loc_ProductsAndServicesDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_TypeOfArrangementAxis' xlink:label='loc_TypeOfArrangementAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ArrangementsAndNonarrangementTransactionsMember' xlink:label='loc_ArrangementsAndNonarrangementTransactionsMember' xlink:type='locator' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_ProductOrServiceAxis' xlink:to='loc_ProductsAndServicesDomain' xlink:type='arc' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/dimension-domain' xlink:from='loc_TypeOfArrangementAxis' xlink:to='loc_ArrangementsAndNonarrangementTransactionsMember' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/DeferredRevenueRevenueRecognitionMultipleDeliverableArrangementsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ArrangementsAndNonarrangementTransactionsMember' xlink:label='loc_ArrangementsAndNonarrangementTransactionsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_TypeOfArrangementDomain' xlink:label='loc_TypeOfArrangementDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_NonarrangementTransactionsMember' xlink:label='loc_NonarrangementTransactionsMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_CollaborativeArrangementMember' xlink:label='loc_CollaborativeArrangementMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_CollaborativeArrangementProductAgreementMember' xlink:label='loc_CollaborativeArrangementProductAgreementMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_CollaborativeArrangementCopromotionMember' xlink:label='loc_CollaborativeArrangementCopromotionMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ProductsAndServicesDomain' xlink:label='loc_ProductsAndServicesDomain' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ProductMember' xlink:label='loc_ProductMember' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:label='loc_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionMultipleElementArrangements' xlink:label='loc_RevenueRecognitionMultipleElementArrangements' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionMultipleDeliverableArrangementsDeterminationOfSellingPriceAbstract' xlink:label='loc_RevenueRecognitionMultipleDeliverableArrangementsDeterminationOfSellingPriceAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionMultipleDeliverableArrangementsSignificantDeliverablesSeparateUnitsOfAccountingQualificationFlag' xlink:label='loc_RevenueRecognitionMultipleDeliverableArrangementsSignificantDeliverablesSeparateUnitsOfAccountingQualificationFlag' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionMultipleDeliverableArrangementsAllocationToSpecificUnitOfAccountingEffectOfChangesAbstract' xlink:label='loc_RevenueRecognitionMultipleDeliverableArrangementsAllocationToSpecificUnitOfAccountingEffectOfChangesAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionNewAccountingPronouncementUnitOfAccounting' xlink:label='loc_RevenueRecognitionNewAccountingPronouncementUnitOfAccounting' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionNewAccountingPronouncementAllocation' xlink:label='loc_RevenueRecognitionNewAccountingPronouncementAllocation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionNewAccountingPronouncementTiming' xlink:label='loc_RevenueRecognitionNewAccountingPronouncementTiming' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionNewAccountingPronouncementRevenueRecognizedUnderPriorGuidance' xlink:label='loc_RevenueRecognitionNewAccountingPronouncementRevenueRecognizedUnderPriorGuidance' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionNewAccountingPronouncementMaterialEffectDescription' xlink:label='loc_RevenueRecognitionNewAccountingPronouncementMaterialEffectDescription' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionNewAccountingPronouncementMaterialEffectRevenueRecognizedUnderAmendedGuidance' xlink:label='loc_RevenueRecognitionNewAccountingPronouncementMaterialEffectRevenueRecognizedUnderAmendedGuidance' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionNewAccountingPronouncementMaterialEffectRevenueDeferredUnderAmendedGuidance' xlink:label='loc_RevenueRecognitionNewAccountingPronouncementMaterialEffectRevenueDeferredUnderAmendedGuidance' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionMultipleDeliverableArrangementsAllocationToSpecificUnitOfAccountingEffectOfChangesSellingPrice' xlink:label='loc_RevenueRecognitionMultipleDeliverableArrangementsAllocationToSpecificUnitOfAccountingEffectOfChangesSellingPrice' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionMultipleDeliverableArrangementsAllocationToSpecificUnitOfAccountingEffectOfChangesMethodology' xlink:label='loc_RevenueRecognitionMultipleDeliverableArrangementsAllocationToSpecificUnitOfAccountingEffectOfChangesMethodology' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionMultipleDeliverableArrangementsAllocationToSpecificUnitOfAccountingEffectOfChangesAssumptions' xlink:label='loc_RevenueRecognitionMultipleDeliverableArrangementsAllocationToSpecificUnitOfAccountingEffectOfChangesAssumptions' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionMultipleDeliverableArrangementsDeterminationOfSellingPriceMethod' xlink:label='loc_RevenueRecognitionMultipleDeliverableArrangementsDeterminationOfSellingPriceMethod' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionMultipleDeliverableArrangementsDeterminationOfSellingPriceAmount' xlink:label='loc_RevenueRecognitionMultipleDeliverableArrangementsDeterminationOfSellingPriceAmount' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_NoncollaborativeArrangementTransactionsMember' xlink:label='loc_NoncollaborativeArrangementTransactionsMember' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ArrangementsAndNonarrangementTransactionsMember' xlink:to='loc_TypeOfArrangementDomain' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ArrangementsAndNonarrangementTransactionsMember' xlink:to='loc_NonarrangementTransactionsMember' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_CollaborativeArrangementMember' xlink:to='loc_CollaborativeArrangementProductAgreementMember' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_CollaborativeArrangementMember' xlink:to='loc_CollaborativeArrangementCopromotionMember' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_ProductsAndServicesDomain' xlink:to='loc_ProductMember' xlink:type='arc' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:to='loc_RevenueRecognitionMultipleElementArrangements' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:to='loc_RevenueRecognitionMultipleDeliverableArrangementsDeterminationOfSellingPriceAbstract' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:to='loc_RevenueRecognitionMultipleDeliverableArrangementsSignificantDeliverablesSeparateUnitsOfAccountingQualificationFlag' xlink:type='arc' />
+<link:definitionArc order='6.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:to='loc_RevenueRecognitionMultipleDeliverableArrangementsAllocationToSpecificUnitOfAccountingEffectOfChangesAbstract' xlink:type='arc' />
+<link:definitionArc order='10.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:to='loc_RevenueRecognitionNewAccountingPronouncementUnitOfAccounting' xlink:type='arc' />
+<link:definitionArc order='11.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:to='loc_RevenueRecognitionNewAccountingPronouncementAllocation' xlink:type='arc' />
+<link:definitionArc order='12.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:to='loc_RevenueRecognitionNewAccountingPronouncementTiming' xlink:type='arc' />
+<link:definitionArc order='13.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:to='loc_RevenueRecognitionNewAccountingPronouncementRevenueRecognizedUnderPriorGuidance' xlink:type='arc' />
+<link:definitionArc order='14.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:to='loc_RevenueRecognitionNewAccountingPronouncementMaterialEffectDescription' xlink:type='arc' />
+<link:definitionArc order='15.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:to='loc_RevenueRecognitionNewAccountingPronouncementMaterialEffectRevenueRecognizedUnderAmendedGuidance' xlink:type='arc' />
+<link:definitionArc order='16.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsLineItems' xlink:to='loc_RevenueRecognitionNewAccountingPronouncementMaterialEffectRevenueDeferredUnderAmendedGuidance' xlink:type='arc' />
+<link:definitionArc order='7.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsAllocationToSpecificUnitOfAccountingEffectOfChangesAbstract' xlink:to='loc_RevenueRecognitionMultipleDeliverableArrangementsAllocationToSpecificUnitOfAccountingEffectOfChangesSellingPrice' xlink:type='arc' />
+<link:definitionArc order='8.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsAllocationToSpecificUnitOfAccountingEffectOfChangesAbstract' xlink:to='loc_RevenueRecognitionMultipleDeliverableArrangementsAllocationToSpecificUnitOfAccountingEffectOfChangesMethodology' xlink:type='arc' />
+<link:definitionArc order='9.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsAllocationToSpecificUnitOfAccountingEffectOfChangesAbstract' xlink:to='loc_RevenueRecognitionMultipleDeliverableArrangementsAllocationToSpecificUnitOfAccountingEffectOfChangesAssumptions' xlink:type='arc' />
+<link:definitionArc order='3.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsDeterminationOfSellingPriceAbstract' xlink:to='loc_RevenueRecognitionMultipleDeliverableArrangementsDeterminationOfSellingPriceMethod' xlink:type='arc' />
+<link:definitionArc order='4.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsDeterminationOfSellingPriceAbstract' xlink:to='loc_RevenueRecognitionMultipleDeliverableArrangementsDeterminationOfSellingPriceAmount' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TypeOfArrangementDomain' xlink:to='loc_CollaborativeArrangementMember' xlink:type='arc' />
+<link:definitionArc order='5.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='loc_TypeOfArrangementDomain' xlink:to='loc_NoncollaborativeArrangementTransactionsMember' xlink:type='arc' />
+</link:definitionLink>
+<link:definitionLink xlink:role='http://fasb.org/us-gaap/role/disclosure/DeferredRevenueRevenueRecognitionMultipleDeliverableArrangementsTable' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_RevenueRecognitionMultipleDeliverableArrangementsTable' xlink:label='loc_RevenueRecognitionMultipleDeliverableArrangementsTable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_TypeOfArrangementAxis' xlink:label='loc_TypeOfArrangementAxis' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2014-01-31.xsd#us-gaap_ProductOrServiceAxis' xlink:label='loc_ProductOrServiceAxis' xlink:type='locator' />
+<link:definitionArc order='1.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsTable' xlink:to='loc_TypeOfArrangementAxis' xlink:type='arc' />
+<link:definitionArc order='2.0' xlink:arcrole='http://xbrl.org/int/dim/arcrole/hypercube-dimension' xlink:from='loc_RevenueRecognitionMultipleDeliverableArrangementsTable' xlink:to='loc_ProductOrServiceAxis' xlink:type='arc' />
+</link:definitionLink>
+</link:linkbase>

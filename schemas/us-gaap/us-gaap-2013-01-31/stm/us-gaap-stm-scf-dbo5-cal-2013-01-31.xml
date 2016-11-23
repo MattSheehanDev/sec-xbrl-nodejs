@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2013.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/statement/StatementOfCashFlowsIndirectDepositBasedOperationsFifthAlternate' xlink:href='../elts/us-roles-2013-01-31.xsd#scf-dbo5' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/statement/StatementOfCashFlowsIndirectDepositBasedOperationsFifthAlternate' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CashAndCashEquivalentsPeriodIncreaseDecrease' xlink:label='loc_CashAndCashEquivalentsPeriodIncreaseDecrease' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_EffectOfExchangeRateOnCashAndCashEquivalents' xlink:label='loc_EffectOfExchangeRateOnCashAndCashEquivalents' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CashAndCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect' xlink:label='loc_CashAndCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_NetCashProvidedByUsedInContinuingOperations' xlink:label='loc_NetCashProvidedByUsedInContinuingOperations' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_NetCashProvidedByUsedInOperatingActivitiesContinuingOperations' xlink:label='loc_NetCashProvidedByUsedInOperatingActivitiesContinuingOperations' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_NetCashProvidedByUsedInInvestingActivitiesContinuingOperations' xlink:label='loc_NetCashProvidedByUsedInInvestingActivitiesContinuingOperations' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_NetCashProvidedByUsedInFinancingActivitiesContinuingOperations' xlink:label='loc_NetCashProvidedByUsedInFinancingActivitiesContinuingOperations' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_NetCashProvidedByUsedInDiscontinuedOperations' xlink:label='loc_NetCashProvidedByUsedInDiscontinuedOperations' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CashProvidedByUsedInOperatingActivitiesDiscontinuedOperations' xlink:label='loc_CashProvidedByUsedInOperatingActivitiesDiscontinuedOperations' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CashProvidedByUsedInInvestingActivitiesDiscontinuedOperations' xlink:label='loc_CashProvidedByUsedInInvestingActivitiesDiscontinuedOperations' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2013-01-31.xsd#us-gaap_CashProvidedByUsedInFinancingActivitiesDiscontinuedOperations' xlink:label='loc_CashProvidedByUsedInFinancingActivitiesDiscontinuedOperations' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashAndCashEquivalentsPeriodIncreaseDecrease' xlink:to='loc_EffectOfExchangeRateOnCashAndCashEquivalents' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashAndCashEquivalentsPeriodIncreaseDecrease' xlink:to='loc_CashAndCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashAndCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect' xlink:to='loc_NetCashProvidedByUsedInContinuingOperations' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetCashProvidedByUsedInContinuingOperations' xlink:to='loc_NetCashProvidedByUsedInOperatingActivitiesContinuingOperations' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetCashProvidedByUsedInContinuingOperations' xlink:to='loc_NetCashProvidedByUsedInInvestingActivitiesContinuingOperations' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetCashProvidedByUsedInContinuingOperations' xlink:to='loc_NetCashProvidedByUsedInFinancingActivitiesContinuingOperations' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashAndCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect' xlink:to='loc_NetCashProvidedByUsedInDiscontinuedOperations' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetCashProvidedByUsedInDiscontinuedOperations' xlink:to='loc_CashProvidedByUsedInOperatingActivitiesDiscontinuedOperations' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetCashProvidedByUsedInDiscontinuedOperations' xlink:to='loc_CashProvidedByUsedInInvestingActivitiesDiscontinuedOperations' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NetCashProvidedByUsedInDiscontinuedOperations' xlink:to='loc_CashProvidedByUsedInFinancingActivitiesDiscontinuedOperations' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>
