@@ -1,7 +1,6 @@
 import Attributes from '../attributes';
 import { StatementNode, StatementValueNode, StatementGaapNode, StatementDeiNode } from './statementnode';
 import GaapNode from '../namespaces/gaapnode';
-import { EntityModel } from '../../models/entitymodel';
 
 import { DateTime as datetime } from '../../utilities/datetime';
 import { Round } from '../../utilities/utility';
@@ -45,6 +44,7 @@ namespace Format {
         }
 
         // find all the dates
+        // TODO: no need to do this, just use the xbrl context nodes
         let years: number[] = [];
         DFSStatement(table, (node: StatementGaapNode) => {
             for (let value of node.values) {

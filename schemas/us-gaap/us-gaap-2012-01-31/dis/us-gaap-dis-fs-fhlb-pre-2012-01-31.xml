@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2012.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/FinancialServicesFederalHomeLoanBanks' xlink:href='../elts/us-roles-2012-01-31.xsd#fs-fhlb' xlink:type='simple' />
+<link:presentationLink xlink:role='http://fasb.org/us-gaap/role/disclosure/FinancialServicesFederalHomeLoanBanks' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_FederalHomeLoanBanksAbstract' xlink:label='loc_FederalHomeLoanBanksAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_IncomeStatementAbstract' xlink:label='loc_IncomeStatementAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InterestIncomeFederalHomeLoanBankAdvances' xlink:label='loc_InterestIncomeFederalHomeLoanBankAdvances' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_PrepaymentFeesOnAdvancesNet' xlink:label='loc_PrepaymentFeesOnAdvancesNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InterestIncomeDepositsWithOtherFederalHomeLoanBanks' xlink:label='loc_InterestIncomeDepositsWithOtherFederalHomeLoanBanks' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InterestIncomeLoansToOtherFederalHomeLoanBanks' xlink:label='loc_InterestIncomeLoansToOtherFederalHomeLoanBanks' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InterestExpenseDepositsFromOtherFederalHomeLoanBanks' xlink:label='loc_InterestExpenseDepositsFromOtherFederalHomeLoanBanks' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InterestExpenseLoansFromOtherFederalHomeLoanBanks' xlink:label='loc_InterestExpenseLoansFromOtherFederalHomeLoanBanks' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_RegulatorExpensesCostAssessedOnFederalHomeLoanBank' xlink:label='loc_RegulatorExpensesCostAssessedOnFederalHomeLoanBank' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OfficeOfFinanceAssessmentsCostAssessedOnFederalHomeLoanBank' xlink:label='loc_OfficeOfFinanceAssessmentsCostAssessedOnFederalHomeLoanBank' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_FederalHomeLoanBankAssessmentsAbstract' xlink:label='loc_FederalHomeLoanBankAssessmentsAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AffordableHousingProgramAssessments' xlink:label='loc_AffordableHousingProgramAssessments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CongressionallyMandatedFederalHomeLoanBankAssessments' xlink:label='loc_CongressionallyMandatedFederalHomeLoanBankAssessments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_FederalHomeLoanBankAssessments' xlink:label='loc_FederalHomeLoanBankAssessments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_StatementOfStockholdersEquityAbstract' xlink:label='loc_StatementOfStockholdersEquityAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_NetSharesReclassifiedToMandatorilyRedeemableCapitalStockValue' xlink:label='loc_NetSharesReclassifiedToMandatorilyRedeemableCapitalStockValue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_NetSharesReclassifiedToMandatorilyRedeemableCapitalStockShares' xlink:label='loc_NetSharesReclassifiedToMandatorilyRedeemableCapitalStockShares' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_StatementOfCashFlowsAbstract' xlink:label='loc_StatementOfCashFlowsAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_IncreaseDecreaseInDepositsWithOtherFederalHomeLoanBanks' xlink:label='loc_IncreaseDecreaseInDepositsWithOtherFederalHomeLoanBanks' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_IncreaseDecreaseInFairValueAdjustmentsOnAssetsAndLiabilitiesCarriedAtFairValueUnderFairValueOption' xlink:label='loc_IncreaseDecreaseInFairValueAdjustmentsOnAssetsAndLiabilitiesCarriedAtFairValueUnderFairValueOption' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_IncreaseDecreaseInLoansToFederalHomeLoanBanks' xlink:label='loc_IncreaseDecreaseInLoansToFederalHomeLoanBanks' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_ProceedsFromFederalHomeLoanBankAdvances' xlink:label='loc_ProceedsFromFederalHomeLoanBankAdvances' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_PaymentsForFederalHomeLoanBankAdvances' xlink:label='loc_PaymentsForFederalHomeLoanBankAdvances' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_IncreaseDecreaseInDepositsFromOtherFederalHomeLoanBanks' xlink:label='loc_IncreaseDecreaseInDepositsFromOtherFederalHomeLoanBanks' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_IncreaseDecreaseInLoansFromOtherFederalHomeLoanBanks' xlink:label='loc_IncreaseDecreaseInLoansFromOtherFederalHomeLoanBanks' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_ProceedsFromBondsTransferredFromOtherOtherFederalHomeLoanBanks' xlink:label='loc_ProceedsFromBondsTransferredFromOtherOtherFederalHomeLoanBanks' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_PaymentsForBondsTransferredToOtherOtherFederalHomeLoanBanks' xlink:label='loc_PaymentsForBondsTransferredToOtherOtherFederalHomeLoanBanks' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_PaymentsForAffordableHousingPrograms' xlink:label='loc_PaymentsForAffordableHousingPrograms' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_PaymentsForCongressionallyMandatedFederalHomeLoanBankAssessments' xlink:label='loc_PaymentsForCongressionallyMandatedFederalHomeLoanBankAssessments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_StatementOfFinancialPositionAbstract' xlink:label='loc_StatementOfFinancialPositionAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DepositsWithOtherFederalHomeLoanBanks' xlink:label='loc_DepositsWithOtherFederalHomeLoanBanks' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_FederalHomeLoanBankAdvances' xlink:label='loc_FederalHomeLoanBankAdvances' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AdvancesFairValueDisclosure' xlink:label='loc_AdvancesFairValueDisclosure' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_LoansToOtherFederalHomeLoanBanks' xlink:label='loc_LoansToOtherFederalHomeLoanBanks' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_LoansFromOtherFederalHomeLoanBanks' xlink:label='loc_LoansFromOtherFederalHomeLoanBanks' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AffordableHousingProgramObligation' xlink:label='loc_AffordableHousingProgramObligation' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_PrepaidCongressionallyMandatedAssessments' xlink:label='loc_PrepaidCongressionallyMandatedAssessments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_PayablesForCongressionallyMandatedAssessments' xlink:label='loc_PayablesForCongressionallyMandatedAssessments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DisclosureTextBlockSupplementAbstract' xlink:label='loc_DisclosureTextBlockSupplementAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AffordableHousingProgramTextBlock' xlink:label='loc_AffordableHousingProgramTextBlock' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_TableTextBlockSupplementAbstract' xlink:label='loc_TableTextBlockSupplementAbstract' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_ScheduleOfActivityInAffordableHousingProgramObligationTableTextBlock' xlink:label='loc_ScheduleOfActivityInAffordableHousingProgramObligationTableTextBlock' xlink:type='locator' />
+<link:presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_FederalHomeLoanBanksAbstract' xlink:to='loc_IncomeStatementAbstract' xlink:type='arc' />
+<link:presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_IncomeStatementAbstract' xlink:to='loc_InterestIncomeFederalHomeLoanBankAdvances' xlink:type='arc' />
+<link:presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_IncomeStatementAbstract' xlink:to='loc_PrepaymentFeesOnAdvancesNet' xlink:type='arc' />
+<link:presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_IncomeStatementAbstract' xlink:to='loc_InterestIncomeDepositsWithOtherFederalHomeLoanBanks' xlink:type='arc' />
+<link:presentationArc order='40' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_IncomeStatementAbstract' xlink:to='loc_InterestIncomeLoansToOtherFederalHomeLoanBanks' xlink:type='arc' />
+<link:presentationArc order='50' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_IncomeStatementAbstract' xlink:to='loc_InterestExpenseDepositsFromOtherFederalHomeLoanBanks' xlink:type='arc' />
+<link:presentationArc order='60' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_IncomeStatementAbstract' xlink:to='loc_InterestExpenseLoansFromOtherFederalHomeLoanBanks' xlink:type='arc' />
+<link:presentationArc order='70' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_IncomeStatementAbstract' xlink:to='loc_RegulatorExpensesCostAssessedOnFederalHomeLoanBank' xlink:type='arc' />
+<link:presentationArc order='80' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_IncomeStatementAbstract' xlink:to='loc_OfficeOfFinanceAssessmentsCostAssessedOnFederalHomeLoanBank' xlink:type='arc' />
+<link:presentationArc order='90' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_IncomeStatementAbstract' xlink:to='loc_FederalHomeLoanBankAssessmentsAbstract' xlink:type='arc' />
+<link:presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_FederalHomeLoanBankAssessmentsAbstract' xlink:to='loc_AffordableHousingProgramAssessments' xlink:type='arc' />
+<link:presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_FederalHomeLoanBankAssessmentsAbstract' xlink:to='loc_CongressionallyMandatedFederalHomeLoanBankAssessments' xlink:type='arc' />
+<link:presentationArc order='30' preferredLabel='http://www.xbrl.org/2003/role/totalLabel' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_FederalHomeLoanBankAssessmentsAbstract' xlink:to='loc_FederalHomeLoanBankAssessments' xlink:type='arc' />
+<link:presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_FederalHomeLoanBanksAbstract' xlink:to='loc_StatementOfStockholdersEquityAbstract' xlink:type='arc' />
+<link:presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfStockholdersEquityAbstract' xlink:to='loc_NetSharesReclassifiedToMandatorilyRedeemableCapitalStockValue' xlink:type='arc' />
+<link:presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfStockholdersEquityAbstract' xlink:to='loc_NetSharesReclassifiedToMandatorilyRedeemableCapitalStockShares' xlink:type='arc' />
+<link:presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_FederalHomeLoanBanksAbstract' xlink:to='loc_StatementOfCashFlowsAbstract' xlink:type='arc' />
+<link:presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfCashFlowsAbstract' xlink:to='loc_IncreaseDecreaseInDepositsWithOtherFederalHomeLoanBanks' xlink:type='arc' />
+<link:presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfCashFlowsAbstract' xlink:to='loc_IncreaseDecreaseInFairValueAdjustmentsOnAssetsAndLiabilitiesCarriedAtFairValueUnderFairValueOption' xlink:type='arc' />
+<link:presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfCashFlowsAbstract' xlink:to='loc_IncreaseDecreaseInLoansToFederalHomeLoanBanks' xlink:type='arc' />
+<link:presentationArc order='40' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfCashFlowsAbstract' xlink:to='loc_ProceedsFromFederalHomeLoanBankAdvances' xlink:type='arc' />
+<link:presentationArc order='50' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfCashFlowsAbstract' xlink:to='loc_PaymentsForFederalHomeLoanBankAdvances' xlink:type='arc' />
+<link:presentationArc order='60' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfCashFlowsAbstract' xlink:to='loc_IncreaseDecreaseInDepositsFromOtherFederalHomeLoanBanks' xlink:type='arc' />
+<link:presentationArc order='70' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfCashFlowsAbstract' xlink:to='loc_IncreaseDecreaseInLoansFromOtherFederalHomeLoanBanks' xlink:type='arc' />
+<link:presentationArc order='80' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfCashFlowsAbstract' xlink:to='loc_ProceedsFromBondsTransferredFromOtherOtherFederalHomeLoanBanks' xlink:type='arc' />
+<link:presentationArc order='90' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfCashFlowsAbstract' xlink:to='loc_PaymentsForBondsTransferredToOtherOtherFederalHomeLoanBanks' xlink:type='arc' />
+<link:presentationArc order='100' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfCashFlowsAbstract' xlink:to='loc_PaymentsForAffordableHousingPrograms' xlink:type='arc' />
+<link:presentationArc order='110' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfCashFlowsAbstract' xlink:to='loc_PaymentsForCongressionallyMandatedFederalHomeLoanBankAssessments' xlink:type='arc' />
+<link:presentationArc order='40' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_FederalHomeLoanBanksAbstract' xlink:to='loc_StatementOfFinancialPositionAbstract' xlink:type='arc' />
+<link:presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfFinancialPositionAbstract' xlink:to='loc_DepositsWithOtherFederalHomeLoanBanks' xlink:type='arc' />
+<link:presentationArc order='20' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfFinancialPositionAbstract' xlink:to='loc_FederalHomeLoanBankAdvances' xlink:type='arc' />
+<link:presentationArc order='30' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfFinancialPositionAbstract' xlink:to='loc_AdvancesFairValueDisclosure' xlink:type='arc' />
+<link:presentationArc order='40' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfFinancialPositionAbstract' xlink:to='loc_LoansToOtherFederalHomeLoanBanks' xlink:type='arc' />
+<link:presentationArc order='50' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfFinancialPositionAbstract' xlink:to='loc_LoansFromOtherFederalHomeLoanBanks' xlink:type='arc' />
+<link:presentationArc order='60' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfFinancialPositionAbstract' xlink:to='loc_AffordableHousingProgramObligation' xlink:type='arc' />
+<link:presentationArc order='70' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfFinancialPositionAbstract' xlink:to='loc_PrepaidCongressionallyMandatedAssessments' xlink:type='arc' />
+<link:presentationArc order='80' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_StatementOfFinancialPositionAbstract' xlink:to='loc_PayablesForCongressionallyMandatedAssessments' xlink:type='arc' />
+<link:presentationArc order='50' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_FederalHomeLoanBanksAbstract' xlink:to='loc_DisclosureTextBlockSupplementAbstract' xlink:type='arc' />
+<link:presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_DisclosureTextBlockSupplementAbstract' xlink:to='loc_AffordableHousingProgramTextBlock' xlink:type='arc' />
+<link:presentationArc order='60' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_FederalHomeLoanBanksAbstract' xlink:to='loc_TableTextBlockSupplementAbstract' xlink:type='arc' />
+<link:presentationArc order='10' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='loc_TableTextBlockSupplementAbstract' xlink:to='loc_ScheduleOfActivityInAffordableHousingProgramObligationTableTextBlock' xlink:type='arc' />
+</link:presentationLink>
+</link:linkbase>

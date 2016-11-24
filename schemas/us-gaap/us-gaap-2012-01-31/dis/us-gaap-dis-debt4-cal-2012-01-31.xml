@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2012.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/DebtCalc4' xlink:href='../elts/us-roles-2012-01-31.xsd#debt4' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/disclosure/DebtCalc4' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_LoansPayable' xlink:label='loc_LoansPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_LoansPayableCurrent' xlink:label='loc_LoansPayableCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_LongTermLoansPayable' xlink:label='loc_LongTermLoansPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_LongTermDebt' xlink:label='loc_LongTermDebt' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_LongTermDebtCurrent' xlink:label='loc_LongTermDebtCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_LongTermDebtNoncurrent' xlink:label='loc_LongTermDebtNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_NotesPayable' xlink:label='loc_NotesPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_NotesPayableCurrent' xlink:label='loc_NotesPayableCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_LongTermNotesPayable' xlink:label='loc_LongTermNotesPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_NotesAndLoansPayable' xlink:label='loc_NotesAndLoansPayable' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_NotesAndLoansPayableCurrent' xlink:label='loc_NotesAndLoansPayableCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_LongTermNotesAndLoans' xlink:label='loc_LongTermNotesAndLoans' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansPayable' xlink:to='loc_LoansPayableCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LoansPayable' xlink:to='loc_LongTermLoansPayable' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_LongTermDebtCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_LongTermDebt' xlink:to='loc_LongTermDebtNoncurrent' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NotesPayable' xlink:to='loc_NotesPayableCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NotesPayable' xlink:to='loc_LongTermNotesPayable' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NotesAndLoansPayable' xlink:to='loc_NotesAndLoansPayableCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_NotesAndLoansPayable' xlink:to='loc_LongTermNotesAndLoans' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

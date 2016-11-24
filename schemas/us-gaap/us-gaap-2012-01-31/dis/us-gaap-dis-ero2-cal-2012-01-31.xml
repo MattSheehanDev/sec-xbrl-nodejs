@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2012.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/EnvironmentalRemediationObligationsAlternativeCalculations' xlink:href='../elts/us-roles-2012-01-31.xsd#ero2' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/disclosure/EnvironmentalRemediationObligationsAlternativeCalculations' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AccrualForEnvironmentalLossContingenciesNet' xlink:label='loc_AccrualForEnvironmentalLossContingenciesNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AccrualForEnvironmentalLossContingenciesDiscount' xlink:label='loc_AccrualForEnvironmentalLossContingenciesDiscount' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AccrualForEnvironmentalLossContingenciesGross' xlink:label='loc_AccrualForEnvironmentalLossContingenciesGross' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AccrualForEnvironmentalLossContingenciesUndiscountedDueInNextRollingTwelveMonths' xlink:label='loc_AccrualForEnvironmentalLossContingenciesUndiscountedDueInNextRollingTwelveMonths' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AccrualForEnvironmentalLossContingenciesUndiscountedDueInRollingYearTwo' xlink:label='loc_AccrualForEnvironmentalLossContingenciesUndiscountedDueInRollingYearTwo' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AccrualForEnvironmentalLossContingenciesUndiscountedDueInRollingYearThree' xlink:label='loc_AccrualForEnvironmentalLossContingenciesUndiscountedDueInRollingYearThree' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AccrualForEnvironmentalLossContingenciesUndiscountedDueInRollingYearFour' xlink:label='loc_AccrualForEnvironmentalLossContingenciesUndiscountedDueInRollingYearFour' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AccrualForEnvironmentalLossContingenciesUndiscountedDueInRollingYearFive' xlink:label='loc_AccrualForEnvironmentalLossContingenciesUndiscountedDueInRollingYearFive' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AccrualForEnvironmentalLossContingenciesUndiscountedDueAfterRollingYearFive' xlink:label='loc_AccrualForEnvironmentalLossContingenciesUndiscountedDueAfterRollingYearFive' xlink:type='locator' />
+<link:calculationArc order='10' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccrualForEnvironmentalLossContingenciesNet' xlink:to='loc_AccrualForEnvironmentalLossContingenciesDiscount' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccrualForEnvironmentalLossContingenciesNet' xlink:to='loc_AccrualForEnvironmentalLossContingenciesGross' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccrualForEnvironmentalLossContingenciesGross' xlink:to='loc_AccrualForEnvironmentalLossContingenciesUndiscountedDueInNextRollingTwelveMonths' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccrualForEnvironmentalLossContingenciesGross' xlink:to='loc_AccrualForEnvironmentalLossContingenciesUndiscountedDueInRollingYearTwo' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccrualForEnvironmentalLossContingenciesGross' xlink:to='loc_AccrualForEnvironmentalLossContingenciesUndiscountedDueInRollingYearThree' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccrualForEnvironmentalLossContingenciesGross' xlink:to='loc_AccrualForEnvironmentalLossContingenciesUndiscountedDueInRollingYearFour' xlink:type='arc' />
+<link:calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccrualForEnvironmentalLossContingenciesGross' xlink:to='loc_AccrualForEnvironmentalLossContingenciesUndiscountedDueInRollingYearFive' xlink:type='arc' />
+<link:calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AccrualForEnvironmentalLossContingenciesGross' xlink:to='loc_AccrualForEnvironmentalLossContingenciesUndiscountedDueAfterRollingYearFive' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

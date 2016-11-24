@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2012.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/DerivativeInstrumentsAndHedgingActivitiesCalc2' xlink:href='../elts/us-roles-2012-01-31.xsd#diha2' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/disclosure/DerivativeInstrumentsAndHedgingActivitiesCalc2' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CashFlowHedgeGainLossReclassifiedToEarningsNet' xlink:label='loc_CashFlowHedgeGainLossReclassifiedToEarningsNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CashFlowHedgeGainReclassifiedToEarnings' xlink:label='loc_CashFlowHedgeGainReclassifiedToEarnings' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CashFlowHedgeGainReclassifiedToRevenue' xlink:label='loc_CashFlowHedgeGainReclassifiedToRevenue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CashFlowHedgeGainReclassifiedToInvestmentIncome' xlink:label='loc_CashFlowHedgeGainReclassifiedToInvestmentIncome' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CashFlowHedgeGainReclassifiedToOtherIncome' xlink:label='loc_CashFlowHedgeGainReclassifiedToOtherIncome' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CashFlowHedgeGainReclassifiedToCostOfSales' xlink:label='loc_CashFlowHedgeGainReclassifiedToCostOfSales' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CashFlowHedgeGainReclassifiedToInterestExpense' xlink:label='loc_CashFlowHedgeGainReclassifiedToInterestExpense' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CashFlowHedgeGainReclassifiedToOtherExpense' xlink:label='loc_CashFlowHedgeGainReclassifiedToOtherExpense' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CashFlowHedgeLossReclassifiedToEarnings' xlink:label='loc_CashFlowHedgeLossReclassifiedToEarnings' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CashFlowHedgeLossReclassifiedToRevenue' xlink:label='loc_CashFlowHedgeLossReclassifiedToRevenue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CashFlowHedgeLossReclassifiedToInvestmentIncome' xlink:label='loc_CashFlowHedgeLossReclassifiedToInvestmentIncome' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CashFlowHedgeLossReclassifiedToOtherIncome' xlink:label='loc_CashFlowHedgeLossReclassifiedToOtherIncome' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CashFlowHedgeLossReclassifiedToCostOfSales' xlink:label='loc_CashFlowHedgeLossReclassifiedToCostOfSales' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CashFlowHedgeLossReclassifiedToInterestExpense' xlink:label='loc_CashFlowHedgeLossReclassifiedToInterestExpense' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CashFlowHedgeLossReclassifiedToOtherExpense' xlink:label='loc_CashFlowHedgeLossReclassifiedToOtherExpense' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashFlowHedgeGainLossReclassifiedToEarningsNet' xlink:to='loc_CashFlowHedgeGainReclassifiedToEarnings' xlink:type='arc' />
+<link:calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashFlowHedgeGainReclassifiedToEarnings' xlink:to='loc_CashFlowHedgeGainReclassifiedToRevenue' xlink:type='arc' />
+<link:calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashFlowHedgeGainReclassifiedToEarnings' xlink:to='loc_CashFlowHedgeGainReclassifiedToInvestmentIncome' xlink:type='arc' />
+<link:calculationArc order='30' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashFlowHedgeGainReclassifiedToEarnings' xlink:to='loc_CashFlowHedgeGainReclassifiedToOtherIncome' xlink:type='arc' />
+<link:calculationArc order='40' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashFlowHedgeGainReclassifiedToEarnings' xlink:to='loc_CashFlowHedgeGainReclassifiedToCostOfSales' xlink:type='arc' />
+<link:calculationArc order='50' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashFlowHedgeGainReclassifiedToEarnings' xlink:to='loc_CashFlowHedgeGainReclassifiedToInterestExpense' xlink:type='arc' />
+<link:calculationArc order='60' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashFlowHedgeGainReclassifiedToEarnings' xlink:to='loc_CashFlowHedgeGainReclassifiedToOtherExpense' xlink:type='arc' />
+<link:calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashFlowHedgeGainLossReclassifiedToEarningsNet' xlink:to='loc_CashFlowHedgeLossReclassifiedToEarnings' xlink:type='arc' />
+<link:calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashFlowHedgeLossReclassifiedToEarnings' xlink:to='loc_CashFlowHedgeLossReclassifiedToRevenue' xlink:type='arc' />
+<link:calculationArc order='20' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashFlowHedgeLossReclassifiedToEarnings' xlink:to='loc_CashFlowHedgeLossReclassifiedToInvestmentIncome' xlink:type='arc' />
+<link:calculationArc order='30' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashFlowHedgeLossReclassifiedToEarnings' xlink:to='loc_CashFlowHedgeLossReclassifiedToOtherIncome' xlink:type='arc' />
+<link:calculationArc order='40' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashFlowHedgeLossReclassifiedToEarnings' xlink:to='loc_CashFlowHedgeLossReclassifiedToCostOfSales' xlink:type='arc' />
+<link:calculationArc order='50' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashFlowHedgeLossReclassifiedToEarnings' xlink:to='loc_CashFlowHedgeLossReclassifiedToInterestExpense' xlink:type='arc' />
+<link:calculationArc order='60' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CashFlowHedgeLossReclassifiedToEarnings' xlink:to='loc_CashFlowHedgeLossReclassifiedToOtherExpense' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

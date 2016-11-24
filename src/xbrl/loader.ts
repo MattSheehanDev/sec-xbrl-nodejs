@@ -1,7 +1,6 @@
 import SecAPI from '../api/secapi';
 import {SECFiling, SECDocument} from '../models/secmodels';
 import Scraper from '../utilities/scraper';
-import XBRL from './xbrl';
 
 
 namespace XBRLLoader {

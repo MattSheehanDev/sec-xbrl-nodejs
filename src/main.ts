@@ -1,4 +1,4 @@
-import XBRL from './xbrl/xbrl';
+import XBRL from './xbrl/instance/xbrl';
 
 import API from './api/api';
 import { DOMParser } from 'xmldom';
@@ -8,8 +8,6 @@ import { SchemaDocument, ElementNode } from './schema/schemanodes';
 import { LabelNode, PresentationLink, Presentation } from './schema/linkbasenodes';
 
 import Attributes from './xbrl/attributes';
-import { EntityInfoXBRL as EntityInfo } from './xbrl/statements/entityinformation';
-import { EntityModel } from './models/entitymodel';
 import { StatementNode, StatementGaapNode, StatementDeiNode } from './xbrl/statements/statementnode';
 import StatementHelpers from './xbrl/statements/statementhelpers';
 import Format from './xbrl/statements/statementformat';
@@ -238,12 +236,26 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
     let deiTables: any[] = [];
     let count = 0;
 
+
+
+    // for now get the document date in a hacky way
+    // CurrentFiscalYearEndDate could also be used
+    let documentDate: Date;
+    if (dei.map.has('DocumentPeriodEndDate')) {
+        let endDateNode = dei.map.get('DocumentPeriodEndDate');
+        let value = StatementHelpers.SelectDeiNodes([endDateNode], xbrl)[0];
+        documentDate = new Date(value.values[0].value);
+    }
+    else {
+        documentDate = new Date();
+    }
+
+
     for (let presentation of DEIPresentation) {
         count += 1;
         let documentNodes = StatementHelpers.PullStatementNodes(presentation.nodes, dei.map);
         let documentValues = StatementHelpers.SelectDeiNodes(documentNodes, xbrl);
 
-        // TODO: remove entity model
         // TODO: combine all the tables into a function...
         let documentTableNodes: StatementDeiNode[] = [];
         for (let value of documentValues) {
@@ -257,10 +269,8 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
         console.log(`${count}: matching dei presentation`);
         StatementHelpers.MatchPresentation(presentation.nodes, documentValues);
 
+
         console.log(`${count}: formatting dei tables`);
-        
-        // TODO: try to find the DocumentPeriodEndDate first
-        let documentDate = new Date()
         for (let table of documentTableNodes) {
             let title = FetchLabelText(table.label.Text);
             let formattedTable = Format.Table(title, documentDate, table);
@@ -270,17 +280,6 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
             }
         }                
     }
-    
-
-    let entity = new EntityModel({
-        registrantName: EntityInfo.RegistrantName(xbrl)[0].value,
-        centralIndexKey: EntityInfo.CentralIndexKey(xbrl)[0].value,
-        documentType: EntityInfo.DocumentType(xbrl)[0].value,
-        focusPeriod: EntityInfo.DocumentFocusPeriod(xbrl)[0].value,
-        yearFocus: EntityInfo.DocumentYearFocus(xbrl)[0].value,
-        documentDate: EntityInfo.DocumentEndDate(xbrl)[0].value,
-        amendment: EntityInfo.Amendment(xbrl)[0].value
-    });
 
 
 
@@ -292,7 +291,7 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
 
     // pair up elements with their labels
     let gaap = StatementHelpers.CreateStatementNodes(GaapSchema.Elements, GaapLabels);
-    let documentDate = new Date(entity.DocumentDate);
+    // let documentDate = new Date(entity.DocumentDate);
 
 
     console.log('starting balance sheet...');

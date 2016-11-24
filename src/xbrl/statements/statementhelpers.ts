@@ -3,7 +3,7 @@ import {LabelNode} from '../../schema/linkbasenodes';
 
 import {StatementNode, StatementValueNode, StatementGaapNode, StatementDeiNode} from './statementnode';
 
-import XBRLDocument from '../xbrl'; 
+import XBRLDocument from '../instance/xbrl'; 
 import {Presentation} from '../../schema/linkbasenodes';
 import GaapNode from '../namespaces/gaapnode';
 import DeiNode from '../namespaces/deinode';
@@ -50,7 +50,7 @@ namespace StatementHelpers {
 
             let elements = xbrl.GaapParser.Select(node.element.name);
             for (let element of elements) {
-                gaaps.push(new GaapNode(element));
+                gaaps.push(new GaapNode(element, xbrl.ContextNodes));
             }
 
             values.push(new StatementGaapNode(node, gaaps));
@@ -66,7 +66,7 @@ namespace StatementHelpers {
 
             let elements = xbrl.DeiParser.Select(node.element.name);
             for (let element of elements) {
-                deis.push(new DeiNode(element));
+                deis.push(new DeiNode(element, xbrl.ContextNodes));
             }
 
             values.push(new StatementDeiNode(node, deis));

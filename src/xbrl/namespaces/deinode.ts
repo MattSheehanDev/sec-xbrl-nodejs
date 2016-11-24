@@ -1,3 +1,4 @@
+import ContextNode from '../instance/contextnode';
 
 export default class DeiNode {
 
@@ -9,57 +10,71 @@ export default class DeiNode {
 
     public readonly year: number;
     public readonly quarter: number;
-
     public readonly member: boolean;
 
 
-    constructor(element: Element) {
-        this.value = element.firstChild.nodeValue;// (<any>element.firstChild).data;
+    constructor(element: Element, contextNodes: Map<string, ContextNode>) {
+        this.value = element.firstChild.nodeValue;
 
         this.contextRef = element.getAttributeNS(null, 'contextRef');
         this.id = element.getAttributeNS(null, 'id');
 
-        if (element.localName === 'EntityCentralIndexKey') {
-            let s = this.id;
-        }
 
         this.year = null;
         this.quarter = null;
-
-        if (this.contextRef) {
-            let match: RegExpMatchArray;
-
-            // check if this is a root context or one of the 'axis' ones
-            let parts = this.contextRef.split('_');
-            let context = parts[0];
-            let axis = parts[1];
-
-            this.member = parts[1] ? true : false;
+        this.member = true;
 
 
-            // ex. cvs 2015,2014
-            if (match = context.match(/^(?:FD|FI)(\d{4})Q(\d{1})(YTD)?$/i)) {
-                this.year = parseInt(match[1]);
-                this.quarter = parseInt(match[2]);
+        if (this.contextRef && contextNodes.has(this.contextRef)) {
+            let contextNode = contextNodes.get(this.contextRef);
+            
+            // take the instant or the end date
+            if (contextNode.period.type === 'instant') {
+                this.year = contextNode.period.instant.getFullYear();
+                // TODO: figure out the quarter?
             }
-            // ex. cvs 2013
-            else if (match = context.match(/^(?:D|I)(\d{4})Q(\d{1})(YTD)?$/i)) {
-                this.year = parseInt(match[1]);
-                this.quarter = parseInt(match[2]);
+            else {
+                this.year = contextNode.period.end.getFullYear();
             }
-            else if (match = context.match(/^(?:D|I)(\d{4})Q(\d{1})(.*)?$/i)) {
-                this.year = parseInt(match[1]);
-                this.quarter = parseInt(match[2]);
-            }
-            else if (match = context.match(/^d(\d{4})$/i)) {
-                this.year = parseInt(match[1]);
-                // quarter??
-            }
-            else if (match = context.match(/^d(\d{4})q(\d{1})(ytd)?$/i)) {
-                this.year = parseInt(match[1]);
-                this.quarter = parseInt(match[2]);
-            }
+
+
+            this.member = contextNode.segment;            
         }
+
+        // if (this.contextRef) {
+        //     let match: RegExpMatchArray;
+
+        //     // check if this is a root context or one of the 'axis' ones
+        //     let parts = this.contextRef.split('_');
+        //     let context = parts[0];
+        //     let axis = parts[1];
+
+        //     this.member = parts[1] ? true : false;
+
+
+        //     // ex. cvs 2015,2014
+        //     if (match = context.match(/^(?:FD|FI)(\d{4})Q(\d{1})(YTD)?$/i)) {
+        //         this.year = parseInt(match[1]);
+        //         this.quarter = parseInt(match[2]);
+        //     }
+        //     // ex. cvs 2013
+        //     else if (match = context.match(/^(?:D|I)(\d{4})Q(\d{1})(YTD)?$/i)) {
+        //         this.year = parseInt(match[1]);
+        //         this.quarter = parseInt(match[2]);
+        //     }
+        //     else if (match = context.match(/^(?:D|I)(\d{4})Q(\d{1})(.*)?$/i)) {
+        //         this.year = parseInt(match[1]);
+        //         this.quarter = parseInt(match[2]);
+        //     }
+        //     else if (match = context.match(/^d(\d{4})$/i)) {
+        //         this.year = parseInt(match[1]);
+        //         // quarter??
+        //     }
+        //     else if (match = context.match(/^d(\d{4})q(\d{1})(ytd)?$/i)) {
+        //         this.year = parseInt(match[1]);
+        //         this.quarter = parseInt(match[2]);
+        //     }
+        // }
     }
 
 }

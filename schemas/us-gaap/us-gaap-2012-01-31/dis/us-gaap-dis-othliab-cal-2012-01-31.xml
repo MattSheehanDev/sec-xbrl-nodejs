@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2012.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/OtherLiabilities' xlink:href='../elts/us-roles-2012-01-31.xsd#othliab' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/disclosure/OtherLiabilities' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CustomerAdvancesAndDepositsCurrent' xlink:label='loc_CustomerAdvancesAndDepositsCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CustomerAdvancesCurrent' xlink:label='loc_CustomerAdvancesCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CustomerDepositsCurrent' xlink:label='loc_CustomerDepositsCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DeferredRevenueAndCredits' xlink:label='loc_DeferredRevenueAndCredits' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DeferredRevenue' xlink:label='loc_DeferredRevenue' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DeferredRevenueLeasesNet' xlink:label='loc_DeferredRevenueLeasesNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DeferredGainOnSaleOfProperty' xlink:label='loc_DeferredGainOnSaleOfProperty' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DeferredRentCredit' xlink:label='loc_DeferredRentCredit' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_IncentiveFromLessor' xlink:label='loc_IncentiveFromLessor' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AdvanceRent' xlink:label='loc_AdvanceRent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DeferredLeasingCommissions' xlink:label='loc_DeferredLeasingCommissions' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DeferredLongTermLiabilityCharges' xlink:label='loc_DeferredLongTermLiabilityCharges' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OtherLiabilities' xlink:label='loc_OtherLiabilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OtherLiabilitiesCurrent' xlink:label='loc_OtherLiabilitiesCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OtherLiabilitiesNoncurrent' xlink:label='loc_OtherLiabilitiesNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OtherSundryLiabilities' xlink:label='loc_OtherSundryLiabilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OtherSundryLiabilitiesCurrent' xlink:label='loc_OtherSundryLiabilitiesCurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OtherSundryLiabilitiesNoncurrent' xlink:label='loc_OtherSundryLiabilitiesNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_PensionAndOtherPostretirementAndPostemploymentBenefitPlansLiabilitiesCurrentAndNoncurrent' xlink:label='loc_PensionAndOtherPostretirementAndPostemploymentBenefitPlansLiabilitiesCurrentAndNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DefinedBenefitPensionPlanCurrentAndNoncurrentLiabilities' xlink:label='loc_DefinedBenefitPensionPlanCurrentAndNoncurrentLiabilities' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OtherPostretirementDefinedBenefitPlanLiabilitiesCurrentAndNoncurrent' xlink:label='loc_OtherPostretirementDefinedBenefitPlanLiabilitiesCurrentAndNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OtherPostretirementBenefitsPayableCurrentAndNoncurrent' xlink:label='loc_OtherPostretirementBenefitsPayableCurrentAndNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_PostemploymentBenefitsLiabilityCurrentAndNoncurrent' xlink:label='loc_PostemploymentBenefitsLiabilityCurrentAndNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_PensionAndOtherPostretirementAndPostemploymentBenefitPlansLiabilitiesNoncurrent' xlink:label='loc_PensionAndOtherPostretirementAndPostemploymentBenefitPlansLiabilitiesNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DefinedBenefitPensionPlanLiabilitiesNoncurrent' xlink:label='loc_DefinedBenefitPensionPlanLiabilitiesNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OtherPostretirementDefinedBenefitPlanLiabilitiesNoncurrent' xlink:label='loc_OtherPostretirementDefinedBenefitPlanLiabilitiesNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OtherPostretirementBenefitsPayableNoncurrent' xlink:label='loc_OtherPostretirementBenefitsPayableNoncurrent' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_PostemploymentBenefitsLiabilityNoncurrent' xlink:label='loc_PostemploymentBenefitsLiabilityNoncurrent' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CustomerAdvancesAndDepositsCurrent' xlink:to='loc_CustomerAdvancesCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_CustomerAdvancesAndDepositsCurrent' xlink:to='loc_CustomerDepositsCurrent' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeferredRevenueAndCredits' xlink:to='loc_DeferredRevenue' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeferredRevenueAndCredits' xlink:to='loc_DeferredRevenueLeasesNet' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeferredRevenueAndCredits' xlink:to='loc_DeferredGainOnSaleOfProperty' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeferredRevenueAndCredits' xlink:to='loc_DeferredRentCredit' xlink:type='arc' />
+<link:calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeferredRevenueAndCredits' xlink:to='loc_IncentiveFromLessor' xlink:type='arc' />
+<link:calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeferredRevenueAndCredits' xlink:to='loc_AdvanceRent' xlink:type='arc' />
+<link:calculationArc order='70' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeferredRevenueAndCredits' xlink:to='loc_DeferredLeasingCommissions' xlink:type='arc' />
+<link:calculationArc order='80' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DeferredRevenueAndCredits' xlink:to='loc_DeferredLongTermLiabilityCharges' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherLiabilities' xlink:to='loc_OtherLiabilitiesCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherLiabilities' xlink:to='loc_OtherLiabilitiesNoncurrent' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherSundryLiabilities' xlink:to='loc_OtherSundryLiabilitiesCurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherSundryLiabilities' xlink:to='loc_OtherSundryLiabilitiesNoncurrent' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PensionAndOtherPostretirementAndPostemploymentBenefitPlansLiabilitiesCurrentAndNoncurrent' xlink:to='loc_DefinedBenefitPensionPlanCurrentAndNoncurrentLiabilities' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PensionAndOtherPostretirementAndPostemploymentBenefitPlansLiabilitiesCurrentAndNoncurrent' xlink:to='loc_OtherPostretirementDefinedBenefitPlanLiabilitiesCurrentAndNoncurrent' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PensionAndOtherPostretirementAndPostemploymentBenefitPlansLiabilitiesCurrentAndNoncurrent' xlink:to='loc_OtherPostretirementBenefitsPayableCurrentAndNoncurrent' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PensionAndOtherPostretirementAndPostemploymentBenefitPlansLiabilitiesCurrentAndNoncurrent' xlink:to='loc_PostemploymentBenefitsLiabilityCurrentAndNoncurrent' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PensionAndOtherPostretirementAndPostemploymentBenefitPlansLiabilitiesNoncurrent' xlink:to='loc_DefinedBenefitPensionPlanLiabilitiesNoncurrent' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PensionAndOtherPostretirementAndPostemploymentBenefitPlansLiabilitiesNoncurrent' xlink:to='loc_OtherPostretirementDefinedBenefitPlanLiabilitiesNoncurrent' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PensionAndOtherPostretirementAndPostemploymentBenefitPlansLiabilitiesNoncurrent' xlink:to='loc_OtherPostretirementBenefitsPayableNoncurrent' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_PensionAndOtherPostretirementAndPostemploymentBenefitPlansLiabilitiesNoncurrent' xlink:to='loc_PostemploymentBenefitsLiabilityNoncurrent' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2012.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/InventoryClassificationByIndustryAlternative' xlink:href='../elts/us-roles-2012-01-31.xsd#inv2' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/disclosure/InventoryClassificationByIndustryAlternative' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InventoryNet' xlink:label='loc_InventoryNet' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InventoryGross' xlink:label='loc_InventoryGross' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AirlineRelatedInventory' xlink:label='loc_AirlineRelatedInventory' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AirlineRelatedInventoryAircraftFuel' xlink:label='loc_AirlineRelatedInventoryAircraftFuel' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AirlineRelatedInventoryAircraftParts' xlink:label='loc_AirlineRelatedInventoryAircraftParts' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_RetailRelatedInventory' xlink:label='loc_RetailRelatedInventory' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_RetailRelatedInventoryMerchandise' xlink:label='loc_RetailRelatedInventoryMerchandise' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_RetailRelatedInventoryPackagingAndOtherSupplies' xlink:label='loc_RetailRelatedInventoryPackagingAndOtherSupplies' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_EnergyRelatedInventory' xlink:label='loc_EnergyRelatedInventory' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_EnergyRelatedInventoryPetroleum' xlink:label='loc_EnergyRelatedInventoryPetroleum' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_EnergyRelatedInventoryNaturalGasLiquids' xlink:label='loc_EnergyRelatedInventoryNaturalGasLiquids' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_EnergyRelatedInventoryNaturalGasInStorage' xlink:label='loc_EnergyRelatedInventoryNaturalGasInStorage' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_EnergyRelatedInventoryGasStoredUnderground' xlink:label='loc_EnergyRelatedInventoryGasStoredUnderground' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_EnergyRelatedInventoryPropaneGas' xlink:label='loc_EnergyRelatedInventoryPropaneGas' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_EnergyRelatedInventoryCoal' xlink:label='loc_EnergyRelatedInventoryCoal' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_EnergyRelatedInventoryChemicals' xlink:label='loc_EnergyRelatedInventoryChemicals' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_EnergyRelatedInventoryOtherFossilFuel' xlink:label='loc_EnergyRelatedInventoryOtherFossilFuel' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_CrudeOilAndNaturalGasLiquids' xlink:label='loc_CrudeOilAndNaturalGasLiquids' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InventoryCrudeOilProductsAndMerchandise' xlink:label='loc_InventoryCrudeOilProductsAndMerchandise' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AgriculturalRelatedInventory' xlink:label='loc_AgriculturalRelatedInventory' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AgriculturalRelatedInventoryPlantMaterial' xlink:label='loc_AgriculturalRelatedInventoryPlantMaterial' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AgriculturalRelatedInventoryGrowingCrops' xlink:label='loc_AgriculturalRelatedInventoryGrowingCrops' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_AgriculturalRelatedInventoryFeedAndSupplies' xlink:label='loc_AgriculturalRelatedInventoryFeedAndSupplies' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InventoryAdjustments' xlink:label='loc_InventoryAdjustments' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InventoryValuationReserves' xlink:label='loc_InventoryValuationReserves' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InventoryLIFOReserve' xlink:label='loc_InventoryLIFOReserve' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryNet' xlink:to='loc_InventoryGross' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryGross' xlink:to='loc_AirlineRelatedInventory' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AirlineRelatedInventory' xlink:to='loc_AirlineRelatedInventoryAircraftFuel' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AirlineRelatedInventory' xlink:to='loc_AirlineRelatedInventoryAircraftParts' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryGross' xlink:to='loc_RetailRelatedInventory' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RetailRelatedInventory' xlink:to='loc_RetailRelatedInventoryMerchandise' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_RetailRelatedInventory' xlink:to='loc_RetailRelatedInventoryPackagingAndOtherSupplies' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryGross' xlink:to='loc_EnergyRelatedInventory' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EnergyRelatedInventory' xlink:to='loc_EnergyRelatedInventoryPetroleum' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EnergyRelatedInventory' xlink:to='loc_EnergyRelatedInventoryNaturalGasLiquids' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EnergyRelatedInventory' xlink:to='loc_EnergyRelatedInventoryNaturalGasInStorage' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EnergyRelatedInventory' xlink:to='loc_EnergyRelatedInventoryGasStoredUnderground' xlink:type='arc' />
+<link:calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EnergyRelatedInventory' xlink:to='loc_EnergyRelatedInventoryPropaneGas' xlink:type='arc' />
+<link:calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EnergyRelatedInventory' xlink:to='loc_EnergyRelatedInventoryCoal' xlink:type='arc' />
+<link:calculationArc order='70' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EnergyRelatedInventory' xlink:to='loc_EnergyRelatedInventoryChemicals' xlink:type='arc' />
+<link:calculationArc order='80' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EnergyRelatedInventory' xlink:to='loc_EnergyRelatedInventoryOtherFossilFuel' xlink:type='arc' />
+<link:calculationArc order='90' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EnergyRelatedInventory' xlink:to='loc_CrudeOilAndNaturalGasLiquids' xlink:type='arc' />
+<link:calculationArc order='100' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_EnergyRelatedInventory' xlink:to='loc_InventoryCrudeOilProductsAndMerchandise' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryGross' xlink:to='loc_AgriculturalRelatedInventory' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AgriculturalRelatedInventory' xlink:to='loc_AgriculturalRelatedInventoryPlantMaterial' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AgriculturalRelatedInventory' xlink:to='loc_AgriculturalRelatedInventoryGrowingCrops' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_AgriculturalRelatedInventory' xlink:to='loc_AgriculturalRelatedInventoryFeedAndSupplies' xlink:type='arc' />
+<link:calculationArc order='20' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryNet' xlink:to='loc_InventoryAdjustments' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryAdjustments' xlink:to='loc_InventoryValuationReserves' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InventoryAdjustments' xlink:to='loc_InventoryLIFOReserve' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

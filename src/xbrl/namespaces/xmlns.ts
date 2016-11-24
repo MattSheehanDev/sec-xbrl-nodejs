@@ -2,6 +2,7 @@
 import xpath = require('xpath');
 
 
+// TODO: this isn't really going to always work since namespace uri's change...
 export const SelectNS = xpath.useNamespaces({
     country: 'http://xbrl.sec.gov/country/2013-01-31',
     currency: 'http://xbrl.sec.gov/currency/2012-01-31',
@@ -16,7 +17,7 @@ export const SelectNS = xpath.useNamespaces({
     ref: 'http://www.xbrl.org/2006/ref',
     sic: 'http://xbrl.sec.gov/sic/2011-01-31',
     stpr: 'http://xbrl.sec.gov/stpr/2011-01-31',
-    usgaap: 'http://fasb.org/us-gaap/2013-01-31',
+    'us-gaap': 'http://fasb.org/us-gaap/2013-01-31',
     usroles: 'http://fasb.org/us-roles/2013-01-31',
     ustypes: 'http://fasb.org/us-types/2013-01-31',
     utreg: 'http://www.xbrl.org/2009/utr',

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2012.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/disclosure/OtherExpenses' xlink:href='../elts/us-roles-2012-01-31.xsd#otherexp' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/disclosure/OtherExpenses' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InterestAndOtherIncome' xlink:label='loc_InterestAndOtherIncome' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InterestIncomeSecuritiesMortgageBacked' xlink:label='loc_InterestIncomeSecuritiesMortgageBacked' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InterestIncomeSecuritiesStateAndMunicipal' xlink:label='loc_InterestIncomeSecuritiesStateAndMunicipal' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InterestIncomeSecuritiesUSTreasury' xlink:label='loc_InterestIncomeSecuritiesUSTreasury' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InterestIncomeSecuritiesOtherUSGovernment' xlink:label='loc_InterestIncomeSecuritiesOtherUSGovernment' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InterestIncomeMoneyMarketDeposits' xlink:label='loc_InterestIncomeMoneyMarketDeposits' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InterestIncomeOtherDomesticDeposits' xlink:label='loc_InterestIncomeOtherDomesticDeposits' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_InterestIncomeForeignDeposits' xlink:label='loc_InterestIncomeForeignDeposits' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OtherIncome' xlink:label='loc_OtherIncome' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OtherOperatingIncome' xlink:label='loc_OtherOperatingIncome' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OtherNonoperatingIncome' xlink:label='loc_OtherNonoperatingIncome' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OtherNonoperatingIncomeExpense' xlink:label='loc_OtherNonoperatingIncomeExpense' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_OtherNonoperatingExpense' xlink:label='loc_OtherNonoperatingExpense' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndOtherIncome' xlink:to='loc_InterestIncomeSecuritiesMortgageBacked' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndOtherIncome' xlink:to='loc_InterestIncomeSecuritiesStateAndMunicipal' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndOtherIncome' xlink:to='loc_InterestIncomeSecuritiesUSTreasury' xlink:type='arc' />
+<link:calculationArc order='40' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndOtherIncome' xlink:to='loc_InterestIncomeSecuritiesOtherUSGovernment' xlink:type='arc' />
+<link:calculationArc order='50' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndOtherIncome' xlink:to='loc_InterestIncomeMoneyMarketDeposits' xlink:type='arc' />
+<link:calculationArc order='60' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndOtherIncome' xlink:to='loc_InterestIncomeOtherDomesticDeposits' xlink:type='arc' />
+<link:calculationArc order='70' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_InterestAndOtherIncome' xlink:to='loc_InterestIncomeForeignDeposits' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherIncome' xlink:to='loc_OtherOperatingIncome' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherIncome' xlink:to='loc_OtherNonoperatingIncome' xlink:type='arc' />
+<link:calculationArc order='10' use='optional' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherNonoperatingIncomeExpense' xlink:to='loc_OtherNonoperatingIncome' xlink:type='arc' />
+<link:calculationArc order='20' use='optional' weight='-1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_OtherNonoperatingIncomeExpense' xlink:to='loc_OtherNonoperatingExpense' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>

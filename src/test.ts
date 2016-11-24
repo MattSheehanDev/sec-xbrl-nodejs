@@ -9,7 +9,7 @@ import Scraper from './utilities/scraper';
 import { SECFiling, SECDocument } from './models/secmodels';
 
 import XBRLLoader from './xbrl/loader';
-import XBRL from './xbrl/xbrl';
+import XBRL from './xbrl/instance/xbrl';
 
 
 namespace Test {

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2012.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<xs:schema attributeFormDefault='unqualified' elementFormDefault='qualified' targetNamespace='http://fasb.org/legacy-part/2012-01-31' xmlns:legacy-part='http://fasb.org/legacy-part/2012-01-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<xs:import namespace='http://www.xbrl.org/2003/linkbase' schemaLocation='http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd' />
+<xs:element id='legacy-part_LegacyDoc' name='LegacyDoc' substitutionGroup='link:part' type='xs:string' />
+</xs:schema>

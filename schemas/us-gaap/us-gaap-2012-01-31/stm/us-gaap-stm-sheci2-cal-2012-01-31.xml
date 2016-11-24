@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+(c) XBRL US, Inc. 2007-2010; Financial Accounting Foundation, Inc. 2010-2012.  All Rights Reserved.
+Notice: Authorized Uses are Set Forth at http://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:roleRef roleURI='http://fasb.org/us-gaap/role/statement/StatementOfShareholdersEquityAndOtherComprehensiveIncomeCalc2' xlink:href='../elts/us-roles-2012-01-31.xsd#sheci2' xlink:type='simple' />
+<link:calculationLink xlink:role='http://fasb.org/us-gaap/role/statement/StatementOfShareholdersEquityAndOtherComprehensiveIncomeCalc2' xlink:type='extended'>
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_Dividends' xlink:label='loc_Dividends' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DividendsCash' xlink:label='loc_DividendsCash' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DividendsCommonStockCash' xlink:label='loc_DividendsCommonStockCash' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DividendsPreferredStockCash' xlink:label='loc_DividendsPreferredStockCash' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DividendsShareBasedCompensationCash' xlink:label='loc_DividendsShareBasedCompensationCash' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DividendsPaidinkind' xlink:label='loc_DividendsPaidinkind' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DividendsCommonStockPaidinkind' xlink:label='loc_DividendsCommonStockPaidinkind' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DividendsPreferredStockPaidinkind' xlink:label='loc_DividendsPreferredStockPaidinkind' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DividendsSharebasedCompensationPaidInKind' xlink:label='loc_DividendsSharebasedCompensationPaidInKind' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DividendsStock' xlink:label='loc_DividendsStock' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DividendsCommonStockStock' xlink:label='loc_DividendsCommonStockStock' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DividendsPreferredStockStock' xlink:label='loc_DividendsPreferredStockStock' xlink:type='locator' />
+<link:loc xlink:href='../elts/us-gaap-2012-01-31.xsd#us-gaap_DividendsSharebasedCompensationStock' xlink:label='loc_DividendsSharebasedCompensationStock' xlink:type='locator' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_Dividends' xlink:to='loc_DividendsCash' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DividendsCash' xlink:to='loc_DividendsCommonStockCash' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DividendsCash' xlink:to='loc_DividendsPreferredStockCash' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DividendsCash' xlink:to='loc_DividendsShareBasedCompensationCash' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_Dividends' xlink:to='loc_DividendsPaidinkind' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DividendsPaidinkind' xlink:to='loc_DividendsCommonStockPaidinkind' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DividendsPaidinkind' xlink:to='loc_DividendsPreferredStockPaidinkind' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DividendsPaidinkind' xlink:to='loc_DividendsSharebasedCompensationPaidInKind' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_Dividends' xlink:to='loc_DividendsStock' xlink:type='arc' />
+<link:calculationArc order='10' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DividendsStock' xlink:to='loc_DividendsCommonStockStock' xlink:type='arc' />
+<link:calculationArc order='20' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DividendsStock' xlink:to='loc_DividendsPreferredStockStock' xlink:type='arc' />
+<link:calculationArc order='30' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='loc_DividendsStock' xlink:to='loc_DividendsSharebasedCompensationStock' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>
