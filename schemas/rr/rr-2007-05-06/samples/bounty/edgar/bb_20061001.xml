@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:b="http://bounty.com/rr/2006" xmlns:ref="http://www.xbrl.org/2004/ref" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:obj="http://ici.org/rr/obj/2006" xmlns:rsk="http://ici.org/rr/rsk/2006" xmlns:ici-rr="http://ici.org/rr/2006" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:str="http://ici.org/rr/str/2006" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<link:schemaRef xlink:type="simple" xlink:href="b.xsd"/>
+	<link:schemaRef xlink:type="simple" xlink:href="rsk.xsd"/>
+	<link:schemaRef xlink:type="simple" xlink:href="obj.xsd"/>
+	<link:schemaRef xlink:type="simple" xlink:href="str.xsd"/>
+	<xbrli:context id="R732826_S000006340">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:S000006340</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000011370">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000011370</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000011371">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000011371</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000011372">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000011372</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000011373">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000011373</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_S000448012">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:S000448012</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000033802">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000033802</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000033803">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000033803</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000033804">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000033804</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000033805">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000033805</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_S000006440">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:S000006440</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000011374">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000011374</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000011375">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000011375</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000011376">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000011376</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000011377">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000011377</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_S000005840">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:S000005840</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000011350">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000011350</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000011351">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000011351</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000011352">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000011352</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_C000011353">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">b:C000011353</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="R732826_Registrant">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.sec.gov/CIK">0000732826</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:explicitMember dimension="ici-rr:RegistrantDimension">ici-rr:Registrant_item</xbrldi:explicitMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2006-10-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:unit id="usd">
+		<xbrli:measure>iso4217:USD</xbrli:measure>
+	</xbrli:unit>
+	<xbrli:unit id="ratio">
+		<xbrli:measure>ici-rr:pure</xbrli:measure>
+	</xbrli:unit>
+	<ici-rr:Prospectus>
+		<ici-rr:RiskReturn>
+			<ici-rr:IntroductionHeading>
+				<ici-rr:Heading contextRef="R732826_S000005840">BOUNTY INDEX FUND</ici-rr:Heading>
+			</ici-rr:IntroductionHeading>
+			<ici-rr:IntroductionParagraph>
+				<ici-rr:Paragraph contextRef="R732826_S000005840">Indexing is an investment strategy for tracking the performance of a specified market benchmark, or "index." An index is an unmanaged group of securities whose overall performance is used as a standard to measure the investment performance of a particular market. There are many types of indexes. Some represent entire markets--such as the U.S. stock market or the U.S. bond market. Other indexes cover market segments--such as small-capitalization stocks or short-term bonds. An index fund holds all, or a representative sample, of the securities that make up its target index. Index funds attempt to mirror what the target index does, for better or worse. However, an index fund does not always perform exactly like its target index. For example, like all mutual funds, index funds have operating expenses and transaction costs. Market indexes do not and therefore will usually have a slight performance advantage over funds that track them. Index funds typically have the following characteristics: </ici-rr:Paragraph>
+				<ici-rr:IntroductionSubparagraph>
+					<ici-rr:Paragraph contextRef="R732826_S000005840">Variety of investments. Most Bounty index funds generally invest in securities of a wide variety of companies and industries. </ici-rr:Paragraph>
+				</ici-rr:IntroductionSubparagraph>
+				<ici-rr:IntroductionSubparagraph>
+					<ici-rr:Paragraph contextRef="R732826_S000005840"> Relative performance consistency. Because they seek to track market benchmarks, index funds usually do not perform dramatically better or worse than their benchmarks. </ici-rr:Paragraph>
+				</ici-rr:IntroductionSubparagraph>
+				<ici-rr:IntroductionSubparagraph>
+					<ici-rr:Paragraph contextRef="R732826_S000005840">Low cost. Index funds are inexpensive to run, compared with actively managed funds. They have low or no research costs and typically keep trading activity--and thus brokerage commissions and other transaction costs--to a minimum. </ici-rr:Paragraph>
+				</ici-rr:IntroductionSubparagraph>
+			</ici-rr:IntroductionParagraph>
+			<ici-rr:ObjectiveSection>
+				<ici-rr:ObjectiveHeading>
+					<ici-rr:Heading contextRef="R732826_S000005840">INVESTMENT OBJECTIVE </ici-rr:Heading>
+				</ici-rr:ObjectiveHeading>
+				<ici-rr:ObjectiveNarrativeParagraph>
+					<ici-rr:Paragraph contextRef="R732826_S000005840">With 60% of its assets, the Fund seeks to track the investment performance of a benchmark index that measures the investment return of the overall U.S. stock market. With 40% of its assets, the Fund seeks to track the investment performance of a broad, market-weighted bond index.</ici-rr:Paragraph>
+					<ici-rr:ObjectivePrimary>
+						<obj:ObjectiveMatchEquityBenchmark xsi:nil="true" contextRef="R732826_S000005840"/>
+					</ici-rr:ObjectivePrimary>
+					<ici-rr:ObjectiveSecondary>
+						<obj:ObjectiveMatchFixedIncomeBenchmark xsi:nil="true" contextRef="R732826_S000005840"/>
+					</ici-rr:ObjectiveSecondary>
+				</ici-rr:ObjectiveNarrativeParagraph>
+			</ici-rr:ObjectiveSection>
+			<ici-rr:StrategySection>
+				<ici-rr:StrategyHeading>
+					<ici-rr:Heading contextRef="R732826_S000005840">PRIMARY INVESTMENT STRATEGIES </ici-rr:Heading>
+				</ici-rr:StrategyHeading>
+				<ici-rr:StrategyNarrativeParagraph>
+					<ici-rr:Paragraph contextRef="R732826_S000005840">The Fund employs a "passive management"--or indexing--investment approach designed to track the performance of two benchmark indexes. The Fund invests by sampling its target indexes, meaning that it holds a range of securities that, in the aggregate, approximate the full indexes in terms of key characteristics. With 60% of its assets, the Fund seeks to track the investment performance of the Morgan Stanley Capital International/(R)/ (MSCI/(R)/) US Broad Market Index, which represents 99.5% or more of the total market capitalization of all the U.S. common stocks regularly traded on the New York and American Stock Exchanges and the Nasdaq over-the-counter market. The Fund typically holds the largest 1,200-1,300 stocks in the MSCI US Broad Market Index and a representative sample of the remainder of the Index. With 40% of its assets, the Fund seeks to track the investment performance of the Lehman Brothers Aggregate Bond Index, which measures a wide spectrum of public, investment-grade, taxable, fixed income securities in the United States--including government, corporate, and international dollar-denominated bonds, as well as mortgage-backed and asset-backed securities, all with maturities of more than 1 year. At least 80% of the bond portion of the Fund is invested in bonds held in the Lehman Brothers Aggregate Bond Index, and all of the Fund's bond holdings are selected through the sampling process. The bond portion of the Fund maintains a dollar-weighted average maturity consistent with that of the Index, which ranges between 5 and 10 years. For additional information on the Fund's investment strategies, see MORE ON THE FUND. </ici-rr:Paragraph>
+					<str:StrategyRebalancingToTargetAllocations xsi:nil="true" contextRef="R732826_S000005840"/>
+					<str:StrategyAnyIssuerOfFixedIncomeSecurities xsi:nil="true" contextRef="R732826_S000005840"/>
+					<str:StrategyEquitySecurities xsi:nil="true" contextRef="R732826_S000005840"/>
+					<str:StrategyAnyTypeOfFixedIncomeSecurities xsi:nil="true" contextRef="R732826_S000005840"/>
+					<str:StrategyDiversified xsi:nil="true" contextRef="R732826_S000005840"/>
+				</ici-rr:StrategyNarrativeParagraph>
+			</ici-rr:StrategySection>
+			<ici-rr:RiskSection>
+				<ici-rr:RiskHeading>
+					<ici-rr:Heading contextRef="R732826_S000005840">PRIMARY RISKS </ici-rr:Heading>
+				</ici-rr:RiskHeading>
+				<ici-rr:RiskNarrativeParagraph>
+					<ici-rr:Paragraph contextRef="R732826_S000005840">The Fund is subject to several stock and bond market risks, any of which could cause an investor to lose money. However, because stock and bond prices can move in different directions or to different degrees, the Fund's bond and short-term investment holdings may counteract some of the volatility experienced by the Fund's stock holdings. </ici-rr:Paragraph>
+					<ici-rr:RiskLoseMoney xsi:nil="true" contextRef="R732826_S000005840"/>
+					<rsk:RiskMarket xsi:nil="true" contextRef="R732826_S000005840"/>
+					<ici-rr:RiskNarrativeSubparagraph>
+						<ici-rr:Paragraph contextRef="R732826_S000005840">With 60% of its assets allocated to stocks, the Fund is subject to stock market risk, which is the chance that stock prices overall will decline. Stock markets tend to move in cycles, with periods of rising prices and periods of falling prices. </ici-rr:Paragraph>
+						<rsk:RiskMarket xsi:nil="true" contextRef="R732826_S000005840"/>
+					</ici-rr:RiskNarrativeSubparagraph>
+					<ici-rr:RiskNarrativeSubparagraph>
+						<ici-rr:Paragraph contextRef="R732826_S000005840">With 40% of its assets allocated to bonds, the Fund is subject to bond risks, including: interest rate risk, which is the chance that bond prices overall will decline because of rising interest rates; income risk, which is the chance that the Fund's income will decline because of falling interest rates; call risk, which is the chance that during periods of falling interest rates, issuers of callable bonds may call--or repay--securities with higher coupons or interest rates before their maturity dates (for mortgage-backed securities, this risk is known as prepayment risk); and credit risk, which is the chance that a bond issuer will fail to pay interest and principal in a timely manner, or that negative perceptions of the issuer's ability to make such payments will cause the price of that bond to decline. </ici-rr:Paragraph>
+						<rsk:RiskInterestRateRisk xsi:nil="true" contextRef="R732826_S000005840"/>
+						<rsk:RiskYieldFluctuation xsi:nil="true" contextRef="R732826_S000005840"/>
+						<rsk:RiskCreditRisk xsi:nil="true" contextRef="R732826_S000005840"/>
+						<rsk:RiskChangesInDebtRatingsRisk xsi:nil="true" contextRef="R732826_S000005840"/>
+						<rsk:RiskCallRisk xsi:nil="true" contextRef="R732826_S000005840"/>
+					</ici-rr:RiskNarrativeSubparagraph>
+					<ici-rr:RiskNarrativeSubparagraph>
+						<ici-rr:Paragraph contextRef="R732826_S000005840">The Fund is also subject to index sampling risk, which is the chance that the securities selected for the Fund will not provide investment performance matching that of the Indexes. </ici-rr:Paragraph>
+						<rsk:RiskIndexSampling xsi:nil="true" contextRef="R732826_S000005840"/>
+					</ici-rr:RiskNarrativeSubparagraph>
+				</ici-rr:RiskNarrativeParagraph>
+			</ici-rr:RiskSection>
+		</ici-rr:RiskReturn>
+		<ici-rr:Scope>
+			<ici-rr:FilingDate contextRef="R732826_Registrant">2006-08-17</ici-rr:FilingDate>
+			<ici-rr:AnticipatedEffectiveDate contextRef="R732826_Registrant">2006-10-01</ici-rr:AnticipatedEffectiveDate>
+		</ici-rr:Scope>
+	</ici-rr:Prospectus>
+</xbrli:xbrl>

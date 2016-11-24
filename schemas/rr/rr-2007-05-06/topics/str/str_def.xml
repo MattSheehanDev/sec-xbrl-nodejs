@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!--
+	Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+	Authorized Uses are Set Forth at http://xbrl.us/rr/pages/terms.aspx -->
+
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase">
+	<link:roleRef xmlns:xlink="http://www.w3.org/1999/xlink" roleURI="http://ici.org/dim/2006/role/hc/class" xlink:type="simple" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ClassHC"/>
+	<link:roleRef xmlns:xlink="http://www.w3.org/1999/xlink" roleURI="http://ici.org/dim/2006/role/n1a" xlink:type="simple" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#N1A"/>
+	<link:arcroleRef xmlns:xlink="http://www.w3.org/1999/xlink" arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"/>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEmergingMarkets" xlink:href="str.xsd#str_StrategyEmergingMarkets" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyEmergingMarkets" order="1.001" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEquitySecurities" xlink:href="str.xsd#str_StrategyEquitySecurities" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyEquitySecurities" order="1.002" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyOverTheCounterMarkets" xlink:href="str.xsd#str_StrategyOverTheCounterMarkets" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyOverTheCounterMarkets" order="1.003" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySingleIssuer" xlink:href="str.xsd#str_StrategySingleIssuer" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategySingleIssuer" order="1.004" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyAnyTypeOfFixedIncomeSecurities" xlink:href="str.xsd#str_StrategyAnyTypeOfFixedIncomeSecurities" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyAnyTypeOfFixedIncomeSecurities" order="1.005" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyAnyIssuerOfFixedIncomeSecurities" xlink:href="str.xsd#str_StrategyAnyIssuerOfFixedIncomeSecurities" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyAnyIssuerOfFixedIncomeSecurities" order="1.006" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyNondiversified" xlink:href="str.xsd#str_StrategyNondiversified" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyNondiversified" order="1.007" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyDiversified" xlink:href="str.xsd#str_StrategyDiversified" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyDiversified" order="1.008" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyResearchIntensive" xlink:href="str.xsd#str_StrategyResearchIntensive" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyResearchIntensive" order="1.009" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyDerivativeSecurities" xlink:href="str.xsd#str_StrategyDerivativeSecurities" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyDerivativeSecurities" order="1.01" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyShortPositions" xlink:href="str.xsd#str_StrategyShortPositions" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyShortPositions" order="1.011" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyFrequentActiveTrading" xlink:href="str.xsd#str_StrategyFrequentActiveTrading" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyFrequentActiveTrading" order="1.012" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySmallCompanies" xlink:href="str.xsd#str_StrategySmallCompanies" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategySmallCompanies" order="1.013" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyFundOfFunds" xlink:href="str.xsd#str_StrategyFundOfFunds" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyFundOfFunds" order="1.014" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyRebalancingToTargetAllocations" xlink:href="str.xsd#str_StrategyRebalancingToTargetAllocations" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyRebalancingToTargetAllocations" order="1.015" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyBalanced" xlink:href="str.xsd#str_StrategyBalanced" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyBalanced" order="1.016" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyCompaniesWithHighGrowthRelativeToIndustry" xlink:href="str.xsd#str_StrategyCompaniesWithHighGrowthRelativeToIndustry" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyCompaniesWithHighGrowthRelativeToIndustry" order="1.017" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyCompaniesWithSustainableGrowth" xlink:href="str.xsd#str_StrategyCompaniesWithSustainableGrowth" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyCompaniesWithSustainableGrowth" order="1.018" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyValuationAnalysis" xlink:href="str.xsd#str_StrategyValuationAnalysis" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyValuationAnalysis" order="1.019" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyLargeCompanies" xlink:href="str.xsd#str_StrategyLargeCompanies" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyLargeCompanies" order="1.02" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyMediumCompanies" xlink:href="str.xsd#str_StrategyMediumCompanies" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyMediumCompanies" order="1.021" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEquitiesOfCommodityRelatedCompanies" xlink:href="str.xsd#str_StrategyEquitiesOfCommodityRelatedCompanies" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategyEquitiesOfCommodityRelatedCompanies" order="1.022" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="StrategyTopicHead" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_StrategyTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySecuritiesLinkedToCommodityIndex" xlink:href="str.xsd#str_StrategySecuritiesLinkedToCommodityIndex" xlink:type="locator"/>
+		<link:definitionArc xlink:from="StrategyTopicHead" xlink:to="StrategySecuritiesLinkedToCommodityIndex" order="1.023" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+</link:linkbase>

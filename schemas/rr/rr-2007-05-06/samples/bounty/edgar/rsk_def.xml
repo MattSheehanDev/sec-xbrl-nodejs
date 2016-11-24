@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase">
+	<link:roleRef xmlns:xlink="http://www.w3.org/1999/xlink" roleURI="http://ici.org/dim/2006/role/hc/class" xlink:type="simple" xlink:href="ici-rr.xsd#ClassHC"/>
+	<link:roleRef xmlns:xlink="http://www.w3.org/1999/xlink" roleURI="http://ici.org/dim/2006/role/n1a" xlink:type="simple" xlink:href="ici-rr.xsd#N1A"/>
+	<link:arcroleRef xmlns:xlink="http://www.w3.org/1999/xlink" arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" xlink:type="simple" xlink:href="xbrldt-2005.xsd#domain-member"/>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskSharePriceWillChange" xlink:href="rsk.xsd#rsk_RiskSharePriceWillChange" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskSharePriceWillChange" order="1.601" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskAppropriateInvestorGoals" xlink:href="rsk.xsd#rsk_RiskAppropriateInvestorGoals" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskAppropriateInvestorGoals" order="1.602" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskIPO_" xlink:href="rsk.xsd#rsk_RiskIPO_" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskIPO_" order="1.603" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskMarket" xlink:href="rsk.xsd#rsk_RiskMarket" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskMarket" order="1.604" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskMarketDisruption" xlink:href="rsk.xsd#rsk_RiskMarketDisruption" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskMarketDisruption" order="1.605" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskEarlyClosing" xlink:href="rsk.xsd#rsk_RiskEarlyClosing" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskEarlyClosing" order="1.606" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskTradingHalt" xlink:href="rsk.xsd#rsk_RiskTradingHalt" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskTradingHalt" order="1.607" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskInvestmentManagement" xlink:href="rsk.xsd#rsk_RiskInvestmentManagement" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskInvestmentManagement" order="1.608" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskConflictOfInterest" xlink:href="rsk.xsd#rsk_RiskConflictOfInterest" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskConflictOfInterest" order="1.609" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskInvestmentStrategy" xlink:href="rsk.xsd#rsk_RiskInvestmentStrategy" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskInvestmentStrategy" order="1.61" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskEquityInvestments" xlink:href="rsk.xsd#rsk_RiskEquityInvestments" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskEquityInvestments" order="1.611" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskForeignSecurities" xlink:href="rsk.xsd#rsk_RiskForeignSecurities" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskForeignSecurities" order="1.612" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskEmergingMarkets" xlink:href="rsk.xsd#rsk_RiskEmergingMarkets" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskEmergingMarkets" order="1.613" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskInterestRateRisk" xlink:href="rsk.xsd#rsk_RiskInterestRateRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskInterestRateRisk" order="1.614" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskMaturityRisk" xlink:href="rsk.xsd#rsk_RiskMaturityRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskMaturityRisk" order="1.615" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskCreditRisk" xlink:href="rsk.xsd#rsk_RiskCreditRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskCreditRisk" order="1.616" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskChangesInDebtRatingsRisk" xlink:href="rsk.xsd#rsk_RiskChangesInDebtRatingsRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskChangesInDebtRatingsRisk" order="1.617" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskCallRisk" xlink:href="rsk.xsd#rsk_RiskCallRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskCallRisk" order="1.618" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskMortgageRisk" xlink:href="rsk.xsd#rsk_RiskMortgageRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskMortgageRisk" order="1.619" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskExtensionRisk" xlink:href="rsk.xsd#rsk_RiskExtensionRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskExtensionRisk" order="1.62" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskLowerRatedBonds" xlink:href="rsk.xsd#rsk_RiskLowerRatedBonds" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskLowerRatedBonds" order="1.621" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskHigherCreditRisk" xlink:href="rsk.xsd#rsk_RiskHigherCreditRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskHigherCreditRisk" order="1.622" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskHigherLiquidity" xlink:href="rsk.xsd#rsk_RiskHigherLiquidity" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskHigherLiquidity" order="1.623" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskDerivativesRisk" xlink:href="rsk.xsd#rsk_RiskDerivativesRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskDerivativesRisk" order="1.624" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskFuturesAndOptionsRisk" xlink:href="rsk.xsd#rsk_RiskFuturesAndOptionsRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskFuturesAndOptionsRisk" order="1.625" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskDerivativesHedgingRisk" xlink:href="rsk.xsd#rsk_RiskDerivativesHedgingRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskDerivativesHedgingRisk" order="1.626" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskDerivativesCorrelationRisk" xlink:href="rsk.xsd#rsk_RiskDerivativesCorrelationRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskDerivativesCorrelationRisk" order="1.627" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskDerivativesInvestmentRisk" xlink:href="rsk.xsd#rsk_RiskDerivativesInvestmentRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskDerivativesInvestmentRisk" order="1.628" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskDerivativesAvailability" xlink:href="rsk.xsd#rsk_RiskDerivativesAvailability" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskDerivativesAvailability" order="1.629" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskDerivativesCreditRisk" xlink:href="rsk.xsd#rsk_RiskDerivativesCreditRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskDerivativesCreditRisk" order="1.63" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskStructuredNotes" xlink:href="rsk.xsd#rsk_RiskStructuredNotes" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskStructuredNotes" order="1.631" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskIndexedSecurities" xlink:href="rsk.xsd#rsk_RiskIndexedSecurities" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskIndexedSecurities" order="1.632" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskIndexSampling" xlink:href="rsk.xsd#rsk_RiskIndexSampling" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskIndexSampling" order="1.633" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskLiquidity" xlink:href="rsk.xsd#rsk_RiskLiquidity" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskLiquidity" order="1.634" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskGeographicConcentration" xlink:href="rsk.xsd#rsk_RiskGeographicConcentration" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskGeographicConcentration" order="1.635" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskSingleState" xlink:href="rsk.xsd#rsk_RiskSingleState" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskSingleState" order="1.636" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskIndustryConcentration" xlink:href="rsk.xsd#rsk_RiskIndustryConcentration" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskIndustryConcentration" order="1.637" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskSectorRisk" xlink:href="rsk.xsd#rsk_RiskSectorRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskSectorRisk" order="1.638" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskShortSales" xlink:href="rsk.xsd#rsk_RiskShortSales" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskShortSales" order="1.639" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskOverTheCounter" xlink:href="rsk.xsd#rsk_RiskOverTheCounter" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskOverTheCounter" order="1.64" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskSmallAndMediumCompanies" xlink:href="rsk.xsd#rsk_RiskSmallAndMediumCompanies" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskSmallAndMediumCompanies" order="1.641" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskActiveOrFrequentTrading" xlink:href="rsk.xsd#rsk_RiskActiveOrFrequentTrading" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskActiveOrFrequentTrading" order="1.642" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskMakeMoreElsewhere" xlink:href="rsk.xsd#rsk_RiskMakeMoreElsewhere" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskMakeMoreElsewhere" order="1.643" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskReinvestment" xlink:href="rsk.xsd#rsk_RiskReinvestment" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskReinvestment" order="1.644" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskGrowthStock" xlink:href="rsk.xsd#rsk_RiskGrowthStock" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskGrowthStock" order="1.645" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskValueStyle" xlink:href="rsk.xsd#rsk_RiskValueStyle" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskValueStyle" order="1.646" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskDefault" xlink:href="rsk.xsd#rsk_RiskDefault" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskDefault" order="1.647" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskLeverage" xlink:href="rsk.xsd#rsk_RiskLeverage" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskLeverage" order="1.648" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskConvertibleSecurities" xlink:href="rsk.xsd#rsk_RiskConvertibleSecurities" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskConvertibleSecurities" order="1.649" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskRule144ASecurities" xlink:href="rsk.xsd#rsk_RiskRule144ASecurities" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskRule144ASecurities" order="1.65" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskJunkBonds" xlink:href="rsk.xsd#rsk_RiskJunkBonds" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskJunkBonds" order="1.651" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskSyntheticConvertibleSecurities" xlink:href="rsk.xsd#rsk_RiskSyntheticConvertibleSecurities" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskSyntheticConvertibleSecurities" order="1.652" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskTax" xlink:href="rsk.xsd#rsk_RiskTax" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskTax" order="1.653" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskTaxablePreferredSecurities" xlink:href="rsk.xsd#rsk_RiskTaxablePreferredSecurities" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskTaxablePreferredSecurities" order="1.654" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskPortfolioTurnover" xlink:href="rsk.xsd#rsk_RiskPortfolioTurnover" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskPortfolioTurnover" order="1.655" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskSecuritiesLending" xlink:href="rsk.xsd#rsk_RiskSecuritiesLending" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskSecuritiesLending" order="1.656" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskTechnologyRelatedCompanies" xlink:href="rsk.xsd#rsk_RiskTechnologyRelatedCompanies" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskTechnologyRelatedCompanies" order="1.657" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskCurrencyRisk" xlink:href="rsk.xsd#rsk_RiskCurrencyRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskCurrencyRisk" order="1.658" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskEurodollarRisk" xlink:href="rsk.xsd#rsk_RiskEurodollarRisk" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskEurodollarRisk" order="1.659" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskInflation" xlink:href="rsk.xsd#rsk_RiskInflation" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskInflation" order="1.66" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskMunicipalSecurities" xlink:href="rsk.xsd#rsk_RiskMunicipalSecurities" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskMunicipalSecurities" order="1.661" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskPortfolioDuration" xlink:href="rsk.xsd#rsk_RiskPortfolioDuration" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskPortfolioDuration" order="1.662" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskReorganizationOrRestructuring" xlink:href="rsk.xsd#rsk_RiskReorganizationOrRestructuring" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskReorganizationOrRestructuring" order="1.663" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskPrepaymentExtension" xlink:href="rsk.xsd#rsk_RiskPrepaymentExtension" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskPrepaymentExtension" order="1.664" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskReverseRepurchaseAgreements" xlink:href="rsk.xsd#rsk_RiskReverseRepurchaseAgreements" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskReverseRepurchaseAgreements" order="1.665" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskSegregatedAccount" xlink:href="rsk.xsd#rsk_RiskSegregatedAccount" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskSegregatedAccount" order="1.666" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskREITs_" xlink:href="rsk.xsd#rsk_RiskREITs_" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskREITs_" order="1.667" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskUS_GovernmentSponsoredEnterprises" xlink:href="rsk.xsd#rsk_RiskUS_GovernmentSponsoredEnterprises" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskUS_GovernmentSponsoredEnterprises" order="1.668" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="RiskTopicHead" xlink:href="ici-rr.xsd#ici-rr_RiskTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="RiskYieldFluctuation" xlink:href="rsk.xsd#rsk_RiskYieldFluctuation" xlink:type="locator"/>
+		<link:definitionArc xlink:from="RiskTopicHead" xlink:to="RiskYieldFluctuation" order="1.669" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+</link:linkbase>

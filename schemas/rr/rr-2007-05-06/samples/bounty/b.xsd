@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<xsd:schema xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:b="http://bounty.com/rr/2006" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:ref="http://www.xbrl.org/2004/ref" xmlns:ici-rr="http://ici.org/rr/2006" xmlns:xl="http://www.xbrl.org/2003/XLink" targetNamespace="http://bounty.com/rr/2006" elementFormDefault="qualified">
+	<xsd:annotation>
+		<xsd:appinfo>
+			<link:linkbaseRef xlink:type="simple" xlink:href="b_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:type="simple" xlink:href="b_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<xsd:import namespace="http://ici.org/rr/2006" schemaLocation="http://xbrl.ici.org/rr/2006/ici-rr.xsd"/>
+	<xsd:element name="S000006340" type="ici-rr:SeriesType" abstract="true" substitutionGroup="ici-rr:SeriesHead" nillable="true" id="b_S000006340" xbrli:periodType="instant"/>
+	<xsd:element name="C000011370" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000011370" xbrli:periodType="instant"/>
+	<xsd:element name="C000011371" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000011371" xbrli:periodType="instant"/>
+	<xsd:element name="C000011372" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000011372" xbrli:periodType="instant"/>
+	<xsd:element name="C000011373" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000011373" xbrli:periodType="instant"/>
+	<xsd:element name="S000448012" type="ici-rr:SeriesType" abstract="true" substitutionGroup="ici-rr:SeriesHead" nillable="true" id="b_S000448012" xbrli:periodType="instant"/>
+	<xsd:element name="C000033802" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000033802" xbrli:periodType="instant"/>
+	<xsd:element name="C000033803" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000033803" xbrli:periodType="instant"/>
+	<xsd:element name="C000033804" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000033804" xbrli:periodType="instant"/>
+	<xsd:element name="C000033805" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000033805" xbrli:periodType="instant"/>
+	<xsd:element name="S000006440" type="ici-rr:SeriesType" abstract="true" substitutionGroup="ici-rr:SeriesHead" nillable="true" id="b_S000006440" xbrli:periodType="instant"/>
+	<xsd:element name="C000011374" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000011374" xbrli:periodType="instant"/>
+	<xsd:element name="C000011375" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000011375" xbrli:periodType="instant"/>
+	<xsd:element name="C000011376" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000011376" xbrli:periodType="instant"/>
+	<xsd:element name="C000011377" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000011377" xbrli:periodType="instant"/>
+	<xsd:element name="S000005840" type="ici-rr:SeriesType" abstract="true" substitutionGroup="ici-rr:SeriesHead" nillable="true" id="b_S000005840" xbrli:periodType="instant"/>
+	<xsd:element name="C000011350" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000011350" xbrli:periodType="instant"/>
+	<xsd:element name="C000011351" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000011351" xbrli:periodType="instant"/>
+	<xsd:element name="C000011352" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000011352" xbrli:periodType="instant"/>
+	<xsd:element name="C000011353" type="ici-rr:ClassType" abstract="true" substitutionGroup="ici-rr:ClassHead" nillable="true" id="b_C000011353" xbrli:periodType="instant"/>
+</xsd:schema>

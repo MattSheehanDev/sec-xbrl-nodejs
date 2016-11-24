@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<link:linkbase xmlns:a="http://arctangent.com/rr/2006" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+	<link:roleRef roleURI="http://ici.org/dim/2006/role/class" xlink:type="simple" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#Class"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"/>
+	<link:definitionLink xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/class">
+		<link:loc xlink:type="locator" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_MoneyMarketFunds" xlink:label="MoneyMarketFunds"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001184" xlink:label="S000001184"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001185" xlink:label="S000001185"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001174" xlink:label="S000001174"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001175" xlink:label="S000001175"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001186" xlink:label="S000001186"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001176" xlink:label="S000001176"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001177" xlink:label="S000001177"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001187" xlink:label="S000001187"/>
+		<link:loc xlink:type="locator" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_EquityFunds" xlink:label="EquityFunds"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001180" xlink:label="S000001180"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001179" xlink:label="S000001179"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001189" xlink:label="S000001189"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001188" xlink:label="S000001188"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001196" xlink:label="S000001196"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001171" xlink:label="S000001171"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001172" xlink:label="S000001172"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001190" xlink:label="S000001190"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001191" xlink:label="S000001191"/>
+		<link:loc xlink:type="locator" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_FixedIncomeFunds" xlink:label="FixedIncomeFunds"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_Bond" xlink:label="Bond"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001183" xlink:label="S000001183"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001192" xlink:label="S000001192"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001197" xlink:label="S000001197"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001198" xlink:label="S000001198"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001199" xlink:label="S000001199"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001200" xlink:label="S000001200"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001173" xlink:label="S000001173"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001182" xlink:label="S000001182"/>
+		<link:loc xlink:type="locator" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_HybridEquityFixedFunds" xlink:label="HybridEquityFixedFunds"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001193" xlink:label="S000001193"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001194" xlink:label="S000001194"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001195" xlink:label="S000001195"/>
+		<link:loc xlink:type="locator" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_Registrant_item" xlink:label="Registrant_item"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_AssetAllocation" xlink:label="AssetAllocation"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001201" xlink:label="S000001201"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001181" xlink:label="S000001181"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001170" xlink:label="S000001170"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_ClassA_Shares" xlink:label="ClassA_Shares"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_S000001178" xlink:label="S000001178"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003199" xlink:label="C000003199"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003200" xlink:label="C000003200"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003201" xlink:label="C000003201"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003202" xlink:label="C000003202"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003150" xlink:label="C000003150"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003151" xlink:label="C000003151"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003152" xlink:label="C000003152"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003153" xlink:label="C000003153"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003155" xlink:label="C000003155"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003156" xlink:label="C000003156"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003157" xlink:label="C000003157"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003158" xlink:label="C000003158"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003159" xlink:label="C000003159"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003161" xlink:label="C000003161"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003203" xlink:label="C000003203"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003204" xlink:label="C000003204"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003205" xlink:label="C000003205"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003206" xlink:label="C000003206"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003162" xlink:label="C000003162"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003163" xlink:label="C000003163"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003164" xlink:label="C000003164"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003165" xlink:label="C000003165"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003208" xlink:label="C000003208"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003209" xlink:label="C000003209"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003178" xlink:label="C000003178"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003179" xlink:label="C000003179"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003180" xlink:label="C000003180"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003181" xlink:label="C000003181"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003183" xlink:label="C000003183"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003172" xlink:label="C000003172"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003173" xlink:label="C000003173"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003174" xlink:label="C000003174"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003175" xlink:label="C000003175"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003177" xlink:label="C000003177"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003216" xlink:label="C000003216"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003217" xlink:label="C000003217"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003218" xlink:label="C000003218"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003219" xlink:label="C000003219"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003221" xlink:label="C000003221"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003210" xlink:label="C000003210"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003211" xlink:label="C000003211"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003212" xlink:label="C000003212"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003213" xlink:label="C000003213"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003215" xlink:label="C000003215"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003245" xlink:label="C000003245"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003246" xlink:label="C000003246"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003247" xlink:label="C000003247"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003248" xlink:label="C000003248"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003250" xlink:label="C000003250"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003133" xlink:label="C000003133"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003134" xlink:label="C000003134"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003135" xlink:label="C000003135"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003136" xlink:label="C000003136"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003138" xlink:label="C000003138"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003139" xlink:label="C000003139"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003140" xlink:label="C000003140"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003141" xlink:label="C000003141"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003143" xlink:label="C000003143"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003222" xlink:label="C000003222"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003223" xlink:label="C000003223"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003224" xlink:label="C000003224"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003225" xlink:label="C000003225"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003227" xlink:label="C000003227"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003228" xlink:label="C000003228"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003229" xlink:label="C000003229"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003230" xlink:label="C000003230"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003194" xlink:label="C000003194"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003195" xlink:label="C000003195"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003196" xlink:label="C000003196"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003197" xlink:label="C000003197"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003231" xlink:label="C000003231"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003232" xlink:label="C000003232"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003251" xlink:label="C000003251"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003252" xlink:label="C000003252"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003253" xlink:label="C000003253"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003254" xlink:label="C000003254"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003256" xlink:label="C000003256"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003257" xlink:label="C000003257"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003258" xlink:label="C000003258"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003260" xlink:label="C000003260"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003261" xlink:label="C000003261"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003262" xlink:label="C000003262"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003263" xlink:label="C000003263"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003265" xlink:label="C000003265"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003266" xlink:label="C000003266"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003267" xlink:label="C000003267"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003268" xlink:label="C000003268"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003144" xlink:label="C000003144"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003145" xlink:label="C000003145"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003146" xlink:label="C000003146"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003147" xlink:label="C000003147"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003149" xlink:label="C000003149"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003189" xlink:label="C000003189"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003190" xlink:label="C000003190"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003191" xlink:label="C000003191"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003192" xlink:label="C000003192"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003233" xlink:label="C000003233"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003234" xlink:label="C000003234"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003235" xlink:label="C000003235"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003236" xlink:label="C000003236"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003237" xlink:label="C000003237"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003238" xlink:label="C000003238"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003239" xlink:label="C000003239"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003240" xlink:label="C000003240"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003241" xlink:label="C000003241"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003242" xlink:label="C000003242"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003243" xlink:label="C000003243"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003244" xlink:label="C000003244"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003270" xlink:label="C000003270"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003271" xlink:label="C000003271"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003272" xlink:label="C000003272"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003273" xlink:label="C000003273"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003184" xlink:label="C000003184"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003185" xlink:label="C000003185"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003186" xlink:label="C000003186"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003187" xlink:label="C000003187"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003128" xlink:label="C000003128"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003129" xlink:label="C000003129"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003130" xlink:label="C000003130"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003131" xlink:label="C000003131"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003167" xlink:label="C000003167"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003166" xlink:label="C000003166"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003168" xlink:label="C000003168"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003169" xlink:label="C000003169"/>
+		<link:loc xlink:type="locator" xlink:href="a.xsd#a_C000003171" xlink:label="C000003171"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="MoneyMarketFunds" xlink:to="S000001184" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001184" xlink:to="C000003199" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001184" xlink:to="C000003200" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="MoneyMarketFunds" xlink:to="S000001185" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001185" xlink:to="C000003201" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001185" xlink:to="C000003202" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="MoneyMarketFunds" xlink:to="S000001174" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001174" xlink:to="C000003150" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001174" xlink:to="C000003151" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001174" xlink:to="C000003152" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001174" xlink:to="C000003153" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001174" xlink:to="C000003155" use="optional" priority="0" order="5.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="MoneyMarketFunds" xlink:to="S000001175" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001175" xlink:to="C000003156" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001175" xlink:to="C000003157" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001175" xlink:to="C000003158" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001175" xlink:to="C000003159" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001175" xlink:to="C000003161" use="optional" priority="0" order="5.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="MoneyMarketFunds" xlink:to="S000001186" order="5.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001186" xlink:to="C000003203" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001186" xlink:to="C000003204" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001186" xlink:to="C000003205" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001186" xlink:to="C000003206" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="MoneyMarketFunds" xlink:to="S000001176" order="6.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001176" xlink:to="C000003162" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001176" xlink:to="C000003163" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="MoneyMarketFunds" xlink:to="S000001177" order="7.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001177" xlink:to="C000003164" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001177" xlink:to="C000003165" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="MoneyMarketFunds" xlink:to="S000001187" order="8.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001187" xlink:to="C000003208" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001187" xlink:to="C000003209" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="EquityFunds" xlink:to="S000001180" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001180" xlink:to="C000003178" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001180" xlink:to="C000003179" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001180" xlink:to="C000003180" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001180" xlink:to="C000003181" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001180" xlink:to="C000003183" use="optional" priority="0" order="5.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="EquityFunds" xlink:to="S000001179" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001179" xlink:to="C000003172" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001179" xlink:to="C000003173" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001179" xlink:to="C000003174" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001179" xlink:to="C000003175" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001179" xlink:to="C000003177" use="optional" priority="0" order="5.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="EquityFunds" xlink:to="S000001189" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001189" xlink:to="C000003216" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001189" xlink:to="C000003217" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001189" xlink:to="C000003218" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001189" xlink:to="C000003219" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001189" xlink:to="C000003221" use="optional" priority="0" order="5.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="EquityFunds" xlink:to="S000001188" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001188" xlink:to="C000003210" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001188" xlink:to="C000003211" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001188" xlink:to="C000003212" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001188" xlink:to="C000003213" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001188" xlink:to="C000003215" use="optional" priority="0" order="5.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="EquityFunds" xlink:to="S000001196" order="5.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001196" xlink:to="C000003245" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001196" xlink:to="C000003246" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001196" xlink:to="C000003247" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001196" xlink:to="C000003248" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001196" xlink:to="C000003250" use="optional" priority="0" order="5.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="EquityFunds" xlink:to="S000001171" order="6.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001171" xlink:to="C000003133" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001171" xlink:to="C000003134" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001171" xlink:to="C000003135" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001171" xlink:to="C000003136" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="EquityFunds" xlink:to="S000001172" order="7.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001172" xlink:to="C000003138" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001172" xlink:to="C000003139" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001172" xlink:to="C000003140" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001172" xlink:to="C000003141" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001172" xlink:to="C000003143" use="optional" priority="0" order="5.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="EquityFunds" xlink:to="S000001190" order="8.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001190" xlink:to="C000003222" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001190" xlink:to="C000003223" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001190" xlink:to="C000003224" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001190" xlink:to="C000003225" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="EquityFunds" xlink:to="S000001191" order="9.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001191" xlink:to="C000003227" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001191" xlink:to="C000003228" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001191" xlink:to="C000003229" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001191" xlink:to="C000003230" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="FixedIncomeFunds" xlink:to="Bond" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Bond" xlink:to="S000001183" use="optional" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001183" xlink:to="C000003194" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001183" xlink:to="C000003195" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001183" xlink:to="C000003196" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001183" xlink:to="C000003197" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Bond" xlink:to="S000001192" use="optional" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001192" xlink:to="C000003231" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001192" xlink:to="C000003232" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Bond" xlink:to="S000001197" use="optional" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001197" xlink:to="C000003251" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001197" xlink:to="C000003252" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001197" xlink:to="C000003253" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001197" xlink:to="C000003254" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Bond" xlink:to="S000001198" use="optional" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001198" xlink:to="C000003256" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001198" xlink:to="C000003257" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001198" xlink:to="C000003258" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Bond" xlink:to="S000001199" use="optional" order="5.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001199" xlink:to="C000003260" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001199" xlink:to="C000003261" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001199" xlink:to="C000003262" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001199" xlink:to="C000003263" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Bond" xlink:to="S000001200" use="optional" order="6.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001200" xlink:to="C000003265" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001200" xlink:to="C000003266" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001200" xlink:to="C000003267" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001200" xlink:to="C000003268" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Bond" xlink:to="S000001173" use="optional" order="7.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001173" xlink:to="C000003144" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001173" xlink:to="C000003145" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001173" xlink:to="C000003146" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001173" xlink:to="C000003147" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001173" xlink:to="C000003149" use="optional" priority="0" order="5.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Bond" xlink:to="S000001182" use="optional" order="8.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001182" xlink:to="C000003189" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001182" xlink:to="C000003190" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001182" xlink:to="C000003191" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001182" xlink:to="C000003192" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="HybridEquityFixedFunds" xlink:to="S000001193" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001193" xlink:to="C000003233" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001193" xlink:to="C000003234" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001193" xlink:to="C000003235" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001193" xlink:to="C000003236" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="HybridEquityFixedFunds" xlink:to="S000001194" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001194" xlink:to="C000003237" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001194" xlink:to="C000003238" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001194" xlink:to="C000003239" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001194" xlink:to="C000003240" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="HybridEquityFixedFunds" xlink:to="S000001195" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001195" xlink:to="C000003241" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001195" xlink:to="C000003242" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001195" xlink:to="C000003243" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001195" xlink:to="C000003244" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Registrant_item" xlink:to="AssetAllocation" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssetAllocation" xlink:to="S000001201" use="optional" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001201" xlink:to="C000003270" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001201" xlink:to="C000003271" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001201" xlink:to="C000003272" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001201" xlink:to="C000003273" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssetAllocation" xlink:to="S000001181" use="optional" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001181" xlink:to="C000003184" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001181" xlink:to="C000003185" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001181" xlink:to="C000003186" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001181" xlink:to="C000003187" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssetAllocation" xlink:to="S000001170" use="optional" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001170" xlink:to="C000003128" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001170" xlink:to="C000003129" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001170" xlink:to="C000003130" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001170" xlink:to="C000003131" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Registrant_item" xlink:to="ClassA_Shares" use="optional" priority="0" order="7.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003129" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003134" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003139" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003145" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003151" use="optional" priority="0" order="5.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003157" use="optional" priority="0" order="6.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003163" use="optional" priority="0" order="7.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003165" use="optional" priority="0" order="8.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003167" use="optional" priority="0" order="9.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003173" use="optional" priority="0" order="10.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003179" use="optional" priority="0" order="11.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003185" use="optional" priority="0" order="12.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003190" use="optional" priority="0" order="13.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003195" use="optional" priority="0" order="14.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003200" use="optional" priority="0" order="15.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003202" use="optional" priority="0" order="16.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003204" use="optional" priority="0" order="17.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003209" use="optional" priority="0" order="18.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003211" use="optional" priority="0" order="19.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003217" use="optional" priority="0" order="20.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003223" use="optional" priority="0" order="21.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003227" use="optional" priority="0" order="22.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003232" use="optional" priority="0" order="23.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003233" use="optional" priority="0" order="24.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003237" use="optional" priority="0" order="25.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003241" use="optional" priority="0" order="26.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003246" use="optional" priority="0" order="27.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003252" use="optional" priority="0" order="28.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003257" use="optional" priority="0" order="29.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003261" use="optional" priority="0" order="30.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003266" use="optional" priority="0" order="31.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ClassA_Shares" xlink:to="C000003271" use="optional" priority="0" order="32.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Registrant_item" xlink:to="S000001178" order="0.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001178" xlink:to="C000003166" use="optional" priority="0" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001178" xlink:to="C000003167" use="optional" priority="0" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001178" xlink:to="C000003168" use="optional" priority="0" order="3.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001178" xlink:to="C000003169" use="optional" priority="0" order="4.0"/>
+		<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="S000001178" xlink:to="C000003171" use="optional" priority="0" order="5.0"/>
+	</link:definitionLink>
+</link:linkbase>

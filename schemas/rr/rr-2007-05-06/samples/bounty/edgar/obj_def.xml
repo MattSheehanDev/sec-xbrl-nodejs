@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase">
+	<link:roleRef xmlns:xlink="http://www.w3.org/1999/xlink" roleURI="http://ici.org/dim/2006/role/hc/class" xlink:type="simple" xlink:href="ici-rr.xsd#ClassHC"/>
+	<link:roleRef xmlns:xlink="http://www.w3.org/1999/xlink" roleURI="http://ici.org/dim/2006/role/n1a" xlink:type="simple" xlink:href="ici-rr.xsd#N1A"/>
+	<link:arcroleRef xmlns:xlink="http://www.w3.org/1999/xlink" arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" xlink:type="simple" xlink:href="xbrldt-2005.xsd#domain-member"/>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="ObjectiveTopicHead" xlink:href="ici-rr.xsd#ici-rr_ObjectiveTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMayBeChanged" xlink:href="obj.xsd#obj_ObjectiveMayBeChanged" xlink:type="locator"/>
+		<link:definitionArc xlink:from="ObjectiveTopicHead" xlink:to="ObjectiveMayBeChanged" order="1.001" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="ObjectiveTopicHead" xlink:href="ici-rr.xsd#ici-rr_ObjectiveTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTotalReturn" xlink:href="obj.xsd#obj_ObjectiveTotalReturn" xlink:type="locator"/>
+		<link:definitionArc xlink:from="ObjectiveTopicHead" xlink:to="ObjectiveTotalReturn" order="1.002" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="ObjectiveTopicHead" xlink:href="ici-rr.xsd#ici-rr_ObjectiveTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveHighCurrentIncome" xlink:type="locator"/>
+		<link:definitionArc xlink:from="ObjectiveTopicHead" xlink:to="ObjectiveHighCurrentIncome" order="1.003" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="ObjectiveTopicHead" xlink:href="ici-rr.xsd#ici-rr_ObjectiveTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalGrowth" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalGrowth" xlink:type="locator"/>
+		<link:definitionArc xlink:from="ObjectiveTopicHead" xlink:to="ObjectiveLongTermCapitalGrowth" order="1.004" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="ObjectiveTopicHead" xlink:href="ici-rr.xsd#ici-rr_ObjectiveTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalAppreciation" xlink:type="locator"/>
+		<link:definitionArc xlink:from="ObjectiveTopicHead" xlink:to="ObjectiveLongTermCapitalAppreciation" order="1.005" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="ObjectiveTopicHead" xlink:href="ici-rr.xsd#ici-rr_ObjectiveTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectivePreservationOfCapital" xlink:href="obj.xsd#obj_ObjectivePreservationOfCapital" xlink:type="locator"/>
+		<link:definitionArc xlink:from="ObjectiveTopicHead" xlink:to="ObjectivePreservationOfCapital" order="1.006" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="ObjectiveTopicHead" xlink:href="ici-rr.xsd#ici-rr_ObjectiveTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveGrowthAndIncome" xlink:href="obj.xsd#obj_ObjectiveGrowthAndIncome" xlink:type="locator"/>
+		<link:definitionArc xlink:from="ObjectiveTopicHead" xlink:to="ObjectiveGrowthAndIncome" order="1.007" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="ObjectiveTopicHead" xlink:href="ici-rr.xsd#ici-rr_ObjectiveTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveCapitalAppreciation" xlink:type="locator"/>
+		<link:definitionArc xlink:from="ObjectiveTopicHead" xlink:to="ObjectiveCapitalAppreciation" order="1.008" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="ObjectiveTopicHead" xlink:href="ici-rr.xsd#ici-rr_ObjectiveTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchBenchmark" xlink:type="locator"/>
+		<link:definitionArc xlink:from="ObjectiveTopicHead" xlink:to="ObjectiveMatchBenchmark" order="1.009" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="ObjectiveTopicHead" xlink:href="ici-rr.xsd#ici-rr_ObjectiveTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchEquityBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchEquityBenchmark" xlink:type="locator"/>
+		<link:definitionArc xlink:from="ObjectiveTopicHead" xlink:to="ObjectiveMatchEquityBenchmark" order="1.01" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="ObjectiveTopicHead" xlink:href="ici-rr.xsd#ici-rr_ObjectiveTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchFixedIncomeBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchFixedIncomeBenchmark" xlink:type="locator"/>
+		<link:definitionArc xlink:from="ObjectiveTopicHead" xlink:to="ObjectiveMatchFixedIncomeBenchmark" order="1.011" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="ObjectiveTopicHead" xlink:href="ici-rr.xsd#ici-rr_ObjectiveTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:href="obj.xsd#obj_ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:type="locator"/>
+		<link:definitionArc xlink:from="ObjectiveTopicHead" xlink:to="ObjectiveHighTotalReturnUntilTargetDateThenIncome" order="1.012" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="ObjectiveTopicHead" xlink:href="ici-rr.xsd#ici-rr_ObjectiveTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:href="obj.xsd#obj_ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:type="locator"/>
+		<link:definitionArc xlink:from="ObjectiveTopicHead" xlink:to="ObjectiveAboveAverageTotalReturnsOverMarketCycle" order="1.013" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+	<link:definitionLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:role="http://ici.org/dim/2006/role/hc/class" xlink:type="extended">
+		<link:loc xlink:label="ObjectiveTopicHead" xlink:href="ici-rr.xsd#ici-rr_ObjectiveTopicHead" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTaxExemptCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveTaxExemptCurrentIncome" xlink:type="locator"/>
+		<link:definitionArc xlink:from="ObjectiveTopicHead" xlink:to="ObjectiveTaxExemptCurrentIncome" order="1.014" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"/>
+	</link:definitionLink>
+</link:linkbase>

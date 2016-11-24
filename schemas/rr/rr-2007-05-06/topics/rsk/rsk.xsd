@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<xs:schema xmlns:ici-rr="http://ici.org/rr/2006" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:rsk="http://ici.org/rr/rsk/2006" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ici.org/rr/rsk/2006" elementFormDefault="qualified" xbrli:ignore="" link:ignore="" xlink:ignore="" ici-rr:ignore="" xbrldt:ignore="" rsk:ignore="">
+	<xs:annotation>
+		<xs:appinfo>
+			<link:linkbaseRef xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:href="rsk_pre.xml" xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:href="rsk_lab.xml" xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:href="rsk_def.xml" xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+		</xs:appinfo>
+	</xs:annotation>
+	<xs:import schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/instance"/>
+	<xs:import schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" namespace="http://xbrl.org/2005/xbrldt"/>
+	<xs:import schemaLocation="http://www.xbrl.org/2006/xbrldi-2006.xsd" namespace="http://xbrl.org/2006/xbrldi"/>
+	<xs:import schemaLocation="http://xbrl.ici.org/rr/2006/ici-rr.xsd" namespace="http://ici.org/rr/2006"/>
+	<xs:element name="RiskSharePriceWillChange" id="rsk_RiskSharePriceWillChange" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskAppropriateInvestorGoals" id="rsk_RiskAppropriateInvestorGoals" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskIPO_" id="rsk_RiskIPO_" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskMarket" id="rsk_RiskMarket" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskMarketDisruption" id="rsk_RiskMarketDisruption" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskEarlyClosing" id="rsk_RiskEarlyClosing" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskTradingHalt" id="rsk_RiskTradingHalt" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskInvestmentManagement" id="rsk_RiskInvestmentManagement" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskConflictOfInterest" id="rsk_RiskConflictOfInterest" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskInvestmentStrategy" id="rsk_RiskInvestmentStrategy" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskEquityInvestments" id="rsk_RiskEquityInvestments" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskForeignSecurities" id="rsk_RiskForeignSecurities" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskEmergingMarkets" id="rsk_RiskEmergingMarkets" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskInterestRateRisk" id="rsk_RiskInterestRateRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskMaturityRisk" id="rsk_RiskMaturityRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskCreditRisk" id="rsk_RiskCreditRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskChangesInDebtRatingsRisk" id="rsk_RiskChangesInDebtRatingsRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskCallRisk" id="rsk_RiskCallRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskMortgageRisk" id="rsk_RiskMortgageRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskExtensionRisk" id="rsk_RiskExtensionRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskLowerRatedBonds" id="rsk_RiskLowerRatedBonds" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskHigherCreditRisk" id="rsk_RiskHigherCreditRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskHigherLiquidity" id="rsk_RiskHigherLiquidity" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskDerivativesRisk" id="rsk_RiskDerivativesRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskFuturesAndOptionsRisk" id="rsk_RiskFuturesAndOptionsRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskDerivativesHedgingRisk" id="rsk_RiskDerivativesHedgingRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskDerivativesCorrelationRisk" id="rsk_RiskDerivativesCorrelationRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskDerivativesInvestmentRisk" id="rsk_RiskDerivativesInvestmentRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskDerivativesAvailability" id="rsk_RiskDerivativesAvailability" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskDerivativesCreditRisk" id="rsk_RiskDerivativesCreditRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskStructuredNotes" id="rsk_RiskStructuredNotes" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskIndexedSecurities" id="rsk_RiskIndexedSecurities" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskIndexSampling" id="rsk_RiskIndexSampling" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskLiquidity" id="rsk_RiskLiquidity" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskGeographicConcentration" id="rsk_RiskGeographicConcentration" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskSingleState" id="rsk_RiskSingleState" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskIndustryConcentration" id="rsk_RiskIndustryConcentration" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskSectorRisk" id="rsk_RiskSectorRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskShortSales" id="rsk_RiskShortSales" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskOverTheCounter" id="rsk_RiskOverTheCounter" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskSmallAndMediumCompanies" id="rsk_RiskSmallAndMediumCompanies" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskActiveOrFrequentTrading" id="rsk_RiskActiveOrFrequentTrading" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskMakeMoreElsewhere" id="rsk_RiskMakeMoreElsewhere" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskReinvestment" id="rsk_RiskReinvestment" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskGrowthStock" id="rsk_RiskGrowthStock" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskValueStyle" id="rsk_RiskValueStyle" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskDefault" id="rsk_RiskDefault" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskLeverage" id="rsk_RiskLeverage" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskConvertibleSecurities" id="rsk_RiskConvertibleSecurities" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskRule144ASecurities" id="rsk_RiskRule144ASecurities" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskJunkBonds" id="rsk_RiskJunkBonds" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskSyntheticConvertibleSecurities" id="rsk_RiskSyntheticConvertibleSecurities" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskTax" id="rsk_RiskTax" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskTaxablePreferredSecurities" id="rsk_RiskTaxablePreferredSecurities" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskPortfolioTurnover" id="rsk_RiskPortfolioTurnover" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskSecuritiesLending" id="rsk_RiskSecuritiesLending" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskTechnologyRelatedCompanies" id="rsk_RiskTechnologyRelatedCompanies" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskCurrencyRisk" id="rsk_RiskCurrencyRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskEurodollarRisk" id="rsk_RiskEurodollarRisk" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskInflation" id="rsk_RiskInflation" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskMunicipalSecurities" id="rsk_RiskMunicipalSecurities" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskPortfolioDuration" id="rsk_RiskPortfolioDuration" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskReorganizationOrRestructuring" id="rsk_RiskReorganizationOrRestructuring" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskPrepaymentExtension" id="rsk_RiskPrepaymentExtension" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskReverseRepurchaseAgreements" id="rsk_RiskReverseRepurchaseAgreements" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskSegregatedAccount" id="rsk_RiskSegregatedAccount" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskREITs_" id="rsk_RiskREITs_" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskUS_GovernmentSponsoredEnterprises" id="rsk_RiskUS_GovernmentSponsoredEnterprises" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="RiskYieldFluctuation" id="rsk_RiskYieldFluctuation" type="ici-rr:TopicType" substitutionGroup="ici-rr:RiskTopicHead" nillable="true" xbrli:periodType="instant"/>
+</xs:schema>

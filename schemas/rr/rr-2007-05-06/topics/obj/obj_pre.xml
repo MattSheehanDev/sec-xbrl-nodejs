@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase">
+	<link:roleRef xmlns:xlink="http://www.w3.org/1999/xlink" roleURI="http://ici.org/dim/2006/role/n1a" xlink:type="simple" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#N1A"/>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectivePrimary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectivePrimary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMayBeChanged" xlink:href="obj.xsd#obj_ObjectiveMayBeChanged" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectivePrimary" xlink:to="ObjectiveMayBeChanged" order="0.201" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveSecondary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveSecondary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMayBeChanged" xlink:href="obj.xsd#obj_ObjectiveMayBeChanged" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveSecondary" xlink:to="ObjectiveMayBeChanged" order="0.201" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMayBeChanged" xlink:href="obj.xsd#obj_ObjectiveMayBeChanged" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeParagraph" xlink:to="ObjectiveMayBeChanged" order="1.201" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMayBeChanged" xlink:href="obj.xsd#obj_ObjectiveMayBeChanged" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeSubparagraph" xlink:to="ObjectiveMayBeChanged" order="1.201" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMayBeChanged" xlink:href="obj.xsd#obj_ObjectiveMayBeChanged" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="ObjectiveMayBeChanged" order="1.201" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMayBeChanged" xlink:href="obj.xsd#obj_ObjectiveMayBeChanged" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="ObjectiveMayBeChanged" order="1.201" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMayBeChanged" xlink:href="obj.xsd#obj_ObjectiveMayBeChanged" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="ObjectiveMayBeChanged" order="1.201" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMayBeChanged" xlink:href="obj.xsd#obj_ObjectiveMayBeChanged" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="ObjectiveMayBeChanged" order="1.201" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectivePrimary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectivePrimary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTotalReturn" xlink:href="obj.xsd#obj_ObjectiveTotalReturn" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectivePrimary" xlink:to="ObjectiveTotalReturn" order="0.202" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveSecondary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveSecondary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTotalReturn" xlink:href="obj.xsd#obj_ObjectiveTotalReturn" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveSecondary" xlink:to="ObjectiveTotalReturn" order="0.202" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTotalReturn" xlink:href="obj.xsd#obj_ObjectiveTotalReturn" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeParagraph" xlink:to="ObjectiveTotalReturn" order="1.202" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTotalReturn" xlink:href="obj.xsd#obj_ObjectiveTotalReturn" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeSubparagraph" xlink:to="ObjectiveTotalReturn" order="1.202" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTotalReturn" xlink:href="obj.xsd#obj_ObjectiveTotalReturn" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="ObjectiveTotalReturn" order="1.202" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTotalReturn" xlink:href="obj.xsd#obj_ObjectiveTotalReturn" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="ObjectiveTotalReturn" order="1.202" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTotalReturn" xlink:href="obj.xsd#obj_ObjectiveTotalReturn" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="ObjectiveTotalReturn" order="1.202" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTotalReturn" xlink:href="obj.xsd#obj_ObjectiveTotalReturn" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="ObjectiveTotalReturn" order="1.202" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectivePrimary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectivePrimary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveHighCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectivePrimary" xlink:to="ObjectiveHighCurrentIncome" order="0.203" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveSecondary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveSecondary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveHighCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveSecondary" xlink:to="ObjectiveHighCurrentIncome" order="0.203" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveHighCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeParagraph" xlink:to="ObjectiveHighCurrentIncome" order="1.203" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveHighCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeSubparagraph" xlink:to="ObjectiveHighCurrentIncome" order="1.203" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveHighCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="ObjectiveHighCurrentIncome" order="1.203" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveHighCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="ObjectiveHighCurrentIncome" order="1.203" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveHighCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="ObjectiveHighCurrentIncome" order="1.203" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveHighCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="ObjectiveHighCurrentIncome" order="1.203" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectivePrimary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectivePrimary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalGrowth" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalGrowth" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectivePrimary" xlink:to="ObjectiveLongTermCapitalGrowth" order="0.204" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveSecondary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveSecondary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalGrowth" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalGrowth" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveSecondary" xlink:to="ObjectiveLongTermCapitalGrowth" order="0.204" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalGrowth" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalGrowth" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeParagraph" xlink:to="ObjectiveLongTermCapitalGrowth" order="1.204" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalGrowth" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalGrowth" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeSubparagraph" xlink:to="ObjectiveLongTermCapitalGrowth" order="1.204" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalGrowth" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalGrowth" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="ObjectiveLongTermCapitalGrowth" order="1.204" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalGrowth" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalGrowth" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="ObjectiveLongTermCapitalGrowth" order="1.204" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalGrowth" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalGrowth" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="ObjectiveLongTermCapitalGrowth" order="1.204" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalGrowth" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalGrowth" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="ObjectiveLongTermCapitalGrowth" order="1.204" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectivePrimary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectivePrimary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectivePrimary" xlink:to="ObjectiveLongTermCapitalAppreciation" order="0.205" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveSecondary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveSecondary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveSecondary" xlink:to="ObjectiveLongTermCapitalAppreciation" order="0.205" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeParagraph" xlink:to="ObjectiveLongTermCapitalAppreciation" order="1.205" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeSubparagraph" xlink:to="ObjectiveLongTermCapitalAppreciation" order="1.205" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="ObjectiveLongTermCapitalAppreciation" order="1.205" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="ObjectiveLongTermCapitalAppreciation" order="1.205" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="ObjectiveLongTermCapitalAppreciation" order="1.205" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveLongTermCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="ObjectiveLongTermCapitalAppreciation" order="1.205" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectivePrimary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectivePrimary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectivePreservationOfCapital" xlink:href="obj.xsd#obj_ObjectivePreservationOfCapital" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectivePrimary" xlink:to="ObjectivePreservationOfCapital" order="0.206" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveSecondary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveSecondary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectivePreservationOfCapital" xlink:href="obj.xsd#obj_ObjectivePreservationOfCapital" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveSecondary" xlink:to="ObjectivePreservationOfCapital" order="0.206" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectivePreservationOfCapital" xlink:href="obj.xsd#obj_ObjectivePreservationOfCapital" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeParagraph" xlink:to="ObjectivePreservationOfCapital" order="1.206" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectivePreservationOfCapital" xlink:href="obj.xsd#obj_ObjectivePreservationOfCapital" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeSubparagraph" xlink:to="ObjectivePreservationOfCapital" order="1.206" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectivePreservationOfCapital" xlink:href="obj.xsd#obj_ObjectivePreservationOfCapital" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="ObjectivePreservationOfCapital" order="1.206" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectivePreservationOfCapital" xlink:href="obj.xsd#obj_ObjectivePreservationOfCapital" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="ObjectivePreservationOfCapital" order="1.206" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectivePreservationOfCapital" xlink:href="obj.xsd#obj_ObjectivePreservationOfCapital" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="ObjectivePreservationOfCapital" order="1.206" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectivePreservationOfCapital" xlink:href="obj.xsd#obj_ObjectivePreservationOfCapital" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="ObjectivePreservationOfCapital" order="1.206" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectivePrimary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectivePrimary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveGrowthAndIncome" xlink:href="obj.xsd#obj_ObjectiveGrowthAndIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectivePrimary" xlink:to="ObjectiveGrowthAndIncome" order="0.207" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveSecondary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveSecondary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveGrowthAndIncome" xlink:href="obj.xsd#obj_ObjectiveGrowthAndIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveSecondary" xlink:to="ObjectiveGrowthAndIncome" order="0.207" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveGrowthAndIncome" xlink:href="obj.xsd#obj_ObjectiveGrowthAndIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeParagraph" xlink:to="ObjectiveGrowthAndIncome" order="1.207" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveGrowthAndIncome" xlink:href="obj.xsd#obj_ObjectiveGrowthAndIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeSubparagraph" xlink:to="ObjectiveGrowthAndIncome" order="1.207" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveGrowthAndIncome" xlink:href="obj.xsd#obj_ObjectiveGrowthAndIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="ObjectiveGrowthAndIncome" order="1.207" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveGrowthAndIncome" xlink:href="obj.xsd#obj_ObjectiveGrowthAndIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="ObjectiveGrowthAndIncome" order="1.207" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveGrowthAndIncome" xlink:href="obj.xsd#obj_ObjectiveGrowthAndIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="ObjectiveGrowthAndIncome" order="1.207" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveGrowthAndIncome" xlink:href="obj.xsd#obj_ObjectiveGrowthAndIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="ObjectiveGrowthAndIncome" order="1.207" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectivePrimary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectivePrimary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectivePrimary" xlink:to="ObjectiveCapitalAppreciation" order="0.208" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveSecondary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveSecondary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveSecondary" xlink:to="ObjectiveCapitalAppreciation" order="0.208" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeParagraph" xlink:to="ObjectiveCapitalAppreciation" order="1.208" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeSubparagraph" xlink:to="ObjectiveCapitalAppreciation" order="1.208" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="ObjectiveCapitalAppreciation" order="1.208" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="ObjectiveCapitalAppreciation" order="1.208" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="ObjectiveCapitalAppreciation" order="1.208" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveCapitalAppreciation" xlink:href="obj.xsd#obj_ObjectiveCapitalAppreciation" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="ObjectiveCapitalAppreciation" order="1.208" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectivePrimary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectivePrimary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectivePrimary" xlink:to="ObjectiveMatchBenchmark" order="0.209" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveSecondary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveSecondary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveSecondary" xlink:to="ObjectiveMatchBenchmark" order="0.209" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeParagraph" xlink:to="ObjectiveMatchBenchmark" order="1.209" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeSubparagraph" xlink:to="ObjectiveMatchBenchmark" order="1.209" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="ObjectiveMatchBenchmark" order="1.209" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="ObjectiveMatchBenchmark" order="1.209" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="ObjectiveMatchBenchmark" order="1.209" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="ObjectiveMatchBenchmark" order="1.209" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectivePrimary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectivePrimary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchEquityBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchEquityBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectivePrimary" xlink:to="ObjectiveMatchEquityBenchmark" order="0.21" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveSecondary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveSecondary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchEquityBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchEquityBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveSecondary" xlink:to="ObjectiveMatchEquityBenchmark" order="0.21" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchEquityBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchEquityBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeParagraph" xlink:to="ObjectiveMatchEquityBenchmark" order="1.21" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchEquityBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchEquityBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeSubparagraph" xlink:to="ObjectiveMatchEquityBenchmark" order="1.21" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchEquityBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchEquityBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="ObjectiveMatchEquityBenchmark" order="1.21" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchEquityBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchEquityBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="ObjectiveMatchEquityBenchmark" order="1.21" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchEquityBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchEquityBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="ObjectiveMatchEquityBenchmark" order="1.21" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchEquityBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchEquityBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="ObjectiveMatchEquityBenchmark" order="1.21" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectivePrimary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectivePrimary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchFixedIncomeBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchFixedIncomeBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectivePrimary" xlink:to="ObjectiveMatchFixedIncomeBenchmark" order="0.211" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveSecondary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveSecondary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchFixedIncomeBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchFixedIncomeBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveSecondary" xlink:to="ObjectiveMatchFixedIncomeBenchmark" order="0.211" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchFixedIncomeBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchFixedIncomeBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeParagraph" xlink:to="ObjectiveMatchFixedIncomeBenchmark" order="1.211" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchFixedIncomeBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchFixedIncomeBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeSubparagraph" xlink:to="ObjectiveMatchFixedIncomeBenchmark" order="1.211" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchFixedIncomeBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchFixedIncomeBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="ObjectiveMatchFixedIncomeBenchmark" order="1.211" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchFixedIncomeBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchFixedIncomeBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="ObjectiveMatchFixedIncomeBenchmark" order="1.211" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchFixedIncomeBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchFixedIncomeBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="ObjectiveMatchFixedIncomeBenchmark" order="1.211" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveMatchFixedIncomeBenchmark" xlink:href="obj.xsd#obj_ObjectiveMatchFixedIncomeBenchmark" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="ObjectiveMatchFixedIncomeBenchmark" order="1.211" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectivePrimary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectivePrimary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:href="obj.xsd#obj_ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectivePrimary" xlink:to="ObjectiveHighTotalReturnUntilTargetDateThenIncome" order="0.212" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveSecondary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveSecondary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:href="obj.xsd#obj_ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveSecondary" xlink:to="ObjectiveHighTotalReturnUntilTargetDateThenIncome" order="0.212" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:href="obj.xsd#obj_ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeParagraph" xlink:to="ObjectiveHighTotalReturnUntilTargetDateThenIncome" order="1.212" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:href="obj.xsd#obj_ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeSubparagraph" xlink:to="ObjectiveHighTotalReturnUntilTargetDateThenIncome" order="1.212" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:href="obj.xsd#obj_ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="ObjectiveHighTotalReturnUntilTargetDateThenIncome" order="1.212" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:href="obj.xsd#obj_ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="ObjectiveHighTotalReturnUntilTargetDateThenIncome" order="1.212" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:href="obj.xsd#obj_ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="ObjectiveHighTotalReturnUntilTargetDateThenIncome" order="1.212" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:href="obj.xsd#obj_ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="ObjectiveHighTotalReturnUntilTargetDateThenIncome" order="1.212" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectivePrimary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectivePrimary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:href="obj.xsd#obj_ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectivePrimary" xlink:to="ObjectiveAboveAverageTotalReturnsOverMarketCycle" order="0.213" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveSecondary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveSecondary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:href="obj.xsd#obj_ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveSecondary" xlink:to="ObjectiveAboveAverageTotalReturnsOverMarketCycle" order="0.213" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:href="obj.xsd#obj_ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeParagraph" xlink:to="ObjectiveAboveAverageTotalReturnsOverMarketCycle" order="1.213" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:href="obj.xsd#obj_ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeSubparagraph" xlink:to="ObjectiveAboveAverageTotalReturnsOverMarketCycle" order="1.213" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:href="obj.xsd#obj_ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="ObjectiveAboveAverageTotalReturnsOverMarketCycle" order="1.213" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:href="obj.xsd#obj_ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="ObjectiveAboveAverageTotalReturnsOverMarketCycle" order="1.213" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:href="obj.xsd#obj_ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="ObjectiveAboveAverageTotalReturnsOverMarketCycle" order="1.213" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:href="obj.xsd#obj_ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="ObjectiveAboveAverageTotalReturnsOverMarketCycle" order="1.213" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectivePrimary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectivePrimary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTaxExemptCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveTaxExemptCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectivePrimary" xlink:to="ObjectiveTaxExemptCurrentIncome" order="0.214" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveSecondary" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveSecondary" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTaxExemptCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveTaxExemptCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveSecondary" xlink:to="ObjectiveTaxExemptCurrentIncome" order="0.214" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTaxExemptCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveTaxExemptCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeParagraph" xlink:to="ObjectiveTaxExemptCurrentIncome" order="1.214" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTaxExemptCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveTaxExemptCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveNarrativeSubparagraph" xlink:to="ObjectiveTaxExemptCurrentIncome" order="1.214" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTaxExemptCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveTaxExemptCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="ObjectiveTaxExemptCurrentIncome" order="1.214" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTaxExemptCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveTaxExemptCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="ObjectiveTaxExemptCurrentIncome" order="1.214" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTaxExemptCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveTaxExemptCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="ObjectiveTaxExemptCurrentIncome" order="1.214" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="http://xbrl.ici.org/rr/2006/ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="ObjectiveTaxExemptCurrentIncome" xlink:href="obj.xsd#obj_ObjectiveTaxExemptCurrentIncome" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="ObjectiveTaxExemptCurrentIncome" order="1.214" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+</link:linkbase>

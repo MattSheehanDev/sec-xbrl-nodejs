@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<!--
+	Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+	Authorized Uses are Set Forth at http://xbrl.us/rr/pages/terms.aspx -->
+
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:rsk="http://ici.org/rr/rsk/2006" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+	<link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskIPO_" xlink:label="RiskIPO_"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskMarket" xlink:label="RiskMarket"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskMarketDisruption" xlink:label="RiskMarketDisruption"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskEarlyClosing" xlink:label="RiskEarlyClosing"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskTradingHalt" xlink:label="RiskTradingHalt"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskInvestmentManagement" xlink:label="RiskInvestmentManagement"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskConflictOfInterest" xlink:label="RiskConflictOfInterest"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskInvestmentStrategy" xlink:label="RiskInvestmentStrategy"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskEquityInvestments" xlink:label="RiskEquityInvestments"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskForeignSecurities" xlink:label="RiskForeignSecurities"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskEmergingMarkets" xlink:label="RiskEmergingMarkets"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskInterestRateRisk" xlink:label="RiskInterestRateRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskMaturityRisk" xlink:label="RiskMaturityRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskCreditRisk" xlink:label="RiskCreditRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskChangesInDebtRatingsRisk" xlink:label="RiskChangesInDebtRatingsRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskMortgageRisk" xlink:label="RiskMortgageRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskExtensionRisk" xlink:label="RiskExtensionRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskLowerRatedBonds" xlink:label="RiskLowerRatedBonds"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskHigherCreditRisk" xlink:label="RiskHigherCreditRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskHigherLiquidity" xlink:label="RiskHigherLiquidity"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskDerivativesRisk" xlink:label="RiskDerivativesRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskFuturesAndOptionsRisk" xlink:label="RiskFuturesAndOptionsRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskDerivativesHedgingRisk" xlink:label="RiskDerivativesHedgingRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskDerivativesCorrelationRisk" xlink:label="RiskDerivativesCorrelationRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskDerivativesInvestmentRisk" xlink:label="RiskDerivativesInvestmentRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskDerivativesAvailability" xlink:label="RiskDerivativesAvailability"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskDerivativesCreditRisk" xlink:label="RiskDerivativesCreditRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskStructuredNotes" xlink:label="RiskStructuredNotes"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskIndexedSecurities" xlink:label="RiskIndexedSecurities"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskLiquidity" xlink:label="RiskLiquidity"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskGeographicConcentration" xlink:label="RiskGeographicConcentration"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskSingleState" xlink:label="RiskSingleState"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskIndustryConcentration" xlink:label="RiskIndustryConcentration"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskSectorRisk" xlink:label="RiskSectorRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskShortSales" xlink:label="RiskShortSales"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskOverTheCounter" xlink:label="RiskOverTheCounter"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskSmallAndMediumCompanies" xlink:label="RiskSmallAndMediumCompanies"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskActiveOrFrequentTrading" xlink:label="RiskActiveOrFrequentTrading"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskMakeMoreElsewhere" xlink:label="RiskMakeMoreElsewhere"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskReinvestment" xlink:label="RiskReinvestment"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskGrowthStock" xlink:label="RiskGrowthStock"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskValueStyle" xlink:label="RiskValueStyle"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskDefault" xlink:label="RiskDefault"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskLeverage" xlink:label="RiskLeverage"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskConvertibleSecurities" xlink:label="RiskConvertibleSecurities"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskRule144ASecurities" xlink:label="RiskRule144ASecurities"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskJunkBonds" xlink:label="RiskJunkBonds"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskSyntheticConvertibleSecurities" xlink:label="RiskSyntheticConvertibleSecurities"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskTax" xlink:label="RiskTax"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskTaxablePreferredSecurities" xlink:label="RiskTaxablePreferredSecurities"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskPortfolioTurnover" xlink:label="RiskPortfolioTurnover"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskSecuritiesLending" xlink:label="RiskSecuritiesLending"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskTechnologyRelatedCompanies" xlink:label="RiskTechnologyRelatedCompanies"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskCurrencyRisk" xlink:label="RiskCurrencyRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskEurodollarRisk" xlink:label="RiskEurodollarRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskCallRisk" xlink:label="RiskCallRisk"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskInflation" xlink:label="RiskInflation"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskMunicipalSecurities" xlink:label="RiskMunicipalSecurities"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskPortfolioDuration" xlink:label="RiskPortfolioDuration"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskReorganizationOrRestructuring" xlink:label="RiskReorganizationOrRestructuring"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskPrepaymentExtension" xlink:label="RiskPrepaymentExtension"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskReverseRepurchaseAgreements" xlink:label="RiskReverseRepurchaseAgreements"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskSegregatedAccount" xlink:label="RiskSegregatedAccount"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskREITs_" xlink:label="RiskREITs_"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskUS_GovernmentSponsoredEnterprises" xlink:label="RiskUS_GovernmentSponsoredEnterprises"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskYieldFluctuation" xlink:label="RiskYieldFluctuation"/>
+		<link:loc xlink:type="locator" xlink:href="rsk.xsd#rsk_RiskIndexSampling" xlink:label="RiskIndexSampling"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskIPO_" xlink:to="label_RiskIPO_"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskMarket" xlink:to="label_RiskMarket"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskMarketDisruption" xlink:to="label_RiskMarketDisruption"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskEarlyClosing" xlink:to="label_RiskEarlyClosing"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskTradingHalt" xlink:to="label_RiskTradingHalt"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskInvestmentManagement" xlink:to="label_RiskInvestmentManagement"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskConflictOfInterest" xlink:to="label_RiskConflictOfInterest"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskInvestmentStrategy" xlink:to="label_RiskInvestmentStrategy"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskEquityInvestments" xlink:to="label_RiskEquityInvestments"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskForeignSecurities" xlink:to="label_RiskForeignSecurities"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskEmergingMarkets" xlink:to="label_RiskEmergingMarkets"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskInterestRateRisk" xlink:to="label_RiskInterestRateRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskMaturityRisk" xlink:to="label_RiskMaturityRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskCreditRisk" xlink:to="label_RiskCreditRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskChangesInDebtRatingsRisk" xlink:to="label_RiskChangesInDebtRatingsRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskMortgageRisk" xlink:to="label_RiskMortgageRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskExtensionRisk" xlink:to="label_RiskExtensionRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskLowerRatedBonds" xlink:to="label_RiskLowerRatedBonds"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskHigherCreditRisk" xlink:to="label_RiskHigherCreditRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskHigherLiquidity" xlink:to="label_RiskHigherLiquidity"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskDerivativesRisk" xlink:to="label_RiskDerivativesRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskFuturesAndOptionsRisk" xlink:to="label_RiskFuturesAndOptionsRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskDerivativesHedgingRisk" xlink:to="label_RiskDerivativesHedgingRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskDerivativesCorrelationRisk" xlink:to="label_RiskDerivativesCorrelationRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskDerivativesInvestmentRisk" xlink:to="label_RiskDerivativesInvestmentRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskDerivativesAvailability" xlink:to="label_RiskDerivativesAvailability"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskDerivativesCreditRisk" xlink:to="label_RiskDerivativesCreditRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskStructuredNotes" xlink:to="label_RiskStructuredNotes"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskIndexedSecurities" xlink:to="label_RiskIndexedSecurities"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskLiquidity" xlink:to="label_RiskLiquidity"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskGeographicConcentration" xlink:to="label_RiskGeographicConcentration"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskSingleState" xlink:to="label_RiskSingleState"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskIndustryConcentration" xlink:to="label_RiskIndustryConcentration"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskSectorRisk" xlink:to="label_RiskSectorRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskShortSales" xlink:to="label_RiskShortSales"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskOverTheCounter" xlink:to="label_RiskOverTheCounter"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskSmallAndMediumCompanies" xlink:to="label_RiskSmallAndMediumCompanies"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskActiveOrFrequentTrading" xlink:to="label_RiskActiveOrFrequentTrading"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskMakeMoreElsewhere" xlink:to="label_RiskMakeMoreElsewhere"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskReinvestment" xlink:to="label_RiskReinvestment"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskGrowthStock" xlink:to="label_RiskGrowthStock"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskValueStyle" xlink:to="label_RiskValueStyle"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskDefault" xlink:to="label_RiskDefault"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskLeverage" xlink:to="label_RiskLeverage"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskConvertibleSecurities" xlink:to="label_RiskConvertibleSecurities"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskRule144ASecurities" xlink:to="label_RiskRule144ASecurities"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskJunkBonds" xlink:to="label_RiskJunkBonds"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskSyntheticConvertibleSecurities" xlink:to="label_RiskSyntheticConvertibleSecurities"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskTax" xlink:to="label_RiskTax"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskTaxablePreferredSecurities" xlink:to="label_RiskTaxablePreferredSecurities"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskPortfolioTurnover" xlink:to="label_RiskPortfolioTurnover"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskSecuritiesLending" xlink:to="label_RiskSecuritiesLending"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskTechnologyRelatedCompanies" xlink:to="label_RiskTechnologyRelatedCompanies"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskCurrencyRisk" xlink:to="label_RiskCurrencyRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskEurodollarRisk" xlink:to="label_RiskEurodollarRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskCallRisk" xlink:to="label_RiskCallRisk"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskInflation" xlink:to="label_RiskInflation"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskMunicipalSecurities" xlink:to="label_RiskMunicipalSecurities"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskPortfolioDuration" xlink:to="label_RiskPortfolioDuration"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskReorganizationOrRestructuring" xlink:to="label_RiskReorganizationOrRestructuring"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskPrepaymentExtension" xlink:to="label_RiskPrepaymentExtension"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskReverseRepurchaseAgreements" xlink:to="label_RiskReverseRepurchaseAgreements"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskSegregatedAccount" xlink:to="label_RiskSegregatedAccount"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskREITs_" xlink:to="label_RiskREITs_"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskUS_GovernmentSponsoredEnterprises" xlink:to="label_RiskUS_GovernmentSponsoredEnterprises"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskYieldFluctuation" xlink:to="label_RiskYieldFluctuation"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="RiskIndexSampling" xlink:to="label_RiskIndexSampling"/>
+		<link:label xlink:type="resource" xlink:label="label_RiskIPO_" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskIPO_">Risk IPO </link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskMarket" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskMarket">Risk Market</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskMarketDisruption" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskMarketDisruption">Risk Market Disruption</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskEarlyClosing" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskEarlyClosing">Risk Early Closing</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskTradingHalt" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskTradingHalt">Risk Trading Halt</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskInvestmentManagement" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskInvestmentManagement">Risk Investment Management</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskConflictOfInterest" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskConflictOfInterest">Risk Conflict of Interest</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskInvestmentStrategy" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskInvestmentStrategy">Risk Investment Strategy</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskEquityInvestments" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskEquityInvestments">Risk Equity Investments</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskForeignSecurities" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskForeignSecurities">Risk Foreign Securities</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskEmergingMarkets" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskEmergingMarkets">Risk Emerging Markets</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskInterestRateRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskInterestRateRisk">Risk Interest Rate Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskMaturityRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskMaturityRisk">Risk Maturity Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskCreditRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskCreditRisk">Risk Credit Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskChangesInDebtRatingsRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskChangesInDebtRatingsRisk">Risk Changes In Debt Ratings Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskMortgageRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskMortgageRisk">Risk Mortgage Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskExtensionRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskExtensionRisk">Risk Extension Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskLowerRatedBonds" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskLowerRatedBonds">Risk Lower Rated Bonds</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskHigherCreditRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskHigherCreditRisk">Risk Higher Credit Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskHigherLiquidity" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskHigherLiquidity">Risk Higher Liquidity</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskDerivativesRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskDerivativesRisk">Risk Derivatives Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskFuturesAndOptionsRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskFuturesAndOptionsRisk">Risk Futures and Options Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskDerivativesHedgingRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskDerivativesHedgingRisk">Risk Derivatives Hedging Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskDerivativesCorrelationRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskDerivativesCorrelationRisk">Risk Derivatives Correlation Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskDerivativesInvestmentRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskDerivativesInvestmentRisk">Risk Derivatives Investment Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskDerivativesAvailability" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskDerivativesAvailability">Risk Derivatives Availability</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskDerivativesCreditRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskDerivativesCreditRisk">Risk Derivatives Credit Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskStructuredNotes" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskStructuredNotes">Risk Structured Notes</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskIndexedSecurities" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskIndexedSecurities">Risk Indexed Securities</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskLiquidity" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskLiquidity">Risk Liquidity</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskGeographicConcentration" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskGeographicConcentration">Risk Geographic Concentration</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskSingleState" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskSingleState">Risk Single State</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskIndustryConcentration" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskIndustryConcentration">Risk Industry Concentration</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskSectorRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskSectorRisk">Risk Sector Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskShortSales" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskShortSales">Risk Short Sales</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskOverTheCounter" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskOverTheCounter">Risk Over the Counter</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskSmallAndMediumCompanies" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskSmallAndMediumCompanies">Risk Small and Medium Companies</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskActiveOrFrequentTrading" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskActiveOrFrequentTrading">Risk Active or Frequent Trading</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskMakeMoreElsewhere" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskMakeMoreElsewhere">Risk Make More Elsewhere</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskReinvestment" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskReinvestment">Risk Reinvestment</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskGrowthStock" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskGrowthStock">Risk Growth Stock</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskValueStyle" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskValueStyle">Risk Value Style</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskDefault" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskDefault">Risk Default</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskLeverage" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskLeverage">Risk Leverage</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskConvertibleSecurities" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskConvertibleSecurities">Risk Convertible Securities</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskRule144ASecurities" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskRule144ASecurities">Risk Rule144ASecurities</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskJunkBonds" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskJunkBonds">Risk Junk Bonds</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskSyntheticConvertibleSecurities" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskSyntheticConvertibleSecurities">Risk Synthetic Convertible Securities</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskTax" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskTax">Risk Tax</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskTaxablePreferredSecurities" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskTaxablePreferredSecurities">Risk Taxable Preferred Securities</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskPortfolioTurnover" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskPortfolioTurnover">Risk Portfolio Turnover</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskSecuritiesLending" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskSecuritiesLending">Risk Securities Lending</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskTechnologyRelatedCompanies" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskTechnologyRelatedCompanies">Risk Technology Related Companies</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskCurrencyRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskCurrencyRisk">Risk Currency Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskEurodollarRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskEurodollarRisk">Risk Eurodollar Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskCallRisk" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskCallRisk">Risk Call Risk</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskInflation" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskInflation">Risk Inflation</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskMunicipalSecurities" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskMunicipalSecurities">Risk Municipal Securities</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskPortfolioDuration" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskPortfolioDuration">Risk Portfolio Duration</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskReorganizationOrRestructuring" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskReorganizationOrRestructuring">Risk Reorganization or Restructuring</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskPrepaymentExtension" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskPrepaymentExtension">Risk Prepayment Extension</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskReverseRepurchaseAgreements" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskReverseRepurchaseAgreements">Risk Reverse Repurchase Agreements</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskSegregatedAccount" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskSegregatedAccount">Risk Segregated Account</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskREITs_" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskREITs_">Risk REITs </link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskUS_GovernmentSponsoredEnterprises" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskUS_GovernmentSponsoredEnterprises">Risk US Government Sponsored Enterprises</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskYieldFluctuation" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskYieldFluctuation">Risk Yield Fluctuation</link:label>
+		<link:label xlink:type="resource" xlink:label="label_RiskIndexSampling" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_RiskIndexSampling">Risk Index Sampling</link:label>
+	</link:labelLink>
+</link:linkbase>

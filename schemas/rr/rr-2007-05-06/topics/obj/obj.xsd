@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<xs:schema xmlns:ici-rr="http://ici.org/rr/2006" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:obj="http://ici.org/rr/obj/2006" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ici.org/rr/obj/2006" elementFormDefault="qualified" xbrli:ignore="" link:ignore="" xlink:ignore="" ici-rr:ignore="" xbrldt:ignore="" obj:ignore="">
+	<xs:annotation>
+		<xs:appinfo>
+			<link:linkbaseRef xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:href="obj_pre.xml" xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:href="obj_lab.xml" xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:href="obj_def.xml" xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+		</xs:appinfo>
+	</xs:annotation>
+	<xs:import schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/instance"/>
+	<xs:import schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" namespace="http://xbrl.org/2005/xbrldt"/>
+	<xs:import schemaLocation="http://www.xbrl.org/2006/xbrldi-2006.xsd" namespace="http://xbrl.org/2006/xbrldi"/>
+	<xs:import schemaLocation="http://xbrl.ici.org/rr/2006/ici-rr.xsd" namespace="http://ici.org/rr/2006"/>
+	<xs:element name="ObjectiveMayBeChanged" id="obj_ObjectiveMayBeChanged" type="ici-rr:TopicType" substitutionGroup="ici-rr:ObjectiveTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="ObjectiveTotalReturn" id="obj_ObjectiveTotalReturn" type="ici-rr:TopicType" substitutionGroup="ici-rr:ObjectiveTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="ObjectiveHighCurrentIncome" id="obj_ObjectiveHighCurrentIncome" type="ici-rr:TopicType" substitutionGroup="ici-rr:ObjectiveTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="ObjectiveLongTermCapitalGrowth" id="obj_ObjectiveLongTermCapitalGrowth" type="ici-rr:TopicType" substitutionGroup="ici-rr:ObjectiveTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="ObjectiveLongTermCapitalAppreciation" id="obj_ObjectiveLongTermCapitalAppreciation" type="ici-rr:TopicType" substitutionGroup="ici-rr:ObjectiveTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="ObjectivePreservationOfCapital" id="obj_ObjectivePreservationOfCapital" type="ici-rr:TopicType" substitutionGroup="ici-rr:ObjectiveTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="ObjectiveGrowthAndIncome" id="obj_ObjectiveGrowthAndIncome" type="ici-rr:TopicType" substitutionGroup="ici-rr:ObjectiveTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="ObjectiveCapitalAppreciation" id="obj_ObjectiveCapitalAppreciation" type="ici-rr:TopicType" substitutionGroup="ici-rr:ObjectiveTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="ObjectiveMatchBenchmark" id="obj_ObjectiveMatchBenchmark" type="ici-rr:TopicType" substitutionGroup="ici-rr:ObjectiveTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="ObjectiveMatchEquityBenchmark" id="obj_ObjectiveMatchEquityBenchmark" type="ici-rr:TopicType" substitutionGroup="ici-rr:ObjectiveTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="ObjectiveMatchFixedIncomeBenchmark" id="obj_ObjectiveMatchFixedIncomeBenchmark" type="ici-rr:TopicType" substitutionGroup="ici-rr:ObjectiveTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="ObjectiveHighTotalReturnUntilTargetDateThenIncome" id="obj_ObjectiveHighTotalReturnUntilTargetDateThenIncome" type="ici-rr:TopicType" substitutionGroup="ici-rr:ObjectiveTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="ObjectiveAboveAverageTotalReturnsOverMarketCycle" id="obj_ObjectiveAboveAverageTotalReturnsOverMarketCycle" type="ici-rr:TopicType" substitutionGroup="ici-rr:ObjectiveTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="ObjectiveTaxExemptCurrentIncome" id="obj_ObjectiveTaxExemptCurrentIncome" type="ici-rr:TopicType" substitutionGroup="ici-rr:ObjectiveTopicHead" nillable="true" xbrli:periodType="instant"/>
+</xs:schema>

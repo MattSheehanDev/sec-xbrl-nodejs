@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!--
+	Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+	Authorized Uses are Set Forth at http://xbrl.us/rr/pages/terms.aspx -->
+
+<xs:schema xmlns:ici-rr="http://ici.org/rr/2006" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:str="http://ici.org/rr/str/2006" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ici.org/rr/str/2006" elementFormDefault="qualified" xbrli:ignore="" link:ignore="" xlink:ignore="" ici-rr:ignore="" xbrldt:ignore="" str:ignore="">
+	<xs:annotation>
+		<xs:appinfo>
+			<link:linkbaseRef xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:href="str_pre.xml" xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:href="str_lab.xml" xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:href="str_def.xml" xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+		</xs:appinfo>
+	</xs:annotation>
+	<xs:import schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/instance"/>
+	<xs:import schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" namespace="http://xbrl.org/2005/xbrldt"/>
+	<xs:import schemaLocation="http://www.xbrl.org/2006/xbrldi-2006.xsd" namespace="http://xbrl.org/2006/xbrldi"/>
+	<xs:import schemaLocation="http://xbrl.ici.org/rr/2006/ici-rr.xsd" namespace="http://ici.org/rr/2006"/>
+	<xs:element name="StrategyEmergingMarkets" id="str_StrategyEmergingMarkets" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyEquitySecurities" id="str_StrategyEquitySecurities" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyOverTheCounterMarkets" id="str_StrategyOverTheCounterMarkets" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategySingleIssuer" id="str_StrategySingleIssuer" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyAnyTypeOfFixedIncomeSecurities" id="str_StrategyAnyTypeOfFixedIncomeSecurities" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyAnyIssuerOfFixedIncomeSecurities" id="str_StrategyAnyIssuerOfFixedIncomeSecurities" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyNondiversified" id="str_StrategyNondiversified" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyDiversified" id="str_StrategyDiversified" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyResearchIntensive" id="str_StrategyResearchIntensive" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyDerivativeSecurities" id="str_StrategyDerivativeSecurities" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyShortPositions" id="str_StrategyShortPositions" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyFrequentActiveTrading" id="str_StrategyFrequentActiveTrading" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategySmallCompanies" id="str_StrategySmallCompanies" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyFundOfFunds" id="str_StrategyFundOfFunds" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyRebalancingToTargetAllocations" id="str_StrategyRebalancingToTargetAllocations" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyBalanced" id="str_StrategyBalanced" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyCompaniesWithHighGrowthRelativeToIndustry" id="str_StrategyCompaniesWithHighGrowthRelativeToIndustry" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyCompaniesWithSustainableGrowth" id="str_StrategyCompaniesWithSustainableGrowth" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyValuationAnalysis" id="str_StrategyValuationAnalysis" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyLargeCompanies" id="str_StrategyLargeCompanies" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyMediumCompanies" id="str_StrategyMediumCompanies" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategyEquitiesOfCommodityRelatedCompanies" id="str_StrategyEquitiesOfCommodityRelatedCompanies" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+	<xs:element name="StrategySecuritiesLinkedToCommodityIndex" id="str_StrategySecuritiesLinkedToCommodityIndex" type="ici-rr:TopicType" substitutionGroup="ici-rr:StrategyTopicHead" nillable="true" xbrli:periodType="instant"/>
+</xs:schema>

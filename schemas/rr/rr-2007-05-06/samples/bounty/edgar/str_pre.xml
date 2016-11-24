@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<!--
+	Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+	Authorized Uses are Set Forth at http://xbrl.us/rr/pages/terms.aspx -->
+
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase">
+	<link:roleRef xmlns:xlink="http://www.w3.org/1999/xlink" roleURI="http://ici.org/dim/2006/role/n1a" xlink:type="simple" xlink:href="ici-rr.xsd#N1A"/>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEmergingMarkets" xlink:href="str.xsd#str_StrategyEmergingMarkets" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyEmergingMarkets" order="1.401" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEmergingMarkets" xlink:href="str.xsd#str_StrategyEmergingMarkets" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyEmergingMarkets" order="1.401" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEmergingMarkets" xlink:href="str.xsd#str_StrategyEmergingMarkets" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyEmergingMarkets" order="1.401" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEmergingMarkets" xlink:href="str.xsd#str_StrategyEmergingMarkets" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyEmergingMarkets" order="1.401" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEmergingMarkets" xlink:href="str.xsd#str_StrategyEmergingMarkets" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyEmergingMarkets" order="1.401" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEmergingMarkets" xlink:href="str.xsd#str_StrategyEmergingMarkets" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyEmergingMarkets" order="1.401" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEquitySecurities" xlink:href="str.xsd#str_StrategyEquitySecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyEquitySecurities" order="1.402" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEquitySecurities" xlink:href="str.xsd#str_StrategyEquitySecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyEquitySecurities" order="1.402" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEquitySecurities" xlink:href="str.xsd#str_StrategyEquitySecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyEquitySecurities" order="1.402" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEquitySecurities" xlink:href="str.xsd#str_StrategyEquitySecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyEquitySecurities" order="1.402" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEquitySecurities" xlink:href="str.xsd#str_StrategyEquitySecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyEquitySecurities" order="1.402" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEquitySecurities" xlink:href="str.xsd#str_StrategyEquitySecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyEquitySecurities" order="1.402" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyOverTheCounterMarkets" xlink:href="str.xsd#str_StrategyOverTheCounterMarkets" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyOverTheCounterMarkets" order="1.403" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyOverTheCounterMarkets" xlink:href="str.xsd#str_StrategyOverTheCounterMarkets" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyOverTheCounterMarkets" order="1.403" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyOverTheCounterMarkets" xlink:href="str.xsd#str_StrategyOverTheCounterMarkets" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyOverTheCounterMarkets" order="1.403" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyOverTheCounterMarkets" xlink:href="str.xsd#str_StrategyOverTheCounterMarkets" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyOverTheCounterMarkets" order="1.403" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyOverTheCounterMarkets" xlink:href="str.xsd#str_StrategyOverTheCounterMarkets" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyOverTheCounterMarkets" order="1.403" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyOverTheCounterMarkets" xlink:href="str.xsd#str_StrategyOverTheCounterMarkets" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyOverTheCounterMarkets" order="1.403" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySingleIssuer" xlink:href="str.xsd#str_StrategySingleIssuer" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategySingleIssuer" order="1.404" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySingleIssuer" xlink:href="str.xsd#str_StrategySingleIssuer" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategySingleIssuer" order="1.404" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySingleIssuer" xlink:href="str.xsd#str_StrategySingleIssuer" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategySingleIssuer" order="1.404" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySingleIssuer" xlink:href="str.xsd#str_StrategySingleIssuer" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategySingleIssuer" order="1.404" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySingleIssuer" xlink:href="str.xsd#str_StrategySingleIssuer" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategySingleIssuer" order="1.404" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySingleIssuer" xlink:href="str.xsd#str_StrategySingleIssuer" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategySingleIssuer" order="1.404" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyAnyTypeOfFixedIncomeSecurities" xlink:href="str.xsd#str_StrategyAnyTypeOfFixedIncomeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyAnyTypeOfFixedIncomeSecurities" order="1.405" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyAnyTypeOfFixedIncomeSecurities" xlink:href="str.xsd#str_StrategyAnyTypeOfFixedIncomeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyAnyTypeOfFixedIncomeSecurities" order="1.405" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyAnyTypeOfFixedIncomeSecurities" xlink:href="str.xsd#str_StrategyAnyTypeOfFixedIncomeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyAnyTypeOfFixedIncomeSecurities" order="1.405" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyAnyTypeOfFixedIncomeSecurities" xlink:href="str.xsd#str_StrategyAnyTypeOfFixedIncomeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyAnyTypeOfFixedIncomeSecurities" order="1.405" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyAnyTypeOfFixedIncomeSecurities" xlink:href="str.xsd#str_StrategyAnyTypeOfFixedIncomeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyAnyTypeOfFixedIncomeSecurities" order="1.405" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyAnyTypeOfFixedIncomeSecurities" xlink:href="str.xsd#str_StrategyAnyTypeOfFixedIncomeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyAnyTypeOfFixedIncomeSecurities" order="1.405" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyAnyIssuerOfFixedIncomeSecurities" xlink:href="str.xsd#str_StrategyAnyIssuerOfFixedIncomeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyAnyIssuerOfFixedIncomeSecurities" order="1.406" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyAnyIssuerOfFixedIncomeSecurities" xlink:href="str.xsd#str_StrategyAnyIssuerOfFixedIncomeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyAnyIssuerOfFixedIncomeSecurities" order="1.406" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyAnyIssuerOfFixedIncomeSecurities" xlink:href="str.xsd#str_StrategyAnyIssuerOfFixedIncomeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyAnyIssuerOfFixedIncomeSecurities" order="1.406" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyAnyIssuerOfFixedIncomeSecurities" xlink:href="str.xsd#str_StrategyAnyIssuerOfFixedIncomeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyAnyIssuerOfFixedIncomeSecurities" order="1.406" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyAnyIssuerOfFixedIncomeSecurities" xlink:href="str.xsd#str_StrategyAnyIssuerOfFixedIncomeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyAnyIssuerOfFixedIncomeSecurities" order="1.406" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyAnyIssuerOfFixedIncomeSecurities" xlink:href="str.xsd#str_StrategyAnyIssuerOfFixedIncomeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyAnyIssuerOfFixedIncomeSecurities" order="1.406" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyNondiversified" xlink:href="str.xsd#str_StrategyNondiversified" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyNondiversified" order="1.407" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyNondiversified" xlink:href="str.xsd#str_StrategyNondiversified" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyNondiversified" order="1.407" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyNondiversified" xlink:href="str.xsd#str_StrategyNondiversified" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyNondiversified" order="1.407" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyNondiversified" xlink:href="str.xsd#str_StrategyNondiversified" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyNondiversified" order="1.407" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyNondiversified" xlink:href="str.xsd#str_StrategyNondiversified" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyNondiversified" order="1.407" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyNondiversified" xlink:href="str.xsd#str_StrategyNondiversified" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyNondiversified" order="1.407" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyDiversified" xlink:href="str.xsd#str_StrategyDiversified" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyDiversified" order="1.408" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyDiversified" xlink:href="str.xsd#str_StrategyDiversified" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyDiversified" order="1.408" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyDiversified" xlink:href="str.xsd#str_StrategyDiversified" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyDiversified" order="1.408" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyDiversified" xlink:href="str.xsd#str_StrategyDiversified" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyDiversified" order="1.408" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyDiversified" xlink:href="str.xsd#str_StrategyDiversified" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyDiversified" order="1.408" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyDiversified" xlink:href="str.xsd#str_StrategyDiversified" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyDiversified" order="1.408" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyResearchIntensive" xlink:href="str.xsd#str_StrategyResearchIntensive" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyResearchIntensive" order="1.409" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyResearchIntensive" xlink:href="str.xsd#str_StrategyResearchIntensive" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyResearchIntensive" order="1.409" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyResearchIntensive" xlink:href="str.xsd#str_StrategyResearchIntensive" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyResearchIntensive" order="1.409" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyResearchIntensive" xlink:href="str.xsd#str_StrategyResearchIntensive" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyResearchIntensive" order="1.409" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyResearchIntensive" xlink:href="str.xsd#str_StrategyResearchIntensive" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyResearchIntensive" order="1.409" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyResearchIntensive" xlink:href="str.xsd#str_StrategyResearchIntensive" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyResearchIntensive" order="1.409" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyDerivativeSecurities" xlink:href="str.xsd#str_StrategyDerivativeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyDerivativeSecurities" order="1.41" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyDerivativeSecurities" xlink:href="str.xsd#str_StrategyDerivativeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyDerivativeSecurities" order="1.41" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyDerivativeSecurities" xlink:href="str.xsd#str_StrategyDerivativeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyDerivativeSecurities" order="1.41" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyDerivativeSecurities" xlink:href="str.xsd#str_StrategyDerivativeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyDerivativeSecurities" order="1.41" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyDerivativeSecurities" xlink:href="str.xsd#str_StrategyDerivativeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyDerivativeSecurities" order="1.41" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyDerivativeSecurities" xlink:href="str.xsd#str_StrategyDerivativeSecurities" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyDerivativeSecurities" order="1.41" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyShortPositions" xlink:href="str.xsd#str_StrategyShortPositions" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyShortPositions" order="1.411" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyShortPositions" xlink:href="str.xsd#str_StrategyShortPositions" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyShortPositions" order="1.411" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyShortPositions" xlink:href="str.xsd#str_StrategyShortPositions" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyShortPositions" order="1.411" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyShortPositions" xlink:href="str.xsd#str_StrategyShortPositions" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyShortPositions" order="1.411" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyShortPositions" xlink:href="str.xsd#str_StrategyShortPositions" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyShortPositions" order="1.411" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyShortPositions" xlink:href="str.xsd#str_StrategyShortPositions" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyShortPositions" order="1.411" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyFrequentActiveTrading" xlink:href="str.xsd#str_StrategyFrequentActiveTrading" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyFrequentActiveTrading" order="1.412" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyFrequentActiveTrading" xlink:href="str.xsd#str_StrategyFrequentActiveTrading" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyFrequentActiveTrading" order="1.412" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyFrequentActiveTrading" xlink:href="str.xsd#str_StrategyFrequentActiveTrading" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyFrequentActiveTrading" order="1.412" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyFrequentActiveTrading" xlink:href="str.xsd#str_StrategyFrequentActiveTrading" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyFrequentActiveTrading" order="1.412" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyFrequentActiveTrading" xlink:href="str.xsd#str_StrategyFrequentActiveTrading" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyFrequentActiveTrading" order="1.412" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyFrequentActiveTrading" xlink:href="str.xsd#str_StrategyFrequentActiveTrading" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyFrequentActiveTrading" order="1.412" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySmallCompanies" xlink:href="str.xsd#str_StrategySmallCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategySmallCompanies" order="1.413" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySmallCompanies" xlink:href="str.xsd#str_StrategySmallCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategySmallCompanies" order="1.413" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySmallCompanies" xlink:href="str.xsd#str_StrategySmallCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategySmallCompanies" order="1.413" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySmallCompanies" xlink:href="str.xsd#str_StrategySmallCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategySmallCompanies" order="1.413" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySmallCompanies" xlink:href="str.xsd#str_StrategySmallCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategySmallCompanies" order="1.413" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySmallCompanies" xlink:href="str.xsd#str_StrategySmallCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategySmallCompanies" order="1.413" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyFundOfFunds" xlink:href="str.xsd#str_StrategyFundOfFunds" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyFundOfFunds" order="1.414" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyFundOfFunds" xlink:href="str.xsd#str_StrategyFundOfFunds" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyFundOfFunds" order="1.414" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyFundOfFunds" xlink:href="str.xsd#str_StrategyFundOfFunds" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyFundOfFunds" order="1.414" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyFundOfFunds" xlink:href="str.xsd#str_StrategyFundOfFunds" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyFundOfFunds" order="1.414" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyFundOfFunds" xlink:href="str.xsd#str_StrategyFundOfFunds" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyFundOfFunds" order="1.414" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyFundOfFunds" xlink:href="str.xsd#str_StrategyFundOfFunds" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyFundOfFunds" order="1.414" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyRebalancingToTargetAllocations" xlink:href="str.xsd#str_StrategyRebalancingToTargetAllocations" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyRebalancingToTargetAllocations" order="1.415" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyRebalancingToTargetAllocations" xlink:href="str.xsd#str_StrategyRebalancingToTargetAllocations" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyRebalancingToTargetAllocations" order="1.415" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyRebalancingToTargetAllocations" xlink:href="str.xsd#str_StrategyRebalancingToTargetAllocations" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyRebalancingToTargetAllocations" order="1.415" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyRebalancingToTargetAllocations" xlink:href="str.xsd#str_StrategyRebalancingToTargetAllocations" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyRebalancingToTargetAllocations" order="1.415" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyRebalancingToTargetAllocations" xlink:href="str.xsd#str_StrategyRebalancingToTargetAllocations" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyRebalancingToTargetAllocations" order="1.415" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyRebalancingToTargetAllocations" xlink:href="str.xsd#str_StrategyRebalancingToTargetAllocations" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyRebalancingToTargetAllocations" order="1.415" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyBalanced" xlink:href="str.xsd#str_StrategyBalanced" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyBalanced" order="1.416" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyBalanced" xlink:href="str.xsd#str_StrategyBalanced" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyBalanced" order="1.416" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyBalanced" xlink:href="str.xsd#str_StrategyBalanced" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyBalanced" order="1.416" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyBalanced" xlink:href="str.xsd#str_StrategyBalanced" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyBalanced" order="1.416" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyBalanced" xlink:href="str.xsd#str_StrategyBalanced" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyBalanced" order="1.416" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyBalanced" xlink:href="str.xsd#str_StrategyBalanced" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyBalanced" order="1.416" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyCompaniesWithHighGrowthRelativeToIndustry" xlink:href="str.xsd#str_StrategyCompaniesWithHighGrowthRelativeToIndustry" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyCompaniesWithHighGrowthRelativeToIndustry" order="1.417" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyCompaniesWithHighGrowthRelativeToIndustry" xlink:href="str.xsd#str_StrategyCompaniesWithHighGrowthRelativeToIndustry" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyCompaniesWithHighGrowthRelativeToIndustry" order="1.417" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyCompaniesWithHighGrowthRelativeToIndustry" xlink:href="str.xsd#str_StrategyCompaniesWithHighGrowthRelativeToIndustry" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyCompaniesWithHighGrowthRelativeToIndustry" order="1.417" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyCompaniesWithHighGrowthRelativeToIndustry" xlink:href="str.xsd#str_StrategyCompaniesWithHighGrowthRelativeToIndustry" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyCompaniesWithHighGrowthRelativeToIndustry" order="1.417" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyCompaniesWithHighGrowthRelativeToIndustry" xlink:href="str.xsd#str_StrategyCompaniesWithHighGrowthRelativeToIndustry" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyCompaniesWithHighGrowthRelativeToIndustry" order="1.417" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyCompaniesWithHighGrowthRelativeToIndustry" xlink:href="str.xsd#str_StrategyCompaniesWithHighGrowthRelativeToIndustry" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyCompaniesWithHighGrowthRelativeToIndustry" order="1.417" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyCompaniesWithSustainableGrowth" xlink:href="str.xsd#str_StrategyCompaniesWithSustainableGrowth" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyCompaniesWithSustainableGrowth" order="1.418" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyCompaniesWithSustainableGrowth" xlink:href="str.xsd#str_StrategyCompaniesWithSustainableGrowth" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyCompaniesWithSustainableGrowth" order="1.418" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyCompaniesWithSustainableGrowth" xlink:href="str.xsd#str_StrategyCompaniesWithSustainableGrowth" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyCompaniesWithSustainableGrowth" order="1.418" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyCompaniesWithSustainableGrowth" xlink:href="str.xsd#str_StrategyCompaniesWithSustainableGrowth" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyCompaniesWithSustainableGrowth" order="1.418" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyCompaniesWithSustainableGrowth" xlink:href="str.xsd#str_StrategyCompaniesWithSustainableGrowth" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyCompaniesWithSustainableGrowth" order="1.418" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyCompaniesWithSustainableGrowth" xlink:href="str.xsd#str_StrategyCompaniesWithSustainableGrowth" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyCompaniesWithSustainableGrowth" order="1.418" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyValuationAnalysis" xlink:href="str.xsd#str_StrategyValuationAnalysis" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyValuationAnalysis" order="1.419" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyValuationAnalysis" xlink:href="str.xsd#str_StrategyValuationAnalysis" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyValuationAnalysis" order="1.419" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyValuationAnalysis" xlink:href="str.xsd#str_StrategyValuationAnalysis" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyValuationAnalysis" order="1.419" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyValuationAnalysis" xlink:href="str.xsd#str_StrategyValuationAnalysis" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyValuationAnalysis" order="1.419" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyValuationAnalysis" xlink:href="str.xsd#str_StrategyValuationAnalysis" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyValuationAnalysis" order="1.419" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyValuationAnalysis" xlink:href="str.xsd#str_StrategyValuationAnalysis" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyValuationAnalysis" order="1.419" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyLargeCompanies" xlink:href="str.xsd#str_StrategyLargeCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyLargeCompanies" order="1.42" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyLargeCompanies" xlink:href="str.xsd#str_StrategyLargeCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyLargeCompanies" order="1.42" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyLargeCompanies" xlink:href="str.xsd#str_StrategyLargeCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyLargeCompanies" order="1.42" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyLargeCompanies" xlink:href="str.xsd#str_StrategyLargeCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyLargeCompanies" order="1.42" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyLargeCompanies" xlink:href="str.xsd#str_StrategyLargeCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyLargeCompanies" order="1.42" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyLargeCompanies" xlink:href="str.xsd#str_StrategyLargeCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyLargeCompanies" order="1.42" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyMediumCompanies" xlink:href="str.xsd#str_StrategyMediumCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyMediumCompanies" order="1.421" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyMediumCompanies" xlink:href="str.xsd#str_StrategyMediumCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyMediumCompanies" order="1.421" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyMediumCompanies" xlink:href="str.xsd#str_StrategyMediumCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyMediumCompanies" order="1.421" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyMediumCompanies" xlink:href="str.xsd#str_StrategyMediumCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyMediumCompanies" order="1.421" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyMediumCompanies" xlink:href="str.xsd#str_StrategyMediumCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyMediumCompanies" order="1.421" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyMediumCompanies" xlink:href="str.xsd#str_StrategyMediumCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyMediumCompanies" order="1.421" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEquitiesOfCommodityRelatedCompanies" xlink:href="str.xsd#str_StrategyEquitiesOfCommodityRelatedCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategyEquitiesOfCommodityRelatedCompanies" order="1.422" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEquitiesOfCommodityRelatedCompanies" xlink:href="str.xsd#str_StrategyEquitiesOfCommodityRelatedCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategyEquitiesOfCommodityRelatedCompanies" order="1.422" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEquitiesOfCommodityRelatedCompanies" xlink:href="str.xsd#str_StrategyEquitiesOfCommodityRelatedCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategyEquitiesOfCommodityRelatedCompanies" order="1.422" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEquitiesOfCommodityRelatedCompanies" xlink:href="str.xsd#str_StrategyEquitiesOfCommodityRelatedCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategyEquitiesOfCommodityRelatedCompanies" order="1.422" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEquitiesOfCommodityRelatedCompanies" xlink:href="str.xsd#str_StrategyEquitiesOfCommodityRelatedCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategyEquitiesOfCommodityRelatedCompanies" order="1.422" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategyEquitiesOfCommodityRelatedCompanies" xlink:href="str.xsd#str_StrategyEquitiesOfCommodityRelatedCompanies" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategyEquitiesOfCommodityRelatedCompanies" order="1.422" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySecuritiesLinkedToCommodityIndex" xlink:href="str.xsd#str_StrategySecuritiesLinkedToCommodityIndex" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeParagraph" xlink:to="StrategySecuritiesLinkedToCommodityIndex" order="1.423" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="StrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySecuritiesLinkedToCommodityIndex" xlink:href="str.xsd#str_StrategySecuritiesLinkedToCommodityIndex" xlink:type="locator"/>
+		<link:presentationArc xlink:from="StrategyNarrativeSubparagraph" xlink:to="StrategySecuritiesLinkedToCommodityIndex" order="1.423" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySecuritiesLinkedToCommodityIndex" xlink:href="str.xsd#str_StrategySecuritiesLinkedToCommodityIndex" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeParagraph" xlink:to="StrategySecuritiesLinkedToCommodityIndex" order="1.423" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyNarrativeSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySecuritiesLinkedToCommodityIndex" xlink:href="str.xsd#str_StrategySecuritiesLinkedToCommodityIndex" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyNarrativeSubparagraph" xlink:to="StrategySecuritiesLinkedToCommodityIndex" order="1.423" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingParagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySecuritiesLinkedToCommodityIndex" xlink:href="str.xsd#str_StrategySecuritiesLinkedToCommodityIndex" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingParagraph" xlink:to="StrategySecuritiesLinkedToCommodityIndex" order="1.423" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+	<link:presentationLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://ici.org/dim/2006/role/n1a">
+		<link:loc xlink:label="ObjectiveAndStrategyClosingSubparagraph" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:type="locator"/>
+		<link:loc xlink:label="StrategySecuritiesLinkedToCommodityIndex" xlink:href="str.xsd#str_StrategySecuritiesLinkedToCommodityIndex" xlink:type="locator"/>
+		<link:presentationArc xlink:from="ObjectiveAndStrategyClosingSubparagraph" xlink:to="StrategySecuritiesLinkedToCommodityIndex" order="1.423" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"/>
+	</link:presentationLink>
+</link:linkbase>

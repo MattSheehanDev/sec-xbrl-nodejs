@@ -1,0 +1,2228 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<!--
+	Copyright (C) 2007, 2008 XBRL US, Inc. All Rights Reserved.
+	Authorized Uses are Set Forth at http://xbrl.us/rr/pages/terms.aspx -->
+
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd http://www.xbrl.org/2004/ref http://www.xbrl.org/2004/ref-2004-08-10.xsd" xmlns:ref="http://www.xbrl.org/2004/ref">
+	<link:referenceLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_Prospectus" xlink:label="Prospectus_144"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_FilingDate" xlink:label="FilingDate_148"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskMoneyMarketFund" xlink:label="RiskMoneyMarketFund_161"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskMoneyMarketFund" xlink:label="RiskMoneyMarketFund_177"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskMoneyMarketFund" xlink:label="RiskMoneyMarketFund_179"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskMoneyMarketFund" xlink:label="RiskMoneyMarketFund_183"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskMoneyMarketFund" xlink:label="RiskMoneyMarketFund_190"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskReturn" xlink:label="RiskReturn_169"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskReturnHeading" xlink:label="RiskReturnHeading_169"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskReturnFootnote" xlink:label="RiskReturnFootnote_169"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategySection" xlink:label="ObjectiveAndStrategySection_169"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeParagraph" xlink:label="ObjectiveAndStrategyNarrativeParagraph_169"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyNarrativeSubparagraph" xlink:label="ObjectiveAndStrategyNarrativeSubparagraph_169"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyRow" xlink:label="ObjectiveAndStrategyRow_169"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingSubparagraph" xlink:label="ObjectiveAndStrategyClosingSubparagraph_169"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ObjectiveAndStrategyClosingParagraph" xlink:label="ObjectiveAndStrategyClosingParagraph_169"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ObjectiveSection" xlink:label="ObjectiveSection_171"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ObjectiveFootnote" xlink:label="ObjectiveFootnote_171"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ObjectiveNarrativeParagraph" xlink:label="ObjectiveNarrativeParagraph_171"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ObjectiveNarrativeSubparagraph" xlink:label="ObjectiveNarrativeSubparagraph_171"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_IntroductionParagraph" xlink:label="IntroductionParagraph_171"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_IntroductionSubparagraph" xlink:label="IntroductionSubparagraph_171"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_StrategySection" xlink:label="StrategySection_173"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_StrategyFootnote" xlink:label="StrategyFootnote_173"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeParagraph" xlink:label="StrategyNarrativeParagraph_173"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_StrategyNarrativeSubparagraph" xlink:label="StrategyNarrativeSubparagraph_173"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_StrategyPortfolioConcentration" xlink:label="StrategyPortfolioConcentration_173"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskSection" xlink:label="RiskSection_175"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskClosingParagraph" xlink:label="RiskClosingParagraph_175"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskClosingParagraph" xlink:label="RiskClosingParagraph_178"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskClosingSubparagraph" xlink:label="RiskClosingSubparagraph_175"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskClosingSubparagraph" xlink:label="RiskClosingSubparagraph_178"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskNarrativeParagraph" xlink:label="RiskNarrativeParagraph_176"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskNarrativeParagraph" xlink:label="RiskNarrativeParagraph_178"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskNarrativeSubparagraph" xlink:label="RiskNarrativeSubparagraph_176"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskNarrativeSubparagraph" xlink:label="RiskNarrativeSubparagraph_178"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskFootnote" xlink:label="RiskFootnote_176"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskFootnote" xlink:label="RiskFootnote_178"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskRow" xlink:label="RiskRow_176"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskLoseMoney" xlink:label="RiskLoseMoney_177"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskNotInsuredDepositoryInstitution" xlink:label="RiskNotInsuredDepositoryInstitution_179"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskNotInsuredDepositoryInstitution" xlink:label="RiskNotInsuredDepositoryInstitution_181"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskNotInsuredDepositoryInstitution" xlink:label="RiskNotInsuredDepositoryInstitution_183"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RiskNondiversifiedStatus" xlink:label="RiskNondiversifiedStatus_184"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_BarChartAndPerformanceTableSection" xlink:label="BarChartAndPerformanceTableSection_186"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_BarChartAndPerformanceTableSection" xlink:label="BarChartAndPerformanceTableSection_225"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_BarChartSection" xlink:label="BarChartSection_187"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_BarChartSection" xlink:label="BarChartSection_226"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceNarrativeParagraph" xlink:label="PerformanceNarrativeParagraph_187"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceNarrativeSubparagraph" xlink:label="PerformanceNarrativeSubparagraph_187"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformancePastDoesNotIndicateFuture" xlink:label="PerformancePastDoesNotIndicateFuture_187"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceInformationIllustratesVariabilityOfReturns" xlink:label="PerformanceInformationIllustratesVariabilityOfReturns_187"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AnnualReturnCaption" xlink:label="AnnualReturnCaption_188"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AnticipatedEffectiveDate" xlink:label="AnticipatedEffectiveDate_188"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceOneYearOrLess" xlink:label="PerformanceOneYearOrLess_188"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AnnualReturnRow" xlink:label="AnnualReturnRow_188"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AnnualReturnRow" xlink:label="AnnualReturnRow_227"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_BarChartYearToDateReturn" xlink:label="BarChartYearToDateReturn_188"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_BarChartYearToDateReturnDate" xlink:label="BarChartYearToDateReturnDate_188"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_BarChartHighestQuarterlyReturn" xlink:label="BarChartHighestQuarterlyReturn_188"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_BarChartLowestQuarterlyReturn" xlink:label="BarChartLowestQuarterlyReturn_188"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceTableHeading" xlink:label="PerformanceTableHeading_190"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceTableNarrativeParagraph" xlink:label="PerformanceTableNarrativeParagraph_190"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceTableNarrativeSubparagraph" xlink:label="PerformanceTableNarrativeSubparagraph_190"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceTableDoesReflectSalesLoads" xlink:label="PerformanceTableDoesReflectSalesLoads_190"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnCaption" xlink:label="AverageAnnualReturnCaption_191"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnCaption" xlink:label="AverageAnnualReturnCaption_250"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnLabel" xlink:label="AverageAnnualReturnLabel_191"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnLabel" xlink:label="AverageAnnualReturnLabel_198"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnYear01" xlink:label="AverageAnnualReturnYear01_199"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnYear05" xlink:label="AverageAnnualReturnYear05_200"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnYear10" xlink:label="AverageAnnualReturnYear10_201"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnSinceInception" xlink:label="AverageAnnualReturnSinceInception_202"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnSinceInception" xlink:label="AverageAnnualReturnSinceInception_239"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnInceptionDate" xlink:label="AverageAnnualReturnInceptionDate_202"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsLabel" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsLabel_203"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsYear01" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsYear01_204"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsYear05" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsYear05_205"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsYear10" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsYear10_206"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsSinceInception" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsSinceInception_207"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsSinceInception" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsSinceInception_239"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsInceptionDate" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsInceptionDate_207"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesLabel" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesLabel_208"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear01" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear01_209"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear05" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear05_210"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear10" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear10_211"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception_212"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception_239"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesInceptionDate" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesInceptionDate_212"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MarketIndexReturnLabel" xlink:label="MarketIndexReturnLabel_213"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MarketIndexReturnLabel" xlink:label="MarketIndexReturnLabel_232"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MarketIndexReturnLabel" xlink:label="MarketIndexReturnLabel_233"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MarketIndexReturnFootnote" xlink:label="MarketIndexReturnFootnote_213"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MarketIndexReturnFootnote" xlink:label="MarketIndexReturnFootnote_232"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MarketIndexReturnFootnote" xlink:label="MarketIndexReturnFootnote_233"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MarketIndexReturnRow" xlink:label="MarketIndexReturnRow_213"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MarketIndexReturnYear01" xlink:label="MarketIndexReturnYear01_214"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MarketIndexReturnYear05" xlink:label="MarketIndexReturnYear05_215"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MarketIndexReturnYear10" xlink:label="MarketIndexReturnYear10_216"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MarketIndexReturnSinceInception" xlink:label="MarketIndexReturnSinceInception_217"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MarketIndexReturnInceptionDate" xlink:label="MarketIndexReturnInceptionDate_217"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnFootnote" xlink:label="AverageAnnualReturnFootnote_219"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnFootnote" xlink:label="AverageAnnualReturnFootnote_241"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceTableClosingParagraph" xlink:label="PerformanceTableClosingParagraph_219"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceTableClosingSubparagraph" xlink:label="PerformanceTableClosingSubparagraph_219"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnFootnoteUsesHighestFederalTaxRate" xlink:label="AverageAnnualReturnFootnoteUsesHighestFederalTaxRate_220"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceTableUsesHighestFederalRate" xlink:label="PerformanceTableUsesHighestFederalRate_220"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnFootnoteNotRelevantToTaxDeferred" xlink:label="AverageAnnualReturnFootnoteNotRelevantToTaxDeferred_221"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceTableNotRelevantToTaxDeferred" xlink:label="PerformanceTableNotRelevantToTaxDeferred_221"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnFootnoteOneClassOfMulticlassFund" xlink:label="AverageAnnualReturnFootnoteOneClassOfMulticlassFund_222"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnFootnoteOneClassOfMulticlassFund" xlink:label="AverageAnnualReturnFootnoteOneClassOfMulticlassFund_238"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceTableOneClassOfMulticlassFund" xlink:label="PerformanceTableOneClassOfMulticlassFund_222"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnFootnoteExplanationAfterTaxHigher" xlink:label="AverageAnnualReturnFootnoteExplanationAfterTaxHigher_223"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceTableExplanationAfterTaxHigher" xlink:label="PerformanceTableExplanationAfterTaxHigher_223"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_BarChartClosingParagraph" xlink:label="BarChartClosingParagraph_226"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_BarChartClosingSubparagraph" xlink:label="BarChartClosingSubparagraph_226"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_BarChartNarrativeParagraph" xlink:label="BarChartNarrativeParagraph_227"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_BarChartNarrativeSubparagraph" xlink:label="BarChartNarrativeSubparagraph_227"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_BarChartDoesNotReflectSalesLoads" xlink:label="BarChartDoesNotReflectSalesLoads_227"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AnnualReturnFootnote" xlink:label="AnnualReturnFootnote_227"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AnnualReturnFootnoteDoesNotReflectSalesLoads" xlink:label="AnnualReturnFootnoteDoesNotReflectSalesLoads_227"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AnnualReturnInceptionDate" xlink:label="AnnualReturnInceptionDate_228"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AnnualReturnInceptionDate" xlink:label="AnnualReturnInceptionDate_254"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AnnualReturnFootnoteNonCalendarFiscalYearToDateReturnAsOfMostRecentQuarter" xlink:label="AnnualReturnFootnoteNonCalendarFiscalYearToDateReturnAsOfMostRecentQuarter_228"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceTableSection" xlink:label="PerformanceTableSection_230"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceTableSection" xlink:label="PerformanceTableSection_235"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MoneyMarketSevenDayYieldCaption" xlink:label="MoneyMarketSevenDayYieldCaption_231"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MoneyMarketSevenDayYieldCaption" xlink:label="MoneyMarketSevenDayYieldCaption_234"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MoneyMarketSevenDayYieldRow" xlink:label="MoneyMarketSevenDayYieldRow_231"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MoneyMarketSevenDayYieldRow" xlink:label="MoneyMarketSevenDayYieldRow_234"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MoneyMarketSevenDayTaxEquivalentYieldRow" xlink:label="MoneyMarketSevenDayTaxEquivalentYieldRow_231"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceTableAdditionalMarketIndex" xlink:label="PerformanceTableAdditionalMarketIndex_232"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_PerformanceTableMarketIndexChanged" xlink:label="PerformanceTableMarketIndexChanged_232"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MarketIndexReturnFootnoteMarketIndexChanged" xlink:label="MarketIndexReturnFootnoteMarketIndexChanged_233"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ThirtyDayYieldCaption" xlink:label="ThirtyDayYieldCaption_234"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ThirtyDayYieldRow" xlink:label="ThirtyDayYieldRow_234"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ThirtyDayYieldPhone" xlink:label="ThirtyDayYieldPhone_234"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ThirtyDayYieldFootnote" xlink:label="ThirtyDayYieldFootnote_234"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MoneyMarketSevenDayYieldPhone" xlink:label="MoneyMarketSevenDayYieldPhone_234"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MoneyMarketSevenDayYieldFootnote" xlink:label="MoneyMarketSevenDayYieldFootnote_234"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnFootnoteSubstantiallySimilar" xlink:label="AverageAnnualReturnFootnoteSubstantiallySimilar_242"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AnnualReturnFootnoteReturnsForClassNotOfferedInProspectus" xlink:label="AnnualReturnFootnoteReturnsForClassNotOfferedInProspectus_242"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnRow" xlink:label="AverageAnnualReturnRow_244"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnRow" xlink:label="AverageAnnualReturnRow_251"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsRow" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsRow_245"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesRow" xlink:label="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesRow_245"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AnnualReturnFootnoteReturnsForClassLinkedToClassOffered" xlink:label="AnnualReturnFootnoteReturnsForClassLinkedToClassOffered_249"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AverageAnnualReturnFootnoteForClassConvertedAfterSpecifiedPeriod" xlink:label="AverageAnnualReturnFootnoteForClassConvertedAfterSpecifiedPeriod_252"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_Expenses" xlink:label="Expenses_256"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_Expenses" xlink:label="Expenses_310"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_Expenses" xlink:label="Expenses_311"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseHeading" xlink:label="ExpenseHeading_258"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseNarrativeParagraph" xlink:label="ExpenseNarrativeParagraph_259"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseNarrativeParagraph" xlink:label="ExpenseNarrativeParagraph_313"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseNarrativeSubparagraph" xlink:label="ExpenseNarrativeSubparagraph_259"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ShareholderFeesCaption" xlink:label="ShareholderFeesCaption_260"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumCumulativeSalesChargeOverOfferingPrice" xlink:label="MaximumCumulativeSalesChargeOverOfferingPrice_262"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumCumulativeSalesChargeOverOfferingPrice" xlink:label="MaximumCumulativeSalesChargeOverOfferingPrice_323"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumCumulativeSalesChargeOverOther" xlink:label="MaximumCumulativeSalesChargeOverOther_262"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumCumulativeSalesChargeOverOther" xlink:label="MaximumCumulativeSalesChargeOverOther_323"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumSalesChargeImposedOnPurchasesOverOfferingPrice" xlink:label="MaximumSalesChargeImposedOnPurchasesOverOfferingPrice_262"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumDeferredSalesChargeOverOfferingPrice" xlink:label="MaximumDeferredSalesChargeOverOfferingPrice_264"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumDeferredSalesChargeOverOfferingPrice" xlink:label="MaximumDeferredSalesChargeOverOfferingPrice_322"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumDeferredSalesChargeOverOther" xlink:label="MaximumDeferredSalesChargeOverOther_264"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumDeferredSalesChargeOverOther" xlink:label="MaximumDeferredSalesChargeOverOther_322"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumDeferredSalesChargeOverOther" xlink:label="MaximumDeferredSalesChargeOverOther_369"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther" xlink:label="MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther_266"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther" xlink:label="MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther_324"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RedemptionFeeOverRedemption" xlink:label="RedemptionFeeOverRedemption_268"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RedemptionFeeOverRedemption" xlink:label="RedemptionFeeOverRedemption_325"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RedemptionFeeOverRedemption" xlink:label="RedemptionFeeOverRedemption_370"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RedemptionFee" xlink:label="RedemptionFee_268"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_RedemptionFee" xlink:label="RedemptionFee_325"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExchangeFeeOverRedemption" xlink:label="ExchangeFeeOverRedemption_270"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExchangeFeeOverRedemption" xlink:label="ExchangeFeeOverRedemption_326"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExchangeFee" xlink:label="ExchangeFee_270"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExchangeFee" xlink:label="ExchangeFee_326"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumAccountFeeOverAssets" xlink:label="MaximumAccountFeeOverAssets_272"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumAccountFeeOverAssets" xlink:label="MaximumAccountFeeOverAssets_314"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumAccountFeeOverAssets" xlink:label="MaximumAccountFeeOverAssets_327"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumAccountFee" xlink:label="MaximumAccountFee_272"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumAccountFee" xlink:label="MaximumAccountFee_314"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_MaximumAccountFee" xlink:label="MaximumAccountFee_327"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_OperatingExpenses" xlink:label="OperatingExpenses_274"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_OperatingExpenses" xlink:label="OperatingExpenses_329"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ManagementFeesOverAssets" xlink:label="ManagementFeesOverAssets_275"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ManagementFeesOverAssets" xlink:label="ManagementFeesOverAssets_330"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_DistributionAndService12b1FeesOverAssets" xlink:label="DistributionAndService12b1FeesOverAssets_277"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_DistributionAndService12b1FeesOverAssets" xlink:label="DistributionAndService12b1FeesOverAssets_331"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_TotalOtherExpensesOverAssets" xlink:label="TotalOtherExpensesOverAssets_279"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_TotalOtherExpensesOverAssets" xlink:label="TotalOtherExpensesOverAssets_332"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_DistributionOrSimilarNon12b1FeesOverAssets" xlink:label="DistributionOrSimilarNon12b1FeesOverAssets_279"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_DistributionOrSimilarNon12b1FeesOverAssets" xlink:label="DistributionOrSimilarNon12b1FeesOverAssets_331"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_Subtotal1OtherExpensesOverAssets" xlink:label="Subtotal1OtherExpensesOverAssets_279"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_Subtotal1OtherExpensesOverAssets" xlink:label="Subtotal1OtherExpensesOverAssets_335"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_Subtotal2OtherExpensesOverAssets" xlink:label="Subtotal2OtherExpensesOverAssets_279"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_Subtotal2OtherExpensesOverAssets" xlink:label="Subtotal2OtherExpensesOverAssets_335"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_Subtotal3OtherExpensesOverAssets" xlink:label="Subtotal3OtherExpensesOverAssets_279"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_Subtotal3OtherExpensesOverAssets" xlink:label="Subtotal3OtherExpensesOverAssets_335"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ContractualFeeWaiverOrReimbursementOverAssets" xlink:label="ContractualFeeWaiverOrReimbursementOverAssets_279"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ContractualFeeWaiverOrReimbursementOverAssets" xlink:label="ContractualFeeWaiverOrReimbursementOverAssets_374"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ShareholderFeeOther" xlink:label="ShareholderFeeOther_279"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_TotalExpensesOverAssets" xlink:label="TotalExpensesOverAssets_287"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_TotalExpensesOverAssets" xlink:label="TotalExpensesOverAssets_336"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_TotalExpensesOverAssets" xlink:label="TotalExpensesOverAssets_337"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_TotalExpensesOverAssets" xlink:label="TotalExpensesOverAssets_338"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_TotalExpensesOverAssets" xlink:label="TotalExpensesOverAssets_339"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_TotalExpensesOverAssets" xlink:label="TotalExpensesOverAssets_341"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_TotalExpensesOverAssets" xlink:label="TotalExpensesOverAssets_365"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_NetExpensesOverAssets" xlink:label="NetExpensesOverAssets_287"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExample" xlink:label="ExpenseExample_289"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExample" xlink:label="ExpenseExample_290"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExample" xlink:label="ExpenseExample_312"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExample" xlink:label="ExpenseExample_364"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExample" xlink:label="ExpenseExample_367"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleByYearCaption" xlink:label="ExpenseExampleByYearCaption_291"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleByYearCaption" xlink:label="ExpenseExampleByYearCaption_375"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleYear01" xlink:label="ExpenseExampleYear01_292"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleYear03" xlink:label="ExpenseExampleYear03_293"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleYear05" xlink:label="ExpenseExampleYear05_294"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleYear10" xlink:label="ExpenseExampleYear10_295"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleNoRedemptionByYearCaption" xlink:label="ExpenseExampleNoRedemptionByYearCaption_300"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleNoRedemptionByYearCaption" xlink:label="ExpenseExampleNoRedemptionByYearCaption_375"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleNoRedemptionYear01" xlink:label="ExpenseExampleNoRedemptionYear01_301"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleNoRedemptionYear03" xlink:label="ExpenseExampleNoRedemptionYear03_302"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleNoRedemptionYear05" xlink:label="ExpenseExampleNoRedemptionYear05_303"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleNoRedemptionYear10" xlink:label="ExpenseExampleNoRedemptionYear10_304"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseClosingParagraph" xlink:label="ExpenseClosingParagraph_309"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseClosingSubparagraph" xlink:label="ExpenseClosingSubparagraph_309"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseFootnoteRepresentsBothMasterAndFeeder" xlink:label="ExpenseFootnoteRepresentsBothMasterAndFeeder_316"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleFootnote" xlink:label="ExpenseExampleFootnote_316"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ShareholderFees" xlink:label="ShareholderFees_317"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ShareholderFees" xlink:label="ShareholderFees_320"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_FeesFootnote" xlink:label="FeesFootnote_322"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_FeesFootnoteNarrativeDeferredSalesChargesOverTime" xlink:label="FeesFootnoteNarrativeDeferredSalesChargesOverTime_322"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_FeesFootnoteNonRecurringAccountFee" xlink:label="FeesFootnoteNonRecurringAccountFee_325"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_FeesFootnoteNarrativeRangeOfExchangeFees" xlink:label="FeesFootnoteNarrativeRangeOfExchangeFees_326"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_FeesFootnoteMaximumAccountFeeThreshold" xlink:label="FeesFootnoteMaximumAccountFeeThreshold_327"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseFootnoteContractualFeeWaiverOrReimbursement" xlink:label="ExpenseFootnoteContractualFeeWaiverOrReimbursement_333"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseFootnoteNonContractualFeeWaiverOrReimbursement" xlink:label="ExpenseFootnoteNonContractualFeeWaiverOrReimbursement_333"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseFootnoteOtherExpensesHadExtraordinaryExpensesBeenIncluded" xlink:label="ExpenseFootnoteOtherExpensesHadExtraordinaryExpensesBeenIncluded_334"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseFootnote" xlink:label="ExpenseFootnote_340"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseFootnote" xlink:label="ExpenseFootnote_342"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_AcquiredFundFeesAndExpensesOverAssets" xlink:label="AcquiredFundFeesAndExpensesOverAssets_344"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseFootnoteAcquiredFundFeesAreBasedOnEstimatedAmountsForCurrentYear" xlink:label="ExpenseFootnoteAcquiredFundFeesAreBasedOnEstimatedAmountsForCurrentYear_361"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseFootnoteTotalAnnualExpensesNotCorrelatedToOperatingExpensesOverAverageNetAssets" xlink:label="ExpenseFootnoteTotalAnnualExpensesNotCorrelatedToOperatingExpensesOverAverageNetAssets_362"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleNarrativeParagraph" xlink:label="ExpenseExampleNarrativeParagraph_364"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleNarrativeSubparagraph" xlink:label="ExpenseExampleNarrativeSubparagraph_364"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleClosingParagraph" xlink:label="ExpenseExampleClosingParagraph_364"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleClosingSubparagraph" xlink:label="ExpenseExampleClosingSubparagraph_364"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseExampleClosingSalesChargesAreChargedOnReinvestedDistributions" xlink:label="ExpenseExampleClosingSalesChargesAreChargedOnReinvestedDistributions_368"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseFootnoteOtherExpensesBasedOnEstimates" xlink:label="ExpenseFootnoteOtherExpensesBasedOnEstimates_373"/>
+		<link:loc xlink:type="locator" xlink:href="ici-rr.xsd#ici-rr_ExpenseFootnoteReflectsCurrentFees" xlink:label="ExpenseFootnoteReflectsCurrentFees_373"/>
+		<link:reference xlink:type="resource" xlink:label="ref_A_144" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A_144">
+			<ref:URI>n1a20060914.htm#A</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.1.a.2_148" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.1.a.2_148">
+			<ref:URI>n1a20060914.htm#A.1.a.2</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>1</ref:Section>
+			<ref:Subsection>a</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.1.b.1.instruction.5_161" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.1.b.1.instruction.5_161">
+			<ref:URI>n1a20060914.htm#A.1.b.1.instruction.5</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>1</ref:Section>
+			<ref:Subsection>b</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>instruction</ref:Subparagraph>
+			<ref:Clause>5</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.1.i_177" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.1.i_177">
+			<ref:URI>n1a20060914.htm#A.2.c.1.i</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>i</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.1.ii_179" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.1.ii_179">
+			<ref:URI>n1a20060914.htm#A.2.c.1.ii</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>ii</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.1.iii.instruction_183" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.1.iii.instruction_183">
+			<ref:URI>n1a20060914.htm#A.2.c.1.iii.instruction</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>instruction</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii_190" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii_190">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2_169" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2_169">
+			<ref:URI>n1a20060914.htm#A.2</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.a_171" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.a_171">
+			<ref:URI>n1a20060914.htm#A.2.a</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>a</ref:Subsection>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.b_173" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.b_173">
+			<ref:URI>n1a20060914.htm#A.2.b</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>b</ref:Subsection>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c_175" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c_175">
+			<ref:URI>n1a20060914.htm#A.2.c</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.1.i.instruction_178" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.1.i.instruction_178">
+			<ref:URI>n1a20060914.htm#A.2.c.1.i.instruction</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>i</ref:Subparagraph>
+			<ref:Clause>instruction</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.1_176" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.1_176">
+			<ref:URI>n1a20060914.htm#A.2.c.1</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.1.iii_181" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.1.iii_181">
+			<ref:URI>n1a20060914.htm#A.2.c.1.iii</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.1.iv_184" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.1.iv_184">
+			<ref:URI>n1a20060914.htm#A.2.c.1.iv</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>iv</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2_186" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2_186">
+			<ref:URI>n1a20060914.htm#A.2.c.2</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions_225" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions_225">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.i_187" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.i_187">
+			<ref:URI>n1a20060914.htm#A.2.c.2.i</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>i</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.1_226" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.1_226">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.1</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.ii_188" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.ii_188">
+			<ref:URI>n1a20060914.htm#A.2.c.2.ii</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>ii</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.1.a_227" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.1.a_227">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.1.a</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>a</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.1_191" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.1_191">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.1</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>1</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.3.c.iii_250" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.3.c.iii_250">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.3.c.iii</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>3</ref:Clause>
+			<ref:Exhibit>c</ref:Exhibit>
+			<ref:Example>iii</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.2_198" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.2_198">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.2</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>2</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.2.1_199" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.2.1_199">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.2.1</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>2</ref:Exhibit>
+			<ref:Example>1</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.2.2_200" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.2.2_200">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.2.2</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>2</ref:Exhibit>
+			<ref:Example>2</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.2.3_201" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.2.3_201">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.2.3</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>2</ref:Exhibit>
+			<ref:Example>3</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.2.4_202" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.2.4_202">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.2.4</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>2</ref:Exhibit>
+			<ref:Example>4</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.3.a.i_239" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.3.a.i_239">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.3.a.i</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>3</ref:Clause>
+			<ref:Exhibit>a</ref:Exhibit>
+			<ref:Example>i</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.3_203" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.3_203">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.3</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>3</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.3.1_204" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.3.1_204">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.3.1</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>3</ref:Exhibit>
+			<ref:Example>1</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.3.2_205" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.3.2_205">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.3.2</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>3</ref:Exhibit>
+			<ref:Example>2</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.3.3_206" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.3.3_206">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.3.3</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>3</ref:Exhibit>
+			<ref:Example>3</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.3.4_207" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.3.4_207">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.3.4</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>3</ref:Exhibit>
+			<ref:Example>4</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.4_208" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.4_208">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.4</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>4</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.4.1_209" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.4.1_209">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.4.1</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>4</ref:Exhibit>
+			<ref:Example>1</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.4.2_210" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.4.2_210">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.4.2</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>4</ref:Exhibit>
+			<ref:Example>2</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.4.3_211" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.4.3_211">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.4.3</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>4</ref:Exhibit>
+			<ref:Example>3</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.4.4_212" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.4.4_212">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.4.4</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>4</ref:Exhibit>
+			<ref:Example>4</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.5_213" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.5_213">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.5</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>5</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.2.b_232" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.2.b_232">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.2.b</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>2</ref:Clause>
+			<ref:Exhibit>b</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.2.c_233" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.2.c_233">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.2.c</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>2</ref:Clause>
+			<ref:Exhibit>c</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.5.1_214" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.5.1_214">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.5.1</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>5</ref:Exhibit>
+			<ref:Example>1</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.5.2_215" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.5.2_215">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.5.2</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>5</ref:Exhibit>
+			<ref:Example>2</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.5.3_216" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.5.3_216">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.5.3</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>5</ref:Exhibit>
+			<ref:Example>3</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iii.1.5.4_217" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iii.1.5.4_217">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iii.1.5.4</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iii</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>5</ref:Exhibit>
+			<ref:Example>4</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iv_219" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iv_219">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iv</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iv</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.3.a.iii_241" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.3.a.iii_241">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.3.a.iii</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>3</ref:Clause>
+			<ref:Exhibit>a</ref:Exhibit>
+			<ref:Example>iii</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iv.A_220" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iv.A_220">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iv.A</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iv</ref:Subparagraph>
+			<ref:Clause>A</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iv.B_221" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iv.B_221">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iv.B</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iv</ref:Subparagraph>
+			<ref:Clause>B</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iv.C_222" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iv.C_222">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iv.C</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iv</ref:Subparagraph>
+			<ref:Clause>C</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.3.a_238" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.3.a_238">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.3.a</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>3</ref:Clause>
+			<ref:Exhibit>a</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.iv.D_223" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.iv.D_223">
+			<ref:URI>n1a20060914.htm#A.2.c.2.iv.D</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>iv</ref:Subparagraph>
+			<ref:Clause>D</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.1.b_228" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.1.b_228">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.1.b</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>1</ref:Clause>
+			<ref:Exhibit>b</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.4_254" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.4_254">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.4</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>4</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.2_230" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.2_230">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.2</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>2</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.2.e_235" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.2.e_235">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.2.e</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>2</ref:Clause>
+			<ref:Exhibit>e</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.2.a_231" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.2.a_231">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.2.a</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>2</ref:Clause>
+			<ref:Exhibit>a</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.2.d_234" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.2.d_234">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.2.d</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>2</ref:Clause>
+			<ref:Exhibit>d</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.3.b_242" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.3.b_242">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.3.b</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>3</ref:Clause>
+			<ref:Exhibit>b</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.3.c.i_244" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.3.c.i_244">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.3.c.i</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>3</ref:Clause>
+			<ref:Exhibit>c</ref:Exhibit>
+			<ref:Example>i</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.3.c.iv_251" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.3.c.iv_251">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.3.c.iv</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>3</ref:Clause>
+			<ref:Exhibit>c</ref:Exhibit>
+			<ref:Example>iv</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.3.c.ii_245" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.3.c.ii_245">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.3.c.ii</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>3</ref:Clause>
+			<ref:Exhibit>c</ref:Exhibit>
+			<ref:Example>ii</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.3.c.ii.D_249" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.3.c.ii.D_249">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.3.c.ii.D</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>3</ref:Clause>
+			<ref:Exhibit>c</ref:Exhibit>
+			<ref:Example>ii</ref:Example>
+			<ref:Sentence>0</ref:Sentence>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.2.c.2.instructions.3.d_252" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.2.c.2.instructions.3.d_252">
+			<ref:URI>n1a20060914.htm#A.2.c.2.instructions.3.d</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>2</ref:Section>
+			<ref:Subsection>c</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>instructions</ref:Subparagraph>
+			<ref:Clause>3</ref:Clause>
+			<ref:Exhibit>d</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3_256" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3_256">
+			<ref:URI>n1a20060914.htm#A.3</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions_310" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions_310">
+			<ref:URI>n1a20060914.htm#A.3.instructions</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.1_311" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.1_311">
+			<ref:URI>n1a20060914.htm#A.3.instructions.1</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3_258" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3_258">
+			<ref:URI>n1a20060914.htm#A.3</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3_259" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3_259">
+			<ref:URI>n1a20060914.htm#A.3</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.1.b_313" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.1.b_313">
+			<ref:URI>n1a20060914.htm#A.3.instructions.1.b</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>b</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.table.1_260" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.table.1_260">
+			<ref:URI>n1a20060914.htm#A.3.table.1</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>table</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.table.1.1_262" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.table.1.1_262">
+			<ref:URI>n1a20060914.htm#A.3.table.1.1</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>table</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>1</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.2.a.ii_323" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.2.a.ii_323">
+			<ref:URI>n1a20060914.htm#A.3.instructions.2.a.ii</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>a</ref:Subparagraph>
+			<ref:Clause>ii</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.table.1.2_264" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.table.1.2_264">
+			<ref:URI>n1a20060914.htm#A.3.table.1.2</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>table</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>2</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.2.a.i_322" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.2.a.i_322">
+			<ref:URI>n1a20060914.htm#A.3.instructions.2.a.i</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>a</ref:Subparagraph>
+			<ref:Clause>i</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.4.e_369" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.4.e_369">
+			<ref:URI>n1a20060914.htm#A.3.instructions.4.e</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>4</ref:Paragraph>
+			<ref:Subparagraph>e</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.table.1.3_266" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.table.1.3_266">
+			<ref:URI>n1a20060914.htm#A.3.table.1.3</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>table</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>3</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.2.a.iii_324" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.2.a.iii_324">
+			<ref:URI>n1a20060914.htm#A.3.instructions.2.a.iii</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>a</ref:Subparagraph>
+			<ref:Clause>iii</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.table.1.4_268" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.table.1.4_268">
+			<ref:URI>n1a20060914.htm#A.3.table.1.4</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>table</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>4</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.2.b_325" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.2.b_325">
+			<ref:URI>n1a20060914.htm#A.3.instructions.2.b</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>b</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.4.f_370" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.4.f_370">
+			<ref:URI>n1a20060914.htm#A.3.instructions.4.f</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>4</ref:Paragraph>
+			<ref:Subparagraph>f</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.table.1.5_270" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.table.1.5_270">
+			<ref:URI>n1a20060914.htm#A.3.table.1.5</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>table</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>5</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.2.c_326" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.2.c_326">
+			<ref:URI>n1a20060914.htm#A.3.instructions.2.c</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>c</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.table.1.6_272" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.table.1.6_272">
+			<ref:URI>n1a20060914.htm#A.3.table.1.6</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>table</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>6</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.1.c_314" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.1.c_314">
+			<ref:URI>n1a20060914.htm#A.3.instructions.1.c</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>c</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.2.d_327" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.2.d_327">
+			<ref:URI>n1a20060914.htm#A.3.instructions.2.d</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>d</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.table.1.7_274" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.table.1.7_274">
+			<ref:URI>n1a20060914.htm#A.3.table.1.7</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>table</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>7</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3_329" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3_329">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.table.1.8_275" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.table.1.8_275">
+			<ref:URI>n1a20060914.htm#A.3.table.1.8</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>table</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>8</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.a_330" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.a_330">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.a</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>a</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.table.1.9_277" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.table.1.9_277">
+			<ref:URI>n1a20060914.htm#A.3.table.1.9</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>table</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>9</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.b_331" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.b_331">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.b</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>b</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.table.1.10_279" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.table.1.10_279">
+			<ref:URI>n1a20060914.htm#A.3.table.1.10</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>table</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>10</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.c_332" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.c_332">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.c</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>c</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.c.iii_335" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.c.iii_335">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.c.iii</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>c</ref:Subparagraph>
+			<ref:Clause>iii</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.5.b_374" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.5.b_374">
+			<ref:URI>n1a20060914.htm#A.3.instructions.5.b</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>5</ref:Paragraph>
+			<ref:Subparagraph>b</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.table.1.11_287" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.table.1.11_287">
+			<ref:URI>n1a20060914.htm#A.3.table.1.11</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>table</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>11</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.d_336" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.d_336">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.d</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>d</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.d.i_337" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.d.i_337">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.d.i</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>d</ref:Subparagraph>
+			<ref:Clause>i</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.d.ii_338" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.d.ii_338">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.d.ii</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>d</ref:Subparagraph>
+			<ref:Clause>ii</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.d.ii.A_339" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.d.ii.A_339">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.d.ii.A</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>d</ref:Subparagraph>
+			<ref:Clause>ii</ref:Clause>
+			<ref:Exhibit>A</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.d.iii_341" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.d.iii_341">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.d.iii</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>d</ref:Subparagraph>
+			<ref:Clause>iii</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.4.a_365" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.4.a_365">
+			<ref:URI>n1a20060914.htm#A.3.instructions.4.a</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>4</ref:Paragraph>
+			<ref:Subparagraph>a</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.example.1_289" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.example.1_289">
+			<ref:URI>n1a20060914.htm#A.3.example.1</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>example</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.example.1.1_290" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.example.1.1_290">
+			<ref:URI>n1a20060914.htm#A.3.example.1.1</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>example</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>1</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.1.a_312" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.1.a_312">
+			<ref:URI>n1a20060914.htm#A.3.instructions.1.a</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>a</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.4_364" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.4_364">
+			<ref:URI>n1a20060914.htm#A.3.instructions.4</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>4</ref:Paragraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.4.c_367" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.4.c_367">
+			<ref:URI>n1a20060914.htm#A.3.instructions.4.c</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>4</ref:Paragraph>
+			<ref:Subparagraph>c</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.example.1.2_291" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.example.1.2_291">
+			<ref:URI>n1a20060914.htm#A.3.example.1.2</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>example</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>2</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.5.c_375" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.5.c_375">
+			<ref:URI>n1a20060914.htm#A.3.instructions.5.c</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>5</ref:Paragraph>
+			<ref:Subparagraph>c</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.example.1.3_292" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.example.1.3_292">
+			<ref:URI>n1a20060914.htm#A.3.example.1.3</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>example</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>3</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.example.1.4_293" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.example.1.4_293">
+			<ref:URI>n1a20060914.htm#A.3.example.1.4</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>example</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>4</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.example.1.5_294" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.example.1.5_294">
+			<ref:URI>n1a20060914.htm#A.3.example.1.5</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>example</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>5</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.example.1.6_295" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.example.1.6_295">
+			<ref:URI>n1a20060914.htm#A.3.example.1.6</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>example</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>6</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.example.2.1_300" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.example.2.1_300">
+			<ref:URI>n1a20060914.htm#A.3.example.2.1</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>example</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>1</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.example.2.2_301" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.example.2.2_301">
+			<ref:URI>n1a20060914.htm#A.3.example.2.2</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>example</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>2</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.example.2.3_302" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.example.2.3_302">
+			<ref:URI>n1a20060914.htm#A.3.example.2.3</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>example</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>3</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.example.2.4_303" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.example.2.4_303">
+			<ref:URI>n1a20060914.htm#A.3.example.2.4</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>example</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>4</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.example.2.5_304" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.example.2.5_304">
+			<ref:URI>n1a20060914.htm#A.3.example.2.5</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>example</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>5</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.example.2.6_309" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.example.2.6_309">
+			<ref:URI>n1a20060914.htm#A.3.example.2.6</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>example</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+			<ref:Subparagraph>6</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.1.d.i_316" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.1.d.i_316">
+			<ref:URI>n1a20060914.htm#A.3.instructions.1.d.i</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>d</ref:Subparagraph>
+			<ref:Clause>i</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.1.d.ii_317" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.1.d.ii_317">
+			<ref:URI>n1a20060914.htm#A.3.instructions.1.d.ii</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>1</ref:Paragraph>
+			<ref:Subparagraph>d</ref:Subparagraph>
+			<ref:Clause>ii</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.2_320" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.2_320">
+			<ref:URI>n1a20060914.htm#A.3.instructions.2</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>2</ref:Paragraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.c.i_333" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.c.i_333">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.c.i</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>c</ref:Subparagraph>
+			<ref:Clause>i</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.c.ii_334" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.c.ii_334">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.c.ii</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>c</ref:Subparagraph>
+			<ref:Clause>ii</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.d.ii.B_340" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.d.ii.B_340">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.d.ii.B</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>d</ref:Subparagraph>
+			<ref:Clause>ii</ref:Clause>
+			<ref:Exhibit>B</ref:Exhibit>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.e_342" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.e_342">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.e</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>e</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.f_344" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.f_344">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.f</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>f</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.f.vi_361" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.f.vi_361">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.f.vi</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>f</ref:Subparagraph>
+			<ref:Clause>vi</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.3.f.vii_362" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.3.f.vii_362">
+			<ref:URI>n1a20060914.htm#A.3.instructions.3.f.vii</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>3</ref:Paragraph>
+			<ref:Subparagraph>f</ref:Subparagraph>
+			<ref:Clause>vii</ref:Clause>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.4.d_368" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.4.d_368">
+			<ref:URI>n1a20060914.htm#A.3.instructions.4.d</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>4</ref:Paragraph>
+			<ref:Subparagraph>d</ref:Subparagraph>
+		</link:reference>
+		<link:reference xlink:type="resource" xlink:label="ref_A.3.instructions.5.a_373" xlink:role="http://www.xbrl.org/2003/role/reference" id="ref_A.3.instructions.5.a_373">
+			<ref:URI>n1a20060914.htm#A.3.instructions.5.a</ref:URI>
+			<ref:Publisher>SEC</ref:Publisher>
+			<ref:Name>Form</ref:Name>
+			<ref:Number>N-1A</ref:Number>
+			<ref:IssueDate>2006-09-14</ref:IssueDate>
+			<ref:Chapter>A</ref:Chapter>
+			<ref:Section>3</ref:Section>
+			<ref:Subsection>instructions</ref:Subsection>
+			<ref:Paragraph>5</ref:Paragraph>
+			<ref:Subparagraph>a</ref:Subparagraph>
+		</link:reference>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Prospectus_144" xlink:to="ref_A_144"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FilingDate_148" xlink:to="ref_A.1.a.2_148"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskMoneyMarketFund_161" xlink:to="ref_A.1.b.1.instruction.5_161"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskMoneyMarketFund_177" xlink:to="ref_A.2.c.1.i_177"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskMoneyMarketFund_179" xlink:to="ref_A.2.c.1.ii_179"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskMoneyMarketFund_183" xlink:to="ref_A.2.c.1.iii.instruction_183"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskMoneyMarketFund_190" xlink:to="ref_A.2.c.2.iii_190"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskReturn_169" xlink:to="ref_A.2_169"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskReturnHeading_169" xlink:to="ref_A.2_169"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskReturnFootnote_169" xlink:to="ref_A.2_169"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ObjectiveAndStrategySection_169" xlink:to="ref_A.2_169"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ObjectiveAndStrategyNarrativeParagraph_169" xlink:to="ref_A.2_169"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ObjectiveAndStrategyNarrativeSubparagraph_169" xlink:to="ref_A.2_169"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ObjectiveAndStrategyRow_169" xlink:to="ref_A.2_169"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ObjectiveAndStrategyClosingSubparagraph_169" xlink:to="ref_A.2_169"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ObjectiveAndStrategyClosingParagraph_169" xlink:to="ref_A.2_169"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ObjectiveSection_171" xlink:to="ref_A.2.a_171"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ObjectiveFootnote_171" xlink:to="ref_A.2.a_171"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ObjectiveNarrativeParagraph_171" xlink:to="ref_A.2.a_171"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ObjectiveNarrativeSubparagraph_171" xlink:to="ref_A.2.a_171"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IntroductionParagraph_171" xlink:to="ref_A.2.a_171"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IntroductionSubparagraph_171" xlink:to="ref_A.2.a_171"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StrategySection_173" xlink:to="ref_A.2.b_173"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StrategyFootnote_173" xlink:to="ref_A.2.b_173"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StrategyNarrativeParagraph_173" xlink:to="ref_A.2.b_173"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StrategyNarrativeSubparagraph_173" xlink:to="ref_A.2.b_173"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StrategyPortfolioConcentration_173" xlink:to="ref_A.2.b_173"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskSection_175" xlink:to="ref_A.2.c_175"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskClosingParagraph_175" xlink:to="ref_A.2.c_175"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskClosingParagraph_178" xlink:to="ref_A.2.c.1.i.instruction_178"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskClosingSubparagraph_175" xlink:to="ref_A.2.c_175"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskClosingSubparagraph_178" xlink:to="ref_A.2.c.1.i.instruction_178"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskNarrativeParagraph_176" xlink:to="ref_A.2.c.1_176"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskNarrativeParagraph_178" xlink:to="ref_A.2.c.1.i.instruction_178"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskNarrativeSubparagraph_176" xlink:to="ref_A.2.c.1_176"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskNarrativeSubparagraph_178" xlink:to="ref_A.2.c.1.i.instruction_178"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskFootnote_176" xlink:to="ref_A.2.c.1_176"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskFootnote_178" xlink:to="ref_A.2.c.1.i.instruction_178"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskRow_176" xlink:to="ref_A.2.c.1_176"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskLoseMoney_177" xlink:to="ref_A.2.c.1.i_177"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskNotInsuredDepositoryInstitution_179" xlink:to="ref_A.2.c.1.ii_179"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskNotInsuredDepositoryInstitution_181" xlink:to="ref_A.2.c.1.iii_181"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskNotInsuredDepositoryInstitution_183" xlink:to="ref_A.2.c.1.iii.instruction_183"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RiskNondiversifiedStatus_184" xlink:to="ref_A.2.c.1.iv_184"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BarChartAndPerformanceTableSection_186" xlink:to="ref_A.2.c.2_186"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BarChartAndPerformanceTableSection_225" xlink:to="ref_A.2.c.2.instructions_225"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BarChartSection_187" xlink:to="ref_A.2.c.2.i_187"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BarChartSection_226" xlink:to="ref_A.2.c.2.instructions.1_226"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceNarrativeParagraph_187" xlink:to="ref_A.2.c.2.i_187"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceNarrativeSubparagraph_187" xlink:to="ref_A.2.c.2.i_187"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformancePastDoesNotIndicateFuture_187" xlink:to="ref_A.2.c.2.i_187"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceInformationIllustratesVariabilityOfReturns_187" xlink:to="ref_A.2.c.2.i_187"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AnnualReturnCaption_188" xlink:to="ref_A.2.c.2.ii_188"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AnticipatedEffectiveDate_188" xlink:to="ref_A.2.c.2.ii_188"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceOneYearOrLess_188" xlink:to="ref_A.2.c.2.ii_188"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AnnualReturnRow_188" xlink:to="ref_A.2.c.2.ii_188"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AnnualReturnRow_227" xlink:to="ref_A.2.c.2.instructions.1.a_227"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BarChartYearToDateReturn_188" xlink:to="ref_A.2.c.2.ii_188"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BarChartYearToDateReturnDate_188" xlink:to="ref_A.2.c.2.ii_188"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BarChartHighestQuarterlyReturn_188" xlink:to="ref_A.2.c.2.ii_188"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BarChartLowestQuarterlyReturn_188" xlink:to="ref_A.2.c.2.ii_188"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceTableHeading_190" xlink:to="ref_A.2.c.2.iii_190"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceTableNarrativeParagraph_190" xlink:to="ref_A.2.c.2.iii_190"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceTableNarrativeSubparagraph_190" xlink:to="ref_A.2.c.2.iii_190"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceTableDoesReflectSalesLoads_190" xlink:to="ref_A.2.c.2.iii_190"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnCaption_191" xlink:to="ref_A.2.c.2.iii.1.1_191"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnCaption_250" xlink:to="ref_A.2.c.2.instructions.3.c.iii_250"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnLabel_191" xlink:to="ref_A.2.c.2.iii.1.1_191"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnLabel_198" xlink:to="ref_A.2.c.2.iii.1.2_198"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnYear01_199" xlink:to="ref_A.2.c.2.iii.1.2.1_199"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnYear05_200" xlink:to="ref_A.2.c.2.iii.1.2.2_200"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnYear10_201" xlink:to="ref_A.2.c.2.iii.1.2.3_201"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnSinceInception_202" xlink:to="ref_A.2.c.2.iii.1.2.4_202"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnSinceInception_239" xlink:to="ref_A.2.c.2.instructions.3.a.i_239"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnInceptionDate_202" xlink:to="ref_A.2.c.2.iii.1.2.4_202"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsLabel_203" xlink:to="ref_A.2.c.2.iii.1.3_203"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsYear01_204" xlink:to="ref_A.2.c.2.iii.1.3.1_204"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsYear05_205" xlink:to="ref_A.2.c.2.iii.1.3.2_205"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsYear10_206" xlink:to="ref_A.2.c.2.iii.1.3.3_206"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsSinceInception_207" xlink:to="ref_A.2.c.2.iii.1.3.4_207"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsSinceInception_239" xlink:to="ref_A.2.c.2.instructions.3.a.i_239"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsInceptionDate_207" xlink:to="ref_A.2.c.2.iii.1.3.4_207"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesLabel_208" xlink:to="ref_A.2.c.2.iii.1.4_208"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear01_209" xlink:to="ref_A.2.c.2.iii.1.4.1_209"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear05_210" xlink:to="ref_A.2.c.2.iii.1.4.2_210"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear10_211" xlink:to="ref_A.2.c.2.iii.1.4.3_211"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception_212" xlink:to="ref_A.2.c.2.iii.1.4.4_212"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception_239" xlink:to="ref_A.2.c.2.instructions.3.a.i_239"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesInceptionDate_212" xlink:to="ref_A.2.c.2.iii.1.4.4_212"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarketIndexReturnLabel_213" xlink:to="ref_A.2.c.2.iii.1.5_213"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarketIndexReturnLabel_232" xlink:to="ref_A.2.c.2.instructions.2.b_232"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarketIndexReturnLabel_233" xlink:to="ref_A.2.c.2.instructions.2.c_233"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarketIndexReturnFootnote_213" xlink:to="ref_A.2.c.2.iii.1.5_213"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarketIndexReturnFootnote_232" xlink:to="ref_A.2.c.2.instructions.2.b_232"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarketIndexReturnFootnote_233" xlink:to="ref_A.2.c.2.instructions.2.c_233"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarketIndexReturnRow_213" xlink:to="ref_A.2.c.2.iii.1.5_213"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarketIndexReturnYear01_214" xlink:to="ref_A.2.c.2.iii.1.5.1_214"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarketIndexReturnYear05_215" xlink:to="ref_A.2.c.2.iii.1.5.2_215"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarketIndexReturnYear10_216" xlink:to="ref_A.2.c.2.iii.1.5.3_216"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarketIndexReturnSinceInception_217" xlink:to="ref_A.2.c.2.iii.1.5.4_217"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarketIndexReturnInceptionDate_217" xlink:to="ref_A.2.c.2.iii.1.5.4_217"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnFootnote_219" xlink:to="ref_A.2.c.2.iv_219"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnFootnote_241" xlink:to="ref_A.2.c.2.instructions.3.a.iii_241"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceTableClosingParagraph_219" xlink:to="ref_A.2.c.2.iv_219"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceTableClosingSubparagraph_219" xlink:to="ref_A.2.c.2.iv_219"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnFootnoteUsesHighestFederalTaxRate_220" xlink:to="ref_A.2.c.2.iv.A_220"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceTableUsesHighestFederalRate_220" xlink:to="ref_A.2.c.2.iv.A_220"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnFootnoteNotRelevantToTaxDeferred_221" xlink:to="ref_A.2.c.2.iv.B_221"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceTableNotRelevantToTaxDeferred_221" xlink:to="ref_A.2.c.2.iv.B_221"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnFootnoteOneClassOfMulticlassFund_222" xlink:to="ref_A.2.c.2.iv.C_222"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnFootnoteOneClassOfMulticlassFund_238" xlink:to="ref_A.2.c.2.instructions.3.a_238"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceTableOneClassOfMulticlassFund_222" xlink:to="ref_A.2.c.2.iv.C_222"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnFootnoteExplanationAfterTaxHigher_223" xlink:to="ref_A.2.c.2.iv.D_223"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceTableExplanationAfterTaxHigher_223" xlink:to="ref_A.2.c.2.iv.D_223"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BarChartClosingParagraph_226" xlink:to="ref_A.2.c.2.instructions.1_226"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BarChartClosingSubparagraph_226" xlink:to="ref_A.2.c.2.instructions.1_226"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BarChartNarrativeParagraph_227" xlink:to="ref_A.2.c.2.instructions.1.a_227"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BarChartNarrativeSubparagraph_227" xlink:to="ref_A.2.c.2.instructions.1.a_227"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BarChartDoesNotReflectSalesLoads_227" xlink:to="ref_A.2.c.2.instructions.1.a_227"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AnnualReturnFootnote_227" xlink:to="ref_A.2.c.2.instructions.1.a_227"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AnnualReturnFootnoteDoesNotReflectSalesLoads_227" xlink:to="ref_A.2.c.2.instructions.1.a_227"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AnnualReturnInceptionDate_228" xlink:to="ref_A.2.c.2.instructions.1.b_228"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AnnualReturnInceptionDate_254" xlink:to="ref_A.2.c.2.instructions.4_254"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AnnualReturnFootnoteNonCalendarFiscalYearToDateReturnAsOfMostRecentQuarter_228" xlink:to="ref_A.2.c.2.instructions.1.b_228"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceTableSection_230" xlink:to="ref_A.2.c.2.instructions.2_230"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceTableSection_235" xlink:to="ref_A.2.c.2.instructions.2.e_235"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MoneyMarketSevenDayYieldCaption_231" xlink:to="ref_A.2.c.2.instructions.2.a_231"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MoneyMarketSevenDayYieldCaption_234" xlink:to="ref_A.2.c.2.instructions.2.d_234"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MoneyMarketSevenDayYieldRow_231" xlink:to="ref_A.2.c.2.instructions.2.a_231"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MoneyMarketSevenDayYieldRow_234" xlink:to="ref_A.2.c.2.instructions.2.d_234"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MoneyMarketSevenDayTaxEquivalentYieldRow_231" xlink:to="ref_A.2.c.2.instructions.2.a_231"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceTableAdditionalMarketIndex_232" xlink:to="ref_A.2.c.2.instructions.2.b_232"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceTableMarketIndexChanged_232" xlink:to="ref_A.2.c.2.instructions.2.b_232"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarketIndexReturnFootnoteMarketIndexChanged_233" xlink:to="ref_A.2.c.2.instructions.2.c_233"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ThirtyDayYieldCaption_234" xlink:to="ref_A.2.c.2.instructions.2.d_234"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ThirtyDayYieldRow_234" xlink:to="ref_A.2.c.2.instructions.2.d_234"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ThirtyDayYieldPhone_234" xlink:to="ref_A.2.c.2.instructions.2.d_234"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ThirtyDayYieldFootnote_234" xlink:to="ref_A.2.c.2.instructions.2.d_234"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MoneyMarketSevenDayYieldPhone_234" xlink:to="ref_A.2.c.2.instructions.2.d_234"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MoneyMarketSevenDayYieldFootnote_234" xlink:to="ref_A.2.c.2.instructions.2.d_234"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnFootnoteSubstantiallySimilar_242" xlink:to="ref_A.2.c.2.instructions.3.b_242"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AnnualReturnFootnoteReturnsForClassNotOfferedInProspectus_242" xlink:to="ref_A.2.c.2.instructions.3.b_242"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnRow_244" xlink:to="ref_A.2.c.2.instructions.3.c.i_244"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnRow_251" xlink:to="ref_A.2.c.2.instructions.3.c.iv_251"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsRow_245" xlink:to="ref_A.2.c.2.instructions.3.c.ii_245"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnAfterTaxesOnDistributionsAndSalesRow_245" xlink:to="ref_A.2.c.2.instructions.3.c.ii_245"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AnnualReturnFootnoteReturnsForClassLinkedToClassOffered_249" xlink:to="ref_A.2.c.2.instructions.3.c.ii.D_249"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AverageAnnualReturnFootnoteForClassConvertedAfterSpecifiedPeriod_252" xlink:to="ref_A.2.c.2.instructions.3.d_252"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Expenses_256" xlink:to="ref_A.3_256"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Expenses_310" xlink:to="ref_A.3.instructions_310"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Expenses_311" xlink:to="ref_A.3.instructions.1_311"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseHeading_258" xlink:to="ref_A.3_258"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseNarrativeParagraph_259" xlink:to="ref_A.3_259"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseNarrativeParagraph_313" xlink:to="ref_A.3.instructions.1.b_313"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseNarrativeSubparagraph_259" xlink:to="ref_A.3_259"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShareholderFeesCaption_260" xlink:to="ref_A.3.table.1_260"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumCumulativeSalesChargeOverOfferingPrice_262" xlink:to="ref_A.3.table.1.1_262"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumCumulativeSalesChargeOverOfferingPrice_323" xlink:to="ref_A.3.instructions.2.a.ii_323"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumCumulativeSalesChargeOverOther_262" xlink:to="ref_A.3.table.1.1_262"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumCumulativeSalesChargeOverOther_323" xlink:to="ref_A.3.instructions.2.a.ii_323"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumSalesChargeImposedOnPurchasesOverOfferingPrice_262" xlink:to="ref_A.3.table.1.1_262"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumDeferredSalesChargeOverOfferingPrice_264" xlink:to="ref_A.3.table.1.2_264"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumDeferredSalesChargeOverOfferingPrice_322" xlink:to="ref_A.3.instructions.2.a.i_322"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumDeferredSalesChargeOverOther_264" xlink:to="ref_A.3.table.1.2_264"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumDeferredSalesChargeOverOther_322" xlink:to="ref_A.3.instructions.2.a.i_322"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumDeferredSalesChargeOverOther_369" xlink:to="ref_A.3.instructions.4.e_369"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther_266" xlink:to="ref_A.3.table.1.3_266"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther_324" xlink:to="ref_A.3.instructions.2.a.iii_324"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RedemptionFeeOverRedemption_268" xlink:to="ref_A.3.table.1.4_268"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RedemptionFeeOverRedemption_325" xlink:to="ref_A.3.instructions.2.b_325"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RedemptionFeeOverRedemption_370" xlink:to="ref_A.3.instructions.4.f_370"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RedemptionFee_268" xlink:to="ref_A.3.table.1.4_268"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RedemptionFee_325" xlink:to="ref_A.3.instructions.2.b_325"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExchangeFeeOverRedemption_270" xlink:to="ref_A.3.table.1.5_270"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExchangeFeeOverRedemption_326" xlink:to="ref_A.3.instructions.2.c_326"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExchangeFee_270" xlink:to="ref_A.3.table.1.5_270"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExchangeFee_326" xlink:to="ref_A.3.instructions.2.c_326"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumAccountFeeOverAssets_272" xlink:to="ref_A.3.table.1.6_272"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumAccountFeeOverAssets_314" xlink:to="ref_A.3.instructions.1.c_314"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumAccountFeeOverAssets_327" xlink:to="ref_A.3.instructions.2.d_327"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumAccountFee_272" xlink:to="ref_A.3.table.1.6_272"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumAccountFee_314" xlink:to="ref_A.3.instructions.1.c_314"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MaximumAccountFee_327" xlink:to="ref_A.3.instructions.2.d_327"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingExpenses_274" xlink:to="ref_A.3.table.1.7_274"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingExpenses_329" xlink:to="ref_A.3.instructions.3_329"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ManagementFeesOverAssets_275" xlink:to="ref_A.3.table.1.8_275"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ManagementFeesOverAssets_330" xlink:to="ref_A.3.instructions.3.a_330"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DistributionAndService12b1FeesOverAssets_277" xlink:to="ref_A.3.table.1.9_277"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DistributionAndService12b1FeesOverAssets_331" xlink:to="ref_A.3.instructions.3.b_331"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalOtherExpensesOverAssets_279" xlink:to="ref_A.3.table.1.10_279"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalOtherExpensesOverAssets_332" xlink:to="ref_A.3.instructions.3.c_332"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DistributionOrSimilarNon12b1FeesOverAssets_279" xlink:to="ref_A.3.table.1.10_279"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DistributionOrSimilarNon12b1FeesOverAssets_331" xlink:to="ref_A.3.instructions.3.b_331"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Subtotal1OtherExpensesOverAssets_279" xlink:to="ref_A.3.table.1.10_279"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Subtotal1OtherExpensesOverAssets_335" xlink:to="ref_A.3.instructions.3.c.iii_335"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Subtotal2OtherExpensesOverAssets_279" xlink:to="ref_A.3.table.1.10_279"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Subtotal2OtherExpensesOverAssets_335" xlink:to="ref_A.3.instructions.3.c.iii_335"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Subtotal3OtherExpensesOverAssets_279" xlink:to="ref_A.3.table.1.10_279"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Subtotal3OtherExpensesOverAssets_335" xlink:to="ref_A.3.instructions.3.c.iii_335"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ContractualFeeWaiverOrReimbursementOverAssets_279" xlink:to="ref_A.3.table.1.10_279"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ContractualFeeWaiverOrReimbursementOverAssets_374" xlink:to="ref_A.3.instructions.5.b_374"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShareholderFeeOther_279" xlink:to="ref_A.3.table.1.10_279"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalExpensesOverAssets_287" xlink:to="ref_A.3.table.1.11_287"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalExpensesOverAssets_336" xlink:to="ref_A.3.instructions.3.d_336"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalExpensesOverAssets_337" xlink:to="ref_A.3.instructions.3.d.i_337"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalExpensesOverAssets_338" xlink:to="ref_A.3.instructions.3.d.ii_338"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalExpensesOverAssets_339" xlink:to="ref_A.3.instructions.3.d.ii.A_339"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalExpensesOverAssets_341" xlink:to="ref_A.3.instructions.3.d.iii_341"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalExpensesOverAssets_365" xlink:to="ref_A.3.instructions.4.a_365"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetExpensesOverAssets_287" xlink:to="ref_A.3.table.1.11_287"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExample_289" xlink:to="ref_A.3.example.1_289"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExample_290" xlink:to="ref_A.3.example.1.1_290"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExample_312" xlink:to="ref_A.3.instructions.1.a_312"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExample_364" xlink:to="ref_A.3.instructions.4_364"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExample_367" xlink:to="ref_A.3.instructions.4.c_367"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleByYearCaption_291" xlink:to="ref_A.3.example.1.2_291"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleByYearCaption_375" xlink:to="ref_A.3.instructions.5.c_375"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleYear01_292" xlink:to="ref_A.3.example.1.3_292"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleYear03_293" xlink:to="ref_A.3.example.1.4_293"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleYear05_294" xlink:to="ref_A.3.example.1.5_294"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleYear10_295" xlink:to="ref_A.3.example.1.6_295"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleNoRedemptionByYearCaption_300" xlink:to="ref_A.3.example.2.1_300"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleNoRedemptionByYearCaption_375" xlink:to="ref_A.3.instructions.5.c_375"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleNoRedemptionYear01_301" xlink:to="ref_A.3.example.2.2_301"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleNoRedemptionYear03_302" xlink:to="ref_A.3.example.2.3_302"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleNoRedemptionYear05_303" xlink:to="ref_A.3.example.2.4_303"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleNoRedemptionYear10_304" xlink:to="ref_A.3.example.2.5_304"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseClosingParagraph_309" xlink:to="ref_A.3.example.2.6_309"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseClosingSubparagraph_309" xlink:to="ref_A.3.example.2.6_309"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseFootnoteRepresentsBothMasterAndFeeder_316" xlink:to="ref_A.3.instructions.1.d.i_316"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleFootnote_316" xlink:to="ref_A.3.instructions.1.d.i_316"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShareholderFees_317" xlink:to="ref_A.3.instructions.1.d.ii_317"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShareholderFees_320" xlink:to="ref_A.3.instructions.2_320"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FeesFootnote_322" xlink:to="ref_A.3.instructions.2.a.i_322"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FeesFootnoteNarrativeDeferredSalesChargesOverTime_322" xlink:to="ref_A.3.instructions.2.a.i_322"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FeesFootnoteNonRecurringAccountFee_325" xlink:to="ref_A.3.instructions.2.b_325"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FeesFootnoteNarrativeRangeOfExchangeFees_326" xlink:to="ref_A.3.instructions.2.c_326"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FeesFootnoteMaximumAccountFeeThreshold_327" xlink:to="ref_A.3.instructions.2.d_327"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseFootnoteContractualFeeWaiverOrReimbursement_333" xlink:to="ref_A.3.instructions.3.c.i_333"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseFootnoteNonContractualFeeWaiverOrReimbursement_333" xlink:to="ref_A.3.instructions.3.c.i_333"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseFootnoteOtherExpensesHadExtraordinaryExpensesBeenIncluded_334" xlink:to="ref_A.3.instructions.3.c.ii_334"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseFootnote_340" xlink:to="ref_A.3.instructions.3.d.ii.B_340"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseFootnote_342" xlink:to="ref_A.3.instructions.3.e_342"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AcquiredFundFeesAndExpensesOverAssets_344" xlink:to="ref_A.3.instructions.3.f_344"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseFootnoteAcquiredFundFeesAreBasedOnEstimatedAmountsForCurrentYear_361" xlink:to="ref_A.3.instructions.3.f.vi_361"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseFootnoteTotalAnnualExpensesNotCorrelatedToOperatingExpensesOverAverageNetAssets_362" xlink:to="ref_A.3.instructions.3.f.vii_362"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleNarrativeParagraph_364" xlink:to="ref_A.3.instructions.4_364"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleNarrativeSubparagraph_364" xlink:to="ref_A.3.instructions.4_364"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleClosingParagraph_364" xlink:to="ref_A.3.instructions.4_364"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleClosingSubparagraph_364" xlink:to="ref_A.3.instructions.4_364"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseExampleClosingSalesChargesAreChargedOnReinvestedDistributions_368" xlink:to="ref_A.3.instructions.4.d_368"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseFootnoteOtherExpensesBasedOnEstimates_373" xlink:to="ref_A.3.instructions.5.a_373"/>
+		<link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExpenseFootnoteReflectsCurrentFees_373" xlink:to="ref_A.3.instructions.5.a_373"/>
+	</link:referenceLink>
+</link:linkbase>

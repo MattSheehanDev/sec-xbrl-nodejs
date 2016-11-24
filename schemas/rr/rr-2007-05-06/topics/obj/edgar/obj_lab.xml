@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:obj="http://ici.org/rr/obj/2006" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+	<link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+		<link:loc xlink:type="locator" xlink:href="obj.xsd#obj_ObjectiveMayBeChanged" xlink:label="ObjectiveMayBeChanged"/>
+		<link:loc xlink:type="locator" xlink:href="obj.xsd#obj_ObjectiveTotalReturn" xlink:label="ObjectiveTotalReturn"/>
+		<link:loc xlink:type="locator" xlink:href="obj.xsd#obj_ObjectiveHighCurrentIncome" xlink:label="ObjectiveHighCurrentIncome"/>
+		<link:loc xlink:type="locator" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalGrowth" xlink:label="ObjectiveLongTermCapitalGrowth"/>
+		<link:loc xlink:type="locator" xlink:href="obj.xsd#obj_ObjectiveLongTermCapitalAppreciation" xlink:label="ObjectiveLongTermCapitalAppreciation"/>
+		<link:loc xlink:type="locator" xlink:href="obj.xsd#obj_ObjectivePreservationOfCapital" xlink:label="ObjectivePreservationOfCapital"/>
+		<link:loc xlink:type="locator" xlink:href="obj.xsd#obj_ObjectiveGrowthAndIncome" xlink:label="ObjectiveGrowthAndIncome"/>
+		<link:loc xlink:type="locator" xlink:href="obj.xsd#obj_ObjectiveCapitalAppreciation" xlink:label="ObjectiveCapitalAppreciation"/>
+		<link:loc xlink:type="locator" xlink:href="obj.xsd#obj_ObjectiveMatchBenchmark" xlink:label="ObjectiveMatchBenchmark"/>
+		<link:loc xlink:type="locator" xlink:href="obj.xsd#obj_ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:label="ObjectiveHighTotalReturnUntilTargetDateThenIncome"/>
+		<link:loc xlink:type="locator" xlink:href="obj.xsd#obj_ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:label="ObjectiveAboveAverageTotalReturnsOverMarketCycle"/>
+		<link:loc xlink:type="locator" xlink:href="obj.xsd#obj_ObjectiveTaxExemptCurrentIncome" xlink:label="ObjectiveTaxExemptCurrentIncome"/>
+		<link:loc xlink:type="locator" xlink:href="obj.xsd#obj_ObjectiveMatchEquityBenchmark" xlink:label="ObjectiveMatchEquityBenchmark"/>
+		<link:loc xlink:type="locator" xlink:href="obj.xsd#obj_ObjectiveMatchFixedIncomeBenchmark" xlink:label="ObjectiveMatchFixedIncomeBenchmark"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ObjectiveMayBeChanged" xlink:to="label_ObjectiveMayBeChanged"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ObjectiveTotalReturn" xlink:to="label_ObjectiveTotalReturn"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ObjectiveHighCurrentIncome" xlink:to="label_ObjectiveHighCurrentIncome"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ObjectiveLongTermCapitalGrowth" xlink:to="label_ObjectiveLongTermCapitalGrowth"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ObjectiveLongTermCapitalAppreciation" xlink:to="label_ObjectiveLongTermCapitalAppreciation"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ObjectivePreservationOfCapital" xlink:to="label_ObjectivePreservationOfCapital"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ObjectiveGrowthAndIncome" xlink:to="label_ObjectiveGrowthAndIncome"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ObjectiveCapitalAppreciation" xlink:to="label_ObjectiveCapitalAppreciation"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ObjectiveMatchBenchmark" xlink:to="label_ObjectiveMatchBenchmark"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:to="label_ObjectiveHighTotalReturnUntilTargetDateThenIncome"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:to="label_ObjectiveAboveAverageTotalReturnsOverMarketCycle"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ObjectiveTaxExemptCurrentIncome" xlink:to="label_ObjectiveTaxExemptCurrentIncome"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ObjectiveMatchEquityBenchmark" xlink:to="label_ObjectiveMatchEquityBenchmark"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ObjectiveMatchFixedIncomeBenchmark" xlink:to="label_ObjectiveMatchFixedIncomeBenchmark"/>
+		<link:label xlink:type="resource" xlink:label="label_ObjectiveMayBeChanged" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_ObjectiveMayBeChanged">Objective May be Changed</link:label>
+		<link:label xlink:type="resource" xlink:label="label_ObjectiveTotalReturn" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_ObjectiveTotalReturn">Objective Total Return</link:label>
+		<link:label xlink:type="resource" xlink:label="label_ObjectiveHighCurrentIncome" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_ObjectiveHighCurrentIncome">Objective High Current Income</link:label>
+		<link:label xlink:type="resource" xlink:label="label_ObjectiveLongTermCapitalGrowth" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_ObjectiveLongTermCapitalGrowth">Objective Long Term Capital Growth</link:label>
+		<link:label xlink:type="resource" xlink:label="label_ObjectiveLongTermCapitalAppreciation" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_ObjectiveLongTermCapitalAppreciation">Objective Long Term Capital Appreciation</link:label>
+		<link:label xlink:type="resource" xlink:label="label_ObjectivePreservationOfCapital" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_ObjectivePreservationOfCapital">Objective Preservation of Capital</link:label>
+		<link:label xlink:type="resource" xlink:label="label_ObjectiveGrowthAndIncome" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_ObjectiveGrowthAndIncome">Objective Growth and Income</link:label>
+		<link:label xlink:type="resource" xlink:label="label_ObjectiveCapitalAppreciation" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_ObjectiveCapitalAppreciation">Objective Capital Appreciation</link:label>
+		<link:label xlink:type="resource" xlink:label="label_ObjectiveMatchBenchmark" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_ObjectiveMatchBenchmark">Objective Match Benchmark</link:label>
+		<link:label xlink:type="resource" xlink:label="label_ObjectiveHighTotalReturnUntilTargetDateThenIncome" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_ObjectiveHighTotalReturnUntilTargetDateThenIncome">Objective High Total Return Until Target Date Then Income</link:label>
+		<link:label xlink:type="resource" xlink:label="label_ObjectiveAboveAverageTotalReturnsOverMarketCycle" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_ObjectiveAboveAverageTotalReturnsOverMarketCycle">Objective Above Average Total Returns / Market Cycle</link:label>
+		<link:label xlink:type="resource" xlink:label="label_ObjectiveTaxExemptCurrentIncome" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_ObjectiveTaxExemptCurrentIncome">Objective Tax Exempt Current Income</link:label>
+		<link:label xlink:type="resource" xlink:label="label_ObjectiveMatchEquityBenchmark" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_ObjectiveMatchEquityBenchmark">Objective Match Equity Benchmark</link:label>
+		<link:label xlink:type="resource" xlink:label="label_ObjectiveMatchFixedIncomeBenchmark" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="label_ObjectiveMatchFixedIncomeBenchmark">Objective Match Fixed Income Benchmark</link:label>
+	</link:labelLink>
+</link:linkbase>

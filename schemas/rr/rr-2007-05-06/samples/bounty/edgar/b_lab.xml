@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<link:linkbase xmlns:b="http://bounty.com/rr/2006" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+	<link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_S000006340" xlink:label="S000006340"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000011370" xlink:label="C000011370"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000011371" xlink:label="C000011371"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000011372" xlink:label="C000011372"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000011373" xlink:label="C000011373"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_S000448012" xlink:label="S000448012"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000033802" xlink:label="C000033802"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000033803" xlink:label="C000033803"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000033804" xlink:label="C000033804"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000033805" xlink:label="C000033805"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_S000006440" xlink:label="S000006440"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000011374" xlink:label="C000011374"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000011375" xlink:label="C000011375"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000011376" xlink:label="C000011376"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000011377" xlink:label="C000011377"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_S000005840" xlink:label="S000005840"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000011350" xlink:label="C000011350"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000011351" xlink:label="C000011351"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000011352" xlink:label="C000011352"/>
+		<link:loc xlink:type="locator" xlink:href="b.xsd#b_C000011353" xlink:label="C000011353"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="S000006340" xlink:to="label_S000006340" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000011370" xlink:to="label_C000011370" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000011371" xlink:to="label_C000011371" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000011372" xlink:to="label_C000011372" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000011373" xlink:to="label_C000011373" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="S000448012" xlink:to="label_S000448012" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000033802" xlink:to="label_C000033802" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000033803" xlink:to="label_C000033803" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000033804" xlink:to="label_C000033804" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000033805" xlink:to="label_C000033805" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="S000006440" xlink:to="label_S000006440" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="S000006440" xlink:to="label_S000006440_1" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000011374" xlink:to="label_C000011374" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000011375" xlink:to="label_C000011375" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000011376" xlink:to="label_C000011376" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000011377" xlink:to="label_C000011377" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="S000005840" xlink:to="label_S000005840" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000011350" xlink:to="label_C000011350" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000011351" xlink:to="label_C000011351" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000011352" xlink:to="label_C000011352" use="optional" priority="1" order="1.0"/>
+		<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="C000011353" xlink:to="label_C000011353" use="optional" priority="1" order="1.0"/>
+		<link:label xlink:type="resource" xlink:label="label_S000006340" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BOUNTY GROWTH FUND</link:label>
+		<link:label xlink:type="resource" xlink:label="label_C000011370" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BRGAX</link:label>
+		<link:label xlink:type="resource" xlink:label="label_C000011371" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BRGBX</link:label>
+		<link:label xlink:type="resource" xlink:label="label_C000011372" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BRGCX</link:label>
+		<link:label xlink:type="resource" xlink:label="label_C000011373" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BRGIX</link:label>
+		<link:label xlink:type="resource" xlink:label="label_S000448012" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BOUNTY MULTI-FUND EQUITY</link:label>
+		<link:label xlink:type="resource" xlink:label="label_C000033802" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BRQAX</link:label>
+		<link:label xlink:type="resource" xlink:label="label_C000033803" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BRQBX</link:label>
+		<link:label xlink:type="resource" xlink:label="label_C000033804" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BRQCX</link:label>
+		<link:label xlink:type="resource" xlink:label="label_C000033805" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BRQIX</link:label>
+		<link:label xlink:type="resource" xlink:label="label_S000006440" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BOUNTY GLOBAL GROWTH</link:label>
+		<link:label xlink:type="resource" xlink:label="label_S000006440_1" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en"/>
+		<link:label xlink:type="resource" xlink:label="label_C000011374" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BGGAX</link:label>
+		<link:label xlink:type="resource" xlink:label="label_C000011375" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BGGBX</link:label>
+		<link:label xlink:type="resource" xlink:label="label_C000011376" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BGGCX</link:label>
+		<link:label xlink:type="resource" xlink:label="label_C000011377" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BGGIX</link:label>
+		<link:label xlink:type="resource" xlink:label="label_S000005840" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BOUNTY VALUE</link:label>
+		<link:label xlink:type="resource" xlink:label="label_C000011350" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BRVAX</link:label>
+		<link:label xlink:type="resource" xlink:label="label_C000011351" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BRVBX</link:label>
+		<link:label xlink:type="resource" xlink:label="label_C000011352" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BRVCX</link:label>
+		<link:label xlink:type="resource" xlink:label="label_C000011353" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BRVIX</link:label>
+	</link:labelLink>
+</link:linkbase>
