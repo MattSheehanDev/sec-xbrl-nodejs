@@ -45,6 +45,7 @@ namespace Format {
 
         // find all the dates
         // TODO: no need to do this, just use the xbrl context nodes
+        // TODO: keep reference to context around in the xbrl value nodes instead of parsing year/quarter
         let years: number[] = [];
         DFSStatement(table, (node: StatementGaapNode) => {
             for (let value of node.values) {
