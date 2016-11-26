@@ -1,7 +1,7 @@
 import DFS from '../utilities/dfs';
 import { SchemaDocument, ImportNode, ElementNode } from './schemanodes';
 import {LabelNode, PresentationLink, Presentation, PresentationArcNode} from './linkbasenodes';
-
+import Helpers from '../xbrl/helpers';
 
 namespace SchemaParser {
 
@@ -17,16 +17,7 @@ namespace SchemaParser {
         DFS(document, (element: Element) => {
             if ('schema' === element.localName) {
                 targetNS = element.getAttributeNS(null, 'targetNamespace');
-
-                for (let i = 0; i < element.attributes.length; i++) {
-                    let attr = element.attributes[i];
-
-                    if ('xmlns' === attr.prefix) {
-                        if (!namespaces.has(attr.localName)) {
-                            namespaces.set(attr.localName, attr.value);
-                        }
-                    }
-                }
+                namespaces = Helpers.GetAttributes(element);
             }
             else if ('element' === element.localName) {
                 let elementNode = new ElementNode(element, namespaces);

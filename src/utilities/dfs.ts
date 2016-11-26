@@ -2,7 +2,7 @@
 import NodeTypes from './nodetypes';
 
 
-export function DFS(doc: Node, each: (node: Element) => void) {
+function DFS(doc: Node, each: (node: Element) => void) {
     // let discovered: Node[] = [];
 
     let start: Element[] = [];
@@ -28,7 +28,7 @@ export function DFS(doc: Node, each: (node: Element) => void) {
     }
 }
 
-export function DFSRecursive(node: Node, each: (node: Node) => void) {
+function DFSRecursive(node: Node, each: (node: Node) => void) {
     each(node);
 
     if (node.hasChildNodes()) {

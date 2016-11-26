@@ -1,7 +1,10 @@
 import Attributes from '../attributes';
 import { StatementNode, StatementValueNode, StatementGaapNode, StatementDeiNode } from './statementnode';
-import GaapNode from '../namespaces/gaapnode';
+import ContextNode from '../instance/contextnode';
+import GaapNode from '../instance/gaapnode';
+import DeiNode from '../instance/deinode';
 
+import Helpers from '../helpers';
 import { DateTime as datetime } from '../../utilities/datetime';
 import { Round } from '../../utilities/utility';
 
@@ -10,16 +13,16 @@ const TYPES = Attributes.types;
 const UNITS = Attributes.units;
 
 
-// TODO: Create as `new Object`?
+// TODO: Create as `new Object`? Maybe rename?
 export interface StatementHTML {
     title?: string;
     dates: string[];
     lines: StatementLinesHTML[];
 }
 export interface StatementLinesHTML {
-    label: string;
-    abstract: boolean;
     values: string[];
+    label: string;
+    header: boolean;
     total: boolean;
 }
 
@@ -27,57 +30,79 @@ export interface StatementLinesHTML {
 
 namespace Format {
 
+    function findUniqueDates(table: StatementGaapNode|StatementDeiNode) {
+        // find all the dates
+        let dates: Date[] = [];
+        DFSStatement(table, (node: StatementGaapNode) => {
+            for (let value of node.values) {
+                if (!value.date) continue;
 
-    export function Table(title: string, date: Date, table: StatementValueNode<any>) {
+                let idx = dates.indexOf(value.date);
+                if (idx === -1) {
+                    dates.push(value.date);
+                }
+            }
+        });
+        dates = dates.sort((a: Date, b: Date) => {
+            return b.getTime() - a.getTime();
+        });
+        return dates;        
+    }
+    function findUniqueDatesFlat(nodes: StatementGaapNode[]|StatementDeiNode[]) {
+        // find all the dates
+        let dates: Date[] = [];
+        for (let node of nodes) {
+            for (let value of node.values) {
+                if (!value.date) continue;
+
+                let idx = dates.indexOf(value.date);
+                if (idx === -1) {
+                    dates.push(value.date);
+                }
+            }
+        }
+        dates = dates.sort((a: Date, b: Date) => {
+            return b.getTime() - a.getTime();
+        });
+        return dates;
+    }
+
+
+    export function Table(title: string, table: StatementValueNode<any>) {
 
         // every table has [Line Items]?
         let lineItems: StatementGaapNode;
         for (let child of table.children) {
-            let match = child.label.Text.match(/([^/[]*)\[(.*)\]$/);
-            if (match) {
-                let type = match[2].trim().toLowerCase();
-                if (type === 'line items') {
-                    lineItems = child;
-                    break;
-                }
+            let type = Helpers.FetchLabelType(child.label.Text);
+            if (type === 'line items') {
+                lineItems = child;
+                break;
             }
         }
+        let lineNames = lineItems.children.map((node: StatementGaapNode) => { return node.element.name; });
+
 
         // find all the dates
-        // TODO: no need to do this, just use the xbrl context nodes
-        // TODO: keep reference to context around in the xbrl value nodes instead of parsing year/quarter
-        let years: number[] = [];
-        DFSStatement(table, (node: StatementGaapNode) => {
-            for (let value of node.values) {
-                if (!value.year || value.member) continue;
+        let dates = findUniqueDates(table);
 
-                let idx = years.indexOf(value.year);
-                if (idx === -1) {
-                    years.push(value.year);
-                }
-            }
-        });
-
-        let sortedYears = years.sort((a: number, b: number) => { return b - a; });
 
         // create and filter statement lines
         let bsLines: StatementLinesHTML[] = [];
 
 
         DFSStatement(table, (stmntNode: StatementGaapNode) => {
-            if (stmntNode.element.name === 'PreferredStockParOrStatedValuePerShare') {
-                let s = '';
-            }
-            if (stmntNode.element.name === 'EntityCentralIndexKey') {
-                let s = '';
-            }
-
+            // let v: {
+            //     output: string;
+            //     context: ContextNode,
+            //     class: string;
+            // }[] = [];
             let values: string[] = [];
             let empty = true;
-            for (let year of sortedYears) {
+
+            for (let date of dates) {
                 let node: GaapNode;
                 for (let n of stmntNode.values) {
-                    if (n.year === year && !n.member) {
+                    if (n.date === date) {
                         node = n;
                         break;
                     }
@@ -86,9 +111,15 @@ namespace Format {
                 if (node) {
                     values.push(formatValue(node, stmntNode.element.type));
                     empty = false;
+                    // v.push({
+                    //     output: formatValue(node, stmntNode.element.type),
+                    //     context: node.context,
+                    //     class: ''
+                    // });
                 }
                 else {
                     values.push('');
+                    // v.push({ output: '', context: null, class: '' });
                 }
             }
 
@@ -107,7 +138,6 @@ namespace Format {
 
                 isItemHeader = isChild && isString && hasChildren;
             }
-            let lineNames = lineItems.children.map((node: StatementGaapNode) => { return node.element.name; });
             if (stmntNode.isTotal && lineNames.indexOf(stmntNode.parent.element.name) !== -1) {
                 isTotal = true;
             }
@@ -115,12 +145,34 @@ namespace Format {
 
             // don't show empty sections
             if (!empty || isItemHeader) {
-                let label = FormatLabelText(stmntNode.label.Text);
-                let abstract = IsAbstract(stmntNode.element.name);
+                // let label = Helpers.FetchLabelText(stmntNode.label.Text);
+                // let abstract = IsAbstract(stmntNode.element.name);
+
+                // for (let value of v) {
+                //     if (value.context.period.type === 'duration') {
+                //         let start = value.context.period.start.getTime();
+                //         let end = value.context.period.end.getTime();
+                //         let diff = end - start;
+
+                //         for (let value2 of v) {
+                //             if (value === value2) continue;
+
+                //             if (value.context.period.type === 'duration') {
+                //                 let start2 = value.context.period.start.getTime();
+                //                 let end2 = value.context.period.end.getTime();
+                //                 let diff2 = end2 - start2;
+
+                //                 if (end2 <= end && start2 >= start) {
+                //                     value.class = 'quarter';
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
 
                 bsLines.push({
-                    label: label,
-                    abstract: abstract,
+                    label: Helpers.FetchLabelText(stmntNode.label.Text),
+                    header: isItemHeader,
                     values: values,
                     total: isTotal
                 });
@@ -128,54 +180,30 @@ namespace Format {
         });
 
 
-        let dates = sortedYears.map((value: number) => {
-            date.setFullYear(value);
-            return datetime.format(date, 'MMM. dd, yyyy');
-        });
         return <StatementHTML>{
             title: title,
-            // title: FormatLabelText(table.label.Text),
-            dates: dates,
+            dates: dates.map((value: Date) => { return datetime.format(value, 'MMM. dd, yyyy'); }),
             lines: bsLines
         };
     }
 
-    export function FlatTable(title: string, date: Date, nodes: StatementValueNode<any>[]) {
-        // let date = new Date(entity.DocumentDate);
+    export function FlatTable(title: string, nodes: StatementValueNode<any>[]) {
 
         // find all the dates
-        let years: number[] = [];
-        for (let node of nodes) {
-            for (let value of node.values) {
-                if (!value.year || value.member) continue;
-
-                let idx = years.indexOf(value.year);
-                if (idx === -1) {
-                    years.push(value.year);
-                }
-            }
-        }
-
-        let sortedYears = years.sort((a: number, b: number) => { return b - a; });
-        let dates = sortedYears.map((value: number) => {
-            date.setFullYear(value);
-            return datetime.format(date, 'MMM. dd, yyyy');
-        });
+        let dates: Date[] = findUniqueDatesFlat(nodes);
 
 
         let bsLines: StatementLinesHTML[] = [];
 
         for (let stmntNode of nodes) {
-            if (stmntNode.element.name === 'PreferredStockParOrStatedValuePerShare') {
-                let s = '';
-            }
 
             let values: string[] = [];
             let empty = true;
-            for (let year of sortedYears) {
+
+            for (let date of dates) {
                 let node: GaapNode;
                 for (let n of stmntNode.values) {
-                    if (n.year === year && !n.member) {
+                    if (n.date === date) {
                         node = n;
                         break;
                     }
@@ -193,19 +221,23 @@ namespace Format {
 
             // don't show empty sections
             if (!empty) {
-                let label = FormatLabelText(stmntNode.label.Text);
-                let abstract = IsAbstract(stmntNode.element.name);
+                // let label = Helpers.FetchLabelText(stmntNode.label.Text);
+                // let abstract = IsAbstract(stmntNode.element.name);
 
                 bsLines.push({
-                    label: label,
-                    abstract: abstract,
+                    label: Helpers.FetchLabelText(stmntNode.label.Text),
+                    header: false,
                     values: values,
                     total: false
                 });
             }
         }
 
-        return <StatementHTML>{ title: title, dates: dates, lines: bsLines };
+        return <StatementHTML>{
+            title: title,
+            dates: dates.map((value: Date) => { return datetime.format(value, 'MMM. dd, yyyy'); }),
+            lines: bsLines
+        };
     }
 
 
@@ -215,17 +247,9 @@ namespace Format {
 export default Format;
 
 
-function FindTable(nodes: StatementGaapNode[]): StatementGaapNode | null {
-    for (let node of nodes) {
-        if (node.element.name === 'StatementLineItems') {
-            return node;
-        }
-    }
-    return null;
-}
 
-function DFSStatement(root: StatementGaapNode, each: (node: StatementGaapNode) => void) {
-    let start: StatementGaapNode[] = [];
+function DFSStatement(root: StatementValueNode<GaapNode|DeiNode>, each: (node: StatementValueNode<GaapNode|DeiNode>) => void) {
+    let start: StatementValueNode<GaapNode|DeiNode>[] = [];
     start.push(root);
 
     while (start.length > 0) {
@@ -239,8 +263,6 @@ function DFSStatement(root: StatementGaapNode, each: (node: StatementGaapNode) =
         }
     }
 }
-
-
 
 
 function formatValue(node: GaapNode, type: string) {
@@ -282,15 +304,6 @@ function formatValue(node: GaapNode, type: string) {
 }
 
 
-function FormatLabelText(text: string) {
-    // Some of the labels have brackets at the end, ex. Assets [Abstract],
-    // which we won't want to display for the output
-    let match = text.match(/([^/[]*)\[(.*)\]$/);
-    if (match) {
-        return match[1].trim();
-    }
-    return text;
-}
 function FormatDecimals(value: number, decimals: number) {
     let len = Math.pow(10, decimals);
     return Math.round(value * len);

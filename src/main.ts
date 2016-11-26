@@ -1,4 +1,9 @@
 import XBRL from './xbrl/instance/xbrl';
+import ContextNode from './xbrl/instance/contextnode';
+import GaapNode from './xbrl/instance/gaapnode';
+import DeiNode from './xbrl/instance/deinode';
+
+import Helpers from './xbrl/helpers';
 
 import API from './api/api';
 import { DOMParser } from 'xmldom';
@@ -8,7 +13,7 @@ import { SchemaDocument, ElementNode } from './schema/schemanodes';
 import { LabelNode, PresentationLink, Presentation } from './schema/linkbasenodes';
 
 import Attributes from './xbrl/attributes';
-import { StatementNode, StatementGaapNode, StatementDeiNode } from './xbrl/statements/statementnode';
+import { StatementNode, StatementValueNode, StatementGaapNode, StatementDeiNode } from './xbrl/statements/statementnode';
 import StatementHelpers from './xbrl/statements/statementhelpers';
 import Format from './xbrl/statements/statementformat';
 
@@ -74,9 +79,14 @@ instance = instance.then((data: string) => {
         return renderInstance(xbrl, deiSchema, gaapSchema);
     });
     render = render.then((html: string) => {
-        return fs.WriteFile(path.join(cwd, `./output/cvs-2014-12-31.html`), html).then(() => {
+        return fs.TryMakeDir(path.join(cwd, `./output/`)).then(() => {
+            return fs.WriteFile(path.join(cwd, `./output/cvs-2014-12-31.html`), html);
+        }).then(() => {
             console.log('Wrote output.');
         });
+        // return fs.WriteFile(path.join(cwd, `./output/cvs-2014-12-31.html`), html).then(() => {
+        //     console.log('Wrote output.');
+        // });
     });
 });
 
@@ -207,24 +217,22 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
     let soi_presentation = gaapSchema.soiPresentation;
 
 
-    function MatchBrackets(str: string) {
-        return str.match(/([^/[]*)\[(.*)\]$/);
-    }
-    function FetchLabelText(text: string) {
-        // Some of the labels have brackets at the end, ex. Assets [Abstract],
-        // which we won't want to display for the output
-        let match = MatchBrackets(text);
-        if (match) {
-            return match[1].trim();
+    function removeSegments(valueNodes: (StatementGaapNode|StatementDeiNode)[]) {
+        // Seperate the segment values for now...
+        for (let node of valueNodes) {
+            let removeValues: any[] = [];
+            for (let value of node.values) {
+                // If there is no date or is a segment, mark to remove from the value list
+                if (!value.date || value.segment) {
+                    removeValues.push(value);
+                }
+            }
+
+            for (let r of removeValues) {
+                let values: any = node.values;
+                values.splice(values.indexOf(r), 1);
+            }
         }
-        return text;
-    }
-    function FetchLabelType(text: string) {
-        let match = MatchBrackets(text);
-        if (match) {
-            return match[2].trim().toLowerCase();
-        }
-        return text;
     }
 
 
@@ -237,29 +245,18 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
     let count = 0;
 
 
-
-    // for now get the document date in a hacky way
-    // CurrentFiscalYearEndDate could also be used
-    let documentDate: Date;
-    if (dei.map.has('DocumentPeriodEndDate')) {
-        let endDateNode = dei.map.get('DocumentPeriodEndDate');
-        let value = StatementHelpers.SelectDeiNodes([endDateNode], xbrl)[0];
-        documentDate = new Date(value.values[0].value);
-    }
-    else {
-        documentDate = new Date();
-    }
-
-
     for (let presentation of DEIPresentation) {
         count += 1;
         let documentNodes = StatementHelpers.PullStatementNodes(presentation.nodes, dei.map);
         let documentValues = StatementHelpers.SelectDeiNodes(documentNodes, xbrl);
 
+        // Seperate the segment values for now...
+        removeSegments(documentValues);
+
         // TODO: combine all the tables into a function...
         let documentTableNodes: StatementDeiNode[] = [];
         for (let value of documentValues) {
-            let type = FetchLabelType(value.label.Text);
+            let type = Helpers.FetchLabelType(value.label.Text);
 
             if (type === 'table') {
                 documentTableNodes.push(value);
@@ -272,8 +269,8 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
 
         console.log(`${count}: formatting dei tables`);
         for (let table of documentTableNodes) {
-            let title = FetchLabelText(table.label.Text);
-            let formattedTable = Format.Table(title, documentDate, table);
+            let title = Helpers.FetchLabelText(table.label.Text);
+            let formattedTable = Format.Table(title, table);
 
             if (formattedTable.lines.length > 0) {
                 deiTables.push(formattedTable);
@@ -291,17 +288,29 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
 
     // pair up elements with their labels
     let gaap = StatementHelpers.CreateStatementNodes(GaapSchema.Elements, GaapLabels);
-    // let documentDate = new Date(entity.DocumentDate);
-
 
     console.log('starting balance sheet...');
 
-    // find the root balance sheet node
-    let sfpRootTitle = '';
-    if (gaap.map.has(STMNTS.BalanceSheetRoot)) {
-        let sfpRoot = gaap.map.get(STMNTS.BalanceSheetRoot);
-        sfpRootTitle = FetchLabelText(sfpRoot.label.Text);
+
+    function getRootStatementLabel(name: string, nodes: Map<string, StatementNode>) {
+        if (nodes.has(name)) {
+            let root = nodes.get(name);
+            return Helpers.FetchLabelText(root.label.Text);
+        }
+        return '';
     }
+    function getTableNodes(nodes: StatementValueNode<GaapNode|DeiNode>[]) {
+        let tableNodes: StatementValueNode<GaapNode|DeiNode>[] = [];
+        for (let value of nodes) {
+            if ('table' === Helpers.FetchLabelType(value.label.Text)) {
+                tableNodes.push(value);
+            }
+        }
+        return tableNodes;
+    }
+
+    // find the root balance sheet node
+    let sfpRootTitle = getRootStatementLabel(STMNTS.BalanceSheetRoot, gaap.map);
 
     let balanceSheetTables: any[] = [];
     count = 0;
@@ -310,6 +319,9 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
         count += 1;
         let balanceSheetNodes = StatementHelpers.PullStatementNodes(presentation.nodes, gaap.map);
         let balanceSheetValues = StatementHelpers.SelectGaapNodes(balanceSheetNodes, xbrl);
+
+        // Seperate the segment values for now...
+        removeSegments(balanceSheetValues);
 
 
         let shareValues: StatementGaapNode[] = [];
@@ -324,14 +336,7 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
         }
 
 
-        let tableNodes: StatementGaapNode[] = [];
-        for (let value of balanceSheetValues) {
-            let type = FetchLabelType(value.label.Text);
-
-            if (type === 'table') {
-                tableNodes.push(value);
-            }
-        }
+        let tableNodes = getTableNodes(balanceSheetValues);
 
 
         console.log(`${count}: matching balance sheet presentation`);
@@ -339,8 +344,8 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
         
         console.log(`${count}: formatting balance sheet tables`);
         for (let table of tableNodes) {
-            let title = `${sfpRootTitle} - ${FetchLabelText(table.label.Text)}`;
-            let formattedTable = Format.Table(title, documentDate, table);
+            let title = `${sfpRootTitle} - ${Helpers.FetchLabelText(table.label.Text)}`;
+            let formattedTable = Format.Table(title, table);
 
             if (formattedTable.lines.length) {
                 balanceSheetTables.push(formattedTable);    
@@ -348,7 +353,7 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
         }
 
         let title = `${sfpRootTitle} - Parenthetical`;
-        let formattedTable = Format.FlatTable(title, documentDate, shareValues);
+        let formattedTable = Format.FlatTable(title, shareValues);
         if (formattedTable.lines.length) {
             balanceSheetTables.push(formattedTable);
         }
@@ -360,11 +365,7 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
     console.log('starting income statement');
 
     // find the root income statement node
-    let soiRootTitle = '';
-    if (gaap.map.has(STMNTS.IncomeStatementRoot)) {
-        let soiRoot = gaap.map.get(STMNTS.IncomeStatementRoot);
-        soiRootTitle = FetchLabelText(soiRoot.label.Text);
-    }
+    let soiRootTitle = getRootStatementLabel(STMNTS.IncomeStatementRoot, gaap.map);
 
     let incomeSheetTables: any[] = [];
     count = 0;
@@ -374,14 +375,10 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
         let incomeStatementNodes = StatementHelpers.PullStatementNodes(presentation.nodes, gaap.map);
         let incomeStatementValues = StatementHelpers.SelectGaapNodes(incomeStatementNodes, xbrl);
 
-        let incomeTableNodes: StatementGaapNode[] = [];
-        for (let value of incomeStatementValues) {
-            let type = FetchLabelType(value.label.Text);
+        // Seperate the segment values for now...
+        removeSegments(incomeStatementValues);
 
-            if (type === 'table') {
-                incomeTableNodes.push(value);
-            }
-        }
+        let tableNodes = getTableNodes(incomeStatementValues);
 
         // TODO: this is the wrong income statement presentation for cvs
         //       (this might also be the case for the balance sheet too...)
@@ -389,9 +386,9 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
         StatementHelpers.MatchPresentation(presentation.nodes, incomeStatementValues);
 
         console.log(`${count}: formatting income statement tables`);
-        for (let table of incomeTableNodes) {
-            let title = `${soiRootTitle} - ${FetchLabelText(table.label.Text)}`;
-            let formattedTable = Format.Table(title, documentDate, table);
+        for (let table of tableNodes) {
+            let title = `${soiRootTitle} - ${Helpers.FetchLabelText(table.label.Text)}`;
+            let formattedTable = Format.Table(title, table);
 
             if (formattedTable.lines.length > 0) {
                 incomeSheetTables.push(formattedTable);
@@ -400,6 +397,7 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
     }
 
 
+    console.log('rendering templates');
     return renderNunjucks(
         path.join(process.cwd(), './templates/index.html'),
         ['.', './templates/'],
@@ -408,12 +406,9 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
                 tables: deiTables,
             },
             sfp: {
-                // money: balanceSheetMoney,
-                // shares: balanceSheetShares,
                 tables: balanceSheetTables
             },
             soi: {
-                // income: incomeStatementFormat
                 tables: incomeSheetTables
             }
         }

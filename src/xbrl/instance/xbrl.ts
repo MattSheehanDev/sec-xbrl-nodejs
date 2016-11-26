@@ -1,8 +1,11 @@
+/// <reference path="../../../typings/xpath/index.d.ts" />
+import xpath = require('xpath');
 
 import XPathParser from '../parser';
 import NodeTypes from '../../utilities/nodetypes';
 import ContextNode from './contextnode';
-import { DFS } from '../../utilities/dfs';
+import DFS from '../../utilities/dfs';
+import Helpers from '../helpers';
 
 
 // TODO: download all schemas
@@ -29,15 +32,12 @@ export default class XBRLDocument {
         }
         
         // Get the namespaces
-        // TODO: this is repetitive, similar functionality in schemaparser.ts
-        let ns = new Map<string, string>();
-        for (let i = 0; i < root.attributes.length; i++) {
-            let attr = root.attributes[i];
+        let ns = Helpers.GetAttributes(root);
 
-            if ('xmlns' === attr.prefix && !ns.has(attr.localName)) {
-                ns.set(attr.localName, attr.value);
-            }
-        }
+        let nsObj: any = {};
+        ns.forEach((value: string, key: string) => {
+            nsObj[key] = value;
+        });
 
 
         // we are concerned with finding the 'us-gaap' and 'dei' namespaces (to determine what schema to use)
@@ -61,8 +61,11 @@ export default class XBRLDocument {
         });
 
 
-        this.DeiParser = new XPathParser(deiRoot, deiNS, 'dei');
-        this.GaapParser = new XPathParser(gaapRoot, gaapNS, 'us-gaap');
+        // create select object
+        let selectNS = xpath.useNamespaces(nsObj);
+
+        this.DeiParser = new XPathParser(deiRoot, selectNS, deiNS, 'dei');
+        this.GaapParser = new XPathParser(gaapRoot, selectNS, gaapNS, 'us-gaap');
 
 
         this.ContextNodes = new Map<string, ContextNode>();

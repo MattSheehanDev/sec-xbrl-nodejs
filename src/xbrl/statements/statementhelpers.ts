@@ -1,12 +1,12 @@
 import {ElementNode} from '../../schema/schemanodes';
 import {LabelNode} from '../../schema/linkbasenodes';
+import {Presentation} from '../../schema/linkbasenodes';
 
 import {StatementNode, StatementValueNode, StatementGaapNode, StatementDeiNode} from './statementnode';
 
-import XBRLDocument from '../instance/xbrl'; 
-import {Presentation} from '../../schema/linkbasenodes';
-import GaapNode from '../namespaces/gaapnode';
-import DeiNode from '../namespaces/deinode';
+import XBRLDocument from '../instance/xbrl';
+import GaapNode from '../instance/gaapnode';
+import DeiNode from '../instance/deinode';
 
 
 namespace StatementHelpers {

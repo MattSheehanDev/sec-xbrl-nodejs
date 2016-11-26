@@ -1,8 +1,8 @@
 import {ElementNode} from '../../schema/schemanodes';
 import {LabelNode} from '../../schema/linkbasenodes';
 
-import GaapNode from '../namespaces/gaapnode';
-import DeiNode from '../namespaces/deinode';
+import GaapNode from '../instance/gaapnode';
+import DeiNode from '../instance/deinode';
 
 
 export class StatementNode {

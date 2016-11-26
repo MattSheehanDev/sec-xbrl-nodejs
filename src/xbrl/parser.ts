@@ -1,30 +1,23 @@
-import { SelectNS } from './namespaces/xmlns';
-
-
-// DEI
-// Document Entity Information
-
-
-// <xs:element id="dei_AccountingAddressMember" name="AccountingAddressMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" abstract="true"/>
-// <xs:element id="dei_DocumentPeriodEndDate" name="DocumentPeriodEndDate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration"/>
-// <dei:DocumentPeriodEndDate contextRef="FD2014Q4YTD" id="Fact-DF620ECE92082777F26B9F284C9CBF73">2014-12-31</dei:DocumentPeriodEndDate>
 
 
 export default class XPathParser {
 
     private _document: Document|Element;
+    private _select: (s: string, el: Document|Element) => Element[];
     
     public readonly targetNS: string;
     public readonly prefix: string;
 
-    constructor(element: Document|Element, ns: string, prefix: string) {
+    constructor(element: Document|Element, select: any, ns: string, prefix: string) {
         this._document = element;
+        this._select = select;
+
         this.targetNS = ns;
         this.prefix = prefix;
     }
 
     public All(): Element[] {
-        return SelectNS(`//*[namespace-uri()='${this.targetNS}']`, this._document);
+        return this._select(`//*[namespace-uri()='${this.targetNS}']`, this._document);
     }
     public Select(names: string|string[]) {
         if (Array.isArray(names)) {
@@ -58,11 +51,11 @@ export default class XPathParser {
 
     private selectUsingNS(name: string): Element[] {
         let usingNS = `//*[local-name()='${name}' and namespace-uri()='${this.targetNS}']`;
-        return SelectNS(usingNS, this._document);
+        return this._select(usingNS, this._document);
     }
     private selectUsingPrefix(name: string): Element[] {
         let usingPrefix = `//*[local-name()='${name}' and starts-with(name(), '${this.prefix}')]`;
-        return SelectNS(usingPrefix, this._document);
+        return this._select(usingPrefix, this._document);
     }
 
 }

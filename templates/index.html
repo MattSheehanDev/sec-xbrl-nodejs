@@ -43,9 +43,19 @@
 </head>
 <body>
 
-    {% include "documenttables.html" %}
-    {% include "balancesheet.html" %}
-    {% include "incomestatement.html" %}
+    {% import "table-macro.html" as tables %}
+
+    {% for table in doc.tables %}
+        {{ tables.CreateTable(table) }}
+    {% endfor %}
+
+    {% for table in sfp.tables %}
+        {{ tables.CreateTable(table) }}
+    {% endfor %}
+
+    {% for table in soi.tables %}
+        {{ tables.CreateTable(table) }}
+    {% endfor %}
 
 </body>
 </html>

@@ -21,7 +21,8 @@ namespace Attributes {
         money: 'xbrli:monetaryItemType',
         str: 'xbrli:stringItemType',
         shares: 'xbrli:sharesItemType',
-        perShare: 'num:perShareItemType'
+        perShare: 'num:perShareItemType',
+        date: 'xbrli:dateItemType'
     }
 
     export const units = {

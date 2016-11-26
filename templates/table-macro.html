@@ -1,4 +1,4 @@
-{% for table in soi.tables %}
+{% macro CreateTable(table) %}
 <table>
     <colgroup>
         <col span="1" style="width: 600px"></col>
@@ -20,7 +20,7 @@
 	<tbody>
 		{% for line in table.lines %}
 		<tr>
-			{% if line.abstract %}
+			{% if line.header %}
 				<td class='table-section'>{{ line.label }}</td>
 				{% for value in line.values %}
 				<td></td>
@@ -50,4 +50,5 @@
 		{% endfor %}		
 	</tbody>
 </table>
-{% endfor %}
+{% endmacro %}
+
