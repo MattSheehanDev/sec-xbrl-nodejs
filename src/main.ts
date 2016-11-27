@@ -17,11 +17,11 @@ import { StatementNode, StatementValueNode, StatementGaapNode, StatementDeiNode 
 import StatementHelpers from './xbrl/statements/statementhelpers';
 import Format from './xbrl/statements/statementformat';
 
-import nunjucks = require('nunjucks');
 import path = require('path');
 import url = require('url');
 
 import fs from './utilities/filesystem';
+import RenderTemplates from './utilities/nunjucks';
 import { DateTime as datetime } from './utilities/datetime';
 
 let isRelease = process.env.NODE_ENV === 'release';
@@ -46,11 +46,11 @@ const UNITS = Attributes.units;
 
 
 
-const CVS_INSTANCE = path.join(cwd, './test/cvs-20141231.xml');
+const INSTANCE_PATH = path.join(cwd, './test/cvs-20141231.xml');
+import ExchangeAPI from './symbols';
 
 
-
-let instance = fs.ReadFile(CVS_INSTANCE);
+let instance = fs.ReadFile(INSTANCE_PATH);
 instance = instance.then((data: string) => {
     let parser = new DOMParser();
 
@@ -70,24 +70,30 @@ instance = instance.then((data: string) => {
         return parseGaapSchema(parser, stats);
     });
 
+    // let symbolsDir = path.join(cwd, './symbols/');
+    // fs.TryMakeDir(symbolsDir).then(() => {
+    //     return ExchangeAPI.WriteSymbolLists(symbolsDir);
+    // }).then(() => {
+    //     console.log('Wrote symbols');
+    // });
 
-    let render = Promise.all([checkDei, checkGaap]).then((data: any[]) => {
-        console.log('started rendering xbrl instance');
-        let deiSchema: DeiInstanceSchema = data[0];
-        let gaapSchema: GaapInstanceSchema = data[1];
 
-        return renderInstance(xbrl, deiSchema, gaapSchema);
-    });
-    render = render.then((html: string) => {
-        return fs.TryMakeDir(path.join(cwd, `./output/`)).then(() => {
-            return fs.WriteFile(path.join(cwd, `./output/cvs-2014-12-31.html`), html);
-        }).then(() => {
-            console.log('Wrote output.');
-        });
-        // return fs.WriteFile(path.join(cwd, `./output/cvs-2014-12-31.html`), html).then(() => {
-        //     console.log('Wrote output.');
-        // });
-    });
+    // let render = Promise.all([checkDei, checkGaap]).then((data: any[]) => {
+    //     console.log('started rendering xbrl instance');
+    //     let deiSchema: DeiInstanceSchema = data[0];
+    //     let gaapSchema: GaapInstanceSchema = data[1];
+
+    //     let instanceData = parseInstance(xbrl, deiSchema, gaapSchema);
+    //     return RenderTemplates(instanceData);
+    // });
+    // render = render.then((html: string) => {
+    //     return fs.TryMakeDir(path.join(cwd, `./output/`)).then(() => {
+    //         let p = path.parse(INSTANCE_PATH);
+    //         return fs.WriteFile(path.join(cwd, `./output/${p.name}.html`), html);
+    //     }).then(() => {
+    //         console.log('Wrote output.');
+    //     });
+    // });
 });
 
 
@@ -165,79 +171,108 @@ function parseDeiSchema(parser: DOMParser, stats: SchemaStats) {
 interface GaapInstanceSchema {
     schema: SchemaDocument;
     labels: LabelNode[],
-    sfpPresentation: PresentationLink[];
+
+    sfp_clreo: PresentationLink[];
+    sfp_cls: PresentationLink[];
+    sfp_dbo: PresentationLink[];
+    sfp_ibo: PresentationLink[];
+    sfp_sbo: PresentationLink[];
+    sfp_ucreo: PresentationLink[];
+
     soiPresentation: PresentationLink[];
+    socPresentation: PresentationLink[];
 }
 
 function parseGaapSchema(parser: DOMParser, stats: SchemaStats) {
     let elements = path.join(stats.dir, `/elts/us-gaap-${stats.date}.xsd`);
     let labels = path.join(stats.dir, `/elts/us-gaap-lab-${stats.date}.xml`);
-    let sfpPresentation = path.join(stats.dir, `/stm/us-gaap-stm-sfp-cls-pre-${stats.date}.xml`);
-    let soiPresentation = path.join(stats.dir, `/stm/us-gaap-stm-soi-pre-${stats.date}.xml`);
 
+    // classified, Real Estate Operations
+    let sfp_clreo = path.join(stats.dir, `/stm/us-gaap-stm-sfp-clreo-pre-${stats.date}.xml`);
+    // classified
+    let sfp_cls = path.join(stats.dir, `/stm/us-gaap-stm-sfp-cls-pre-${stats.date}.xml`);
+    // unclassified, Deposit Based Operations
+    let sfp_dbo = path.join(stats.dir, `/stm/us-gaap-stm-sfp-dbo-pre-${stats.date}.xml`);
+    // unclassified, Investment Based Operations
+    let sfp_ibo = path.join(stats.dir, `/stm/us-gaap-stm-sfp-ibo-pre-${stats.date}.xml`);
+    // unclassified, Securities Based Operations
+    let sfp_sbo = path.join(stats.dir, `/stm/us-gaap-stm-sfp-sbo-pre-${stats.date}.xml`);
+    // unclassified, Real Estate Operations
+    let sfp_ucreo = path.join(stats.dir, `/stm/us-gaap-stm-sfp-ucreo-pre-${stats.date}.xml`);
+
+    let soiPresentation = path.join(stats.dir, `/stm/us-gaap-stm-soi-pre-${stats.date}.xml`);
+    let socPresentation = path.join(stats.dir, `/stm/us-gaap-stm-soc-pre-${stats.date}.xml`);
 
     let readSchema = fs.ReadFile(elements).then((data: string) => {
-        let document = parser.parseFromString(data);
-        return SchemaParser.ParseDocument(document);        
+        return SchemaParser.ParseDocument(parser.parseFromString(data));        
     });
     let readLabels = fs.ReadFile(labels).then((data: string) => {
-        let document = parser.parseFromString(data);
-        return SchemaParser.ParseLabels(document);
+        return SchemaParser.ParseLabels(parser.parseFromString(data));
     });
-    let readSFPPresentation = fs.ReadFile(sfpPresentation).then((data: string) => {
-        let document = parser.parseFromString(data);
-        return SchemaParser.ParsePresentation(document);
+    
+    let readSFPcls = fs.ReadFile(sfp_cls).then((data: string) => {
+        return SchemaParser.ParsePresentation(parser.parseFromString(data));
     });
+    let readSFPclreo = fs.ReadFile(sfp_clreo).then((data: string) => {
+        return SchemaParser.ParsePresentation(parser.parseFromString(data));
+    });
+    let readSFPdbo = fs.ReadFile(sfp_dbo).then((data: string) => {
+        return SchemaParser.ParsePresentation(parser.parseFromString(data));
+    });
+    let readSFPibo = fs.ReadFile(sfp_ibo).then((data: string) => {
+        return SchemaParser.ParsePresentation(parser.parseFromString(data));
+    });
+    let readSFPsbo = fs.ReadFile(sfp_sbo).then((data: string) => {
+        return SchemaParser.ParsePresentation(parser.parseFromString(data));
+    });
+    let readSFPucreo = fs.ReadFile(sfp_ucreo).then((data: string) => {
+        return SchemaParser.ParsePresentation(parser.parseFromString(data));
+    });
+    
     let readSOIPresentation = fs.ReadFile(soiPresentation).then((data: string) => {
-        let document = parser.parseFromString(data);
-        return SchemaParser.ParsePresentation(document);
+        return SchemaParser.ParsePresentation(parser.parseFromString(data));
+    });
+    let readSOCPresenation = fs.ReadFile(socPresentation).then((data: string) => {
+        return SchemaParser.ParsePresentation(parser.parseFromString(data));
     });
 
-    return Promise.all<GaapInstanceSchema>([readSchema, readLabels, readSFPPresentation, readSOIPresentation]).then((gaap: any[]) => {
+    return Promise.all<GaapInstanceSchema>([
+        readSchema,
+        readLabels,
+        
+        readSFPclreo,
+        readSFPcls,
+        readSFPdbo,
+        readSFPibo,
+        readSFPsbo,
+        readSFPucreo,
+
+        readSOIPresentation,
+        readSOCPresenation
+    ]).then((gaap: any[]) => {
         return <GaapInstanceSchema>{
             schema: gaap[0],
             labels: gaap[1],
-            sfpPresentation: gaap[2],
-            soiPresentation: gaap[3]
+
+            sfp_clreo: gaap[2],
+            sfp_cls: gaap[3],
+            sfp_dbo: gaap[4],
+            sfp_ibo: gaap[5],
+            sfp_sbo: gaap[6],
+            sfp_ucreo: gaap[7],
+
+            soiPresentation: gaap[8],
+            socPresentation: gaap[9]
         }
     });
 }
 
 
 // Render the xbrl document instance according to it's schemas
-function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: GaapInstanceSchema) {
-    
-    let DEISchema = deiSchema.schema;
-    let DEILabels = deiSchema.labels;
-    let DEIPresentation = deiSchema.presentation;
-
-    let GaapSchema = gaapSchema.schema;
-    let GaapLabels = gaapSchema.labels;
-    let sfp_cls_presentation = gaapSchema.sfpPresentation;
-    let soi_presentation = gaapSchema.soiPresentation;
-
-
-    function removeSegments(valueNodes: (StatementGaapNode|StatementDeiNode)[]) {
-        // Seperate the segment values for now...
-        for (let node of valueNodes) {
-            let removeValues: any[] = [];
-            for (let value of node.values) {
-                // If there is no date or is a segment, mark to remove from the value list
-                if (!value.date || value.segment) {
-                    removeValues.push(value);
-                }
-            }
-
-            for (let r of removeValues) {
-                let values: any = node.values;
-                values.splice(values.indexOf(r), 1);
-            }
-        }
-    }
-
+function parseInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: GaapInstanceSchema) {
 
     // pair up elements with their labels
-    let dei = StatementHelpers.CreateStatementNodes(DEISchema.Elements, DEILabels);
+    let dei = StatementHelpers.CreateStatementNodes(deiSchema.schema.Elements, deiSchema.labels);
 
     // DEI Sheet
     console.log('starting dei document');
@@ -245,7 +280,7 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
     let count = 0;
 
 
-    for (let presentation of DEIPresentation) {
+    for (let presentation of deiSchema.presentation) {
         count += 1;
         let documentNodes = StatementHelpers.PullStatementNodes(presentation.nodes, dei.map);
         let documentValues = StatementHelpers.SelectDeiNodes(documentNodes, xbrl);
@@ -287,27 +322,10 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
     //       4. then format the nodes
 
     // pair up elements with their labels
-    let gaap = StatementHelpers.CreateStatementNodes(GaapSchema.Elements, GaapLabels);
+    let gaap = StatementHelpers.CreateStatementNodes(gaapSchema.schema.Elements, gaapSchema.labels);
+
 
     console.log('starting balance sheet...');
-
-
-    function getRootStatementLabel(name: string, nodes: Map<string, StatementNode>) {
-        if (nodes.has(name)) {
-            let root = nodes.get(name);
-            return Helpers.FetchLabelText(root.label.Text);
-        }
-        return '';
-    }
-    function getTableNodes(nodes: StatementValueNode<GaapNode|DeiNode>[]) {
-        let tableNodes: StatementValueNode<GaapNode|DeiNode>[] = [];
-        for (let value of nodes) {
-            if ('table' === Helpers.FetchLabelType(value.label.Text)) {
-                tableNodes.push(value);
-            }
-        }
-        return tableNodes;
-    }
 
     // find the root balance sheet node
     let sfpRootTitle = getRootStatementLabel(STMNTS.BalanceSheetRoot, gaap.map);
@@ -315,7 +333,7 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
     let balanceSheetTables: any[] = [];
     count = 0;
 
-    for (let presentation of sfp_cls_presentation) {
+    for (let presentation of gaapSchema.sfp_cls) {
         count += 1;
         let balanceSheetNodes = StatementHelpers.PullStatementNodes(presentation.nodes, gaap.map);
         let balanceSheetValues = StatementHelpers.SelectGaapNodes(balanceSheetNodes, xbrl);
@@ -358,86 +376,107 @@ function renderInstance(xbrl: XBRL, deiSchema: DeiInstanceSchema, gaapSchema: Ga
             balanceSheetTables.push(formattedTable);
         }
     }
-
+    balanceSheetTables = balanceSheetTables.concat(createStatementTables(xbrl, STMNTS.BalanceSheetRoot, gaap.map, gaapSchema.sfp_clreo));
+    balanceSheetTables = balanceSheetTables.concat(createStatementTables(xbrl, STMNTS.BalanceSheetRoot, gaap.map, gaapSchema.sfp_dbo));
+    balanceSheetTables = balanceSheetTables.concat(createStatementTables(xbrl, STMNTS.BalanceSheetRoot, gaap.map, gaapSchema.sfp_ibo));
+    balanceSheetTables = balanceSheetTables.concat(createStatementTables(xbrl, STMNTS.BalanceSheetRoot, gaap.map, gaapSchema.sfp_sbo));
+    balanceSheetTables = balanceSheetTables.concat(createStatementTables(xbrl, STMNTS.BalanceSheetRoot, gaap.map, gaapSchema.sfp_ucreo));
 
 
     // Income Statement
-    console.log('starting income statement');
+    console.log('starting income statement...');
+    let incomeSheetTables = createStatementTables(xbrl, STMNTS.IncomeStatementRoot, gaap.map, gaapSchema.soiPresentation);
+    
+    // Cash Flow Statement
+    console.log('starting cash flow statement...');
+    let cashFlowTables = createStatementTables(xbrl, STMNTS.CashFlowRoot, gaap.map, gaapSchema.socPresentation);
 
-    // find the root income statement node
-    let soiRootTitle = getRootStatementLabel(STMNTS.IncomeStatementRoot, gaap.map);
 
-    let incomeSheetTables: any[] = [];
-    count = 0;
+    return {
+        doc: {
+            title: 'Document & Entity Information',
+            tables: deiTables,
+        },
+        sfp: {
+            title: 'Balance Sheet',
+            tables: balanceSheetTables
+        },
+        soi: {
+            title: 'Income Statement',
+            tables: incomeSheetTables
+        },
+        soc: {
+            title: 'Cash Flow',
+            tables: cashFlowTables
+        }        
+    }
+}
 
-    for (let presentation of soi_presentation) {
+
+function createStatementTables(xbrl: XBRL, rootName: string, nodes: Map<string, StatementNode>, presentations: PresentationLink[]) {
+    let rootTitle = getRootStatementLabel(rootName, nodes);
+
+    let stmntTables: any[] = [];
+    let count = 0;
+
+    for (let presentation of presentations) {
         count += 1;
-        let incomeStatementNodes = StatementHelpers.PullStatementNodes(presentation.nodes, gaap.map);
-        let incomeStatementValues = StatementHelpers.SelectGaapNodes(incomeStatementNodes, xbrl);
+        let stmntNodes = StatementHelpers.PullStatementNodes(presentation.nodes, nodes);
+        let stmntValues = StatementHelpers.SelectGaapNodes(stmntNodes, xbrl);
 
-        // Seperate the segment values for now...
-        removeSegments(incomeStatementValues);
+        removeSegments(stmntValues);
 
-        let tableNodes = getTableNodes(incomeStatementValues);
+        let tableNodes = getTableNodes(stmntValues);
 
-        // TODO: this is the wrong income statement presentation for cvs
-        //       (this might also be the case for the balance sheet too...)
-        console.log(`${count}: matching income statement presentation`);
-        StatementHelpers.MatchPresentation(presentation.nodes, incomeStatementValues);
+        console.log(`${count}: matching cash flow statement presentation`);
+        StatementHelpers.MatchPresentation(presentation.nodes, stmntValues);
 
-        console.log(`${count}: formatting income statement tables`);
+        console.log(`${count}: formatting cash flow statement tables`);
         for (let table of tableNodes) {
-            let title = `${soiRootTitle} - ${Helpers.FetchLabelText(table.label.Text)}`;
+            let title = `${rootTitle} - ${Helpers.FetchLabelText(table.label.Text)}`;
             let formattedTable = Format.Table(title, table);
 
             if (formattedTable.lines.length > 0) {
-                incomeSheetTables.push(formattedTable);
+                stmntTables.push(formattedTable);
             }
         }
     }
 
-
-    console.log('rendering templates');
-    return renderNunjucks(
-        path.join(process.cwd(), './templates/index.html'),
-        ['.', './templates/'],
-        {
-            doc: {
-                tables: deiTables,
-            },
-            sfp: {
-                tables: balanceSheetTables
-            },
-            soi: {
-                tables: incomeSheetTables
-            }
-        }
-    );
+    return stmntTables;
 }
 
+function getRootStatementLabel(name: string, nodes: Map<string, StatementNode>) {
+    if (nodes.has(name)) {
+        let root = nodes.get(name);
+        return Helpers.FetchLabelText(root.label.Text);
+    }
+    return '';
+}
+function removeSegments(valueNodes: (StatementGaapNode|StatementDeiNode)[]) {
+    // Seperate the segment values for now...
+    for (let node of valueNodes) {
+        let removeValues: any[] = [];
+        for (let value of node.values) {
+            // If there is no date or is a segment, mark to remove from the value list
+            if (!value.date || value.segment) {
+                removeValues.push(value);
+            }
+        }
 
-
-function renderNunjucks(inputFilePath: string, searchRelativePaths: string[], context: any): Promise<string> {
-    let read = fs.ReadFile(inputFilePath);
-    read = read.then((data: string) => {
-        let env = nunjucks.configure(searchRelativePaths, {
-            autoescape: true,
-            trimBlocks: false,
-            lstripBlocks: false
-        });
-
-        return new Promise<string>((resolve: Function, reject: Function) => {
-            env.renderString(data, context, (err: any, res: string) => {
-                if (err) {
-                    reject(err);
-                }
-                else {
-                    resolve(res);
-                }
-            });
-        });
-    });
-    return read;
+        for (let r of removeValues) {
+            let values: any = node.values;
+            values.splice(values.indexOf(r), 1);
+        }
+    }
+}
+function getTableNodes(nodes: StatementValueNode<GaapNode|DeiNode>[]) {
+    let tableNodes: StatementValueNode<GaapNode|DeiNode>[] = [];
+    for (let value of nodes) {
+        if ('table' === Helpers.FetchLabelType(value.label.Text)) {
+            tableNodes.push(value);
+        }
+    }
+    return tableNodes;
 }
 
 

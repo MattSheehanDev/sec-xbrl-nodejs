@@ -371,4 +371,4 @@ export module DateTime {
 
 }
 
-
+export default DateTime;

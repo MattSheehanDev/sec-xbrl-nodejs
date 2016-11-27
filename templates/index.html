@@ -45,15 +45,23 @@
 
     {% import "table-macro.html" as tables %}
 
+    <h3>{{ doc.title }}</h3>
     {% for table in doc.tables %}
         {{ tables.CreateTable(table) }}
     {% endfor %}
 
+    <h3>{{ sfp.title }}</h3>
     {% for table in sfp.tables %}
         {{ tables.CreateTable(table) }}
     {% endfor %}
 
+    <h3>{{ soi.title }}</h3>
     {% for table in soi.tables %}
+        {{ tables.CreateTable(table) }}
+    {% endfor %}
+
+    <h3>{{ soc.title }}</h3>
+    {% for table in soc.tables %}
         {{ tables.CreateTable(table) }}
     {% endfor %}
 
