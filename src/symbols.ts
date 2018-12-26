@@ -9,7 +9,7 @@ import DateTime from './utilities/datetime';
 // 2. otherlisted.txt - list of equities trading on other exchanges
 // 3. mfundslist.txt - list of mutual funds
 // 4. otclist.txt - list of over the counter traded equities
-// More information can be found here http://www.nasdaqtrader.com/trader.aspx?id=symboldirdefs#other
+// More information can be found here http://www.nasdaqtrader.com/trader.aspx?id=symboldirdefs
 // Symbology!
 
 

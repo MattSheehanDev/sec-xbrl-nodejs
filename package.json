@@ -10,7 +10,6 @@
   "scripts": {
     "setup": "npm run setup:gulp && npm run build",
     "setup:gulp": "node ./node_modules/typescript/lib/tsc.js -t es5 --noEmitOnError --noImplicitAny --removeComments gulpfile.ts",
-
     "build": "gulp build",
     "clean": "gulp clean"
   },
@@ -33,7 +32,7 @@
     "@types/request": "0.0.32",
     "@types/cheerio": "0.17.31",
     "@types/xmldom": "0.1.28",
-    "@types/gulp": "3.8.32",
+    "@types/gulp": "3.8.36",
     "@types/gulp-typescript": "0.0.32",
     "@types/gulp-sourcemaps": "0.0.29",
     "@types/nunjucks": "0.0.32"
