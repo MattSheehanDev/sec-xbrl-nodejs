@@ -1,4 +1,6 @@
-# Prereqs
+__This project is deprecated and no longer supported__
+
+## Prereqs
 
 * **Visual Studio Code 1.3**
 * **Nodejs**
